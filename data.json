@@ -222,10 +222,10 @@
         "title": "Informática básica y ofimática",
         "coverage": {
           "total": 5,
-          "conApuntes": 4,
+          "conApuntes": 5,
           "soloResumen": 0,
-          "pendientes": 1,
-          "conPractica": 4
+          "pendientes": 0,
+          "conPractica": 5
         },
         "topics": [
           {
@@ -263,10 +263,10 @@
           {
             "path": "II.17",
             "title": "Licencias y software libre",
-            "apuntesStatus": "pendiente",
-            "practicaStatus": "pendiente",
-            "sectionCount": 0,
-            "questionCount": 0
+            "apuntesStatus": "completos",
+            "practicaStatus": "con_practica",
+            "sectionCount": 6,
+            "questionCount": 10
           }
         ]
       },
@@ -275,19 +275,19 @@
         "title": "Sistemas, redes y comunicaciones",
         "coverage": {
           "total": 9,
-          "conApuntes": 4,
+          "conApuntes": 6,
           "soloResumen": 0,
-          "pendientes": 5,
-          "conPractica": 4
+          "pendientes": 3,
+          "conPractica": 6
         },
         "topics": [
           {
             "path": "III.18",
             "title": "Sistemas operativos de servidor",
-            "apuntesStatus": "pendiente",
-            "practicaStatus": "pendiente",
-            "sectionCount": 0,
-            "questionCount": 0
+            "apuntesStatus": "completos",
+            "practicaStatus": "con_practica",
+            "sectionCount": 6,
+            "questionCount": 10
           },
           {
             "path": "III.19",
@@ -316,10 +316,10 @@
           {
             "path": "III.22",
             "title": "Comunicaciones",
-            "apuntesStatus": "pendiente",
-            "practicaStatus": "pendiente",
-            "sectionCount": 0,
-            "questionCount": 0
+            "apuntesStatus": "completos",
+            "practicaStatus": "con_practica",
+            "sectionCount": 6,
+            "questionCount": 10
           },
           {
             "path": "III.23",
@@ -1605,6 +1605,165 @@
       ],
       "practiceSlug": "ii-16"
     },
+    "II.17": {
+      "path": "II.17",
+      "title": "Licencias y software libre",
+      "apuntesStatus": "completos",
+      "practicaStatus": "con_practica",
+      "sectionCount": 6,
+      "questionCount": 10,
+      "source": {
+        "label": "Open Source Initiative — Licencias aprobadas por la OSI",
+        "url": "https://opensource.org/licenses"
+      },
+      "sections": [
+        {
+          "heading": "Derecho de autor y licencia",
+          "body": "El software está protegido por el **derecho de autor**. Sin una licencia, nadie puede copiarlo, modificarlo ni redistribuirlo más allá de lo que permita la ley.\n\nUna **licencia** es el contrato o permiso mediante el cual el titular autoriza determinados usos. El **software propietario** suele usar una licencia de usuario final (EULA) restrictiva: permite usar el programa, pero no acceder al código ni redistribuirlo.\n\nEl **software libre** no significa «gratis»: significa que su licencia garantiza libertades sobre el código."
+        },
+        {
+          "heading": "Las cuatro libertades",
+          "body": "El software libre se define por cuatro libertades:\n\n- **Libertad 0**: usar el programa con cualquier propósito.\n- **Libertad 1**: estudiar cómo funciona y modificarlo; para ello hace falta el **código fuente**.\n- **Libertad 2**: redistribuir copias.\n- **Libertad 3**: distribuir versiones modificadas.\n\nEl **open source** comparte la disponibilidad del código, aunque su énfasis es el desarrollo colaborativo. En la práctica, las licencias aprobadas por la OSI cumplen estas libertades."
+        },
+        {
+          "heading": "Permisivas y copyleft",
+          "body": "Las licencias **permisivas** (MIT, BSD, Apache 2.0) permiten usar, modificar y redistribuir el código, incluso en productos propietarios, con obligaciones mínimas de atribución y aviso.\n\nLas licencias **copyleft** (GPL, LGPL, AGPL) exigen que las obras derivadas se distribuyan con la misma licencia, de modo que el código siga siendo libre. La **LGPL** permite enlazar con software propietario bajo condiciones; la **AGPL** extiende la obligación a quien usa el software como servicio en red.\n\nLa **compatibilidad** entre licencias es clave: no se pueden mezclar componentes si sus condiciones son incompatibles."
+        },
+        {
+          "heading": "Contenido y datos abiertos",
+          "body": "Para textos, imágenes, datos o música se usan licencias como **Creative Commons**:\n\n- **CC BY**: atribución.\n- **CC BY-SA**: atribución y compartir igual.\n- **CC0**: renuncia a derechos, equivalente a dominio público.\n\nEn datos abiertos, la atribución y la interoperabilidad son esenciales. Una licencia mal elegida puede impedir que otros reutilicen el conjunto de datos."
+        },
+        {
+          "heading": "Tabla de licencias",
+          "table": {
+            "columns": [
+              "Licencia",
+              "Tipo",
+              "Obligación principal"
+            ],
+            "rows": [
+              [
+                "MIT / BSD",
+                "Permisiva",
+                "Mantener aviso de copyright"
+              ],
+              [
+                "Apache 2.0",
+                "Permisiva",
+                "Aviso, licencia y patentes"
+              ],
+              [
+                "GPL",
+                "Copyleft fuerte",
+                "Distribuir derivados con GPL"
+              ],
+              [
+                "LGPL",
+                "Copyleft débil",
+                "Compartir cambios de la biblioteca"
+              ],
+              [
+                "CC BY",
+                "Contenido",
+                "Atribuir la autoría"
+              ],
+              [
+                "CC0",
+                "Dominio público",
+                "Sin condiciones de atribución"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Ejemplo resuelto",
+          "body": "**Supuesto.** Un ayuntamiento publica una aplicación web y quiere que otras administraciones puedan reutilizarla, pero sin permitir que una empresa la cierre y la venda como propietaria.\n\n**Resolución.**\n\n- Se elige una licencia **copyleft** compatible con el ecosistema, como la **EUPL** o la **GPL**, y se revisan las dependencias.\n- Se comprueba que las bibliotecas incluidas permiten la combinación; una dependencia propietaria puede impedir publicar el conjunto como libre.\n- Se conservan avisos de copyright y se documenta la licencia en el repositorio y en la aplicación.\n- Si se usan datos o imágenes de terceros, se revisa su licencia (CC BY, CC0, etc.) y se atribuye correctamente.\n\n**Conclusión.** Publicar el código no basta: hay que elegir una licencia compatible, cumplir sus obligaciones y revisar la cadena de dependencias."
+        }
+      ],
+      "practiceSlug": "ii-17"
+    },
+    "III.18": {
+      "path": "III.18",
+      "title": "Sistemas operativos de servidor",
+      "apuntesStatus": "completos",
+      "practicaStatus": "con_practica",
+      "sectionCount": 6,
+      "questionCount": 10,
+      "source": {
+        "label": "Microsoft Learn — Documentación de Windows Server",
+        "url": "https://learn.microsoft.com/es-es/windows-server/"
+      },
+      "sections": [
+        {
+          "heading": "Qué distingue a un servidor",
+          "body": "Un **sistema operativo de servidor** está pensado para prestar servicios a otros equipos: autenticación, ficheros, impresión, web, correo, bases de datos o virtualización. No es solo un escritorio con más memoria.\n\nSus prioridades son la **disponibilidad**, la **seguridad**, la **gestión centralizada** y el **rendimiento sostenido**. Por eso se administra de forma remota, se actualiza con cuidado y se monitoriza.\n\nWindows Server y Linux son los dos entornos habituales en la administración pública. Muchos servicios son equivalentes con nombres distintos."
+        },
+        {
+          "heading": "Windows Server: roles y servicios",
+          "body": "Los roles más habituales son:\n\n- **Active Directory Domain Services (AD DS)**: directorio centralizado de usuarios, equipos y grupos; base de la autenticación del dominio.\n- **DNS**: resolución de nombres, integrada con AD.\n- **DHCP**: asignación automática de direcciones IP.\n- **Directivas de grupo (GPO)**: configuración centralizada de equipos y usuarios.\n- **Servidor de archivos e impresión**: compartición de recursos con permisos NTFS.\n- **IIS**: servidor web.\n- **Hyper-V**: virtualización.\n\nLa administración se apoya en **PowerShell**, la consola de administración y herramientas remotas. Las licencias y el número de usuarios son parte del diseño."
+        },
+        {
+          "heading": "Linux: servicios y administración",
+          "body": "En Linux los servicios se gestionan con **systemd** (`systemctl`). El acceso remoto habitual es **SSH**; el cortafuegos, `nftables`/`ufw`; los paquetes, `apt` o `dnf`.\n\nServicios equivalentes:\n\n- **DNS**: BIND o Unbound.\n- **DHCP**: ISC DHCP o Kea.\n- **Ficheros**: Samba para compartir con Windows o NFS para red Unix.\n- **Web**: Apache o Nginx.\n- **Directorio**: OpenLDAP o Samba AD.\n- **Contenedores**: Docker/Podman y Kubernetes.\n\nLa configuración se guarda en ficheros de texto y se automatiza con Ansible u otras herramientas."
+        },
+        {
+          "heading": "Identidad, permisos y hardening",
+          "body": "La **identidad** es el eje: usuarios, grupos, roles y autenticación. En Windows se usa **AD/Kerberos**; en Linux, **LDAP/Kerberos** o Samba AD. El principio de **mínimo privilegio** evita cuentas de administrador para tareas diarias.\n\nEl **hardening** incluye actualizaciones, servicios innecesarios desactivados, contraseñas robustas, MFA, registro de auditoría y copias. La monitorización detecta caídas, errores y accesos anómalos antes de que escalen.\n\nUn servidor sin copias ni monitorización no está «terminado»: está a la espera de un incidente."
+        },
+        {
+          "heading": "Tabla de roles equivalentes",
+          "table": {
+            "columns": [
+              "Servicio",
+              "Windows Server",
+              "Linux"
+            ],
+            "rows": [
+              [
+                "Directorio",
+                "AD DS",
+                "OpenLDAP / Samba AD"
+              ],
+              [
+                "DNS",
+                "Rol DNS",
+                "BIND / Unbound"
+              ],
+              [
+                "DHCP",
+                "Rol DHCP",
+                "ISC DHCP / Kea"
+              ],
+              [
+                "Ficheros",
+                "Servidor de archivos",
+                "Samba / NFS"
+              ],
+              [
+                "Web",
+                "IIS",
+                "Apache / Nginx"
+              ],
+              [
+                "Virtualización",
+                "Hyper-V",
+                "KVM / Proxmox"
+              ],
+              [
+                "Acceso remoto",
+                "RDP / WinRM",
+                "SSH"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Ejemplo resuelto",
+          "body": "**Supuesto.** Un ayuntamiento necesita autenticación centralizada, una carpeta compartida para 80 usuarios y una web municipal.\n\n**Resolución.**\n\n- Se implanta **AD DS** con DNS integrado y dos controladores de dominio para tolerar fallos.\n- La carpeta compartida usa permisos **NTFS** por grupos, no por usuario individual.\n- La web se publica en un servidor separado (IIS o Nginx) para no mezclar el rol de directorio con el servicio expuesto a internet.\n- Se configuran **copias**, **monitorización** y actualizaciones programadas; las cuentas de administrador son nominativas y con MFA.\n\n**Conclusión.** El diseño separa roles, aplica mínimo privilegio y prevé fallos; instalar todo en un solo servidor es cómodo hasta que falla."
+        }
+      ],
+      "practiceSlug": "iii-18"
+    },
     "III.19": {
       "path": "III.19",
       "title": "Virtualización y contenedores",
@@ -1934,6 +2093,78 @@
         }
       ],
       "practiceSlug": "iii-21"
+    },
+    "III.22": {
+      "path": "III.22",
+      "title": "Comunicaciones",
+      "apuntesStatus": "completos",
+      "practicaStatus": "con_practica",
+      "sectionCount": 6,
+      "questionCount": 10,
+      "source": {
+        "label": "IEEE 802.11 — Wireless LAN Working Group",
+        "url": "https://www.ieee802.org/11/"
+      },
+      "sections": [
+        {
+          "heading": "Conceptos básicos de transmisión",
+          "body": "Una comunicación transporta datos entre dos puntos a través de un **medio**: cobre (par trenzado, coaxial), **fibra óptica** o **radio** (Wi-Fi, móvil).\n\nTres magnitudes explican la calidad:\n\n- **Ancho de banda**: capacidad máxima del enlace.\n- **Latencia**: retardo de ida y vuelta.\n- **Jitter**: variación de la latencia, crítica para voz y vídeo.\n\nUna red de área local (LAN) cubre un edificio o campus; una red de área amplia (WAN) conecta sedes o accede a internet."
+        },
+        {
+          "heading": "Wi-Fi: estándares y seguridad",
+          "body": "Wi-Fi se basa en la familia **IEEE 802.11**. Las generaciones habituales son 802.11n (Wi-Fi 4), 802.11ac (Wi-Fi 5) y 802.11ax (Wi-Fi 6/6E); cada una mejora velocidad, eficiencia y capacidad. Los equipos deben ser compatibles con el estándar del punto de acceso.\n\nLa seguridad evolucionó de WEP (obsoleta e insegura) a **WPA2** y **WPA3**, que cifran el tráfico y autentican a los clientes. Las redes abiertas deben usar portales cautivos y aislamiento de clientes; para empresas se usan redes separadas por perfil (invitados, empleados, dispositivos).\n\nCanales, interferencias y cobertura determinan la calidad real, no solo la velocidad anunciada."
+        },
+        {
+          "heading": "VPN y redes de operador",
+          "body": "Una **VPN** crea un túnel cifrado sobre una red no confiable. Puede ser de **acceso remoto** (un usuario se conecta a la organización) o **site-to-site** (une dos sedes). Se implementa con **IPsec** o con TLS/SSL.\n\nEn redes de operador, **MPLS** etiqueta y conmuta paquetes para ofrecer rutas gestionadas con calidad de servicio. La **QoS** prioriza tráfico sensible (voz, vídeo) frente a descargas.\n\nLa VPN no sustituye una buena segmentación ni el control de acceso: cifra el transporte, pero no corrige permisos mal configurados."
+        },
+        {
+          "heading": "VoIP y servicios de comunicación",
+          "body": "La **voz sobre IP (VoIP)** envía llamadas como paquetes. **SIP** establece, modifica y termina la sesión; **RTP** transporta el audio/vídeo en tiempo real. Los **códecs** comprimen la voz y afectan a calidad y ancho de banda.\n\nLa telefonía IP exige baja latencia y jitter controlado, QoS de extremo a extremo, plan de numeración y dispositivos con alimentación adecuada. En emergencias, hay que garantizar la continuidad y la localización de las llamadas."
+        },
+        {
+          "heading": "Tabla de tecnologías",
+          "table": {
+            "columns": [
+              "Tecnología",
+              "Uso principal",
+              "Clave"
+            ],
+            "rows": [
+              [
+                "Wi-Fi 802.11ax",
+                "Acceso local inalámbrico",
+                "WPA2/WPA3, canales y cobertura"
+              ],
+              [
+                "VPN IPsec",
+                "Túnel site-to-site o remoto",
+                "Cifrado y autenticación mutua"
+              ],
+              [
+                "MPLS",
+                "Red gestionada de operador",
+                "Etiquetas y QoS"
+              ],
+              [
+                "SIP/RTP",
+                "Telefonía IP",
+                "Señalización y transporte de voz"
+              ],
+              [
+                "Fibra óptica",
+                "Enlaces troncales y WAN",
+                "Alta capacidad y baja latencia"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Ejemplo resuelto",
+          "body": "**Supuesto.** Un ayuntamiento quiere Wi-Fi para el público, teletrabajo seguro para el personal y telefonía IP en dos sedes.\n\n**Resolución.**\n\n- **Wi-Fi**: red de invitados separada de la red corporativa, con portal cautivo y WPA3/WPA2; los empleados usan otra SSID con autenticación.\n- **Teletrabajo**: VPN de acceso remoto con MFA y segmentación; solo se publica lo necesario.\n- **Telefonía**: SIP para señalización y RTP para voz, con QoS que prioriza la voz; enlace entre sedes con capacidad y latencia medidas.\n- **Monitorización**: latencia, jitter, pérdida de paquetes y disponibilidad de enlaces.\n\n**Conclusión.** Cada servicio tiene requisitos distintos; la seguridad y la QoS se diseñan por separado, no se improvisan al final."
+        }
+      ],
+      "practiceSlug": "iii-22"
     },
     "III.24": {
       "path": "III.24",
@@ -6797,6 +7028,568 @@
       ]
     },
     {
+      "slug": "ii-17",
+      "tema_path": "II.17",
+      "title": "Práctica · Licencias y software libre",
+      "source": {
+        "label": "Open Source Initiative — Licencias aprobadas por la OSI",
+        "url": "https://opensource.org/licenses"
+      },
+      "questions": [
+        {
+          "stem": "¿Qué significa que un programa sea software libre?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Que su licencia garantiza libertades para usar, estudiar, modificar y redistribuir"
+            },
+            {
+              "key": "b",
+              "text": "Que siempre es gratuito"
+            },
+            {
+              "key": "c",
+              "text": "Que no tiene derechos de autor"
+            },
+            {
+              "key": "d",
+              "text": "Que no puede usarse en empresas"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El software libre se define por las libertades sobre el programa y su código fuente; no implica necesariamente precio cero.",
+          "source": {
+            "label": "Open Source Initiative — Licencias aprobadas por la OSI",
+            "url": "https://opensource.org/licenses"
+          }
+        },
+        {
+          "stem": "¿Qué se necesita para ejercer la libertad de estudiar y modificar un programa?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El código fuente"
+            },
+            {
+              "key": "b",
+              "text": "Una conexión a internet"
+            },
+            {
+              "key": "c",
+              "text": "Una cuenta de correo"
+            },
+            {
+              "key": "d",
+              "text": "Una licencia de pago"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Sin código fuente no se puede estudiar ni modificar el programa, por eso es esencial en el software libre.",
+          "source": {
+            "label": "Open Source Initiative — Licencias aprobadas por la OSI",
+            "url": "https://opensource.org/licenses"
+          }
+        },
+        {
+          "stem": "¿Qué caracteriza a una licencia copyleft como la GPL?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Exige distribuir las obras derivadas con la misma licencia"
+            },
+            {
+              "key": "b",
+              "text": "Permite cerrar el código derivado"
+            },
+            {
+              "key": "c",
+              "text": "Prohíbe el uso comercial"
+            },
+            {
+              "key": "d",
+              "text": "Solo se aplica a datos"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El copyleft busca que las versiones derivadas sigan siendo libres, exigiendo la misma licencia al distribuir.",
+          "source": {
+            "label": "Open Source Initiative — Licencias aprobadas por la OSI",
+            "url": "https://opensource.org/licenses"
+          }
+        },
+        {
+          "stem": "¿Qué licencia es permisiva y permite usar el código en un producto propietario?",
+          "options": [
+            {
+              "key": "a",
+              "text": "MIT"
+            },
+            {
+              "key": "b",
+              "text": "GPL"
+            },
+            {
+              "key": "c",
+              "text": "AGPL"
+            },
+            {
+              "key": "d",
+              "text": "CC BY-SA"
+            }
+          ],
+          "correct": "a",
+          "explanation": "MIT es permisiva: permite reutilizar el código en productos propietarios manteniendo el aviso de copyright.",
+          "source": {
+            "label": "Open Source Initiative — Licencias aprobadas por la OSI",
+            "url": "https://opensource.org/licenses"
+          }
+        },
+        {
+          "stem": "¿Qué diferencia a la AGPL de la GPL?",
+          "options": [
+            {
+              "key": "a",
+              "text": "La AGPL extiende la obligación a quien ofrece el software como servicio en red"
+            },
+            {
+              "key": "b",
+              "text": "La AGPL prohíbe modificarlo"
+            },
+            {
+              "key": "c",
+              "text": "La AGPL es propietaria"
+            },
+            {
+              "key": "d",
+              "text": "No hay diferencias"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La AGPL cubre el uso en red: si se ofrece como servicio, también hay que facilitar el código fuente.",
+          "source": {
+            "label": "Open Source Initiative — Licencias aprobadas por la OSI",
+            "url": "https://opensource.org/licenses"
+          }
+        },
+        {
+          "stem": "¿Qué exige una licencia CC BY?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Atribuir la autoría"
+            },
+            {
+              "key": "b",
+              "text": "Prohibir el uso comercial"
+            },
+            {
+              "key": "c",
+              "text": "Ceder todos los derechos"
+            },
+            {
+              "key": "d",
+              "text": "Cifrar la obra"
+            }
+          ],
+          "correct": "a",
+          "explanation": "CC BY permite usar y adaptar la obra con atribución; otras variantes añaden condiciones como compartir igual.",
+          "source": {
+            "label": "Open Source Initiative — Licencias aprobadas por la OSI",
+            "url": "https://opensource.org/licenses"
+          }
+        },
+        {
+          "stem": "¿Qué licencia se acerca más al dominio público?",
+          "options": [
+            {
+              "key": "a",
+              "text": "CC0"
+            },
+            {
+              "key": "b",
+              "text": "CC BY-SA"
+            },
+            {
+              "key": "c",
+              "text": "GPL"
+            },
+            {
+              "key": "d",
+              "text": "EULA"
+            }
+          ],
+          "correct": "a",
+          "explanation": "CC0 renuncia a los derechos en la medida permitida por la ley, facilitando el uso sin condiciones de atribución.",
+          "source": {
+            "label": "Open Source Initiative — Licencias aprobadas por la OSI",
+            "url": "https://opensource.org/licenses"
+          }
+        },
+        {
+          "stem": "¿Qué es una EULA?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Una licencia de usuario final de software propietario"
+            },
+            {
+              "key": "b",
+              "text": "Una licencia de datos abiertos"
+            },
+            {
+              "key": "c",
+              "text": "Un estándar de red"
+            },
+            {
+              "key": "d",
+              "text": "Un tipo de copia de seguridad"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La EULA es el contrato de licencia de usuario final que establece los usos permitidos del software propietario.",
+          "source": {
+            "label": "Open Source Initiative — Licencias aprobadas por la OSI",
+            "url": "https://opensource.org/licenses"
+          }
+        },
+        {
+          "stem": "¿Por qué es importante la compatibilidad de licencias?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Porque mezclar componentes con condiciones incompatibles puede impedir distribuir el conjunto"
+            },
+            {
+              "key": "b",
+              "text": "Porque cambia el color de la interfaz"
+            },
+            {
+              "key": "c",
+              "text": "Porque acelera el compilador"
+            },
+            {
+              "key": "d",
+              "text": "Porque elimina la necesidad de atribución"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Las obligaciones de cada licencia deben poder cumplirse a la vez; si no, el conjunto no se puede distribuir legalmente.",
+          "source": {
+            "label": "Open Source Initiative — Licencias aprobadas por la OSI",
+            "url": "https://opensource.org/licenses"
+          }
+        },
+        {
+          "stem": "¿Qué documento ayuda a conocer las dependencias y sus licencias en un proyecto?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El inventario de componentes o SBOM"
+            },
+            {
+              "key": "b",
+              "text": "El manual de usuario"
+            },
+            {
+              "key": "c",
+              "text": "El cortafuegos"
+            },
+            {
+              "key": "d",
+              "text": "La política de contraseñas"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Un SBOM (Software Bill of Materials) inventaría componentes y versiones, y facilita revisar licencias y vulnerabilidades.",
+          "source": {
+            "label": "Open Source Initiative — Licencias aprobadas por la OSI",
+            "url": "https://opensource.org/licenses"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "iii-18",
+      "tema_path": "III.18",
+      "title": "Práctica · Sistemas operativos de servidor",
+      "source": {
+        "label": "Microsoft Learn — Documentación de Windows Server",
+        "url": "https://learn.microsoft.com/es-es/windows-server/"
+      },
+      "questions": [
+        {
+          "stem": "¿Qué servicio de Windows Server proporciona un directorio centralizado de usuarios y equipos?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Active Directory Domain Services"
+            },
+            {
+              "key": "b",
+              "text": "IIS"
+            },
+            {
+              "key": "c",
+              "text": "Hyper-V"
+            },
+            {
+              "key": "d",
+              "text": "DHCP"
+            }
+          ],
+          "correct": "a",
+          "explanation": "AD DS es el servicio de directorio que almacena usuarios, equipos y grupos y sirve de base a la autenticación del dominio.",
+          "source": {
+            "label": "Microsoft Learn — Documentación de Windows Server",
+            "url": "https://learn.microsoft.com/es-es/windows-server/"
+          }
+        },
+        {
+          "stem": "¿Qué protocolo usa AD para autenticar en el dominio?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Kerberos"
+            },
+            {
+              "key": "b",
+              "text": "SMTP"
+            },
+            {
+              "key": "c",
+              "text": "SNMP"
+            },
+            {
+              "key": "d",
+              "text": "FTP"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Kerberos es el protocolo de autenticación usado por Active Directory.",
+          "source": {
+            "label": "Microsoft Learn — Documentación de Windows Server",
+            "url": "https://learn.microsoft.com/es-es/windows-server/"
+          }
+        },
+        {
+          "stem": "¿Para qué sirve DHCP en un servidor?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Asignar direcciones IP y parámetros de red automáticamente"
+            },
+            {
+              "key": "b",
+              "text": "Resolver nombres de dominio"
+            },
+            {
+              "key": "c",
+              "text": "Cifrar discos"
+            },
+            {
+              "key": "d",
+              "text": "Servir páginas web"
+            }
+          ],
+          "correct": "a",
+          "explanation": "DHCP entrega configuración de red (IP, máscara, puerta de enlace, DNS) a los clientes.",
+          "source": {
+            "label": "Microsoft Learn — Documentación de Windows Server",
+            "url": "https://learn.microsoft.com/es-es/windows-server/"
+          }
+        },
+        {
+          "stem": "¿Qué permite una directiva de grupo (GPO)?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Aplicar configuración de forma centralizada a equipos y usuarios"
+            },
+            {
+              "key": "b",
+              "text": "Cambiar la contraseña de root"
+            },
+            {
+              "key": "c",
+              "text": "Crear copias de seguridad"
+            },
+            {
+              "key": "d",
+              "text": "Comprimir la base de datos"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Las GPO permiten configurar de forma centralizada el entorno de equipos y usuarios del dominio.",
+          "source": {
+            "label": "Microsoft Learn — Documentación de Windows Server",
+            "url": "https://learn.microsoft.com/es-es/windows-server/"
+          }
+        },
+        {
+          "stem": "¿Qué servicio se usa en Linux para gestionar servicios y unidades?",
+          "options": [
+            {
+              "key": "a",
+              "text": "systemd"
+            },
+            {
+              "key": "b",
+              "text": "IIS"
+            },
+            {
+              "key": "c",
+              "text": "AD DS"
+            },
+            {
+              "key": "d",
+              "text": "PowerShell"
+            }
+          ],
+          "correct": "a",
+          "explanation": "systemd gestiona servicios, unidades y el arranque; se administra con systemctl.",
+          "source": {
+            "label": "Microsoft Learn — Documentación de Windows Server",
+            "url": "https://learn.microsoft.com/es-es/windows-server/"
+          }
+        },
+        {
+          "stem": "¿Qué protocolo se usa habitualmente para administrar un servidor Linux de forma remota?",
+          "options": [
+            {
+              "key": "a",
+              "text": "SSH"
+            },
+            {
+              "key": "b",
+              "text": "RDP"
+            },
+            {
+              "key": "c",
+              "text": "SMTP"
+            },
+            {
+              "key": "d",
+              "text": "SNMP"
+            }
+          ],
+          "correct": "a",
+          "explanation": "SSH permite acceder a la shell remota de forma cifrada y autenticada.",
+          "source": {
+            "label": "Microsoft Learn — Documentación de Windows Server",
+            "url": "https://learn.microsoft.com/es-es/windows-server/"
+          }
+        },
+        {
+          "stem": "¿Qué permite Samba en Linux?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Compartir ficheros e imprimir con clientes Windows"
+            },
+            {
+              "key": "b",
+              "text": "Compilar el kernel"
+            },
+            {
+              "key": "c",
+              "text": "Gestionar contenedores"
+            },
+            {
+              "key": "d",
+              "text": "Servir correo"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Samba implementa SMB/CIFS y permite compartir recursos con redes Windows, además de poder actuar como controlador de dominio.",
+          "source": {
+            "label": "Microsoft Learn — Documentación de Windows Server",
+            "url": "https://learn.microsoft.com/es-es/windows-server/"
+          }
+        },
+        {
+          "stem": "¿Qué es Hyper-V?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Un hipervisor de Microsoft para virtualización"
+            },
+            {
+              "key": "b",
+              "text": "Un servidor web"
+            },
+            {
+              "key": "c",
+              "text": "Un protocolo de correo"
+            },
+            {
+              "key": "d",
+              "text": "Un sistema de ficheros"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Hyper-V es el hipervisor de Microsoft; permite crear y gestionar máquinas virtuales.",
+          "source": {
+            "label": "Microsoft Learn — Documentación de Windows Server",
+            "url": "https://learn.microsoft.com/es-es/windows-server/"
+          }
+        },
+        {
+          "stem": "¿Qué principio de seguridad debe aplicarse a las cuentas de administrador?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Mínimo privilegio y uso separado de la cuenta diaria"
+            },
+            {
+              "key": "b",
+              "text": "Compartir una única cuenta para todo el equipo"
+            },
+            {
+              "key": "c",
+              "text": "Usar la misma contraseña siempre"
+            },
+            {
+              "key": "d",
+              "text": "Desactivar la auditoría"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El mínimo privilegio reduce el impacto de un error o robo de credenciales; las cuentas de administrador no deben usarse para tareas diarias.",
+          "source": {
+            "label": "Microsoft Learn — Documentación de Windows Server",
+            "url": "https://learn.microsoft.com/es-es/windows-server/"
+          }
+        },
+        {
+          "stem": "¿Qué debe acompañar a un servidor en producción además de instalarlo?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Copias, monitorización y actualizaciones programadas"
+            },
+            {
+              "key": "b",
+              "text": "Solo un fondo de escritorio"
+            },
+            {
+              "key": "c",
+              "text": "Un segundo teclado"
+            },
+            {
+              "key": "d",
+              "text": "Desactivar los registros"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La operación incluye copias, monitorización, actualizaciones y revisión de logs; sin ello la disponibilidad no está garantizada.",
+          "source": {
+            "label": "Microsoft Learn — Documentación de Windows Server",
+            "url": "https://learn.microsoft.com/es-es/windows-server/"
+          }
+        }
+      ]
+    },
+    {
       "slug": "iii-19",
       "tema_path": "III.19",
       "title": "Práctica · Virtualización y contenedores",
@@ -7635,6 +8428,287 @@
           "source": {
             "label": "IETF — RFC 791, Internet Protocol (IPv4); RFC 8200, Internet Protocol, Version 6 (IPv6)",
             "url": "https://datatracker.ietf.org/doc/html/rfc791"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "iii-22",
+      "tema_path": "III.22",
+      "title": "Práctica · Comunicaciones",
+      "source": {
+        "label": "IEEE 802.11 — Wireless LAN Working Group",
+        "url": "https://www.ieee802.org/11/"
+      },
+      "questions": [
+        {
+          "stem": "¿Qué magnitud mide la variación de la latencia y afecta especialmente a la voz?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Jitter"
+            },
+            {
+              "key": "b",
+              "text": "Ancho de banda"
+            },
+            {
+              "key": "c",
+              "text": "MTU"
+            },
+            {
+              "key": "d",
+              "text": "TTL"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El jitter es la variación del retardo; una voz con jitter alto suena entrecortada aunque el ancho de banda sea suficiente.",
+          "source": {
+            "label": "IEEE 802.11 — Wireless LAN Working Group",
+            "url": "https://www.ieee802.org/11/"
+          }
+        },
+        {
+          "stem": "¿Qué estándar corresponde a Wi-Fi 6?",
+          "options": [
+            {
+              "key": "a",
+              "text": "802.11ax"
+            },
+            {
+              "key": "b",
+              "text": "802.11ac"
+            },
+            {
+              "key": "c",
+              "text": "802.11n"
+            },
+            {
+              "key": "d",
+              "text": "802.11g"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Wi-Fi 6 se basa en IEEE 802.11ax; Wi-Fi 5 es 802.11ac y Wi-Fi 4 es 802.11n.",
+          "source": {
+            "label": "IEEE 802.11 — Wireless LAN Working Group",
+            "url": "https://www.ieee802.org/11/"
+          }
+        },
+        {
+          "stem": "¿Qué protocolo de seguridad Wi-Fi sustituye a WPA2 y mejora la autenticación?",
+          "options": [
+            {
+              "key": "a",
+              "text": "WPA3"
+            },
+            {
+              "key": "b",
+              "text": "WEP"
+            },
+            {
+              "key": "c",
+              "text": "WPS"
+            },
+            {
+              "key": "d",
+              "text": "SSL"
+            }
+          ],
+          "correct": "a",
+          "explanation": "WPA3 es la evolución de WPA2; WEP está obsoleto y WPS no es un protocolo de cifrado moderno.",
+          "source": {
+            "label": "IEEE 802.11 — Wireless LAN Working Group",
+            "url": "https://www.ieee802.org/11/"
+          }
+        },
+        {
+          "stem": "¿Para qué sirve una VPN?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Crear un túnel cifrado sobre una red no confiable"
+            },
+            {
+              "key": "b",
+              "text": "Aumentar la velocidad de la CPU"
+            },
+            {
+              "key": "c",
+              "text": "Sustituir el cortafuegos"
+            },
+            {
+              "key": "d",
+              "text": "Eliminar la necesidad de autenticación"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La VPN cifra y autentica el transporte entre el cliente y la red, pero no corrige permisos ni sustituye otros controles.",
+          "source": {
+            "label": "IEEE 802.11 — Wireless LAN Working Group",
+            "url": "https://www.ieee802.org/11/"
+          }
+        },
+        {
+          "stem": "¿Qué protocolo se usa habitualmente para túneles VPN de sitio a sitio?",
+          "options": [
+            {
+              "key": "a",
+              "text": "IPsec"
+            },
+            {
+              "key": "b",
+              "text": "SMTP"
+            },
+            {
+              "key": "c",
+              "text": "DHCP"
+            },
+            {
+              "key": "d",
+              "text": "DNS"
+            }
+          ],
+          "correct": "a",
+          "explanation": "IPsec es un conjunto de protocolos para proteger el tráfico IP y se usa en VPN site-to-site y de acceso remoto.",
+          "source": {
+            "label": "IEEE 802.11 — Wireless LAN Working Group",
+            "url": "https://www.ieee802.org/11/"
+          }
+        },
+        {
+          "stem": "¿Qué tecnología de operador usa etiquetas para conmutar y aplicar QoS?",
+          "options": [
+            {
+              "key": "a",
+              "text": "MPLS"
+            },
+            {
+              "key": "b",
+              "text": "NAT"
+            },
+            {
+              "key": "c",
+              "text": "VLAN"
+            },
+            {
+              "key": "d",
+              "text": "STP"
+            }
+          ],
+          "correct": "a",
+          "explanation": "MPLS conmuta paquetes mediante etiquetas y permite ingeniería de tráfico y calidad de servicio.",
+          "source": {
+            "label": "IEEE 802.11 — Wireless LAN Working Group",
+            "url": "https://www.ieee802.org/11/"
+          }
+        },
+        {
+          "stem": "¿Qué protocolo señaliza las llamadas VoIP?",
+          "options": [
+            {
+              "key": "a",
+              "text": "SIP"
+            },
+            {
+              "key": "b",
+              "text": "RTP"
+            },
+            {
+              "key": "c",
+              "text": "FTP"
+            },
+            {
+              "key": "d",
+              "text": "ICMP"
+            }
+          ],
+          "correct": "a",
+          "explanation": "SIP establece y termina sesiones; RTP transporta el audio y vídeo en tiempo real.",
+          "source": {
+            "label": "IEEE 802.11 — Wireless LAN Working Group",
+            "url": "https://www.ieee802.org/11/"
+          }
+        },
+        {
+          "stem": "¿Qué protocolo transporta el audio en una llamada VoIP?",
+          "options": [
+            {
+              "key": "a",
+              "text": "RTP"
+            },
+            {
+              "key": "b",
+              "text": "SIP"
+            },
+            {
+              "key": "c",
+              "text": "SSH"
+            },
+            {
+              "key": "d",
+              "text": "SNMP"
+            }
+          ],
+          "correct": "a",
+          "explanation": "RTP (Real-time Transport Protocol) transporta los medios en tiempo real; SIP se usa para la señalización.",
+          "source": {
+            "label": "IEEE 802.11 — Wireless LAN Working Group",
+            "url": "https://www.ieee802.org/11/"
+          }
+        },
+        {
+          "stem": "¿Por qué la fibra óptica es habitual en enlaces troncales?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Por su alta capacidad y baja atenuación"
+            },
+            {
+              "key": "b",
+              "text": "Porque no necesita mantenimiento"
+            },
+            {
+              "key": "c",
+              "text": "Porque es inalámbrica"
+            },
+            {
+              "key": "d",
+              "text": "Porque sustituye a la VPN"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La fibra ofrece gran ancho de banda y baja atenuación, lo que la hace adecuada para troncales y WAN.",
+          "source": {
+            "label": "IEEE 802.11 — Wireless LAN Working Group",
+            "url": "https://www.ieee802.org/11/"
+          }
+        },
+        {
+          "stem": "¿Qué red separa el Wi-Fi de invitados de la red corporativa?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Una red o SSID separada con aislamiento y políticas propias"
+            },
+            {
+              "key": "b",
+              "text": "La misma red con la misma contraseña"
+            },
+            {
+              "key": "c",
+              "text": "Una VPN obligatoria para todos"
+            },
+            {
+              "key": "d",
+              "text": "Un cambio de canal"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Segmentar invitados en su propia red limita el acceso a recursos internos y reduce el riesgo.",
+          "source": {
+            "label": "IEEE 802.11 — Wireless LAN Working Group",
+            "url": "https://www.ieee802.org/11/"
           }
         }
       ]
@@ -8766,12 +9840,12 @@
   ],
   "progress": {
     "total": 40,
-    "apuntesCompletos": 23,
+    "apuntesCompletos": 26,
     "soloResumen": 0,
-    "pendientes": 17,
-    "conPractica": 23,
-    "sinPractica": 17,
-    "questions": 230,
+    "pendientes": 14,
+    "conPractica": 26,
+    "sinPractica": 14,
+    "questions": 260,
     "convocatorias": 12
   }
 }
