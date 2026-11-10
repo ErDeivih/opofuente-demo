@@ -113,10 +113,10 @@
         "title": "Administración y normativa",
         "coverage": {
           "total": 12,
-          "conApuntes": 11,
+          "conApuntes": 12,
           "soloResumen": 0,
-          "pendientes": 1,
-          "conPractica": 11
+          "pendientes": 0,
+          "conPractica": 12
         },
         "topics": [
           {
@@ -202,10 +202,10 @@
           {
             "path": "I.11",
             "title": "Igualdad y violencia de género",
-            "apuntesStatus": "pendiente",
-            "practicaStatus": "pendiente",
-            "sectionCount": 0,
-            "questionCount": 0
+            "apuntesStatus": "completos",
+            "practicaStatus": "con_practica",
+            "sectionCount": 6,
+            "questionCount": 10
           },
           {
             "path": "I.12",
@@ -222,10 +222,10 @@
         "title": "Informática básica y ofimática",
         "coverage": {
           "total": 5,
-          "conApuntes": 1,
+          "conApuntes": 4,
           "soloResumen": 0,
-          "pendientes": 4,
-          "conPractica": 1
+          "pendientes": 1,
+          "conPractica": 4
         },
         "topics": [
           {
@@ -239,26 +239,26 @@
           {
             "path": "II.14",
             "title": "Sistemas operativos de usuario",
-            "apuntesStatus": "pendiente",
-            "practicaStatus": "pendiente",
-            "sectionCount": 0,
-            "questionCount": 0
+            "apuntesStatus": "completos",
+            "practicaStatus": "con_practica",
+            "sectionCount": 6,
+            "questionCount": 10
           },
           {
             "path": "II.15",
             "title": "Ofimática",
-            "apuntesStatus": "pendiente",
-            "practicaStatus": "pendiente",
-            "sectionCount": 0,
-            "questionCount": 0
+            "apuntesStatus": "completos",
+            "practicaStatus": "con_practica",
+            "sectionCount": 6,
+            "questionCount": 10
           },
           {
             "path": "II.16",
             "title": "Correo electrónico y colaboración",
-            "apuntesStatus": "pendiente",
-            "practicaStatus": "pendiente",
-            "sectionCount": 0,
-            "questionCount": 0
+            "apuntesStatus": "completos",
+            "practicaStatus": "con_practica",
+            "sectionCount": 6,
+            "questionCount": 10
           },
           {
             "path": "II.17",
@@ -623,6 +623,72 @@
         }
       ],
       "practiceSlug": "i-10"
+    },
+    "I.11": {
+      "path": "I.11",
+      "title": "Igualdad y violencia de género",
+      "apuntesStatus": "completos",
+      "practicaStatus": "con_practica",
+      "sectionCount": 6,
+      "questionCount": 10,
+      "source": {
+        "label": "Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres; Ley Orgánica 1/2004, de medidas de protección integral contra la violencia de género",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6115"
+      },
+      "sections": [
+        {
+          "heading": "El principio de igualdad y su alcance",
+          "body": "La **igualdad** es un derecho fundamental reconocido en el artículo 14 de la Constitución: mujeres y hombres son iguales ante la ley y no puede haber discriminación por razón de sexo. La **Ley Orgánica 3/2007** desarrolla ese principio para la vida política, civil, laboral, económica, social y cultural.\n\nLa ley no solo prohíbe discriminar: obliga a las administraciones a **integrar la perspectiva de género** en todas sus políticas (transversalidad), a prevenir conductas discriminatorias y a adoptar **acciones positivas** cuando una desigualdad real persiste.\n\nLa igualdad formal (la ley dice lo mismo para todos) no basta si las condiciones de partida son distintas; por eso se habla de **igualdad efectiva**."
+        },
+        {
+          "heading": "Acciones positivas y planes de igualdad",
+          "body": "Las **acciones positivas** son medidas temporales que corrigen situaciones de desigualdad real en un ámbito concreto. No son privilegios: buscan equiparar el punto de partida y deben ser proporcionadas y justificadas.\n\nLos **planes de igualdad** son conjuntos ordenados de medidas, con objetivos, responsables y evaluación. En las administraciones y en las empresas de cierto tamaño se exigen o se fomentan según la normativa; incluyen acceso al empleo, promoción, retribución, conciliación y prevención del acoso.\n\nEn el ámbito local, el ayuntamiento puede aprobar un plan municipal de igualdad, formar al personal y crear servicios de atención a las mujeres."
+        },
+        {
+          "heading": "Conciliación y corresponsabilidad",
+          "body": "La **conciliación** permite compaginar la vida personal, familiar y laboral. La ley impulsa permisos, excedencias y flexibilidad, pero también la **corresponsabilidad**: que el cuidado y las tareas domésticas no recaigan solo en las mujeres.\n\nLa conciliación no es un permiso graciable: es una condición para la igualdad real en el empleo. Las medidas deben aplicarse sin penalizar la carrera profesional de quien las usa, y las administraciones deben dar ejemplo en sus condiciones de trabajo."
+        },
+        {
+          "heading": "Violencia de género: concepto y protección",
+          "body": "La **Ley Orgánica 1/2004** regula la protección integral contra la violencia de género. Se refiere a la violencia que se ejerce sobre las mujeres por parte de quienes sean o hayan sido sus cónyuges o de quienes estén o hayan estado ligados a ellas por relaciones similares de afectividad, aun sin convivencia.\n\nNo es solo violencia física: incluye la **psicológica**, la **sexual**, la **económica** y la **digital**. La respuesta debe ser integral: prevención, asistencia, protección, persecución del delito y reparación.\n\nLos recursos habituales son la **orden de protección**, la asistencia jurídica, los servicios sociales y sanitarios, las casas de acogida y los puntos de atención especializada. La coordinación entre administraciones es esencial."
+        },
+        {
+          "heading": "Tabla de conceptos",
+          "table": {
+            "columns": [
+              "Concepto",
+              "Qué es"
+            ],
+            "rows": [
+              [
+                "Igualdad formal",
+                "La ley reconoce los mismos derechos sin discriminación"
+              ],
+              [
+                "Igualdad efectiva",
+                "Se corrigen las desigualdades reales para que el derecho se ejerza de verdad"
+              ],
+              [
+                "Transversalidad",
+                "Incorporar la perspectiva de género en todas las políticas"
+              ],
+              [
+                "Acción positiva",
+                "Medida temporal para corregir una desigualdad concreta"
+              ],
+              [
+                "Corresponsabilidad",
+                "Reparto equilibrado del cuidado y las tareas domésticas"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Ejemplo resuelto",
+          "body": "**Supuesto.** Un ayuntamiento quiere aprobar un plan de igualdad y reforzar la atención a mujeres víctimas de violencia de género.\n\n**Resolución.**\n\n- El **Pleno** aprueba el plan municipal, con objetivos medibles y presupuesto; no basta una declaración de intenciones.\n- El plan incluye formación del personal, lenguaje inclusivo en documentos y protocolos de prevención del acoso.\n- Se coordinan los servicios sociales, la policía local y la atención jurídica; se garantiza la derivación a los recursos autonómicos y estatales.\n- Se difunde un punto de atención y se revisan los protocolos de protección de datos para no exponer a las víctimas.\n\n**Conclusión.** La igualdad se demuestra con medidas concretas, presupuesto y evaluación; la protección de las víctimas exige coordinación, no actuaciones aisladas."
+        }
+      ],
+      "practiceSlug": "i-11"
     },
     "I.12": {
       "path": "I.12",
@@ -1332,6 +1398,212 @@
         }
       ],
       "practiceSlug": "ii-13"
+    },
+    "II.14": {
+      "path": "II.14",
+      "title": "Sistemas operativos de usuario",
+      "apuntesStatus": "completos",
+      "practicaStatus": "con_practica",
+      "sectionCount": 6,
+      "questionCount": 10,
+      "source": {
+        "label": "Microsoft Learn — Documentación de Windows",
+        "url": "https://learn.microsoft.com/es-es/windows/"
+      },
+      "sections": [
+        {
+          "heading": "Qué hace un sistema operativo de usuario",
+          "body": "El **sistema operativo** gestiona los recursos del equipo y ofrece una interfaz para usarlo. Sus funciones principales son:\n\n- Gestionar **procesos**: crear, planificar y terminar programas.\n- Gestionar **memoria** y **almacenamiento** (ficheros y carpetas).\n- Controlar **usuarios, permisos** y acceso a los recursos.\n- Gestionar **dispositivos** y controladores.\n- Ofrecer la **interfaz de usuario** (escritorio, ventanas, línea de comandos).\n\nWindows y Linux de escritorio comparten esas funciones, pero difieren en la organización de usuarios, permisos y herramientas de administración."
+        },
+        {
+          "heading": "Windows 10/11: usuarios, permisos y control",
+          "body": "En Windows los usuarios se agrupan (por ejemplo, **Administradores** y **Usuarios estándar**). El **Control de cuentas de usuario (UAC)** pide confirmación cuando una acción requiere privilegios elevados, aunque la sesión sea de administrador.\n\nEl sistema de ficheros habitual es **NTFS**, con permisos como **Control total**, **Modificar**, **Lectura y ejecución**, **Lectura** y **Escritura**. Los permisos se heredan de la carpeta padre y pueden auditarse.\n\nLas **actualizaciones** de Windows corrigen vulnerabilidades y fallos; conviene aplicarlas de forma controlada. Herramientas como el **Administrador de tareas**, el **Visor de eventos** y la **restauración del sistema** ayudan a diagnosticar problemas."
+        },
+        {
+          "heading": "Linux de escritorio: usuarios, permisos y servicios",
+          "body": "En Linux cada usuario tiene un **UID** y pertenece a grupos. El superusuario es **root**; las tareas administrativas se hacen con **sudo**, no iniciando sesión como root.\n\nLos permisos de fichero se expresan con tres bloques: **propietario**, **grupo** y **otros**, con los bits **r** (lectura), **w** (escritura) y **x** (ejecución). Se cambian con `chmod` y el propietario con `chown`.\n\nLos **servicios** se gestionan con **systemd** (`systemctl`). Cada distribución usa su gestor de paquetes: `apt` en Debian/Ubuntu, `dnf` en Fedora, `pacman` en Arch. El escritorio puede ser GNOME, KDE Plasma, XFCE u otros."
+        },
+        {
+          "heading": "Permisos: comparación rápida",
+          "table": {
+            "columns": [
+              "Aspecto",
+              "Windows (NTFS)",
+              "Linux"
+            ],
+            "rows": [
+              [
+                "Modelo",
+                "Listas de control de acceso (ACL)",
+                "Bits rwx para propietario, grupo y otros"
+              ],
+              [
+                "Administrador",
+                "Cuenta de administrador + UAC",
+                "root + sudo"
+              ],
+              [
+                "Cambiar permisos",
+                "Propiedades → Seguridad o icacls",
+                "chmod / chown"
+              ],
+              [
+                "Herencia",
+                "Sí, desde la carpeta padre",
+                "Permisos por fichero y directorio"
+              ],
+              [
+                "Registro de eventos",
+                "Visor de eventos",
+                "journalctl / archivos de log"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Diagnóstico y mantenimiento",
+          "body": "Ante un problema de usuario conviene seguir un orden:\n\n1. **Reproducir** el fallo y anotar el mensaje exacto.\n2. Revisar **espacio en disco**, memoria y procesos con el Administrador de tareas o `top`/`htop`.\n3. Consultar **registros**: Visor de eventos en Windows, `journalctl` en Linux.\n4. Comprobar **permisos** y credenciales si el fallo es de acceso.\n5. Aplicar **actualizaciones** y controladores; si el equipo no arranca, usar modo seguro o un medio de recuperación.\n\nLas copias y los puntos de restauración permiten volver atrás, pero no sustituyen un diagnóstico: primero se entiende el fallo, después se corrige."
+        },
+        {
+          "heading": "Ejemplo resuelto",
+          "body": "**Supuesto.** Una empleada no puede abrir una carpeta compartida en su equipo Windows; el resto del departamento sí puede.\n\n**Resolución.**\n\n- Se comprueba que el usuario pertenece al **grupo** con permiso de lectura.\n- Se revisan los permisos **NTFS** de la carpeta y la herencia: puede haber una denegación explícita para su cuenta.\n- Se comprueba que la sesión no está limitada por una directiva o por UAC.\n- Si el recurso está en red, se verifica la conexión y las credenciales usadas.\n\n**Conclusión.** El fallo de acceso casi siempre está en el modelo de permisos (usuario, grupo, ACL o herencia), no en el hardware."
+        }
+      ],
+      "practiceSlug": "ii-14"
+    },
+    "II.15": {
+      "path": "II.15",
+      "title": "Ofimática",
+      "apuntesStatus": "completos",
+      "practicaStatus": "con_practica",
+      "sectionCount": 6,
+      "questionCount": 10,
+      "source": {
+        "label": "Documentación oficial de LibreOffice en español",
+        "url": "https://documentation.libreoffice.org/es/documentacion/"
+      },
+      "sections": [
+        {
+          "heading": "Suites ofimáticas y formatos",
+          "body": "Una **suite ofimática** agrupa herramientas para crear documentos, hojas de cálculo, presentaciones y bases de datos. LibreOffice incluye **Writer** (texto), **Calc** (hojas), **Impress** (presentaciones), **Draw** (dibujo), **Base** (bases de datos) y **Math** (fórmulas).\n\nLos formatos abiertos **ODF** (`.odt`, `.ods`, `.odp`) y los de Microsoft (`.docx`, `.xlsx`, `.pptx`) permiten intercambio, pero no siempre conservan todo el formato. El **PDF** es el formato de distribución: conserva la apariencia y no se edita tan fácilmente.\n\nElegir formato depende del destino: edición compartida (ODF/DOCX), cálculo (ODS/XLSX) o publicación final (PDF/PDF-A)."
+        },
+        {
+          "heading": "Procesador de textos",
+          "body": "En **Writer** o Word, lo importante es trabajar con **estilos** (títulos, párrafos, listas) en lugar de aplicar formato manual a cada línea. Los estilos permiten generar índices, mantener la coherencia y facilitar la accesibilidad.\n\nUn documento bien estructurado tiene **título**, apartados con jerarquía, tablas legibles, imágenes con texto alternativo y numeración de páginas. Las **plantillas** y los **estilos** ahorran tiempo y evitan errores.\n\nPara revisar: ortografía, comentarios, control de cambios y comparación de versiones."
+        },
+        {
+          "heading": "Hoja de cálculo",
+          "body": "En **Calc** o Excel, una hoja se organiza en celdas identificadas por columna y fila (por ejemplo, `C5`). Las **fórmulas** empiezan por `=` y pueden usar operadores, referencias y funciones.\n\nLas **referencias** pueden ser relativas (`A1`) o absolutas (`$A$1`). Las absolutas no cambian al copiar la fórmula. Las **funciones** habituales son `SUMA`, `PROMEDIO`, `CONTAR`, `SI`, `BUSCARV`/`BUSCARX` y `SUMAR.SI`.\n\nLas **tablas dinámicas** resumen grandes volúmenes de datos por filas, columnas y valores; los **gráficos** ayudan a comunicar resultados. Conviene validar los datos de entrada y documentar las fórmulas complejas."
+        },
+        {
+          "heading": "Presentaciones y bases de datos de escritorio",
+          "body": "En **Impress** o PowerPoint, una presentación clara usa una **plantilla maestra**, pocas fuentes, contraste suficiente y una idea por diapositiva. Las animaciones deben apoyar el mensaje, no distraer.\n\n**Base** permite crear bases de datos de escritorio, formularios, consultas e informes. Es útil para pequeñas aplicaciones locales; para sistemas multiusuario se usan gestores como PostgreSQL o MySQL.\n\nEn ambos casos, la **accesibilidad** importa: texto alternativo, orden de lectura, contraste y tamaños legibles."
+        },
+        {
+          "heading": "Tabla de herramientas y formatos",
+          "table": {
+            "columns": [
+              "Herramienta",
+              "Uso",
+              "Formato habitual"
+            ],
+            "rows": [
+              [
+                "Writer",
+                "Documentos de texto",
+                "ODT / DOCX"
+              ],
+              [
+                "Calc",
+                "Hojas de cálculo",
+                "ODS / XLSX"
+              ],
+              [
+                "Impress",
+                "Presentaciones",
+                "ODP / PPTX"
+              ],
+              [
+                "Base",
+                "Bases de datos de escritorio",
+                "ODB"
+              ],
+              [
+                "PDF",
+                "Distribución final",
+                "PDF / PDF-A"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Ejemplo resuelto",
+          "body": "**Supuesto.** Un ayuntamiento debe publicar un presupuesto y una memoria en PDF, y quiere que otro departamento pueda editar las hojas de cálculo.\n\n**Resolución.**\n\n- Las hojas se entregan en **ODS** (o XLSX si el otro equipo usa Excel), con fórmulas documentadas y celdas de entrada protegidas.\n- La memoria se redacta con **estilos** de Writer y se exporta a **PDF/A** para conservación a largo plazo.\n- Las tablas se revisan para que no dependan del color y las imágenes llevan **texto alternativo**.\n- Se comprueba que el PDF conserva paginación, enlaces y fuentes.\n\n**Conclusión.** El formato se elige por el uso posterior: edición, cálculo o distribución; y la estructura con estilos es lo que hace el documento mantenible y accesible."
+        }
+      ],
+      "practiceSlug": "ii-15"
+    },
+    "II.16": {
+      "path": "II.16",
+      "title": "Correo electrónico y colaboración",
+      "apuntesStatus": "completos",
+      "practicaStatus": "con_practica",
+      "sectionCount": 6,
+      "questionCount": 10,
+      "source": {
+        "label": "IETF RFC 5321 — Simple Mail Transfer Protocol (SMTP)",
+        "url": "https://datatracker.ietf.org/doc/html/rfc5321"
+      },
+      "sections": [
+        {
+          "heading": "Cómo viaja un correo",
+          "body": "El correo electrónico se compone de un **cliente** (la aplicación que escribe y lee) y uno o varios **servidores**. El envío se hace con **SMTP**; la recepción se hace con **POP3** o **IMAP**.\n\nUn mensaje tiene **cabeceras** (De, Para, Asunto, Fecha, Message-ID) y un **cuerpo**. El estándar **MIME** permite incluir texto con acentos, HTML y adjuntos, codificando cada parte.\n\nEl correo no es instantáneo ni garantiza entrega: puede rebotar, retrasarse o acabar en spam. Por eso existen registros y protocolos de autenticación del dominio."
+        },
+        {
+          "heading": "Protocolos y puertos",
+          "table": {
+            "columns": [
+              "Protocolo",
+              "Función",
+              "Puertos habituales"
+            ],
+            "rows": [
+              [
+                "SMTP",
+                "Enviar correo entre clientes y servidores",
+                "25, 465 (SMTPS), 587 (sumisión)"
+              ],
+              [
+                "POP3",
+                "Descargar el correo al cliente",
+                "110, 995 (POP3S)"
+              ],
+              [
+                "IMAP",
+                "Sincronizar carpetas y estado en el servidor",
+                "143, 993 (IMAPS)"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "POP3 frente a IMAP",
+          "body": "**POP3** descarga los mensajes y, según la configuración, puede borrarlos del servidor. Es útil si se usa un solo dispositivo y se quiere liberar el buzón, pero no sincroniza carpetas ni estados.\n\n**IMAP** mantiene el correo en el servidor y sincroniza carpetas, leídos/no leídos y marcas entre varios dispositivos. Es la opción habitual hoy, especialmente con buzones grandes.\n\nLa elección depende del uso: POP3 para un único equipo con conexión intermitente; IMAP para móvil, portátil y webmail a la vez."
+        },
+        {
+          "heading": "Seguridad y buenas prácticas",
+          "body": "El correo es uno de los principales vectores de **phishing** y malware. Hay que desconfiar de remitentes desconocidos, enlaces acortados, urgencias y adjuntos inesperados; verificar el dominio real y no reutilizar contraseñas.\n\nBuenas prácticas:\n\n- Usar **TLS** (SMTPS/IMAPS/POP3S) y autenticación moderna.\n- Activar **segundo factor** y revisar las reglas de reenvío.\n- No abrir adjuntos ejecutables sin analizarlos.\n- Cifrar los mensajes sensibles o usar un canal seguro alternativo.\n- Mantener copias y una política de retención clara."
+        },
+        {
+          "heading": "Colaboración más allá del correo",
+          "body": "Las suites de colaboración añaden **calendarios** (a menudo CalDAV), **contactos**, **tareas**, **chat**, **videollamadas** y **almacenamiento compartido**. La clave es la identidad única y los permisos por grupo.\n\nEn la administración pública, la colaboración debe respetar la **protección de datos**, la **accesibilidad** y la **trazabilidad**. No todos los documentos pueden subirse a cualquier nube: hay que clasificar la información y usar el servicio aprobado."
+        },
+        {
+          "heading": "Ejemplo resuelto",
+          "body": "**Supuesto.** Un ayuntamiento configura el correo de una nueva técnica: usará el portátil, el móvil y el webmail, y debe conservar las carpetas.\n\n**Resolución.**\n\n- Se configura **IMAP** con TLS en el cliente, no POP3, para sincronizar carpetas y estados.\n- El envío se configura por **SMTP con autenticación** (puerto 587 o 465).\n- Se activa **segundo factor** y se revisan las reglas de reenvío automático.\n- Se firma el correo con la política de la organización y se forma al usuario en phishing.\n- Los documentos sensibles se comparten por el repositorio corporativo, no como adjuntos masivos.\n\n**Conclusión.** La elección de protocolo depende de cuántos dispositivos y de si se necesita sincronización; la seguridad no está en el cliente, sino en la configuración y los hábitos."
+        }
+      ],
+      "practiceSlug": "ii-16"
     },
     "III.19": {
       "path": "III.19",
@@ -2586,6 +2858,287 @@
           "source": {
             "label": "Ley 9/2017, de 8 de noviembre, de Contratos del Sector Público, por la que se transponen al ordenamiento jurídico español las Directivas 2014/23/UE y 2014/24/UE",
             "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2017-12902"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "i-11",
+      "tema_path": "I.11",
+      "title": "Práctica · Igualdad y violencia de género",
+      "source": {
+        "label": "Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres; Ley Orgánica 1/2004, de medidas de protección integral contra la violencia de género",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6115"
+      },
+      "questions": [
+        {
+          "stem": "¿Qué norma regula la igualdad efectiva entre mujeres y hombres en España?",
+          "options": [
+            {
+              "key": "a",
+              "text": "La Ley Orgánica 3/2007"
+            },
+            {
+              "key": "b",
+              "text": "La Ley 39/2015"
+            },
+            {
+              "key": "c",
+              "text": "La Ley 7/1985"
+            },
+            {
+              "key": "d",
+              "text": "La Ley 9/2017"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La Ley Orgánica 3/2007, de 22 de marzo, regula la igualdad efectiva de mujeres y hombres.",
+          "source": {
+            "label": "Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres; Ley Orgánica 1/2004, de medidas de protección integral contra la violencia de género",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6115"
+          }
+        },
+        {
+          "stem": "¿Dónde se reconoce la igualdad ante la ley sin discriminación por razón de sexo?",
+          "options": [
+            {
+              "key": "a",
+              "text": "En el artículo 14 de la Constitución"
+            },
+            {
+              "key": "b",
+              "text": "En el artículo 1 del Código Civil"
+            },
+            {
+              "key": "c",
+              "text": "En la Ley de Contratos del Sector Público"
+            },
+            {
+              "key": "d",
+              "text": "En el Reglamento de protección de datos"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El artículo 14 de la Constitución reconoce la igualdad ante la ley y prohíbe la discriminación por razón de sexo.",
+          "source": {
+            "label": "Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres; Ley Orgánica 1/2004, de medidas de protección integral contra la violencia de género",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6115"
+          }
+        },
+        {
+          "stem": "¿Qué es una acción positiva?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Una medida temporal para corregir una desigualdad real"
+            },
+            {
+              "key": "b",
+              "text": "Un privilegio permanente para un grupo"
+            },
+            {
+              "key": "c",
+              "text": "Una sanción por discriminación"
+            },
+            {
+              "key": "d",
+              "text": "Un subsidio económico sin finalidad"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Las acciones positivas son medidas temporales y justificadas para corregir desigualdades de hecho y alcanzar la igualdad efectiva.",
+          "source": {
+            "label": "Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres; Ley Orgánica 1/2004, de medidas de protección integral contra la violencia de género",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6115"
+          }
+        },
+        {
+          "stem": "¿Qué significa transversalidad de género?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Aplicar la perspectiva de género en todas las políticas y actuaciones"
+            },
+            {
+              "key": "b",
+              "text": "Crear una única oficina de igualdad"
+            },
+            {
+              "key": "c",
+              "text": "Contratar solo a mujeres"
+            },
+            {
+              "key": "d",
+              "text": "Sustituir los planes de igualdad por campañas"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La transversalidad exige incorporar la perspectiva de género en el conjunto de las políticas públicas, no solo en un área específica.",
+          "source": {
+            "label": "Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres; Ley Orgánica 1/2004, de medidas de protección integral contra la violencia de género",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6115"
+          }
+        },
+        {
+          "stem": "¿Qué es la corresponsabilidad?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Repartir el cuidado y las tareas domésticas entre mujeres y hombres"
+            },
+            {
+              "key": "b",
+              "text": "Que la mujer asuma el cuidado familiar"
+            },
+            {
+              "key": "c",
+              "text": "Que la empresa decida los permisos"
+            },
+            {
+              "key": "d",
+              "text": "Una sanción por absentismo"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La corresponsabilidad implica un reparto equilibrado de las responsabilidades familiares y domésticas.",
+          "source": {
+            "label": "Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres; Ley Orgánica 1/2004, de medidas de protección integral contra la violencia de género",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6115"
+          }
+        },
+        {
+          "stem": "¿Qué regula la Ley Orgánica 1/2004?",
+          "options": [
+            {
+              "key": "a",
+              "text": "La protección integral contra la violencia de género"
+            },
+            {
+              "key": "b",
+              "text": "El procedimiento administrativo"
+            },
+            {
+              "key": "c",
+              "text": "La contratación pública"
+            },
+            {
+              "key": "d",
+              "text": "El régimen local"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La LO 1/2004 establece medidas de protección integral contra la violencia de género.",
+          "source": {
+            "label": "Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres; Ley Orgánica 1/2004, de medidas de protección integral contra la violencia de género",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6115"
+          }
+        },
+        {
+          "stem": "¿Qué tipos de violencia incluye la violencia de género?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Solo la física"
+            },
+            {
+              "key": "b",
+              "text": "La física, psicológica, sexual, económica y digital"
+            },
+            {
+              "key": "c",
+              "text": "Solo la que ocurre en el domicilio"
+            },
+            {
+              "key": "d",
+              "text": "Solo la que causa lesiones graves"
+            }
+          ],
+          "correct": "b",
+          "explanation": "La violencia de género incluye manifestaciones físicas, psicológicas, sexuales, económicas y digitales, no solo las agresiones físicas.",
+          "source": {
+            "label": "Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres; Ley Orgánica 1/2004, de medidas de protección integral contra la violencia de género",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6115"
+          }
+        },
+        {
+          "stem": "¿Qué recurso judicial protege de forma inmediata a una víctima de violencia de género?",
+          "options": [
+            {
+              "key": "a",
+              "text": "La orden de protección"
+            },
+            {
+              "key": "b",
+              "text": "El recurso de amparo"
+            },
+            {
+              "key": "c",
+              "text": "La moción de censura"
+            },
+            {
+              "key": "d",
+              "text": "El aval bancario"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La orden de protección es la medida judicial que puede acordar protección inmediata y coordinar las medidas civiles y penales.",
+          "source": {
+            "label": "Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres; Ley Orgánica 1/2004, de medidas de protección integral contra la violencia de género",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6115"
+          }
+        },
+        {
+          "stem": "¿Qué debe incluir un plan municipal de igualdad para ser útil?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Solo una declaración de intenciones"
+            },
+            {
+              "key": "b",
+              "text": "Objetivos medibles, medidas, responsables, presupuesto y evaluación"
+            },
+            {
+              "key": "c",
+              "text": "Únicamente formación para el personal"
+            },
+            {
+              "key": "d",
+              "text": "Un listado de sanciones"
+            }
+          ],
+          "correct": "b",
+          "explanation": "Un plan de igualdad debe concretar objetivos, medidas, responsables, recursos y mecanismos de seguimiento y evaluación.",
+          "source": {
+            "label": "Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres; Ley Orgánica 1/2004, de medidas de protección integral contra la violencia de género",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6115"
+          }
+        },
+        {
+          "stem": "¿Qué papel tiene la coordinación entre administraciones en la violencia de género?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Evitar que la víctima reciba ayuda"
+            },
+            {
+              "key": "b",
+              "text": "Garantizar una respuesta integral y evitar actuaciones aisladas"
+            },
+            {
+              "key": "c",
+              "text": "Sustituir a los jueces"
+            },
+            {
+              "key": "d",
+              "text": "Limitar el acceso a los servicios sociales"
+            }
+          ],
+          "correct": "b",
+          "explanation": "La protección integral exige coordinar servicios sociales, sanitarios, policiales y judiciales para evitar lagunas y duplicidades.",
+          "source": {
+            "label": "Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres; Ley Orgánica 1/2004, de medidas de protección integral contra la violencia de género",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6115"
           }
         }
       ]
@@ -5401,6 +5954,849 @@
       ]
     },
     {
+      "slug": "ii-14",
+      "tema_path": "II.14",
+      "title": "Práctica · Sistemas operativos de usuario",
+      "source": {
+        "label": "Microsoft Learn — Documentación de Windows",
+        "url": "https://learn.microsoft.com/es-es/windows/"
+      },
+      "questions": [
+        {
+          "stem": "¿Cuál es una función del sistema operativo?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Gestionar procesos, memoria, ficheros y usuarios"
+            },
+            {
+              "key": "b",
+              "text": "Diseñar la base de datos de la aplicación"
+            },
+            {
+              "key": "c",
+              "text": "Redactar las leyes de la organización"
+            },
+            {
+              "key": "d",
+              "text": "Sustituir al cortafuegos de red"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El sistema operativo gestiona los recursos del equipo (procesos, memoria, almacenamiento, usuarios y dispositivos).",
+          "source": {
+            "label": "Microsoft Learn — Documentación de Windows",
+            "url": "https://learn.microsoft.com/es-es/windows/"
+          }
+        },
+        {
+          "stem": "¿Qué hace el Control de cuentas de usuario (UAC) en Windows?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Pide confirmación cuando una acción requiere privilegios elevados"
+            },
+            {
+              "key": "b",
+              "text": "Crea copias de seguridad automáticas"
+            },
+            {
+              "key": "c",
+              "text": "Cifra todos los discos"
+            },
+            {
+              "key": "d",
+              "text": "Desinstala los controladores"
+            }
+          ],
+          "correct": "a",
+          "explanation": "UAC avisa y pide consentimiento antes de ejecutar acciones que requieren permisos de administrador.",
+          "source": {
+            "label": "Microsoft Learn — Documentación de Windows",
+            "url": "https://learn.microsoft.com/es-es/windows/"
+          }
+        },
+        {
+          "stem": "¿Qué sistema de ficheros es el habitual en Windows y permite permisos NTFS?",
+          "options": [
+            {
+              "key": "a",
+              "text": "FAT32"
+            },
+            {
+              "key": "b",
+              "text": "NTFS"
+            },
+            {
+              "key": "c",
+              "text": "ext4"
+            },
+            {
+              "key": "d",
+              "text": "ISO 9660"
+            }
+          ],
+          "correct": "b",
+          "explanation": "NTFS es el sistema de ficheros habitual de Windows y soporta permisos, herencia y auditoría.",
+          "source": {
+            "label": "Microsoft Learn — Documentación de Windows",
+            "url": "https://learn.microsoft.com/es-es/windows/"
+          }
+        },
+        {
+          "stem": "¿Qué significado tiene el permiso «rwx» para el propietario en Linux?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Lectura, escritura y ejecución"
+            },
+            {
+              "key": "b",
+              "text": "Solo lectura"
+            },
+            {
+              "key": "c",
+              "text": "Lectura y escritura, sin ejecución"
+            },
+            {
+              "key": "d",
+              "text": "Ejecución y borrado"
+            }
+          ],
+          "correct": "a",
+          "explanation": "r = lectura, w = escritura y x = ejecución; los tres bits pueden combinarse.",
+          "source": {
+            "label": "Microsoft Learn — Documentación de Windows",
+            "url": "https://learn.microsoft.com/es-es/windows/"
+          }
+        },
+        {
+          "stem": "¿Con qué comando se cambian los permisos de un fichero en Linux?",
+          "options": [
+            {
+              "key": "a",
+              "text": "chmod"
+            },
+            {
+              "key": "b",
+              "text": "chown"
+            },
+            {
+              "key": "c",
+              "text": "systemctl"
+            },
+            {
+              "key": "d",
+              "text": "apt"
+            }
+          ],
+          "correct": "a",
+          "explanation": "chmod modifica los permisos; chown cambia el propietario y el grupo.",
+          "source": {
+            "label": "Microsoft Learn — Documentación de Windows",
+            "url": "https://learn.microsoft.com/es-es/windows/"
+          }
+        },
+        {
+          "stem": "¿Para qué sirve «sudo» en Linux?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Para ejecutar un comando con privilegios de administrador"
+            },
+            {
+              "key": "b",
+              "text": "Para crear un usuario nuevo"
+            },
+            {
+              "key": "c",
+              "text": "Para montar un disco"
+            },
+            {
+              "key": "d",
+              "text": "Para cambiar el idioma del sistema"
+            }
+          ],
+          "correct": "a",
+          "explanation": "sudo permite ejecutar comandos concretos con privilegios elevados sin iniciar sesión como root.",
+          "source": {
+            "label": "Microsoft Learn — Documentación de Windows",
+            "url": "https://learn.microsoft.com/es-es/windows/"
+          }
+        },
+        {
+          "stem": "¿Qué herramienta de Windows muestra los eventos y errores del sistema?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El Visor de eventos"
+            },
+            {
+              "key": "b",
+              "text": "El Bloc de notas"
+            },
+            {
+              "key": "c",
+              "text": "La calculadora"
+            },
+            {
+              "key": "d",
+              "text": "El explorador de archivos"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El Visor de eventos recoge registros de aplicación, seguridad y sistema que ayudan a diagnosticar fallos.",
+          "source": {
+            "label": "Microsoft Learn — Documentación de Windows",
+            "url": "https://learn.microsoft.com/es-es/windows/"
+          }
+        },
+        {
+          "stem": "¿Qué comando de Linux permite consultar los registros del sistema con systemd?",
+          "options": [
+            {
+              "key": "a",
+              "text": "journalctl"
+            },
+            {
+              "key": "b",
+              "text": "chmod"
+            },
+            {
+              "key": "c",
+              "text": "pacman"
+            },
+            {
+              "key": "d",
+              "text": "top"
+            }
+          ],
+          "correct": "a",
+          "explanation": "journalctl consulta el registro de systemd; top muestra procesos y consumo de recursos.",
+          "source": {
+            "label": "Microsoft Learn — Documentación de Windows",
+            "url": "https://learn.microsoft.com/es-es/windows/"
+          }
+        },
+        {
+          "stem": "¿Qué gestor de paquetes es habitual en Debian y Ubuntu?",
+          "options": [
+            {
+              "key": "a",
+              "text": "apt"
+            },
+            {
+              "key": "b",
+              "text": "dnf"
+            },
+            {
+              "key": "c",
+              "text": "pacman"
+            },
+            {
+              "key": "d",
+              "text": "brew"
+            }
+          ],
+          "correct": "a",
+          "explanation": "apt se usa en la familia Debian/Ubuntu; dnf en Fedora y pacman en Arch.",
+          "source": {
+            "label": "Microsoft Learn — Documentación de Windows",
+            "url": "https://learn.microsoft.com/es-es/windows/"
+          }
+        },
+        {
+          "stem": "¿Cuál es el primer paso ante un problema de acceso a una carpeta compartida?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Comprobar la pertenencia a grupos y los permisos del recurso"
+            },
+            {
+              "key": "b",
+              "text": "Formatear el equipo"
+            },
+            {
+              "key": "c",
+              "text": "Cambiar la placa base"
+            },
+            {
+              "key": "d",
+              "text": "Reinstalar toda la aplicación"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Los fallos de acceso suelen estar en usuarios, grupos, ACL o herencia; conviene diagnosticarlos antes de actuaciones destructivas.",
+          "source": {
+            "label": "Microsoft Learn — Documentación de Windows",
+            "url": "https://learn.microsoft.com/es-es/windows/"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "ii-15",
+      "tema_path": "II.15",
+      "title": "Práctica · Ofimática",
+      "source": {
+        "label": "Documentación oficial de LibreOffice en español",
+        "url": "https://documentation.libreoffice.org/es/documentacion/"
+      },
+      "questions": [
+        {
+          "stem": "¿Qué formato es el nativo de LibreOffice Calc?",
+          "options": [
+            {
+              "key": "a",
+              "text": "ODS"
+            },
+            {
+              "key": "b",
+              "text": "DOCX"
+            },
+            {
+              "key": "c",
+              "text": "PPTX"
+            },
+            {
+              "key": "d",
+              "text": "PDF"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Calc usa ODS (OpenDocument Spreadsheet) como formato nativo; XLSX es el de Excel.",
+          "source": {
+            "label": "Documentación oficial de LibreOffice en español",
+            "url": "https://documentation.libreoffice.org/es/documentacion/"
+          }
+        },
+        {
+          "stem": "¿Qué hace una referencia absoluta como `$A$1`?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Mantiene la referencia al copiar la fórmula"
+            },
+            {
+              "key": "b",
+              "text": "Cambia de fila al copiar"
+            },
+            {
+              "key": "c",
+              "text": "Convierte el valor en texto"
+            },
+            {
+              "key": "d",
+              "text": "Elimina la fórmula"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Los signos `$` fijan columna y fila, de modo que la referencia no se desplaza al copiar la fórmula.",
+          "source": {
+            "label": "Documentación oficial de LibreOffice en español",
+            "url": "https://documentation.libreoffice.org/es/documentacion/"
+          }
+        },
+        {
+          "stem": "¿Para qué sirve la función SUMA?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Sumar los valores de un rango"
+            },
+            {
+              "key": "b",
+              "text": "Ordenar alfabéticamente"
+            },
+            {
+              "key": "c",
+              "text": "Crear una tabla dinámica"
+            },
+            {
+              "key": "d",
+              "text": "Cambiar el formato de una celda"
+            }
+          ],
+          "correct": "a",
+          "explanation": "SUMA agrega los valores de las celdas o rangos indicados.",
+          "source": {
+            "label": "Documentación oficial de LibreOffice en español",
+            "url": "https://documentation.libreoffice.org/es/documentacion/"
+          }
+        },
+        {
+          "stem": "¿Qué permite una tabla dinámica?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Resumir y agrupar datos por filas, columnas y valores"
+            },
+            {
+              "key": "b",
+              "text": "Cambiar el idioma del documento"
+            },
+            {
+              "key": "c",
+              "text": "Firmar digitalmente un PDF"
+            },
+            {
+              "key": "d",
+              "text": "Comprimir imágenes"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Las tablas dinámicas resumen grandes conjuntos de datos y permiten analizarlos desde distintos puntos de vista.",
+          "source": {
+            "label": "Documentación oficial de LibreOffice en español",
+            "url": "https://documentation.libreoffice.org/es/documentacion/"
+          }
+        },
+        {
+          "stem": "¿Por qué conviene usar estilos en un documento de texto?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Para mantener coherencia, generar índices y mejorar la accesibilidad"
+            },
+            {
+              "key": "b",
+              "text": "Para que el documento ocupe más"
+            },
+            {
+              "key": "c",
+              "text": "Para impedir la edición"
+            },
+            {
+              "key": "d",
+              "text": "Para eliminar las tablas"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Los estilos aplican formato coherente y permiten índices automáticos y una estructura accesible.",
+          "source": {
+            "label": "Documentación oficial de LibreOffice en español",
+            "url": "https://documentation.libreoffice.org/es/documentacion/"
+          }
+        },
+        {
+          "stem": "¿Qué formato se recomienda para conservar un documento final sin alterar su apariencia?",
+          "options": [
+            {
+              "key": "a",
+              "text": "PDF"
+            },
+            {
+              "key": "b",
+              "text": "TXT"
+            },
+            {
+              "key": "c",
+              "text": "CSV"
+            },
+            {
+              "key": "d",
+              "text": "ODP"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El PDF conserva la apariencia y es el formato habitual de distribución; PDF/A se usa para conservación a largo plazo.",
+          "source": {
+            "label": "Documentación oficial de LibreOffice en español",
+            "url": "https://documentation.libreoffice.org/es/documentacion/"
+          }
+        },
+        {
+          "stem": "¿Qué hay que comprobar al importar un CSV en una hoja de cálculo?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El separador y la codificación de caracteres"
+            },
+            {
+              "key": "b",
+              "text": "El color de la primera fila"
+            },
+            {
+              "key": "c",
+              "text": "El número de diapositivas"
+            },
+            {
+              "key": "d",
+              "text": "La firma digital"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Un CSV no guarda tipos ni formato; el separador y la codificación (por ejemplo, UTF-8) determinan si las columnas y acentos se leen bien.",
+          "source": {
+            "label": "Documentación oficial de LibreOffice en español",
+            "url": "https://documentation.libreoffice.org/es/documentacion/"
+          }
+        },
+        {
+          "stem": "¿Qué es una plantilla maestra en una presentación?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Un patrón que define fondos, fuentes y estilos de las diapositivas"
+            },
+            {
+              "key": "b",
+              "text": "Una diapositiva con una imagen"
+            },
+            {
+              "key": "c",
+              "text": "Un archivo PDF"
+            },
+            {
+              "key": "d",
+              "text": "Una hoja de cálculo"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La plantilla maestra da coherencia visual y evita repetir formato en cada diapositiva.",
+          "source": {
+            "label": "Documentación oficial de LibreOffice en español",
+            "url": "https://documentation.libreoffice.org/es/documentacion/"
+          }
+        },
+        {
+          "stem": "¿Para qué sirve LibreOffice Base?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Para crear bases de datos de escritorio, consultas e informes"
+            },
+            {
+              "key": "b",
+              "text": "Para editar vídeo"
+            },
+            {
+              "key": "c",
+              "text": "Para diseñar circuitos"
+            },
+            {
+              "key": "d",
+              "text": "Para navegar por internet"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Base es el componente de bases de datos de LibreOffice, útil para pequeñas aplicaciones locales.",
+          "source": {
+            "label": "Documentación oficial de LibreOffice en español",
+            "url": "https://documentation.libreoffice.org/es/documentacion/"
+          }
+        },
+        {
+          "stem": "¿Qué mejora la accesibilidad de un documento ofimático?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Usar texto alternativo, estructura de encabezados y buen contraste"
+            },
+            {
+              "key": "b",
+              "text": "Usar solo imágenes escaneadas"
+            },
+            {
+              "key": "c",
+              "text": "Eliminar los estilos"
+            },
+            {
+              "key": "d",
+              "text": "Guardar todo en CSV"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El texto alternativo, la jerarquía de encabezados y el contraste permiten que más personas y tecnologías de apoyo usen el documento.",
+          "source": {
+            "label": "Documentación oficial de LibreOffice en español",
+            "url": "https://documentation.libreoffice.org/es/documentacion/"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "ii-16",
+      "tema_path": "II.16",
+      "title": "Práctica · Correo electrónico y colaboración",
+      "source": {
+        "label": "IETF RFC 5321 — Simple Mail Transfer Protocol (SMTP)",
+        "url": "https://datatracker.ietf.org/doc/html/rfc5321"
+      },
+      "questions": [
+        {
+          "stem": "¿Qué protocolo se usa para enviar correo electrónico?",
+          "options": [
+            {
+              "key": "a",
+              "text": "SMTP"
+            },
+            {
+              "key": "b",
+              "text": "POP3"
+            },
+            {
+              "key": "c",
+              "text": "IMAP"
+            },
+            {
+              "key": "d",
+              "text": "CalDAV"
+            }
+          ],
+          "correct": "a",
+          "explanation": "SMTP (Simple Mail Transfer Protocol) se usa para el envío entre cliente y servidor y entre servidores.",
+          "source": {
+            "label": "IETF RFC 5321 — Simple Mail Transfer Protocol (SMTP)",
+            "url": "https://datatracker.ietf.org/doc/html/rfc5321"
+          }
+        },
+        {
+          "stem": "¿Qué protocolo sincroniza carpetas y estados entre varios dispositivos?",
+          "options": [
+            {
+              "key": "a",
+              "text": "IMAP"
+            },
+            {
+              "key": "b",
+              "text": "POP3"
+            },
+            {
+              "key": "c",
+              "text": "SMTP"
+            },
+            {
+              "key": "d",
+              "text": "DNS"
+            }
+          ],
+          "correct": "a",
+          "explanation": "IMAP mantiene el correo en el servidor y sincroniza carpetas, leídos y marcas entre dispositivos.",
+          "source": {
+            "label": "IETF RFC 5321 — Simple Mail Transfer Protocol (SMTP)",
+            "url": "https://datatracker.ietf.org/doc/html/rfc5321"
+          }
+        },
+        {
+          "stem": "¿Qué hace POP3 al descargar el correo?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Puede descargar los mensajes y, según la configuración, borrarlos del servidor"
+            },
+            {
+              "key": "b",
+              "text": "Sincroniza siempre todas las carpetas"
+            },
+            {
+              "key": "c",
+              "text": "Envía el correo a otro dominio"
+            },
+            {
+              "key": "d",
+              "text": "Cifra el disco del usuario"
+            }
+          ],
+          "correct": "a",
+          "explanation": "POP3 está orientado a descargar; según la configuración puede eliminar los mensajes del servidor, a diferencia de IMAP.",
+          "source": {
+            "label": "IETF RFC 5321 — Simple Mail Transfer Protocol (SMTP)",
+            "url": "https://datatracker.ietf.org/doc/html/rfc5321"
+          }
+        },
+        {
+          "stem": "¿Qué permite MIME en un mensaje?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Incluir texto con acentos, HTML y adjuntos codificados"
+            },
+            {
+              "key": "b",
+              "text": "Comprimir el buzón"
+            },
+            {
+              "key": "c",
+              "text": "Firmar digitalmente el dominio"
+            },
+            {
+              "key": "d",
+              "text": "Cambiar la contraseña"
+            }
+          ],
+          "correct": "a",
+          "explanation": "MIME define cómo codificar las distintas partes del mensaje (texto, HTML y adjuntos) para que se transmitan correctamente.",
+          "source": {
+            "label": "IETF RFC 5321 — Simple Mail Transfer Protocol (SMTP)",
+            "url": "https://datatracker.ietf.org/doc/html/rfc5321"
+          }
+        },
+        {
+          "stem": "¿Qué puerto es habitual para la sumisión de correo con autenticación?",
+          "options": [
+            {
+              "key": "a",
+              "text": "587"
+            },
+            {
+              "key": "b",
+              "text": "110"
+            },
+            {
+              "key": "c",
+              "text": "143"
+            },
+            {
+              "key": "d",
+              "text": "53"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El puerto 587 se usa para sumisión de correo autenticada; 465 es SMTPS y 25 el envío entre servidores.",
+          "source": {
+            "label": "IETF RFC 5321 — Simple Mail Transfer Protocol (SMTP)",
+            "url": "https://datatracker.ietf.org/doc/html/rfc5321"
+          }
+        },
+        {
+          "stem": "¿Qué protocolo usa el puerto 993?",
+          "options": [
+            {
+              "key": "a",
+              "text": "IMAPS"
+            },
+            {
+              "key": "b",
+              "text": "POP3S"
+            },
+            {
+              "key": "c",
+              "text": "SMTP"
+            },
+            {
+              "key": "d",
+              "text": "HTTP"
+            }
+          ],
+          "correct": "a",
+          "explanation": "993 es el puerto seguro de IMAP (IMAPS); 995 es POP3S y 465 SMTPS.",
+          "source": {
+            "label": "IETF RFC 5321 — Simple Mail Transfer Protocol (SMTP)",
+            "url": "https://datatracker.ietf.org/doc/html/rfc5321"
+          }
+        },
+        {
+          "stem": "¿Qué es el phishing?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Un fraude que suplanta a una entidad para robar credenciales o datos"
+            },
+            {
+              "key": "b",
+              "text": "Un protocolo de correo"
+            },
+            {
+              "key": "c",
+              "text": "Un formato de adjunto"
+            },
+            {
+              "key": "d",
+              "text": "Un tipo de firma digital"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El phishing suplanta a una entidad de confianza para que la víctima entregue datos o abra un adjunto malicioso.",
+          "source": {
+            "label": "IETF RFC 5321 — Simple Mail Transfer Protocol (SMTP)",
+            "url": "https://datatracker.ietf.org/doc/html/rfc5321"
+          }
+        },
+        {
+          "stem": "¿Cuál es una buena práctica de seguridad en el correo?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Usar TLS, segundo factor y desconfiar de adjuntos inesperados"
+            },
+            {
+              "key": "b",
+              "text": "Compartir la contraseña con el equipo"
+            },
+            {
+              "key": "c",
+              "text": "Desactivar el filtro de spam"
+            },
+            {
+              "key": "d",
+              "text": "Abrir todos los enlaces para comprobar si funcionan"
+            }
+          ],
+          "correct": "a",
+          "explanation": "TLS, segundo factor y prudencia con enlaces y adjuntos reducen el riesgo de interceptación y phishing.",
+          "source": {
+            "label": "IETF RFC 5321 — Simple Mail Transfer Protocol (SMTP)",
+            "url": "https://datatracker.ietf.org/doc/html/rfc5321"
+          }
+        },
+        {
+          "stem": "¿Qué ventaja tiene IMAP para un usuario con móvil, portátil y webmail?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Mantiene el mismo estado y carpetas en todos los dispositivos"
+            },
+            {
+              "key": "b",
+              "text": "Ocupa menos en el servidor"
+            },
+            {
+              "key": "c",
+              "text": "No necesita contraseña"
+            },
+            {
+              "key": "d",
+              "text": "Envía el correo más rápido"
+            }
+          ],
+          "correct": "a",
+          "explanation": "IMAP sincroniza el buzón en el servidor, por lo que el estado se ve igual desde todos los dispositivos.",
+          "source": {
+            "label": "IETF RFC 5321 — Simple Mail Transfer Protocol (SMTP)",
+            "url": "https://datatracker.ietf.org/doc/html/rfc5321"
+          }
+        },
+        {
+          "stem": "¿Qué documento no conviene enviar como adjunto masivo sin más?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Un documento con datos personales sensibles"
+            },
+            {
+              "key": "b",
+              "text": "Una convocatoria pública"
+            },
+            {
+              "key": "c",
+              "text": "Un horario sin datos personales"
+            },
+            {
+              "key": "d",
+              "text": "Un cartel de un evento"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Los datos personales sensibles deben compartirse por canales aprobados, con cifrado y control de acceso, no como adjunto abierto.",
+          "source": {
+            "label": "IETF RFC 5321 — Simple Mail Transfer Protocol (SMTP)",
+            "url": "https://datatracker.ietf.org/doc/html/rfc5321"
+          }
+        }
+      ]
+    },
+    {
       "slug": "iii-19",
       "tema_path": "III.19",
       "title": "Práctica · Virtualización y contenedores",
@@ -7370,12 +8766,12 @@
   ],
   "progress": {
     "total": 40,
-    "apuntesCompletos": 19,
+    "apuntesCompletos": 23,
     "soloResumen": 0,
-    "pendientes": 21,
-    "conPractica": 19,
-    "sinPractica": 21,
-    "questions": 190,
+    "pendientes": 17,
+    "conPractica": 23,
+    "sinPractica": 17,
+    "questions": 230,
     "convocatorias": 12
   }
 }
