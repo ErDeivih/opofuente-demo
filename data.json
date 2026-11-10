@@ -360,10 +360,10 @@
         "title": "Datos y desarrollo",
         "coverage": {
           "total": 7,
-          "conApuntes": 3,
+          "conApuntes": 6,
           "soloResumen": 0,
-          "pendientes": 4,
-          "conPractica": 3
+          "pendientes": 1,
+          "conPractica": 6
         },
         "topics": [
           {
@@ -393,26 +393,26 @@
           {
             "path": "IV.30",
             "title": "Programación",
-            "apuntesStatus": "pendiente",
-            "practicaStatus": "pendiente",
-            "sectionCount": 0,
-            "questionCount": 0
+            "apuntesStatus": "completos",
+            "practicaStatus": "con_practica",
+            "sectionCount": 7,
+            "questionCount": 10
           },
           {
             "path": "IV.31",
             "title": "Desarrollo web",
-            "apuntesStatus": "pendiente",
-            "practicaStatus": "pendiente",
-            "sectionCount": 0,
-            "questionCount": 0
+            "apuntesStatus": "completos",
+            "practicaStatus": "con_practica",
+            "sectionCount": 7,
+            "questionCount": 10
           },
           {
             "path": "IV.32",
             "title": "Interoperabilidad e integración",
-            "apuntesStatus": "pendiente",
-            "practicaStatus": "pendiente",
-            "sectionCount": 0,
-            "questionCount": 0
+            "apuntesStatus": "completos",
+            "practicaStatus": "con_practica",
+            "sectionCount": 7,
+            "questionCount": 10
           },
           {
             "path": "IV.33",
@@ -2713,6 +2713,234 @@
         }
       ],
       "practiceSlug": "iv-29"
+    },
+    "IV.30": {
+      "path": "IV.30",
+      "title": "Programación",
+      "apuntesStatus": "completos",
+      "practicaStatus": "con_practica",
+      "sectionCount": 7,
+      "questionCount": 10,
+      "source": {
+        "label": "Python 3 — Tutorial oficial",
+        "url": "https://docs.python.org/3/tutorial/"
+      },
+      "sections": [
+        {
+          "heading": "Lenguajes, paradigmas y ejecución",
+          "body": "Un **lenguaje de programación** permite expresar instrucciones que un ordenador ejecuta. Se clasifican por su nivel de abstracción y por su paradigma: **imperativo**, **orientado a objetos**, **funcional** o **declarativo**.\n\nEn los lenguajes **compilados** el código se traduce antes de ejecutarse (C, Go); en los **interpretados** se ejecuta mediante un intérprete o una máquina virtual (Python, JavaScript). Algunos usan un proceso mixto (Java: bytecode y JVM).\n\nLa elección depende del problema, el rendimiento, el ecosistema y el equipo, no solo de la sintaxis."
+        },
+        {
+          "heading": "Variables, tipos y estructuras",
+          "body": "Una **variable** es un nombre que referencia un valor. Los **tipos** definen qué operaciones se pueden hacer: números, cadenas, booleanos, fechas.\n\nLas **estructuras de datos** organizan varios valores: listas/arrays (ordenadas por índice), diccionarios/mapas (clave-valor), conjuntos (sin duplicados) y registros/objetos. Elegir bien la estructura cambia el rendimiento y la claridad.\n\nLos lenguajes con **tipado dinámico** comprueban tipos en ejecución; los de **tipado estático** los comprueban al compilar. Las anotaciones de tipo ayudan aunque el lenguaje no las exija."
+        },
+        {
+          "heading": "Control de flujo y funciones",
+          "body": "El control de flujo incluye **condicionales** (`if`/`else`), **bucles** (`for`, `while`) y **saltos** (`break`, `continue`). Un bucle debe tener una condición de salida clara para evitar bucles infinitos.\n\nUna **función** agrupa código reutilizable con parámetros y un valor de retorno. Las funciones deben hacer una cosa, tener un nombre claro y evitar efectos secundarios ocultos. La **modularidad** divide el programa en piezas pequeñas y testeables.\n\nEl manejo de **excepciones** permite tratar errores previstos sin detener el programa de forma brusca."
+        },
+        {
+          "heading": "Programación orientada a objetos",
+          "body": "La **POO** organiza el código en **clases** (plantillas) y **objetos** (instancias). Una clase define atributos (datos) y métodos (comportamiento).\n\nSus pilares son **encapsulación** (ocultar detalles internos), **herencia** (reutilizar comportamiento) y **polimorfismo** (mismo mensaje, comportamientos distintos). La composición (tener un objeto) suele ser preferible a la herencia excesiva.\n\nLos principios SOLID y los patrones de diseño ayudan, pero no sustituyen el criterio: no se aplican por moda."
+        },
+        {
+          "heading": "Control de versiones y calidad",
+          "body": "**Git** registra la historia del código. Un **commit** guarda un cambio con un mensaje; una **rama** permite trabajar aislado; un **merge** integra; un **conflicto** se resuelve manualmente.\n\nLa calidad incluye **pruebas automatizadas** (unitarias, integración), revisión de código, análisis estático y documentación. Un cambio sin prueba es una apuesta; una prueba que no se ejecuta, una falsa seguridad.\n\nLos mensajes de commit y los nombres claros son documentación para el futuro."
+        },
+        {
+          "heading": "Tabla de conceptos",
+          "table": {
+            "columns": [
+              "Concepto",
+              "Qué es",
+              "Ejemplo"
+            ],
+            "rows": [
+              [
+                "Variable",
+                "Nombre que referencia un valor",
+                "`total = 0`"
+              ],
+              [
+                "Lista",
+                "Secuencia ordenada por índice",
+                "`[10, 20, 30]`"
+              ],
+              [
+                "Diccionario",
+                "Pares clave-valor",
+                "`{\"a\": 1, \"b\": 2}`"
+              ],
+              [
+                "Función",
+                "Bloque reutilizable con parámetros",
+                "`def suma(a, b): ...`"
+              ],
+              [
+                "Clase",
+                "Plantilla de objetos",
+                "`class Expediente: ...`"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Ejemplo resuelto",
+          "body": "**Supuesto.** Se quiere contar cuántos expedientes de 2026 superan un importe y agruparlos por tipo.\n\n**Resolución.**\n\n- Se leen los expedientes en una **lista** de diccionarios.\n- Se recorre con un bucle y se filtra con un condicional por año e importe.\n- Se agrupa en un **diccionario** cuya clave es el tipo y cuyo valor es el contador.\n- Se extrae la lógica a una **función** `contar_por_tipo(expedientes)` para poder probarla.\n- Se escribe una **prueba** con datos de ejemplo y se versiona con Git.\n\n**Conclusión.** Un programa claro separa datos, lógica y presentación; las funciones pequeñas y las pruebas permiten cambiarlo sin miedo."
+        }
+      ],
+      "practiceSlug": "iv-30"
+    },
+    "IV.31": {
+      "path": "IV.31",
+      "title": "Desarrollo web",
+      "apuntesStatus": "completos",
+      "practicaStatus": "con_practica",
+      "sectionCount": 7,
+      "questionCount": 10,
+      "source": {
+        "label": "MDN Web Docs — Documentación web",
+        "url": "https://developer.mozilla.org/es/docs/Web"
+      },
+      "sections": [
+        {
+          "heading": "Cómo funciona la web",
+          "body": "El navegador envía una **petición HTTP** a un servidor y recibe una **respuesta**. La petición incluye método, URL, cabeceras y, a veces, cuerpo; la respuesta incluye código de estado, cabeceras y contenido.\n\nLos métodos habituales son **GET** (obtener), **POST** (crear), **PUT/PATCH** (actualizar) y **DELETE** (eliminar). Los códigos de estado se agrupan: **2xx** éxito, **3xx** redirección, **4xx** error del cliente y **5xx** error del servidor.\n\nHTTPS cifra la comunicación y autentica el servidor mediante certificados; hoy es obligatorio para cualquier servicio con datos personales."
+        },
+        {
+          "heading": "Front-end: estructura, estilo y comportamiento",
+          "body": "El **front-end** es la parte que se ejecuta en el navegador:\n\n- **HTML** define la estructura y el significado (encabezados, listas, formularios).\n- **CSS** define la presentación y el diseño responsive.\n- **JavaScript** añade comportamiento e interactividad.\n\nUn desarrollo accesible usa HTML semántico, contraste suficiente, foco visible, texto alternativo y navegación por teclado. El diseño **responsive** adapta la interfaz a móvil, tableta y escritorio; no es solo “que quepa”, sino que sea usable."
+        },
+        {
+          "heading": "Back-end y APIs",
+          "body": "El **back-end** ejecuta la lógica en el servidor: valida datos, aplica reglas, accede a la base de datos y devuelve respuestas. Puede ser un monolito o varios servicios.\n\nUna **API** expone operaciones para que otros clientes las usen. En **REST** se usan recursos, métodos HTTP y representaciones como **JSON**; cada operación debe ser predecible y documentada. SOAP es otro estilo, basado en XML y contratos WSDL.\n\nLa validación se hace en servidor aunque también se haga en cliente: el navegador no es de confianza."
+        },
+        {
+          "heading": "Seguridad y sesiones",
+          "body": "Los riesgos clásicos son:\n\n- **XSS**: inyectar script en una página; se mitiga escapando la salida y con CSP.\n- **CSRF**: forzar acciones autenticadas; se mitiga con tokens y SameSite.\n- **Inyección SQL**: se evita con consultas parametrizadas.\n- **Sesiones**: cookies `HttpOnly`, `Secure` y `SameSite`, o tokens bien protegidos.\n\nLa autenticación puede ser por sesión o por token; la autorización decide qué puede hacer cada usuario. HTTPS, cabeceras de seguridad y registro de accesos completan la base."
+        },
+        {
+          "heading": "Rendimiento y despliegue",
+          "body": "El rendimiento se mide: tamaño de recursos, número de peticiones, caché, compresión, imágenes optimizadas y tiempo de respuesta del servidor. Las **cachés** (navegador, CDN, servidor) reducen latencia, pero hay que invalidarlas correctamente.\n\nEl despliegue puede ser estático (HTML/CSS/JS servidos desde CDN) o dinámico (servidor y base de datos). Los entornos de desarrollo, pruebas y producción deben estar separados, y los cambios se despliegan con un proceso reproducible.\n\nLa monitorización y los registros permiten detectar errores y ataques después de publicar."
+        },
+        {
+          "heading": "Tabla front-end / back-end",
+          "table": {
+            "columns": [
+              "Capa",
+              "Tecnologías",
+              "Responsabilidad"
+            ],
+            "rows": [
+              [
+                "Front-end",
+                "HTML, CSS, JavaScript, React",
+                "Interfaz y experiencia de usuario"
+              ],
+              [
+                "Back-end",
+                "Python, Java, Node.js, PHP",
+                "Lógica, validación y acceso a datos"
+              ],
+              [
+                "API",
+                "REST/JSON, SOAP/XML",
+                "Comunicación entre sistemas"
+              ],
+              [
+                "Datos",
+                "SQL, NoSQL",
+                "Persistencia"
+              ],
+              [
+                "Entrega",
+                "CDN, servidor web, contenedores",
+                "Publicación y escalado"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Ejemplo resuelto",
+          "body": "**Supuesto.** El ayuntamiento quiere una web para consultar el estado de un expediente por número.\n\n**Resolución.**\n\n- **Front-end** accesible con un formulario; validación en cliente para ayudar, pero no como única defensa.\n- **API REST** `GET /expedientes/{numero}` que devuelve JSON; si no existe, `404`; si el usuario no está autorizado, `401/403`.\n- **Back-end** valida el número, consulta con consulta parametrizada y registra el acceso.\n- **Seguridad**: HTTPS, cookie de sesión `HttpOnly`/`Secure`, protección XSS/CSRF y límites de peticiones.\n- **Rendimiento**: caché de recursos estáticos y respuestas JSON ligeras.\n\n**Conclusión.** Una web no es solo HTML: es una cadena de capas donde la seguridad y la validación deben estar en el servidor."
+        }
+      ],
+      "practiceSlug": "iv-31"
+    },
+    "IV.32": {
+      "path": "IV.32",
+      "title": "Interoperabilidad e integración",
+      "apuntesStatus": "completos",
+      "practicaStatus": "con_practica",
+      "sectionCount": 7,
+      "questionCount": 10,
+      "source": {
+        "label": "IETF RFC 8259 — The JavaScript Object Notation (JSON) Data Interchange Format",
+        "url": "https://datatracker.ietf.org/doc/html/rfc8259"
+      },
+      "sections": [
+        {
+          "heading": "Qué es la interoperabilidad",
+          "body": "La **interoperabilidad** es la capacidad de dos sistemas para intercambiar información y usarla de forma útil. No basta con que los datos viajen: deben tener un **formato** y un **significado** acordados.\n\nSe distinguen niveles: técnico (protocolos y formatos), semántico (mismo significado de los datos) y organizativo (procesos y responsabilidades). Sin acuerdo semántico, dos sistemas pueden “hablar” y no entenderse.\n\nEn el sector público, la interoperabilidad es un requisito legal y técnico: los ciudadanos no deberían aportar datos que la Administración ya tiene."
+        },
+        {
+          "heading": "Patrones de integración",
+          "body": "Los patrones habituales son:\n\n- **Punto a punto**: cada sistema se conecta directamente con otro; sencillo al principio, difícil de mantener con muchos sistemas.\n- **Bus de servicios (ESB)**: intermediario que enruta, transforma y media entre sistemas.\n- **API gateway**: punto único de entrada para APIs, con autenticación, límites y monitorización.\n- **ETL/ELT**: extraer, transformar y cargar datos para analítica o sincronización.\n\nLa elección depende del número de sistemas, la criticidad y el acoplamiento que se quiera tolerar."
+        },
+        {
+          "heading": "Formatos e intercambio",
+          "body": "**JSON** es ligero y legible, habitual en APIs REST. **XML** es más verboso pero permite esquemas (XSD) y namespaces; se usa en SOAP y en muchos estándares administrativos.\n\n**CSV** sirve para datos tabulares, pero no define tipos ni jerarquía; hay que acordar separador, codificación y cabeceras. Los **esquemas** (JSON Schema, XSD) validan la estructura y evitan errores.\n\nLa codificación debe ser explícita (UTF-8 recomendado) y las fechas, con formato y zona horaria acordados."
+        },
+        {
+          "heading": "APIs, autenticación y errores",
+          "body": "Una **API** debe documentar recursos, parámetros, códigos de error, paginación y versionado. En REST, las operaciones idempotentes (GET, PUT, DELETE) pueden repetirse sin efectos adicionales; POST no es idempotente por defecto.\n\nLa autenticación puede usar **API keys**, **OAuth 2.0** o certificados mutuos. Los permisos se aplican por alcance y por recurso. Los límites de peticiones (rate limiting) protegen el servicio.\n\nLos errores deben ser explícitos y consistentes: código, mensaje y, si procede, detalle; nunca exponer trazas internas o secretos."
+        },
+        {
+          "heading": "Calidad y gobierno de la integración",
+          "body": "La integración se monitoriza: disponibilidad, latencia, errores, reintentos y colas. Los **reintentos** deben ser controlados y, en operaciones sensibles, **idempotentes**.\n\nLa **trazabilidad** (identificador de correlación) permite seguir una operación entre sistemas. Los contratos se versionan y los cambios incompatibles se anuncian.\n\nLa gobernanza define quién puede publicar una API, qué datos comparte y con qué base jurídica."
+        },
+        {
+          "heading": "Tabla de elementos",
+          "table": {
+            "columns": [
+              "Elemento",
+              "Uso",
+              "Riesgo si falta"
+            ],
+            "rows": [
+              [
+                "JSON/XML",
+                "Formato de intercambio",
+                "Datos ilegibles o mal interpretados"
+              ],
+              [
+                "Esquema",
+                "Validar estructura",
+                "Errores silenciosos"
+              ],
+              [
+                "API documentada",
+                "Consumo por terceros",
+                "Integraciones frágiles"
+              ],
+              [
+                "Autenticación",
+                "Identificar al cliente",
+                "Acceso no autorizado"
+              ],
+              [
+                "Idempotencia",
+                "Repetir sin duplicar",
+                "Duplicados y cobros dobles"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Ejemplo resuelto",
+          "body": "**Supuesto.** El sistema de expedientes debe enviar un expediente al sistema de registro de otra administración.\n\n**Resolución.**\n\n- Se acuerda un **contrato**: JSON con campos obligatorios, tipos y esquema; fechas en ISO 8601 y UTF-8.\n- Se expone una **API REST** con `POST /expedientes` y un identificador de correlación; si se repite la petición, se trata como idempotente mediante una clave.\n- Autenticación con **OAuth 2.0** o certificado; permisos por alcance.\n- Se definen errores (`400`, `401`, `403`, `409`, `422`, `500`) y una cola de reintentos.\n- Se monitoriza y se audita cada intercambio.\n\n**Conclusión.** Integrar es acordar contrato, seguridad y errores; el transporte es la parte fácil."
+        }
+      ],
+      "practiceSlug": "iv-32"
     },
     "V.34": {
       "path": "V.34",
@@ -11034,6 +11262,849 @@
       ]
     },
     {
+      "slug": "iv-30",
+      "tema_path": "IV.30",
+      "title": "Práctica · Programación",
+      "source": {
+        "label": "Python 3 — Tutorial oficial",
+        "url": "https://docs.python.org/3/tutorial/"
+      },
+      "questions": [
+        {
+          "stem": "¿Qué es una variable?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Un nombre que referencia un valor"
+            },
+            {
+              "key": "b",
+              "text": "Un tipo de bucle"
+            },
+            {
+              "key": "c",
+              "text": "Un archivo de configuración"
+            },
+            {
+              "key": "d",
+              "text": "Una función del sistema"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La variable asocia un nombre a un valor en memoria; su tipo determina las operaciones posibles.",
+          "source": {
+            "label": "Python 3 — Tutorial oficial",
+            "url": "https://docs.python.org/3/tutorial/"
+          }
+        },
+        {
+          "stem": "¿Qué estructura guarda pares clave-valor?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Diccionario o mapa"
+            },
+            {
+              "key": "b",
+              "text": "Lista"
+            },
+            {
+              "key": "c",
+              "text": "Pila"
+            },
+            {
+              "key": "d",
+              "text": "Cola"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El diccionario/mapa asocia cada clave con un valor y permite acceso rápido por clave.",
+          "source": {
+            "label": "Python 3 — Tutorial oficial",
+            "url": "https://docs.python.org/3/tutorial/"
+          }
+        },
+        {
+          "stem": "¿Para qué sirve un bucle?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Para repetir instrucciones mientras se cumpla una condición"
+            },
+            {
+              "key": "b",
+              "text": "Para declarar una variable"
+            },
+            {
+              "key": "c",
+              "text": "Para definir una clase"
+            },
+            {
+              "key": "d",
+              "text": "Para compilar el programa"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Los bucles repiten un bloque; deben tener una condición de salida para no quedar infinitos.",
+          "source": {
+            "label": "Python 3 — Tutorial oficial",
+            "url": "https://docs.python.org/3/tutorial/"
+          }
+        },
+        {
+          "stem": "¿Qué caracteriza a una función?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Agrupa código reutilizable con parámetros y puede devolver un valor"
+            },
+            {
+              "key": "b",
+              "text": "Solo puede ejecutarse una vez"
+            },
+            {
+              "key": "c",
+              "text": "No puede recibir datos"
+            },
+            {
+              "key": "d",
+              "text": "Siempre imprime en pantalla"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La función encapsula lógica, recibe parámetros y puede retornar un resultado; facilita pruebas y reutilización.",
+          "source": {
+            "label": "Python 3 — Tutorial oficial",
+            "url": "https://docs.python.org/3/tutorial/"
+          }
+        },
+        {
+          "stem": "¿Qué es una clase en POO?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Una plantilla que define atributos y métodos de los objetos"
+            },
+            {
+              "key": "b",
+              "text": "Una variable global"
+            },
+            {
+              "key": "c",
+              "text": "Un bucle"
+            },
+            {
+              "key": "d",
+              "text": "Un archivo de texto"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La clase describe el estado y el comportamiento; los objetos son instancias de esa plantilla.",
+          "source": {
+            "label": "Python 3 — Tutorial oficial",
+            "url": "https://docs.python.org/3/tutorial/"
+          }
+        },
+        {
+          "stem": "¿Qué permite la encapsulación?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Ocultar los detalles internos y exponer una interfaz controlada"
+            },
+            {
+              "key": "b",
+              "text": "Heredar de varias clases a la vez siempre"
+            },
+            {
+              "key": "c",
+              "text": "Eliminar los tipos"
+            },
+            {
+              "key": "d",
+              "text": "Compilar más rápido"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La encapsulación protege el estado interno y obliga a usar los métodos previstos.",
+          "source": {
+            "label": "Python 3 — Tutorial oficial",
+            "url": "https://docs.python.org/3/tutorial/"
+          }
+        },
+        {
+          "stem": "¿Qué es un commit en Git?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Un registro de cambios con su mensaje"
+            },
+            {
+              "key": "b",
+              "text": "Una rama remota"
+            },
+            {
+              "key": "c",
+              "text": "Un conflicto"
+            },
+            {
+              "key": "d",
+              "text": "Un archivo ignorado"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El commit guarda un conjunto de cambios y su mensaje en la historia del repositorio.",
+          "source": {
+            "label": "Python 3 — Tutorial oficial",
+            "url": "https://docs.python.org/3/tutorial/"
+          }
+        },
+        {
+          "stem": "¿Para qué sirve una rama en Git?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Para trabajar de forma aislada y luego integrar los cambios"
+            },
+            {
+              "key": "b",
+              "text": "Para borrar el historial"
+            },
+            {
+              "key": "c",
+              "text": "Para compilar el código"
+            },
+            {
+              "key": "d",
+              "text": "Para subir el código a producción sin revisar"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La rama permite desarrollar una funcionalidad o corrección sin afectar a la rama principal hasta integrarla.",
+          "source": {
+            "label": "Python 3 — Tutorial oficial",
+            "url": "https://docs.python.org/3/tutorial/"
+          }
+        },
+        {
+          "stem": "¿Qué es una excepción?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Un error previsto que se puede capturar y tratar"
+            },
+            {
+              "key": "b",
+              "text": "Un tipo de variable"
+            },
+            {
+              "key": "c",
+              "text": "Una función matemática"
+            },
+            {
+              "key": "d",
+              "text": "Una rama de Git"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Las excepciones permiten separar el flujo normal del tratamiento de errores.",
+          "source": {
+            "label": "Python 3 — Tutorial oficial",
+            "url": "https://docs.python.org/3/tutorial/"
+          }
+        },
+        {
+          "stem": "¿Por qué es útil una prueba automatizada?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Porque comprueba el comportamiento y evita regresiones al cambiar el código"
+            },
+            {
+              "key": "b",
+              "text": "Porque sustituye la revisión de código"
+            },
+            {
+              "key": "c",
+              "text": "Porque hace el programa más rápido"
+            },
+            {
+              "key": "d",
+              "text": "Porque elimina la necesidad de documentar"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Las pruebas detectan regresiones y documentan el comportamiento esperado; no sustituyen la revisión ni el diseño.",
+          "source": {
+            "label": "Python 3 — Tutorial oficial",
+            "url": "https://docs.python.org/3/tutorial/"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "iv-31",
+      "tema_path": "IV.31",
+      "title": "Práctica · Desarrollo web",
+      "source": {
+        "label": "MDN Web Docs — Documentación web",
+        "url": "https://developer.mozilla.org/es/docs/Web"
+      },
+      "questions": [
+        {
+          "stem": "¿Qué método HTTP se usa normalmente para obtener un recurso?",
+          "options": [
+            {
+              "key": "a",
+              "text": "GET"
+            },
+            {
+              "key": "b",
+              "text": "POST"
+            },
+            {
+              "key": "c",
+              "text": "DELETE"
+            },
+            {
+              "key": "d",
+              "text": "PATCH"
+            }
+          ],
+          "correct": "a",
+          "explanation": "GET recupera un recurso sin modificarlo; POST crea, PUT/PATCH actualizan y DELETE elimina.",
+          "source": {
+            "label": "MDN Web Docs — Documentación web",
+            "url": "https://developer.mozilla.org/es/docs/Web"
+          }
+        },
+        {
+          "stem": "¿Qué significa un código de estado 404?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El recurso no existe o no se encuentra"
+            },
+            {
+              "key": "b",
+              "text": "El servidor ha fallado"
+            },
+            {
+              "key": "c",
+              "text": "La petición se ha creado"
+            },
+            {
+              "key": "d",
+              "text": "El usuario no está autenticado"
+            }
+          ],
+          "correct": "a",
+          "explanation": "404 es error del cliente: el recurso solicitado no existe; 401 es no autenticado y 500 error del servidor.",
+          "source": {
+            "label": "MDN Web Docs — Documentación web",
+            "url": "https://developer.mozilla.org/es/docs/Web"
+          }
+        },
+        {
+          "stem": "¿Qué lenguaje define la estructura de una página web?",
+          "options": [
+            {
+              "key": "a",
+              "text": "HTML"
+            },
+            {
+              "key": "b",
+              "text": "CSS"
+            },
+            {
+              "key": "c",
+              "text": "JavaScript"
+            },
+            {
+              "key": "d",
+              "text": "SQL"
+            }
+          ],
+          "correct": "a",
+          "explanation": "HTML aporta estructura y significado; CSS la presentación y JavaScript el comportamiento.",
+          "source": {
+            "label": "MDN Web Docs — Documentación web",
+            "url": "https://developer.mozilla.org/es/docs/Web"
+          }
+        },
+        {
+          "stem": "¿Qué es un diseño responsive?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Un diseño que se adapta y sigue siendo usable en distintos tamaños de pantalla"
+            },
+            {
+              "key": "b",
+              "text": "Un diseño que solo funciona en escritorio"
+            },
+            {
+              "key": "c",
+              "text": "Una base de datos distribuida"
+            },
+            {
+              "key": "d",
+              "text": "Un protocolo de red"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El diseño responsive adapta la interfaz y la experiencia a móvil, tableta y escritorio.",
+          "source": {
+            "label": "MDN Web Docs — Documentación web",
+            "url": "https://developer.mozilla.org/es/docs/Web"
+          }
+        },
+        {
+          "stem": "¿Qué formato es habitual en una API REST?",
+          "options": [
+            {
+              "key": "a",
+              "text": "JSON"
+            },
+            {
+              "key": "b",
+              "text": "PDF"
+            },
+            {
+              "key": "c",
+              "text": "DOCX"
+            },
+            {
+              "key": "d",
+              "text": "CSV siempre"
+            }
+          ],
+          "correct": "a",
+          "explanation": "JSON es el formato más habitual en APIs REST, aunque también puede usarse XML.",
+          "source": {
+            "label": "MDN Web Docs — Documentación web",
+            "url": "https://developer.mozilla.org/es/docs/Web"
+          }
+        },
+        {
+          "stem": "¿Qué es XSS?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Inyección de scripts en una página que ejecuta el navegador"
+            },
+            {
+              "key": "b",
+              "text": "Un ataque de fuerza bruta al servidor"
+            },
+            {
+              "key": "c",
+              "text": "Un error de base de datos"
+            },
+            {
+              "key": "d",
+              "text": "Un protocolo de correo"
+            }
+          ],
+          "correct": "a",
+          "explanation": "XSS (Cross-Site Scripting) inyecta código en la página; se mitiga escapando la salida y aplicando CSP.",
+          "source": {
+            "label": "MDN Web Docs — Documentación web",
+            "url": "https://developer.mozilla.org/es/docs/Web"
+          }
+        },
+        {
+          "stem": "¿Cómo se evita la inyección SQL en el back-end?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Con consultas parametrizadas y validación"
+            },
+            {
+              "key": "b",
+              "text": "Concatenando la entrada del usuario"
+            },
+            {
+              "key": "c",
+              "text": "Desactivando HTTPS"
+            },
+            {
+              "key": "d",
+              "text": "Ocultando los errores"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Las consultas parametrizadas separan datos y código; concatenar entrada permite inyección.",
+          "source": {
+            "label": "MDN Web Docs — Documentación web",
+            "url": "https://developer.mozilla.org/es/docs/Web"
+          }
+        },
+        {
+          "stem": "¿Para qué sirve una cookie HttpOnly?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Para que JavaScript no pueda leerla y reducir el robo de sesión"
+            },
+            {
+              "key": "b",
+              "text": "Para cifrar la base de datos"
+            },
+            {
+              "key": "c",
+              "text": "Para acelerar la web"
+            },
+            {
+              "key": "d",
+              "text": "Para bloquear el correo"
+            }
+          ],
+          "correct": "a",
+          "explanation": "HttpOnly impide el acceso desde JavaScript, lo que limita el impacto de un XSS sobre la cookie de sesión.",
+          "source": {
+            "label": "MDN Web Docs — Documentación web",
+            "url": "https://developer.mozilla.org/es/docs/Web"
+          }
+        },
+        {
+          "stem": "¿Qué ventaja ofrece una CDN?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Serve recursos estáticos desde ubicaciones cercanas y reduce latencia"
+            },
+            {
+              "key": "b",
+              "text": "Sustituye la base de datos"
+            },
+            {
+              "key": "c",
+              "text": "Elimina la necesidad de HTTPS"
+            },
+            {
+              "key": "d",
+              "text": "Compila el back-end"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La CDN cachea y distribuye contenido estático geográficamente, mejorando tiempos de carga.",
+          "source": {
+            "label": "MDN Web Docs — Documentación web",
+            "url": "https://developer.mozilla.org/es/docs/Web"
+          }
+        },
+        {
+          "stem": "¿Dónde debe validarse de forma obligatoria una entrada del usuario?",
+          "options": [
+            {
+              "key": "a",
+              "text": "En el servidor, aunque también se valide en el cliente"
+            },
+            {
+              "key": "b",
+              "text": "Solo en el cliente"
+            },
+            {
+              "key": "c",
+              "text": "Solo en la base de datos"
+            },
+            {
+              "key": "d",
+              "text": "En la CDN"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El cliente puede omitirse o manipularse; la validación definitiva debe hacerse en el servidor.",
+          "source": {
+            "label": "MDN Web Docs — Documentación web",
+            "url": "https://developer.mozilla.org/es/docs/Web"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "iv-32",
+      "tema_path": "IV.32",
+      "title": "Práctica · Interoperabilidad e integración",
+      "source": {
+        "label": "IETF RFC 8259 — The JavaScript Object Notation (JSON) Data Interchange Format",
+        "url": "https://datatracker.ietf.org/doc/html/rfc8259"
+      },
+      "questions": [
+        {
+          "stem": "¿Qué es la interoperabilidad?",
+          "options": [
+            {
+              "key": "a",
+              "text": "La capacidad de dos sistemas de intercambiar información y usarla de forma útil"
+            },
+            {
+              "key": "b",
+              "text": "La velocidad de la red"
+            },
+            {
+              "key": "c",
+              "text": "Un tipo de base de datos"
+            },
+            {
+              "key": "d",
+              "text": "Un lenguaje de programación"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La interoperabilidad combina acuerdo técnico, semántico y organizativo para que la información sea usable.",
+          "source": {
+            "label": "IETF RFC 8259 — The JavaScript Object Notation (JSON) Data Interchange Format",
+            "url": "https://datatracker.ietf.org/doc/html/rfc8259"
+          }
+        },
+        {
+          "stem": "¿Qué formato es habitual en APIs REST?",
+          "options": [
+            {
+              "key": "a",
+              "text": "JSON"
+            },
+            {
+              "key": "b",
+              "text": "PDF"
+            },
+            {
+              "key": "c",
+              "text": "DOCX"
+            },
+            {
+              "key": "d",
+              "text": "ZIP"
+            }
+          ],
+          "correct": "a",
+          "explanation": "JSON es ligero y legible y se usa habitualmente en APIs REST; XML es común en SOAP.",
+          "source": {
+            "label": "IETF RFC 8259 — The JavaScript Object Notation (JSON) Data Interchange Format",
+            "url": "https://datatracker.ietf.org/doc/html/rfc8259"
+          }
+        },
+        {
+          "stem": "¿Qué añade un esquema como JSON Schema?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Valida la estructura y los tipos del JSON"
+            },
+            {
+              "key": "b",
+              "text": "Cifra el JSON"
+            },
+            {
+              "key": "c",
+              "text": "Comprime el JSON"
+            },
+            {
+              "key": "d",
+              "text": "Convierte el JSON en PDF"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El esquema define campos, tipos y obligatoriedad, y permite rechazar mensajes mal formados.",
+          "source": {
+            "label": "IETF RFC 8259 — The JavaScript Object Notation (JSON) Data Interchange Format",
+            "url": "https://datatracker.ietf.org/doc/html/rfc8259"
+          }
+        },
+        {
+          "stem": "¿Qué es una operación idempotente?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Una que puede repetirse sin producir efectos adicionales"
+            },
+            {
+              "key": "b",
+              "text": "Una que siempre falla"
+            },
+            {
+              "key": "c",
+              "text": "Una que solo se ejecuta una vez al día"
+            },
+            {
+              "key": "d",
+              "text": "Una que no necesita autenticación"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Repetir una operación idempotente deja el mismo estado; es clave para reintentos seguros.",
+          "source": {
+            "label": "IETF RFC 8259 — The JavaScript Object Notation (JSON) Data Interchange Format",
+            "url": "https://datatracker.ietf.org/doc/html/rfc8259"
+          }
+        },
+        {
+          "stem": "¿Qué método HTTP es idempotente por definición?",
+          "options": [
+            {
+              "key": "a",
+              "text": "GET"
+            },
+            {
+              "key": "b",
+              "text": "POST"
+            },
+            {
+              "key": "c",
+              "text": "CONNECT"
+            },
+            {
+              "key": "d",
+              "text": "NINGUNO"
+            }
+          ],
+          "correct": "a",
+          "explanation": "GET no modifica el recurso y puede repetirse; POST no es idempotente por defecto.",
+          "source": {
+            "label": "IETF RFC 8259 — The JavaScript Object Notation (JSON) Data Interchange Format",
+            "url": "https://datatracker.ietf.org/doc/html/rfc8259"
+          }
+        },
+        {
+          "stem": "¿Qué hace un API gateway?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Centraliza el acceso a APIs con autenticación, límites y monitorización"
+            },
+            {
+              "key": "b",
+              "text": "Sustituye la base de datos"
+            },
+            {
+              "key": "c",
+              "text": "Compila el front-end"
+            },
+            {
+              "key": "d",
+              "text": "Cifra los discos"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El gateway es un punto único de entrada que aplica políticas y facilita la observabilidad.",
+          "source": {
+            "label": "IETF RFC 8259 — The JavaScript Object Notation (JSON) Data Interchange Format",
+            "url": "https://datatracker.ietf.org/doc/html/rfc8259"
+          }
+        },
+        {
+          "stem": "¿Qué protocolo de autorización se usa habitualmente para APIs?",
+          "options": [
+            {
+              "key": "a",
+              "text": "OAuth 2.0"
+            },
+            {
+              "key": "b",
+              "text": "SMTP"
+            },
+            {
+              "key": "c",
+              "text": "DHCP"
+            },
+            {
+              "key": "d",
+              "text": "NTP"
+            }
+          ],
+          "correct": "a",
+          "explanation": "OAuth 2.0 permite autorizar el acceso con alcances y tokens; no es un protocolo de correo ni de red.",
+          "source": {
+            "label": "IETF RFC 8259 — The JavaScript Object Notation (JSON) Data Interchange Format",
+            "url": "https://datatracker.ietf.org/doc/html/rfc8259"
+          }
+        },
+        {
+          "stem": "¿Qué es un ETL?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Extraer, transformar y cargar datos entre sistemas"
+            },
+            {
+              "key": "b",
+              "text": "Un tipo de firewall"
+            },
+            {
+              "key": "c",
+              "text": "Un formato de imagen"
+            },
+            {
+              "key": "d",
+              "text": "Un protocolo de correo"
+            }
+          ],
+          "correct": "a",
+          "explanation": "ETL (Extract, Transform, Load) mueve y transforma datos para sincronización o analítica.",
+          "source": {
+            "label": "IETF RFC 8259 — The JavaScript Object Notation (JSON) Data Interchange Format",
+            "url": "https://datatracker.ietf.org/doc/html/rfc8259"
+          }
+        },
+        {
+          "stem": "¿Qué debe incluir una respuesta de error de API?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Código, mensaje claro y detalle útil sin exponer secretos"
+            },
+            {
+              "key": "b",
+              "text": "La traza completa del servidor"
+            },
+            {
+              "key": "c",
+              "text": "La contraseña de la base de datos"
+            },
+            {
+              "key": "d",
+              "text": "Solo un código 200"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Los errores deben ser consistentes y accionables, sin filtrar información interna.",
+          "source": {
+            "label": "IETF RFC 8259 — The JavaScript Object Notation (JSON) Data Interchange Format",
+            "url": "https://datatracker.ietf.org/doc/html/rfc8259"
+          }
+        },
+        {
+          "stem": "¿Para qué sirve un identificador de correlación?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Para seguir una operación entre sistemas en los registros"
+            },
+            {
+              "key": "b",
+              "text": "Para cifrar la petición"
+            },
+            {
+              "key": "c",
+              "text": "Para comprimir la respuesta"
+            },
+            {
+              "key": "d",
+              "text": "Para cambiar el formato"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El correlation ID permite rastrear una misma operación a través de varios servicios y logs.",
+          "source": {
+            "label": "IETF RFC 8259 — The JavaScript Object Notation (JSON) Data Interchange Format",
+            "url": "https://datatracker.ietf.org/doc/html/rfc8259"
+          }
+        }
+      ]
+    },
+    {
       "slug": "v-34",
       "tema_path": "V.34",
       "title": "Práctica · Seguridad de la información",
@@ -11598,12 +12669,12 @@
   ],
   "progress": {
     "total": 40,
-    "apuntesCompletos": 31,
+    "apuntesCompletos": 34,
     "soloResumen": 0,
-    "pendientes": 9,
-    "conPractica": 31,
-    "sinPractica": 9,
-    "questions": 310,
+    "pendientes": 6,
+    "conPractica": 34,
+    "sinPractica": 6,
+    "questions": 340,
     "convocatorias": 12
   }
 }
