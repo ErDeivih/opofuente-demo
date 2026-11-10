@@ -275,10 +275,10 @@
         "title": "Sistemas, redes y comunicaciones",
         "coverage": {
           "total": 9,
-          "conApuntes": 8,
+          "conApuntes": 9,
           "soloResumen": 0,
-          "pendientes": 1,
-          "conPractica": 8
+          "pendientes": 0,
+          "conPractica": 9
         },
         "topics": [
           {
@@ -348,10 +348,10 @@
           {
             "path": "III.26",
             "title": "Soporte al puesto de trabajo",
-            "apuntesStatus": "pendiente",
-            "practicaStatus": "pendiente",
-            "sectionCount": 0,
-            "questionCount": 0
+            "apuntesStatus": "completos",
+            "practicaStatus": "con_practica",
+            "sectionCount": 6,
+            "questionCount": 10
           }
         ]
       },
@@ -360,10 +360,10 @@
         "title": "Datos y desarrollo",
         "coverage": {
           "total": 7,
-          "conApuntes": 1,
+          "conApuntes": 3,
           "soloResumen": 0,
-          "pendientes": 6,
-          "conPractica": 1
+          "pendientes": 4,
+          "conPractica": 3
         },
         "topics": [
           {
@@ -377,18 +377,18 @@
           {
             "path": "IV.28",
             "title": "SQL",
-            "apuntesStatus": "pendiente",
-            "practicaStatus": "pendiente",
-            "sectionCount": 0,
-            "questionCount": 0
+            "apuntesStatus": "completos",
+            "practicaStatus": "con_practica",
+            "sectionCount": 7,
+            "questionCount": 10
           },
           {
             "path": "IV.29",
             "title": "Gestores de bases de datos",
-            "apuntesStatus": "pendiente",
-            "practicaStatus": "pendiente",
-            "sectionCount": 0,
-            "questionCount": 0
+            "apuntesStatus": "completos",
+            "practicaStatus": "con_practica",
+            "sectionCount": 6,
+            "questionCount": 10
           },
           {
             "path": "IV.30",
@@ -2434,6 +2434,78 @@
       ],
       "practiceSlug": "iii-25"
     },
+    "III.26": {
+      "path": "III.26",
+      "title": "Soporte al puesto de trabajo",
+      "apuntesStatus": "completos",
+      "practicaStatus": "con_practica",
+      "sectionCount": 6,
+      "questionCount": 10,
+      "source": {
+        "label": "ISO/IEC 20000-1:2018 — Gestión del servicio de TI (página oficial ISO)",
+        "url": "https://www.iso.org/standard/70636.html"
+      },
+      "sections": [
+        {
+          "heading": "El servicio de soporte y sus niveles",
+          "body": "El **soporte al puesto de trabajo** atiende a las personas que usan la tecnología: incidencias, peticiones, dudas y altas de equipos. El **service desk** es el punto único de contacto y registra cada caso con su prioridad, responsable y estado.\n\nLos niveles de soporte suelen ser:\n\n- **Nivel 1**: atención inicial, diagnóstico básico y resolución de casos conocidos.\n- **Nivel 2**: especialistas que profundizan en el problema.\n- **Nivel 3**: fabricante, desarrollo o proveedor externo.\n\nUna buena derivación incluye toda la información recogida; si el usuario tiene que repetir el problema a cada nivel, el soporte falla."
+        },
+        {
+          "heading": "Inventario y ciclo de vida del equipo",
+          "body": "El **inventario** identifica cada equipo, su usuario, ubicación, garantía, licencias y software instalado. Sin inventario no hay control de activos ni de licencias.\n\nEl ciclo de vida incluye **alta** (compra, configuración, entrega), **uso** (soporte, actualizaciones), **cambio** (reemplazo o reasignación) y **baja** (borrado seguro, recuperación de licencias y retirada).\n\nEn la administración pública, el inventario se relaciona con el **inventario de servicios** y con la protección de datos: un equipo con disco sin borrar puede filtrar información."
+        },
+        {
+          "heading": "Imagen de equipo y despliegue",
+          "body": "Una **imagen** es una plantilla del sistema operativo y del software base. Permite instalar un puesto de forma reproducible y reducir errores.\n\nEl despliegue puede ser **manual**, con medios de instalación, o **automatizado** con herramientas de gestión. Conviene separar:\n\n- Sistema operativo y controladores.\n- Aplicaciones corporativas.\n- Configuración de usuario y políticas.\n\nLas actualizaciones y el software se prueban antes de desplegarlos de forma masiva; una imagen sin mantenimiento envejece y acumula vulnerabilidades."
+        },
+        {
+          "heading": "Soporte remoto, impresión y movilidad",
+          "body": "El **soporte remoto** permite resolver incidencias sin desplazarse. Herramientas como RDP, VNC o soluciones corporativas deben usarse con autenticación, registro y consentimiento del usuario; no se abre una sesión sin avisar.\n\nLa **impresión** se centraliza en servidores de impresión con colas y controladores; los problemas típicos son controladores incorrectos, atascos y permisos.\n\nLos **dispositivos móviles** se gestionan con **MDM** (matrícula, políticas, aplicaciones, borrado remoto). El **BYOD** exige separar datos personales y corporativos y establecer condiciones claras."
+        },
+        {
+          "heading": "Tabla de soporte",
+          "table": {
+            "columns": [
+              "Ámbito",
+              "Herramienta o práctica",
+              "Objetivo"
+            ],
+            "rows": [
+              [
+                "Incidencias",
+                "Service desk y colas",
+                "Registrar, priorizar y resolver"
+              ],
+              [
+                "Inventario",
+                "CMDB / hoja de activos",
+                "Conocer equipos y licencias"
+              ],
+              [
+                "Despliegue",
+                "Imagen y gestión de software",
+                "Puestos reproducibles"
+              ],
+              [
+                "Remoto",
+                "RDP, VNC, herramientas corporativas",
+                "Resolver sin desplazamiento"
+              ],
+              [
+                "Móvil",
+                "MDM",
+                "Políticas y borrado remoto"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Ejemplo resuelto",
+          "body": "**Supuesto.** Un ayuntamiento incorpora a una técnica nueva y debe preparar su puesto; a la semana, el equipo no arranca.\n\n**Resolución.**\n\n- **Alta**: se registra el equipo y la licencia, se aplica la imagen corporativa y se configuran correo, impresoras y acceso a la aplicación municipal.\n- **Incidencia**: se abre un ticket, se recogen síntomas y se prueba el diagnóstico básico; si no arranca, se deriva a nivel 2 con el historial.\n- **Continuidad**: se entrega un equipo de sustitución para no bloquear el trabajo.\n- **Baja o reparación**: se recuperan datos, se borra el disco si se retira y se actualiza el inventario.\n\n**Conclusión.** El soporte no es solo «arreglar ordenadores»: es un proceso con registro, prioridades, inventario y continuidad."
+        }
+      ],
+      "practiceSlug": "iii-26"
+    },
     "IV.27": {
       "path": "IV.27",
       "title": "Bases de datos relacionales",
@@ -2503,6 +2575,144 @@
         }
       ],
       "practiceSlug": "iv-27"
+    },
+    "IV.28": {
+      "path": "IV.28",
+      "title": "SQL",
+      "apuntesStatus": "completos",
+      "practicaStatus": "con_practica",
+      "sectionCount": 7,
+      "questionCount": 10,
+      "source": {
+        "label": "PostgreSQL Documentation — SQL Commands",
+        "url": "https://www.postgresql.org/docs/current/sql.html"
+      },
+      "sections": [
+        {
+          "heading": "Lenguaje SQL y sus categorías",
+          "body": "**SQL** (Structured Query Language) es el lenguaje estándar para consultar y modificar bases de datos relacionales. Sus órdenes se agrupan en:\n\n- **DDL** (definición): `CREATE`, `ALTER`, `DROP`; crean y modifican estructuras.\n- **DML** (manipulación): `SELECT`, `INSERT`, `UPDATE`, `DELETE`; trabajan con datos.\n- **DCL** (control): `GRANT`, `REVOKE`; gestionan permisos.\n- **TCL** (transacciones): `BEGIN`, `COMMIT`, `ROLLBACK`.\n\nCada gestor añade extensiones, pero el núcleo es común. Conocer las categorías ayuda a saber qué se puede deshacer y qué no."
+        },
+        {
+          "heading": "Definición de datos",
+          "body": "Una tabla se crea con `CREATE TABLE`, indicando columnas, tipos y **restricciones**: `PRIMARY KEY`, `FOREIGN KEY`, `UNIQUE`, `NOT NULL` y `CHECK`.\n\n`ALTER TABLE` añade o modifica columnas y restricciones; `DROP TABLE` elimina la tabla y sus datos. Los **índices** (`CREATE INDEX`) aceleran búsquedas y uniones, pero consumen espacio y penalizan las escrituras.\n\nEl diseño debe evitar duplicidades y garantizar la integridad; la base de datos no debe depender solo de las validaciones del formulario."
+        },
+        {
+          "heading": "Consulta y manipulación",
+          "body": "`SELECT` recupera datos. Sus cláusulas principales son `WHERE` (filas), `ORDER BY` (orden), `GROUP BY` (agrupación) y `HAVING` (filtro de grupos).\n\n`INSERT` añade filas, `UPDATE` modifica las existentes y `DELETE` las elimina. Siempre que se actualiza o borra conviene filtrar con una condición y probar antes con `SELECT`; un `UPDATE` sin `WHERE` afecta a toda la tabla.\n\nLas **funciones de agregación** (`COUNT`, `SUM`, `AVG`, `MIN`, `MAX`) resumen grupos y se combinan con `GROUP BY`."
+        },
+        {
+          "heading": "Uniones, subconsultas y vistas",
+          "body": "Los **JOIN** combinan tablas:\n\n- `INNER JOIN`: solo filas que coinciden en ambas.\n- `LEFT JOIN`: todas las de la izquierda y las coincidencias de la derecha.\n- `RIGHT JOIN`: al contrario.\n- `FULL JOIN`: todas las filas de ambas.\n\nUna **subconsulta** es una consulta dentro de otra; sirve para filtrar por un conjunto calculado. Una **vista** es una consulta guardada que se comporta como una tabla virtual: simplifica el acceso y puede ocultar columnas sensibles."
+        },
+        {
+          "heading": "Transacciones y seguridad",
+          "body": "Una **transacción** agrupa operaciones: si algo falla, `ROLLBACK` deshace lo hecho; `COMMIT` confirma. Esto evita estados parciales.\n\nLas **consultas parametrizadas** o preparadas evitan la **inyección SQL**: nunca se concatena texto del usuario en la consulta. Los permisos se conceden con `GRANT` y se retiran con `REVOKE`, aplicando mínimo privilegio.\n\nEn producción, las migraciones se versionan y se prueban; no se ejecutan cambios manuales sin control."
+        },
+        {
+          "heading": "Tabla de órdenes",
+          "table": {
+            "columns": [
+              "Categoría",
+              "Órdenes",
+              "Uso"
+            ],
+            "rows": [
+              [
+                "DDL",
+                "CREATE, ALTER, DROP",
+                "Estructuras"
+              ],
+              [
+                "DML",
+                "SELECT, INSERT, UPDATE, DELETE",
+                "Datos"
+              ],
+              [
+                "DCL",
+                "GRANT, REVOKE",
+                "Permisos"
+              ],
+              [
+                "TCL",
+                "BEGIN, COMMIT, ROLLBACK",
+                "Transacciones"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Ejemplo resuelto",
+          "body": "**Supuesto.** El ayuntamiento quiere listar los expedientes de 2026 con su ciudadano y contar cuántos hay por tipo.\n\n**Resolución.**\n\n```sql\nSELECT c.nombre, e.numero, e.tipo\nFROM expedientes e\nINNER JOIN ciudadanos c ON c.id = e.ciudadano_id\nWHERE e.anio = 2026\nORDER BY c.nombre;\n```\n\nPara contar por tipo:\n\n```sql\nSELECT tipo, COUNT(*) AS total\nFROM expedientes\nWHERE anio = 2026\nGROUP BY tipo\nORDER BY total DESC;\n```\n\nSi se actualiza un expediente, se hace con `WHERE numero = ...` y dentro de una transacción; si algo falla, `ROLLBACK`. La aplicación usa consultas parametrizadas.\n\n**Conclusión.** SQL permite desde una consulta puntual hasta una migración; el riesgo está en olvidar el filtro, la transacción o los permisos."
+        }
+      ],
+      "practiceSlug": "iv-28"
+    },
+    "IV.29": {
+      "path": "IV.29",
+      "title": "Gestores de bases de datos",
+      "apuntesStatus": "completos",
+      "practicaStatus": "con_practica",
+      "sectionCount": 6,
+      "questionCount": 10,
+      "source": {
+        "label": "PostgreSQL Documentation — Backup and Restore",
+        "url": "https://www.postgresql.org/docs/current/backup.html"
+      },
+      "sections": [
+        {
+          "heading": "Qué hace un gestor de bases de datos",
+          "body": "Un **SGBD** (sistema gestor de bases de datos) almacena, organiza y protege los datos, y ofrece un lenguaje para consultarlos. Además de ejecutar SQL, gestiona usuarios, permisos, transacciones, copias, rendimiento y concurrencia.\n\nLos gestores relacionales más habituales son **Oracle Database**, **Microsoft SQL Server**, **PostgreSQL** y **MySQL/MariaDB**. Todos comparten el modelo relacional, pero difieren en arquitectura, herramientas, licencias y coste.\n\nLa elección depende del ecosistema, el soporte, el volumen, la seguridad y el equipo disponible, no solo de una comparativa de velocidad."
+        },
+        {
+          "heading": "Usuarios, roles y permisos",
+          "body": "Cada gestor tiene su modelo de identidades. En PostgreSQL se usan **roles** (que pueden ser usuarios o grupos) y **privilegios** sobre bases, esquemas, tablas y columnas. En SQL Server se combinan **logins**, usuarios de base de datos y roles; en Oracle, usuarios y roles con privilegios del sistema y de objeto.\n\nEl principio de **mínimo privilegio** exige cuentas separadas para administración, aplicación y lectura. Las aplicaciones no deben conectarse como administrador.\n\nLos **esquemas** agrupan objetos y ayudan a separar módulos o inquilinos; no son lo mismo que una base de datos."
+        },
+        {
+          "heading": "Copias y recuperación",
+          "body": "Cada gestor ofrece herramientas propias:\n\n- **Oracle**: RMAN y Data Pump.\n- **SQL Server**: copias completas, diferenciales y de registro de transacciones.\n- **PostgreSQL**: `pg_dump`/`pg_dumpall` para volcados lógicos y `pg_basebackup` para copias físicas; archivado WAL para recuperación a un punto en el tiempo.\n- **MySQL/MariaDB**: `mysqldump` y copias físicas con herramientas como Percona XtraBackup.\n\nLa copia debe ser **externa**, cifrada, con retención y **probada**. La recuperación a un punto en el tiempo (PITR) permite volver justo antes de un error, pero requiere registrar los cambios."
+        },
+        {
+          "heading": "Alta disponibilidad y rendimiento",
+          "body": "La **replicación** mantiene copias en otro servidor: primario/réplica, síncrona o asíncrona. La **alta disponibilidad** añade conmutación automática y comprobaciones de salud; el **failover** debe probarse.\n\nEl rendimiento se analiza con planes de ejecución, índices, estadísticas y monitorización de consultas lentas. No se optimiza «a ojo»: se mide, se identifica la consulta y se prueba el cambio.\n\nLas **migraciones** de esquema se versionan y se aplican de forma controlada; un cambio manual no documentado es una bomba de relojería."
+        },
+        {
+          "heading": "Tabla comparativa",
+          "table": {
+            "columns": [
+              "Gestor",
+              "Herramienta de copia",
+              "Rasgo distintivo"
+            ],
+            "rows": [
+              [
+                "Oracle",
+                "RMAN / Data Pump",
+                "Amplio ecosistema empresarial"
+              ],
+              [
+                "SQL Server",
+                "Backup / restore, log de transacciones",
+                "Integración con Windows y AD"
+              ],
+              [
+                "PostgreSQL",
+                "pg_dump, pg_basebackup, WAL",
+                "Código abierto y extensiones"
+              ],
+              [
+                "MySQL/MariaDB",
+                "mysqldump, XtraBackup",
+                "Despliegue sencillo y extendido"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Ejemplo resuelto",
+          "body": "**Supuesto.** Una aplicación municipal usará PostgreSQL y debe sobrevivir a un borrado accidental y a la caída del servidor.\n\n**Resolución.**\n\n- Copia **lógica** diaria con `pg_dump` para poder restaurar una tabla o migrar.\n- Copia **física** y archivado **WAL** para recuperación a un punto en el tiempo.\n- Réplica en otro servidor y prueba de **failover**; monitorización de retraso de réplica.\n- Copias cifradas y fuera del servidor principal; restauración de prueba trimestral.\n- Migraciones versionadas y aplicadas con la herramienta del proyecto, no con SQL suelto.\n\n**Conclusión.** El gestor ofrece mecanismos, pero la garantía está en la estrategia: copia, réplica, prueba y documentación."
+        }
+      ],
+      "practiceSlug": "iv-29"
     },
     "V.34": {
       "path": "V.34",
@@ -9700,6 +9910,287 @@
       ]
     },
     {
+      "slug": "iii-26",
+      "tema_path": "III.26",
+      "title": "Práctica · Soporte al puesto de trabajo",
+      "source": {
+        "label": "ISO/IEC 20000-1:2018 — Gestión del servicio de TI (página oficial ISO)",
+        "url": "https://www.iso.org/standard/70636.html"
+      },
+      "questions": [
+        {
+          "stem": "¿Qué es el service desk?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El punto único de contacto para incidencias y peticiones de soporte"
+            },
+            {
+              "key": "b",
+              "text": "El servidor de correo"
+            },
+            {
+              "key": "c",
+              "text": "El cortafuegos perimetral"
+            },
+            {
+              "key": "d",
+              "text": "El sistema de copias"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El service desk centraliza la atención, registra los casos y coordina su resolución.",
+          "source": {
+            "label": "ISO/IEC 20000-1:2018 — Gestión del servicio de TI (página oficial ISO)",
+            "url": "https://www.iso.org/standard/70636.html"
+          }
+        },
+        {
+          "stem": "¿Qué caracteriza al soporte de nivel 1?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Atención inicial, diagnóstico básico y resolución de casos conocidos"
+            },
+            {
+              "key": "b",
+              "text": "El desarrollo de la aplicación"
+            },
+            {
+              "key": "c",
+              "text": "La administración de la base de datos"
+            },
+            {
+              "key": "d",
+              "text": "La compra de hardware"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El nivel 1 filtra y resuelve incidencias sencillas; si no puede, deriva con la información recogida.",
+          "source": {
+            "label": "ISO/IEC 20000-1:2018 — Gestión del servicio de TI (página oficial ISO)",
+            "url": "https://www.iso.org/standard/70636.html"
+          }
+        },
+        {
+          "stem": "¿Para qué sirve el inventario de equipos?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Para conocer equipos, usuarios, garantías, licencias y software"
+            },
+            {
+              "key": "b",
+              "text": "Para sustituir las copias de seguridad"
+            },
+            {
+              "key": "c",
+              "text": "Para cifrar el disco"
+            },
+            {
+              "key": "d",
+              "text": "Para asignar direcciones IP"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El inventario permite controlar activos y licencias y planificar el ciclo de vida.",
+          "source": {
+            "label": "ISO/IEC 20000-1:2018 — Gestión del servicio de TI (página oficial ISO)",
+            "url": "https://www.iso.org/standard/70636.html"
+          }
+        },
+        {
+          "stem": "¿Qué es una imagen de equipo?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Una plantilla del sistema y el software base para desplegar puestos"
+            },
+            {
+              "key": "b",
+              "text": "Una copia de los datos del usuario"
+            },
+            {
+              "key": "c",
+              "text": "Un tipo de monitor"
+            },
+            {
+              "key": "d",
+              "text": "Un protocolo de red"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La imagen estandariza la instalación y reduce errores; después se aplican configuraciones y políticas.",
+          "source": {
+            "label": "ISO/IEC 20000-1:2018 — Gestión del servicio de TI (página oficial ISO)",
+            "url": "https://www.iso.org/standard/70636.html"
+          }
+        },
+        {
+          "stem": "¿Qué debe acompañar al soporte remoto?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Autenticación, registro y consentimiento del usuario"
+            },
+            {
+              "key": "b",
+              "text": "Desactivar el cortafuegos"
+            },
+            {
+              "key": "c",
+              "text": "Compartir la contraseña del administrador"
+            },
+            {
+              "key": "d",
+              "text": "Abrir la sesión sin avisar"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El acceso remoto debe ser seguro, trazable y autorizado; abrir sesiones sin consentimiento vulnera la privacidad.",
+          "source": {
+            "label": "ISO/IEC 20000-1:2018 — Gestión del servicio de TI (página oficial ISO)",
+            "url": "https://www.iso.org/standard/70636.html"
+          }
+        },
+        {
+          "stem": "¿Qué problema típico de impresión se resuelve revisando el controlador?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Que la impresora no interprete bien el trabajo o falle al imprimir"
+            },
+            {
+              "key": "b",
+              "text": "Que la red no tenga DNS"
+            },
+            {
+              "key": "c",
+              "text": "Que el equipo no arranque"
+            },
+            {
+              "key": "d",
+              "text": "Que el correo no envíe"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Un controlador incorrecto o desactualizado provoca errores de impresión y trabajos atascados.",
+          "source": {
+            "label": "ISO/IEC 20000-1:2018 — Gestión del servicio de TI (página oficial ISO)",
+            "url": "https://www.iso.org/standard/70636.html"
+          }
+        },
+        {
+          "stem": "¿Qué permite un MDM en dispositivos móviles?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Aplicar políticas, instalar aplicaciones y borrar el dispositivo de forma remota"
+            },
+            {
+              "key": "b",
+              "text": "Aumentar la memoria RAM"
+            },
+            {
+              "key": "c",
+              "text": "Sustituir la VPN"
+            },
+            {
+              "key": "d",
+              "text": "Gestionar la impresora de red"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El MDM (Mobile Device Management) permite matricular, configurar y proteger dispositivos corporativos.",
+          "source": {
+            "label": "ISO/IEC 20000-1:2018 — Gestión del servicio de TI (página oficial ISO)",
+            "url": "https://www.iso.org/standard/70636.html"
+          }
+        },
+        {
+          "stem": "¿Qué precaución hay que tomar al dar de baja un equipo?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Borrar de forma segura los datos y recuperar licencias"
+            },
+            {
+              "key": "b",
+              "text": "Entregarlo sin borrar el disco"
+            },
+            {
+              "key": "c",
+              "text": "Mantener las cuentas activas"
+            },
+            {
+              "key": "d",
+              "text": "Guardar la contraseña en el teclado"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La baja debe incluir borrado seguro, recuperación de licencias y actualización del inventario para evitar fugas.",
+          "source": {
+            "label": "ISO/IEC 20000-1:2018 — Gestión del servicio de TI (página oficial ISO)",
+            "url": "https://www.iso.org/standard/70636.html"
+          }
+        },
+        {
+          "stem": "¿Por qué hay que derivar con toda la información al siguiente nivel?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Para que el usuario no repita el problema y se resuelva antes"
+            },
+            {
+              "key": "b",
+              "text": "Para cerrar el ticket sin resolverlo"
+            },
+            {
+              "key": "c",
+              "text": "Para que el usuario aprenda a arreglarlo"
+            },
+            {
+              "key": "d",
+              "text": "Para eliminar el historial"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Una derivación completa evita duplicar diagnóstico y mejora el tiempo de resolución.",
+          "source": {
+            "label": "ISO/IEC 20000-1:2018 — Gestión del servicio de TI (página oficial ISO)",
+            "url": "https://www.iso.org/standard/70636.html"
+          }
+        },
+        {
+          "stem": "¿Qué relación tiene el inventario con la seguridad?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Un equipo sin borrar puede filtrar datos; el inventario permite controlar su retirada"
+            },
+            {
+              "key": "b",
+              "text": "El inventario sustituye al antivirus"
+            },
+            {
+              "key": "c",
+              "text": "El inventario cifra los discos"
+            },
+            {
+              "key": "d",
+              "text": "No tiene relación"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Saber qué equipos existen y cuándo se retiran permite aplicar borrado seguro y evitar fugas de información.",
+          "source": {
+            "label": "ISO/IEC 20000-1:2018 — Gestión del servicio de TI (página oficial ISO)",
+            "url": "https://www.iso.org/standard/70636.html"
+          }
+        }
+      ]
+    },
+    {
       "slug": "iv-27",
       "tema_path": "IV.27",
       "title": "Práctica · Bases de datos relacionales",
@@ -9976,6 +10467,568 @@
           "source": {
             "label": "PostgreSQL Documentation — Constraints y modelo relacional (documentación oficial)",
             "url": "https://www.postgresql.org/docs/current/ddl-constraints.html"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "iv-28",
+      "tema_path": "IV.28",
+      "title": "Práctica · SQL",
+      "source": {
+        "label": "PostgreSQL Documentation — SQL Commands",
+        "url": "https://www.postgresql.org/docs/current/sql.html"
+      },
+      "questions": [
+        {
+          "stem": "¿Qué órdenes pertenecen al DDL?",
+          "options": [
+            {
+              "key": "a",
+              "text": "CREATE, ALTER y DROP"
+            },
+            {
+              "key": "b",
+              "text": "SELECT, INSERT y UPDATE"
+            },
+            {
+              "key": "c",
+              "text": "GRANT y REVOKE"
+            },
+            {
+              "key": "d",
+              "text": "COMMIT y ROLLBACK"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El DDL define estructuras: crear, modificar y eliminar tablas, índices y otros objetos.",
+          "source": {
+            "label": "PostgreSQL Documentation — SQL Commands",
+            "url": "https://www.postgresql.org/docs/current/sql.html"
+          }
+        },
+        {
+          "stem": "¿Qué orden se usa para recuperar datos?",
+          "options": [
+            {
+              "key": "a",
+              "text": "SELECT"
+            },
+            {
+              "key": "b",
+              "text": "INSERT"
+            },
+            {
+              "key": "c",
+              "text": "UPDATE"
+            },
+            {
+              "key": "d",
+              "text": "DELETE"
+            }
+          ],
+          "correct": "a",
+          "explanation": "SELECT consulta datos; INSERT, UPDATE y DELETE los modifican.",
+          "source": {
+            "label": "PostgreSQL Documentation — SQL Commands",
+            "url": "https://www.postgresql.org/docs/current/sql.html"
+          }
+        },
+        {
+          "stem": "¿Qué cláusula filtra filas antes de agrupar?",
+          "options": [
+            {
+              "key": "a",
+              "text": "WHERE"
+            },
+            {
+              "key": "b",
+              "text": "HAVING"
+            },
+            {
+              "key": "c",
+              "text": "ORDER BY"
+            },
+            {
+              "key": "d",
+              "text": "GROUP BY"
+            }
+          ],
+          "correct": "a",
+          "explanation": "WHERE filtra filas; HAVING filtra grupos después de agrupar.",
+          "source": {
+            "label": "PostgreSQL Documentation — SQL Commands",
+            "url": "https://www.postgresql.org/docs/current/sql.html"
+          }
+        },
+        {
+          "stem": "¿Qué diferencia hay entre WHERE y HAVING?",
+          "options": [
+            {
+              "key": "a",
+              "text": "WHERE filtra filas y HAVING filtra grupos"
+            },
+            {
+              "key": "b",
+              "text": "Son sinónimos"
+            },
+            {
+              "key": "c",
+              "text": "WHERE filtra grupos y HAVING filas"
+            },
+            {
+              "key": "d",
+              "text": "HAVING solo se usa con INSERT"
+            }
+          ],
+          "correct": "a",
+          "explanation": "WHERE actúa antes de la agrupación; HAVING se aplica a los grupos ya formados.",
+          "source": {
+            "label": "PostgreSQL Documentation — SQL Commands",
+            "url": "https://www.postgresql.org/docs/current/sql.html"
+          }
+        },
+        {
+          "stem": "¿Qué devuelve un INNER JOIN?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Solo las filas que coinciden en ambas tablas"
+            },
+            {
+              "key": "b",
+              "text": "Todas las filas de la izquierda"
+            },
+            {
+              "key": "c",
+              "text": "Todas las filas de ambas tablas"
+            },
+            {
+              "key": "d",
+              "text": "Ninguna fila"
+            }
+          ],
+          "correct": "a",
+          "explanation": "INNER JOIN descarta las filas sin coincidencia; LEFT JOIN conserva todas las de la izquierda.",
+          "source": {
+            "label": "PostgreSQL Documentation — SQL Commands",
+            "url": "https://www.postgresql.org/docs/current/sql.html"
+          }
+        },
+        {
+          "stem": "¿Qué hace un LEFT JOIN?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Conserva todas las filas de la tabla izquierda y añade las coincidencias de la derecha"
+            },
+            {
+              "key": "b",
+              "text": "Conserva solo las coincidencias"
+            },
+            {
+              "key": "c",
+              "text": "Conserva solo la tabla derecha"
+            },
+            {
+              "key": "d",
+              "text": "Elimina las filas duplicadas"
+            }
+          ],
+          "correct": "a",
+          "explanation": "LEFT JOIN mantiene las filas de la izquierda aunque no tengan pareja, con nulos en las columnas de la derecha.",
+          "source": {
+            "label": "PostgreSQL Documentation — SQL Commands",
+            "url": "https://www.postgresql.org/docs/current/sql.html"
+          }
+        },
+        {
+          "stem": "¿Qué es una vista?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Una consulta guardada que se comporta como una tabla virtual"
+            },
+            {
+              "key": "b",
+              "text": "Una copia física de la base de datos"
+            },
+            {
+              "key": "c",
+              "text": "Un índice"
+            },
+            {
+              "key": "d",
+              "text": "Una transacción"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La vista guarda una consulta y se puede usar como tabla; no almacena necesariamente los datos.",
+          "source": {
+            "label": "PostgreSQL Documentation — SQL Commands",
+            "url": "https://www.postgresql.org/docs/current/sql.html"
+          }
+        },
+        {
+          "stem": "¿Qué orden confirma una transacción?",
+          "options": [
+            {
+              "key": "a",
+              "text": "COMMIT"
+            },
+            {
+              "key": "b",
+              "text": "ROLLBACK"
+            },
+            {
+              "key": "c",
+              "text": "BEGIN"
+            },
+            {
+              "key": "d",
+              "text": "GRANT"
+            }
+          ],
+          "correct": "a",
+          "explanation": "COMMIT confirma los cambios; ROLLBACK los deshace y BEGIN inicia la transacción.",
+          "source": {
+            "label": "PostgreSQL Documentation — SQL Commands",
+            "url": "https://www.postgresql.org/docs/current/sql.html"
+          }
+        },
+        {
+          "stem": "¿Cómo se evita la inyección SQL?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Usando consultas parametrizadas o preparadas"
+            },
+            {
+              "key": "b",
+              "text": "Concatenando el texto del usuario"
+            },
+            {
+              "key": "c",
+              "text": "Desactivando los permisos"
+            },
+            {
+              "key": "d",
+              "text": "Ejecutando SQL dinámico sin validar"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Las consultas parametrizadas separan el código de los datos y evitan que la entrada se interprete como SQL.",
+          "source": {
+            "label": "PostgreSQL Documentation — SQL Commands",
+            "url": "https://www.postgresql.org/docs/current/sql.html"
+          }
+        },
+        {
+          "stem": "¿Qué hace GRANT?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Concede permisos a un usuario o rol"
+            },
+            {
+              "key": "b",
+              "text": "Crea una tabla"
+            },
+            {
+              "key": "c",
+              "text": "Elimina una fila"
+            },
+            {
+              "key": "d",
+              "text": "Confirma una transacción"
+            }
+          ],
+          "correct": "a",
+          "explanation": "GRANT concede privilegios; REVOKE los retira. Forman parte del DCL.",
+          "source": {
+            "label": "PostgreSQL Documentation — SQL Commands",
+            "url": "https://www.postgresql.org/docs/current/sql.html"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "iv-29",
+      "tema_path": "IV.29",
+      "title": "Práctica · Gestores de bases de datos",
+      "source": {
+        "label": "PostgreSQL Documentation — Backup and Restore",
+        "url": "https://www.postgresql.org/docs/current/backup.html"
+      },
+      "questions": [
+        {
+          "stem": "¿Qué es un SGBD?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Un sistema que almacena, organiza y protege datos y ofrece acceso mediante un lenguaje"
+            },
+            {
+              "key": "b",
+              "text": "Un lenguaje de programación"
+            },
+            {
+              "key": "c",
+              "text": "Un protocolo de red"
+            },
+            {
+              "key": "d",
+              "text": "Un tipo de copia de seguridad"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El SGBD gestiona datos, usuarios, transacciones, copias y rendimiento, además de ejecutar consultas.",
+          "source": {
+            "label": "PostgreSQL Documentation — Backup and Restore",
+            "url": "https://www.postgresql.org/docs/current/backup.html"
+          }
+        },
+        {
+          "stem": "¿Qué herramienta se usa en PostgreSQL para un volcado lógico?",
+          "options": [
+            {
+              "key": "a",
+              "text": "pg_dump"
+            },
+            {
+              "key": "b",
+              "text": "RMAN"
+            },
+            {
+              "key": "c",
+              "text": "mysqldump"
+            },
+            {
+              "key": "d",
+              "text": "XtraBackup"
+            }
+          ],
+          "correct": "a",
+          "explanation": "pg_dump genera un volcado lógico de una base; pg_dumpall incluye roles y bases.",
+          "source": {
+            "label": "PostgreSQL Documentation — Backup and Restore",
+            "url": "https://www.postgresql.org/docs/current/backup.html"
+          }
+        },
+        {
+          "stem": "¿Qué herramienta es característica de Oracle para copias y recuperación?",
+          "options": [
+            {
+              "key": "a",
+              "text": "RMAN"
+            },
+            {
+              "key": "b",
+              "text": "pg_dump"
+            },
+            {
+              "key": "c",
+              "text": "mysqldump"
+            },
+            {
+              "key": "d",
+              "text": "SQL Server Backup"
+            }
+          ],
+          "correct": "a",
+          "explanation": "RMAN (Recovery Manager) es la herramienta de Oracle para copias y recuperación.",
+          "source": {
+            "label": "PostgreSQL Documentation — Backup and Restore",
+            "url": "https://www.postgresql.org/docs/current/backup.html"
+          }
+        },
+        {
+          "stem": "¿Qué permite la recuperación a un punto en el tiempo (PITR)?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Volver a un instante concreto usando copias y registros de cambios"
+            },
+            {
+              "key": "b",
+              "text": "Eliminar los índices"
+            },
+            {
+              "key": "c",
+              "text": "Cambiar el gestor de base de datos"
+            },
+            {
+              "key": "d",
+              "text": "Crear un usuario nuevo"
+            }
+          ],
+          "correct": "a",
+          "explanation": "PITR combina una copia base con registros de transacciones (WAL en PostgreSQL) para restaurar hasta un momento.",
+          "source": {
+            "label": "PostgreSQL Documentation — Backup and Restore",
+            "url": "https://www.postgresql.org/docs/current/backup.html"
+          }
+        },
+        {
+          "stem": "¿Qué es un esquema en una base de datos?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Un espacio que agrupa objetos como tablas, vistas y funciones"
+            },
+            {
+              "key": "b",
+              "text": "Una copia de seguridad"
+            },
+            {
+              "key": "c",
+              "text": "Un tipo de índice"
+            },
+            {
+              "key": "d",
+              "text": "Un usuario administrador"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El esquema organiza objetos dentro de la base; no es lo mismo que la base de datos.",
+          "source": {
+            "label": "PostgreSQL Documentation — Backup and Restore",
+            "url": "https://www.postgresql.org/docs/current/backup.html"
+          }
+        },
+        {
+          "stem": "¿Qué principio debe aplicarse a las cuentas de la aplicación?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Mínimo privilegio: solo los permisos necesarios"
+            },
+            {
+              "key": "b",
+              "text": "Usar el usuario administrador para todo"
+            },
+            {
+              "key": "c",
+              "text": "Compartir una cuenta entre aplicaciones"
+            },
+            {
+              "key": "d",
+              "text": "Desactivar la autenticación"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La aplicación debe tener permisos limitados; el administrador se reserva para tareas de administración.",
+          "source": {
+            "label": "PostgreSQL Documentation — Backup and Restore",
+            "url": "https://www.postgresql.org/docs/current/backup.html"
+          }
+        },
+        {
+          "stem": "¿Qué es una réplica de base de datos?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Una copia mantenida en otro servidor para disponibilidad o lectura"
+            },
+            {
+              "key": "b",
+              "text": "Un índice temporal"
+            },
+            {
+              "key": "c",
+              "text": "Un procedimiento almacenado"
+            },
+            {
+              "key": "d",
+              "text": "Un tipo de tabla"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La réplica recibe cambios del primario y puede usarse para alta disponibilidad o para repartir lecturas.",
+          "source": {
+            "label": "PostgreSQL Documentation — Backup and Restore",
+            "url": "https://www.postgresql.org/docs/current/backup.html"
+          }
+        },
+        {
+          "stem": "¿Qué hay que probar en una estrategia de alta disponibilidad?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El failover o conmutación ante la caída del primario"
+            },
+            {
+              "key": "b",
+              "text": "Solo el color del panel"
+            },
+            {
+              "key": "c",
+              "text": "La velocidad de la impresora"
+            },
+            {
+              "key": "d",
+              "text": "El tamaño del disco"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Una conmutación no probada es una hipótesis; hay que medir tiempo y comprobar que la aplicación se recupera.",
+          "source": {
+            "label": "PostgreSQL Documentation — Backup and Restore",
+            "url": "https://www.postgresql.org/docs/current/backup.html"
+          }
+        },
+        {
+          "stem": "¿Por qué las migraciones deben estar versionadas?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Para aplicar cambios de forma reproducible y poder revertirlos"
+            },
+            {
+              "key": "b",
+              "text": "Para que la base ocupe más"
+            },
+            {
+              "key": "c",
+              "text": "Para eliminar las copias"
+            },
+            {
+              "key": "d",
+              "text": "Para que el usuario no vea los datos"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Las migraciones versionadas permiten revisar, reproducir y revertir cambios de esquema.",
+          "source": {
+            "label": "PostgreSQL Documentation — Backup and Restore",
+            "url": "https://www.postgresql.org/docs/current/backup.html"
+          }
+        },
+        {
+          "stem": "¿Qué debe cumplir una copia de seguridad de base de datos?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Ser externa, cifrada, con retención y probada con restauraciones"
+            },
+            {
+              "key": "b",
+              "text": "Estar solo en el mismo disco"
+            },
+            {
+              "key": "c",
+              "text": "No documentarse"
+            },
+            {
+              "key": "d",
+              "text": "No cifrarse nunca"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La copia solo es útil si se puede restaurar; debe estar protegida, fuera del servidor y probada.",
+          "source": {
+            "label": "PostgreSQL Documentation — Backup and Restore",
+            "url": "https://www.postgresql.org/docs/current/backup.html"
           }
         }
       ]
@@ -10545,12 +11598,12 @@
   ],
   "progress": {
     "total": 40,
-    "apuntesCompletos": 28,
+    "apuntesCompletos": 31,
     "soloResumen": 0,
-    "pendientes": 12,
-    "conPractica": 28,
-    "sinPractica": 12,
-    "questions": 280,
+    "pendientes": 9,
+    "conPractica": 31,
+    "sinPractica": 9,
+    "questions": 310,
     "convocatorias": 12
   }
 }
