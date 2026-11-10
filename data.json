@@ -1,6 +1,109 @@
 {
   "title": "OpoFuente — demo estática",
-  "warning": "Demo estática: el contenido va empaquetado y tus respuestas se guardan solo en este navegador. No hay servidor, no se envía nada y no hay cuenta.",
+  "warning": "Demo: el contenido va empaquetado y tus respuestas se guardan solo en este navegador. No hay servidor ni cuenta.",
+  "convocatorias": {
+    "total": 12,
+    "draft": 10,
+    "archived": 2,
+    "items": [
+      {
+        "code": "c1-1-plaza-de-tecnico-a-informatico-a-y-telecomunicac",
+        "title": "1 Plaza De Técnico/A Informático/A Y Telecomunicaciones, Consejo Comarcal De La Selva, Gerona",
+        "administration": "Consejo Comarcal De La Selva",
+        "territory": "Gerona",
+        "status": "draft",
+        "url": "https://oposicionesinformatica.com/1-plaza-de-tecnico-a-informatico-a-y-telecomunicaciones-consejo-comarcal-de-la-selva-gerona/"
+      },
+      {
+        "code": "c1-1-plaza-de-tecnico-a-especialista-en-aplicaciones-",
+        "title": "1 Plaza De Técnico/A Especialista En Aplicaciones Informáticas, Ayuntamiento De Sallent, Barcelona",
+        "administration": "Ayuntamiento De Sallent",
+        "territory": "Barcelona",
+        "status": "draft",
+        "url": "https://oposicionesinformatica.com/1-plaza-de-tecnico-a-especialista-en-aplicaciones-informaticas-ayuntamiento-de-sallent-barcelona/"
+      },
+      {
+        "code": "c1-1-plaza-de-tecnico-a-auxiliar-de-informatica-ayunt",
+        "title": "1 Plaza De Técnico/A Auxiliar De Informática, Ayuntamiento De Sentmenat, Barcelona",
+        "administration": "Ayuntamiento De Sentmenat",
+        "territory": "Barcelona",
+        "status": "draft",
+        "url": "https://oposicionesinformatica.com/1-plaza-de-tecnico-a-auxiliar-de-informatica-ayuntamiento-de-sentmenat-barcelona/"
+      },
+      {
+        "code": "c1-1-plaza-de-tecnico-a-auxiliar-informatico-a-y-bols",
+        "title": "1 Plaza De Técnico/A Auxiliar Informático/A Y Bolsa De Trabajo — Ayuntamiento De Matadepera (C1)",
+        "administration": null,
+        "territory": null,
+        "status": "draft",
+        "url": "https://oposicionesinformatica.com/1-plaza-de-tecnico-a-auxiliar-informatico-a-y-bolsa-de-trabajo-ayuntamiento-de-matadepera-c1/"
+      },
+      {
+        "code": "c1-1-plaza-de-auxiliar-tecnico-a-informatico-a-ayunta",
+        "title": "1 Plaza De Auxiliar Técnico/A Informático/A, Ayuntamiento De Sarria, Galicia",
+        "administration": "Ayuntamiento De Sarria",
+        "territory": "Galicia",
+        "status": "draft",
+        "url": "https://oposicionesinformatica.com/1-plaza-de-auxiliar-tecnico-a-informatico-a-ayuntamiento-de-sarria-galicia/"
+      },
+      {
+        "code": "c1-1-plaza-de-tecnico-a-auxiliar-de-informatica-ayunt-2",
+        "title": "1 Plaza De Técnico/A Auxiliar De Informática, Ayuntamiento De Lloret De Mar, Girona",
+        "administration": "Ayuntamiento De Lloret De Mar",
+        "territory": "Girona",
+        "status": "draft",
+        "url": "https://oposicionesinformatica.com/1-plaza-de-tecnico-a-auxiliar-de-informatica-ayuntamiento-de-lloret-de-mar-girona/"
+      },
+      {
+        "code": "c1-1-plaza-de-tecnico-a-auxiliar-de-informatica-bolsa",
+        "title": "1 Plaza De Técnico/A Auxiliar De Informática + Bolsa De Empleo, Ayuntamiento De Castelló D’Empúries, Girona",
+        "administration": "Ayuntamiento De Castelló D’Empúries",
+        "territory": "Girona",
+        "status": "draft",
+        "url": "https://oposicionesinformatica.com/1-plaza-de-tecnico-a-auxiliar-de-informatica-bolsa-de-empleo-ayuntamiento-de-castello-dempuries-girona/"
+      },
+      {
+        "code": "c1-bolsa-de-empleo-de-informatico-ayuntamiento-de-zam",
+        "title": "Bolsa De Empleo De Informático, Ayuntamiento De Zamora, Castilla Y León",
+        "administration": "Ayuntamiento De Zamora",
+        "territory": "Castilla Y León",
+        "status": "draft",
+        "url": "https://oposicionesinformatica.com/bolsa-de-empleo-de-informatico-ayuntamiento-de-zamora-castilla-y-leon/"
+      },
+      {
+        "code": "c1-1-plaza-de-tecnico-auxiliar-de-informatica-bolsa-d",
+        "title": "1 Plaza De Técnico Auxiliar De Informática + Bolsa De Trabajo, Ayuntamiento De Rubí, Catalunya",
+        "administration": "Ayuntamiento De Rubí",
+        "territory": "Catalunya",
+        "status": "draft",
+        "url": "https://oposicionesinformatica.com/1-plaza-de-tecnico-auxiliar-de-informatica-bolsa-de-trabajo-ayuntamiento-de-rubi-catalunya/"
+      },
+      {
+        "code": "c1-2-plazas-de-tecnicos-as-auxiliares-de-informatica-",
+        "title": "2 Plazas De Técnicos/As Auxiliares De Informática, Ayuntamiento De Aldaia, Valencia",
+        "administration": "Ayuntamiento De Aldaia",
+        "territory": "Valencia",
+        "status": "draft",
+        "url": "https://oposicionesinformatica.com/2-plazas-de-tecnicos-as-auxiliares-de-informatica-ayuntamiento-de-aldaia-valencia/"
+      },
+      {
+        "code": "c1-sacyl-sanidad-cyl-salamanca",
+        "title": "Técnico Especialista en Informática (C1) - SALAMANCA",
+        "administration": "SACYL (Sanidad CyL)",
+        "territory": "SALAMANCA",
+        "status": "archived",
+        "url": "https://www.saludcastillayleon.es/profesionales/es/recursos-humanos/convocatorias-especificas/tecnico-especialista-informatica-c1/salamanca"
+      },
+      {
+        "code": "c1-sacyl-sanidad-cyl-resto-provincias",
+        "title": "Técnico Especialista en Informática (C1) - resto provincias",
+        "administration": "SACYL (Sanidad CyL)",
+        "territory": "Resto provincias",
+        "status": "archived",
+        "url": "https://www.saludcastillayleon.es/profesionales/es/recursos-humanos/convocatorias-especificas/tecnico-especialista-informatica-c1"
+      }
+    ]
+  },
   "curriculum": {
     "code": "informatica-c1",
     "name": "Temario común de informática C1",
@@ -8,88 +111,107 @@
       {
         "path": "I",
         "title": "Administración y normativa",
+        "coverage": {
+          "total": 12,
+          "conApuntes": 9,
+          "soloResumen": 0,
+          "pendientes": 3,
+          "conPractica": 9
+        },
         "topics": [
           {
             "path": "I.1",
             "title": "La Constitución Española de 1978",
-            "status": "completo",
+            "apuntesStatus": "completos",
+            "practicaStatus": "con_practica",
             "sectionCount": 6,
             "questionCount": 10
           },
           {
             "path": "I.2",
             "title": "La Unión Europea",
-            "status": "completo",
+            "apuntesStatus": "completos",
+            "practicaStatus": "con_practica",
             "sectionCount": 6,
             "questionCount": 10
           },
           {
             "path": "I.3",
             "title": "El régimen local",
-            "status": "completo",
+            "apuntesStatus": "completos",
+            "practicaStatus": "con_practica",
             "sectionCount": 6,
             "questionCount": 10
           },
           {
             "path": "I.4",
             "title": "Organización municipal",
-            "status": "pendiente",
+            "apuntesStatus": "pendiente",
+            "practicaStatus": "pendiente",
             "sectionCount": 0,
             "questionCount": 0
           },
           {
             "path": "I.5",
             "title": "El procedimiento administrativo (Ley 39/2015)",
-            "status": "completo",
+            "apuntesStatus": "completos",
+            "practicaStatus": "con_practica",
             "sectionCount": 6,
             "questionCount": 10
           },
           {
             "path": "I.6",
             "title": "El régimen jurídico del sector público (Ley 40/2015)",
-            "status": "completo",
+            "apuntesStatus": "completos",
+            "practicaStatus": "con_practica",
             "sectionCount": 6,
             "questionCount": 10
           },
           {
             "path": "I.7",
             "title": "El personal al servicio de las administraciones (TREBEP)",
-            "status": "completo",
+            "apuntesStatus": "completos",
+            "practicaStatus": "con_practica",
             "sectionCount": 6,
             "questionCount": 10
           },
           {
             "path": "I.8",
             "title": "La función pública local",
-            "status": "pendiente",
+            "apuntesStatus": "pendiente",
+            "practicaStatus": "pendiente",
             "sectionCount": 0,
             "questionCount": 0
           },
           {
             "path": "I.9",
             "title": "Las haciendas locales y el presupuesto",
-            "status": "completo",
+            "apuntesStatus": "completos",
+            "practicaStatus": "con_practica",
             "sectionCount": 6,
             "questionCount": 10
           },
           {
             "path": "I.10",
             "title": "La contratación del sector público (Ley 9/2017)",
-            "status": "completo",
+            "apuntesStatus": "completos",
+            "practicaStatus": "con_practica",
             "sectionCount": 6,
             "questionCount": 10
           },
           {
             "path": "I.11",
             "title": "Igualdad y violencia de género",
-            "status": "pendiente",
+            "apuntesStatus": "pendiente",
+            "practicaStatus": "pendiente",
             "sectionCount": 0,
             "questionCount": 0
           },
           {
             "path": "I.12",
             "title": "Transparencia y protección de datos en la Administración",
-            "status": "completo",
+            "apuntesStatus": "completos",
+            "practicaStatus": "con_practica",
             "sectionCount": 6,
             "questionCount": 10
           }
@@ -98,39 +220,51 @@
       {
         "path": "II",
         "title": "Informática básica y ofimática",
+        "coverage": {
+          "total": 5,
+          "conApuntes": 1,
+          "soloResumen": 0,
+          "pendientes": 4,
+          "conPractica": 1
+        },
         "topics": [
           {
             "path": "II.13",
             "title": "Arquitectura de ordenadores",
-            "status": "completo",
+            "apuntesStatus": "completos",
+            "practicaStatus": "con_practica",
             "sectionCount": 6,
             "questionCount": 10
           },
           {
             "path": "II.14",
             "title": "Sistemas operativos de usuario",
-            "status": "pendiente",
+            "apuntesStatus": "pendiente",
+            "practicaStatus": "pendiente",
             "sectionCount": 0,
             "questionCount": 0
           },
           {
             "path": "II.15",
             "title": "Ofimática",
-            "status": "pendiente",
+            "apuntesStatus": "pendiente",
+            "practicaStatus": "pendiente",
             "sectionCount": 0,
             "questionCount": 0
           },
           {
             "path": "II.16",
             "title": "Correo electrónico y colaboración",
-            "status": "pendiente",
+            "apuntesStatus": "pendiente",
+            "practicaStatus": "pendiente",
             "sectionCount": 0,
             "questionCount": 0
           },
           {
             "path": "II.17",
             "title": "Licencias y software libre",
-            "status": "pendiente",
+            "apuntesStatus": "pendiente",
+            "practicaStatus": "pendiente",
             "sectionCount": 0,
             "questionCount": 0
           }
@@ -139,67 +273,83 @@
       {
         "path": "III",
         "title": "Sistemas, redes y comunicaciones",
+        "coverage": {
+          "total": 9,
+          "conApuntes": 2,
+          "soloResumen": 0,
+          "pendientes": 7,
+          "conPractica": 2
+        },
         "topics": [
           {
             "path": "III.18",
             "title": "Sistemas operativos de servidor",
-            "status": "pendiente",
+            "apuntesStatus": "pendiente",
+            "practicaStatus": "pendiente",
             "sectionCount": 0,
             "questionCount": 0
           },
           {
             "path": "III.19",
             "title": "Virtualización y contenedores",
-            "status": "pendiente",
+            "apuntesStatus": "pendiente",
+            "practicaStatus": "pendiente",
             "sectionCount": 0,
             "questionCount": 0
           },
           {
             "path": "III.20",
             "title": "Almacenamiento y copias de seguridad",
-            "status": "pendiente",
+            "apuntesStatus": "pendiente",
+            "practicaStatus": "pendiente",
             "sectionCount": 0,
             "questionCount": 0
           },
           {
             "path": "III.21",
             "title": "Redes",
-            "status": "completo",
+            "apuntesStatus": "completos",
+            "practicaStatus": "con_practica",
             "sectionCount": 6,
             "questionCount": 10
           },
           {
             "path": "III.22",
             "title": "Comunicaciones",
-            "status": "pendiente",
+            "apuntesStatus": "pendiente",
+            "practicaStatus": "pendiente",
             "sectionCount": 0,
             "questionCount": 0
           },
           {
             "path": "III.23",
             "title": "Servicios de red",
-            "status": "pendiente",
+            "apuntesStatus": "pendiente",
+            "practicaStatus": "pendiente",
             "sectionCount": 0,
             "questionCount": 0
           },
           {
             "path": "III.24",
             "title": "Monitorización y gestión de incidencias",
-            "status": "completo",
+            "apuntesStatus": "completos",
+            "practicaStatus": "con_practica",
             "sectionCount": 6,
             "questionCount": 10
           },
           {
             "path": "III.25",
             "title": "Cloud y centros de datos",
-            "status": "pendiente",
+            "apuntesStatus": "pendiente",
+            "practicaStatus": "pendiente",
             "sectionCount": 0,
             "questionCount": 0
           },
           {
             "path": "III.26",
             "title": "Soporte al puesto de trabajo",
-            "status": "pendiente",
+            "apuntesStatus": "pendiente",
+            "practicaStatus": "pendiente",
             "sectionCount": 0,
             "questionCount": 0
           }
@@ -208,53 +358,67 @@
       {
         "path": "IV",
         "title": "Datos y desarrollo",
+        "coverage": {
+          "total": 7,
+          "conApuntes": 0,
+          "soloResumen": 0,
+          "pendientes": 7,
+          "conPractica": 0
+        },
         "topics": [
           {
             "path": "IV.27",
             "title": "Bases de datos relacionales",
-            "status": "pendiente",
+            "apuntesStatus": "pendiente",
+            "practicaStatus": "pendiente",
             "sectionCount": 0,
             "questionCount": 0
           },
           {
             "path": "IV.28",
             "title": "SQL",
-            "status": "pendiente",
+            "apuntesStatus": "pendiente",
+            "practicaStatus": "pendiente",
             "sectionCount": 0,
             "questionCount": 0
           },
           {
             "path": "IV.29",
             "title": "Gestores de bases de datos",
-            "status": "pendiente",
+            "apuntesStatus": "pendiente",
+            "practicaStatus": "pendiente",
             "sectionCount": 0,
             "questionCount": 0
           },
           {
             "path": "IV.30",
             "title": "Programación",
-            "status": "pendiente",
+            "apuntesStatus": "pendiente",
+            "practicaStatus": "pendiente",
             "sectionCount": 0,
             "questionCount": 0
           },
           {
             "path": "IV.31",
             "title": "Desarrollo web",
-            "status": "pendiente",
+            "apuntesStatus": "pendiente",
+            "practicaStatus": "pendiente",
             "sectionCount": 0,
             "questionCount": 0
           },
           {
             "path": "IV.32",
             "title": "Interoperabilidad e integración",
-            "status": "pendiente",
+            "apuntesStatus": "pendiente",
+            "practicaStatus": "pendiente",
             "sectionCount": 0,
             "questionCount": 0
           },
           {
             "path": "IV.33",
             "title": "Informes y explotación de datos",
-            "status": "pendiente",
+            "apuntesStatus": "pendiente",
+            "practicaStatus": "pendiente",
             "sectionCount": 0,
             "questionCount": 0
           }
@@ -263,53 +427,67 @@
       {
         "path": "V",
         "title": "Seguridad y administración electrónica",
+        "coverage": {
+          "total": 7,
+          "conApuntes": 1,
+          "soloResumen": 0,
+          "pendientes": 6,
+          "conPractica": 1
+        },
         "topics": [
           {
             "path": "V.34",
             "title": "Seguridad de la información",
-            "status": "completo",
+            "apuntesStatus": "completos",
+            "practicaStatus": "con_practica",
             "sectionCount": 6,
             "questionCount": 10
           },
           {
             "path": "V.35",
             "title": "El Esquema Nacional de Seguridad (ENS, RD 311/2022)",
-            "status": "pendiente",
+            "apuntesStatus": "pendiente",
+            "practicaStatus": "pendiente",
             "sectionCount": 0,
             "questionCount": 0
           },
           {
             "path": "V.36",
             "title": "Criptografía y firma electrónica",
-            "status": "pendiente",
+            "apuntesStatus": "pendiente",
+            "practicaStatus": "pendiente",
             "sectionCount": 0,
             "questionCount": 0
           },
           {
             "path": "V.37",
             "title": "Protección de datos aplicada",
-            "status": "pendiente",
+            "apuntesStatus": "pendiente",
+            "practicaStatus": "pendiente",
             "sectionCount": 0,
             "questionCount": 0
           },
           {
             "path": "V.38",
             "title": "Ciberseguridad",
-            "status": "pendiente",
+            "apuntesStatus": "pendiente",
+            "practicaStatus": "pendiente",
             "sectionCount": 0,
             "questionCount": 0
           },
           {
             "path": "V.39",
             "title": "Administración electrónica práctica",
-            "status": "pendiente",
+            "apuntesStatus": "pendiente",
+            "practicaStatus": "pendiente",
             "sectionCount": 0,
             "questionCount": 0
           },
           {
             "path": "V.40",
             "title": "Accesibilidad y usabilidad",
-            "status": "pendiente",
+            "apuntesStatus": "pendiente",
+            "practicaStatus": "pendiente",
             "sectionCount": 0,
             "questionCount": 0
           }
@@ -321,7 +499,10 @@
     "I.1": {
       "path": "I.1",
       "title": "La Constitución Española de 1978",
-      "status": "completo",
+      "apuntesStatus": "completos",
+      "practicaStatus": "con_practica",
+      "sectionCount": 6,
+      "questionCount": 10,
       "source": {
         "label": "Constitución Española, BOE-A-1978-31229 (texto consolidado)",
         "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229"
@@ -380,7 +561,10 @@
     "I.10": {
       "path": "I.10",
       "title": "La contratación del sector público (Ley 9/2017)",
-      "status": "completo",
+      "apuntesStatus": "completos",
+      "practicaStatus": "con_practica",
+      "sectionCount": 6,
+      "questionCount": 10,
       "source": {
         "label": "Ley 9/2017, de 8 de noviembre, de Contratos del Sector Público, por la que se transponen al ordenamiento jurídico español las Directivas 2014/23/UE y 2014/24/UE",
         "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2017-12902"
@@ -443,7 +627,10 @@
     "I.12": {
       "path": "I.12",
       "title": "Transparencia y protección de datos en la Administración",
-      "status": "completo",
+      "apuntesStatus": "completos",
+      "practicaStatus": "con_practica",
+      "sectionCount": 6,
+      "questionCount": 10,
       "source": {
         "label": "Ley 19/2013, de 9 de diciembre, de transparencia, acceso a la información pública y buen gobierno; Reglamento (UE) 2016/679 (RGPD) y Ley Orgánica 3/2018, de 5 de diciembre (LOPDGDD)",
         "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2013-12887"
@@ -512,7 +699,10 @@
     "I.2": {
       "path": "I.2",
       "title": "La Unión Europea",
-      "status": "completo",
+      "apuntesStatus": "completos",
+      "practicaStatus": "con_practica",
+      "sectionCount": 6,
+      "questionCount": 10,
       "source": {
         "label": "Tratado de la Unión Europea y Tratado de Funcionamiento de la Unión Europea. Versiones consolidadas (DOUE, publicadas en el BOE)",
         "url": "https://www.boe.es/buscar/doc.php?id=DOUE-Z-2010-70002"
@@ -582,7 +772,10 @@
     "I.3": {
       "path": "I.3",
       "title": "El régimen local",
-      "status": "completo",
+      "apuntesStatus": "completos",
+      "practicaStatus": "con_practica",
+      "sectionCount": 6,
+      "questionCount": 10,
       "source": {
         "label": "Ley 7/1985, de 2 de abril, reguladora de las bases del régimen local (texto consolidado)",
         "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392"
@@ -642,7 +835,10 @@
     "I.5": {
       "path": "I.5",
       "title": "El procedimiento administrativo (Ley 39/2015)",
-      "status": "completo",
+      "apuntesStatus": "completos",
+      "practicaStatus": "con_practica",
+      "sectionCount": 6,
+      "questionCount": 10,
       "source": {
         "label": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas (texto consolidado)",
         "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565"
@@ -712,7 +908,10 @@
     "I.6": {
       "path": "I.6",
       "title": "El régimen jurídico del sector público (Ley 40/2015)",
-      "status": "completo",
+      "apuntesStatus": "completos",
+      "practicaStatus": "con_practica",
+      "sectionCount": 6,
+      "questionCount": 10,
       "source": {
         "label": "Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público (texto consolidado)",
         "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10566"
@@ -777,7 +976,10 @@
     "I.7": {
       "path": "I.7",
       "title": "El personal al servicio de las administraciones públicas (TREBEP)",
-      "status": "completo",
+      "apuntesStatus": "completos",
+      "practicaStatus": "con_practica",
+      "sectionCount": 6,
+      "questionCount": 10,
       "source": {
         "label": "Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público (TREBEP)",
         "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719"
@@ -841,7 +1043,10 @@
     "I.9": {
       "path": "I.9",
       "title": "Las haciendas locales y el presupuesto",
-      "status": "completo",
+      "apuntesStatus": "completos",
+      "practicaStatus": "con_practica",
+      "sectionCount": 6,
+      "questionCount": 10,
       "source": {
         "label": "Real Decreto Legislativo 2/2004, de 5 de marzo, por el que se aprueba el texto refundido de la Ley Reguladora de las Haciendas Locales (texto vigente de la Ley 39/1988)",
         "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4214"
@@ -910,7 +1115,10 @@
     "II.13": {
       "path": "II.13",
       "title": "Arquitectura de ordenadores",
-      "status": "completo",
+      "apuntesStatus": "completos",
+      "practicaStatus": "con_practica",
+      "sectionCount": 6,
+      "questionCount": 10,
       "source": {
         "label": "Apuntes propios de la demo sobre arquitectura de computadores (conceptos estándar)",
         "url": ""
@@ -985,7 +1193,10 @@
     "III.21": {
       "path": "III.21",
       "title": "Redes",
-      "status": "completo",
+      "apuntesStatus": "completos",
+      "practicaStatus": "con_practica",
+      "sectionCount": 6,
+      "questionCount": 10,
       "source": {
         "label": "IETF — RFC 791, Internet Protocol (IPv4); RFC 8200, Internet Protocol, Version 6 (IPv6)",
         "url": "https://datatracker.ietf.org/doc/html/rfc791"
@@ -1162,7 +1373,10 @@
     "III.24": {
       "path": "III.24",
       "title": "Monitorización y gestión de incidencias",
-      "status": "completo",
+      "apuntesStatus": "completos",
+      "practicaStatus": "con_practica",
+      "sectionCount": 6,
+      "questionCount": 10,
       "source": {
         "label": "ISO/IEC 20000-1:2018 — Tecnología de la información. Gestión del servicio. Parte 1: Requisitos del sistema de gestión del servicio",
         "url": "https://www.iso.org/standard/70636.html"
@@ -1284,7 +1498,10 @@
     "V.34": {
       "path": "V.34",
       "title": "Seguridad de la información",
-      "status": "completo",
+      "apuntesStatus": "completos",
+      "practicaStatus": "con_practica",
+      "sectionCount": 6,
+      "questionCount": 10,
       "source": {
         "label": "ISO/IEC 27001:2022 — Seguridad de la información, ciberseguridad y protección de la privacidad. Sistemas de gestión de la seguridad de la información. Requisitos",
         "url": "https://www.iso.org/standard/27001"
@@ -1385,6 +1602,10 @@
       "slug": "i-1",
       "tema_path": "I.1",
       "title": "Práctica · La Constitución Española de 1978",
+      "source": {
+        "label": "Constitución Española, BOE-A-1978-31229 (texto consolidado)",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229"
+      },
       "questions": [
         {
           "stem": "¿Cuándo entró en vigor la Constitución Española de 1978?",
@@ -1407,7 +1628,11 @@
             }
           ],
           "correct": "b",
-          "explanation": "Se publicó en el BOE el 29 de diciembre de 1978 y entró en vigor ese mismo día (disposición final)."
+          "explanation": "Se publicó en el BOE el 29 de diciembre de 1978 y entró en vigor ese mismo día (disposición final).",
+          "source": {
+            "label": "Constitución Española, BOE-A-1978-31229 (texto consolidado)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229"
+          }
         },
         {
           "stem": "¿Cuántos artículos tiene la Constitución Española de 1978?",
@@ -1430,7 +1655,11 @@
             }
           ],
           "correct": "c",
-          "explanation": "Tiene 169 artículos, además de preámbulo y disposiciones adicionales, transitorias, derogatoria y final."
+          "explanation": "Tiene 169 artículos, además de preámbulo y disposiciones adicionales, transitorias, derogatoria y final.",
+          "source": {
+            "label": "Constitución Española, BOE-A-1978-31229 (texto consolidado)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229"
+          }
         },
         {
           "stem": "¿Qué materia regula el Título I de la Constitución?",
@@ -1453,7 +1682,11 @@
             }
           ],
           "correct": "c",
-          "explanation": "El Título I (artículos 10-55) regula los derechos y deberes fundamentales."
+          "explanation": "El Título I (artículos 10-55) regula los derechos y deberes fundamentales.",
+          "source": {
+            "label": "Constitución Española, BOE-A-1978-31229 (texto consolidado)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229"
+          }
         },
         {
           "stem": "Según el artículo 1.1, ¿cuáles son los valores superiores del ordenamiento jurídico?",
@@ -1476,7 +1709,11 @@
             }
           ],
           "correct": "a",
-          "explanation": "El artículo 1.1 propugna como valores superiores la libertad, la justicia, la igualdad y el pluralismo político."
+          "explanation": "El artículo 1.1 propugna como valores superiores la libertad, la justicia, la igualdad y el pluralismo político.",
+          "source": {
+            "label": "Constitución Española, BOE-A-1978-31229 (texto consolidado)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229"
+          }
         },
         {
           "stem": "¿En quién reside la soberanía nacional?",
@@ -1499,7 +1736,11 @@
             }
           ],
           "correct": "b",
-          "explanation": "El artículo 1.2 establece que la soberanía nacional reside en el pueblo español, del que emanan los poderes del Estado."
+          "explanation": "El artículo 1.2 establece que la soberanía nacional reside en el pueblo español, del que emanan los poderes del Estado.",
+          "source": {
+            "label": "Constitución Española, BOE-A-1978-31229 (texto consolidado)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229"
+          }
         },
         {
           "stem": "¿Cuál es la forma política del Estado según el artículo 1.3?",
@@ -1522,7 +1763,11 @@
             }
           ],
           "correct": "b",
-          "explanation": "El artículo 1.3 define la forma política del Estado español como monarquía parlamentaria."
+          "explanation": "El artículo 1.3 define la forma política del Estado español como monarquía parlamentaria.",
+          "source": {
+            "label": "Constitución Española, BOE-A-1978-31229 (texto consolidado)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229"
+          }
         },
         {
           "stem": "¿Qué reformas exigen el procedimiento agravado del artículo 168?",
@@ -1545,7 +1790,11 @@
             }
           ],
           "correct": "b",
-          "explanation": "El artículo 168 se aplica a la revisión total y a la que afecte al título preliminar, al Título I, al Título II o al Título IX."
+          "explanation": "El artículo 168 se aplica a la revisión total y a la que afecte al título preliminar, al Título I, al Título II o al Título IX.",
+          "source": {
+            "label": "Constitución Española, BOE-A-1978-31229 (texto consolidado)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229"
+          }
         },
         {
           "stem": "¿Cuál es la lengua oficial del Estado?",
@@ -1568,7 +1817,11 @@
             }
           ],
           "correct": "a",
-          "explanation": "El artículo 3.1 establece que el castellano es la lengua española oficial del Estado."
+          "explanation": "El artículo 3.1 establece que el castellano es la lengua española oficial del Estado.",
+          "source": {
+            "label": "Constitución Española, BOE-A-1978-31229 (texto consolidado)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229"
+          }
         },
         {
           "stem": "¿En qué Título se regula el Tribunal Constitucional?",
@@ -1591,7 +1844,11 @@
             }
           ],
           "correct": "b",
-          "explanation": "El Título IX (artículos 159-165) regula el Tribunal Constitucional."
+          "explanation": "El Título IX (artículos 159-165) regula el Tribunal Constitucional.",
+          "source": {
+            "label": "Constitución Española, BOE-A-1978-31229 (texto consolidado)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229"
+          }
         },
         {
           "stem": "¿Cuál es la capital del Estado según el artículo 5?",
@@ -1614,7 +1871,11 @@
             }
           ],
           "correct": "a",
-          "explanation": "El artículo 5 declara que la capital del Estado es la villa de Madrid."
+          "explanation": "El artículo 5 declara que la capital del Estado es la villa de Madrid.",
+          "source": {
+            "label": "Constitución Española, BOE-A-1978-31229 (texto consolidado)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229"
+          }
         }
       ]
     },
@@ -1622,6 +1883,10 @@
       "slug": "i-10",
       "tema_path": "I.10",
       "title": "Práctica · La contratación del sector público (Ley 9/2017)",
+      "source": {
+        "label": "Ley 9/2017, de 8 de noviembre, de Contratos del Sector Público, por la que se transponen al ordenamiento jurídico español las Directivas 2014/23/UE y 2014/24/UE",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2017-12902"
+      },
       "questions": [
         {
           "stem": "¿Qué ley regula actualmente la contratación del sector público en España?",
@@ -1644,7 +1909,11 @@
             }
           ],
           "correct": "b",
-          "explanation": "La Ley 9/2017, de 8 de noviembre, de Contratos del Sector Público, es la norma vigente y transpone las Directivas 2014/23/UE y 2014/24/UE."
+          "explanation": "La Ley 9/2017, de 8 de noviembre, de Contratos del Sector Público, es la norma vigente y transpone las Directivas 2014/23/UE y 2014/24/UE.",
+          "source": {
+            "label": "Ley 9/2017, de 8 de noviembre, de Contratos del Sector Público, por la que se transponen al ordenamiento jurídico español las Directivas 2014/23/UE y 2014/24/UE",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2017-12902"
+          }
         },
         {
           "stem": "¿Cuál de las siguientes NO es una clase de contrato regulada por la LCSP?",
@@ -1667,7 +1936,11 @@
             }
           ],
           "correct": "d",
-          "explanation": "La LCSP clasifica los contratos en obras, concesión de obras, concesión de servicios, suministro y servicios; la gestión de servicios públicos fue una categoría del régimen anterior y hoy se reconduce a la concesión de servicios."
+          "explanation": "La LCSP clasifica los contratos en obras, concesión de obras, concesión de servicios, suministro y servicios; la gestión de servicios públicos fue una categoría del régimen anterior y hoy se reconduce a la concesión de servicios.",
+          "source": {
+            "label": "Ley 9/2017, de 8 de noviembre, de Contratos del Sector Público, por la que se transponen al ordenamiento jurídico español las Directivas 2014/23/UE y 2014/24/UE",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2017-12902"
+          }
         },
         {
           "stem": "En la concesión de obras, ¿qué rasgo define la contraprestación del concesionario?",
@@ -1690,7 +1963,11 @@
             }
           ],
           "correct": "d",
-          "explanation": "El rasgo definitorio de la concesión es que el concesionario asume el riesgo operacional y se retribuye mediante la explotación de la obra."
+          "explanation": "El rasgo definitorio de la concesión es que el concesionario asume el riesgo operacional y se retribuye mediante la explotación de la obra.",
+          "source": {
+            "label": "Ley 9/2017, de 8 de noviembre, de Contratos del Sector Público, por la que se transponen al ordenamiento jurídico español las Directivas 2014/23/UE y 2014/24/UE",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2017-12902"
+          }
         },
         {
           "stem": "¿Cuál es el importe máximo de un contrato menor de servicios o de suministro?",
@@ -1713,7 +1990,11 @@
             }
           ],
           "correct": "c",
-          "explanation": "Los contratos menores de suministro y servicios requieren un valor estimado inferior a 40.000 euros; los de obras, inferior a 15.000 euros."
+          "explanation": "Los contratos menores de suministro y servicios requieren un valor estimado inferior a 40.000 euros; los de obras, inferior a 15.000 euros.",
+          "source": {
+            "label": "Ley 9/2017, de 8 de noviembre, de Contratos del Sector Público, por la que se transponen al ordenamiento jurídico español las Directivas 2014/23/UE y 2014/24/UE",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2017-12902"
+          }
         },
         {
           "stem": "¿Qué procedimiento permite que cualquier empresario interesado presente oferta sin invitación previa?",
@@ -1736,7 +2017,11 @@
             }
           ],
           "correct": "d",
-          "explanation": "El procedimiento abierto es la regla general: cualquier interesado que acredite solvencia puede presentar oferta; el restringido exige invitación previa."
+          "explanation": "El procedimiento abierto es la regla general: cualquier interesado que acredite solvencia puede presentar oferta; el restringido exige invitación previa.",
+          "source": {
+            "label": "Ley 9/2017, de 8 de noviembre, de Contratos del Sector Público, por la que se transponen al ordenamiento jurídico español las Directivas 2014/23/UE y 2014/24/UE",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2017-12902"
+          }
         },
         {
           "stem": "¿Qué órgano valora las ofertas y propone la adjudicación en el procedimiento abierto?",
@@ -1759,7 +2044,11 @@
             }
           ],
           "correct": "c",
-          "explanation": "La mesa de contratación es el órgano colegiado de asistencia que valora las ofertas y propone la adjudicación al órgano de contratación."
+          "explanation": "La mesa de contratación es el órgano colegiado de asistencia que valora las ofertas y propone la adjudicación al órgano de contratación.",
+          "source": {
+            "label": "Ley 9/2017, de 8 de noviembre, de Contratos del Sector Público, por la que se transponen al ordenamiento jurídico español las Directivas 2014/23/UE y 2014/24/UE",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2017-12902"
+          }
         },
         {
           "stem": "¿Qué documento establece las cláusulas administrativas y los criterios de adjudicación de un contrato?",
@@ -1782,7 +2071,11 @@
             }
           ],
           "correct": "a",
-          "explanation": "El PCAP regula los derechos y obligaciones, los criterios de adjudicación y las condiciones del contrato; el PPT define las características técnicas."
+          "explanation": "El PCAP regula los derechos y obligaciones, los criterios de adjudicación y las condiciones del contrato; el PPT define las características técnicas.",
+          "source": {
+            "label": "Ley 9/2017, de 8 de noviembre, de Contratos del Sector Público, por la que se transponen al ordenamiento jurídico español las Directivas 2014/23/UE y 2014/24/UE",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2017-12902"
+          }
         },
         {
           "stem": "La LCSP suprimió la garantía provisional y exige, con carácter general, una garantía definitiva de...",
@@ -1805,7 +2098,11 @@
             }
           ],
           "correct": "c",
-          "explanation": "La garantía definitiva se fija con carácter general en el 5 % del precio de adjudicación y responde de la correcta ejecución del contrato."
+          "explanation": "La garantía definitiva se fija con carácter general en el 5 % del precio de adjudicación y responde de la correcta ejecución del contrato.",
+          "source": {
+            "label": "Ley 9/2017, de 8 de noviembre, de Contratos del Sector Público, por la que se transponen al ordenamiento jurídico español las Directivas 2014/23/UE y 2014/24/UE",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2017-12902"
+          }
         },
         {
           "stem": "¿Qué recurso específico cabe contra los actos de preparación y adjudicación de los contratos del sector público?",
@@ -1828,7 +2125,11 @@
             }
           ],
           "correct": "c",
-          "explanation": "El recurso especial en materia de contratación se resuelve por el Tribunal Administrativo Central de Recursos Contractuales o el órgano autonómico equivalente."
+          "explanation": "El recurso especial en materia de contratación se resuelve por el Tribunal Administrativo Central de Recursos Contractuales o el órgano autonómico equivalente.",
+          "source": {
+            "label": "Ley 9/2017, de 8 de noviembre, de Contratos del Sector Público, por la que se transponen al ordenamiento jurídico español las Directivas 2014/23/UE y 2014/24/UE",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2017-12902"
+          }
         },
         {
           "stem": "¿Qué dos tipos de solvencia debe acreditar el licitador?",
@@ -1851,7 +2152,11 @@
             }
           ],
           "correct": "a",
-          "explanation": "La LCSP exige acreditar solvencia económica y financiera y solvencia técnica o profesional, en los términos y con los medios que fija la ley."
+          "explanation": "La LCSP exige acreditar solvencia económica y financiera y solvencia técnica o profesional, en los términos y con los medios que fija la ley.",
+          "source": {
+            "label": "Ley 9/2017, de 8 de noviembre, de Contratos del Sector Público, por la que se transponen al ordenamiento jurídico español las Directivas 2014/23/UE y 2014/24/UE",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2017-12902"
+          }
         }
       ]
     },
@@ -1859,6 +2164,10 @@
       "slug": "i-12",
       "tema_path": "I.12",
       "title": "Práctica · Transparencia y protección de datos en la Administración",
+      "source": {
+        "label": "Ley 19/2013, de 9 de diciembre, de transparencia, acceso a la información pública y buen gobierno; Reglamento (UE) 2016/679 (RGPD) y Ley Orgánica 3/2018, de 5 de diciembre (LOPDGDD)",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2013-12887"
+      },
       "questions": [
         {
           "stem": "¿Qué ley regula la publicidad activa y el derecho de acceso a la información pública?",
@@ -1881,7 +2190,11 @@
             }
           ],
           "correct": "b",
-          "explanation": "La Ley 19/2013 regula la publicidad activa, el derecho de acceso y las obligaciones de buen gobierno; la LOPDGDD y el RGPD regulan la protección de datos."
+          "explanation": "La Ley 19/2013 regula la publicidad activa, el derecho de acceso y las obligaciones de buen gobierno; la LOPDGDD y el RGPD regulan la protección de datos.",
+          "source": {
+            "label": "Ley 19/2013, de 9 de diciembre, de transparencia, acceso a la información pública y buen gobierno; Reglamento (UE) 2016/679 (RGPD) y Ley Orgánica 3/2018, de 5 de diciembre (LOPDGDD)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2013-12887"
+          }
         },
         {
           "stem": "¿Es necesario motivar la solicitud de acceso a la información pública?",
@@ -1904,7 +2217,11 @@
             }
           ],
           "correct": "c",
-          "explanation": "El derecho de acceso se reconoce a todas las personas y puede ejercerse sin necesidad de motivar la solicitud ni de invocar un interés concreto."
+          "explanation": "El derecho de acceso se reconoce a todas las personas y puede ejercerse sin necesidad de motivar la solicitud ni de invocar un interés concreto.",
+          "source": {
+            "label": "Ley 19/2013, de 9 de diciembre, de transparencia, acceso a la información pública y buen gobierno; Reglamento (UE) 2016/679 (RGPD) y Ley Orgánica 3/2018, de 5 de diciembre (LOPDGDD)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2013-12887"
+          }
         },
         {
           "stem": "¿Cuál es el plazo máximo para resolver una solicitud de acceso a la información pública?",
@@ -1927,7 +2244,11 @@
             }
           ],
           "correct": "b",
-          "explanation": "La ley fija un plazo de un mes, ampliable por otro mes cuando la complejidad o el volumen de la información lo justifiquen."
+          "explanation": "La ley fija un plazo de un mes, ampliable por otro mes cuando la complejidad o el volumen de la información lo justifiquen.",
+          "source": {
+            "label": "Ley 19/2013, de 9 de diciembre, de transparencia, acceso a la información pública y buen gobierno; Reglamento (UE) 2016/679 (RGPD) y Ley Orgánica 3/2018, de 5 de diciembre (LOPDGDD)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2013-12887"
+          }
         },
         {
           "stem": "Si la Administración no resuelve la solicitud de acceso en el plazo legal, ¿qué ocurre?",
@@ -1950,7 +2271,11 @@
             }
           ],
           "correct": "a",
-          "explanation": "En materia de acceso a la información pública el silencio tiene efecto desestimatorio: la falta de resolución se entiende como denegación."
+          "explanation": "En materia de acceso a la información pública el silencio tiene efecto desestimatorio: la falta de resolución se entiende como denegación.",
+          "source": {
+            "label": "Ley 19/2013, de 9 de diciembre, de transparencia, acceso a la información pública y buen gobierno; Reglamento (UE) 2016/679 (RGPD) y Ley Orgánica 3/2018, de 5 de diciembre (LOPDGDD)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2013-12887"
+          }
         },
         {
           "stem": "Cuando la información solicitada contiene datos personales de terceros, ¿qué regla se aplica?",
@@ -1973,7 +2298,11 @@
             }
           ],
           "correct": "c",
-          "explanation": "El art. 15 de la Ley 19/2013 y el RGPD exigen ponderar el interés público y el daño a los derechos de los titulares, permitiendo el acceso parcial y la anonimización de los datos no relevantes."
+          "explanation": "El art. 15 de la Ley 19/2013 y el RGPD exigen ponderar el interés público y el daño a los derechos de los titulares, permitiendo el acceso parcial y la anonimización de los datos no relevantes.",
+          "source": {
+            "label": "Ley 19/2013, de 9 de diciembre, de transparencia, acceso a la información pública y buen gobierno; Reglamento (UE) 2016/679 (RGPD) y Ley Orgánica 3/2018, de 5 de diciembre (LOPDGDD)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2013-12887"
+          }
         },
         {
           "stem": "¿Cuál de las siguientes es una obligación de publicidad activa?",
@@ -1996,7 +2325,11 @@
             }
           ],
           "correct": "a",
-          "explanation": "La publicidad activa comprende la información institucional y organizativa, la de relevancia jurídica y la económica, presupuestaria y estadística, incluidas las retribuciones de los altos cargos."
+          "explanation": "La publicidad activa comprende la información institucional y organizativa, la de relevancia jurídica y la económica, presupuestaria y estadística, incluidas las retribuciones de los altos cargos.",
+          "source": {
+            "label": "Ley 19/2013, de 9 de diciembre, de transparencia, acceso a la información pública y buen gobierno; Reglamento (UE) 2016/679 (RGPD) y Ley Orgánica 3/2018, de 5 de diciembre (LOPDGDD)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2013-12887"
+          }
         },
         {
           "stem": "¿Qué principio del RGPD exige que los datos sean adecuados, pertinentes y limitados a lo necesario?",
@@ -2019,7 +2352,11 @@
             }
           ],
           "correct": "d",
-          "explanation": "La minimización de datos impide recoger más información de la necesaria para la finalidad del tratamiento."
+          "explanation": "La minimización de datos impide recoger más información de la necesaria para la finalidad del tratamiento.",
+          "source": {
+            "label": "Ley 19/2013, de 9 de diciembre, de transparencia, acceso a la información pública y buen gobierno; Reglamento (UE) 2016/679 (RGPD) y Ley Orgánica 3/2018, de 5 de diciembre (LOPDGDD)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2013-12887"
+          }
         },
         {
           "stem": "En la Administración, ¿cuál es la base jurídica habitual para tratar datos personales?",
@@ -2042,7 +2379,11 @@
             }
           ],
           "correct": "c",
-          "explanation": "Las administraciones tratan datos principalmente porque una norma les obliga o porque ejercen potestades públicas; el consentimiento es una base más propia de relaciones privadas."
+          "explanation": "Las administraciones tratan datos principalmente porque una norma les obliga o porque ejercen potestades públicas; el consentimiento es una base más propia de relaciones privadas.",
+          "source": {
+            "label": "Ley 19/2013, de 9 de diciembre, de transparencia, acceso a la información pública y buen gobierno; Reglamento (UE) 2016/679 (RGPD) y Ley Orgánica 3/2018, de 5 de diciembre (LOPDGDD)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2013-12887"
+          }
         },
         {
           "stem": "¿Qué caracteriza al Delegado de Protección de Datos en las administraciones públicas?",
@@ -2065,7 +2406,11 @@
             }
           ],
           "correct": "b",
-          "explanation": "El DPD es obligatorio en las administraciones públicas, actúa con independencia, asesora al responsable, supervisa el cumplimiento y coopera con la autoridad de control."
+          "explanation": "El DPD es obligatorio en las administraciones públicas, actúa con independencia, asesora al responsable, supervisa el cumplimiento y coopera con la autoridad de control.",
+          "source": {
+            "label": "Ley 19/2013, de 9 de diciembre, de transparencia, acceso a la información pública y buen gobierno; Reglamento (UE) 2016/679 (RGPD) y Ley Orgánica 3/2018, de 5 de diciembre (LOPDGDD)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2013-12887"
+          }
         },
         {
           "stem": "¿En qué plazo debe notificarse una brecha de seguridad a la autoridad de control?",
@@ -2088,7 +2433,11 @@
             }
           ],
           "correct": "c",
-          "explanation": "El RGPD impone notificar las brechas a la autoridad de control en 72 horas desde que el responsable tiene conocimiento, salvo que sea improbable que suponga un riesgo."
+          "explanation": "El RGPD impone notificar las brechas a la autoridad de control en 72 horas desde que el responsable tiene conocimiento, salvo que sea improbable que suponga un riesgo.",
+          "source": {
+            "label": "Ley 19/2013, de 9 de diciembre, de transparencia, acceso a la información pública y buen gobierno; Reglamento (UE) 2016/679 (RGPD) y Ley Orgánica 3/2018, de 5 de diciembre (LOPDGDD)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2013-12887"
+          }
         }
       ]
     },
@@ -2096,6 +2445,10 @@
       "slug": "i-2",
       "tema_path": "I.2",
       "title": "Práctica · La Unión Europea",
+      "source": {
+        "label": "Tratado de la Unión Europea y Tratado de Funcionamiento de la Unión Europea. Versiones consolidadas (DOUE, publicadas en el BOE)",
+        "url": "https://www.boe.es/buscar/doc.php?id=DOUE-Z-2010-70002"
+      },
       "questions": [
         {
           "stem": "¿Qué tratado creó la Unión Europea como organización distinta de las Comunidades Europeas?",
@@ -2118,7 +2471,11 @@
             }
           ],
           "correct": "b",
-          "explanation": "El Tratado de Maastricht, firmado en 1992 y en vigor desde 1993, creó la Unión Europea; el Tratado de Lisboa fue una reforma posterior."
+          "explanation": "El Tratado de Maastricht, firmado en 1992 y en vigor desde 1993, creó la Unión Europea; el Tratado de Lisboa fue una reforma posterior.",
+          "source": {
+            "label": "Tratado de la Unión Europea y Tratado de Funcionamiento de la Unión Europea. Versiones consolidadas (DOUE, publicadas en el BOE)",
+            "url": "https://www.boe.es/buscar/doc.php?id=DOUE-Z-2010-70002"
+          }
         },
         {
           "stem": "¿Cuándo se convirtió España en Estado miembro de las Comunidades Europeas?",
@@ -2141,7 +2498,11 @@
             }
           ],
           "correct": "b",
-          "explanation": "El Tratado de Adhesión se firmó el 12 de junio de 1985, pero la adhesión surtió efecto el 1 de enero de 1986."
+          "explanation": "El Tratado de Adhesión se firmó el 12 de junio de 1985, pero la adhesión surtió efecto el 1 de enero de 1986.",
+          "source": {
+            "label": "Tratado de la Unión Europea y Tratado de Funcionamiento de la Unión Europea. Versiones consolidadas (DOUE, publicadas en el BOE)",
+            "url": "https://www.boe.es/buscar/doc.php?id=DOUE-Z-2010-70002"
+          }
         },
         {
           "stem": "¿Qué tratado entró en vigor el 1 de diciembre de 2009?",
@@ -2164,7 +2525,11 @@
             }
           ],
           "correct": "c",
-          "explanation": "El Tratado de Lisboa se firmó el 13 de diciembre de 2007 y entró en vigor el 1 de diciembre de 2009, tras el periodo de ratificación."
+          "explanation": "El Tratado de Lisboa se firmó el 13 de diciembre de 2007 y entró en vigor el 1 de diciembre de 2009, tras el periodo de ratificación.",
+          "source": {
+            "label": "Tratado de la Unión Europea y Tratado de Funcionamiento de la Unión Europea. Versiones consolidadas (DOUE, publicadas en el BOE)",
+            "url": "https://www.boe.es/buscar/doc.php?id=DOUE-Z-2010-70002"
+          }
         },
         {
           "stem": "¿Qué institución representa directamente a los ciudadanos de la Unión y se elige por sufragio universal directo?",
@@ -2187,7 +2552,11 @@
             }
           ],
           "correct": "a",
-          "explanation": "El Parlamento Europeo es la institución que representa a la ciudadanía y se elige por sufragio universal directo cada cinco años."
+          "explanation": "El Parlamento Europeo es la institución que representa a la ciudadanía y se elige por sufragio universal directo cada cinco años.",
+          "source": {
+            "label": "Tratado de la Unión Europea y Tratado de Funcionamiento de la Unión Europea. Versiones consolidadas (DOUE, publicadas en el BOE)",
+            "url": "https://www.boe.es/buscar/doc.php?id=DOUE-Z-2010-70002"
+          }
         },
         {
           "stem": "¿Qué institución tiene atribuida, con carácter general, la iniciativa legislativa en la Unión?",
@@ -2210,7 +2579,11 @@
             }
           ],
           "correct": "c",
-          "explanation": "La Comisión Europea es la que propone con carácter general las normas de la Unión; el Parlamento y el Consejo las debaten y aprueban."
+          "explanation": "La Comisión Europea es la que propone con carácter general las normas de la Unión; el Parlamento y el Consejo las debaten y aprueban.",
+          "source": {
+            "label": "Tratado de la Unión Europea y Tratado de Funcionamiento de la Unión Europea. Versiones consolidadas (DOUE, publicadas en el BOE)",
+            "url": "https://www.boe.es/buscar/doc.php?id=DOUE-Z-2010-70002"
+          }
         },
         {
           "stem": "¿Qué institución define las orientaciones y prioridades políticas generales de la Unión sin ejercer función legislativa?",
@@ -2233,7 +2606,11 @@
             }
           ],
           "correct": "d",
-          "explanation": "El Consejo Europeo reúne a los jefes de Estado o de Gobierno y define las orientaciones políticas, pero no aprueba leyes."
+          "explanation": "El Consejo Europeo reúne a los jefes de Estado o de Gobierno y define las orientaciones políticas, pero no aprueba leyes.",
+          "source": {
+            "label": "Tratado de la Unión Europea y Tratado de Funcionamiento de la Unión Europea. Versiones consolidadas (DOUE, publicadas en el BOE)",
+            "url": "https://www.boe.es/buscar/doc.php?id=DOUE-Z-2010-70002"
+          }
         },
         {
           "stem": "¿Cuál de estas normas de la Unión es directamente aplicable en España sin necesidad de transposición?",
@@ -2256,7 +2633,11 @@
             }
           ],
           "correct": "b",
-          "explanation": "El reglamento es obligatorio en todos sus elementos y directamente aplicable; la directiva exige transposición y las recomendaciones y dictámenes no son vinculantes."
+          "explanation": "El reglamento es obligatorio en todos sus elementos y directamente aplicable; la directiva exige transposición y las recomendaciones y dictámenes no son vinculantes.",
+          "source": {
+            "label": "Tratado de la Unión Europea y Tratado de Funcionamiento de la Unión Europea. Versiones consolidadas (DOUE, publicadas en el BOE)",
+            "url": "https://www.boe.es/buscar/doc.php?id=DOUE-Z-2010-70002"
+          }
         },
         {
           "stem": "¿Qué precepto de la Constitución permite atribuir a una organización internacional el ejercicio de competencias derivadas de la Constitución?",
@@ -2279,7 +2660,11 @@
             }
           ],
           "correct": "a",
-          "explanation": "El artículo 93 CE permite autorizar por ley orgánica la celebración de tratados que atribuyan a una organización internacional el ejercicio de competencias constitucionales."
+          "explanation": "El artículo 93 CE permite autorizar por ley orgánica la celebración de tratados que atribuyan a una organización internacional el ejercicio de competencias constitucionales.",
+          "source": {
+            "label": "Tratado de la Unión Europea y Tratado de Funcionamiento de la Unión Europea. Versiones consolidadas (DOUE, publicadas en el BOE)",
+            "url": "https://www.boe.es/buscar/doc.php?id=DOUE-Z-2010-70002"
+          }
         },
         {
           "stem": "¿Cada cuánto tiempo rota la presidencia del Consejo?",
@@ -2302,7 +2687,11 @@
             }
           ],
           "correct": "c",
-          "explanation": "La presidencia del Consejo rota entre los Estados miembros cada seis meses; los tríos de Estados coordinan un programa de dieciocho meses."
+          "explanation": "La presidencia del Consejo rota entre los Estados miembros cada seis meses; los tríos de Estados coordinan un programa de dieciocho meses.",
+          "source": {
+            "label": "Tratado de la Unión Europea y Tratado de Funcionamiento de la Unión Europea. Versiones consolidadas (DOUE, publicadas en el BOE)",
+            "url": "https://www.boe.es/buscar/doc.php?id=DOUE-Z-2010-70002"
+          }
         },
         {
           "stem": "¿Qué institución garantiza la interpretación y aplicación uniformes del Derecho de la Unión?",
@@ -2325,7 +2714,11 @@
             }
           ],
           "correct": "d",
-          "explanation": "El Tribunal de Justicia de la Unión Europea vela por el respeto del Derecho en la interpretación y aplicación de los Tratados."
+          "explanation": "El Tribunal de Justicia de la Unión Europea vela por el respeto del Derecho en la interpretación y aplicación de los Tratados.",
+          "source": {
+            "label": "Tratado de la Unión Europea y Tratado de Funcionamiento de la Unión Europea. Versiones consolidadas (DOUE, publicadas en el BOE)",
+            "url": "https://www.boe.es/buscar/doc.php?id=DOUE-Z-2010-70002"
+          }
         }
       ]
     },
@@ -2333,6 +2726,10 @@
       "slug": "i-3",
       "tema_path": "I.3",
       "title": "Práctica · El régimen local",
+      "source": {
+        "label": "Ley 7/1985, de 2 de abril, reguladora de las bases del régimen local (texto consolidado)",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392"
+      },
       "questions": [
         {
           "stem": "¿Qué ley estatal regula las bases del régimen local?",
@@ -2355,7 +2752,11 @@
             }
           ],
           "correct": "a",
-          "explanation": "La Ley 7/1985, reguladora de las bases del régimen local, es la norma básica estatal; el Real Decreto Legislativo 2/2004 aprueba el texto refundido de las haciendas locales."
+          "explanation": "La Ley 7/1985, reguladora de las bases del régimen local, es la norma básica estatal; el Real Decreto Legislativo 2/2004 aprueba el texto refundido de las haciendas locales.",
+          "source": {
+            "label": "Ley 7/1985, de 2 de abril, reguladora de las bases del régimen local (texto consolidado)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392"
+          }
         },
         {
           "stem": "¿Qué entidades son entidades locales territoriales según la Ley 7/1985?",
@@ -2378,7 +2779,11 @@
             }
           ],
           "correct": "b",
-          "explanation": "El artículo 3 de la Ley 7/1985 declara entidades locales territoriales el municipio, la provincia y la isla en los archipiélagos balear y canario."
+          "explanation": "El artículo 3 de la Ley 7/1985 declara entidades locales territoriales el municipio, la provincia y la isla en los archipiélagos balear y canario.",
+          "source": {
+            "label": "Ley 7/1985, de 2 de abril, reguladora de las bases del régimen local (texto consolidado)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392"
+          }
         },
         {
           "stem": "¿Cuáles son los elementos del municipio?",
@@ -2401,7 +2806,11 @@
             }
           ],
           "correct": "c",
-          "explanation": "El artículo 11 de la Ley 7/1985 establece que son elementos del municipio el territorio, la población y la organización."
+          "explanation": "El artículo 11 de la Ley 7/1985 establece que son elementos del municipio el territorio, la población y la organización.",
+          "source": {
+            "label": "Ley 7/1985, de 2 de abril, reguladora de las bases del régimen local (texto consolidado)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392"
+          }
         },
         {
           "stem": "¿Cuál de estos servicios es obligatorio en todos los municipios, con independencia de su población?",
@@ -2424,7 +2833,11 @@
             }
           ],
           "correct": "d",
-          "explanation": "El alumbrado público y el cementerio figuran entre los servicios obligatorios de todos los municipios del artículo 26; los demás corresponden a tramos de población superiores."
+          "explanation": "El alumbrado público y el cementerio figuran entre los servicios obligatorios de todos los municipios del artículo 26; los demás corresponden a tramos de población superiores.",
+          "source": {
+            "label": "Ley 7/1985, de 2 de abril, reguladora de las bases del régimen local (texto consolidado)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392"
+          }
         },
         {
           "stem": "¿En qué municipios existe obligatoriamente la Junta de Gobierno Local?",
@@ -2447,7 +2860,11 @@
             }
           ],
           "correct": "b",
-          "explanation": "El artículo 20 de la Ley 7/1985 la exige en los municipios con población superior a 5.000 habitantes y permite su existencia en los demás por decisión organizativa propia."
+          "explanation": "El artículo 20 de la Ley 7/1985 la exige en los municipios con población superior a 5.000 habitantes y permite su existencia en los demás por decisión organizativa propia.",
+          "source": {
+            "label": "Ley 7/1985, de 2 de abril, reguladora de las bases del régimen local (texto consolidado)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392"
+          }
         },
         {
           "stem": "¿A qué órgano municipal corresponde aprobar las ordenanzas?",
@@ -2470,7 +2887,11 @@
             }
           ],
           "correct": "a",
-          "explanation": "El artículo 22 de la Ley 7/1985 atribuye expresamente al Pleno la aprobación del reglamento orgánico y de las ordenanzas."
+          "explanation": "El artículo 22 de la Ley 7/1985 atribuye expresamente al Pleno la aprobación del reglamento orgánico y de las ordenanzas.",
+          "source": {
+            "label": "Ley 7/1985, de 2 de abril, reguladora de las bases del régimen local (texto consolidado)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392"
+          }
         },
         {
           "stem": "¿Quién es el presidente de la corporación municipal y su máximo representante?",
@@ -2493,7 +2914,11 @@
             }
           ],
           "correct": "d",
-          "explanation": "El artículo 21 de la Ley 7/1985 declara al alcalde presidente de la corporación, con la dirección del gobierno y la administración municipal y la representación del ayuntamiento."
+          "explanation": "El artículo 21 de la Ley 7/1985 declara al alcalde presidente de la corporación, con la dirección del gobierno y la administración municipal y la representación del ayuntamiento.",
+          "source": {
+            "label": "Ley 7/1985, de 2 de abril, reguladora de las bases del régimen local (texto consolidado)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392"
+          }
         },
         {
           "stem": "¿Cuáles son órganos que existen en todas las diputaciones provinciales?",
@@ -2516,7 +2941,11 @@
             }
           ],
           "correct": "c",
-          "explanation": "El artículo 32 de la Ley 7/1985 dispone que el Presidente, los Vicepresidentes, la Junta de Gobierno y el Pleno existen en todas las diputaciones."
+          "explanation": "El artículo 32 de la Ley 7/1985 dispone que el Presidente, los Vicepresidentes, la Junta de Gobierno y el Pleno existen en todas las diputaciones.",
+          "source": {
+            "label": "Ley 7/1985, de 2 de abril, reguladora de las bases del régimen local (texto consolidado)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392"
+          }
         },
         {
           "stem": "En Canarias, ¿qué entidad asume las competencias propias de la provincia?",
@@ -2539,7 +2968,11 @@
             }
           ],
           "correct": "b",
-          "explanation": "En Canarias no existen diputaciones provinciales: la organización provincial se articula a través de los cabildos insulares, y en Baleares a través de los consejos insulares."
+          "explanation": "En Canarias no existen diputaciones provinciales: la organización provincial se articula a través de los cabildos insulares, y en Baleares a través de los consejos insulares.",
+          "source": {
+            "label": "Ley 7/1985, de 2 de abril, reguladora de las bases del régimen local (texto consolidado)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392"
+          }
         },
         {
           "stem": "¿Cuál de estas potestades NO corresponde a los municipios?",
@@ -2562,7 +2995,11 @@
             }
           ],
           "correct": "c",
-          "explanation": "Los municipios aprueban ordenanzas (potestad reglamentaria), pero no tienen potestad legislativa; la potestad legislativa corresponde a las Cortes Generales y a las asambleas autonómicas."
+          "explanation": "Los municipios aprueban ordenanzas (potestad reglamentaria), pero no tienen potestad legislativa; la potestad legislativa corresponde a las Cortes Generales y a las asambleas autonómicas.",
+          "source": {
+            "label": "Ley 7/1985, de 2 de abril, reguladora de las bases del régimen local (texto consolidado)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392"
+          }
         }
       ]
     },
@@ -2570,6 +3007,10 @@
       "slug": "i-5",
       "tema_path": "I.5",
       "title": "Práctica · El procedimiento administrativo (Ley 39/2015)",
+      "source": {
+        "label": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas (texto consolidado)",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565"
+      },
       "questions": [
         {
           "stem": "¿Qué ley regula el procedimiento administrativo común de las Administraciones Públicas?",
@@ -2592,7 +3033,11 @@
             }
           ],
           "correct": "a",
-          "explanation": "La Ley 39/2015 regula el procedimiento administrativo común; la Ley 40/2015 regula el régimen jurídico del sector público y la Ley 19/2013 la transparencia y el acceso a la información."
+          "explanation": "La Ley 39/2015 regula el procedimiento administrativo común; la Ley 40/2015 regula el régimen jurídico del sector público y la Ley 19/2013 la transparencia y el acceso a la información.",
+          "source": {
+            "label": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas (texto consolidado)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565"
+          }
         },
         {
           "stem": "En los procedimientos iniciados a solicitud del interesado, ¿qué sentido tiene el silencio administrativo?",
@@ -2615,7 +3060,11 @@
             }
           ],
           "correct": "b",
-          "explanation": "El artículo 24 establece el silencio estimatorio como regla general, con excepciones legales como el derecho de petición, el dominio público, el medio ambiente o la responsabilidad patrimonial."
+          "explanation": "El artículo 24 establece el silencio estimatorio como regla general, con excepciones legales como el derecho de petición, el dominio público, el medio ambiente o la responsabilidad patrimonial.",
+          "source": {
+            "label": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas (texto consolidado)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565"
+          }
         },
         {
           "stem": "Si la norma que regula el procedimiento no fija plazo máximo para resolver, ¿de cuánto tiempo dispone la Administración?",
@@ -2638,7 +3087,11 @@
             }
           ],
           "correct": "c",
-          "explanation": "El artículo 21.3 fija en tres meses el plazo máximo cuando la norma del procedimiento no establece otro."
+          "explanation": "El artículo 21.3 fija en tres meses el plazo máximo cuando la norma del procedimiento no establece otro.",
+          "source": {
+            "label": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas (texto consolidado)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565"
+          }
         },
         {
           "stem": "¿Qué plazo hay para interponer el recurso de alzada contra un acto expreso?",
@@ -2661,7 +3114,11 @@
             }
           ],
           "correct": "d",
-          "explanation": "El artículo 122 concede un mes para interponer la alzada si el acto es expreso; si el acto es presunto puede interponerse en cualquier momento."
+          "explanation": "El artículo 122 concede un mes para interponer la alzada si el acto es expreso; si el acto es presunto puede interponerse en cualquier momento.",
+          "source": {
+            "label": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas (texto consolidado)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565"
+          }
         },
         {
           "stem": "¿Ante qué órgano se interpone el recurso de alzada?",
@@ -2684,7 +3141,11 @@
             }
           ],
           "correct": "a",
-          "explanation": "El artículo 121 configura la alzada como recurso ante el órgano superior jerárquico del que dictó el acto impugnado."
+          "explanation": "El artículo 121 configura la alzada como recurso ante el órgano superior jerárquico del que dictó el acto impugnado.",
+          "source": {
+            "label": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas (texto consolidado)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565"
+          }
         },
         {
           "stem": "¿Qué recurso puede interponerse, con carácter potestativo, contra un acto que pone fin a la vía administrativa antes de acudir a la jurisdicción?",
@@ -2707,7 +3168,11 @@
             }
           ],
           "correct": "b",
-          "explanation": "El recurso de reposición es potestativo, se interpone ante el mismo órgano que dictó el acto y permite después acudir a la jurisdicción contencioso-administrativa."
+          "explanation": "El recurso de reposición es potestativo, se interpone ante el mismo órgano que dictó el acto y permite después acudir a la jurisdicción contencioso-administrativa.",
+          "source": {
+            "label": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas (texto consolidado)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565"
+          }
         },
         {
           "stem": "¿Qué duración tiene el trámite de audiencia antes de la propuesta de resolución?",
@@ -2730,7 +3195,11 @@
             }
           ],
           "correct": "c",
-          "explanation": "El artículo 82 concede un plazo no inferior a diez días ni superior a quince para alegar y presentar documentos."
+          "explanation": "El artículo 82 concede un plazo no inferior a diez días ni superior a quince para alegar y presentar documentos.",
+          "source": {
+            "label": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas (texto consolidado)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565"
+          }
         },
         {
           "stem": "¿Cuál es el plazo mínimo del trámite de información pública?",
@@ -2753,7 +3222,11 @@
             }
           ],
           "correct": "d",
-          "explanation": "El artículo 83 exige que el plazo para formular alegaciones en información pública no sea inferior a veinte días."
+          "explanation": "El artículo 83 exige que el plazo para formular alegaciones en información pública no sea inferior a veinte días.",
+          "source": {
+            "label": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas (texto consolidado)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565"
+          }
         },
         {
           "stem": "¿Cómo se computan los plazos señalados por días en el procedimiento administrativo?",
@@ -2776,7 +3249,11 @@
             }
           ],
           "correct": "a",
-          "explanation": "El artículo 30.2 dispone que los plazos por días son hábiles y excluye del cómputo sábados, domingos y festivos."
+          "explanation": "El artículo 30.2 dispone que los plazos por días son hábiles y excluye del cómputo sábados, domingos y festivos.",
+          "source": {
+            "label": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas (texto consolidado)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565"
+          }
         },
         {
           "stem": "En un procedimiento sancionador iniciado de oficio, ¿qué efecto produce el vencimiento del plazo máximo sin resolución?",
@@ -2799,7 +3276,11 @@
             }
           ],
           "correct": "b",
-          "explanation": "El artículo 25.1.b establece que, cuando se ejercitan potestades sancionadoras o de gravamen, el vencimiento del plazo produce la caducidad del procedimiento y el archivo de las actuaciones."
+          "explanation": "El artículo 25.1.b establece que, cuando se ejercitan potestades sancionadoras o de gravamen, el vencimiento del plazo produce la caducidad del procedimiento y el archivo de las actuaciones.",
+          "source": {
+            "label": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas (texto consolidado)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565"
+          }
         }
       ]
     },
@@ -2807,6 +3288,10 @@
       "slug": "i-6",
       "tema_path": "I.6",
       "title": "Práctica · El régimen jurídico del sector público (Ley 40/2015)",
+      "source": {
+        "label": "Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público (texto consolidado)",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10566"
+      },
       "questions": [
         {
           "stem": "¿Qué ley regula el régimen jurídico del sector público?",
@@ -2829,7 +3314,11 @@
             }
           ],
           "correct": "a",
-          "explanation": "La Ley 40/2015 regula el régimen jurídico del sector público; la Ley 39/2015 regula el procedimiento administrativo común y la Ley 9/2017 los contratos del sector público."
+          "explanation": "La Ley 40/2015 regula el régimen jurídico del sector público; la Ley 39/2015 regula el procedimiento administrativo común y la Ley 9/2017 los contratos del sector público.",
+          "source": {
+            "label": "Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público (texto consolidado)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10566"
+          }
         },
         {
           "stem": "¿Cómo es la competencia de los órganos administrativos?",
@@ -2852,7 +3341,11 @@
             }
           ],
           "correct": "b",
-          "explanation": "El artículo 8 declara la competencia irrenunciable y la ejerce el órgano que la tiene atribuida, salvo los casos de delegación o avocación previstos en la ley."
+          "explanation": "El artículo 8 declara la competencia irrenunciable y la ejerce el órgano que la tiene atribuida, salvo los casos de delegación o avocación previstos en la ley.",
+          "source": {
+            "label": "Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público (texto consolidado)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10566"
+          }
         },
         {
           "stem": "¿Qué requisito es imprescindible para que una delegación de competencias sea válida?",
@@ -2875,7 +3368,11 @@
             }
           ],
           "correct": "c",
-          "explanation": "El artículo 9 exige que las delegaciones de competencias y su revocación se publiquen en el BOE, en el boletín de la comunidad autónoma o en el de la provincia, según la Administración."
+          "explanation": "El artículo 9 exige que las delegaciones de competencias y su revocación se publiquen en el BOE, en el boletín de la comunidad autónoma o en el de la provincia, según la Administración.",
+          "source": {
+            "label": "Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público (texto consolidado)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10566"
+          }
         },
         {
           "stem": "¿Qué es la avocación?",
@@ -2898,7 +3395,11 @@
             }
           ],
           "correct": "d",
-          "explanation": "La avocación permite al órgano superior atraer para sí un asunto que corresponde ordinariamente o por delegación a sus órganos dependientes, mediante acuerdo motivado."
+          "explanation": "La avocación permite al órgano superior atraer para sí un asunto que corresponde ordinariamente o por delegación a sus órganos dependientes, mediante acuerdo motivado.",
+          "source": {
+            "label": "Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público (texto consolidado)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10566"
+          }
         },
         {
           "stem": "¿Qué permite la encomienda de gestión?",
@@ -2921,7 +3422,11 @@
             }
           ],
           "correct": "a",
-          "explanation": "La encomienda de gestión solo cubre actividades materiales o técnicas y no supone cesión de la titularidad de la competencia ni de los elementos sustantivos de su ejercicio."
+          "explanation": "La encomienda de gestión solo cubre actividades materiales o técnicas y no supone cesión de la titularidad de la competencia ni de los elementos sustantivos de su ejercicio.",
+          "source": {
+            "label": "Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público (texto consolidado)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10566"
+          }
         },
         {
           "stem": "¿Qué efecto tiene la suplencia en la competencia del órgano?",
@@ -2944,7 +3449,11 @@
             }
           ],
           "correct": "b",
-          "explanation": "El artículo 13 dispone que la suplencia no implica alteración de la competencia y que para su validez no es necesaria su publicación."
+          "explanation": "El artículo 13 dispone que la suplencia no implica alteración de la competencia y que para su validez no es necesaria su publicación.",
+          "source": {
+            "label": "Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público (texto consolidado)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10566"
+          }
         },
         {
           "stem": "¿Cuál es la duración máxima inicial de un convenio de colaboración?",
@@ -2967,7 +3476,11 @@
             }
           ],
           "correct": "c",
-          "explanation": "El artículo 49 exige una duración determinada no superior a cuatro años, prorrogable por acuerdo unánime de las partes por hasta cuatro años adicionales."
+          "explanation": "El artículo 49 exige una duración determinada no superior a cuatro años, prorrogable por acuerdo unánime de las partes por hasta cuatro años adicionales.",
+          "source": {
+            "label": "Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público (texto consolidado)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10566"
+          }
         },
         {
           "stem": "¿Cuál es el plazo para reclamar la responsabilidad patrimonial de una Administración?",
@@ -2990,7 +3503,11 @@
             }
           ],
           "correct": "d",
-          "explanation": "El derecho a reclamar prescribe al año de producido el hecho o el acto que motive la indemnización o de manifestarse su efecto lesivo."
+          "explanation": "El derecho a reclamar prescribe al año de producido el hecho o el acto que motive la indemnización o de manifestarse su efecto lesivo.",
+          "source": {
+            "label": "Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público (texto consolidado)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10566"
+          }
         },
         {
           "stem": "¿Qué requisitos debe reunir el daño indemnizable por responsabilidad patrimonial?",
@@ -3013,7 +3530,11 @@
             }
           ],
           "correct": "a",
-          "explanation": "El artículo 32 exige que el daño sea efectivo, evaluable económicamente e individualizado con relación a una persona o grupo de personas."
+          "explanation": "El artículo 32 exige que el daño sea efectivo, evaluable económicamente e individualizado con relación a una persona o grupo de personas.",
+          "source": {
+            "label": "Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público (texto consolidado)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10566"
+          }
         },
         {
           "stem": "¿Qué rasgo diferencia a las entidades públicas empresariales de los organismos autónomos?",
@@ -3036,7 +3557,11 @@
             }
           ],
           "correct": "b",
-          "explanation": "El artículo 103 define las entidades públicas empresariales como entidades de derecho público que se financian mayoritariamente con ingresos de mercado, a diferencia de los organismos autónomos."
+          "explanation": "El artículo 103 define las entidades públicas empresariales como entidades de derecho público que se financian mayoritariamente con ingresos de mercado, a diferencia de los organismos autónomos.",
+          "source": {
+            "label": "Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público (texto consolidado)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10566"
+          }
         }
       ]
     },
@@ -3044,6 +3569,10 @@
       "slug": "i-7",
       "tema_path": "I.7",
       "title": "Práctica · El personal al servicio de las administraciones públicas (TREBEP)",
+      "source": {
+        "label": "Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público (TREBEP)",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719"
+      },
       "questions": [
         {
           "stem": "¿Qué norma aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público?",
@@ -3066,7 +3595,11 @@
             }
           ],
           "correct": "b",
-          "explanation": "La Ley 7/2007 aprobó el EBEP; su texto refundido, hoy vigente, es el aprobado por el Real Decreto Legislativo 5/2015 (TREBEP)."
+          "explanation": "La Ley 7/2007 aprobó el EBEP; su texto refundido, hoy vigente, es el aprobado por el Real Decreto Legislativo 5/2015 (TREBEP).",
+          "source": {
+            "label": "Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público (TREBEP)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719"
+          }
         },
         {
           "stem": "¿Quién tiene la consideración de personal eventual?",
@@ -3089,7 +3622,11 @@
             }
           ],
           "correct": "c",
-          "explanation": "El personal eventual ocupa puestos de confianza o asesoramiento especial, no permanentes, con nombramiento y cese libres y retribución con cargo a un crédito presupuestario."
+          "explanation": "El personal eventual ocupa puestos de confianza o asesoramiento especial, no permanentes, con nombramiento y cese libres y retribución con cargo a un crédito presupuestario.",
+          "source": {
+            "label": "Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público (TREBEP)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719"
+          }
         },
         {
           "stem": "¿Cuál de las siguientes NO es una causa legal de nombramiento de funcionario interino?",
@@ -3112,7 +3649,11 @@
             }
           ],
           "correct": "b",
-          "explanation": "Las funciones de confianza o asesoramiento especial se cubren con personal eventual; las demás opciones son causas legales de interinidad."
+          "explanation": "Las funciones de confianza o asesoramiento especial se cubren con personal eventual; las demás opciones son causas legales de interinidad.",
+          "source": {
+            "label": "Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público (TREBEP)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719"
+          }
         },
         {
           "stem": "¿Qué sistema selectivo combina la superación de pruebas con la valoración de méritos?",
@@ -3135,7 +3676,11 @@
             }
           ],
           "correct": "c",
-          "explanation": "El concurso-oposición valora a la vez pruebas de capacidad y méritos; la oposición es solo de pruebas, el concurso solo de méritos y la libre designación es un sistema de provisión, no de selección."
+          "explanation": "El concurso-oposición valora a la vez pruebas de capacidad y méritos; la oposición es solo de pruebas, el concurso solo de méritos y la libre designación es un sistema de provisión, no de selección.",
+          "source": {
+            "label": "Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público (TREBEP)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719"
+          }
         },
         {
           "stem": "¿Cuál de las siguientes es una retribución complementaria?",
@@ -3158,7 +3703,11 @@
             }
           ],
           "correct": "b",
-          "explanation": "El sueldo, los trienios y las pagas extraordinarias son retribuciones básicas; el complemento de destino, el específico y la productividad son complementarias."
+          "explanation": "El sueldo, los trienios y las pagas extraordinarias son retribuciones básicas; el complemento de destino, el específico y la productividad son complementarias.",
+          "source": {
+            "label": "Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público (TREBEP)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719"
+          }
         },
         {
           "stem": "Un funcionario de carrera es designado para prestar servicio en un organismo internacional. ¿En qué situación administrativa queda?",
@@ -3181,7 +3730,11 @@
             }
           ],
           "correct": "d",
-          "explanation": "La prestación de servicios en organismos internacionales, la Unión Europea u órganos constitucionales determina la situación de servicios especiales, con reserva de plaza y cómputo del tiempo."
+          "explanation": "La prestación de servicios en organismos internacionales, la Unión Europea u órganos constitucionales determina la situación de servicios especiales, con reserva de plaza y cómputo del tiempo.",
+          "source": {
+            "label": "Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público (TREBEP)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719"
+          }
         },
         {
           "stem": "¿Cuál de las siguientes NO es causa de pérdida de la condición de funcionario de carrera?",
@@ -3204,7 +3757,11 @@
             }
           ],
           "correct": "c",
-          "explanation": "La renuncia, la jubilación, la pérdida de la nacionalidad, la separación del servicio y la pena de inhabilitación son causas de pérdida; el traslado es una forma de movilidad y no extingue la relación de servicio."
+          "explanation": "La renuncia, la jubilación, la pérdida de la nacionalidad, la separación del servicio y la pena de inhabilitación son causas de pérdida; el traslado es una forma de movilidad y no extingue la relación de servicio.",
+          "source": {
+            "label": "Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público (TREBEP)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719"
+          }
         },
         {
           "stem": "¿Qué sanción solo puede imponerse por la comisión de una falta muy grave y supone la pérdida de la condición de funcionario?",
@@ -3227,7 +3784,11 @@
             }
           ],
           "correct": "a",
-          "explanation": "La separación del servicio es la sanción más grave, reservada a las faltas muy graves, y conlleva la pérdida de la condición de funcionario de carrera."
+          "explanation": "La separación del servicio es la sanción más grave, reservada a las faltas muy graves, y conlleva la pérdida de la condición de funcionario de carrera.",
+          "source": {
+            "label": "Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público (TREBEP)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719"
+          }
         },
         {
           "stem": "¿Qué ha de respetar necesariamente la selección del personal al servicio de la Administración?",
@@ -3250,7 +3811,11 @@
             }
           ],
           "correct": "a",
-          "explanation": "El acceso se somete a los principios de igualdad, mérito, capacidad y publicidad; no caben turnos de antigüedad ni propuestas políticas que sustituyan el mérito y la capacidad."
+          "explanation": "El acceso se somete a los principios de igualdad, mérito, capacidad y publicidad; no caben turnos de antigüedad ni propuestas políticas que sustituyan el mérito y la capacidad.",
+          "source": {
+            "label": "Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público (TREBEP)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719"
+          }
         },
         {
           "stem": "El personal laboral de la Administración se rige, en lo que no regulan su contrato y convenio, por la legislación laboral y, con carácter supletorio, por...",
@@ -3273,7 +3838,11 @@
             }
           ],
           "correct": "d",
-          "explanation": "El TREBEP se aplica al personal laboral en lo que proceda; su régimen principal es el contrato de trabajo y el convenio colectivo."
+          "explanation": "El TREBEP se aplica al personal laboral en lo que proceda; su régimen principal es el contrato de trabajo y el convenio colectivo.",
+          "source": {
+            "label": "Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público (TREBEP)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719"
+          }
         }
       ]
     },
@@ -3281,6 +3850,10 @@
       "slug": "i-9",
       "tema_path": "I.9",
       "title": "Práctica · Las haciendas locales y el presupuesto",
+      "source": {
+        "label": "Real Decreto Legislativo 2/2004, de 5 de marzo, por el que se aprueba el texto refundido de la Ley Reguladora de las Haciendas Locales (texto vigente de la Ley 39/1988)",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4214"
+      },
       "questions": [
         {
           "stem": "¿Cuál es el texto vigente que regula las haciendas locales en el régimen común?",
@@ -3303,7 +3876,11 @@
             }
           ],
           "correct": "b",
-          "explanation": "La Ley 39/1988 fue refundida: su texto vigente es el aprobado por el Real Decreto Legislativo 2/2004 (TRLRHL), que es la norma que se maneja hoy."
+          "explanation": "La Ley 39/1988 fue refundida: su texto vigente es el aprobado por el Real Decreto Legislativo 2/2004 (TRLRHL), que es la norma que se maneja hoy.",
+          "source": {
+            "label": "Real Decreto Legislativo 2/2004, de 5 de marzo, por el que se aprueba el texto refundido de la Ley Reguladora de las Haciendas Locales (texto vigente de la Ley 39/1988)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4214"
+          }
         },
         {
           "stem": "¿Qué recurso se exige por la utilización privativa o el aprovechamiento especial del dominio público local?",
@@ -3326,7 +3903,11 @@
             }
           ],
           "correct": "b",
-          "explanation": "La tasa grava la utilización privativa o el aprovechamiento especial del dominio público y la prestación de servicios o actividades de solicitud o recepción obligatoria."
+          "explanation": "La tasa grava la utilización privativa o el aprovechamiento especial del dominio público y la prestación de servicios o actividades de solicitud o recepción obligatoria.",
+          "source": {
+            "label": "Real Decreto Legislativo 2/2004, de 5 de marzo, por el que se aprueba el texto refundido de la Ley Reguladora de las Haciendas Locales (texto vigente de la Ley 39/1988)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4214"
+          }
         },
         {
           "stem": "¿Cuál es el límite máximo de la base imponible de las contribuciones especiales?",
@@ -3349,7 +3930,11 @@
             }
           ],
           "correct": "c",
-          "explanation": "La base imponible de las contribuciones especiales no puede superar el 90 % del coste que soporta la entidad, descontadas las subvenciones."
+          "explanation": "La base imponible de las contribuciones especiales no puede superar el 90 % del coste que soporta la entidad, descontadas las subvenciones.",
+          "source": {
+            "label": "Real Decreto Legislativo 2/2004, de 5 de marzo, por el que se aprueba el texto refundido de la Ley Reguladora de las Haciendas Locales (texto vigente de la Ley 39/1988)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4214"
+          }
         },
         {
           "stem": "¿Cuándo se devengan las contribuciones especiales?",
@@ -3372,7 +3957,11 @@
             }
           ],
           "correct": "b",
-          "explanation": "El devengo se produce al ejecutarse las obras o al iniciarse el servicio, sin perjuicio de que la entidad pueda exigir anticipos conforme a la ley."
+          "explanation": "El devengo se produce al ejecutarse las obras o al iniciarse el servicio, sin perjuicio de que la entidad pueda exigir anticipos conforme a la ley.",
+          "source": {
+            "label": "Real Decreto Legislativo 2/2004, de 5 de marzo, por el que se aprueba el texto refundido de la Ley Reguladora de las Haciendas Locales (texto vigente de la Ley 39/1988)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4214"
+          }
         },
         {
           "stem": "¿Cuál de los siguientes impuestos municipales tiene carácter potestativo?",
@@ -3395,7 +3984,11 @@
             }
           ],
           "correct": "d",
-          "explanation": "El ICIO es potestativo: el ayuntamiento decide si lo exige. El IBI, el IAE y el IVTM son impuestos obligatorios del régimen común."
+          "explanation": "El ICIO es potestativo: el ayuntamiento decide si lo exige. El IBI, el IAE y el IVTM son impuestos obligatorios del régimen común.",
+          "source": {
+            "label": "Real Decreto Legislativo 2/2004, de 5 de marzo, por el que se aprueba el texto refundido de la Ley Reguladora de las Haciendas Locales (texto vigente de la Ley 39/1988)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4214"
+          }
         },
         {
           "stem": "¿Qué órgano aprueba el presupuesto general de una entidad local?",
@@ -3418,7 +4011,11 @@
             }
           ],
           "correct": "c",
-          "explanation": "El Pleno aprueba el presupuesto; la Intervención lo prepara y el presidente lo presenta, pero la competencia para aprobarlo corresponde al Pleno."
+          "explanation": "El Pleno aprueba el presupuesto; la Intervención lo prepara y el presidente lo presenta, pero la competencia para aprobarlo corresponde al Pleno.",
+          "source": {
+            "label": "Real Decreto Legislativo 2/2004, de 5 de marzo, por el que se aprueba el texto refundido de la Ley Reguladora de las Haciendas Locales (texto vigente de la Ley 39/1988)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4214"
+          }
         },
         {
           "stem": "Si el presupuesto de la entidad local no está aprobado antes del 1 de enero, ¿qué ocurre?",
@@ -3441,7 +4038,11 @@
             }
           ],
           "correct": "a",
-          "explanation": "La prórroga automática del presupuesto anterior garantiza que la entidad pueda seguir funcionando hasta que se apruebe el nuevo."
+          "explanation": "La prórroga automática del presupuesto anterior garantiza que la entidad pueda seguir funcionando hasta que se apruebe el nuevo.",
+          "source": {
+            "label": "Real Decreto Legislativo 2/2004, de 5 de marzo, por el que se aprueba el texto refundido de la Ley Reguladora de las Haciendas Locales (texto vigente de la Ley 39/1988)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4214"
+          }
         },
         {
           "stem": "¿Qué norma orgánica somete a las entidades locales a la estabilidad presupuestaria y la sostenibilidad financiera?",
@@ -3464,7 +4065,11 @@
             }
           ],
           "correct": "a",
-          "explanation": "La Ley Orgánica 2/2012, de Estabilidad Presupuestaria y Sostenibilidad Financiera, extiende sus principios a todas las administraciones, incluidas las entidades locales."
+          "explanation": "La Ley Orgánica 2/2012, de Estabilidad Presupuestaria y Sostenibilidad Financiera, extiende sus principios a todas las administraciones, incluidas las entidades locales.",
+          "source": {
+            "label": "Real Decreto Legislativo 2/2004, de 5 de marzo, por el que se aprueba el texto refundido de la Ley Reguladora de las Haciendas Locales (texto vigente de la Ley 39/1988)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4214"
+          }
         },
         {
           "stem": "Cuando surge un gasto necesario no previsto y no existe crédito suficiente, ¿qué modificación presupuestaria procede?",
@@ -3487,7 +4092,11 @@
             }
           ],
           "correct": "b",
-          "explanation": "Los créditos extraordinarios y los suplementos de crédito cubren gastos no previstos o insuficientemente dotados; la transferencia solo mueve crédito entre partidas y la incorporación de remanentes se refiere a créditos del ejercicio anterior."
+          "explanation": "Los créditos extraordinarios y los suplementos de crédito cubren gastos no previstos o insuficientemente dotados; la transferencia solo mueve crédito entre partidas y la incorporación de remanentes se refiere a créditos del ejercicio anterior.",
+          "source": {
+            "label": "Real Decreto Legislativo 2/2004, de 5 de marzo, por el que se aprueba el texto refundido de la Ley Reguladora de las Haciendas Locales (texto vigente de la Ley 39/1988)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4214"
+          }
         },
         {
           "stem": "¿A quién corresponde el control externo de las cuentas de las entidades locales?",
@@ -3510,7 +4119,11 @@
             }
           ],
           "correct": "c",
-          "explanation": "La Intervención ejerce el control interno; el control externo corresponde al Tribunal de Cuentas, sin perjuicio de las competencias de las cámaras de cuentas de las comunidades autónomas."
+          "explanation": "La Intervención ejerce el control interno; el control externo corresponde al Tribunal de Cuentas, sin perjuicio de las competencias de las cámaras de cuentas de las comunidades autónomas.",
+          "source": {
+            "label": "Real Decreto Legislativo 2/2004, de 5 de marzo, por el que se aprueba el texto refundido de la Ley Reguladora de las Haciendas Locales (texto vigente de la Ley 39/1988)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4214"
+          }
         }
       ]
     },
@@ -3518,6 +4131,10 @@
       "slug": "ii-13",
       "tema_path": "II.13",
       "title": "Práctica · Arquitectura de ordenadores",
+      "source": {
+        "label": "Apuntes propios de la demo sobre arquitectura de computadores (conceptos estándar)",
+        "url": ""
+      },
       "questions": [
         {
           "stem": "¿Qué comparten instrucciones y datos en la arquitectura de von Neumann?",
@@ -3540,7 +4157,11 @@
             }
           ],
           "correct": "a",
-          "explanation": "En von Neumann instrucciones y datos comparten memoria; por eso aparecen el cuello de botella y los ataques de escritura de código."
+          "explanation": "En von Neumann instrucciones y datos comparten memoria; por eso aparecen el cuello de botella y los ataques de escritura de código.",
+          "source": {
+            "label": "Apuntes propios de la demo sobre arquitectura de computadores (conceptos estándar)",
+            "url": ""
+          }
         },
         {
           "stem": "¿Qué unidad de la CPU realiza las operaciones aritméticas y lógicas?",
@@ -3563,7 +4184,11 @@
             }
           ],
           "correct": "b",
-          "explanation": "La unidad aritmético-lógica (ALU) ejecuta sumas, restas y operaciones lógicas."
+          "explanation": "La unidad aritmético-lógica (ALU) ejecuta sumas, restas y operaciones lógicas.",
+          "source": {
+            "label": "Apuntes propios de la demo sobre arquitectura de computadores (conceptos estándar)",
+            "url": ""
+          }
         },
         {
           "stem": "¿Cuál es el orden correcto del ciclo de instrucción?",
@@ -3586,7 +4211,11 @@
             }
           ],
           "correct": "b",
-          "explanation": "El ciclo básico es fetch (captar), decode (decodificar), execute (ejecutar) y write-back (escribir el resultado)."
+          "explanation": "El ciclo básico es fetch (captar), decode (decodificar), execute (ejecutar) y write-back (escribir el resultado).",
+          "source": {
+            "label": "Apuntes propios de la demo sobre arquitectura de computadores (conceptos estándar)",
+            "url": ""
+          }
         },
         {
           "stem": "¿Qué técnica solapa la ejecución de varias instrucciones en etapas?",
@@ -3609,7 +4238,11 @@
             }
           ],
           "correct": "a",
-          "explanation": "El pipeline divide la ejecución en etapas y mantiene varias instrucciones en vuelo a la vez."
+          "explanation": "El pipeline divide la ejecución en etapas y mantiene varias instrucciones en vuelo a la vez.",
+          "source": {
+            "label": "Apuntes propios de la demo sobre arquitectura de computadores (conceptos estándar)",
+            "url": ""
+          }
         },
         {
           "stem": "¿Qué nivel de la jerarquía de memoria es el más rápido y pequeño?",
@@ -3632,7 +4265,11 @@
             }
           ],
           "correct": "c",
-          "explanation": "Los registros están dentro de la CPU y son el nivel más rápido y de menor capacidad."
+          "explanation": "Los registros están dentro de la CPU y son el nivel más rápido y de menor capacidad.",
+          "source": {
+            "label": "Apuntes propios de la demo sobre arquitectura de computadores (conceptos estándar)",
+            "url": ""
+          }
         },
         {
           "stem": "¿Qué memoria es volátil?",
@@ -3655,7 +4292,11 @@
             }
           ],
           "correct": "a",
-          "explanation": "La RAM pierde su contenido al cortar la alimentación; el almacenamiento secundario es no volátil."
+          "explanation": "La RAM pierde su contenido al cortar la alimentación; el almacenamiento secundario es no volátil.",
+          "source": {
+            "label": "Apuntes propios de la demo sobre arquitectura de computadores (conceptos estándar)",
+            "url": ""
+          }
         },
         {
           "stem": "¿Qué componente traduce direcciones virtuales a físicas?",
@@ -3678,7 +4319,11 @@
             }
           ],
           "correct": "b",
-          "explanation": "La unidad de gestión de memoria (MMU) traduce direcciones virtuales a físicas usando la tabla de páginas."
+          "explanation": "La unidad de gestión de memoria (MMU) traduce direcciones virtuales a físicas usando la tabla de páginas.",
+          "source": {
+            "label": "Apuntes propios de la demo sobre arquitectura de computadores (conceptos estándar)",
+            "url": ""
+          }
         },
         {
           "stem": "¿Qué ventaja principal aporta el DMA?",
@@ -3701,7 +4346,11 @@
             }
           ],
           "correct": "b",
-          "explanation": "El acceso directo a memoria permite a un periférico transferir bloques sin que la CPU los copie uno a uno."
+          "explanation": "El acceso directo a memoria permite a un periférico transferir bloques sin que la CPU los copie uno a uno.",
+          "source": {
+            "label": "Apuntes propios de la demo sobre arquitectura de computadores (conceptos estándar)",
+            "url": ""
+          }
         },
         {
           "stem": "¿Qué tecnología de almacenamiento tiene acceso aleatorio sin partes móviles?",
@@ -3724,7 +4373,11 @@
             }
           ],
           "correct": "b",
-          "explanation": "El SSD usa memoria flash: no tiene partes móviles y su acceso aleatorio es mucho más rápido que el de un HDD."
+          "explanation": "El SSD usa memoria flash: no tiene partes móviles y su acceso aleatorio es mucho más rápido que el de un HDD.",
+          "source": {
+            "label": "Apuntes propios de la demo sobre arquitectura de computadores (conceptos estándar)",
+            "url": ""
+          }
         },
         {
           "stem": "¿Qué significa RAID 1?",
@@ -3747,7 +4400,11 @@
             }
           ],
           "correct": "b",
-          "explanation": "RAID 1 duplica los datos en dos discos (espejo); protege ante el fallo de uno, pero no sustituye a una copia de seguridad."
+          "explanation": "RAID 1 duplica los datos en dos discos (espejo); protege ante el fallo de uno, pero no sustituye a una copia de seguridad.",
+          "source": {
+            "label": "Apuntes propios de la demo sobre arquitectura de computadores (conceptos estándar)",
+            "url": ""
+          }
         }
       ]
     },
@@ -3755,6 +4412,10 @@
       "slug": "iii-21",
       "tema_path": "III.21",
       "title": "Práctica · Redes",
+      "source": {
+        "label": "IETF — RFC 791, Internet Protocol (IPv4); RFC 8200, Internet Protocol, Version 6 (IPv6)",
+        "url": "https://datatracker.ietf.org/doc/html/rfc791"
+      },
       "questions": [
         {
           "stem": "¿Cuántas capas tiene el modelo OSI?",
@@ -3777,7 +4438,11 @@
             }
           ],
           "correct": "c",
-          "explanation": "El modelo OSI de ISO define siete capas, de la física a la aplicación. El modelo TCP/IP es el que se simplifica en cuatro o cinco capas según el manual."
+          "explanation": "El modelo OSI de ISO define siete capas, de la física a la aplicación. El modelo TCP/IP es el que se simplifica en cuatro o cinco capas según el manual.",
+          "source": {
+            "label": "IETF — RFC 791, Internet Protocol (IPv4); RFC 8200, Internet Protocol, Version 6 (IPv6)",
+            "url": "https://datatracker.ietf.org/doc/html/rfc791"
+          }
         },
         {
           "stem": "¿En qué capa del modelo OSI se decide el encaminamiento de paquetes entre redes distintas?",
@@ -3800,7 +4465,11 @@
             }
           ],
           "correct": "b",
-          "explanation": "La capa de red (nivel 3) direcciona lógicamente y encamina paquetes; IP es su protocolo característico."
+          "explanation": "La capa de red (nivel 3) direcciona lógicamente y encamina paquetes; IP es su protocolo característico.",
+          "source": {
+            "label": "IETF — RFC 791, Internet Protocol (IPv4); RFC 8200, Internet Protocol, Version 6 (IPv6)",
+            "url": "https://datatracker.ietf.org/doc/html/rfc791"
+          }
         },
         {
           "stem": "¿Cuál de estas direcciones IPv4 es privada según el RFC 1918?",
@@ -3823,7 +4492,11 @@
             }
           ],
           "correct": "c",
-          "explanation": "El RFC 1918 reserva 10.0.0.0/8, 172.16.0.0/12 y 192.168.0.0/16. La dirección 172.32.0.1 queda fuera del rango privado 172.16.0.0-172.31.255.255, y 192.169.1.1 no está en 192.168.0.0/16."
+          "explanation": "El RFC 1918 reserva 10.0.0.0/8, 172.16.0.0/12 y 192.168.0.0/16. La dirección 172.32.0.1 queda fuera del rango privado 172.16.0.0-172.31.255.255, y 192.169.1.1 no está en 192.168.0.0/16.",
+          "source": {
+            "label": "IETF — RFC 791, Internet Protocol (IPv4); RFC 8200, Internet Protocol, Version 6 (IPv6)",
+            "url": "https://datatracker.ietf.org/doc/html/rfc791"
+          }
         },
         {
           "stem": "¿Qué máscara corresponde a un prefijo /26?",
@@ -3846,7 +4519,11 @@
             }
           ],
           "correct": "a",
-          "explanation": "Un /26 tiene 26 bits a 1: los tres primeros octetos completos y los dos primeros bits del cuarto, es decir, 255.255.255.192."
+          "explanation": "Un /26 tiene 26 bits a 1: los tres primeros octetos completos y los dos primeros bits del cuarto, es decir, 255.255.255.192.",
+          "source": {
+            "label": "IETF — RFC 791, Internet Protocol (IPv4); RFC 8200, Internet Protocol, Version 6 (IPv6)",
+            "url": "https://datatracker.ietf.org/doc/html/rfc791"
+          }
         },
         {
           "stem": "En una subred /26, ¿cuántos hosts utilizables hay?",
@@ -3869,7 +4546,11 @@
             }
           ],
           "correct": "b",
-          "explanation": "Quedan 6 bits de host: 2^6 = 64 direcciones, menos la dirección de red y la de broadcast, dan 62 hosts utilizables."
+          "explanation": "Quedan 6 bits de host: 2^6 = 64 direcciones, menos la dirección de red y la de broadcast, dan 62 hosts utilizables.",
+          "source": {
+            "label": "IETF — RFC 791, Internet Protocol (IPv4); RFC 8200, Internet Protocol, Version 6 (IPv6)",
+            "url": "https://datatracker.ietf.org/doc/html/rfc791"
+          }
         },
         {
           "stem": "¿Cuántos bits tiene una dirección IPv6?",
@@ -3892,7 +4573,11 @@
             }
           ],
           "correct": "d",
-          "explanation": "IPv6 usa 128 bits, escritos como ocho grupos de cuatro dígitos hexadecimales. IPv4 usa 32 bits."
+          "explanation": "IPv6 usa 128 bits, escritos como ocho grupos de cuatro dígitos hexadecimales. IPv4 usa 32 bits.",
+          "source": {
+            "label": "IETF — RFC 791, Internet Protocol (IPv4); RFC 8200, Internet Protocol, Version 6 (IPv6)",
+            "url": "https://datatracker.ietf.org/doc/html/rfc791"
+          }
         },
         {
           "stem": "¿Qué añade una etiqueta 802.1Q a una trama Ethernet?",
@@ -3915,7 +4600,11 @@
             }
           ],
           "correct": "c",
-          "explanation": "802.1Q inserta 4 bytes con el identificador de VLAN (12 bits) y la prioridad de clase de servicio; es la base del trunking entre switches."
+          "explanation": "802.1Q inserta 4 bytes con el identificador de VLAN (12 bits) y la prioridad de clase de servicio; es la base del trunking entre switches.",
+          "source": {
+            "label": "IETF — RFC 791, Internet Protocol (IPv4); RFC 8200, Internet Protocol, Version 6 (IPv6)",
+            "url": "https://datatracker.ietf.org/doc/html/rfc791"
+          }
         },
         {
           "stem": "¿Qué protocolo de encaminamiento dinámico es de estado de enlace y se usa habitualmente como IGP?",
@@ -3938,7 +4627,11 @@
             }
           ],
           "correct": "a",
-          "explanation": "OSPF construye una base de datos de la topología y calcula las rutas con el algoritmo de Dijkstra. RIP es vector de distancia, BGP es un protocolo exterior y ARP no es un protocolo de encaminamiento."
+          "explanation": "OSPF construye una base de datos de la topología y calcula las rutas con el algoritmo de Dijkstra. RIP es vector de distancia, BGP es un protocolo exterior y ARP no es un protocolo de encaminamiento.",
+          "source": {
+            "label": "IETF — RFC 791, Internet Protocol (IPv4); RFC 8200, Internet Protocol, Version 6 (IPv6)",
+            "url": "https://datatracker.ietf.org/doc/html/rfc791"
+          }
         },
         {
           "stem": "¿Qué puerto usa normalmente DNS?",
@@ -3961,7 +4654,11 @@
             }
           ],
           "correct": "d",
-          "explanation": "DNS usa el puerto 53, sobre UDP para las consultas y sobre TCP cuando la respuesta es grande o se transfiere una zona."
+          "explanation": "DNS usa el puerto 53, sobre UDP para las consultas y sobre TCP cuando la respuesta es grande o se transfiere una zona.",
+          "source": {
+            "label": "IETF — RFC 791, Internet Protocol (IPv4); RFC 8200, Internet Protocol, Version 6 (IPv6)",
+            "url": "https://datatracker.ietf.org/doc/html/rfc791"
+          }
         },
         {
           "stem": "¿Cuál es el orden del intercambio DHCP clásico?",
@@ -3984,7 +4681,11 @@
             }
           ],
           "correct": "a",
-          "explanation": "DORA: el cliente descubre (Discover), el servidor ofrece (Offer), el cliente solicita (Request) y el servidor confirma la concesión (Acknowledge)."
+          "explanation": "DORA: el cliente descubre (Discover), el servidor ofrece (Offer), el cliente solicita (Request) y el servidor confirma la concesión (Acknowledge).",
+          "source": {
+            "label": "IETF — RFC 791, Internet Protocol (IPv4); RFC 8200, Internet Protocol, Version 6 (IPv6)",
+            "url": "https://datatracker.ietf.org/doc/html/rfc791"
+          }
         }
       ]
     },
@@ -3992,6 +4693,10 @@
       "slug": "iii-24",
       "tema_path": "III.24",
       "title": "Práctica · Monitorización y gestión de incidencias",
+      "source": {
+        "label": "ISO/IEC 20000-1:2018 — Tecnología de la información. Gestión del servicio. Parte 1: Requisitos del sistema de gestión del servicio",
+        "url": "https://www.iso.org/standard/70636.html"
+      },
       "questions": [
         {
           "stem": "En la gestión de servicios, ¿qué es un incidente?",
@@ -4014,7 +4719,11 @@
             }
           ],
           "correct": "b",
-          "explanation": "El incidente es la interrupción no planificada o la degradación del servicio; su objetivo es restaurar el servicio, no investigar la causa raíz."
+          "explanation": "El incidente es la interrupción no planificada o la degradación del servicio; su objetivo es restaurar el servicio, no investigar la causa raíz.",
+          "source": {
+            "label": "ISO/IEC 20000-1:2018 — Tecnología de la información. Gestión del servicio. Parte 1: Requisitos del sistema de gestión del servicio",
+            "url": "https://www.iso.org/standard/70636.html"
+          }
         },
         {
           "stem": "¿Qué persigue la gestión de problemas?",
@@ -4037,7 +4746,11 @@
             }
           ],
           "correct": "c",
-          "explanation": "La gestión de problemas busca la causa raíz y su eliminación para evitar que los incidentes se repitan; restaurar el servicio es la gestión de incidentes."
+          "explanation": "La gestión de problemas busca la causa raíz y su eliminación para evitar que los incidentes se repitan; restaurar el servicio es la gestión de incidentes.",
+          "source": {
+            "label": "ISO/IEC 20000-1:2018 — Tecnología de la información. Gestión del servicio. Parte 1: Requisitos del sistema de gestión del servicio",
+            "url": "https://www.iso.org/standard/70636.html"
+          }
         },
         {
           "stem": "¿Cuál es la diferencia esencial entre un SLA y una OLA?",
@@ -4060,7 +4773,11 @@
             }
           ],
           "correct": "a",
-          "explanation": "El SLA es el acuerdo con el cliente; la OLA es un acuerdo operativo interno entre equipos de la organización que ayuda a cumplirlo. El contrato con un proveedor externo es el UC."
+          "explanation": "El SLA es el acuerdo con el cliente; la OLA es un acuerdo operativo interno entre equipos de la organización que ayuda a cumplirlo. El contrato con un proveedor externo es el UC.",
+          "source": {
+            "label": "ISO/IEC 20000-1:2018 — Tecnología de la información. Gestión del servicio. Parte 1: Requisitos del sistema de gestión del servicio",
+            "url": "https://www.iso.org/standard/70636.html"
+          }
         },
         {
           "stem": "¿Cómo se determina la prioridad de un ticket?",
@@ -4083,7 +4800,11 @@
             }
           ],
           "correct": "c",
-          "explanation": "La prioridad se calcula combinando el impacto (a cuántos y con qué criticidad afecta) y la urgencia (cuánto empeora si se espera). La antigüedad no la define."
+          "explanation": "La prioridad se calcula combinando el impacto (a cuántos y con qué criticidad afecta) y la urgencia (cuánto empeora si se espera). La antigüedad no la define.",
+          "source": {
+            "label": "ISO/IEC 20000-1:2018 — Tecnología de la información. Gestión del servicio. Parte 1: Requisitos del sistema de gestión del servicio",
+            "url": "https://www.iso.org/standard/70636.html"
+          }
         },
         {
           "stem": "¿Qué documento formaliza una petición de cambio?",
@@ -4106,7 +4827,11 @@
             }
           ],
           "correct": "a",
-          "explanation": "La petición de cambio (RFC) describe el cambio, su justificación, su evaluación de riesgo y su plan; la autoriza el comité de cambios (CAB)."
+          "explanation": "La petición de cambio (RFC) describe el cambio, su justificación, su evaluación de riesgo y su plan; la autoriza el comité de cambios (CAB).",
+          "source": {
+            "label": "ISO/IEC 20000-1:2018 — Tecnología de la información. Gestión del servicio. Parte 1: Requisitos del sistema de gestión del servicio",
+            "url": "https://www.iso.org/standard/70636.html"
+          }
         },
         {
           "stem": "¿Qué es un error conocido?",
@@ -4129,7 +4854,11 @@
             }
           ],
           "correct": "d",
-          "explanation": "Cuando un problema tiene la causa documentada y existe una solución temporal probada, se convierte en error conocido y el service desk puede aplicarla sin reiniciar la investigación."
+          "explanation": "Cuando un problema tiene la causa documentada y existe una solución temporal probada, se convierte en error conocido y el service desk puede aplicarla sin reiniciar la investigación.",
+          "source": {
+            "label": "ISO/IEC 20000-1:2018 — Tecnología de la información. Gestión del servicio. Parte 1: Requisitos del sistema de gestión del servicio",
+            "url": "https://www.iso.org/standard/70636.html"
+          }
         },
         {
           "stem": "¿Qué mide el MTTR?",
@@ -4152,7 +4881,11 @@
             }
           ],
           "correct": "b",
-          "explanation": "El MTTR (mean time to repair/restore) mide el tiempo medio que se tarda en restaurar el servicio tras un incidente."
+          "explanation": "El MTTR (mean time to repair/restore) mide el tiempo medio que se tarda en restaurar el servicio tras un incidente.",
+          "source": {
+            "label": "ISO/IEC 20000-1:2018 — Tecnología de la información. Gestión del servicio. Parte 1: Requisitos del sistema de gestión del servicio",
+            "url": "https://www.iso.org/standard/70636.html"
+          }
         },
         {
           "stem": "¿Cómo se calcula la disponibilidad a partir del MTBF y el MTTR?",
@@ -4175,7 +4908,11 @@
             }
           ],
           "correct": "a",
-          "explanation": "La disponibilidad es el tiempo en servicio (MTBF) dividido entre el tiempo total (MTBF + MTTR), expresado en porcentaje."
+          "explanation": "La disponibilidad es el tiempo en servicio (MTBF) dividido entre el tiempo total (MTBF + MTTR), expresado en porcentaje.",
+          "source": {
+            "label": "ISO/IEC 20000-1:2018 — Tecnología de la información. Gestión del servicio. Parte 1: Requisitos del sistema de gestión del servicio",
+            "url": "https://www.iso.org/standard/70636.html"
+          }
         },
         {
           "stem": "¿Qué tipo de cambio se usa para resolver un incidente grave con la mínima aprobación previa?",
@@ -4198,7 +4935,11 @@
             }
           ],
           "correct": "d",
-          "explanation": "El cambio de emergencia se aplica para resolver un incidente grave con aprobación mínima; después se documenta y se revisa."
+          "explanation": "El cambio de emergencia se aplica para resolver un incidente grave con aprobación mínima; después se documenta y se revisa.",
+          "source": {
+            "label": "ISO/IEC 20000-1:2018 — Tecnología de la información. Gestión del servicio. Parte 1: Requisitos del sistema de gestión del servicio",
+            "url": "https://www.iso.org/standard/70636.html"
+          }
         },
         {
           "stem": "¿Qué debe hacer el primer nivel de soporte antes de escalar un caso?",
@@ -4221,7 +4962,11 @@
             }
           ],
           "correct": "b",
-          "explanation": "El primer nivel registra el caso, comprueba las soluciones conocidas y descarta causas básicas antes de escalar al segundo nivel."
+          "explanation": "El primer nivel registra el caso, comprueba las soluciones conocidas y descarta causas básicas antes de escalar al segundo nivel.",
+          "source": {
+            "label": "ISO/IEC 20000-1:2018 — Tecnología de la información. Gestión del servicio. Parte 1: Requisitos del sistema de gestión del servicio",
+            "url": "https://www.iso.org/standard/70636.html"
+          }
         }
       ]
     },
@@ -4229,6 +4974,10 @@
       "slug": "v-34",
       "tema_path": "V.34",
       "title": "Práctica · Seguridad de la información",
+      "source": {
+        "label": "ISO/IEC 27001:2022 — Seguridad de la información, ciberseguridad y protección de la privacidad. Sistemas de gestión de la seguridad de la información. Requisitos",
+        "url": "https://www.iso.org/standard/27001"
+      },
       "questions": [
         {
           "stem": "¿Qué propiedad de la seguridad garantiza que solo las personas autorizadas accedan a la información?",
@@ -4251,7 +5000,11 @@
             }
           ],
           "correct": "b",
-          "explanation": "La confidencialidad limita el acceso a las personas y sistemas autorizados. La integridad protege la exactitud y la disponibilidad garantiza el acceso cuando se necesita."
+          "explanation": "La confidencialidad limita el acceso a las personas y sistemas autorizados. La integridad protege la exactitud y la disponibilidad garantiza el acceso cuando se necesita.",
+          "source": {
+            "label": "ISO/IEC 27001:2022 — Seguridad de la información, ciberseguridad y protección de la privacidad. Sistemas de gestión de la seguridad de la información. Requisitos",
+            "url": "https://www.iso.org/standard/27001"
+          }
         },
         {
           "stem": "En el análisis de riesgos, el nivel de riesgo se obtiene normalmente:",
@@ -4274,7 +5027,11 @@
             }
           ],
           "correct": "c",
-          "explanation": "El riesgo se estima combinando la probabilidad de que la amenaza aproveche una vulnerabilidad con el impacto o daño que causaría."
+          "explanation": "El riesgo se estima combinando la probabilidad de que la amenaza aproveche una vulnerabilidad con el impacto o daño que causaría.",
+          "source": {
+            "label": "ISO/IEC 27001:2022 — Seguridad de la información, ciberseguridad y protección de la privacidad. Sistemas de gestión de la seguridad de la información. Requisitos",
+            "url": "https://www.iso.org/standard/27001"
+          }
         },
         {
           "stem": "¿Qué es el riesgo residual?",
@@ -4297,7 +5054,11 @@
             }
           ],
           "correct": "d",
-          "explanation": "Tras aplicar las salvaguardas queda un riesgo residual, que la dirección debe aceptar de forma consciente y documentada."
+          "explanation": "Tras aplicar las salvaguardas queda un riesgo residual, que la dirección debe aceptar de forma consciente y documentada.",
+          "source": {
+            "label": "ISO/IEC 27001:2022 — Seguridad de la información, ciberseguridad y protección de la privacidad. Sistemas de gestión de la seguridad de la información. Requisitos",
+            "url": "https://www.iso.org/standard/27001"
+          }
         },
         {
           "stem": "¿Qué norma especifica los requisitos de un sistema de gestión de la seguridad de la información?",
@@ -4320,7 +5081,11 @@
             }
           ],
           "correct": "a",
-          "explanation": "ISO/IEC 27001 contiene los requisitos del SGSI y es certificable. ISO/IEC 27002 es una guía de controles, MAGERIT una metodología de riesgos y 20000-1 se refiere a gestión de servicios."
+          "explanation": "ISO/IEC 27001 contiene los requisitos del SGSI y es certificable. ISO/IEC 27002 es una guía de controles, MAGERIT una metodología de riesgos y 20000-1 se refiere a gestión de servicios.",
+          "source": {
+            "label": "ISO/IEC 27001:2022 — Seguridad de la información, ciberseguridad y protección de la privacidad. Sistemas de gestión de la seguridad de la información. Requisitos",
+            "url": "https://www.iso.org/standard/27001"
+          }
         },
         {
           "stem": "¿Qué contiene el Anexo A de ISO/IEC 27001?",
@@ -4343,7 +5108,11 @@
             }
           ],
           "correct": "b",
-          "explanation": "El Anexo A recoge los controles de referencia agrupados en cuatro temas: organizativos, de personas, físicos y tecnológicos."
+          "explanation": "El Anexo A recoge los controles de referencia agrupados en cuatro temas: organizativos, de personas, físicos y tecnológicos.",
+          "source": {
+            "label": "ISO/IEC 27001:2022 — Seguridad de la información, ciberseguridad y protección de la privacidad. Sistemas de gestión de la seguridad de la información. Requisitos",
+            "url": "https://www.iso.org/standard/27001"
+          }
         },
         {
           "stem": "En MAGERIT, ¿cómo se denomina una causa potencial de daño sobre un activo?",
@@ -4366,7 +5135,11 @@
             }
           ],
           "correct": "a",
-          "explanation": "La amenaza es la causa potencial de daño; la vulnerabilidad es la debilidad que puede ser aprovechada y la salvaguarda la medida que reduce el riesgo."
+          "explanation": "La amenaza es la causa potencial de daño; la vulnerabilidad es la debilidad que puede ser aprovechada y la salvaguarda la medida que reduce el riesgo.",
+          "source": {
+            "label": "ISO/IEC 27001:2022 — Seguridad de la información, ciberseguridad y protección de la privacidad. Sistemas de gestión de la seguridad de la información. Requisitos",
+            "url": "https://www.iso.org/standard/27001"
+          }
         },
         {
           "stem": "¿Qué opción de tratamiento del riesgo consiste en contratar un ciberseguro?",
@@ -4389,7 +5162,11 @@
             }
           ],
           "correct": "d",
-          "explanation": "Transferir el riesgo consiste en trasladar total o parcialmente las consecuencias a un tercero, por ejemplo mediante un seguro o un contrato con garantías."
+          "explanation": "Transferir el riesgo consiste en trasladar total o parcialmente las consecuencias a un tercero, por ejemplo mediante un seguro o un contrato con garantías.",
+          "source": {
+            "label": "ISO/IEC 27001:2022 — Seguridad de la información, ciberseguridad y protección de la privacidad. Sistemas de gestión de la seguridad de la información. Requisitos",
+            "url": "https://www.iso.org/standard/27001"
+          }
         },
         {
           "stem": "Si un atacante modifica una factura sin ser detectado, ¿qué propiedad de la seguridad se ha vulnerado?",
@@ -4412,7 +5189,11 @@
             }
           ],
           "correct": "b",
-          "explanation": "La integridad garantiza que la información es exacta y no se modifica sin control; una alteración no detectada es un fallo de integridad."
+          "explanation": "La integridad garantiza que la información es exacta y no se modifica sin control; una alteración no detectada es un fallo de integridad.",
+          "source": {
+            "label": "ISO/IEC 27001:2022 — Seguridad de la información, ciberseguridad y protección de la privacidad. Sistemas de gestión de la seguridad de la información. Requisitos",
+            "url": "https://www.iso.org/standard/27001"
+          }
         },
         {
           "stem": "¿Cuál de estas medidas es un control organizativo?",
@@ -4435,7 +5216,11 @@
             }
           ],
           "correct": "c",
-          "explanation": "La política de seguridad es un control organizativo; el cortafuegos, el antivirus y el cifrado son controles técnicos."
+          "explanation": "La política de seguridad es un control organizativo; el cortafuegos, el antivirus y el cifrado son controles técnicos.",
+          "source": {
+            "label": "ISO/IEC 27001:2022 — Seguridad de la información, ciberseguridad y protección de la privacidad. Sistemas de gestión de la seguridad de la información. Requisitos",
+            "url": "https://www.iso.org/standard/27001"
+          }
         },
         {
           "stem": "¿Qué es ISO/IEC 27002?",
@@ -4458,16 +5243,23 @@
             }
           ],
           "correct": "d",
-          "explanation": "ISO/IEC 27002 es una guía de buenas prácticas que desarrolla y explica los controles; la norma certificable de requisitos es ISO/IEC 27001."
+          "explanation": "ISO/IEC 27002 es una guía de buenas prácticas que desarrolla y explica los controles; la norma certificable de requisitos es ISO/IEC 27001.",
+          "source": {
+            "label": "ISO/IEC 27001:2022 — Seguridad de la información, ciberseguridad y protección de la privacidad. Sistemas de gestión de la seguridad de la información. Requisitos",
+            "url": "https://www.iso.org/standard/27001"
+          }
         }
       ]
     }
   ],
   "progress": {
     "total": 40,
-    "complete": 13,
-    "withQuestions": 13,
-    "pending": 27,
-    "questions": 130
+    "apuntesCompletos": 13,
+    "soloResumen": 0,
+    "pendientes": 27,
+    "conPractica": 13,
+    "sinPractica": 27,
+    "questions": 130,
+    "convocatorias": 12
   }
 }
