@@ -1690,7 +1690,35 @@
         },
         {
           "heading": "Las cinco dimensiones de la seguridad",
-          "body": "El ENS entiende la seguridad como un conjunto de dimensiones que deben protegerse a la vez. Si una falla, la información o el servicio quedan comprometidos.\n\n| Dimensión | Qué protege |\n|---|---|\n| **Disponibilidad** | Que el sistema y los datos estén accesibles cuando se necesitan |\n| **Autenticidad** | Que la identidad de quien accede o firma sea la que dice ser |\n| **Integridad** | Que la información no se altere sin autorización |\n| **Confidencialidad** | Que solo acceda quien tiene permiso |\n| **Trazabilidad** | Que quede registro de quién hizo qué y cuándo |\n\nLa categoría del sistema se determina valorando el impacto de un incidente en cada dimensión. No es lo mismo un fallo en la web de un ayuntamiento que en el sistema de nóminas o en la historia clínica."
+          "body": "El ENS entiende la seguridad como un conjunto de dimensiones que deben protegerse a la vez. Si una falla, la información o el servicio quedan comprometidos. La categoría del sistema se determina valorando el impacto de un incidente en cada dimensión: no es lo mismo un fallo en la web de un ayuntamiento que en el sistema de nóminas o en la historia clínica.",
+          "table": {
+            "columns": [
+              "Dimensión",
+              "Qué protege"
+            ],
+            "rows": [
+              [
+                "Disponibilidad",
+                "Que el sistema y los datos estén accesibles cuando se necesitan"
+              ],
+              [
+                "Autenticidad",
+                "Que la identidad de quien accede o firma sea la que dice ser"
+              ],
+              [
+                "Integridad",
+                "Que la información no se altere sin autorización"
+              ],
+              [
+                "Confidencialidad",
+                "Que solo acceda quien tiene permiso"
+              ],
+              [
+                "Trazabilidad",
+                "Que quede registro de quién hizo qué y cuándo"
+              ]
+            ]
+          }
         },
         {
           "heading": "Los principios rectores",
