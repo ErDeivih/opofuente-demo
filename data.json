@@ -15505,6 +15505,1423 @@
       ]
     }
   ],
+  "cases": [
+    {
+      "slug": "caso-correo",
+      "tema_path": "II.16",
+      "block": "II",
+      "title": "Caso práctico: avisos del ayuntamiento que no llegan",
+      "scenario": "Los avisos de una concejalía acaban en spam y algunos rebotan. El equipo revisa DNS, autenticación y colas antes de cambiar de proveedor.",
+      "source": {
+        "label": "RFC 5321 — Simple Mail Transfer Protocol",
+        "url": "https://www.rfc-editor.org/rfc/rfc5321"
+      },
+      "questions": [
+        {
+          "stem": "¿Qué protocolo se usa para enviar el correo?",
+          "options": [
+            {
+              "key": "a",
+              "text": "SMTP"
+            },
+            {
+              "key": "b",
+              "text": "POP3"
+            },
+            {
+              "key": "c",
+              "text": "IMAP"
+            },
+            {
+              "key": "d",
+              "text": "HTTP"
+            }
+          ],
+          "correct": "a",
+          "explanation": "SMTP transporta el envío entre cliente y servidor.",
+          "source": {
+            "label": "RFC 5321 — Simple Mail Transfer Protocol",
+            "url": "https://www.rfc-editor.org/rfc/rfc5321"
+          }
+        },
+        {
+          "stem": "¿Qué protocolo sincroniza carpetas y estados entre dispositivos?",
+          "options": [
+            {
+              "key": "a",
+              "text": "IMAP"
+            },
+            {
+              "key": "b",
+              "text": "POP3"
+            },
+            {
+              "key": "c",
+              "text": "SMTP"
+            },
+            {
+              "key": "d",
+              "text": "DNS"
+            }
+          ],
+          "correct": "a",
+          "explanation": "IMAP mantiene la misma visión del buzón en varios dispositivos; POP3 descarga.",
+          "source": {
+            "label": "RFC 5321 — Simple Mail Transfer Protocol",
+            "url": "https://www.rfc-editor.org/rfc/rfc5321"
+          }
+        },
+        {
+          "stem": "¿Dónde se publica un registro SPF?",
+          "options": [
+            {
+              "key": "a",
+              "text": "En un registro TXT del DNS"
+            },
+            {
+              "key": "b",
+              "text": "En el servidor IMAP"
+            },
+            {
+              "key": "c",
+              "text": "En el cliente de correo"
+            },
+            {
+              "key": "d",
+              "text": "En la firma DKIM"
+            }
+          ],
+          "correct": "a",
+          "explanation": "SPF se publica como registro TXT del dominio y autoriza servidores de envío.",
+          "source": {
+            "label": "RFC 5321 — Simple Mail Transfer Protocol",
+            "url": "https://www.rfc-editor.org/rfc/rfc5321"
+          }
+        },
+        {
+          "stem": "¿Qué aporta DKIM?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Una firma que verifica integridad y autenticidad"
+            },
+            {
+              "key": "b",
+              "text": "El cifrado del buzón"
+            },
+            {
+              "key": "c",
+              "text": "La cuota de disco"
+            },
+            {
+              "key": "d",
+              "text": "El antivirus del cliente"
+            }
+          ],
+          "correct": "a",
+          "explanation": "DKIM firma cabeceras con una clave publicada en DNS; el receptor comprueba que no se alteró.",
+          "source": {
+            "label": "RFC 5321 — Simple Mail Transfer Protocol",
+            "url": "https://www.rfc-editor.org/rfc/rfc5321"
+          }
+        },
+        {
+          "stem": "¿Qué indica una política DMARC?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Qué hacer si SPF o DKIM fallan"
+            },
+            {
+              "key": "b",
+              "text": "El tamaño máximo del adjunto"
+            },
+            {
+              "key": "c",
+              "text": "El puerto SMTP"
+            },
+            {
+              "key": "d",
+              "text": "La contraseña del buzón"
+            }
+          ],
+          "correct": "a",
+          "explanation": "DMARC alinea SPF/DKIM y define política (none, quarantine o reject) e informes.",
+          "source": {
+            "label": "RFC 5321 — Simple Mail Transfer Protocol",
+            "url": "https://www.rfc-editor.org/rfc/rfc5321"
+          }
+        },
+        {
+          "stem": "¿Qué puerto se usa habitualmente para enviar con autenticación?",
+          "options": [
+            {
+              "key": "a",
+              "text": "587"
+            },
+            {
+              "key": "b",
+              "text": "25"
+            },
+            {
+              "key": "c",
+              "text": "110"
+            },
+            {
+              "key": "d",
+              "text": "143"
+            }
+          ],
+          "correct": "a",
+          "explanation": "587 es el puerto de submission con autenticación; 25 es relay entre servidores.",
+          "source": {
+            "label": "RFC 5321 — Simple Mail Transfer Protocol",
+            "url": "https://www.rfc-editor.org/rfc/rfc5321"
+          }
+        },
+        {
+          "stem": "Un rebote indica que el buzón no existe. ¿Qué se debe hacer?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Revisar el código y el mensaje del servidor"
+            },
+            {
+              "key": "b",
+              "text": "Reenviar el mismo mensaje en bucle"
+            },
+            {
+              "key": "c",
+              "text": "Borrar el dominio"
+            },
+            {
+              "key": "d",
+              "text": "Cambiar la firma"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El código y el texto del servidor indican la causa; no se debe reintentar a ciegas.",
+          "source": {
+            "label": "RFC 5321 — Simple Mail Transfer Protocol",
+            "url": "https://www.rfc-editor.org/rfc/rfc5321"
+          }
+        },
+        {
+          "stem": "¿Qué hace una cola de correo?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Retener mensajes mientras el destino no responde"
+            },
+            {
+              "key": "b",
+              "text": "Cifrar los adjuntos"
+            },
+            {
+              "key": "c",
+              "text": "Firmar con DKIM"
+            },
+            {
+              "key": "d",
+              "text": "Crear listas de distribución"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La cola reintenta la entrega y permite diagnosticar retrasos.",
+          "source": {
+            "label": "RFC 5321 — Simple Mail Transfer Protocol",
+            "url": "https://www.rfc-editor.org/rfc/rfc5321"
+          }
+        },
+        {
+          "stem": "¿Qué es phishing?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Un engaño para obtener credenciales o datos"
+            },
+            {
+              "key": "b",
+              "text": "Un protocolo de correo"
+            },
+            {
+              "key": "c",
+              "text": "Un tipo de copia"
+            },
+            {
+              "key": "d",
+              "text": "Una firma digital"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El phishing usa mensajes que suplantan a una entidad para que la víctima actúe.",
+          "source": {
+            "label": "RFC 5321 — Simple Mail Transfer Protocol",
+            "url": "https://www.rfc-editor.org/rfc/rfc5321"
+          }
+        },
+        {
+          "stem": "¿Qué permite MIME en un mensaje?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Incluir texto, HTML y adjuntos"
+            },
+            {
+              "key": "b",
+              "text": "Comprimir la base de datos"
+            },
+            {
+              "key": "c",
+              "text": "Firmar el dominio"
+            },
+            {
+              "key": "d",
+              "text": "Sincronizar carpetas"
+            }
+          ],
+          "correct": "a",
+          "explanation": "MIME define el formato del contenido y los adjuntos del correo.",
+          "source": {
+            "label": "RFC 5321 — Simple Mail Transfer Protocol",
+            "url": "https://www.rfc-editor.org/rfc/rfc5321"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "caso-licencias",
+      "tema_path": "II.17",
+      "block": "II",
+      "title": "Caso práctico: auditoría de licencias del ayuntamiento",
+      "scenario": "Antes de publicar una aplicación municipal, el equipo revisa las licencias de sus dependencias y las obligaciones de atribución.",
+      "source": {
+        "label": "Open Source Initiative — licencias",
+        "url": "https://opensource.org/licenses"
+      },
+      "questions": [
+        {
+          "stem": "¿Qué caracteriza a una licencia copyleft como GPL?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Obliga a distribuir los derivados bajo la misma licencia"
+            },
+            {
+              "key": "b",
+              "text": "No exige código fuente"
+            },
+            {
+              "key": "c",
+              "text": "Solo permite uso personal"
+            },
+            {
+              "key": "d",
+              "text": "Es siempre gratuita"
+            }
+          ],
+          "correct": "a",
+          "explanation": "GPL exige que las obras derivadas se distribuyan con GPL y código fuente.",
+          "source": {
+            "label": "Open Source Initiative — licencias",
+            "url": "https://opensource.org/licenses"
+          }
+        },
+        {
+          "stem": "¿Qué licencia es permisiva y permite usar, modificar y redistribuir con aviso?",
+          "options": [
+            {
+              "key": "a",
+              "text": "MIT"
+            },
+            {
+              "key": "b",
+              "text": "GPL"
+            },
+            {
+              "key": "c",
+              "text": "AGPL"
+            },
+            {
+              "key": "d",
+              "text": "EUPL"
+            }
+          ],
+          "correct": "a",
+          "explanation": "MIT es permisiva; exige conservar el aviso de copyright y la licencia.",
+          "source": {
+            "label": "Open Source Initiative — licencias",
+            "url": "https://opensource.org/licenses"
+          }
+        },
+        {
+          "stem": "¿Qué exige el software libre además del uso?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Acceso al código fuente"
+            },
+            {
+              "key": "b",
+              "text": "Pagar una cuota"
+            },
+            {
+              "key": "c",
+              "text": "Registro en un catálogo"
+            },
+            {
+              "key": "d",
+              "text": "Una cuenta de correo"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Las libertades de estudiar y modificar requieren acceso al código fuente.",
+          "source": {
+            "label": "Open Source Initiative — licencias",
+            "url": "https://opensource.org/licenses"
+          }
+        },
+        {
+          "stem": "¿Qué licencia es adecuada para un texto o una imagen?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Creative Commons"
+            },
+            {
+              "key": "b",
+              "text": "GPL"
+            },
+            {
+              "key": "c",
+              "text": "MIT"
+            },
+            {
+              "key": "d",
+              "text": "Apache 2.0"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Creative Commons se usa para contenido; GPL/MIT/Apache son licencias de software.",
+          "source": {
+            "label": "Open Source Initiative — licencias",
+            "url": "https://opensource.org/licenses"
+          }
+        },
+        {
+          "stem": "¿Qué licencia copyleft se creó para obras europeas?",
+          "options": [
+            {
+              "key": "a",
+              "text": "EUPL"
+            },
+            {
+              "key": "b",
+              "text": "BSD"
+            },
+            {
+              "key": "c",
+              "text": "MPL"
+            },
+            {
+              "key": "d",
+              "text": "CC0"
+            }
+          ],
+          "correct": "a",
+          "explanation": "EUPL es la licencia pública de la Unión Europea, pensada para obras europeas.",
+          "source": {
+            "label": "Open Source Initiative — licencias",
+            "url": "https://opensource.org/licenses"
+          }
+        },
+        {
+          "stem": "¿Qué obligación suele imponer una licencia permisiva?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Conservar el aviso de copyright"
+            },
+            {
+              "key": "b",
+              "text": "Publicar todo el código"
+            },
+            {
+              "key": "c",
+              "text": "Pagar regalías"
+            },
+            {
+              "key": "d",
+              "text": "Renunciar al soporte"
+            }
+          ],
+          "correct": "a",
+          "explanation": "MIT/BSD/Apache exigen mantener avisos de copyright y licencia.",
+          "source": {
+            "label": "Open Source Initiative — licencias",
+            "url": "https://opensource.org/licenses"
+          }
+        },
+        {
+          "stem": "¿Qué debe comprobarse antes de mezclar dependencias?",
+          "options": [
+            {
+              "key": "a",
+              "text": "La compatibilidad de sus licencias"
+            },
+            {
+              "key": "b",
+              "text": "El color del logo"
+            },
+            {
+              "key": "c",
+              "text": "El idioma del código"
+            },
+            {
+              "key": "d",
+              "text": "La velocidad de la red"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Mezclar licencias incompatibles puede impedir distribuir el conjunto.",
+          "source": {
+            "label": "Open Source Initiative — licencias",
+            "url": "https://opensource.org/licenses"
+          }
+        },
+        {
+          "stem": "¿Qué es software propietario?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Aquel cuyo código no es libre y se usa con condiciones"
+            },
+            {
+              "key": "b",
+              "text": "El que no tiene interfaz"
+            },
+            {
+              "key": "c",
+              "text": "El que no se actualiza"
+            },
+            {
+              "key": "d",
+              "text": "El que usa la nube"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El propietario no concede las libertades del software libre.",
+          "source": {
+            "label": "Open Source Initiative — licencias",
+            "url": "https://opensource.org/licenses"
+          }
+        },
+        {
+          "stem": "¿Qué licencia obliga a publicar el código si se ofrece el servicio por red?",
+          "options": [
+            {
+              "key": "a",
+              "text": "AGPL"
+            },
+            {
+              "key": "b",
+              "text": "MIT"
+            },
+            {
+              "key": "c",
+              "text": "BSD"
+            },
+            {
+              "key": "d",
+              "text": "CC0"
+            }
+          ],
+          "correct": "a",
+          "explanation": "AGPL extiende el copyleft al uso como servicio en red.",
+          "source": {
+            "label": "Open Source Initiative — licencias",
+            "url": "https://opensource.org/licenses"
+          }
+        },
+        {
+          "stem": "¿Qué debe tener un inventario de software?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Versión, procedencia y licencia de cada componente"
+            },
+            {
+              "key": "b",
+              "text": "Solo el nombre comercial"
+            },
+            {
+              "key": "c",
+              "text": "El color de la interfaz"
+            },
+            {
+              "key": "d",
+              "text": "La contraseña del administrador"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El inventario permite conocer obligaciones y planificar actualizaciones.",
+          "source": {
+            "label": "Open Source Initiative — licencias",
+            "url": "https://opensource.org/licenses"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "caso-ofimatica",
+      "tema_path": "II.15",
+      "block": "II",
+      "title": "Caso práctico: acta y hoja de cálculo en la oficina",
+      "scenario": "La oficina de atención al ciudadano prepara el acta de una sesión y una hoja de cálculo con los expedientes del mes. Hay que entregar una copia en PDF, evitar metadatos y no perder fórmulas.",
+      "source": {
+        "label": "LibreOffice — documentación oficial",
+        "url": "https://www.libreoffice.org/get-help/documentation/"
+      },
+      "questions": [
+        {
+          "stem": "¿En qué formato nativo guarda LibreOffice Writer un documento editable?",
+          "options": [
+            {
+              "key": "a",
+              "text": "ODT"
+            },
+            {
+              "key": "b",
+              "text": "DOCX"
+            },
+            {
+              "key": "c",
+              "text": "PDF"
+            },
+            {
+              "key": "d",
+              "text": "TXT"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El formato nativo de Writer es ODT (OpenDocument Text); DOCX es de Microsoft y PDF no es editable.",
+          "source": {
+            "label": "LibreOffice — documentación oficial",
+            "url": "https://www.libreoffice.org/get-help/documentation/"
+          }
+        },
+        {
+          "stem": "En Calc, ¿qué referencia queda fija al copiar la fórmula de B2 a C3?",
+          "options": [
+            {
+              "key": "a",
+              "text": "$B$2"
+            },
+            {
+              "key": "b",
+              "text": "B2"
+            },
+            {
+              "key": "c",
+              "text": "$B2"
+            },
+            {
+              "key": "d",
+              "text": "B$2"
+            }
+          ],
+          "correct": "a",
+          "explanation": "$B$2 fija columna y fila; B2 es relativa y cambia al copiar.",
+          "source": {
+            "label": "LibreOffice — documentación oficial",
+            "url": "https://www.libreoffice.org/get-help/documentation/"
+          }
+        },
+        {
+          "stem": "¿Qué se pierde al exportar una hoja de cálculo a CSV?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Fórmulas y formato"
+            },
+            {
+              "key": "b",
+              "text": "Solo los textos"
+            },
+            {
+              "key": "c",
+              "text": "Los valores numéricos"
+            },
+            {
+              "key": "d",
+              "text": "Las filas"
+            }
+          ],
+          "correct": "a",
+          "explanation": "CSV guarda valores separados por comas; no conserva fórmulas, tipos ni formato.",
+          "source": {
+            "label": "LibreOffice — documentación oficial",
+            "url": "https://www.libreoffice.org/get-help/documentation/"
+          }
+        },
+        {
+          "stem": "¿Para qué sirve una tabla dinámica?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Resumir datos por filas, columnas y valores"
+            },
+            {
+              "key": "b",
+              "text": "Cambiar el idioma"
+            },
+            {
+              "key": "c",
+              "text": "Comprimir imágenes"
+            },
+            {
+              "key": "d",
+              "text": "Firmar el documento"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La tabla dinámica agrupa y resume datos para analizarlos.",
+          "source": {
+            "label": "LibreOffice — documentación oficial",
+            "url": "https://www.libreoffice.org/get-help/documentation/"
+          }
+        },
+        {
+          "stem": "¿Qué medida reduce el riesgo de una macro desconocida?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Desactivar macros por defecto"
+            },
+            {
+              "key": "b",
+              "text": "Abrir siempre en modo edición"
+            },
+            {
+              "key": "c",
+              "text": "Ampliar la ventana"
+            },
+            {
+              "key": "d",
+              "text": "Guardar en CSV"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Las macros pueden ejecutar código; conviene desactivarlas por defecto y firmar solo las propias.",
+          "source": {
+            "label": "LibreOffice — documentación oficial",
+            "url": "https://www.libreoffice.org/get-help/documentation/"
+          }
+        },
+        {
+          "stem": "Antes de publicar un documento, ¿qué conviene revisar?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Metadatos y datos personales"
+            },
+            {
+              "key": "b",
+              "text": "El color del escritorio"
+            },
+            {
+              "key": "c",
+              "text": "El idioma del teclado"
+            },
+            {
+              "key": "d",
+              "text": "La impresora"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Autor, comentarios o cambios pueden revelar información; hay que revisar y eliminar metadatos innecesarios.",
+          "source": {
+            "label": "LibreOffice — documentación oficial",
+            "url": "https://www.libreoffice.org/get-help/documentation/"
+          }
+        },
+        {
+          "stem": "¿Qué formato es preferible para conservación a largo plazo?",
+          "options": [
+            {
+              "key": "a",
+              "text": "PDF/A"
+            },
+            {
+              "key": "b",
+              "text": "PDF normal"
+            },
+            {
+              "key": "c",
+              "text": "DOCX"
+            },
+            {
+              "key": "d",
+              "text": "HTML"
+            }
+          ],
+          "correct": "a",
+          "explanation": "PDF/A está pensado para conservación; el PDF normal puede depender de fuentes externas.",
+          "source": {
+            "label": "LibreOffice — documentación oficial",
+            "url": "https://www.libreoffice.org/get-help/documentation/"
+          }
+        },
+        {
+          "stem": "¿Qué permite el control de cambios?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Ver y aceptar modificaciones"
+            },
+            {
+              "key": "b",
+              "text": "Cifrar el disco"
+            },
+            {
+              "key": "c",
+              "text": "Crear macros"
+            },
+            {
+              "key": "d",
+              "text": "Cambiar la contraseña"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El control de cambios registra quién modificó qué y permite aceptar o rechazar.",
+          "source": {
+            "label": "LibreOffice — documentación oficial",
+            "url": "https://www.libreoffice.org/get-help/documentation/"
+          }
+        },
+        {
+          "stem": "Si se copia =A1 de la celda B2 a C3, ¿a qué celda apunta?",
+          "options": [
+            {
+              "key": "a",
+              "text": "B2"
+            },
+            {
+              "key": "b",
+              "text": "A1"
+            },
+            {
+              "key": "c",
+              "text": "C3"
+            },
+            {
+              "key": "d",
+              "text": "A3"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Una referencia relativa se desplaza con la fórmula: de A1 a B2.",
+          "source": {
+            "label": "LibreOffice — documentación oficial",
+            "url": "https://www.libreoffice.org/get-help/documentation/"
+          }
+        },
+        {
+          "stem": "¿Qué formato de Impress se usa para distribuir una presentación sin que se edite?",
+          "options": [
+            {
+              "key": "a",
+              "text": "PDF"
+            },
+            {
+              "key": "b",
+              "text": "ODP"
+            },
+            {
+              "key": "c",
+              "text": "PPTX"
+            },
+            {
+              "key": "d",
+              "text": "SVG"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El PDF se distribuye y conserva la apariencia; ODP/PPTX son editables.",
+          "source": {
+            "label": "LibreOffice — documentación oficial",
+            "url": "https://www.libreoffice.org/get-help/documentation/"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "caso-red",
+      "tema_path": "III.22",
+      "block": "III",
+      "title": "Caso práctico: Wi-Fi para una biblioteca municipal",
+      "scenario": "La biblioteca quiere cubrir dos plantas, separar la red de invitados y evitar cortes al mover equipos entre aulas. Hay que elegir bandas, canales y seguridad.",
+      "source": {
+        "label": "Wi-Fi Alliance — Wi-Fi 6",
+        "url": "https://www.wi-fi.org/"
+      },
+      "questions": [
+        {
+          "stem": "¿Qué banda ofrece normalmente más alcance?",
+          "options": [
+            {
+              "key": "a",
+              "text": "2,4 GHz"
+            },
+            {
+              "key": "b",
+              "text": "5 GHz"
+            },
+            {
+              "key": "c",
+              "text": "6 GHz"
+            },
+            {
+              "key": "d",
+              "text": "Infrarrojo"
+            }
+          ],
+          "correct": "a",
+          "explanation": "2,4 GHz penetra mejor en paredes, aunque suele estar más congestionada.",
+          "source": {
+            "label": "Wi-Fi Alliance — Wi-Fi 6",
+            "url": "https://www.wi-fi.org/"
+          }
+        },
+        {
+          "stem": "¿Qué banda suele ofrecer más capacidad y canales?",
+          "options": [
+            {
+              "key": "a",
+              "text": "5 GHz"
+            },
+            {
+              "key": "b",
+              "text": "2,4 GHz"
+            },
+            {
+              "key": "c",
+              "text": "Bluetooth"
+            },
+            {
+              "key": "d",
+              "text": "NFC"
+            }
+          ],
+          "correct": "a",
+          "explanation": "5 GHz tiene más canales y menos interferencias, con menor alcance.",
+          "source": {
+            "label": "Wi-Fi Alliance — Wi-Fi 6",
+            "url": "https://www.wi-fi.org/"
+          }
+        },
+        {
+          "stem": "¿Qué seguridad Wi-Fi es la más recomendable hoy?",
+          "options": [
+            {
+              "key": "a",
+              "text": "WPA3"
+            },
+            {
+              "key": "b",
+              "text": "WEP"
+            },
+            {
+              "key": "c",
+              "text": "WPS"
+            },
+            {
+              "key": "d",
+              "text": "Red abierta"
+            }
+          ],
+          "correct": "a",
+          "explanation": "WPA3 sustituye a WEP y evita las debilidades de WPS.",
+          "source": {
+            "label": "Wi-Fi Alliance — Wi-Fi 6",
+            "url": "https://www.wi-fi.org/"
+          }
+        },
+        {
+          "stem": "¿Qué problema causa usar canales solapados?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Interferencia entre puntos de acceso"
+            },
+            {
+              "key": "b",
+              "text": "Más batería"
+            },
+            {
+              "key": "c",
+              "text": "Mejor cobertura"
+            },
+            {
+              "key": "d",
+              "text": "Más seguridad"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Los canales deben no solaparse para evitar interferencias y caídas.",
+          "source": {
+            "label": "Wi-Fi Alliance — Wi-Fi 6",
+            "url": "https://www.wi-fi.org/"
+          }
+        },
+        {
+          "stem": "¿Para qué sirve una VLAN de invitados?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Separar su tráfico de la red interna"
+            },
+            {
+              "key": "b",
+              "text": "Aumentar la velocidad del disco"
+            },
+            {
+              "key": "c",
+              "text": "Cifrar la copia"
+            },
+            {
+              "key": "d",
+              "text": "Asignar IP públicas"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La VLAN aísla invitados y reduce el riesgo para la red corporativa.",
+          "source": {
+            "label": "Wi-Fi Alliance — Wi-Fi 6",
+            "url": "https://www.wi-fi.org/"
+          }
+        },
+        {
+          "stem": "¿Qué crea una VPN?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Un túnel cifrado sobre una red no confiable"
+            },
+            {
+              "key": "b",
+              "text": "Una red local más rápida"
+            },
+            {
+              "key": "c",
+              "text": "Un nuevo SSID"
+            },
+            {
+              "key": "d",
+              "text": "Una copia de seguridad"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La VPN protege la comunicación, pero no sustituye permisos ni segmentación.",
+          "source": {
+            "label": "Wi-Fi Alliance — Wi-Fi 6",
+            "url": "https://www.wi-fi.org/"
+          }
+        },
+        {
+          "stem": "¿Qué mide el jitter?",
+          "options": [
+            {
+              "key": "a",
+              "text": "La variación del retraso entre paquetes"
+            },
+            {
+              "key": "b",
+              "text": "El ancho de banda máximo"
+            },
+            {
+              "key": "c",
+              "text": "El número de usuarios"
+            },
+            {
+              "key": "d",
+              "text": "La potencia de la antena"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El jitter afecta a voz y vídeo aunque el ancho de banda sea suficiente.",
+          "source": {
+            "label": "Wi-Fi Alliance — Wi-Fi 6",
+            "url": "https://www.wi-fi.org/"
+          }
+        },
+        {
+          "stem": "¿Qué servicio asigna IP a los clientes Wi-Fi?",
+          "options": [
+            {
+              "key": "a",
+              "text": "DHCP"
+            },
+            {
+              "key": "b",
+              "text": "DNS"
+            },
+            {
+              "key": "c",
+              "text": "SMTP"
+            },
+            {
+              "key": "d",
+              "text": "NTP"
+            }
+          ],
+          "correct": "a",
+          "explanation": "DHCP entrega direcciones y configuración de red a los clientes.",
+          "source": {
+            "label": "Wi-Fi Alliance — Wi-Fi 6",
+            "url": "https://www.wi-fi.org/"
+          }
+        },
+        {
+          "stem": "¿Qué estándar corresponde a Wi-Fi 6?",
+          "options": [
+            {
+              "key": "a",
+              "text": "802.11ax"
+            },
+            {
+              "key": "b",
+              "text": "802.11ac"
+            },
+            {
+              "key": "c",
+              "text": "802.11n"
+            },
+            {
+              "key": "d",
+              "text": "802.11g"
+            }
+          ],
+          "correct": "a",
+          "explanation": "802.11ax es Wi-Fi 6; 802.11ac es Wi-Fi 5.",
+          "source": {
+            "label": "Wi-Fi Alliance — Wi-Fi 6",
+            "url": "https://www.wi-fi.org/"
+          }
+        },
+        {
+          "stem": "¿Cómo se planifica la colocación de puntos de acceso?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Midiendo cobertura y capacidad, no por intuición"
+            },
+            {
+              "key": "b",
+              "text": "Poniendo uno por aula sin medir"
+            },
+            {
+              "key": "c",
+              "text": "Solo en el pasillo"
+            },
+            {
+              "key": "d",
+              "text": "Todos en la misma esquina"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Un estudio de cobertura y densidad evita zonas muertas y saturación.",
+          "source": {
+            "label": "Wi-Fi Alliance — Wi-Fi 6",
+            "url": "https://www.wi-fi.org/"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "caso-servidores",
+      "tema_path": "III.18",
+      "block": "III",
+      "title": "Caso práctico: el servidor de ficheros no responde",
+      "scenario": "Un lunes el servidor de ficheros del centro tarda en autenticar y algunos equipos no reciben dirección IP. El equipo revisa AD, DNS, DHCP y las copias.",
+      "source": {
+        "label": "Microsoft Learn — Windows Server",
+        "url": "https://learn.microsoft.com/windows-server/"
+      },
+      "questions": [
+        {
+          "stem": "¿Qué servicio autentica usuarios y equipos en un dominio Windows?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Active Directory"
+            },
+            {
+              "key": "b",
+              "text": "DHCP"
+            },
+            {
+              "key": "c",
+              "text": "DNS"
+            },
+            {
+              "key": "d",
+              "text": "IIS"
+            }
+          ],
+          "correct": "a",
+          "explanation": "AD DS centraliza identidades y Kerberos autentica en el dominio.",
+          "source": {
+            "label": "Microsoft Learn — Windows Server",
+            "url": "https://learn.microsoft.com/windows-server/"
+          }
+        },
+        {
+          "stem": "¿Qué servicio traduce nombres a direcciones IP?",
+          "options": [
+            {
+              "key": "a",
+              "text": "DNS"
+            },
+            {
+              "key": "b",
+              "text": "DHCP"
+            },
+            {
+              "key": "c",
+              "text": "SMTP"
+            },
+            {
+              "key": "d",
+              "text": "NTP"
+            }
+          ],
+          "correct": "a",
+          "explanation": "DNS resuelve nombres; sin él los clientes no encuentran servicios.",
+          "source": {
+            "label": "Microsoft Learn — Windows Server",
+            "url": "https://learn.microsoft.com/windows-server/"
+          }
+        },
+        {
+          "stem": "¿Qué servicio asigna direcciones IP automáticamente?",
+          "options": [
+            {
+              "key": "a",
+              "text": "DHCP"
+            },
+            {
+              "key": "b",
+              "text": "DNS"
+            },
+            {
+              "key": "c",
+              "text": "AD"
+            },
+            {
+              "key": "d",
+              "text": "GPO"
+            }
+          ],
+          "correct": "a",
+          "explanation": "DHCP entrega configuración de red, incluida la IP y la puerta de enlace.",
+          "source": {
+            "label": "Microsoft Learn — Windows Server",
+            "url": "https://learn.microsoft.com/windows-server/"
+          }
+        },
+        {
+          "stem": "¿Qué permite aplicar configuración de forma centralizada a equipos y usuarios?",
+          "options": [
+            {
+              "key": "a",
+              "text": "GPO"
+            },
+            {
+              "key": "b",
+              "text": "RAID"
+            },
+            {
+              "key": "c",
+              "text": "SMTP"
+            },
+            {
+              "key": "d",
+              "text": "VPN"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Las directivas de grupo aplican ajustes de seguridad y configuración.",
+          "source": {
+            "label": "Microsoft Learn — Windows Server",
+            "url": "https://learn.microsoft.com/windows-server/"
+          }
+        },
+        {
+          "stem": "¿Qué RAID replica los datos en dos discos?",
+          "options": [
+            {
+              "key": "a",
+              "text": "RAID 1"
+            },
+            {
+              "key": "b",
+              "text": "RAID 0"
+            },
+            {
+              "key": "c",
+              "text": "RAID 5"
+            },
+            {
+              "key": "d",
+              "text": "RAID 6"
+            }
+          ],
+          "correct": "a",
+          "explanation": "RAID 1 es espejo: cada disco tiene una copia; no sustituye a la copia de seguridad.",
+          "source": {
+            "label": "Microsoft Learn — Windows Server",
+            "url": "https://learn.microsoft.com/windows-server/"
+          }
+        },
+        {
+          "stem": "¿Qué regla de copias recomienda tres copias, dos medios y una fuera?",
+          "options": [
+            {
+              "key": "a",
+              "text": "3-2-1"
+            },
+            {
+              "key": "b",
+              "text": "1-2-3"
+            },
+            {
+              "key": "c",
+              "text": "2-1-3"
+            },
+            {
+              "key": "d",
+              "text": "3-1-2"
+            }
+          ],
+          "correct": "a",
+          "explanation": "3-2-1 reduce el riesgo de perder datos por fallo, borrado o ransomware.",
+          "source": {
+            "label": "Microsoft Learn — Windows Server",
+            "url": "https://learn.microsoft.com/windows-server/"
+          }
+        },
+        {
+          "stem": "¿Qué mide el RTO?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Tiempo máximo para recuperar el servicio"
+            },
+            {
+              "key": "b",
+              "text": "Pérdida máxima de datos"
+            },
+            {
+              "key": "c",
+              "text": "Número de discos"
+            },
+            {
+              "key": "d",
+              "text": "Usuarios concurrentes"
+            }
+          ],
+          "correct": "a",
+          "explanation": "RTO es el tiempo objetivo de recuperación; RPO es la pérdida máxima de datos.",
+          "source": {
+            "label": "Microsoft Learn — Windows Server",
+            "url": "https://learn.microsoft.com/windows-server/"
+          }
+        },
+        {
+          "stem": "¿Qué mide el RPO?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Pérdida máxima de datos aceptable"
+            },
+            {
+              "key": "b",
+              "text": "Tiempo de arranque"
+            },
+            {
+              "key": "c",
+              "text": "Ancho de banda"
+            },
+            {
+              "key": "d",
+              "text": "Número de copias"
+            }
+          ],
+          "correct": "a",
+          "explanation": "RPO define cuántos datos se pueden perder; condiciona la frecuencia de copia.",
+          "source": {
+            "label": "Microsoft Learn — Windows Server",
+            "url": "https://learn.microsoft.com/windows-server/"
+          }
+        },
+        {
+          "stem": "¿Qué se monitoriza para detectar un servidor degradado?",
+          "options": [
+            {
+              "key": "a",
+              "text": "CPU, memoria, disco, red y servicios"
+            },
+            {
+              "key": "b",
+              "text": "Solo el color del escritorio"
+            },
+            {
+              "key": "c",
+              "text": "La impresora"
+            },
+            {
+              "key": "d",
+              "text": "El teclado"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La observabilidad combina métricas y logs de los recursos y servicios.",
+          "source": {
+            "label": "Microsoft Learn — Windows Server",
+            "url": "https://learn.microsoft.com/windows-server/"
+          }
+        },
+        {
+          "stem": "Antes de actualizar un servidor en producción, ¿qué se recomienda?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Probar en preproducción y prever reversión"
+            },
+            {
+              "key": "b",
+              "text": "Aplicar sin copia"
+            },
+            {
+              "key": "c",
+              "text": "Apagar todos los equipos"
+            },
+            {
+              "key": "d",
+              "text": "Cambiar el dominio"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La ventana de cambio debe incluir prueba, copia y plan de reversión.",
+          "source": {
+            "label": "Microsoft Learn — Windows Server",
+            "url": "https://learn.microsoft.com/windows-server/"
+          }
+        }
+      ]
+    }
+  ],
   "progress": {
     "total": 40,
     "apuntesCompletos": 40,
@@ -15513,6 +16930,8 @@
     "conPractica": 40,
     "sinPractica": 0,
     "questions": 400,
+    "cases": 5,
+    "caseQuestions": 50,
     "convocatorias": 12
   }
 }
