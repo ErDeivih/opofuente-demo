@@ -275,10 +275,10 @@
         "title": "Sistemas, redes y comunicaciones",
         "coverage": {
           "total": 9,
-          "conApuntes": 6,
+          "conApuntes": 8,
           "soloResumen": 0,
-          "pendientes": 3,
-          "conPractica": 6
+          "pendientes": 1,
+          "conPractica": 8
         },
         "topics": [
           {
@@ -324,10 +324,10 @@
           {
             "path": "III.23",
             "title": "Servicios de red",
-            "apuntesStatus": "pendiente",
-            "practicaStatus": "pendiente",
-            "sectionCount": 0,
-            "questionCount": 0
+            "apuntesStatus": "completos",
+            "practicaStatus": "con_practica",
+            "sectionCount": 6,
+            "questionCount": 10
           },
           {
             "path": "III.24",
@@ -340,10 +340,10 @@
           {
             "path": "III.25",
             "title": "Cloud y centros de datos",
-            "apuntesStatus": "pendiente",
-            "practicaStatus": "pendiente",
-            "sectionCount": 0,
-            "questionCount": 0
+            "apuntesStatus": "completos",
+            "practicaStatus": "con_practica",
+            "sectionCount": 7,
+            "questionCount": 10
           },
           {
             "path": "III.26",
@@ -2166,6 +2166,78 @@
       ],
       "practiceSlug": "iii-22"
     },
+    "III.23": {
+      "path": "III.23",
+      "title": "Servicios de red",
+      "apuntesStatus": "completos",
+      "practicaStatus": "con_practica",
+      "sectionCount": 6,
+      "questionCount": 10,
+      "source": {
+        "label": "IETF RFC 1034 — Domain Names: Concepts and Facilities (DNS)",
+        "url": "https://datatracker.ietf.org/doc/html/rfc1034"
+      },
+      "sections": [
+        {
+          "heading": "DNS: nombres en lugar de direcciones",
+          "body": "El **DNS** traduce nombres legibles (`www.ayuntamiento.es`) en direcciones IP y permite localizar servicios. Es una base de datos jerárquica y distribuida: servidores raíz, servidores de dominio de primer nivel (`.es`) y servidores autoritativos de cada zona.\n\nLos registros principales son **A** (IPv4), **AAAA** (IPv6), **CNAME** (alias), **MX** (correo), **TXT** (verificación y políticas) y **NS** (servidores de la zona). El **TTL** indica cuánto puede cachear un resolutor la respuesta.\n\nLa caché acelera las consultas, pero un TTL alto retrasa los cambios. **DNSSEC** añade firmas para verificar la autenticidad de las respuestas."
+        },
+        {
+          "heading": "DHCP: configuración automática",
+          "body": "**DHCP** asigna direcciones IP y parámetros de red (máscara, puerta de enlace, DNS, dominio) a los clientes. El intercambio básico es **DORA**: Discover, Offer, Request, Acknowledge.\n\nLa dirección se concede mediante un **lease** o concesión temporal; el cliente la renueva antes de que caduque. El servidor define **ámbitos** (rangos), exclusiones y reservas por MAC.\n\nEn redes con varias subredes se usan **relays** DHCP para que el servidor reciba las peticiones. Una mala configuración de DHCP puede dejar sin red a toda la oficina."
+        },
+        {
+          "heading": "NTP, LDAP y proxy",
+          "body": "**NTP** sincroniza la hora de los equipos. Es crítico para los registros, la autenticación Kerberos, los certificados y la correlación de incidentes. Los servidores se organizan por **estratos**; conviene usar fuentes fiables y limitar quién puede consultarlas.\n\n**LDAP** es un protocolo de directorio para consultar usuarios, grupos y recursos; **Active Directory** lo usa como base. El **proxy** actúa como intermediario: puede cachear, filtrar, autenticar y registrar el tráfico web.\n\nEn redes de administración pública se separan los servicios internos de los publicados a internet y se aplican listas de control."
+        },
+        {
+          "heading": "Alta disponibilidad de servicios",
+          "body": "Un servicio de red es crítico si su caída impide trabajar. La alta disponibilidad combina **redundancia** (varios servidores o enlaces), **balanceo**, **comprobaciones de salud** y **conmutación por error**.\n\nDNS y DHCP deben tener al menos dos instancias; el correo y la web, balanceadores y copias. La monitorización detecta la caída y dispara la alerta; la documentación permite recuperar el servicio sin depender de una persona.\n\nLa alta disponibilidad no sustituye las copias: protege de fallos, no de borrados o ransomware."
+        },
+        {
+          "heading": "Tabla de servicios",
+          "table": {
+            "columns": [
+              "Servicio",
+              "Función",
+              "Puerto habitual"
+            ],
+            "rows": [
+              [
+                "DNS",
+                "Resolución de nombres",
+                "53 (UDP/TCP)"
+              ],
+              [
+                "DHCP",
+                "Asignación de configuración IP",
+                "67/68 (UDP)"
+              ],
+              [
+                "NTP",
+                "Sincronización de hora",
+                "123 (UDP)"
+              ],
+              [
+                "LDAP",
+                "Consulta de directorio",
+                "389 / 636 (LDAPS)"
+              ],
+              [
+                "HTTP/HTTPS",
+                "Servicio web y proxy",
+                "80 / 443"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Ejemplo resuelto",
+          "body": "**Supuesto.** Un ayuntamiento monta la red de un edificio nuevo con 120 puestos, servidores internos y una web publicada.\n\n**Resolución.**\n\n- **DNS** con dos servidores (uno principal y otro secundario), zonas internas y externas separadas.\n- **DHCP** con ámbitos por planta, reservas para impresoras y servidores, y relay en las VLAN.\n- **NTP** apuntando a fuentes fiables; todos los equipos sincronizados para que los registros sean comparables.\n- **Proxy** para el tráfico web de los puestos, con registro y filtrado; la web pública se publica con un **reverse proxy**.\n- **Monitorización** de DNS, DHCP y web con alertas y pruebas de conmutación.\n\n**Conclusión.** Los servicios de red son invisibles cuando funcionan y bloquean todo cuando fallan; se diseñan con redundancia y se documentan."
+        }
+      ],
+      "practiceSlug": "iii-23"
+    },
     "III.24": {
       "path": "III.24",
       "title": "Monitorización y gestión de incidencias",
@@ -2290,6 +2362,77 @@
         }
       ],
       "practiceSlug": "iii-24"
+    },
+    "III.25": {
+      "path": "III.25",
+      "title": "Cloud y centros de datos",
+      "apuntesStatus": "completos",
+      "practicaStatus": "con_practica",
+      "sectionCount": 7,
+      "questionCount": 10,
+      "source": {
+        "label": "NIST SP 800-145 — The NIST Definition of Cloud Computing",
+        "url": "https://csrc.nist.gov/pubs/sp/800/145/final"
+      },
+      "sections": [
+        {
+          "heading": "Modelos de servicio: IaaS, PaaS y SaaS",
+          "body": "La **computación en la nube** ofrece recursos informáticos como servicio. Según cuánto gestiona el proveedor:\n\n- **IaaS** (infraestructura): se alquilan máquinas, redes y almacenamiento; el cliente gestiona el sistema operativo y las aplicaciones.\n- **PaaS** (plataforma): el proveedor gestiona la infraestructura y el entorno de ejecución; el cliente despliega su aplicación.\n- **SaaS** (software): el proveedor gestiona todo y el cliente usa la aplicación (correo, ofimática, CRM).\n\nEl **modelo de responsabilidad compartida** reparte tareas de seguridad: el proveedor protege la infraestructura; el cliente, sus datos, identidades y configuración."
+        },
+        {
+          "heading": "Nubes públicas, privadas e híbridas",
+          "body": "Una nube **pública** comparte infraestructura entre clientes y escala con facilidad. Una nube **privada** se dedica a una organización, en su centro de datos o alojada. La **híbrida** combina ambas y mueve cargas según sensibilidad, coste o latencia.\n\nLa elección depende de la **clasificación de la información**, los requisitos legales, la criticidad y el coste total. No todo debe ir a la nube ni todo debe quedarse en casa.\n\nEn el sector público, la soberanía del dato y la protección de datos personales condicionan el proveedor y la ubicación."
+        },
+        {
+          "heading": "Características esenciales",
+          "body": "El NIST resume la nube en cinco características:\n\n1. **Autoservicio bajo demanda**: el cliente aprovisiona recursos sin intervención humana del proveedor.\n2. **Acceso amplio por red**: servicios accesibles desde distintos dispositivos.\n3. **Agrupación de recursos**: recursos compartidos y asignados dinámicamente.\n4. **Elasticidad rápida**: escalar hacia arriba o abajo según la demanda.\n5. **Servicio medido**: consumo medido y facturado.\n\nEstas características explican las ventajas (agilidad, escala) y los riesgos (dependencia, coste variable, pérdida de control)."
+        },
+        {
+          "heading": "Centros de datos y continuidad",
+          "body": "Un **centro de datos** concentra servidores, almacenamiento, red, energía y refrigeración. Su diseño busca disponibilidad: redundancia de alimentación, refrigeración, red y almacenamiento; **zonas de disponibilidad** separadas; detección y extinción de incendios.\n\nLa virtualización y los contenedores permiten consolidar cargas y moverlas entre nodos. La **copia de seguridad** y el **plan de recuperación** siguen siendo responsabilidad del cliente en muchos servicios: la nube no es una copia por sí misma.\n\nLa monitorización, el registro y las pruebas de conmutación convierten la arquitectura en una promesa verificable."
+        },
+        {
+          "heading": "Gobierno, seguridad y salida",
+          "body": "Antes de contratar hay que definir **clasificación de datos**, **roles**, **cifrado**, **identidad** y **registro de actividad**. Los contratos deben incluir nivel de servicio, ubicación, subencargados, notificación de incidentes y devolución de datos.\n\nEl **vendor lock-in** aparece cuando las aplicaciones dependen de servicios propietarios difíciles de migrar. Se mitiga con estándares, contenedores, exportación de datos y un **plan de salida** probado.\n\nLa nube no elimina el RGPD: el responsable del tratamiento sigue siendo la administración."
+        },
+        {
+          "heading": "Tabla de modelos",
+          "table": {
+            "columns": [
+              "Modelo",
+              "Gestiona el proveedor",
+              "Gestiona el cliente"
+            ],
+            "rows": [
+              [
+                "IaaS",
+                "Hardware, red, virtualización",
+                "SO, middleware, aplicación, datos"
+              ],
+              [
+                "PaaS",
+                "Infraestructura y entorno de ejecución",
+                "Aplicación y datos"
+              ],
+              [
+                "SaaS",
+                "Toda la pila",
+                "Configuración, identidades y datos"
+              ],
+              [
+                "On-premise",
+                "Nada",
+                "Toda la pila"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Ejemplo resuelto",
+          "body": "**Supuesto.** Un ayuntamiento quiere publicar la web municipal y una aplicación de citas, y duda entre nube y centro de datos propio.\n\n**Resolución.**\n\n- La **web** puede ir a **PaaS** o a un servidor en **IaaS**, con CDN y copias; su criticidad es media.\n- La **aplicación de citas** trata datos personales: se clasifica, se cifra y se elige un proveedor con garantías y ubicación adecuada.\n- Se define **responsabilidad compartida**: el proveedor protege la plataforma; el ayuntamiento gestiona identidades, permisos y copias.\n- Se exige **exportación de datos**, plan de salida y notificación de incidentes en el contrato.\n- Se mantiene un entorno local para los sistemas que no pueden salir y se prueba la recuperación.\n\n**Conclusión.** La nube es una decisión de arquitectura y gobierno, no solo de precio: hay que clasificar datos, repartir responsabilidades y prever la salida."
+        }
+      ],
+      "practiceSlug": "iii-25"
     },
     "IV.27": {
       "path": "IV.27",
@@ -8714,6 +8857,287 @@
       ]
     },
     {
+      "slug": "iii-23",
+      "tema_path": "III.23",
+      "title": "Práctica · Servicios de red",
+      "source": {
+        "label": "IETF RFC 1034 — Domain Names: Concepts and Facilities (DNS)",
+        "url": "https://datatracker.ietf.org/doc/html/rfc1034"
+      },
+      "questions": [
+        {
+          "stem": "¿Qué hace el DNS?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Traducir nombres de dominio en direcciones IP"
+            },
+            {
+              "key": "b",
+              "text": "Asignar direcciones IP a los clientes"
+            },
+            {
+              "key": "c",
+              "text": "Sincronizar la hora del sistema"
+            },
+            {
+              "key": "d",
+              "text": "Cifrar el correo"
+            }
+          ],
+          "correct": "a",
+          "explanation": "DNS resuelve nombres legibles a direcciones IP y localiza servicios; DHCP asigna direcciones y NTP sincroniza la hora.",
+          "source": {
+            "label": "IETF RFC 1034 — Domain Names: Concepts and Facilities (DNS)",
+            "url": "https://datatracker.ietf.org/doc/html/rfc1034"
+          }
+        },
+        {
+          "stem": "¿Qué registro DNS se usa para una dirección IPv4?",
+          "options": [
+            {
+              "key": "a",
+              "text": "A"
+            },
+            {
+              "key": "b",
+              "text": "AAAA"
+            },
+            {
+              "key": "c",
+              "text": "MX"
+            },
+            {
+              "key": "d",
+              "text": "CNAME"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El registro A apunta a una IPv4; AAAA a una IPv6, MX al servidor de correo y CNAME crea un alias.",
+          "source": {
+            "label": "IETF RFC 1034 — Domain Names: Concepts and Facilities (DNS)",
+            "url": "https://datatracker.ietf.org/doc/html/rfc1034"
+          }
+        },
+        {
+          "stem": "¿Qué registro indica los servidores de correo de un dominio?",
+          "options": [
+            {
+              "key": "a",
+              "text": "MX"
+            },
+            {
+              "key": "b",
+              "text": "A"
+            },
+            {
+              "key": "c",
+              "text": "NS"
+            },
+            {
+              "key": "d",
+              "text": "TXT"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Los registros MX identifican los servidores que reciben correo para el dominio.",
+          "source": {
+            "label": "IETF RFC 1034 — Domain Names: Concepts and Facilities (DNS)",
+            "url": "https://datatracker.ietf.org/doc/html/rfc1034"
+          }
+        },
+        {
+          "stem": "¿Qué orden sigue el intercambio básico de DHCP?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Discover, Offer, Request, Acknowledge"
+            },
+            {
+              "key": "b",
+              "text": "Request, Offer, Discover, Acknowledge"
+            },
+            {
+              "key": "c",
+              "text": "Offer, Discover, Acknowledge, Request"
+            },
+            {
+              "key": "d",
+              "text": "Acknowledge, Request, Offer, Discover"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El cliente descubre, el servidor ofrece, el cliente solicita y el servidor confirma: DORA.",
+          "source": {
+            "label": "IETF RFC 1034 — Domain Names: Concepts and Facilities (DNS)",
+            "url": "https://datatracker.ietf.org/doc/html/rfc1034"
+          }
+        },
+        {
+          "stem": "¿Qué es un lease de DHCP?",
+          "options": [
+            {
+              "key": "a",
+              "text": "La concesión temporal de una dirección IP"
+            },
+            {
+              "key": "b",
+              "text": "Un registro DNS"
+            },
+            {
+              "key": "c",
+              "text": "Un tipo de cable"
+            },
+            {
+              "key": "d",
+              "text": "Un protocolo de correo"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El lease es el tiempo durante el cual el cliente puede usar la dirección; antes de caducar debe renovarla.",
+          "source": {
+            "label": "IETF RFC 1034 — Domain Names: Concepts and Facilities (DNS)",
+            "url": "https://datatracker.ietf.org/doc/html/rfc1034"
+          }
+        },
+        {
+          "stem": "¿Para qué sirve NTP?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Sincronizar la hora de los equipos"
+            },
+            {
+              "key": "b",
+              "text": "Resolver nombres"
+            },
+            {
+              "key": "c",
+              "text": "Asignar IP"
+            },
+            {
+              "key": "d",
+              "text": "Filtrar el correo"
+            }
+          ],
+          "correct": "a",
+          "explanation": "NTP sincroniza relojes; una hora coherente es esencial para logs, certificados y Kerberos.",
+          "source": {
+            "label": "IETF RFC 1034 — Domain Names: Concepts and Facilities (DNS)",
+            "url": "https://datatracker.ietf.org/doc/html/rfc1034"
+          }
+        },
+        {
+          "stem": "¿Qué protocolo se usa para consultar un directorio de usuarios?",
+          "options": [
+            {
+              "key": "a",
+              "text": "LDAP"
+            },
+            {
+              "key": "b",
+              "text": "DHCP"
+            },
+            {
+              "key": "c",
+              "text": "NTP"
+            },
+            {
+              "key": "d",
+              "text": "SMTP"
+            }
+          ],
+          "correct": "a",
+          "explanation": "LDAP permite consultar y modificar un directorio; Active Directory lo utiliza como base.",
+          "source": {
+            "label": "IETF RFC 1034 — Domain Names: Concepts and Facilities (DNS)",
+            "url": "https://datatracker.ietf.org/doc/html/rfc1034"
+          }
+        },
+        {
+          "stem": "¿Qué hace un proxy inverso?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Recibe peticiones de internet y las reenvía a servidores internos"
+            },
+            {
+              "key": "b",
+              "text": "Asigna direcciones IP"
+            },
+            {
+              "key": "c",
+              "text": "Sincroniza la hora"
+            },
+            {
+              "key": "d",
+              "text": "Resuelve nombres DNS"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El reverse proxy publica servicios internos, puede terminar TLS, balancear y filtrar peticiones.",
+          "source": {
+            "label": "IETF RFC 1034 — Domain Names: Concepts and Facilities (DNS)",
+            "url": "https://datatracker.ietf.org/doc/html/rfc1034"
+          }
+        },
+        {
+          "stem": "¿Qué es una comprobación de salud (health check) en alta disponibilidad?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Una prueba periódica para saber si un servidor responde y puede recibir tráfico"
+            },
+            {
+              "key": "b",
+              "text": "Un análisis de vulnerabilidades"
+            },
+            {
+              "key": "c",
+              "text": "Una copia de seguridad"
+            },
+            {
+              "key": "d",
+              "text": "Un registro DNS"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El balanceador comprueba la salud y deja de enviar tráfico a un nodo caído, permitiendo la conmutación.",
+          "source": {
+            "label": "IETF RFC 1034 — Domain Names: Concepts and Facilities (DNS)",
+            "url": "https://datatracker.ietf.org/doc/html/rfc1034"
+          }
+        },
+        {
+          "stem": "¿Por qué DNS y DHCP deben tener redundancia?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Porque su caída deja sin resolución o sin configuración de red a muchos equipos"
+            },
+            {
+              "key": "b",
+              "text": "Porque ocupan mucho disco"
+            },
+            {
+              "key": "c",
+              "text": "Porque solo funcionan en Windows"
+            },
+            {
+              "key": "d",
+              "text": "Porque no admiten IPv6"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Son servicios básicos: si fallan, los clientes no encuentran servicios o no obtienen configuración de red.",
+          "source": {
+            "label": "IETF RFC 1034 — Domain Names: Concepts and Facilities (DNS)",
+            "url": "https://datatracker.ietf.org/doc/html/rfc1034"
+          }
+        }
+      ]
+    },
+    {
       "slug": "iii-24",
       "tema_path": "III.24",
       "title": "Práctica · Monitorización y gestión de incidencias",
@@ -8990,6 +9414,287 @@
           "source": {
             "label": "ISO/IEC 20000-1:2018 — Tecnología de la información. Gestión del servicio. Parte 1: Requisitos del sistema de gestión del servicio",
             "url": "https://www.iso.org/standard/70636.html"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "iii-25",
+      "tema_path": "III.25",
+      "title": "Práctica · Cloud y centros de datos",
+      "source": {
+        "label": "NIST SP 800-145 — The NIST Definition of Cloud Computing",
+        "url": "https://csrc.nist.gov/pubs/sp/800/145/final"
+      },
+      "questions": [
+        {
+          "stem": "¿Qué modelo ofrece máquinas, red y almacenamiento y deja al cliente el sistema operativo?",
+          "options": [
+            {
+              "key": "a",
+              "text": "IaaS"
+            },
+            {
+              "key": "b",
+              "text": "PaaS"
+            },
+            {
+              "key": "c",
+              "text": "SaaS"
+            },
+            {
+              "key": "d",
+              "text": "On-premise"
+            }
+          ],
+          "correct": "a",
+          "explanation": "En IaaS el proveedor gestiona la infraestructura y el cliente el sistema operativo, el middleware y la aplicación.",
+          "source": {
+            "label": "NIST SP 800-145 — The NIST Definition of Cloud Computing",
+            "url": "https://csrc.nist.gov/pubs/sp/800/145/final"
+          }
+        },
+        {
+          "stem": "¿Qué modelo ofrece un entorno de ejecución y el cliente solo despliega su aplicación?",
+          "options": [
+            {
+              "key": "a",
+              "text": "PaaS"
+            },
+            {
+              "key": "b",
+              "text": "IaaS"
+            },
+            {
+              "key": "c",
+              "text": "SaaS"
+            },
+            {
+              "key": "d",
+              "text": "Colocation"
+            }
+          ],
+          "correct": "a",
+          "explanation": "En PaaS el proveedor gestiona la infraestructura y el runtime; el cliente se centra en la aplicación y los datos.",
+          "source": {
+            "label": "NIST SP 800-145 — The NIST Definition of Cloud Computing",
+            "url": "https://csrc.nist.gov/pubs/sp/800/145/final"
+          }
+        },
+        {
+          "stem": "¿Qué significa responsabilidad compartida en la nube?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El proveedor protege la infraestructura y el cliente sus datos, identidades y configuración"
+            },
+            {
+              "key": "b",
+              "text": "El proveedor se responsabiliza de todo"
+            },
+            {
+              "key": "c",
+              "text": "El cliente se responsabiliza de todo"
+            },
+            {
+              "key": "d",
+              "text": "No hay responsabilidades de seguridad"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La seguridad se reparte: el proveedor protege la plataforma y el cliente gestiona datos, accesos y configuración.",
+          "source": {
+            "label": "NIST SP 800-145 — The NIST Definition of Cloud Computing",
+            "url": "https://csrc.nist.gov/pubs/sp/800/145/final"
+          }
+        },
+        {
+          "stem": "¿Qué característica del NIST permite aprovisionar recursos sin intervención del proveedor?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Autoservicio bajo demanda"
+            },
+            {
+              "key": "b",
+              "text": "Elasticidad rápida"
+            },
+            {
+              "key": "c",
+              "text": "Servicio medido"
+            },
+            {
+              "key": "d",
+              "text": "Agrupación de recursos"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El autoservicio permite al cliente obtener recursos por sí mismo; la elasticidad es la capacidad de escalar.",
+          "source": {
+            "label": "NIST SP 800-145 — The NIST Definition of Cloud Computing",
+            "url": "https://csrc.nist.gov/pubs/sp/800/145/final"
+          }
+        },
+        {
+          "stem": "¿Qué es una nube híbrida?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Una combinación de nube pública y privada"
+            },
+            {
+              "key": "b",
+              "text": "Una nube solo para empleados"
+            },
+            {
+              "key": "c",
+              "text": "Un centro de datos sin virtualización"
+            },
+            {
+              "key": "d",
+              "text": "Un modelo sin facturación"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La nube híbrida combina entornos públicos y privados y permite mover cargas según requisitos.",
+          "source": {
+            "label": "NIST SP 800-145 — The NIST Definition of Cloud Computing",
+            "url": "https://csrc.nist.gov/pubs/sp/800/145/final"
+          }
+        },
+        {
+          "stem": "¿Qué es una zona de disponibilidad?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Una ubicación separada con infraestructura redundante dentro de una región"
+            },
+            {
+              "key": "b",
+              "text": "Un tipo de contrato"
+            },
+            {
+              "key": "c",
+              "text": "Un protocolo de correo"
+            },
+            {
+              "key": "d",
+              "text": "Una copia de seguridad"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Las zonas de disponibilidad están separadas físicamente para que un fallo local no afecte a toda la región.",
+          "source": {
+            "label": "NIST SP 800-145 — The NIST Definition of Cloud Computing",
+            "url": "https://csrc.nist.gov/pubs/sp/800/145/final"
+          }
+        },
+        {
+          "stem": "¿Qué debe incluir un contrato de nube para evitar dependencia excesiva?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Exportación de datos y un plan de salida"
+            },
+            {
+              "key": "b",
+              "text": "Solo el precio mensual"
+            },
+            {
+              "key": "c",
+              "text": "La promesa de no cambiar nunca"
+            },
+            {
+              "key": "d",
+              "text": "La eliminación de las copias"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La portabilidad exige poder exportar datos y servicios; sin plan de salida el lock-in es alto.",
+          "source": {
+            "label": "NIST SP 800-145 — The NIST Definition of Cloud Computing",
+            "url": "https://csrc.nist.gov/pubs/sp/800/145/final"
+          }
+        },
+        {
+          "stem": "¿Quién sigue siendo responsable del tratamiento de datos personales en la nube?",
+          "options": [
+            {
+              "key": "a",
+              "text": "La administración que contrata el servicio"
+            },
+            {
+              "key": "b",
+              "text": "El proveedor de la nube"
+            },
+            {
+              "key": "c",
+              "text": "El fabricante del hardware"
+            },
+            {
+              "key": "d",
+              "text": "Nadie"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El proveedor puede ser encargado del tratamiento, pero el responsable sigue siendo la administración.",
+          "source": {
+            "label": "NIST SP 800-145 — The NIST Definition of Cloud Computing",
+            "url": "https://csrc.nist.gov/pubs/sp/800/145/final"
+          }
+        },
+        {
+          "stem": "¿Por qué una copia en la nube no es automáticamente una copia de seguridad?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Porque la sincronización replica también borrados y cifrado; hace falta una copia independiente y probada"
+            },
+            {
+              "key": "b",
+              "text": "Porque la nube no almacena datos"
+            },
+            {
+              "key": "c",
+              "text": "Porque las copias solo se hacen en cinta"
+            },
+            {
+              "key": "d",
+              "text": "Porque la nube no tiene cifrado"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La replicación o sincronización no protege de borrados, ransomware o errores; se necesita copia independiente, retención y prueba de restauración.",
+          "source": {
+            "label": "NIST SP 800-145 — The NIST Definition of Cloud Computing",
+            "url": "https://csrc.nist.gov/pubs/sp/800/145/final"
+          }
+        },
+        {
+          "stem": "¿Qué decisión debe tomarse antes de elegir nube para un sistema público?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Clasificar la información y revisar requisitos legales y de soberanía"
+            },
+            {
+              "key": "b",
+              "text": "Elegir el proveedor más barato sin analizar"
+            },
+            {
+              "key": "c",
+              "text": "Subir todos los datos sin cifrar"
+            },
+            {
+              "key": "d",
+              "text": "Eliminar el plan de continuidad"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La clasificación de datos y los requisitos legales determinan qué puede ir a la nube y con qué garantías.",
+          "source": {
+            "label": "NIST SP 800-145 — The NIST Definition of Cloud Computing",
+            "url": "https://csrc.nist.gov/pubs/sp/800/145/final"
           }
         }
       ]
@@ -9840,12 +10545,12 @@
   ],
   "progress": {
     "total": 40,
-    "apuntesCompletos": 26,
+    "apuntesCompletos": 28,
     "soloResumen": 0,
-    "pendientes": 14,
-    "conPractica": 26,
-    "sinPractica": 14,
-    "questions": 260,
+    "pendientes": 12,
+    "conPractica": 28,
+    "sinPractica": 12,
+    "questions": 280,
     "convocatorias": 12
   }
 }
