@@ -104,6 +104,24 @@
       }
     ]
   },
+  "examRules": {
+    "tai": {
+      "code": "tai-age-2025",
+      "name": "TAI AGE 2025 (formato oficial)",
+      "questions": 100,
+      "minutes": 120,
+      "penalty": 0.3333333333,
+      "note": "ANEXO V: 80 preguntas + 20 de supuesto; error -1/3; blanco 0."
+    },
+    "local": {
+      "code": "c1-local",
+      "name": "C1 local (estimación de la demo)",
+      "questions": 50,
+      "minutes": 90,
+      "penalty": 0.3333333333,
+      "note": "Las bases draft no publican reglas verificadas; 90 min y -1/3 es una estimación, no un dato oficial."
+    }
+  },
   "curriculum": {
     "code": "informatica-c1",
     "name": "Temario común de informática C1",
@@ -567,6 +585,7 @@
         "Creer que el Preámbulo tiene valor normativo vinculante.",
         "Mezclar las mayorías de la reforma ordinaria y la agravada."
       ],
+      "reviewedAt": "2026-11-10",
       "practiceSlug": "i-1"
     },
     "I.10": {
@@ -646,6 +665,7 @@
         "Confundir los umbrales del contrato menor: 15.000 euros en obras y 40.000 euros en suministros y servicios.",
         "Olvidar que fraccionar el contrato para eludir la licitación está prohibido aunque cada contrato quede por debajo del umbral."
       ],
+      "reviewedAt": "2026-11-10",
       "practiceSlug": "i-10"
     },
     "I.11": {
@@ -725,6 +745,7 @@
         "Confundir igualdad formal (la ley reconoce los mismos derechos) con igualdad efectiva (se corrigen las desigualdades reales).",
         "Olvidar que la violencia de género incluye la psicológica, la sexual, la económica y la digital, no solo la física."
       ],
+      "reviewedAt": "2026-11-10",
       "practiceSlug": "i-11"
     },
     "I.12": {
@@ -798,7 +819,7 @@
         }
       ],
       "memorizar": [
-        "Ley 19/2013, de 9 de diciembre: publicidad activa, derecho de acceso a la información pública y buen gobierno; desde el 25 de mayo de 2018 se aplican el RGPD y la Ley Orgánica 3/2018 (LOPDGDD).",
+        "Ley 19/2013, de 9 de diciembre: publicidad activa, derecho de acceso a la información pública y buen gobierno; desde el 25 de mayo de 2018 se aplica el RGPD, y en España la Ley Orgánica 3/2018 (LOPDGDD).",
         "Plazo de un mes, ampliable por otro mes si la complejidad lo justifica, para resolver la solicitud de acceso; el silencio es desestimatorio y cabe reclamación potestativa ante el Consejo de Transparencia y Buen Gobierno.",
         "La solicitud de acceso no necesita motivación y no obliga a crear información nueva: son causas de inadmisión la información en curso de elaboración, la auxiliar o de apoyo, las solicitudes repetitivas o abusivas y las que exijan reelaboración.",
         "Brechas de seguridad: notificación a la AEPD en 72 horas desde que el responsable tiene conocimiento; derechos del interesado: un mes, ampliable dos meses más si el tratamiento es complejo.",
@@ -810,6 +831,7 @@
         "Olvidar que el plazo para notificar una brecha de seguridad a la AEPD es de 72 horas, no de un mes.",
         "Confundir el plazo de un mes para responder a los derechos del interesado en protección de datos (ampliable dos meses) con el plazo de un mes para resolver la solicitud de acceso (ampliable otro mes)."
       ],
+      "reviewedAt": "2026-11-10",
       "practiceSlug": "i-12"
     },
     "I.2": {
@@ -896,6 +918,7 @@
         "Confundir la firma del Tratado de Adhesión (12 de junio de 1985) con la entrada en vigor como Estado miembro (1 de enero de 1986).",
         "Confundir el Tratado de París de 1951 (CECA y sus seis Estados fundadores) con los Tratados de Roma de 1957 (CEE y Euratom)."
       ],
+      "reviewedAt": "2026-11-10",
       "practiceSlug": "i-2"
     },
     "I.3": {
@@ -972,6 +995,7 @@
         "Confundir la diputación con una institución presente en todo el territorio: en las comunidades uniprovinciales no hay diputación y en Canarias y Baleares la provincia se articula por cabildos y consejos insulares.",
         "Confundir las entidades locales territoriales (municipio, provincia e isla) con las demás entidades locales (comarcas, áreas metropolitanas y mancomunidades)."
       ],
+      "reviewedAt": "2026-11-10",
       "practiceSlug": "i-3"
     },
     "I.4": {
@@ -1061,6 +1085,7 @@
         "Confundir el nombramiento de los Tenientes de Alcalde: los nombra y cesa libremente el Alcalde entre los concejales, no el Pleno.",
         "Olvidar que la Comisión Especial de Cuentas existe en todos los municipios, sin umbral de población."
       ],
+      "reviewedAt": "2026-11-10",
       "practiceSlug": "i-4"
     },
     "I.5": {
@@ -1147,6 +1172,7 @@
         "Confundir la alzada (órgano superior jerárquico, contra actos que no agotan la vía) con la reposición (potestativa, ante el mismo órgano, contra actos que agotan la vía).",
         "Olvidar que los plazos por días son hábiles: excluyen sábados, domingos y festivos."
       ],
+      "reviewedAt": "2026-11-10",
       "practiceSlug": "i-5"
     },
     "I.6": {
@@ -1228,6 +1254,7 @@
         "Confundir la Ley 40/2015 (organización y relaciones entre Administraciones) con la Ley 39/2015 (relaciones con la ciudadanía).",
         "Olvidar que la anulación de un acto administrativo no presupone por sí misma derecho a indemnización."
       ],
+      "reviewedAt": "2026-11-10",
       "practiceSlug": "i-6"
     },
     "I.7": {
@@ -1308,6 +1335,7 @@
         "Confundir las retribuciones básicas (sueldo, trienios y pagas extraordinarias) con el complemento de destino, que es complementaria.",
         "Olvidar que el traslado a otro puesto dentro de la misma Administración no es causa de pérdida de la condición de funcionario."
       ],
+      "reviewedAt": "2026-11-10",
       "practiceSlug": "i-7"
     },
     "I.8": {
@@ -1388,6 +1416,7 @@
         "Olvidar que la plantilla y la RPT son competencia del Pleno, no del Alcalde.",
         "Confundir las retribuciones básicas con las complementarias: el complemento de puesto y el complemento específico no son básicas."
       ],
+      "reviewedAt": "2026-11-10",
       "practiceSlug": "i-8"
     },
     "I.9": {
@@ -1473,6 +1502,7 @@
         "Confundir el 90 % del coste soportado (límite de la base de las contribuciones especiales) con el 100 % del coste de la obra.",
         "Confundir el control interno (Intervención) con el control externo (Tribunal de Cuentas y cámaras de cuentas autonómicas)."
       ],
+      "reviewedAt": "2026-11-10",
       "practiceSlug": "i-9"
     },
     "II.13": {
@@ -1562,6 +1592,7 @@
         "Creer que la caché sustituye a la RAM.",
         "Confundir arquitectura von Neumann con Harvard."
       ],
+      "reviewedAt": "2026-11-10",
       "practiceSlug": "ii-13"
     },
     "II.14": {
@@ -1646,6 +1677,7 @@
         "Creer que UAC solo actúa cuando la sesión no es de administrador: también avisa al administrador.",
         "Confundir los gestores de paquetes: apt es de Debian/Ubuntu, dnf de Fedora y pacman de Arch."
       ],
+      "reviewedAt": "2026-11-10",
       "practiceSlug": "ii-14"
     },
     "II.15": {
@@ -1757,6 +1789,7 @@
         "Creer que un CSV conserva fórmulas, tipos o formato.",
         "Publicar un documento con metadatos o macros sin revisar."
       ],
+      "reviewedAt": "2026-11-10",
       "practiceSlug": "ii-15"
     },
     "II.16": {
@@ -1858,6 +1891,7 @@
         "Pensar que usar TLS en el cliente ya autentica el dominio.",
         "Abrir adjuntos inesperados o enlaces de remitentes desconocidos."
       ],
+      "reviewedAt": "2026-11-10",
       "practiceSlug": "ii-16"
     },
     "II.17": {
@@ -1974,6 +2008,7 @@
         "Creer que una licencia permisiva no exige atribución.",
         "Mezclar componentes con licencias incompatibles."
       ],
+      "reviewedAt": "2026-11-10",
       "practiceSlug": "ii-17"
     },
     "III.18": {
@@ -2095,6 +2130,7 @@
         "Confundir alta disponibilidad con copia de seguridad.",
         "Usar cuentas de administrador para tareas diarias."
       ],
+      "reviewedAt": "2026-11-10",
       "practiceSlug": "iii-18"
     },
     "III.19": {
@@ -2180,6 +2216,7 @@
         "Creer que un contenedor lleva su propio sistema operativo y kernel: comparte el del anfitrión.",
         "Pensar que un snapshot de máquina virtual sustituye a una copia de seguridad."
       ],
+      "reviewedAt": "2026-11-10",
       "practiceSlug": "iii-19"
     },
     "III.20": {
@@ -2271,6 +2308,7 @@
         "Creer que RAID sustituye a la copia de seguridad: replica también borrados y cifrado.",
         "Pensar que un snapshot es una copia externa: comparte el almacenamiento y se pierde con él."
       ],
+      "reviewedAt": "2026-11-10",
       "practiceSlug": "iii-20"
     },
     "III.21": {
@@ -2464,6 +2502,7 @@
         "Confundir RIP (vector de distancia, máximo 15 saltos) con OSPF (estado de enlace) y BGP (exterior, entre sistemas autónomos).",
         "Pensar que IPv6 usa broadcast o ARP: usa multicast y NDP."
       ],
+      "reviewedAt": "2026-11-10",
       "practiceSlug": "iii-21"
     },
     "III.22": {
@@ -2575,6 +2614,7 @@
         "Creer que una VPN sustituye la segmentación o los permisos.",
         "Usar WEP o redes abiertas para el personal."
       ],
+      "reviewedAt": "2026-11-10",
       "practiceSlug": "iii-22"
     },
     "III.23": {
@@ -2660,6 +2700,7 @@
         "Confundir el proxy (salida de los puestos) con el reverse proxy (entrada a servicios internos).",
         "Creer que NTP es prescindible: sin sincronía de hora fallan registros, certificados y Kerberos."
       ],
+      "reviewedAt": "2026-11-10",
       "practiceSlug": "iii-23"
     },
     "III.24": {
@@ -2798,6 +2839,7 @@
         "Creer que la prioridad la fija la antigüedad del ticket: se calcula con impacto y urgencia.",
         "Confundir MTTR (reparación) con MTBF (tiempo entre fallos)."
       ],
+      "reviewedAt": "2026-11-10",
       "practiceSlug": "iii-24"
     },
     "III.25": {
@@ -2882,6 +2924,7 @@
         "Pensar que una copia en la nube es automáticamente una copia de seguridad: la sincronización replica borrados y ransomware.",
         "Confundir nube híbrida con nube pública: la híbrida combina pública y privada."
       ],
+      "reviewedAt": "2026-11-10",
       "practiceSlug": "iii-25"
     },
     "III.26": {
@@ -2967,6 +3010,7 @@
         "Confundir la imagen de equipo (plantilla del sistema) con una copia de seguridad de los datos del usuario.",
         "Dar de baja un equipo sin borrar el disco ni recuperar las licencias."
       ],
+      "reviewedAt": "2026-11-10",
       "practiceSlug": "iii-26"
     },
     "IV.27": {
@@ -3050,6 +3094,7 @@
         "Confundir integridad de entidad (clave primaria no nula) con integridad referencial (clave foránea que apunta a una fila existente).",
         "Creer que normalizar es siempre mejor: desnormalizar puede mejorar las lecturas a cambio de redundancia y riesgo de incoherencia."
       ],
+      "reviewedAt": "2026-11-10",
       "practiceSlug": "iv-27"
     },
     "IV.28": {
@@ -3134,6 +3179,7 @@
         "Creer que `SELECT` es DDL: es DML; DDL son `CREATE`, `ALTER` y `DROP`.",
         "Pensar que un `JOIN` conserva las filas sin coincidencia: eso solo ocurre en `LEFT`, `RIGHT` o `FULL`, no en `INNER`."
       ],
+      "reviewedAt": "2026-11-10",
       "practiceSlug": "iv-28"
     },
     "IV.29": {
@@ -3214,6 +3260,7 @@
         "Creer que tener una réplica evita las copias: la réplica reproduce también un borrado accidental.",
         "Dar por buena una copia porque el proceso terminó sin error: sin restauración probada es una hipótesis."
       ],
+      "reviewedAt": "2026-11-10",
       "practiceSlug": "iv-29"
     },
     "IV.30": {
@@ -3303,6 +3350,7 @@
         "Creer que un lenguaje de tipado dinámico no tiene tipos: los tiene, pero se comprueban en ejecución.",
         "Confundir encapsulación con herencia: son pilares distintos de la POO; encapsular es ocultar detalles internos."
       ],
+      "reviewedAt": "2026-11-10",
       "practiceSlug": "iv-30"
     },
     "IV.31": {
@@ -3392,6 +3440,7 @@
         "Creer que la validación en el cliente basta: la validación obligatoria se hace en el servidor.",
         "Creer que `HttpOnly` cifra la cookie: impide que JavaScript la lea, pero no la cifra; para eso está HTTPS con `Secure`."
       ],
+      "reviewedAt": "2026-11-10",
       "practiceSlug": "iv-31"
     },
     "IV.32": {
@@ -3481,6 +3530,7 @@
         "Creer que `POST` es idempotente: repetirlo puede duplicar el efecto; `GET`, `PUT` y `DELETE` sí son idempotentes.",
         "Creer que basta con reintentar: sin idempotencia, un reintento en una operación sensible produce duplicados."
       ],
+      "reviewedAt": "2026-11-10",
       "practiceSlug": "iv-32"
     },
     "IV.33": {
@@ -3570,6 +3620,7 @@
         "Elegir el gráfico antes de definir la pregunta: el gráfico depende de lo que se quiera mostrar.",
         "Presentar un KPI sin periodo, unidad o denominador: una cifra correcta se interpreta mal."
       ],
+      "reviewedAt": "2026-11-10",
       "practiceSlug": "iv-33"
     },
     "V.34": {
@@ -3684,6 +3735,7 @@
         "Confundir ISO/IEC 27001 (requisitos certificables del SGSI) con ISO/IEC 27002 (guía de buenas prácticas de controles).",
         "Confundir transferir el riesgo (seguro o externalización) con aceptarlo."
       ],
+      "reviewedAt": "2026-11-10",
       "practiceSlug": "v-34"
     },
     "V.35": {
@@ -3764,6 +3816,7 @@
         "Confundir las categorías básica, media y alta con baja, media y alta, o creer que la categoría la elige el proveedor a su gusto.",
         "Confundir el Anexo II (medidas que deben aplicarse) con la declaración de aplicabilidad (justifica qué medidas se aplican y por qué)."
       ],
+      "reviewedAt": "2026-11-10",
       "practiceSlug": "v-35"
     },
     "V.36": {
@@ -3853,6 +3906,7 @@
         "Pensar que el hash cifra el documento o permite recuperar el original.",
         "Atribuir el equivalente legal de la firma manuscrita a la firma simple o a la avanzada en lugar de a la cualificada."
       ],
+      "reviewedAt": "2026-11-10",
       "practiceSlug": "v-36"
     },
     "V.37": {
@@ -3940,6 +3994,7 @@
         "Confundir entre sí los derechos de supresión (olvido), portabilidad, limitación y oposición.",
         "Aplicar las 72 horas para atender los derechos: los derechos se atienden en un mes y las 72 horas son para notificar una brecha."
       ],
+      "reviewedAt": "2026-11-10",
       "practiceSlug": "v-37"
     },
     "V.38": {
@@ -4029,6 +4084,7 @@
         "Pensar que pagar el rescate garantiza recuperar los datos.",
         "Confundir la fase de erradicación (eliminar la causa) con la de recuperación (restaurar el servicio)."
       ],
+      "reviewedAt": "2026-11-10",
       "practiceSlug": "v-38"
     },
     "V.39": {
@@ -4118,6 +4174,7 @@
         "Confundir el ENI (interoperabilidad) con el ENS (seguridad).",
         "Olvidar que la notificación no accedida en plazo se entiende rechazada y el procedimiento sigue."
       ],
+      "reviewedAt": "2026-11-10",
       "practiceSlug": "v-39"
     },
     "V.40": {
@@ -4202,6 +4259,7 @@
         "Dar por suficiente el nivel A de WCAG o confundirlo con el AA.",
         "Usar el color como única forma de transmitir información o poner texto alternativo a imágenes decorativas."
       ],
+      "reviewedAt": "2026-11-10",
       "practiceSlug": "v-40"
     }
   },
