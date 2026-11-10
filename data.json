@@ -429,10 +429,10 @@
         "title": "Seguridad y administración electrónica",
         "coverage": {
           "total": 7,
-          "conApuntes": 4,
+          "conApuntes": 7,
           "soloResumen": 0,
-          "pendientes": 3,
-          "conPractica": 4
+          "pendientes": 0,
+          "conPractica": 7
         },
         "topics": [
           {
@@ -470,26 +470,26 @@
           {
             "path": "V.38",
             "title": "Ciberseguridad",
-            "apuntesStatus": "pendiente",
-            "practicaStatus": "pendiente",
-            "sectionCount": 0,
-            "questionCount": 0
+            "apuntesStatus": "completos",
+            "practicaStatus": "con_practica",
+            "sectionCount": 7,
+            "questionCount": 10
           },
           {
             "path": "V.39",
             "title": "Administración electrónica práctica",
-            "apuntesStatus": "pendiente",
-            "practicaStatus": "pendiente",
-            "sectionCount": 0,
-            "questionCount": 0
+            "apuntesStatus": "completos",
+            "practicaStatus": "con_practica",
+            "sectionCount": 7,
+            "questionCount": 10
           },
           {
             "path": "V.40",
             "title": "Accesibilidad y usabilidad",
-            "apuntesStatus": "pendiente",
-            "practicaStatus": "pendiente",
-            "sectionCount": 0,
-            "questionCount": 0
+            "apuntesStatus": "completos",
+            "practicaStatus": "con_practica",
+            "sectionCount": 7,
+            "questionCount": 10
           }
         ]
       }
@@ -3335,6 +3335,229 @@
         }
       ],
       "practiceSlug": "v-37"
+    },
+    "V.38": {
+      "path": "V.38",
+      "title": "Ciberseguridad",
+      "apuntesStatus": "completos",
+      "practicaStatus": "con_practica",
+      "sectionCount": 7,
+      "questionCount": 10,
+      "source": {
+        "label": "NIST Cybersecurity Framework (CSF)",
+        "url": "https://www.nist.gov/cyberframework"
+      },
+      "sections": [
+        {
+          "heading": "Amenazas y superficie de exposición",
+          "body": "La **ciberseguridad** protege sistemas, redes y datos frente a ataques y errores. Las amenazas habituales son:\n\n- **Malware** y **ransomware**: cifran o roban datos y piden rescate.\n- **Phishing** y ingeniería social: engañan a las personas para obtener credenciales.\n- **DDoS**: saturan un servicio hasta dejarlo inaccesible.\n- **APT**: ataques persistentes y dirigidos, con mucho tiempo y recursos.\n- **Amenaza interna**: empleado, proveedor o credencial comprometida.\n\nLa **superficie de exposición** incluye correo, web, VPN, escritorios, servidores, APIs y proveedores; cada servicio publicado añade riesgo."
+        },
+        {
+          "heading": "Defensa en profundidad",
+          "body": "No hay un control único que baste. La **defensa en profundidad** combina capas:\n\n- **Identidad**: MFA, mínimo privilegio, cuentas nominales.\n- **Parcheo** y gestión de vulnerabilidades.\n- **Segmentación** de red y cortafuegos.\n- **Protección de endpoints** (EDR/antivirus) y correo.\n- **Copias** externas, inmutables y probadas.\n- **Formación** y simulación de phishing.\n\nEl eslabón humano es parte del sistema: la formación no elimina el riesgo, pero reduce el éxito del engaño."
+        },
+        {
+          "heading": "Detección y monitorización",
+          "body": "La detección requiere **visibilidad**: registros de autenticación, red, endpoints y aplicaciones, centralizados y con retención suficiente. Un **SIEM** correlaciona eventos y genera alertas; un **SOC** las investiga.\n\nLas alertas deben tener prioridad y contexto; demasiadas alertas sin triaje producen fatiga. La monitorización continua incluye indicadores de compromiso, accesos anómalos, cambios de privilegios y tráfico inusual.\n\nLa **gestión de vulnerabilidades** prioriza por riesgo (por ejemplo, CVSS y explotación real), no solo por número de hallazgos."
+        },
+        {
+          "heading": "Respuesta a incidentes",
+          "body": "Un plan de respuesta sigue un ciclo:\n\n1. **Preparación**: roles, contactos, herramientas y pruebas.\n2. **Detección y análisis**: confirmar el incidente y su alcance.\n3. **Contención**: aislar afectados sin destruir evidencia.\n4. **Erradicación**: eliminar la causa y las puertas de entrada.\n5. **Recuperación**: restaurar servicios desde copias limpias.\n6. **Lecciones aprendidas**: corregir y documentar.\n\nEn un ransomware, la prioridad es contener, preservar evidencia y restaurar; pagar no garantiza la recuperación y financia a los atacantes."
+        },
+        {
+          "heading": "Marco legal y notificación",
+          "body": "La ciberseguridad se cruza con el **RGPD**: una brecha de datos personales puede exigir notificación en **72 horas**. El **ENS** fija medidas para el sector público, y la normativa de ciberseguridad (NIS2 y su transposición) amplía obligaciones a sectores críticos.\n\nEn España, el **CCN-CERT** apoya a las administraciones en incidentes. La comunicación con autoridades y afectados debe estar prevista antes del incidente.\n\nLa evidencia y los registros deben conservarse de forma que permitan investigar sin comprometer datos personales."
+        },
+        {
+          "heading": "Tabla amenaza / control",
+          "table": {
+            "columns": [
+              "Amenaza",
+              "Control principal",
+              "Complemento"
+            ],
+            "rows": [
+              [
+                "Ransomware",
+                "Copias inmutables y segmentación",
+                "Respuesta y restauración"
+              ],
+              [
+                "Phishing",
+                "MFA y formación",
+                "Filtrado de correo"
+              ],
+              [
+                "Robo de credenciales",
+                "MFA y mínimo privilegio",
+                "Detección de accesos anómalos"
+              ],
+              [
+                "DDoS",
+                "Mitigación del proveedor",
+                "Límites y redundancia"
+              ],
+              [
+                "Vulnerabilidad sin parche",
+                "Gestión de vulnerabilidades",
+                "Segmentación y detección"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Ejemplo resuelto",
+          "body": "**Supuesto.** Un ayuntamiento detecta que un servidor de ficheros está cifrando documentos y muestra una nota de rescate.\n\n**Resolución.**\n\n- **Contener**: aislar el servidor de la red y desactivar las cuentas comprometidas.\n- **Preservar evidencia**: no formatear; guardar logs y muestras.\n- **Erradicar**: identificar la entrada (phishing, VPN, credencial) y cerrarla.\n- **Recuperar**: restaurar desde copia externa e inmutable, verificada; comprobar que no hay persistencia.\n- **Notificar**: evaluar brecha de datos personales (72 h) y comunicar a CCN-CERT/afectados si procede.\n- **Lecciones**: MFA, segmentación, parcheo y simulacro de restauración.\n\n**Conclusión.** La respuesta se prepara antes del incidente; improvisar durante un ransomware multiplica el daño."
+        }
+      ],
+      "practiceSlug": "v-38"
+    },
+    "V.39": {
+      "path": "V.39",
+      "title": "Administración electrónica práctica",
+      "apuntesStatus": "completos",
+      "practicaStatus": "con_practica",
+      "sectionCount": 7,
+      "questionCount": 10,
+      "source": {
+        "label": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565"
+      },
+      "sections": [
+        {
+          "heading": "Marco y derechos del ciudadano",
+          "body": "La **Ley 39/2015** regula el procedimiento administrativo común y la **Ley 40/2015** el régimen jurídico del sector público. Ambas impulsan la tramitación electrónica y la interoperabilidad.\n\nEl ciudadano tiene derecho a relacionarse electrónicamente con la Administración, a conocer el estado de su expediente, a identificar a las autoridades y a no aportar documentos que la Administración ya posea o pueda obtener.\n\nLa **sede electrónica** es la dirección oficial de la Administración en internet; el **registro electrónico** recibe solicitudes y documentos con constancia de fecha y hora."
+        },
+        {
+          "heading": "Sede, registro y plazos",
+          "body": "La sede electrónica debe identificar al titular, publicar su normativa y garantizar la autenticidad y disponibilidad. El **registro electrónico** anota la entrada y salida de documentos y emite justificante.\n\nLos plazos se cuentan conforme a la ley; los sábados, domingos y festivos no se consideran hábiles para muchos trámites. Un registro puede tener horario limitado, y una solicitud presentada fuera de plazo puede ser extemporánea.\n\nEl **Punto de Acceso General (PAG)** centraliza el acceso a los servicios y a la información de las administraciones."
+        },
+        {
+          "heading": "Identificación, firma y representación",
+          "body": "La identificación puede hacerse con **certificado electrónico** cualificado, **Cl@ve** u otros sistemas admitidos. No confundir identificación (quién eres) con firma (quién asume el contenido).\n\nLa firma electrónica puede ser simple, avanzada o cualificada; el tipo exigido depende del trámite. La **representación** puede acreditarse mediante apoderamiento o inscripción en el registro electrónico de apoderamientos.\n\nLos sistemas deben permitir el acceso a personas con diversidad funcional y ofrecer alternativas cuando sea necesario."
+        },
+        {
+          "heading": "Notificaciones y expediente",
+          "body": "La **notificación electrónica** se practica por comparecencia en la sede o por dirección electrónica habilitada. Si no se accede en el plazo previsto, se entiende rechazada y el procedimiento sigue.\n\nEl **expediente administrativo** reúne documentos, informes, actos y pruebas; el interesado puede consultarlo y obtener copia. La **tramitación** incluye iniciación, instrucción, audiencia y resolución.\n\nEl archivo y la conservación deben garantizar autenticidad, integridad y disponibilidad a largo plazo."
+        },
+        {
+          "heading": "Interoperabilidad y servicios comunes",
+          "body": "El **Esquema Nacional de Interoperabilidad (ENI)** fija estándares para que los sistemas se entiendan: formatos, documentos, metadatos y plazos.\n\nLos servicios comunes incluyen registro, notificaciones, firma, apoderamiento y plataforma de intermediación. La administración debe reutilizar estos servicios en lugar de construir duplicados.\n\nLa protección de datos, la accesibilidad y la seguridad son requisitos transversales de cualquier trámite electrónico."
+        },
+        {
+          "heading": "Tabla de elementos",
+          "table": {
+            "columns": [
+              "Elemento",
+              "Función",
+              "Clave práctica"
+            ],
+            "rows": [
+              [
+                "Sede electrónica",
+                "Dirección oficial de la Administración",
+                "Identidad y disponibilidad"
+              ],
+              [
+                "Registro electrónico",
+                "Entrada y salida de documentos",
+                "Justificante y fecha"
+              ],
+              [
+                "Firma electrónica",
+                "Asumir el contenido",
+                "Tipo adecuado al trámite"
+              ],
+              [
+                "Notificación",
+                "Comunicar actos",
+                "Acceso y plazo"
+              ],
+              [
+                "ENI",
+                "Interoperabilidad",
+                "Formatos y metadatos comunes"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Ejemplo resuelto",
+          "body": "**Supuesto.** Una vecina presenta una solicitud de ayuda en la sede electrónica un viernes a las 22:00.\n\n**Resolución.**\n\n- La **sede** debe estar disponible y el registro emitir **justificante** con fecha y hora; si el plazo es hábil, se calcula según la ley.\n- La identificación se hace con **certificado** o **Cl@ve**; la firma se aplica al formulario.\n- La Administración consulta los datos que ya posee y no le pide repetirlos.\n- Las **notificaciones** se practican por la dirección habilitada; la interesada debe acceder al contenido.\n- El **expediente** queda disponible para consulta y el trámite se resuelve y notifica.\n\n**Conclusión.** La administración electrónica no es un formulario web: es sede, registro, identidad, firma, notificación y expediente funcionando con garantías."
+        }
+      ],
+      "practiceSlug": "v-39"
+    },
+    "V.40": {
+      "path": "V.40",
+      "title": "Accesibilidad y usabilidad",
+      "apuntesStatus": "completos",
+      "practicaStatus": "con_practica",
+      "sectionCount": 7,
+      "questionCount": 10,
+      "source": {
+        "label": "W3C WAI — Web Content Accessibility Guidelines (WCAG)",
+        "url": "https://www.w3.org/WAI/standards-guidelines/wcag/"
+      },
+      "sections": [
+        {
+          "heading": "Accesibilidad y usabilidad",
+          "body": "La **accesibilidad** garantiza que cualquier persona pueda usar un producto, incluidas las personas con discapacidad. La **usabilidad** mide la facilidad para lograr un objetivo con eficacia, eficiencia y satisfacción. No son lo mismo, pero se refuerzan: una web accesible suele ser más usable para todos.\n\nLa accesibilidad no es solo para personas ciegas: afecta a baja visión, sordera, movilidad reducida, dislexia, personas mayores o quien usa el móvil con mala cobertura. Los **productos de apoyo** (lectores de pantalla, ampliadores, conmutadores) dependen de que el contenido esté bien construido."
+        },
+        {
+          "heading": "Los principios POUR",
+          "body": "Las **WCAG** organizan los requisitos en cuatro principios:\n\n- **Perceptible**: la información se puede percibir (texto alternativo, contraste, subtítulos).\n- **Operable**: se puede usar con teclado y otros dispositivos, sin trampas de foco.\n- **Comprensible**: lenguaje claro, comportamiento predecible, errores explicados.\n- **Robusto**: funciona con tecnologías de apoyo y navegadores distintos.\n\nCada criterio tiene niveles **A**, **AA** y **AAA**; el nivel AA es el objetivo habitual de las administraciones."
+        },
+        {
+          "heading": "Estructura y navegación",
+          "body": "El **HTML semántico** da estructura: encabezados jerárquicos, listas, tablas con cabeceras, formularios con `label`. Un lector de pantalla navega por encabezados y regiones; si todo son `div`, no hay mapa.\n\nLa **navegación por teclado** debe funcionar sin ratón: orden lógico, foco visible, enlaces con texto descriptivo y sin trampas. Los enlaces «haz clic aquí» no informan del destino.\n\nEl **contraste** mínimo, el tamaño de texto y la posibilidad de ampliar sin perder contenido son requisitos básicos."
+        },
+        {
+          "heading": "Formularios, contenido y multimedia",
+          "body": "Cada campo debe tener **etiqueta** asociada, instrucciones claras y mensajes de error que indiquen qué corregir. No se debe usar el color como única forma de transmitir información.\n\nLas imágenes necesitan **texto alternativo** si aportan información; las decorativas, `alt=\"\"`. Los vídeos necesitan subtítulos y, si es posible, audiodescripción. Las tablas deben tener cabeceras y no usarse para maquetar.\n\nEl **lenguaje claro** reduce la carga cognitiva y ayuda a todas las personas."
+        },
+        {
+          "heading": "Evaluación y mejora",
+          "body": "La evaluación combina **herramientas automáticas** (detectan parte de los problemas), **revisión manual** (teclado, lector de pantalla, contraste) y **pruebas con personas** usuarias.\n\nLa accesibilidad es un proceso continuo: se integra en el diseño, el desarrollo y las pruebas, no se añade al final. Un informe de auditoría sin corrección no mejora el producto.\n\nLa norma **EN 301 549** armoniza los requisitos de accesibilidad para productos y servicios TIC en la UE."
+        },
+        {
+          "heading": "Tabla POUR",
+          "table": {
+            "columns": [
+              "Principio",
+              "Pregunta",
+              "Ejemplo"
+            ],
+            "rows": [
+              [
+                "Perceptible",
+                "¿Se puede percibir?",
+                "Texto alternativo y contraste"
+              ],
+              [
+                "Operable",
+                "¿Se puede usar?",
+                "Teclado y foco visible"
+              ],
+              [
+                "Comprensible",
+                "¿Se entiende?",
+                "Lenguaje claro y errores explicados"
+              ],
+              [
+                "Robusto",
+                "¿Funciona con ayudas?",
+                "HTML semántico y compatibilidad"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Ejemplo resuelto",
+          "body": "**Supuesto.** Un ayuntamiento publica un formulario de cita previa que solo funciona con ratón y usa iconos sin texto.\n\n**Resolución.**\n\n- Se sustituyen los iconos por controles con **etiqueta** y texto alternativo.\n- Se garantiza la **navegación por teclado** y un foco visible; se revisa el orden.\n- Se añaden mensajes de error claros y se asocian a cada campo.\n- Se comprueba el **contraste** y el tamaño de texto; se prueba a 200 % de zoom.\n- Se valida con herramientas automáticas y con un lector de pantalla; si se puede, con personas usuarias.\n\n**Conclusión.** La accesibilidad se demuestra usando el formulario sin ratón y con un lector; el cumplimiento formal no basta si la persona no puede completar la cita."
+        }
+      ],
+      "practiceSlug": "v-40"
     }
   },
   "practices": [
@@ -13734,16 +13957,859 @@
           }
         }
       ]
+    },
+    {
+      "slug": "v-38",
+      "tema_path": "V.38",
+      "title": "Práctica · Ciberseguridad",
+      "source": {
+        "label": "NIST Cybersecurity Framework (CSF)",
+        "url": "https://www.nist.gov/cyberframework"
+      },
+      "questions": [
+        {
+          "stem": "¿Qué es el ransomware?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Malware que cifra datos y exige un rescate"
+            },
+            {
+              "key": "b",
+              "text": "Un protocolo de correo"
+            },
+            {
+              "key": "c",
+              "text": "Un tipo de copia de seguridad"
+            },
+            {
+              "key": "d",
+              "text": "Una técnica de compresión"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El ransomware cifra o bloquea datos y pide un pago; la recuperación debe basarse en copias y contención, no en pagar.",
+          "source": {
+            "label": "NIST Cybersecurity Framework (CSF)",
+            "url": "https://www.nist.gov/cyberframework"
+          }
+        },
+        {
+          "stem": "¿Qué principio combina varias capas de seguridad?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Defensa en profundidad"
+            },
+            {
+              "key": "b",
+              "text": "Mínimo privilegio"
+            },
+            {
+              "key": "c",
+              "text": "Alta disponibilidad"
+            },
+            {
+              "key": "d",
+              "text": "Balanceo de carga"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La defensa en profundidad coordina identidad, red, endpoints, copias y formación para que un fallo no lo rompa todo.",
+          "source": {
+            "label": "NIST Cybersecurity Framework (CSF)",
+            "url": "https://www.nist.gov/cyberframework"
+          }
+        },
+        {
+          "stem": "¿Qué reduce el riesgo de robo de credenciales?",
+          "options": [
+            {
+              "key": "a",
+              "text": "MFA y mínimo privilegio"
+            },
+            {
+              "key": "b",
+              "text": "Compartir contraseñas"
+            },
+            {
+              "key": "c",
+              "text": "Desactivar los registros"
+            },
+            {
+              "key": "d",
+              "text": "Usar la misma cuenta para todo"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La autenticación multifactor y el mínimo privilegio limitan el impacto de una credencial comprometida.",
+          "source": {
+            "label": "NIST Cybersecurity Framework (CSF)",
+            "url": "https://www.nist.gov/cyberframework"
+          }
+        },
+        {
+          "stem": "¿Qué es un SIEM?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Un sistema que centraliza y correlaciona eventos de seguridad"
+            },
+            {
+              "key": "b",
+              "text": "Un tipo de firewall físico"
+            },
+            {
+              "key": "c",
+              "text": "Un protocolo de correo"
+            },
+            {
+              "key": "d",
+              "text": "Un formato de imagen"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El SIEM recoge logs y correlaciona eventos para detectar y alertar sobre incidentes.",
+          "source": {
+            "label": "NIST Cybersecurity Framework (CSF)",
+            "url": "https://www.nist.gov/cyberframework"
+          }
+        },
+        {
+          "stem": "¿Cuál es el primer paso ante un incidente confirmado?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Contener el incidente y preservar la evidencia"
+            },
+            {
+              "key": "b",
+              "text": "Formatear todos los equipos"
+            },
+            {
+              "key": "c",
+              "text": "Pagar el rescate"
+            },
+            {
+              "key": "d",
+              "text": "Publicar el incidente en redes"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Contener evita la propagación y preservar evidencia permite investigar; formatear destruye pruebas.",
+          "source": {
+            "label": "NIST Cybersecurity Framework (CSF)",
+            "url": "https://www.nist.gov/cyberframework"
+          }
+        },
+        {
+          "stem": "¿Qué fase del ciclo de respuesta corrige la causa del incidente?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Erradicación"
+            },
+            {
+              "key": "b",
+              "text": "Detección"
+            },
+            {
+              "key": "c",
+              "text": "Preparación"
+            },
+            {
+              "key": "d",
+              "text": "Recuperación"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La erradicación elimina la causa y las puertas de entrada; la recuperación restaura el servicio.",
+          "source": {
+            "label": "NIST Cybersecurity Framework (CSF)",
+            "url": "https://www.nist.gov/cyberframework"
+          }
+        },
+        {
+          "stem": "¿Por qué no se debe pagar un rescate?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Porque no garantiza la recuperación y financia a los atacantes"
+            },
+            {
+              "key": "b",
+              "text": "Porque siempre es ilegal"
+            },
+            {
+              "key": "c",
+              "text": "Porque las copias no existen"
+            },
+            {
+              "key": "d",
+              "text": "Porque el ransomware no cifra"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Pagar no asegura recuperar los datos, puede financiar el delito y no elimina la persistencia del ataque.",
+          "source": {
+            "label": "NIST Cybersecurity Framework (CSF)",
+            "url": "https://www.nist.gov/cyberframework"
+          }
+        },
+        {
+          "stem": "¿Qué plazo general hay para notificar una brecha de datos personales?",
+          "options": [
+            {
+              "key": "a",
+              "text": "72 horas"
+            },
+            {
+              "key": "b",
+              "text": "24 horas"
+            },
+            {
+              "key": "c",
+              "text": "30 días"
+            },
+            {
+              "key": "d",
+              "text": "No hay plazo"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El RGPD exige notificar a la autoridad de control sin dilación indebida y, a más tardar, en 72 horas cuando hay riesgo.",
+          "source": {
+            "label": "NIST Cybersecurity Framework (CSF)",
+            "url": "https://www.nist.gov/cyberframework"
+          }
+        },
+        {
+          "stem": "¿Qué es una vulnerabilidad?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Una debilidad que puede ser explotada por una amenaza"
+            },
+            {
+              "key": "b",
+              "text": "Un ataque ya ejecutado"
+            },
+            {
+              "key": "c",
+              "text": "Una copia de seguridad"
+            },
+            {
+              "key": "d",
+              "text": "Un tipo de usuario"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La vulnerabilidad es la debilidad; la amenaza es quien puede explotarla y el riesgo combina ambos con el impacto.",
+          "source": {
+            "label": "NIST Cybersecurity Framework (CSF)",
+            "url": "https://www.nist.gov/cyberframework"
+          }
+        },
+        {
+          "stem": "¿Qué debe hacerse con las copias para sobrevivir a un ransomware?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Mantener copias externas, inmutables y probadas"
+            },
+            {
+              "key": "b",
+              "text": "Guardarlas solo en el servidor cifrado"
+            },
+            {
+              "key": "c",
+              "text": "Conectarlas permanentemente a la red"
+            },
+            {
+              "key": "d",
+              "text": "No cifrarlas nunca"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Las copias aisladas o inmutables no se pueden cifrar desde el servidor comprometido y permiten restaurar.",
+          "source": {
+            "label": "NIST Cybersecurity Framework (CSF)",
+            "url": "https://www.nist.gov/cyberframework"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "v-39",
+      "tema_path": "V.39",
+      "title": "Práctica · Administración electrónica práctica",
+      "source": {
+        "label": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565"
+      },
+      "questions": [
+        {
+          "stem": "¿Qué ley regula el procedimiento administrativo común?",
+          "options": [
+            {
+              "key": "a",
+              "text": "La Ley 39/2015"
+            },
+            {
+              "key": "b",
+              "text": "La Ley 40/2015"
+            },
+            {
+              "key": "c",
+              "text": "La Ley 7/1985"
+            },
+            {
+              "key": "d",
+              "text": "La Ley 9/2017"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La Ley 39/2015 regula el procedimiento administrativo común; la 40/2015, el régimen jurídico del sector público.",
+          "source": {
+            "label": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565"
+          }
+        },
+        {
+          "stem": "¿Qué es la sede electrónica?",
+          "options": [
+            {
+              "key": "a",
+              "text": "La dirección oficial de la Administración en internet"
+            },
+            {
+              "key": "b",
+              "text": "El edificio donde trabaja el alcalde"
+            },
+            {
+              "key": "c",
+              "text": "Un registro de papel"
+            },
+            {
+              "key": "d",
+              "text": "Una base de datos interna"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La sede electrónica identifica al titular y publica los servicios y la normativa de la Administración.",
+          "source": {
+            "label": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565"
+          }
+        },
+        {
+          "stem": "¿Qué garantiza el registro electrónico?",
+          "options": [
+            {
+              "key": "a",
+              "text": "La constancia de entrada y salida de documentos con fecha y justificante"
+            },
+            {
+              "key": "b",
+              "text": "La firma de los contratos"
+            },
+            {
+              "key": "c",
+              "text": "La resolución del expediente"
+            },
+            {
+              "key": "d",
+              "text": "El pago de tasas"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El registro anota la presentación y emite justificante, lo que acredita fecha y hora.",
+          "source": {
+            "label": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565"
+          }
+        },
+        {
+          "stem": "¿Qué diferencia hay entre identificación y firma?",
+          "options": [
+            {
+              "key": "a",
+              "text": "La identificación acredita quién eres; la firma asume el contenido"
+            },
+            {
+              "key": "b",
+              "text": "Son lo mismo"
+            },
+            {
+              "key": "c",
+              "text": "La firma acredita quién eres"
+            },
+            {
+              "key": "d",
+              "text": "La identificación sustituye al registro"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Identificarse es decir quién eres; firmar es asumir el documento y su contenido.",
+          "source": {
+            "label": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565"
+          }
+        },
+        {
+          "stem": "¿Qué sistema de identificación es habitual en la Administración española?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Cl@ve"
+            },
+            {
+              "key": "b",
+              "text": "SMTP"
+            },
+            {
+              "key": "c",
+              "text": "DNS"
+            },
+            {
+              "key": "d",
+              "text": "DHCP"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Cl@ve es un sistema común de identificación; también se usan certificados electrónicos cualificados.",
+          "source": {
+            "label": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565"
+          }
+        },
+        {
+          "stem": "¿Qué ocurre si no se accede a una notificación electrónica en plazo?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Se entiende rechazada y el procedimiento continúa"
+            },
+            {
+              "key": "b",
+              "text": "El expediente se cancela para siempre"
+            },
+            {
+              "key": "c",
+              "text": "Se envía por correo postal obligatoriamente"
+            },
+            {
+              "key": "d",
+              "text": "Se reinicia el plazo sin consecuencias"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La notificación electrónica se entiende rechazada si no se accede en el plazo, con los efectos previstos.",
+          "source": {
+            "label": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565"
+          }
+        },
+        {
+          "stem": "¿Para qué sirve el registro electrónico de apoderamientos?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Para acreditar la representación ante la Administración"
+            },
+            {
+              "key": "b",
+              "text": "Para registrar vehículos"
+            },
+            {
+              "key": "c",
+              "text": "Para firmar contratos privados"
+            },
+            {
+              "key": "d",
+              "text": "Para pagar impuestos"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El registro de apoderamientos acredita que una persona actúa en representación de otra.",
+          "source": {
+            "label": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565"
+          }
+        },
+        {
+          "stem": "¿Qué es el ENI?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El Esquema Nacional de Interoperabilidad"
+            },
+            {
+              "key": "b",
+              "text": "El Esquema Nacional de Seguridad"
+            },
+            {
+              "key": "c",
+              "text": "Una red de área local"
+            },
+            {
+              "key": "d",
+              "text": "Un registro de empleados"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El ENI fija estándares de interoperabilidad; el ENS es el esquema de seguridad.",
+          "source": {
+            "label": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565"
+          }
+        },
+        {
+          "stem": "¿Qué derecho tiene el ciudadano respecto a los documentos que ya posee la Administración?",
+          "options": [
+            {
+              "key": "a",
+              "text": "No aportarlos de nuevo cuando la Administración pueda obtenerlos"
+            },
+            {
+              "key": "b",
+              "text": "Aportarlos siempre en papel"
+            },
+            {
+              "key": "c",
+              "text": "Firmarlos todos"
+            },
+            {
+              "key": "d",
+              "text": "Publicarlos en el BOE"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La ley impulsa la interoperabilidad para no pedir al ciudadano documentos que la Administración ya tiene o puede consultar.",
+          "source": {
+            "label": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565"
+          }
+        },
+        {
+          "stem": "¿Qué requisito transversal debe cumplir un trámite electrónico?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Accesibilidad, seguridad y protección de datos"
+            },
+            {
+              "key": "b",
+              "text": "Solo tener un formulario bonito"
+            },
+            {
+              "key": "c",
+              "text": "Usar una única contraseña compartida"
+            },
+            {
+              "key": "d",
+              "text": "Eliminar las notificaciones"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Accesibilidad, seguridad y protección de datos son requisitos de cualquier servicio electrónico.",
+          "source": {
+            "label": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-10565"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "v-40",
+      "tema_path": "V.40",
+      "title": "Práctica · Accesibilidad y usabilidad",
+      "source": {
+        "label": "W3C WAI — Web Content Accessibility Guidelines (WCAG)",
+        "url": "https://www.w3.org/WAI/standards-guidelines/wcag/"
+      },
+      "questions": [
+        {
+          "stem": "¿Qué garantiza la accesibilidad?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Que cualquier persona, incluidas las personas con discapacidad, pueda usar el producto"
+            },
+            {
+              "key": "b",
+              "text": "Que la web cargue más rápido"
+            },
+            {
+              "key": "c",
+              "text": "Que el diseño sea más bonito"
+            },
+            {
+              "key": "d",
+              "text": "Que no haya contraseñas"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La accesibilidad elimina barreras para que todas las personas puedan percibir, entender, navegar e interactuar.",
+          "source": {
+            "label": "W3C WAI — Web Content Accessibility Guidelines (WCAG)",
+            "url": "https://www.w3.org/WAI/standards-guidelines/wcag/"
+          }
+        },
+        {
+          "stem": "¿Qué significa el principio «perceptible» de WCAG?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Que la información se puede percibir por distintos sentidos y tecnologías"
+            },
+            {
+              "key": "b",
+              "text": "Que la web sea visible en Google"
+            },
+            {
+              "key": "c",
+              "text": "Que el servidor esté disponible"
+            },
+            {
+              "key": "d",
+              "text": "Que el contenido sea gratuito"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Perceptible incluye alternativas textuales, contraste, subtítulos y no depender solo de un sentido.",
+          "source": {
+            "label": "W3C WAI — Web Content Accessibility Guidelines (WCAG)",
+            "url": "https://www.w3.org/WAI/standards-guidelines/wcag/"
+          }
+        },
+        {
+          "stem": "¿Qué nivel de WCAG se suele exigir en las administraciones?",
+          "options": [
+            {
+              "key": "a",
+              "text": "AA"
+            },
+            {
+              "key": "b",
+              "text": "A"
+            },
+            {
+              "key": "c",
+              "text": "AAA"
+            },
+            {
+              "key": "d",
+              "text": "Ninguno"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El nivel AA es el objetivo habitual; AAA es más exigente y no siempre alcanzable para todo el contenido.",
+          "source": {
+            "label": "W3C WAI — Web Content Accessibility Guidelines (WCAG)",
+            "url": "https://www.w3.org/WAI/standards-guidelines/wcag/"
+          }
+        },
+        {
+          "stem": "¿Por qué es importante el HTML semántico?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Porque da estructura y permite navegar por encabezados y regiones con tecnologías de apoyo"
+            },
+            {
+              "key": "b",
+              "text": "Porque hace la web más colorida"
+            },
+            {
+              "key": "c",
+              "text": "Porque sustituye a CSS"
+            },
+            {
+              "key": "d",
+              "text": "Porque elimina la necesidad de probar"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Los elementos semánticos aportan significado y estructura, esenciales para lectores de pantalla y navegación.",
+          "source": {
+            "label": "W3C WAI — Web Content Accessibility Guidelines (WCAG)",
+            "url": "https://www.w3.org/WAI/standards-guidelines/wcag/"
+          }
+        },
+        {
+          "stem": "¿Qué debe tener cada campo de un formulario?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Una etiqueta asociada y mensajes de error claros"
+            },
+            {
+              "key": "b",
+              "text": "Solo un placeholder"
+            },
+            {
+              "key": "c",
+              "text": "Un color diferente"
+            },
+            {
+              "key": "d",
+              "text": "Un icono sin texto"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La etiqueta identifica el campo; los errores deben explicar qué corregir y asociarse al campo.",
+          "source": {
+            "label": "W3C WAI — Web Content Accessibility Guidelines (WCAG)",
+            "url": "https://www.w3.org/WAI/standards-guidelines/wcag/"
+          }
+        },
+        {
+          "stem": "¿Qué texto alternativo debe llevar una imagen decorativa?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Uno vacío (`alt=\"\"`)"
+            },
+            {
+              "key": "b",
+              "text": "El nombre del fichero"
+            },
+            {
+              "key": "c",
+              "text": "Una descripción larga"
+            },
+            {
+              "key": "d",
+              "text": "Ninguno, se elimina el alt"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Las imágenes decorativas se ocultan a las tecnologías de apoyo con alt vacío; las informativas necesitan descripción.",
+          "source": {
+            "label": "W3C WAI — Web Content Accessibility Guidelines (WCAG)",
+            "url": "https://www.w3.org/WAI/standards-guidelines/wcag/"
+          }
+        },
+        {
+          "stem": "¿Qué es una trampa de foco?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Una situación en la que el foco no puede salir de un componente con el teclado"
+            },
+            {
+              "key": "b",
+              "text": "Un error de contraste"
+            },
+            {
+              "key": "c",
+              "text": "Un enlace roto"
+            },
+            {
+              "key": "d",
+              "text": "Una imagen sin cargar"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Las trampas de foco impiden navegar; el usuario debe poder salir con el teclado.",
+          "source": {
+            "label": "W3C WAI — Web Content Accessibility Guidelines (WCAG)",
+            "url": "https://www.w3.org/WAI/standards-guidelines/wcag/"
+          }
+        },
+        {
+          "stem": "¿Qué requisito tiene un vídeo accesible?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Subtítulos y, cuando proceda, audiodescripción"
+            },
+            {
+              "key": "b",
+              "text": "Solo música de fondo"
+            },
+            {
+              "key": "c",
+              "text": "Autoplay sin controles"
+            },
+            {
+              "key": "d",
+              "text": "Resolución 4K obligatoria"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Los subtítulos hacen accesible el audio; la audiodescripción describe lo visual relevante.",
+          "source": {
+            "label": "W3C WAI — Web Content Accessibility Guidelines (WCAG)",
+            "url": "https://www.w3.org/WAI/standards-guidelines/wcag/"
+          }
+        },
+        {
+          "stem": "¿Cómo se evalúa de forma completa la accesibilidad?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Con herramientas automáticas, revisión manual y pruebas con personas usuarias"
+            },
+            {
+              "key": "b",
+              "text": "Solo con una herramienta automática"
+            },
+            {
+              "key": "c",
+              "text": "Solo mirando el diseño"
+            },
+            {
+              "key": "d",
+              "text": "Solo con el validador de HTML"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Las herramientas detectan parte de los problemas; la revisión manual y las pruebas reales son imprescindibles.",
+          "source": {
+            "label": "W3C WAI — Web Content Accessibility Guidelines (WCAG)",
+            "url": "https://www.w3.org/WAI/standards-guidelines/wcag/"
+          }
+        },
+        {
+          "stem": "¿Qué relación hay entre accesibilidad y usabilidad?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Son conceptos distintos pero se refuerzan: lo accesible suele ser más usable"
+            },
+            {
+              "key": "b",
+              "text": "Son exactamente lo mismo"
+            },
+            {
+              "key": "c",
+              "text": "La usabilidad solo aplica a personas con discapacidad"
+            },
+            {
+              "key": "d",
+              "text": "La accesibilidad solo aplica a móviles"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La accesibilidad elimina barreras y la usabilidad mide la facilidad de uso; mejorar una suele mejorar la otra.",
+          "source": {
+            "label": "W3C WAI — Web Content Accessibility Guidelines (WCAG)",
+            "url": "https://www.w3.org/WAI/standards-guidelines/wcag/"
+          }
+        }
+      ]
     }
   ],
   "progress": {
     "total": 40,
-    "apuntesCompletos": 37,
+    "apuntesCompletos": 40,
     "soloResumen": 0,
-    "pendientes": 3,
-    "conPractica": 37,
-    "sinPractica": 3,
-    "questions": 370,
+    "pendientes": 0,
+    "conPractica": 40,
+    "sinPractica": 0,
+    "questions": 400,
     "convocatorias": 12
   }
 }
