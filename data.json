@@ -113,10 +113,10 @@
         "title": "Administración y normativa",
         "coverage": {
           "total": 12,
-          "conApuntes": 9,
+          "conApuntes": 10,
           "soloResumen": 0,
-          "pendientes": 3,
-          "conPractica": 9
+          "pendientes": 2,
+          "conPractica": 10
         },
         "topics": [
           {
@@ -146,10 +146,10 @@
           {
             "path": "I.4",
             "title": "Organización municipal",
-            "apuntesStatus": "pendiente",
-            "practicaStatus": "pendiente",
-            "sectionCount": 0,
-            "questionCount": 0
+            "apuntesStatus": "completos",
+            "practicaStatus": "con_practica",
+            "sectionCount": 7,
+            "questionCount": 10
           },
           {
             "path": "I.5",
@@ -429,10 +429,10 @@
         "title": "Seguridad y administración electrónica",
         "coverage": {
           "total": 7,
-          "conApuntes": 1,
+          "conApuntes": 2,
           "soloResumen": 0,
-          "pendientes": 6,
-          "conPractica": 1
+          "pendientes": 5,
+          "conPractica": 2
         },
         "topics": [
           {
@@ -446,10 +446,10 @@
           {
             "path": "V.35",
             "title": "El Esquema Nacional de Seguridad (ENS, RD 311/2022)",
-            "apuntesStatus": "pendiente",
-            "practicaStatus": "pendiente",
-            "sectionCount": 0,
-            "questionCount": 0
+            "apuntesStatus": "completos",
+            "practicaStatus": "con_practica",
+            "sectionCount": 6,
+            "questionCount": 10
           },
           {
             "path": "V.36",
@@ -831,6 +831,82 @@
         }
       ],
       "practiceSlug": "i-3"
+    },
+    "I.4": {
+      "path": "I.4",
+      "title": "La organización municipal",
+      "apuntesStatus": "completos",
+      "practicaStatus": "con_practica",
+      "sectionCount": 7,
+      "questionCount": 10,
+      "source": {
+        "label": "Ley 7/1985, de 2 de abril, reguladora de las bases del régimen local (texto consolidado)",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392"
+      },
+      "sections": [
+        {
+          "heading": "El municipio y sus elementos",
+          "body": "El **municipio** es la entidad local básica de la organización territorial del Estado. Tiene personalidad jurídica propia y plena capacidad para el cumplimiento de sus fines (artículo 11 de la Ley 7/1985).\n\nSus elementos son tres: el **territorio** (el término municipal), la **población** (las personas empadronadas) y la **organización** (los órganos que gobiernan y administran). El gobierno y la administración municipal corresponden al **Ayuntamiento**, formado por el Alcalde y los concejales.\n\nEl municipio no es una simple oficina: ejerce potestades públicas (reglamentaria, tributaria, expropiatoria, sancionadora) y presta los servicios que la ley le atribuye. La organización concreta se desarrolla en el **reglamento orgánico** que aprueba el Pleno."
+        },
+        {
+          "heading": "Los órganos necesarios y los complementarios",
+          "body": "La ley distingue entre órganos que existen siempre y órganos que dependen de la población o del reglamento orgánico.\n\n- **Alcalde, Tenientes de Alcalde y Pleno** existen en todos los ayuntamientos.\n- La **Junta de Gobierno Local** existe en los municipios de más de **5.000 habitantes** y también en los de menos cuando lo prevea su reglamento orgánico o lo acuerde el Pleno.\n- La **Comisión Especial de Cuentas** existe en todos los municipios.\n- Son órganos complementarios, regulados por el reglamento orgánico, las **concejalías delegadas**, las **comisiones informativas**, los consejos sectoriales y los órganos desconcentrados.\n\nEn el régimen de **concejo abierto**, propio de municipios pequeños con tradición o circunstancias que lo justifican, el gobierno corresponde a un Alcalde y a una asamblea vecinal de la que forman parte todos los electores."
+        },
+        {
+          "heading": "El Pleno",
+          "body": "El **Pleno** es el órgano de máxima representación política del municipio. Está integrado por todos los concejales y lo preside el Alcalde.\n\nSus atribuciones más importantes (artículo 22) son:\n\n- El **control y la fiscalización** de los órganos de gobierno.\n- La aprobación del **reglamento orgánico**, de las **ordenanzas** y de las **bases de selección** de personal.\n- La aprobación de los **presupuestos**, de la **plantilla** y de las **cuentas**.\n- La aprobación de los convenios y de las formas de gestión de los servicios que la ley le reserve.\n\nEl Pleno celebra sesiones **ordinarias** con la periodicidad que fija la ley (como mínimo mensual en el régimen general) y **extraordinarias** cuando lo convoca el Alcalde o lo solicita una cuarta parte de los concejales. Para adoptar acuerdos necesita el quórum y las mayorías que establece la legislación de régimen local."
+        },
+        {
+          "heading": "El Alcalde y la Junta de Gobierno Local",
+          "body": "El **Alcalde** preside la corporación, dirige el gobierno y la administración municipal, representa al Ayuntamiento y ejerce la jefatura superior del personal (artículo 21). Convoca y preside las sesiones del Pleno y de la Junta de Gobierno, ejecuta los presupuestos, ordena los pagos y ejerce la potestad sancionadora en los términos legales.\n\nLos **Tenientes de Alcalde** son concejales nombrados y cesados libremente por el Alcalde; lo sustituyen en caso de ausencia y pueden recibir delegaciones.\n\nLa **Junta de Gobierno Local** asiste al Alcalde y ejerce las competencias que este le delegue (artículo 23). Se compone del Alcalde y de los concejales que él nombra y cesa libremente. No puede asumir las competencias que la ley atribuye al Pleno."
+        },
+        {
+          "heading": "Concejales, grupos y participación",
+          "body": "Los **concejales** se eligen por sufragio universal, libre, igual, directo y secreto cada **cuatro años**. Tienen derecho a la información necesaria para ejercer su función, a participar en los debates y a percibir las retribuciones o indemnizaciones que correspondan.\n\nSe organizan en **grupos políticos**. Las **comisiones informativas** estudian los asuntos antes de que lleguen al Pleno y pueden estar formadas por concejales de todos los grupos. Los **concejales delegados** dirigen áreas concretas por delegación del Alcalde.\n\nEl **Reglamento Orgánico** regula la participación ciudadana, la organización de los grupos y el funcionamiento de las comisiones, dentro del marco legal."
+        },
+        {
+          "heading": "Tabla de órganos y funciones",
+          "table": {
+            "columns": [
+              "Órgano",
+              "Composición",
+              "Función principal"
+            ],
+            "rows": [
+              [
+                "Pleno",
+                "Todos los concejales, presidido por el Alcalde",
+                "Control político, ordenanzas, presupuestos y cuentas"
+              ],
+              [
+                "Alcalde",
+                "Elegido por el Pleno entre los concejales",
+                "Dirige el gobierno y la administración, representa al municipio"
+              ],
+              [
+                "Junta de Gobierno Local",
+                "Alcalde y concejales nombrados por él",
+                "Asiste al Alcalde y ejerce sus delegaciones"
+              ],
+              [
+                "Tenientes de Alcalde",
+                "Concejales nombrados por el Alcalde",
+                "Sustituyen al Alcalde y asumen delegaciones"
+              ],
+              [
+                "Comisión Especial de Cuentas",
+                "Concejales de los grupos",
+                "Examina las cuentas antes de su aprobación"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Ejemplo resuelto",
+          "body": "**Supuesto.** Un ayuntamiento de 9.000 habitantes quiere aprobar una ordenanza de terrazas, contratar a dos técnicos y comprobar las cuentas del año anterior. ¿Qué órgano decide cada cosa?\n\n**Resolución.**\n\n- La **ordenanza** la aprueba el **Pleno**, previa tramitación e información pública.\n- La **plantilla** y la oferta de empleo también pasan por el Pleno; la contratación concreta la ejecuta el Alcalde y los servicios municipales conforme a la ley.\n- Las **cuentas** las examina la **Comisión Especial de Cuentas** y las aprueba el Pleno.\n- Al superar los 5.000 habitantes, el municipio tiene **Junta de Gobierno Local**, además de Alcalde, Tenientes de Alcalde y Pleno.\n\n**Conclusión.** El Pleno decide lo político y normativo; el Alcalde ejecuta y dirige; la Junta asiste al Alcalde. Confundir esas tareas es el error típico en los test."
+        }
+      ],
+      "practiceSlug": "i-4"
     },
     "I.5": {
       "path": "I.5",
@@ -1595,6 +1671,45 @@
         }
       ],
       "practiceSlug": "v-34"
+    },
+    "V.35": {
+      "path": "V.35",
+      "title": "El Esquema Nacional de Seguridad (ENS, RD 311/2022)",
+      "apuntesStatus": "completos",
+      "practicaStatus": "con_practica",
+      "sectionCount": 6,
+      "questionCount": 10,
+      "source": {
+        "label": "Real Decreto 311/2022, de 3 de mayo, por el que se regula el Esquema Nacional de Seguridad",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-7191"
+      },
+      "sections": [
+        {
+          "heading": "Qué es el ENS y a quién obliga",
+          "body": "El **Esquema Nacional de Seguridad (ENS)** es el marco común de seguridad de la información para el sector público español. Fija los principios, los requisitos y las medidas que deben cumplir los sistemas que tratan información pública.\n\nSe regula por el **Real Decreto 311/2022**, que sustituyó al Real Decreto 3/2010. Se aplica a las **administraciones públicas** y a las **entidades privadas** que contraten con ellas cuando el contrato implique tratar información pública o prestar servicios TIC.\n\nNo es una norma voluntaria de buenas prácticas: es **normativa básica** y su cumplimiento se exige en la contratación pública y en la auditoría de los sistemas."
+        },
+        {
+          "heading": "Las cinco dimensiones de la seguridad",
+          "body": "El ENS entiende la seguridad como un conjunto de dimensiones que deben protegerse a la vez. Si una falla, la información o el servicio quedan comprometidos.\n\n| Dimensión | Qué protege |\n|---|---|\n| **Disponibilidad** | Que el sistema y los datos estén accesibles cuando se necesitan |\n| **Autenticidad** | Que la identidad de quien accede o firma sea la que dice ser |\n| **Integridad** | Que la información no se altere sin autorización |\n| **Confidencialidad** | Que solo acceda quien tiene permiso |\n| **Trazabilidad** | Que quede registro de quién hizo qué y cuándo |\n\nLa categoría del sistema se determina valorando el impacto de un incidente en cada dimensión. No es lo mismo un fallo en la web de un ayuntamiento que en el sistema de nóminas o en la historia clínica."
+        },
+        {
+          "heading": "Los principios rectores",
+          "body": "El ENS se apoya en seis principios que orientan cómo se diseña y se gobierna la seguridad:\n\n1. **Seguridad como proceso integral**: no es un producto que se compra, sino un proceso que se mantiene.\n2. **Gestión de riesgos**: hay que identificar activos, amenazas y vulnerabilidades y decidir qué se protege y cuánto.\n3. **Prevención, detección, respuesta y recuperación**: no basta con evitar el incidente; hay que detectarlo, responder y recuperarse.\n4. **Líneas de defensa**: varias capas de protección coordinadas, no un único control.\n5. **Reevaluación periódica**: el riesgo cambia; la seguridad se revisa y se actualiza.\n6. **Función diferenciada**: quien autoriza, quien opera y quien audita no deben ser la misma persona."
+        },
+        {
+          "heading": "Categorías y medidas",
+          "body": "El ENS clasifica los sistemas en tres categorías según el riesgo:\n\n- **Básica**: la mayoría de los sistemas con información pública de impacto limitado.\n- **Media**: cuando el impacto de un incidente es grave para la organización o para los ciudadanos.\n- **Alta**: cuando el impacto es muy grave o afecta a derechos fundamentales, seguridad pública o servicios esenciales.\n\nCada categoría exige un conjunto de medidas del **Anexo II**. Las medidas se agrupan en marcos: organizativo, operacional y de protección. Algunas son comunes y otras se refuerzan en las categorías superiores.\n\nEl sistema debe documentar su **análisis de riesgos**, su **declaración de aplicabilidad** y su **política de seguridad**. La categoría no la elige el proveedor a gusto: se justifica y se revisa."
+        },
+        {
+          "heading": "Gobernanza y auditoría",
+          "body": "El ENS exige repartir responsabilidades. Los roles habituales son:\n\n- **Responsable de la seguridad**: coordina la política y el cumplimiento.\n- **Responsable del sistema**: decide sobre el sistema y asume su explotación.\n- **Responsable de la información**: responde de los datos y de su uso.\n- **Responsable del servicio**: responde de la prestación del servicio.\n\nEl **CCN-CERT** actúa como centro de respuesta a incidentes de referencia para el sector público. Los sistemas de categoría media y alta se auditan periódicamente; la auditoría no sustituye la gestión diaria del riesgo.\n\nEn la contratación, el ENS se traduce en requisitos concretos: el pliego debe exigir la categoría, las medidas y la evidencia de cumplimiento."
+        },
+        {
+          "heading": "Ejemplo resuelto",
+          "body": "**Supuesto.** Un ayuntamiento implanta una sede electrónica para presentar solicitudes y consultar expedientes. ¿Cómo aplica el ENS?\n\n**Resolución.**\n\n1. **Identifica el sistema y la información**: sede electrónica, datos personales de los solicitantes y documentos administrativos.\n2. **Valora el impacto** en las cinco dimensiones: una caída impide presentar solicitudes (disponibilidad); una alteración de documentos rompe la integridad; una fuga afecta a la confidencialidad.\n3. **Categoriza** el sistema (habitualmente **media** o **alta**, según el alcance y la criticidad) y justifica la decisión.\n4. **Aplica las medidas** de la categoría: control de acceso, registro de actividad, copias, gestión de incidentes, continuidad y protección de las comunicaciones.\n5. **Documenta** la política, el análisis de riesgos y la declaración de aplicabilidad; designa responsables.\n6. **Revisa y audita** periódicamente, y exige al proveedor las mismas garantías en el contrato.\n\n**Conclusión.** El ENS no es un trámite final: es un ciclo de gobierno y mejora continua. Aprobar la auditoría con papeles no sirve si el sistema no está protegido de verdad."
+        }
+      ],
+      "practiceSlug": "v-35"
     }
   },
   "practices": [
@@ -2996,6 +3111,287 @@
           ],
           "correct": "c",
           "explanation": "Los municipios aprueban ordenanzas (potestad reglamentaria), pero no tienen potestad legislativa; la potestad legislativa corresponde a las Cortes Generales y a las asambleas autonómicas.",
+          "source": {
+            "label": "Ley 7/1985, de 2 de abril, reguladora de las bases del régimen local (texto consolidado)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "i-4",
+      "tema_path": "I.4",
+      "title": "Práctica · La organización municipal",
+      "source": {
+        "label": "Ley 7/1985, de 2 de abril, reguladora de las bases del régimen local (texto consolidado)",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392"
+      },
+      "questions": [
+        {
+          "stem": "¿Cuáles son los elementos del municipio?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El territorio, la población y la organización"
+            },
+            {
+              "key": "b",
+              "text": "El Pleno, el Alcalde y la Junta de Gobierno Local"
+            },
+            {
+              "key": "c",
+              "text": "La provincia, la comarca y la mancomunidad"
+            },
+            {
+              "key": "d",
+              "text": "El presupuesto, la plantilla y el reglamento orgánico"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El artículo 11 de la Ley 7/1985 fija como elementos del municipio el territorio, la población y la organización.",
+          "source": {
+            "label": "Ley 7/1985, de 2 de abril, reguladora de las bases del régimen local (texto consolidado)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392"
+          }
+        },
+        {
+          "stem": "¿En qué municipios existe obligatoriamente la Junta de Gobierno Local?",
+          "options": [
+            {
+              "key": "a",
+              "text": "En todos, sin excepción"
+            },
+            {
+              "key": "b",
+              "text": "En los de más de 5.000 habitantes y, en los de menos, si lo prevé su reglamento orgánico o lo acuerda el Pleno"
+            },
+            {
+              "key": "c",
+              "text": "Solo en los de más de 20.000 habitantes"
+            },
+            {
+              "key": "d",
+              "text": "Solo en los de más de 50.000 habitantes"
+            }
+          ],
+          "correct": "b",
+          "explanation": "La Ley 7/1985 la exige por encima de 5.000 habitantes y permite crearla en los demás por decisión organizativa.",
+          "source": {
+            "label": "Ley 7/1985, de 2 de abril, reguladora de las bases del régimen local (texto consolidado)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392"
+          }
+        },
+        {
+          "stem": "¿Qué órgano aprueba las ordenanzas municipales?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El Alcalde"
+            },
+            {
+              "key": "b",
+              "text": "La Junta de Gobierno Local"
+            },
+            {
+              "key": "c",
+              "text": "El Pleno"
+            },
+            {
+              "key": "d",
+              "text": "El secretario municipal"
+            }
+          ],
+          "correct": "c",
+          "explanation": "El artículo 22 atribuye al Pleno la aprobación de las ordenanzas y del reglamento orgánico.",
+          "source": {
+            "label": "Ley 7/1985, de 2 de abril, reguladora de las bases del régimen local (texto consolidado)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392"
+          }
+        },
+        {
+          "stem": "¿Quién dirige el gobierno y la administración municipal y representa al Ayuntamiento?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El Pleno"
+            },
+            {
+              "key": "b",
+              "text": "El Alcalde"
+            },
+            {
+              "key": "c",
+              "text": "El interventor"
+            },
+            {
+              "key": "d",
+              "text": "La Comisión Especial de Cuentas"
+            }
+          ],
+          "correct": "b",
+          "explanation": "El Alcalde preside la corporación, dirige el gobierno y la administración y representa al municipio (artículo 21).",
+          "source": {
+            "label": "Ley 7/1985, de 2 de abril, reguladora de las bases del régimen local (texto consolidado)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392"
+          }
+        },
+        {
+          "stem": "¿Cómo se forma la Junta de Gobierno Local?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Por todos los concejales de la corporación"
+            },
+            {
+              "key": "b",
+              "text": "Por el Alcalde y los concejales que él nombra y cesa libremente"
+            },
+            {
+              "key": "c",
+              "text": "Por los portavoces de los grupos, elegidos por el Pleno"
+            },
+            {
+              "key": "d",
+              "text": "Por el secretario y el interventor"
+            }
+          ],
+          "correct": "b",
+          "explanation": "La Junta se compone del Alcalde y de concejales nombrados y cesados libremente por él; asiste al Alcalde y ejerce sus delegaciones.",
+          "source": {
+            "label": "Ley 7/1985, de 2 de abril, reguladora de las bases del régimen local (texto consolidado)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392"
+          }
+        },
+        {
+          "stem": "¿Quién nombra a los Tenientes de Alcalde?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El Pleno por mayoría absoluta"
+            },
+            {
+              "key": "b",
+              "text": "El Alcalde entre los concejales"
+            },
+            {
+              "key": "c",
+              "text": "La Junta de Gobierno Local"
+            },
+            {
+              "key": "d",
+              "text": "El órgano autonómico competente"
+            }
+          ],
+          "correct": "b",
+          "explanation": "Los Tenientes de Alcalde son concejales nombrados y cesados por el Alcalde; lo sustituyen y pueden recibir delegaciones.",
+          "source": {
+            "label": "Ley 7/1985, de 2 de abril, reguladora de las bases del régimen local (texto consolidado)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392"
+          }
+        },
+        {
+          "stem": "¿Cuál de estas funciones corresponde al Pleno?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Ejecutar el presupuesto y ordenar los pagos"
+            },
+            {
+              "key": "b",
+              "text": "Controlar y fiscalizar a los órganos de gobierno"
+            },
+            {
+              "key": "c",
+              "text": "Dirigir la policía local"
+            },
+            {
+              "key": "d",
+              "text": "Nombrar al interventor"
+            }
+          ],
+          "correct": "b",
+          "explanation": "El Pleno controla y fiscaliza a los órganos de gobierno; ejecutar el presupuesto y dirigir los servicios es tarea del Alcalde.",
+          "source": {
+            "label": "Ley 7/1985, de 2 de abril, reguladora de las bases del régimen local (texto consolidado)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392"
+          }
+        },
+        {
+          "stem": "¿Cada cuánto tiempo se eligen los concejales?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Cada dos años"
+            },
+            {
+              "key": "b",
+              "text": "Cada cuatro años"
+            },
+            {
+              "key": "c",
+              "text": "Cada cinco años"
+            },
+            {
+              "key": "d",
+              "text": "Cada seis años"
+            }
+          ],
+          "correct": "b",
+          "explanation": "Las elecciones municipales se celebran cada cuatro años por sufragio universal, libre, igual, directo y secreto.",
+          "source": {
+            "label": "Ley 7/1985, de 2 de abril, reguladora de las bases del régimen local (texto consolidado)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392"
+          }
+        },
+        {
+          "stem": "¿En qué municipios existe la Comisión Especial de Cuentas?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Solo en los de más de 5.000 habitantes"
+            },
+            {
+              "key": "b",
+              "text": "Solo en los de más de 20.000 habitantes"
+            },
+            {
+              "key": "c",
+              "text": "En todos los municipios"
+            },
+            {
+              "key": "d",
+              "text": "Solo donde lo acuerde el Pleno"
+            }
+          ],
+          "correct": "c",
+          "explanation": "La Comisión Especial de Cuentas existe en todos los municipios y examina las cuentas antes de su aprobación por el Pleno.",
+          "source": {
+            "label": "Ley 7/1985, de 2 de abril, reguladora de las bases del régimen local (texto consolidado)",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392"
+          }
+        },
+        {
+          "stem": "¿Puede la Junta de Gobierno Local aprobar las ordenanzas municipales?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Sí, siempre que se lo delegue el Pleno"
+            },
+            {
+              "key": "b",
+              "text": "No, porque la aprobación de ordenanzas corresponde al Pleno"
+            },
+            {
+              "key": "c",
+              "text": "Sí, si el municipio tiene más de 5.000 habitantes"
+            },
+            {
+              "key": "d",
+              "text": "Sí, cuando el Alcalde esté ausente"
+            }
+          ],
+          "correct": "b",
+          "explanation": "La Junta ejerce competencias delegadas por el Alcalde, pero no puede asumir las que la ley atribuye expresamente al Pleno, como las ordenanzas.",
           "source": {
             "label": "Ley 7/1985, de 2 de abril, reguladora de las bases del régimen local (texto consolidado)",
             "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392"
@@ -5250,16 +5646,297 @@
           }
         }
       ]
+    },
+    {
+      "slug": "v-35",
+      "tema_path": "V.35",
+      "title": "Práctica · El Esquema Nacional de Seguridad (ENS, RD 311/2022)",
+      "source": {
+        "label": "Real Decreto 311/2022, de 3 de mayo, por el que se regula el Esquema Nacional de Seguridad",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-7191"
+      },
+      "questions": [
+        {
+          "stem": "¿Qué norma regula actualmente el Esquema Nacional de Seguridad?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El Real Decreto 3/2010"
+            },
+            {
+              "key": "b",
+              "text": "El Real Decreto 311/2022"
+            },
+            {
+              "key": "c",
+              "text": "La Ley 39/2015"
+            },
+            {
+              "key": "d",
+              "text": "El Reglamento (UE) 2016/679"
+            }
+          ],
+          "correct": "b",
+          "explanation": "El ENS se regula por el Real Decreto 311/2022, de 3 de mayo, que sustituye al Real Decreto 3/2010.",
+          "source": {
+            "label": "Real Decreto 311/2022, de 3 de mayo, por el que se regula el Esquema Nacional de Seguridad",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-7191"
+          }
+        },
+        {
+          "stem": "¿A quién se aplica el ENS?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Solo a la Administración General del Estado"
+            },
+            {
+              "key": "b",
+              "text": "Solo a las empresas privadas"
+            },
+            {
+              "key": "c",
+              "text": "A las administraciones públicas y a las entidades privadas que contraten con ellas en los supuestos previstos"
+            },
+            {
+              "key": "d",
+              "text": "Únicamente a los sistemas que tratan datos de salud"
+            }
+          ],
+          "correct": "c",
+          "explanation": "El ENS es normativa básica para el sector público y se extiende a las entidades privadas que contratan con él cuando tratan información pública o prestan servicios TIC.",
+          "source": {
+            "label": "Real Decreto 311/2022, de 3 de mayo, por el que se regula el Esquema Nacional de Seguridad",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-7191"
+          }
+        },
+        {
+          "stem": "¿Cuál de estas no es una dimensión de seguridad del ENS?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Disponibilidad"
+            },
+            {
+              "key": "b",
+              "text": "Trazabilidad"
+            },
+            {
+              "key": "c",
+              "text": "Autenticidad"
+            },
+            {
+              "key": "d",
+              "text": "Rentabilidad"
+            }
+          ],
+          "correct": "d",
+          "explanation": "Las dimensiones son disponibilidad, autenticidad, integridad, confidencialidad y trazabilidad; la rentabilidad es un criterio económico, no de seguridad.",
+          "source": {
+            "label": "Real Decreto 311/2022, de 3 de mayo, por el que se regula el Esquema Nacional de Seguridad",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-7191"
+          }
+        },
+        {
+          "stem": "¿Qué categorías de sistemas establece el ENS?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Básica, media y alta"
+            },
+            {
+              "key": "b",
+              "text": "Baja, media y alta"
+            },
+            {
+              "key": "c",
+              "text": "Pública, privada y mixta"
+            },
+            {
+              "key": "d",
+              "text": "Bronce, plata y oro"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El ENS distingue categoría básica, media y alta según el impacto de un incidente en las dimensiones de seguridad.",
+          "source": {
+            "label": "Real Decreto 311/2022, de 3 de mayo, por el que se regula el Esquema Nacional de Seguridad",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-7191"
+          }
+        },
+        {
+          "stem": "¿Qué principio del ENS exige que quien autoriza, opera y audita no sea la misma persona?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Seguridad como proceso integral"
+            },
+            {
+              "key": "b",
+              "text": "Función diferenciada"
+            },
+            {
+              "key": "c",
+              "text": "Líneas de defensa"
+            },
+            {
+              "key": "d",
+              "text": "Reevaluación periódica"
+            }
+          ],
+          "correct": "b",
+          "explanation": "El principio de función diferenciada separa las responsabilidades de autorización, operación y auditoría para evitar conflictos de interés.",
+          "source": {
+            "label": "Real Decreto 311/2022, de 3 de mayo, por el que se regula el Esquema Nacional de Seguridad",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-7191"
+          }
+        },
+        {
+          "stem": "¿Dónde se recogen las medidas de seguridad que debe aplicar cada categoría?",
+          "options": [
+            {
+              "key": "a",
+              "text": "En el anexo II del Real Decreto 311/2022"
+            },
+            {
+              "key": "b",
+              "text": "En la Ley 39/2015"
+            },
+            {
+              "key": "c",
+              "text": "En el Reglamento de protección de datos"
+            },
+            {
+              "key": "d",
+              "text": "En la Ley de contratos"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El anexo II del Real Decreto 311/2022 contiene las medidas, agrupadas en marcos, que se aplican según la categoría del sistema.",
+          "source": {
+            "label": "Real Decreto 311/2022, de 3 de mayo, por el que se regula el Esquema Nacional de Seguridad",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-7191"
+          }
+        },
+        {
+          "stem": "¿Qué documento justifica qué medidas del ENS se aplican y por qué?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El presupuesto anual"
+            },
+            {
+              "key": "b",
+              "text": "La declaración de aplicabilidad"
+            },
+            {
+              "key": "c",
+              "text": "El pliego de cláusulas administrativas"
+            },
+            {
+              "key": "d",
+              "text": "El inventario de equipos"
+            }
+          ],
+          "correct": "b",
+          "explanation": "La declaración de aplicabilidad recoge las medidas seleccionadas y su justificación a partir del análisis de riesgos.",
+          "source": {
+            "label": "Real Decreto 311/2022, de 3 de mayo, por el que se regula el Esquema Nacional de Seguridad",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-7191"
+          }
+        },
+        {
+          "stem": "¿Qué papel tiene el CCN-CERT en el ENS?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Aprueba los presupuestos de las administraciones"
+            },
+            {
+              "key": "b",
+              "text": "Actúa como centro de respuesta a incidentes de referencia para el sector público"
+            },
+            {
+              "key": "c",
+              "text": "Sustituye a la auditoría interna"
+            },
+            {
+              "key": "d",
+              "text": "Dicta las leyes de protección de datos"
+            }
+          ],
+          "correct": "b",
+          "explanation": "El CCN-CERT es el CERT de referencia del sector público y apoya en la gestión de incidentes de ciberseguridad.",
+          "source": {
+            "label": "Real Decreto 311/2022, de 3 de mayo, por el que se regula el Esquema Nacional de Seguridad",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-7191"
+          }
+        },
+        {
+          "stem": "¿Qué debe hacer una administración antes de aplicar las medidas de una categoría?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Comprar el software más caro"
+            },
+            {
+              "key": "b",
+              "text": "Realizar un análisis de riesgos y determinar la categoría del sistema"
+            },
+            {
+              "key": "c",
+              "text": "Publicar el código fuente"
+            },
+            {
+              "key": "d",
+              "text": "Suprimir los registros de actividad"
+            }
+          ],
+          "correct": "b",
+          "explanation": "La categoría se determina valorando el impacto en las dimensiones de seguridad; el análisis de riesgos es la base para elegir las medidas.",
+          "source": {
+            "label": "Real Decreto 311/2022, de 3 de mayo, por el que se regula el Esquema Nacional de Seguridad",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-7191"
+          }
+        },
+        {
+          "stem": "¿Cuál de estas afirmaciones sobre el ENS es correcta?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Es un trámite que se hace una vez y no se revisa"
+            },
+            {
+              "key": "b",
+              "text": "Es un proceso de gestión continua que incluye prevención, detección, respuesta y recuperación"
+            },
+            {
+              "key": "c",
+              "text": "Solo afecta a la confidencialidad"
+            },
+            {
+              "key": "d",
+              "text": "Solo se aplica a los sistemas conectados a internet"
+            }
+          ],
+          "correct": "b",
+          "explanation": "El ENS concibe la seguridad como un proceso integral y continuo, con reevaluación periódica del riesgo y de las medidas.",
+          "source": {
+            "label": "Real Decreto 311/2022, de 3 de mayo, por el que se regula el Esquema Nacional de Seguridad",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-7191"
+          }
+        }
+      ]
     }
   ],
   "progress": {
     "total": 40,
-    "apuntesCompletos": 13,
+    "apuntesCompletos": 15,
     "soloResumen": 0,
-    "pendientes": 27,
-    "conPractica": 13,
-    "sinPractica": 27,
-    "questions": 130,
+    "pendientes": 25,
+    "conPractica": 15,
+    "sinPractica": 25,
+    "questions": 150,
     "convocatorias": 12
   }
 }
