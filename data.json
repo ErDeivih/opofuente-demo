@@ -113,10 +113,10 @@
         "title": "Administración y normativa",
         "coverage": {
           "total": 12,
-          "conApuntes": 10,
+          "conApuntes": 11,
           "soloResumen": 0,
-          "pendientes": 2,
-          "conPractica": 10
+          "pendientes": 1,
+          "conPractica": 11
         },
         "topics": [
           {
@@ -178,10 +178,10 @@
           {
             "path": "I.8",
             "title": "La función pública local",
-            "apuntesStatus": "pendiente",
-            "practicaStatus": "pendiente",
-            "sectionCount": 0,
-            "questionCount": 0
+            "apuntesStatus": "completos",
+            "practicaStatus": "con_practica",
+            "sectionCount": 6,
+            "questionCount": 10
           },
           {
             "path": "I.9",
@@ -275,10 +275,10 @@
         "title": "Sistemas, redes y comunicaciones",
         "coverage": {
           "total": 9,
-          "conApuntes": 2,
+          "conApuntes": 3,
           "soloResumen": 0,
-          "pendientes": 7,
-          "conPractica": 2
+          "pendientes": 6,
+          "conPractica": 3
         },
         "topics": [
           {
@@ -300,10 +300,10 @@
           {
             "path": "III.20",
             "title": "Almacenamiento y copias de seguridad",
-            "apuntesStatus": "pendiente",
-            "practicaStatus": "pendiente",
-            "sectionCount": 0,
-            "questionCount": 0
+            "apuntesStatus": "completos",
+            "practicaStatus": "con_practica",
+            "sectionCount": 6,
+            "questionCount": 10
           },
           {
             "path": "III.21",
@@ -1116,6 +1116,73 @@
       ],
       "practiceSlug": "i-7"
     },
+    "I.8": {
+      "path": "I.8",
+      "title": "La función pública local",
+      "apuntesStatus": "completos",
+      "practicaStatus": "con_practica",
+      "sectionCount": 6,
+      "questionCount": 10,
+      "source": {
+        "label": "Real Decreto Legislativo 5/2015 (TREBEP) y Ley 7/1985, de bases del régimen local",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719"
+      },
+      "sections": [
+        {
+          "heading": "Quién trabaja en un ayuntamiento",
+          "body": "El **personal al servicio de las administraciones públicas** no es un bloque homogéneo. El TREBEP distingue cuatro clases de empleados públicos:\n\n- **Funcionarios de carrera**: ocupan plazas de plantilla con carácter permanente y se rigen por el derecho administrativo.\n- **Funcionarios interinos**: cubren temporalmente plazas vacantes o sustituyen a titulares, por necesidades urgentes y sin ocupar la plaza con carácter definitivo.\n- **Personal laboral**: tiene contrato de trabajo, fijo o temporal, y se rige por el derecho laboral y el convenio aplicable.\n- **Personal eventual**: realiza funciones de confianza o asesoramiento especial; su nombramiento y cese son libres.\n\nEn el ámbito local hay además los **funcionarios con habilitación de carácter nacional** (secretario, interventor y tesorero), que desempeñan funciones de fe pública y control interno."
+        },
+        {
+          "heading": "Plantilla, relación de puestos de trabajo y oferta de empleo",
+          "body": "La **plantilla** es el conjunto de plazas dotadas presupuestariamente que el ayuntamiento puede cubrir. La **relación de puestos de trabajo (RPT)** describe cada puesto: denominación, grupo de clasificación, retribuciones complementarias, requisitos y forma de provisión.\n\nLa plantilla y la RPT las aprueba el **Pleno**. Cada año, si hay plazas vacantes y dotación presupuestaria, se aprueba la **oferta de empleo público**, que se publica para que los ciudadanos puedan concurrir.\n\nLa selección se rige por los principios de **igualdad, mérito, capacidad y publicidad**. Los sistemas ordinarios son la **oposición** (pruebas) y el **concurso-oposición** (méritos y pruebas)."
+        },
+        {
+          "heading": "Carrera, retribuciones y situaciones",
+          "body": "La **carrera profesional** permite progresar mediante la evaluación del desempeño y la formación. Las **retribuciones** se dividen en:\n\n- **Básicas**: sueldo, trienios y pagas extraordinarias.\n- **Complementarias**: complemento de puesto, complemento específico, productividad y gratificaciones por servicios extraordinarios.\n\nLas **situaciones administrativas** principales son el servicio activo, los servicios especiales, la excedencia (voluntaria, por cuidado de hijos o familiares) y la suspensión de funciones. Cada una determina los derechos y deberes del empleado."
+        },
+        {
+          "heading": "Régimen disciplinario",
+          "body": "El incumplimiento de los deberes puede dar lugar a **faltas leves, graves o muy graves**. Las sanciones van desde el apercibimiento o la suspensión de funciones hasta el traslado forzoso o la **separación del servicio**, que solo cabe por faltas muy graves.\n\nEl procedimiento disciplinario garantiza la audiencia del interesado y la motivación de la sanción. Las faltas y sanciones prescriben según su gravedad, y la sanción debe ser proporcional a la conducta."
+        },
+        {
+          "heading": "Tabla de clases de personal",
+          "table": {
+            "columns": [
+              "Clase",
+              "Vínculo",
+              "Característica"
+            ],
+            "rows": [
+              [
+                "Funcionario de carrera",
+                "Estatutario, permanente",
+                "Ocupa plaza de plantilla; derecho administrativo"
+              ],
+              [
+                "Funcionario interino",
+                "Estatutario, temporal",
+                "Cubre plaza vacante o sustituye; no consolida la plaza"
+              ],
+              [
+                "Personal laboral",
+                "Contrato de trabajo",
+                "Rige el derecho laboral y el convenio"
+              ],
+              [
+                "Personal eventual",
+                "Nombramiento libre",
+                "Confianza o asesoramiento; cese libre"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Ejemplo resuelto",
+          "body": "**Supuesto.** Un ayuntamiento crea una plaza de técnico auxiliar de informática. Mientras se resuelve la convocatoria, el servicio queda desatendido.\n\n**Resolución.**\n\n- La plaza se incluye en la **plantilla** y en la **RPT**, con su grupo, retribuciones y requisitos; ambas las aprueba el Pleno.\n- Se aprueba la **oferta de empleo público** y se convoca un proceso selectivo por **oposición o concurso-oposición**, con bases publicadas.\n- Si la necesidad es urgente y la plaza está vacante, puede nombrarse un **funcionario interino** para cubrirla temporalmente, sin que ello consolide la plaza.\n- La persona seleccionada toma posesión como **funcionario de carrera** si supera el proceso; el interino cesa cuando se cubre la plaza.\n\n**Conclusión.** Plantilla, oferta y selección son pasos distintos; el interino es una solución temporal, no una forma de acceso a la carrera."
+        }
+      ],
+      "practiceSlug": "i-8"
+    },
     "I.9": {
       "path": "I.9",
       "title": "Las haciendas locales y el presupuesto",
@@ -1265,6 +1332,84 @@
         }
       ],
       "practiceSlug": "ii-13"
+    },
+    "III.20": {
+      "path": "III.20",
+      "title": "Almacenamiento y copias de seguridad",
+      "apuntesStatus": "completos",
+      "practicaStatus": "con_practica",
+      "sectionCount": 6,
+      "questionCount": 10,
+      "source": {
+        "label": "NIST SP 800-34 Rev.1, Contingency Planning Guide for Federal Information Systems",
+        "url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final"
+      },
+      "sections": [
+        {
+          "heading": "Almacenamiento: DAS, NAS y SAN",
+          "body": "Antes de hablar de copias hay que distinguir dónde viven los datos:\n\n- **DAS** (Direct Attached Storage): discos conectados directamente al servidor.\n- **NAS** (Network Attached Storage): almacenamiento en red con sistema de ficheros propio; se accede por red (SMB/NFS).\n- **SAN** (Storage Area Network): red dedicada de bloques para servidores; habitual en centros de datos.\n\nEl **RAID** combina discos para mejorar rendimiento o tolerar fallos. No es una copia de seguridad: si se borra un fichero o se cifra el volumen, el RAID replica el daño."
+        },
+        {
+          "heading": "Niveles de RAID habituales",
+          "table": {
+            "columns": [
+              "Nivel",
+              "Mínimo de discos",
+              "Qué aporta",
+              "Tolera fallos"
+            ],
+            "rows": [
+              [
+                "RAID 0",
+                "2",
+                "Rayado: rendimiento y capacidad, sin redundancia",
+                "0 discos"
+              ],
+              [
+                "RAID 1",
+                "2",
+                "Espejo: cada disco tiene una copia",
+                "1 disco"
+              ],
+              [
+                "RAID 5",
+                "3",
+                "Rayado con paridad distribuida",
+                "1 disco"
+              ],
+              [
+                "RAID 6",
+                "4",
+                "Doble paridad distribuida",
+                "2 discos"
+              ],
+              [
+                "RAID 10",
+                "4",
+                "Espejo y rayado combinados",
+                "1 por espejo"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Tipos de copia",
+          "body": "Una copia de seguridad debe permitir **recuperar** el servicio, no solo guardar bytes. Los tipos básicos son:\n\n- **Completa**: copia todos los datos seleccionados. Es la más lenta y ocupa más, pero la más sencilla de restaurar.\n- **Incremental**: copia solo lo cambiado desde la última copia, sea completa o incremental. Restaurar exige la completa y todas las incrementales.\n- **Diferencial**: copia lo cambiado desde la última completa. Restaurar exige la completa y la última diferencial.\n\nUna **instantánea** (snapshot) del volumen no sustituye una copia externa: si el almacenamiento se pierde, se pierden ambas."
+        },
+        {
+          "heading": "La regla 3-2-1 y la protección real",
+          "body": "La regla **3-2-1** resume una buena estrategia: **3 copias** de los datos, en **2 soportes diferentes**, con **1 copia fuera del sitio**. Hoy se añaden dos ideas:\n\n- **Copia inmutable o aislada** (offline/air gap): el ransomware no puede cifrarla ni borrarla.\n- **Cifrado y control de acceso**: la copia también contiene datos personales.\n\nAdemás hay que definir la **retención** (cuánto tiempo se guardan), probar la **restauración** y documentar el procedimiento. Una copia que nunca se restaura es una hipótesis, no una garantía."
+        },
+        {
+          "heading": "RTO, RPO y continuidad",
+          "body": "Dos métricas ordenan las decisiones:\n\n- **RTO** (Recovery Time Objective): tiempo máximo aceptable para recuperar el servicio.\n- **RPO** (Recovery Point Objective): cantidad máxima de datos que se puede perder, medida en tiempo.\n\nEl **plan de continuidad de negocio (BCP)** y el **plan de recuperación ante desastres (DRP)** definen escenarios, responsables, prioridades y pruebas. El objetivo no es tener copias, sino volver a operar con un daño aceptable."
+        },
+        {
+          "heading": "Ejemplo resuelto",
+          "body": "**Supuesto.** Un ayuntamiento quiere proteger la base de datos de expedientes y el servidor de ficheros. Tiene un NAS en el ayuntamiento y puede contratar almacenamiento en la nube.\n\n**Resolución.**\n\n1. **Almacenamiento local**: servidor con RAID 1 o RAID 5 para tolerar un fallo de disco; el RAID no evita borrados ni ransomware.\n2. **Copias**: completa semanal, incrementales diarias y una copia mensual retenida; se aplica **3-2-1** (NAS local, cinta o disco externo y nube).\n3. **Protección**: la copia externa se cifra y se mantiene inmutable durante la retención; las credenciales son distintas de las del servidor.\n4. **Objetivos**: si el RTO es de 4 horas y el RPO de 24 horas, la estrategia debe permitir restaurar en ese plazo y perder como máximo el último día.\n5. **Prueba**: cada trimestre se restaura un fichero y una base de datos en un entorno aislado; se mide el tiempo real y se corrige el procedimiento.\n\n**Conclusión.** RAID da disponibilidad; la copia da recuperación. La continuidad se demuestra restaurando, no solo copiando."
+        }
+      ],
+      "practiceSlug": "iii-20"
     },
     "III.21": {
       "path": "III.21",
@@ -4271,6 +4416,287 @@
       ]
     },
     {
+      "slug": "i-8",
+      "tema_path": "I.8",
+      "title": "Práctica · La función pública local",
+      "source": {
+        "label": "Real Decreto Legislativo 5/2015 (TREBEP) y Ley 7/1985, de bases del régimen local",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719"
+      },
+      "questions": [
+        {
+          "stem": "¿Cuáles son las clases de empleados públicos del TREBEP?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Funcionarios de carrera, interinos, personal laboral y personal eventual"
+            },
+            {
+              "key": "b",
+              "text": "Funcionarios, autónomos, becarios y voluntarios"
+            },
+            {
+              "key": "c",
+              "text": "Solo funcionarios de carrera y personal laboral fijo"
+            },
+            {
+              "key": "d",
+              "text": "Funcionarios, militares y personal estatutario"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El TREBEP distingue funcionarios de carrera, funcionarios interinos, personal laboral y personal eventual.",
+          "source": {
+            "label": "Real Decreto Legislativo 5/2015 (TREBEP) y Ley 7/1985, de bases del régimen local",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719"
+          }
+        },
+        {
+          "stem": "¿Qué caracteriza al personal eventual?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Ocupa una plaza de plantilla con carácter permanente"
+            },
+            {
+              "key": "b",
+              "text": "Realiza funciones de confianza o asesoramiento especial y su cese es libre"
+            },
+            {
+              "key": "c",
+              "text": "Accede por oposición y tiene carrera administrativa"
+            },
+            {
+              "key": "d",
+              "text": "Solo puede ser personal laboral indefinido"
+            }
+          ],
+          "correct": "b",
+          "explanation": "El personal eventual desempeña funciones de confianza o asesoramiento y es nombrado y cesado libremente; no es una vía de acceso a la función pública de carrera.",
+          "source": {
+            "label": "Real Decreto Legislativo 5/2015 (TREBEP) y Ley 7/1985, de bases del régimen local",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719"
+          }
+        },
+        {
+          "stem": "¿Cuándo puede nombrarse un funcionario interino?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Para cubrir una plaza vacante cuando no sea posible hacerlo con un funcionario de carrera o para sustituir a un titular"
+            },
+            {
+              "key": "b",
+              "text": "Para crear una plaza nueva sin pasar por el Pleno"
+            },
+            {
+              "key": "c",
+              "text": "Para ascender directamente a un funcionario de carrera"
+            },
+            {
+              "key": "d",
+              "text": "Para sustituir al alcalde en sus funciones políticas"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La interinidad cubre necesidades urgentes y temporales, como plazas vacantes o sustituciones, sin consolidar la plaza.",
+          "source": {
+            "label": "Real Decreto Legislativo 5/2015 (TREBEP) y Ley 7/1985, de bases del régimen local",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719"
+          }
+        },
+        {
+          "stem": "¿Quién aprueba la plantilla y la relación de puestos de trabajo de un ayuntamiento?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El Alcalde"
+            },
+            {
+              "key": "b",
+              "text": "El Pleno"
+            },
+            {
+              "key": "c",
+              "text": "La Junta de Gobierno Local"
+            },
+            {
+              "key": "d",
+              "text": "El interventor"
+            }
+          ],
+          "correct": "b",
+          "explanation": "La plantilla y la RPT son competencia del Pleno, dentro de sus atribuciones de organización.",
+          "source": {
+            "label": "Real Decreto Legislativo 5/2015 (TREBEP) y Ley 7/1985, de bases del régimen local",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719"
+          }
+        },
+        {
+          "stem": "¿Qué principios rigen la selección del personal al servicio de las administraciones?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Antigüedad, simpatía y disponibilidad"
+            },
+            {
+              "key": "b",
+              "text": "Igualdad, mérito, capacidad y publicidad"
+            },
+            {
+              "key": "c",
+              "text": "Solo el mérito económico"
+            },
+            {
+              "key": "d",
+              "text": "Libre designación en todos los casos"
+            }
+          ],
+          "correct": "b",
+          "explanation": "El acceso a la función pública se rige por igualdad, mérito, capacidad y publicidad; la libre designación solo cabe para puestos concretos.",
+          "source": {
+            "label": "Real Decreto Legislativo 5/2015 (TREBEP) y Ley 7/1985, de bases del régimen local",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719"
+          }
+        },
+        {
+          "stem": "¿Qué es la relación de puestos de trabajo?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El listado de los empleados que trabajan cada día"
+            },
+            {
+              "key": "b",
+              "text": "La descripción de cada puesto: denominación, grupo, retribuciones y requisitos"
+            },
+            {
+              "key": "c",
+              "text": "El contrato del personal laboral"
+            },
+            {
+              "key": "d",
+              "text": "El calendario de vacaciones"
+            }
+          ],
+          "correct": "b",
+          "explanation": "La RPT describe los puestos y sus condiciones; la plantilla es el conjunto de plazas dotadas.",
+          "source": {
+            "label": "Real Decreto Legislativo 5/2015 (TREBEP) y Ley 7/1985, de bases del régimen local",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719"
+          }
+        },
+        {
+          "stem": "¿Cuáles son retribuciones básicas?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El complemento de productividad y las gratificaciones"
+            },
+            {
+              "key": "b",
+              "text": "El sueldo, los trienios y las pagas extraordinarias"
+            },
+            {
+              "key": "c",
+              "text": "El complemento específico y el de puesto"
+            },
+            {
+              "key": "d",
+              "text": "Las dietas por desplazamiento"
+            }
+          ],
+          "correct": "b",
+          "explanation": "Las retribuciones básicas son sueldo, trienios y pagas extraordinarias; el complemento de puesto, el específico y la productividad son complementarias.",
+          "source": {
+            "label": "Real Decreto Legislativo 5/2015 (TREBEP) y Ley 7/1985, de bases del régimen local",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719"
+          }
+        },
+        {
+          "stem": "¿Qué implica la excedencia voluntaria?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Mantener el servicio activo sin trabajar"
+            },
+            {
+              "key": "b",
+              "text": "No prestar servicio activo, con los derechos que la ley reconoce según el tipo de excedencia"
+            },
+            {
+              "key": "c",
+              "text": "Perder definitivamente la condición de funcionario"
+            },
+            {
+              "key": "d",
+              "text": "Ser sancionado por falta grave"
+            }
+          ],
+          "correct": "b",
+          "explanation": "La excedencia supone no prestar servicio activo; sus efectos y derechos dependen del tipo de excedencia.",
+          "source": {
+            "label": "Real Decreto Legislativo 5/2015 (TREBEP) y Ley 7/1985, de bases del régimen local",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719"
+          }
+        },
+        {
+          "stem": "¿Qué sanción exige una falta muy grave?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Solo un apercibimiento verbal"
+            },
+            {
+              "key": "b",
+              "text": "Puede llegar a la separación del servicio"
+            },
+            {
+              "key": "c",
+              "text": "Una multa económica"
+            },
+            {
+              "key": "d",
+              "text": "La pérdida de un día de vacaciones"
+            }
+          ],
+          "correct": "b",
+          "explanation": "La separación del servicio es la sanción más grave y solo procede por faltas muy graves.",
+          "source": {
+            "label": "Real Decreto Legislativo 5/2015 (TREBEP) y Ley 7/1985, de bases del régimen local",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719"
+          }
+        },
+        {
+          "stem": "¿Quiénes son funcionarios con habilitación de carácter nacional en un ayuntamiento?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El alcalde y los concejales"
+            },
+            {
+              "key": "b",
+              "text": "El secretario, el interventor y el tesorero"
+            },
+            {
+              "key": "c",
+              "text": "Los técnicos de informática"
+            },
+            {
+              "key": "d",
+              "text": "Los agentes de la policía local"
+            }
+          ],
+          "correct": "b",
+          "explanation": "Secretario, interventor y tesorero son funcionarios con habilitación nacional que ejercen fe pública y control interno.",
+          "source": {
+            "label": "Real Decreto Legislativo 5/2015 (TREBEP) y Ley 7/1985, de bases del régimen local",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11719"
+          }
+        }
+      ]
+    },
+    {
       "slug": "i-9",
       "tema_path": "I.9",
       "title": "Práctica · Las haciendas locales y el presupuesto",
@@ -4828,6 +5254,287 @@
           "source": {
             "label": "Apuntes propios de la demo sobre arquitectura de computadores (conceptos estándar)",
             "url": ""
+          }
+        }
+      ]
+    },
+    {
+      "slug": "iii-20",
+      "tema_path": "III.20",
+      "title": "Práctica · Almacenamiento y copias de seguridad",
+      "source": {
+        "label": "NIST SP 800-34 Rev.1, Contingency Planning Guide for Federal Information Systems",
+        "url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final"
+      },
+      "questions": [
+        {
+          "stem": "¿Cuántos discos como mínimo necesita RAID 5?",
+          "options": [
+            {
+              "key": "a",
+              "text": "2"
+            },
+            {
+              "key": "b",
+              "text": "3"
+            },
+            {
+              "key": "c",
+              "text": "4"
+            },
+            {
+              "key": "d",
+              "text": "5"
+            }
+          ],
+          "correct": "b",
+          "explanation": "RAID 5 necesita al menos tres discos: datos y paridad distribuida; tolera el fallo de un disco.",
+          "source": {
+            "label": "NIST SP 800-34 Rev.1, Contingency Planning Guide for Federal Information Systems",
+            "url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final"
+          }
+        },
+        {
+          "stem": "¿Qué caracteriza a RAID 1?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Rayado sin redundancia"
+            },
+            {
+              "key": "b",
+              "text": "Espejo: cada disco contiene una copia de los datos"
+            },
+            {
+              "key": "c",
+              "text": "Doble paridad"
+            },
+            {
+              "key": "d",
+              "text": "Combinación de espejo y rayado"
+            }
+          ],
+          "correct": "b",
+          "explanation": "RAID 1 replica los datos en dos o más discos; tolera el fallo de un disco por espejo.",
+          "source": {
+            "label": "NIST SP 800-34 Rev.1, Contingency Planning Guide for Federal Information Systems",
+            "url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final"
+          }
+        },
+        {
+          "stem": "¿Qué nivel de RAID no aporta redundancia?",
+          "options": [
+            {
+              "key": "a",
+              "text": "RAID 0"
+            },
+            {
+              "key": "b",
+              "text": "RAID 1"
+            },
+            {
+              "key": "c",
+              "text": "RAID 5"
+            },
+            {
+              "key": "d",
+              "text": "RAID 6"
+            }
+          ],
+          "correct": "a",
+          "explanation": "RAID 0 solo reparte los datos (striping): si falla un disco se pierde el volumen.",
+          "source": {
+            "label": "NIST SP 800-34 Rev.1, Contingency Planning Guide for Federal Information Systems",
+            "url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final"
+          }
+        },
+        {
+          "stem": "¿Qué copia guarda todos los datos seleccionados?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Incremental"
+            },
+            {
+              "key": "b",
+              "text": "Diferencial"
+            },
+            {
+              "key": "c",
+              "text": "Completa"
+            },
+            {
+              "key": "d",
+              "text": "Snapshot"
+            }
+          ],
+          "correct": "c",
+          "explanation": "La copia completa guarda todo; es la base para restaurar las incrementales o diferenciales.",
+          "source": {
+            "label": "NIST SP 800-34 Rev.1, Contingency Planning Guide for Federal Information Systems",
+            "url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final"
+          }
+        },
+        {
+          "stem": "¿Qué copia guarda los cambios desde la última copia completa?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Incremental"
+            },
+            {
+              "key": "b",
+              "text": "Diferencial"
+            },
+            {
+              "key": "c",
+              "text": "Completa"
+            },
+            {
+              "key": "d",
+              "text": "Espejo"
+            }
+          ],
+          "correct": "b",
+          "explanation": "La diferencial acumula los cambios desde la última completa; la incremental parte de la última copia de cualquier tipo.",
+          "source": {
+            "label": "NIST SP 800-34 Rev.1, Contingency Planning Guide for Federal Information Systems",
+            "url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final"
+          }
+        },
+        {
+          "stem": "¿Qué significa la regla 3-2-1?",
+          "options": [
+            {
+              "key": "a",
+              "text": "3 copias, 2 soportes distintos y 1 fuera del sitio"
+            },
+            {
+              "key": "b",
+              "text": "3 servidores, 2 redes y 1 cortafuegos"
+            },
+            {
+              "key": "c",
+              "text": "3 copias, 2 contraseñas y 1 administrador"
+            },
+            {
+              "key": "d",
+              "text": "3 días, 2 semanas y 1 mes de retención"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La regla 3-2-1 pide tres copias, en dos tipos de soporte y al menos una fuera de la ubicación principal.",
+          "source": {
+            "label": "NIST SP 800-34 Rev.1, Contingency Planning Guide for Federal Information Systems",
+            "url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final"
+          }
+        },
+        {
+          "stem": "¿Qué mide el RTO?",
+          "options": [
+            {
+              "key": "a",
+              "text": "La cantidad de datos que se puede perder"
+            },
+            {
+              "key": "b",
+              "text": "El tiempo máximo aceptable para recuperar el servicio"
+            },
+            {
+              "key": "c",
+              "text": "El tamaño de la copia"
+            },
+            {
+              "key": "d",
+              "text": "El número de cintas necesarias"
+            }
+          ],
+          "correct": "b",
+          "explanation": "RTO es el tiempo objetivo de recuperación; RPO es la pérdida máxima de datos aceptable.",
+          "source": {
+            "label": "NIST SP 800-34 Rev.1, Contingency Planning Guide for Federal Information Systems",
+            "url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final"
+          }
+        },
+        {
+          "stem": "¿Por qué un snapshot no sustituye una copia de seguridad?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Porque ocupa demasiado"
+            },
+            {
+              "key": "b",
+              "text": "Porque suele estar en el mismo almacenamiento y se pierde con él"
+            },
+            {
+              "key": "c",
+              "text": "Porque no se puede programar"
+            },
+            {
+              "key": "d",
+              "text": "Porque solo funciona en Windows"
+            }
+          ],
+          "correct": "b",
+          "explanation": "Un snapshot es una imagen puntual en el mismo sistema; si se pierde el almacenamiento, se pierden datos y snapshot.",
+          "source": {
+            "label": "NIST SP 800-34 Rev.1, Contingency Planning Guide for Federal Information Systems",
+            "url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final"
+          }
+        },
+        {
+          "stem": "¿Qué debe hacerse para saber si una copia sirve?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Comprobar que el fichero existe"
+            },
+            {
+              "key": "b",
+              "text": "Restaurar en un entorno de prueba y medir el tiempo"
+            },
+            {
+              "key": "c",
+              "text": "Aumentar el número de discos"
+            },
+            {
+              "key": "d",
+              "text": "Cambiar el RAID cada mes"
+            }
+          ],
+          "correct": "b",
+          "explanation": "La copia se valida restaurando; sin prueba de restauración no se conoce el RTO real ni la integridad.",
+          "source": {
+            "label": "NIST SP 800-34 Rev.1, Contingency Planning Guide for Federal Information Systems",
+            "url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final"
+          }
+        },
+        {
+          "stem": "¿Qué relación hay entre RAID y copias de seguridad?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El RAID sustituye a las copias"
+            },
+            {
+              "key": "b",
+              "text": "El RAID da disponibilidad, pero no protege de borrados, cifrado o desastres"
+            },
+            {
+              "key": "c",
+              "text": "Las copias solo son necesarias si no hay RAID"
+            },
+            {
+              "key": "d",
+              "text": "El RAID y las copias son lo mismo"
+            }
+          ],
+          "correct": "b",
+          "explanation": "RAID tolera fallos de disco, pero replica borrados y cifrado; la copia externa es la que permite recuperar.",
+          "source": {
+            "label": "NIST SP 800-34 Rev.1, Contingency Planning Guide for Federal Information Systems",
+            "url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final"
           }
         }
       ]
@@ -5959,12 +6666,12 @@
   ],
   "progress": {
     "total": 40,
-    "apuntesCompletos": 15,
+    "apuntesCompletos": 17,
     "soloResumen": 0,
-    "pendientes": 25,
-    "conPractica": 15,
-    "sinPractica": 25,
-    "questions": 150,
+    "pendientes": 23,
+    "conPractica": 17,
+    "sinPractica": 23,
+    "questions": 170,
     "convocatorias": 12
   }
 }
