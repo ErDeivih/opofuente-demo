@@ -360,10 +360,10 @@
         "title": "Datos y desarrollo",
         "coverage": {
           "total": 7,
-          "conApuntes": 6,
+          "conApuntes": 7,
           "soloResumen": 0,
-          "pendientes": 1,
-          "conPractica": 6
+          "pendientes": 0,
+          "conPractica": 7
         },
         "topics": [
           {
@@ -417,10 +417,10 @@
           {
             "path": "IV.33",
             "title": "Informes y explotación de datos",
-            "apuntesStatus": "pendiente",
-            "practicaStatus": "pendiente",
-            "sectionCount": 0,
-            "questionCount": 0
+            "apuntesStatus": "completos",
+            "practicaStatus": "con_practica",
+            "sectionCount": 7,
+            "questionCount": 10
           }
         ]
       },
@@ -429,10 +429,10 @@
         "title": "Seguridad y administración electrónica",
         "coverage": {
           "total": 7,
-          "conApuntes": 2,
+          "conApuntes": 4,
           "soloResumen": 0,
-          "pendientes": 5,
-          "conPractica": 2
+          "pendientes": 3,
+          "conPractica": 4
         },
         "topics": [
           {
@@ -454,18 +454,18 @@
           {
             "path": "V.36",
             "title": "Criptografía y firma electrónica",
-            "apuntesStatus": "pendiente",
-            "practicaStatus": "pendiente",
-            "sectionCount": 0,
-            "questionCount": 0
+            "apuntesStatus": "completos",
+            "practicaStatus": "con_practica",
+            "sectionCount": 7,
+            "questionCount": 10
           },
           {
             "path": "V.37",
             "title": "Protección de datos aplicada",
-            "apuntesStatus": "pendiente",
-            "practicaStatus": "pendiente",
-            "sectionCount": 0,
-            "questionCount": 0
+            "apuntesStatus": "completos",
+            "practicaStatus": "con_practica",
+            "sectionCount": 7,
+            "questionCount": 10
           },
           {
             "path": "V.38",
@@ -2942,6 +2942,82 @@
       ],
       "practiceSlug": "iv-32"
     },
+    "IV.33": {
+      "path": "IV.33",
+      "title": "Informes y explotación de datos",
+      "apuntesStatus": "completos",
+      "practicaStatus": "con_practica",
+      "sectionCount": 7,
+      "questionCount": 10,
+      "source": {
+        "label": "Microsoft Learn — Documentación de Power BI",
+        "url": "https://learn.microsoft.com/es-es/power-bi/"
+      },
+      "sections": [
+        {
+          "heading": "Del dato operativo al informe",
+          "body": "Los sistemas operativos guardan datos para trabajar, no para analizar. Un **informe** responde preguntas concretas a partir de esos datos, y para construirlo suele haber un recorrido:\n\n- **Extraer** datos de una o varias fuentes.\n- **Transformar** y limpiar (tipos, duplicados, fechas, nombres).\n- **Cargar** en un almacén o modelo analítico.\n- **Consultar** y presentar los resultados.\n\nEse recorrido es **ETL** (o ELT si la transformación se hace después de cargar). Un informe sin datos fiables es una opinión con gráficos."
+        },
+        {
+          "heading": "Indicadores y preguntas",
+          "body": "Un **KPI** (indicador clave) mide un objetivo con una fórmula, una unidad, un periodo y una meta. Debe ser **accionable**: si cambia, alguien puede hacer algo.\n\nAntes de elegir el gráfico hay que definir la pregunta: «¿cuántos expedientes se resolvieron este mes?», «¿cuál es el tiempo medio de resolución?», «¿qué tipo de trámite genera más retraso?». Sin pregunta, el panel se llena de cifras que nadie usa.\n\nLos **datos de contexto** (periodo, unidad, fuente) evitan interpretaciones erróneas. Un KPI sin fecha o sin denominador puede engañar."
+        },
+        {
+          "heading": "Consultas y modelo de datos",
+          "body": "La explotación se apoya en **SQL**: filtros, agregaciones (`COUNT`, `SUM`, `AVG`), `GROUP BY` y uniones. Las **vistas** simplifican consultas complejas y las **vistas materializadas** guardan el resultado para acelerar lecturas, a cambio de actualizarlo.\n\nEn analítica se suele separar **hechos** (medidas, eventos) y **dimensiones** (quién, qué, cuándo, dónde). Ese modelo en estrella facilita filtrar y agregar sin duplicar datos.\n\nLa **calidad** se comprueba: nulos, duplicados, rangos, fechas imposibles y coherencia entre tablas."
+        },
+        {
+          "heading": "Visualización y paneles",
+          "body": "Cada gráfico tiene un uso:\n\n- **Barras**: comparar categorías.\n- **Líneas**: evolución temporal.\n- **Tartas**: proporciones simples, con pocas categorías.\n- **Tablas**: detalle y cifras exactas.\n- **Mapas**: distribución geográfica, solo si aporta.\n\nUn panel debe tener jerarquía visual, pocos colores y etiquetas claras. La accesibilidad exige contraste, texto alternativo y no depender solo del color. El **drill-down** permite pasar del resumen al detalle."
+        },
+        {
+          "heading": "Explotación, gobierno y privacidad",
+          "body": "La explotación incluye **actualización** programada, control de acceso por filas, catálogo de datos y definiciones compartidas. Si cada área calcula el mismo KPI de forma distinta, el panel pierde credibilidad.\n\nLos datos personales deben minimizarse, agregarse cuando sea posible y protegerse. Un informe con datos identificativos exige base jurídica y control de acceso; no se publica en abierto sin anonimizar.\n\nLa trazabilidad de la fuente permite auditar una cifra y corregirla."
+        },
+        {
+          "heading": "Tabla de recursos",
+          "table": {
+            "columns": [
+              "Recurso",
+              "Uso",
+              "Cuidado"
+            ],
+            "rows": [
+              [
+                "KPI",
+                "Medir un objetivo",
+                "Definir fórmula y periodo"
+              ],
+              [
+                "Tabla dinámica",
+                "Resumir y cruzar datos",
+                "Revisar agregaciones"
+              ],
+              [
+                "Vista materializada",
+                "Acelerar consultas",
+                "Actualización y espacio"
+              ],
+              [
+                "Panel",
+                "Comunicar resultados",
+                "No saturar de gráficos"
+              ],
+              [
+                "Modelo en estrella",
+                "Facilitar análisis",
+                "Dimensiones coherentes"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Ejemplo resuelto",
+          "body": "**Supuesto.** El ayuntamiento quiere un panel mensual de expedientes: cuántos entran, cuántos se resuelven, tiempo medio y tipo más frecuente.\n\n**Resolución.**\n\n- Se definen KPIs: **entradas**, **resueltos**, **tiempo medio de resolución** y **% fuera de plazo**, con fórmula y periodo.\n- Se construye un modelo con **hechos** (expedientes) y **dimensiones** (tipo, oficina, fecha).\n- Se crean consultas agregadas y una vista para el detalle; se validan nulos y duplicados.\n- Se diseña un panel con barras por tipo, línea temporal y tabla de detalle; se añade filtro por oficina.\n- Se revisa la privacidad: el panel muestra agregados, no datos personales.\n\n**Conclusión.** Un informe útil empieza por la pregunta y termina en una decisión; el gráfico es solo la última capa."
+        }
+      ],
+      "practiceSlug": "iv-33"
+    },
     "V.34": {
       "path": "V.34",
       "title": "Seguridad de la información",
@@ -3109,6 +3185,156 @@
         }
       ],
       "practiceSlug": "v-35"
+    },
+    "V.36": {
+      "path": "V.36",
+      "title": "Criptografía y firma electrónica",
+      "apuntesStatus": "completos",
+      "practicaStatus": "con_practica",
+      "sectionCount": 7,
+      "questionCount": 10,
+      "source": {
+        "label": "Ley 6/2020, de 11 de noviembre, reguladora de determinados aspectos de los servicios electrónicos de confianza",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2020-14046"
+      },
+      "sections": [
+        {
+          "heading": "Criptografía simétrica y asimétrica",
+          "body": "La **criptografía simétrica** usa la misma clave para cifrar y descifrar (AES). Es rápida y adecuada para grandes volúmenes, pero exige distribuir la clave de forma segura.\n\nLa **criptografía asimétrica** usa un par de claves: una **pública** (se comparte) y otra **privada** (se protege). Lo cifrado con una se descifra con la otra. Es más lenta, así que se usa para intercambiar claves e identificar, no para cifrar todo el tráfico.\n\nEn la práctica se combinan: TLS negocia una clave simétrica usando criptografía asimétrica y luego cifra la sesión con la clave simétrica."
+        },
+        {
+          "heading": "Funciones hash e integridad",
+          "body": "Una **función hash** transforma cualquier entrada en una huella de longitud fija. Debe ser determinista, rápida y resistente a colisiones. SHA-256 es un estándar habitual; MD5 y SHA-1 están obsoletos para seguridad.\n\nEl hash detecta cambios: si el contenido cambia, la huella cambia. No cifra ni permite recuperar el original. Para contraseñas se usan funciones específicas con sal y coste (bcrypt, Argon2), nunca un hash simple.\n\nEl hash de un mensaje es la base de la firma electrónica: se firma la huella, no el documento completo."
+        },
+        {
+          "heading": "Firma electrónica",
+          "body": "La **firma electrónica** asocia una identidad a un documento y garantiza integridad. El firmante calcula el hash del documento y lo firma con su **clave privada**; cualquiera verifica con la **clave pública** del certificado.\n\nUna firma válida implica: el documento no ha cambiado, la firma corresponde a la clave y el certificado era válido en el momento. La **fecha y hora** (sellado de tiempo) fija el momento de la firma.\n\nLa Ley 6/2020 regula los servicios electrónicos de confianza y distingue firma **simple**, **avanzada** y **cualificada**; solo esta última tiene el equivalente legal de la firma manuscrita en los términos previstos."
+        },
+        {
+          "heading": "Certificados, PKI y TLS",
+          "body": "Un **certificado digital** vincula una clave pública con una identidad y lo emite una **autoridad de certificación (CA)**. La **PKI** (infraestructura de clave pública) gestiona certificados, revocación y confianza.\n\nEl navegador confía en CAs incluidas en su almacén. Si un certificado caduca, se revoca o no coincide con el dominio, la conexión segura falla.\n\n**TLS** usa certificados para autenticar el servidor y cifrar la comunicación. No garantiza que el sitio sea honesto, solo que la conexión es confidencial e íntegra con ese dominio."
+        },
+        {
+          "heading": "Buenas prácticas y errores",
+          "body": "Buenas prácticas:\n\n- Proteger la clave privada; nunca compartirla ni incluirla en el código.\n- Usar algoritmos y longitudes actuales; retirar MD5, SHA-1, DES y RSA corto.\n- Verificar certificados y cadenas de confianza; no desactivar TLS por comodidad.\n- Cifrar datos en tránsito y en reposo.\n- Gestionar el ciclo de vida: alta, renovación, revocación y custodia.\n\nUn error típico es confundir **cifrar** (ocultar) con **firmar** (autenticar e integrar). Cifrar no da autenticidad; firmar no oculta el contenido."
+        },
+        {
+          "heading": "Tabla de conceptos",
+          "table": {
+            "columns": [
+              "Concepto",
+              "Qué aporta",
+              "Clave"
+            ],
+            "rows": [
+              [
+                "Simétrico",
+                "Confidencialidad rápida",
+                "Misma clave"
+              ],
+              [
+                "Asimétrico",
+                "Intercambio y autenticación",
+                "Pública/privada"
+              ],
+              [
+                "Hash",
+                "Integridad",
+                "Huella fija"
+              ],
+              [
+                "Firma",
+                "Autenticidad e integridad",
+                "Privada del firmante"
+              ],
+              [
+                "Certificado",
+                "Vincula identidad y clave",
+                "Emitido por una CA"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Ejemplo resuelto",
+          "body": "**Supuesto.** Una técnica debe firmar electrónicamente una resolución y enviarla por sede electrónica.\n\n**Resolución.**\n\n- El sistema calcula el **hash** del documento y lo firma con la clave privada de su certificado cualificado.\n- Se añade un **sellado de tiempo** para fijar el momento.\n- El receptor comprueba la firma con la clave pública, valida el certificado y comprueba que no está revocado.\n- El documento viaja por **TLS**; la firma y el cifrado son capas distintas.\n- Se conserva el documento firmado y la evidencia de validación según la política de archivo.\n\n**Conclusión.** La firma no es un escaneo de la rúbrica: es criptografía, certificado y verificación; si falta una pieza, la firma no es fiable."
+        }
+      ],
+      "practiceSlug": "v-36"
+    },
+    "V.37": {
+      "path": "V.37",
+      "title": "Protección de datos aplicada",
+      "apuntesStatus": "completos",
+      "practicaStatus": "con_practica",
+      "sectionCount": 7,
+      "questionCount": 10,
+      "source": {
+        "label": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673"
+      },
+      "sections": [
+        {
+          "heading": "Marco y principios",
+          "body": "El tratamiento de datos personales en España se rige por el **RGPD** (Reglamento UE 2016/679) y por la **LOPDGDD** (LO 3/2018). El RGPD es directamente aplicable; la ley orgánica lo desarrolla y añade garantías.\n\nLos principios son:\n\n- **Licitud, lealtad y transparencia**.\n- **Limitación de la finalidad**.\n- **Minimización**: solo los datos necesarios.\n- **Exactitud**.\n- **Limitación del plazo de conservación**.\n- **Integridad y confidencialidad**.\n- **Responsabilidad proactiva**: hay que poder demostrar el cumplimiento.\n\nEl tratamiento debe ser lícito desde el inicio, no solo seguro."
+        },
+        {
+          "heading": "Base jurídica y consentimiento",
+          "body": "Todo tratamiento necesita una **base jurídica**: consentimiento, ejecución de contrato, obligación legal, interés vital, misión en interés público o interés legítimo. En las administraciones, la base habitual es el **cumplimiento de una obligación legal** o el **ejercicio de potestades públicas**.\n\nEl **consentimiento** debe ser libre, específico, informado e inequívoco; no puede imponerse como condición para un servicio si no es necesario. En relaciones de poder (administración-ciudadano), el consentimiento rara vez es una base sólida.\n\nLa finalidad debe informarse antes de recoger los datos: quién trata, para qué, base jurídica, destinatarios, plazo y derechos."
+        },
+        {
+          "heading": "Derechos de las personas",
+          "body": "Los derechos principales son **acceso, rectificación, supresión** (derecho al olvido), **limitación del tratamiento**, **portabilidad** y **oposición**. También existe el derecho a no ser objeto de decisiones individuales automatizadas con efectos jurídicos.\n\nLas solicitudes se atienden en el plazo legal (con carácter general, **un mes**, ampliable en casos complejos). La administración debe facilitar un canal claro y registrar la solicitud.\n\nLos derechos no son absolutos: pueden limitarse por ley cuando chocan con otros derechos o con funciones públicas, pero la limitación debe estar prevista y motivada."
+        },
+        {
+          "heading": "Delegado, registro y evaluación de impacto",
+          "body": "El **delegado de protección de datos (DPD/DPO)** asesora, supervisa y sirve de contacto con la autoridad de control. Es obligatorio en determinados casos, incluido el tratamiento a gran escala por administraciones.\n\nEl **registro de actividades de tratamiento** describe qué datos se tratan, para qué, dónde y con qué medidas. La **evaluación de impacto (EIPD)** es necesaria cuando el tratamiento puede entrañar un alto riesgo para los derechos, por ejemplo, perfilado o datos sensibles a gran escala.\n\nLa **transparencia** se concreta en información clara y en un registro de acceso sencillo."
+        },
+        {
+          "heading": "Seguridad y brechas",
+          "body": "La seguridad debe ser proporcionada al riesgo: control de acceso, cifrado, minimización, copias, registro de actividad y formación. No basta con medidas técnicas; también cuentan las organizativas.\n\nUna **brecha de seguridad** debe registrarse y, si supone riesgo para los derechos, notificarse a la autoridad de control en **72 horas**. Si el riesgo es alto, también se informa a las personas afectadas.\n\nLa **privacidad desde el diseño y por defecto** obliga a incorporar la protección desde el inicio del proyecto, no al final."
+        },
+        {
+          "heading": "Tabla de principios",
+          "table": {
+            "columns": [
+              "Principio",
+              "Qué exige"
+            ],
+            "rows": [
+              [
+                "Licitud",
+                "Base jurídica para el tratamiento"
+              ],
+              [
+                "Minimización",
+                "Solo los datos necesarios"
+              ],
+              [
+                "Limitación de finalidad",
+                "Usar los datos para lo informado"
+              ],
+              [
+                "Exactitud",
+                "Datos correctos y actualizados"
+              ],
+              [
+                "Conservación",
+                "Plazo limitado y justificado"
+              ],
+              [
+                "Seguridad",
+                "Integridad y confidencialidad"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Ejemplo resuelto",
+          "body": "**Supuesto.** Un ayuntamiento quiere un formulario para reservar pistas deportivas y guardar el DNI y el teléfono.\n\n**Resolución.**\n\n- Se identifica la **base jurídica** (gestión del servicio) y la **finalidad** (reserva y comunicación de incidencias).\n- Se aplica **minimización**: se pide solo lo necesario; si el DNI no es imprescindible, no se recoge.\n- Se informa de forma clara y se enlaza la política de privacidad.\n- Se define un **plazo de conservación** y se limita el acceso al personal autorizado.\n- Se registra el tratamiento y se revisan las medidas de seguridad; si hubiera una brecha, se activa el protocolo y se valora la notificación en 72 horas.\n\n**Conclusión.** La protección de datos es una decisión de diseño: qué se recoge, para qué, cuánto tiempo y quién accede."
+        }
+      ],
+      "practiceSlug": "v-37"
     }
   },
   "practices": [
@@ -12105,6 +12331,287 @@
       ]
     },
     {
+      "slug": "iv-33",
+      "tema_path": "IV.33",
+      "title": "Práctica · Informes y explotación de datos",
+      "source": {
+        "label": "Microsoft Learn — Documentación de Power BI",
+        "url": "https://learn.microsoft.com/es-es/power-bi/"
+      },
+      "questions": [
+        {
+          "stem": "¿Qué es un KPI?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Un indicador clave con fórmula, periodo y meta para medir un objetivo"
+            },
+            {
+              "key": "b",
+              "text": "Un tipo de tabla de base de datos"
+            },
+            {
+              "key": "c",
+              "text": "Un lenguaje de programación"
+            },
+            {
+              "key": "d",
+              "text": "Un protocolo de red"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El KPI mide un objetivo de forma accionable; debe tener fórmula, unidad, periodo y meta.",
+          "source": {
+            "label": "Microsoft Learn — Documentación de Power BI",
+            "url": "https://learn.microsoft.com/es-es/power-bi/"
+          }
+        },
+        {
+          "stem": "¿Qué significa ETL?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Extraer, transformar y cargar datos"
+            },
+            {
+              "key": "b",
+              "text": "Enviar, transmitir y listar"
+            },
+            {
+              "key": "c",
+              "text": "Evaluar, testear y lanzar"
+            },
+            {
+              "key": "d",
+              "text": "Editar, tabular y leer"
+            }
+          ],
+          "correct": "a",
+          "explanation": "ETL mueve datos desde fuentes, los limpia y transforma, y los carga en un destino analítico.",
+          "source": {
+            "label": "Microsoft Learn — Documentación de Power BI",
+            "url": "https://learn.microsoft.com/es-es/power-bi/"
+          }
+        },
+        {
+          "stem": "¿Qué gráfico es más adecuado para comparar categorías?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Barras"
+            },
+            {
+              "key": "b",
+              "text": "Líneas"
+            },
+            {
+              "key": "c",
+              "text": "Tarta"
+            },
+            {
+              "key": "d",
+              "text": "Dispersión"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Las barras comparan magnitudes entre categorías; las líneas muestran evolución temporal.",
+          "source": {
+            "label": "Microsoft Learn — Documentación de Power BI",
+            "url": "https://learn.microsoft.com/es-es/power-bi/"
+          }
+        },
+        {
+          "stem": "¿Qué gráfico muestra mejor una evolución temporal?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Líneas"
+            },
+            {
+              "key": "b",
+              "text": "Tarta"
+            },
+            {
+              "key": "c",
+              "text": "Barras horizontales"
+            },
+            {
+              "key": "d",
+              "text": "Mapa"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La línea representa la evolución de un valor a lo largo del tiempo.",
+          "source": {
+            "label": "Microsoft Learn — Documentación de Power BI",
+            "url": "https://learn.microsoft.com/es-es/power-bi/"
+          }
+        },
+        {
+          "stem": "¿Qué es una vista materializada?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Una consulta cuyo resultado se guarda para acelerar lecturas"
+            },
+            {
+              "key": "b",
+              "text": "Una tabla temporal que se borra al cerrar"
+            },
+            {
+              "key": "c",
+              "text": "Un índice de texto"
+            },
+            {
+              "key": "d",
+              "text": "Un tipo de gráfico"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La vista materializada almacena el resultado y debe actualizarse; acelera consultas costosas.",
+          "source": {
+            "label": "Microsoft Learn — Documentación de Power BI",
+            "url": "https://learn.microsoft.com/es-es/power-bi/"
+          }
+        },
+        {
+          "stem": "¿Qué permite un modelo en estrella?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Separar hechos y dimensiones para facilitar el análisis"
+            },
+            {
+              "key": "b",
+              "text": "Eliminar la necesidad de SQL"
+            },
+            {
+              "key": "c",
+              "text": "Cifrar los datos"
+            },
+            {
+              "key": "d",
+              "text": "Sustituir el ETL"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El modelo en estrella organiza hechos y dimensiones y simplifica filtros y agregaciones.",
+          "source": {
+            "label": "Microsoft Learn — Documentación de Power BI",
+            "url": "https://learn.microsoft.com/es-es/power-bi/"
+          }
+        },
+        {
+          "stem": "¿Qué debe incluir un panel para no engañar?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Periodo, unidad, fuente y definición de cada KPI"
+            },
+            {
+              "key": "b",
+              "text": "Solo colores llamativos"
+            },
+            {
+              "key": "c",
+              "text": "La mayor cantidad de gráficos posible"
+            },
+            {
+              "key": "d",
+              "text": "Datos personales sin protección"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El contexto y las definiciones evitan interpretaciones erróneas y permiten auditar las cifras.",
+          "source": {
+            "label": "Microsoft Learn — Documentación de Power BI",
+            "url": "https://learn.microsoft.com/es-es/power-bi/"
+          }
+        },
+        {
+          "stem": "¿Qué es drill-down?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Pasar de un resumen a un nivel de detalle mayor"
+            },
+            {
+              "key": "b",
+              "text": "Eliminar filtros"
+            },
+            {
+              "key": "c",
+              "text": "Cambiar el color del gráfico"
+            },
+            {
+              "key": "d",
+              "text": "Exportar a PDF"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El drill-down permite navegar del agregado al detalle para investigar una cifra.",
+          "source": {
+            "label": "Microsoft Learn — Documentación de Power BI",
+            "url": "https://learn.microsoft.com/es-es/power-bi/"
+          }
+        },
+        {
+          "stem": "¿Qué riesgo tiene un panel con datos personales?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Exponer información si no se controla el acceso y se minimiza"
+            },
+            {
+              "key": "b",
+              "text": "Que los gráficos sean más lentos"
+            },
+            {
+              "key": "c",
+              "text": "Que no se pueda exportar"
+            },
+            {
+              "key": "d",
+              "text": "Ninguno, si está en la intranet"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Los datos personales requieren base jurídica, minimización, control de acceso y, a menudo, agregación.",
+          "source": {
+            "label": "Microsoft Learn — Documentación de Power BI",
+            "url": "https://learn.microsoft.com/es-es/power-bi/"
+          }
+        },
+        {
+          "stem": "¿Por qué hay que validar la calidad del dato antes de publicar un informe?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Porque nulos, duplicados o rangos erróneos producen conclusiones falsas"
+            },
+            {
+              "key": "b",
+              "text": "Porque el informe ocupa más"
+            },
+            {
+              "key": "c",
+              "text": "Porque lo exige el lenguaje SQL"
+            },
+            {
+              "key": "d",
+              "text": "Porque mejora el color"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Un informe con datos sucios transmite errores con apariencia de rigor; la validación es parte del proceso.",
+          "source": {
+            "label": "Microsoft Learn — Documentación de Power BI",
+            "url": "https://learn.microsoft.com/es-es/power-bi/"
+          }
+        }
+      ]
+    },
+    {
       "slug": "v-34",
       "tema_path": "V.34",
       "title": "Práctica · Seguridad de la información",
@@ -12665,16 +13172,578 @@
           }
         }
       ]
+    },
+    {
+      "slug": "v-36",
+      "tema_path": "V.36",
+      "title": "Práctica · Criptografía y firma electrónica",
+      "source": {
+        "label": "Ley 6/2020, de 11 de noviembre, reguladora de determinados aspectos de los servicios electrónicos de confianza",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2020-14046"
+      },
+      "questions": [
+        {
+          "stem": "¿Qué usa la criptografía simétrica?",
+          "options": [
+            {
+              "key": "a",
+              "text": "La misma clave para cifrar y descifrar"
+            },
+            {
+              "key": "b",
+              "text": "Una clave pública y otra privada"
+            },
+            {
+              "key": "c",
+              "text": "Solo funciones hash"
+            },
+            {
+              "key": "d",
+              "text": "Un certificado digital"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La criptografía simétrica comparte una única clave; es rápida y se usa para cifrar volúmenes y sesiones.",
+          "source": {
+            "label": "Ley 6/2020, de 11 de noviembre, reguladora de determinados aspectos de los servicios electrónicos de confianza",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2020-14046"
+          }
+        },
+        {
+          "stem": "¿Qué clave se usa para firmar electrónicamente?",
+          "options": [
+            {
+              "key": "a",
+              "text": "La clave privada del firmante"
+            },
+            {
+              "key": "b",
+              "text": "La clave pública del firmante"
+            },
+            {
+              "key": "c",
+              "text": "La clave pública del receptor"
+            },
+            {
+              "key": "d",
+              "text": "Una clave simétrica compartida"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El firmante firma con su clave privada; el receptor verifica con la clave pública del certificado.",
+          "source": {
+            "label": "Ley 6/2020, de 11 de noviembre, reguladora de determinados aspectos de los servicios electrónicos de confianza",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2020-14046"
+          }
+        },
+        {
+          "stem": "¿Qué aporta una función hash?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Una huella que permite detectar cambios en el contenido"
+            },
+            {
+              "key": "b",
+              "text": "Confidencialidad del documento"
+            },
+            {
+              "key": "c",
+              "text": "Una copia de seguridad"
+            },
+            {
+              "key": "d",
+              "text": "Un certificado de identidad"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El hash detecta alteraciones; no cifra ni sustituye la firma.",
+          "source": {
+            "label": "Ley 6/2020, de 11 de noviembre, reguladora de determinados aspectos de los servicios electrónicos de confianza",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2020-14046"
+          }
+        },
+        {
+          "stem": "¿Qué algoritmo hash está obsoleto para seguridad?",
+          "options": [
+            {
+              "key": "a",
+              "text": "MD5"
+            },
+            {
+              "key": "b",
+              "text": "SHA-256"
+            },
+            {
+              "key": "c",
+              "text": "SHA-3"
+            },
+            {
+              "key": "d",
+              "text": "Argon2"
+            }
+          ],
+          "correct": "a",
+          "explanation": "MD5 y SHA-1 tienen colisiones conocidas y no deben usarse para seguridad; SHA-256/SHA-3 son actuales.",
+          "source": {
+            "label": "Ley 6/2020, de 11 de noviembre, reguladora de determinados aspectos de los servicios electrónicos de confianza",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2020-14046"
+          }
+        },
+        {
+          "stem": "¿Qué es un certificado digital?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Un documento que vincula una clave pública con una identidad y lo emite una CA"
+            },
+            {
+              "key": "b",
+              "text": "Una contraseña cifrada"
+            },
+            {
+              "key": "c",
+              "text": "Un algoritmo de compresión"
+            },
+            {
+              "key": "d",
+              "text": "Una copia de la clave privada"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El certificado lo emite una autoridad de certificación y permite verificar la identidad asociada a la clave pública.",
+          "source": {
+            "label": "Ley 6/2020, de 11 de noviembre, reguladora de determinados aspectos de los servicios electrónicos de confianza",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2020-14046"
+          }
+        },
+        {
+          "stem": "¿Qué garantiza TLS?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Confidencialidad e integridad de la conexión y autenticación del servidor"
+            },
+            {
+              "key": "b",
+              "text": "Que el sitio sea legalmente fiable"
+            },
+            {
+              "key": "c",
+              "text": "Que no haya malware en el servidor"
+            },
+            {
+              "key": "d",
+              "text": "Que el usuario esté autenticado siempre"
+            }
+          ],
+          "correct": "a",
+          "explanation": "TLS cifra e integra la comunicación y autentica el servidor con su certificado; no garantiza la honestidad del sitio.",
+          "source": {
+            "label": "Ley 6/2020, de 11 de noviembre, reguladora de determinados aspectos de los servicios electrónicos de confianza",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2020-14046"
+          }
+        },
+        {
+          "stem": "¿Qué tipo de firma tiene el equivalente legal de la firma manuscrita en los términos de la ley?",
+          "options": [
+            {
+              "key": "a",
+              "text": "La firma electrónica cualificada"
+            },
+            {
+              "key": "b",
+              "text": "La firma simple"
+            },
+            {
+              "key": "c",
+              "text": "La firma avanzada"
+            },
+            {
+              "key": "d",
+              "text": "Cualquier firma escaneada"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La Ley 6/2020 distingue simple, avanzada y cualificada; la cualificada tiene el equivalente legal de la manuscrita en los términos previstos.",
+          "source": {
+            "label": "Ley 6/2020, de 11 de noviembre, reguladora de determinados aspectos de los servicios electrónicos de confianza",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2020-14046"
+          }
+        },
+        {
+          "stem": "¿Para qué sirve un sellado de tiempo?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Para fijar el momento en que se firmó o existió un documento"
+            },
+            {
+              "key": "b",
+              "text": "Para cifrar el documento"
+            },
+            {
+              "key": "c",
+              "text": "Para comprimir el archivo"
+            },
+            {
+              "key": "d",
+              "text": "Para renovar el certificado"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El sello de tiempo aporta evidencia temporal y complementa la firma.",
+          "source": {
+            "label": "Ley 6/2020, de 11 de noviembre, reguladora de determinados aspectos de los servicios electrónicos de confianza",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2020-14046"
+          }
+        },
+        {
+          "stem": "¿Qué diferencia hay entre cifrar y firmar?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Cifrar oculta el contenido; firmar autentica e integra"
+            },
+            {
+              "key": "b",
+              "text": "Son lo mismo"
+            },
+            {
+              "key": "c",
+              "text": "Firmar oculta el contenido"
+            },
+            {
+              "key": "d",
+              "text": "Cifrar autentica al firmante"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El cifrado protege la confidencialidad; la firma acredita autoría e integridad. Son objetivos distintos.",
+          "source": {
+            "label": "Ley 6/2020, de 11 de noviembre, reguladora de determinados aspectos de los servicios electrónicos de confianza",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2020-14046"
+          }
+        },
+        {
+          "stem": "¿Qué debe hacerse con la clave privada?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Protegerla y no compartirla ni incluirla en el código"
+            },
+            {
+              "key": "b",
+              "text": "Publicarla para que todos la usen"
+            },
+            {
+              "key": "c",
+              "text": "Guardarla en el repositorio"
+            },
+            {
+              "key": "d",
+              "text": "Enviarla por correo sin cifrar"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La clave privada es el secreto del firmante; su filtración rompe la autenticidad y la confianza.",
+          "source": {
+            "label": "Ley 6/2020, de 11 de noviembre, reguladora de determinados aspectos de los servicios electrónicos de confianza",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2020-14046"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "v-37",
+      "tema_path": "V.37",
+      "title": "Práctica · Protección de datos aplicada",
+      "source": {
+        "label": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673"
+      },
+      "questions": [
+        {
+          "stem": "¿Qué norma principal regula la protección de datos en la UE?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El RGPD"
+            },
+            {
+              "key": "b",
+              "text": "La Ley 39/2015"
+            },
+            {
+              "key": "c",
+              "text": "La Ley 9/2017"
+            },
+            {
+              "key": "d",
+              "text": "El ENS"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El RGPD (Reglamento UE 2016/679) es la norma principal, desarrollada en España por la LOPDGDD.",
+          "source": {
+            "label": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673"
+          }
+        },
+        {
+          "stem": "¿Qué exige el principio de minimización?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Recoger solo los datos necesarios para la finalidad"
+            },
+            {
+              "key": "b",
+              "text": "Recoger cuantos más datos mejor"
+            },
+            {
+              "key": "c",
+              "text": "Conservar los datos indefinidamente"
+            },
+            {
+              "key": "d",
+              "text": "Publicar todos los datos"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La minimización limita los datos a lo adecuado, pertinente y necesario para el fin.",
+          "source": {
+            "label": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673"
+          }
+        },
+        {
+          "stem": "¿Cuál es una base jurídica habitual para una administración pública?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El cumplimiento de una obligación legal o el ejercicio de potestades públicas"
+            },
+            {
+              "key": "b",
+              "text": "El consentimiento siempre"
+            },
+            {
+              "key": "c",
+              "text": "El interés comercial"
+            },
+            {
+              "key": "d",
+              "text": "La venta de datos"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Las administraciones tratan datos, sobre todo, por obligación legal o misión de interés público; el consentimiento no siempre es la base adecuada.",
+          "source": {
+            "label": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673"
+          }
+        },
+        {
+          "stem": "¿Qué caracteriza al consentimiento válido?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Libre, específico, informado e inequívoco"
+            },
+            {
+              "key": "b",
+              "text": "Genérico y tácito"
+            },
+            {
+              "key": "c",
+              "text": "Obligatorio para cualquier servicio"
+            },
+            {
+              "key": "d",
+              "text": "Verbal y sin información"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El consentimiento debe ser una manifestación libre, específica, informada e inequívoca de la voluntad.",
+          "source": {
+            "label": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673"
+          }
+        },
+        {
+          "stem": "¿En qué plazo general deben atenderse los derechos?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Un mes"
+            },
+            {
+              "key": "b",
+              "text": "24 horas"
+            },
+            {
+              "key": "c",
+              "text": "Un año"
+            },
+            {
+              "key": "d",
+              "text": "No hay plazo"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Con carácter general, el plazo es de un mes, ampliable en casos complejos según el RGPD.",
+          "source": {
+            "label": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673"
+          }
+        },
+        {
+          "stem": "¿Qué es el derecho de portabilidad?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Recibir los datos en un formato estructurado y transmitirlos a otro responsable"
+            },
+            {
+              "key": "b",
+              "text": "Borrar todos los datos"
+            },
+            {
+              "key": "c",
+              "text": "Oponerse a cualquier tratamiento"
+            },
+            {
+              "key": "d",
+              "text": "Cambiar de administración"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La portabilidad permite obtener y reutilizar los datos en un formato interoperable cuando se cumplen los requisitos.",
+          "source": {
+            "label": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673"
+          }
+        },
+        {
+          "stem": "¿Qué es una evaluación de impacto (EIPD)?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Un análisis del riesgo de un tratamiento que puede afectar gravemente a los derechos"
+            },
+            {
+              "key": "b",
+              "text": "Una auditoría contable"
+            },
+            {
+              "key": "c",
+              "text": "Un test de velocidad"
+            },
+            {
+              "key": "d",
+              "text": "Una copia de seguridad"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La EIPD evalúa riesgos de tratamientos de alto riesgo y define medidas para mitigarlos.",
+          "source": {
+            "label": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673"
+          }
+        },
+        {
+          "stem": "¿Cuándo debe notificarse una brecha de seguridad a la autoridad de control?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Cuando supone un riesgo para los derechos, en un plazo de 72 horas"
+            },
+            {
+              "key": "b",
+              "text": "Solo si afecta a más de un millón de personas"
+            },
+            {
+              "key": "c",
+              "text": "Nunca"
+            },
+            {
+              "key": "d",
+              "text": "Al año siguiente"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La brecha con riesgo debe notificarse sin dilación indebida y, a más tardar, en 72 horas.",
+          "source": {
+            "label": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673"
+          }
+        },
+        {
+          "stem": "¿Qué significa privacidad desde el diseño?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Incorporar la protección de datos desde el inicio del proyecto"
+            },
+            {
+              "key": "b",
+              "text": "Añadir una política al final"
+            },
+            {
+              "key": "c",
+              "text": "Cifrar solo el disco"
+            },
+            {
+              "key": "d",
+              "text": "Ocultar el formulario"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La privacidad desde el diseño y por defecto se integra en el diseño del sistema y en la configuración inicial.",
+          "source": {
+            "label": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673"
+          }
+        },
+        {
+          "stem": "¿Qué debe hacer una administración antes de recoger datos personales?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Definir finalidad, base jurídica, plazo y medidas de seguridad"
+            },
+            {
+              "key": "b",
+              "text": "Recogerlos y decidir después"
+            },
+            {
+              "key": "c",
+              "text": "Publicarlos en abierto"
+            },
+            {
+              "key": "d",
+              "text": "Compartirlos con terceros sin contrato"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La licitud y la transparencia exigen definir el tratamiento antes de recoger los datos.",
+          "source": {
+            "label": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales",
+            "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673"
+          }
+        }
+      ]
     }
   ],
   "progress": {
     "total": 40,
-    "apuntesCompletos": 34,
+    "apuntesCompletos": 37,
     "soloResumen": 0,
-    "pendientes": 6,
-    "conPractica": 34,
-    "sinPractica": 6,
-    "questions": 340,
+    "pendientes": 3,
+    "conPractica": 37,
+    "sinPractica": 3,
+    "questions": 370,
     "convocatorias": 12
   }
 }
