@@ -275,10 +275,10 @@
         "title": "Sistemas, redes y comunicaciones",
         "coverage": {
           "total": 9,
-          "conApuntes": 3,
+          "conApuntes": 4,
           "soloResumen": 0,
-          "pendientes": 6,
-          "conPractica": 3
+          "pendientes": 5,
+          "conPractica": 4
         },
         "topics": [
           {
@@ -292,10 +292,10 @@
           {
             "path": "III.19",
             "title": "Virtualización y contenedores",
-            "apuntesStatus": "pendiente",
-            "practicaStatus": "pendiente",
-            "sectionCount": 0,
-            "questionCount": 0
+            "apuntesStatus": "completos",
+            "practicaStatus": "con_practica",
+            "sectionCount": 6,
+            "questionCount": 10
           },
           {
             "path": "III.20",
@@ -360,19 +360,19 @@
         "title": "Datos y desarrollo",
         "coverage": {
           "total": 7,
-          "conApuntes": 0,
+          "conApuntes": 1,
           "soloResumen": 0,
-          "pendientes": 7,
-          "conPractica": 0
+          "pendientes": 6,
+          "conPractica": 1
         },
         "topics": [
           {
             "path": "IV.27",
             "title": "Bases de datos relacionales",
-            "apuntesStatus": "pendiente",
-            "practicaStatus": "pendiente",
-            "sectionCount": 0,
-            "questionCount": 0
+            "apuntesStatus": "completos",
+            "practicaStatus": "con_practica",
+            "sectionCount": 7,
+            "questionCount": 10
           },
           {
             "path": "IV.28",
@@ -1333,6 +1333,78 @@
       ],
       "practiceSlug": "ii-13"
     },
+    "III.19": {
+      "path": "III.19",
+      "title": "Virtualización y contenedores",
+      "apuntesStatus": "completos",
+      "practicaStatus": "con_practica",
+      "sectionCount": 6,
+      "questionCount": 10,
+      "source": {
+        "label": "Docker Docs — Get started (documentación oficial)",
+        "url": "https://docs.docker.com/get-started/"
+      },
+      "sections": [
+        {
+          "heading": "Virtualización: hipervisor, máquina virtual e invitado",
+          "body": "La **virtualización** permite ejecutar varios sistemas operativos sobre un mismo servidor físico. El **hipervisor** crea y gestiona **máquinas virtuales (VM)**; cada VM tiene su propio sistema operativo invitado y recursos virtuales (CPU, memoria, disco, red).\n\nSe distingue entre:\n\n- **Hipervisor de tipo 1** (bare metal): se ejecuta directamente sobre el hardware (por ejemplo, VMware ESXi o Microsoft Hyper-V).\n- **Hipervisor de tipo 2** (hosted): se ejecuta sobre un sistema operativo anfitrión (por ejemplo, VirtualBox).\n\nVentajas: consolidación de servidores, aislamiento, snapshots y despliegue rápido. El coste es la capa de virtualización y la gestión de licencias."
+        },
+        {
+          "heading": "Contenedores: aislamiento sin sistema operativo propio",
+          "body": "Un **contenedor** empaqueta una aplicación y sus dependencias, pero **comparte el kernel** del sistema operativo anfitrión. El aislamiento se consigue con **namespaces** (visibilidad de procesos, red, sistema de ficheros) y **cgroups** (límites de CPU, memoria y E/S).\n\nUna **imagen** es una plantilla inmutable; un **contenedor** es una instancia en ejecución. Las imágenes se construyen con un **Dockerfile**, se guardan en un **registro** y se despliegan de forma reproducible."
+        },
+        {
+          "heading": "Máquina virtual frente a contenedor",
+          "table": {
+            "columns": [
+              "Criterio",
+              "Máquina virtual",
+              "Contenedor"
+            ],
+            "rows": [
+              [
+                "Kernel",
+                "Propio, invitado",
+                "Comparte el del anfitrión"
+              ],
+              [
+                "Arranque",
+                "Lento (minutos)",
+                "Rápido (segundos)"
+              ],
+              [
+                "Densidad",
+                "Menor",
+                "Mayor"
+              ],
+              [
+                "Aislamiento",
+                "Fuerte, a nivel de hardware virtual",
+                "A nivel de proceso, más ligero"
+              ],
+              [
+                "Uso típico",
+                "Sistemas operativos completos y legados",
+                "Microservicios y aplicaciones empaquetadas"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Almacenamiento y red",
+          "body": "En virtualización, el disco de una VM suele ser un **disco virtual** (un fichero o volumen) y los snapshots permiten volver a un estado anterior. En contenedores, los datos persistentes van en **volúmenes**; el sistema de ficheros de la imagen es efímero.\n\nEn red, las VM se conectan con **conmutadores virtuales** y VLAN; los contenedores usan redes puente, superpuestas (overlay) o de host. La elección afecta al aislamiento y a la exposición de servicios."
+        },
+        {
+          "heading": "Seguridad, límites y copias",
+          "body": "Virtualizar no elimina los riesgos:\n\n- El **hipervisor** debe parchearse; una vulnerabilidad suya afecta a todas las VM.\n- Las **imágenes** deben venir de un registro fiable y escanearse; una imagen con malware se replica en cada despliegue.\n- Los **secretos** no se meten en la imagen; se inyectan en tiempo de ejecución.\n- El **snapshot** no es una copia de seguridad: comparte el mismo almacenamiento y se pierde con él.\n\nLa copia debe ser externa, probada y con retención, igual que en un servidor físico."
+        },
+        {
+          "heading": "Ejemplo resuelto",
+          "body": "**Supuesto.** Un ayuntamiento quiere reducir servidores: mantiene una aplicación antigua que solo funciona en Windows Server y una web municipal que se despliega varias veces al día.\n\n**Resolución.**\n\n- La aplicación antigua se virtualiza en una **VM** con su propio Windows Server, porque necesita un kernel concreto y un ciclo de actualización lento.\n- La web se empaqueta en una **imagen** de contenedor y se despliega con un orquestador; así las actualizaciones son rápidas y reproducibles.\n- Las dos comparten el hardware del servidor virtualizado, pero con aislamiento distinto: la VM aísla el sistema; el contenedor aísla el proceso.\n- Se definen copias externas de la VM y de los volúmenes, se escanean las imágenes y se limita quién puede desplegar.\n\n**Conclusión.** No hay una tecnología mejor en abstracto: la VM encaja con sistemas completos y legados; el contenedor, con aplicaciones empaquetadas y despliegue frecuente."
+        }
+      ],
+      "practiceSlug": "iii-19"
+    },
     "III.20": {
       "path": "III.20",
       "title": "Almacenamiento y copias de seguridad",
@@ -1715,6 +1787,76 @@
         }
       ],
       "practiceSlug": "iii-24"
+    },
+    "IV.27": {
+      "path": "IV.27",
+      "title": "Bases de datos relacionales",
+      "apuntesStatus": "completos",
+      "practicaStatus": "con_practica",
+      "sectionCount": 7,
+      "questionCount": 10,
+      "source": {
+        "label": "PostgreSQL Documentation — Constraints y modelo relacional (documentación oficial)",
+        "url": "https://www.postgresql.org/docs/current/ddl-constraints.html"
+      },
+      "sections": [
+        {
+          "heading": "El modelo relacional",
+          "body": "Una base de datos relacional organiza la información en **relaciones** (tablas). Cada relación tiene un **esquema** que define sus columnas (atributos), sus tipos y sus restricciones; las filas (tuplas) son los datos concretos.\n\nEl modelo se apoya en la teoría de conjuntos: una tabla no es una lista ordenada, sino un conjunto de filas. Por eso el orden no debe usarse como identificador; para identificar una fila se usan **claves**."
+        },
+        {
+          "heading": "Claves e integridad",
+          "body": "Las claves son la base del diseño:\n\n- **Superclave**: cualquier conjunto de columnas que identifica de forma única una fila.\n- **Clave candidata**: superclave mínima, sin columnas sobrantes.\n- **Clave primaria**: clave candidata elegida para identificar la tabla; no admite nulos.\n- **Clave foránea**: columna que referencia la clave primaria de otra tabla y garantiza la integridad referencial.\n\nLa **integridad de entidad** exige que la clave primaria no sea nula; la **integridad referencial** exige que la clave foránea apunte a una fila existente o sea nula si el diseño lo permite."
+        },
+        {
+          "heading": "Normalización",
+          "body": "Normalizar es organizar las tablas para evitar redundancia y anomalías de actualización:\n\n- **Primera forma normal (1FN)**: valores atómicos, sin listas repetidas en una celda.\n- **Segunda forma normal (2FN)**: 1FN y sin dependencias parciales de parte de la clave.\n- **Tercera forma normal (3FN)**: 2FN y sin dependencias transitivas entre columnas no clave.\n\nLa normalización no es un fin: en un sistema de consulta puede convenir **desnormalizar** para ganar rendimiento, asumiendo el coste de mantener datos duplicados coherentes."
+        },
+        {
+          "heading": "Restricciones y SQL",
+          "body": "El lenguaje SQL permite declarar las reglas en el propio esquema: `PRIMARY KEY`, `FOREIGN KEY`, `UNIQUE`, `NOT NULL`, `CHECK` y `DEFAULT`. La base de datos rechaza las operaciones que incumplen esas reglas, aunque la aplicación tenga un error.\n\nLos **índices** aceleran búsquedas y uniones, pero ocupan espacio y ralentizan las escrituras. No se indexa todo: se indexan las columnas que se consultan con frecuencia y las claves foráneas."
+        },
+        {
+          "heading": "Transacciones y ACID",
+          "body": "Una **transacción** agrupa operaciones que deben ejecutarse como una unidad. Sus propiedades ACID son:\n\n- **Atomicidad**: todo o nada.\n- **Consistencia**: se respetan las restricciones.\n- **Aislamiento**: las transacciones concurrentes no ven estados intermedios indebidos.\n- **Durabilidad**: lo confirmado sobrevive a un fallo.\n\nEl nivel de aislamiento se elige según el equilibrio entre consistencia y concurrencia."
+        },
+        {
+          "heading": "Tabla de restricciones",
+          "table": {
+            "columns": [
+              "Restricción",
+              "Qué garantiza"
+            ],
+            "rows": [
+              [
+                "PRIMARY KEY",
+                "Identifica cada fila; única y no nula"
+              ],
+              [
+                "FOREIGN KEY",
+                "Integridad referencial entre tablas"
+              ],
+              [
+                "UNIQUE",
+                "Valores no repetidos en una columna o conjunto"
+              ],
+              [
+                "NOT NULL",
+                "Obliga a informar un valor"
+              ],
+              [
+                "CHECK",
+                "Cumple una condición lógica"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Ejemplo resuelto",
+          "body": "**Supuesto.** Un ayuntamiento quiere guardar ciudadanos, expedientes y trámites. Cada expediente pertenece a un ciudadano y tiene un número único; un trámite puede repetirse en varios expedientes.\n\n**Resolución.**\n\n- Tabla **ciudadanos**: `id` como clave primaria, `dni` único y no nulo.\n- Tabla **expedientes**: `numero` como clave primaria y `ciudadano_id` como clave foránea a ciudadanos.\n- Tabla **tramites**: `id` primaria, `expediente_id` foránea y `tipo` con una restricción `CHECK` sobre los valores permitidos.\n- Se evita guardar el nombre del ciudadano en cada expediente: se referencia. Así no hay redundancia ni anomalías al cambiar un dato.\n\n**Conclusión.** Un esquema relacional bien diseñado hace que los errores se detecten en la base de datos, no solo en el formulario."
+        }
+      ],
+      "practiceSlug": "iv-27"
     },
     "V.34": {
       "path": "V.34",
@@ -5259,6 +5401,287 @@
       ]
     },
     {
+      "slug": "iii-19",
+      "tema_path": "III.19",
+      "title": "Práctica · Virtualización y contenedores",
+      "source": {
+        "label": "Docker Docs — Get started (documentación oficial)",
+        "url": "https://docs.docker.com/get-started/"
+      },
+      "questions": [
+        {
+          "stem": "¿Qué es un hipervisor de tipo 1?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Un programa que se instala dentro de otro sistema operativo"
+            },
+            {
+              "key": "b",
+              "text": "Un hipervisor que se ejecuta directamente sobre el hardware"
+            },
+            {
+              "key": "c",
+              "text": "Un contenedor de aplicaciones"
+            },
+            {
+              "key": "d",
+              "text": "Un tipo de disco virtual"
+            }
+          ],
+          "correct": "b",
+          "explanation": "El hipervisor de tipo 1 (bare metal) se ejecuta directamente sobre el hardware; el de tipo 2 lo hace sobre un sistema anfitrión.",
+          "source": {
+            "label": "Docker Docs — Get started (documentación oficial)",
+            "url": "https://docs.docker.com/get-started/"
+          }
+        },
+        {
+          "stem": "¿Qué comparte un contenedor con el sistema anfitrión?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El kernel"
+            },
+            {
+              "key": "b",
+              "text": "Una copia completa del sistema operativo"
+            },
+            {
+              "key": "c",
+              "text": "El hipervisor"
+            },
+            {
+              "key": "d",
+              "text": "El hardware de virtualización"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Los contenedores comparten el kernel del anfitrión y aíslan procesos con namespaces y cgroups.",
+          "source": {
+            "label": "Docker Docs — Get started (documentación oficial)",
+            "url": "https://docs.docker.com/get-started/"
+          }
+        },
+        {
+          "stem": "¿Qué diferencia hay entre una imagen y un contenedor?",
+          "options": [
+            {
+              "key": "a",
+              "text": "La imagen es una plantilla inmutable; el contenedor es una instancia en ejecución"
+            },
+            {
+              "key": "b",
+              "text": "El contenedor es la plantilla y la imagen la instancia"
+            },
+            {
+              "key": "c",
+              "text": "Son exactamente lo mismo"
+            },
+            {
+              "key": "d",
+              "text": "La imagen solo existe en la nube"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La imagen es el artefacto inmutable que se construye; el contenedor es un proceso creado a partir de ella.",
+          "source": {
+            "label": "Docker Docs — Get started (documentación oficial)",
+            "url": "https://docs.docker.com/get-started/"
+          }
+        },
+        {
+          "stem": "¿Para qué sirven los namespaces en los contenedores?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Para limitar el uso de CPU y memoria"
+            },
+            {
+              "key": "b",
+              "text": "Para aislar la visibilidad de procesos, red y sistema de ficheros"
+            },
+            {
+              "key": "c",
+              "text": "Para crear máquinas virtuales"
+            },
+            {
+              "key": "d",
+              "text": "Para comprimir imágenes"
+            }
+          ],
+          "correct": "b",
+          "explanation": "Los namespaces aíslan qué ve cada contenedor; los cgroups limitan los recursos que consume.",
+          "source": {
+            "label": "Docker Docs — Get started (documentación oficial)",
+            "url": "https://docs.docker.com/get-started/"
+          }
+        },
+        {
+          "stem": "¿Qué tecnología permite limitar la CPU y la memoria de un contenedor?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Namespaces"
+            },
+            {
+              "key": "b",
+              "text": "Cgroups"
+            },
+            {
+              "key": "c",
+              "text": "Hipervisor tipo 2"
+            },
+            {
+              "key": "d",
+              "text": "Dockerfile"
+            }
+          ],
+          "correct": "b",
+          "explanation": "Los cgroups (control groups) aplican límites y cuotas de recursos a los procesos del contenedor.",
+          "source": {
+            "label": "Docker Docs — Get started (documentación oficial)",
+            "url": "https://docs.docker.com/get-started/"
+          }
+        },
+        {
+          "stem": "¿Qué ventaja tiene una máquina virtual frente a un contenedor?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Arranca más rápido"
+            },
+            {
+              "key": "b",
+              "text": "Tiene un aislamiento más fuerte al incluir su propio sistema operativo"
+            },
+            {
+              "key": "c",
+              "text": "Ocupa menos espacio siempre"
+            },
+            {
+              "key": "d",
+              "text": "No necesita actualizaciones"
+            }
+          ],
+          "correct": "b",
+          "explanation": "La VM ejecuta su propio kernel y sistema operativo, lo que da un aislamiento mayor a costa de más recursos.",
+          "source": {
+            "label": "Docker Docs — Get started (documentación oficial)",
+            "url": "https://docs.docker.com/get-started/"
+          }
+        },
+        {
+          "stem": "¿Qué es un Dockerfile?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Un fichero de texto con las instrucciones para construir una imagen"
+            },
+            {
+              "key": "b",
+              "text": "Una máquina virtual"
+            },
+            {
+              "key": "c",
+              "text": "Un registro de imágenes"
+            },
+            {
+              "key": "d",
+              "text": "Un tipo de hipervisor"
+            }
+          ],
+          "correct": "a",
+          "explanation": "El Dockerfile describe los pasos para construir la imagen de forma reproducible.",
+          "source": {
+            "label": "Docker Docs — Get started (documentación oficial)",
+            "url": "https://docs.docker.com/get-started/"
+          }
+        },
+        {
+          "stem": "¿Por qué un snapshot de una VM no es una copia de seguridad?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Porque ocupa poco espacio"
+            },
+            {
+              "key": "b",
+              "text": "Porque suele estar en el mismo almacenamiento y se pierde con él"
+            },
+            {
+              "key": "c",
+              "text": "Porque solo funciona en Linux"
+            },
+            {
+              "key": "d",
+              "text": "Porque no se puede programar"
+            }
+          ],
+          "correct": "b",
+          "explanation": "El snapshot comparte el almacenamiento de la VM; si este se pierde o se cifra, también se pierde el snapshot.",
+          "source": {
+            "label": "Docker Docs — Get started (documentación oficial)",
+            "url": "https://docs.docker.com/get-started/"
+          }
+        },
+        {
+          "stem": "¿Qué riesgo específico tienen las imágenes de contenedor?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Que no se pueden actualizar"
+            },
+            {
+              "key": "b",
+              "text": "Que una imagen con malware o dependencias vulnerables se replica en cada despliegue"
+            },
+            {
+              "key": "c",
+              "text": "Que no admiten volúmenes"
+            },
+            {
+              "key": "d",
+              "text": "Que siempre necesitan un hipervisor"
+            }
+          ],
+          "correct": "b",
+          "explanation": "La imagen es la base de todos los contenedores; hay que usar registros fiables, escanear y actualizar sus dependencias.",
+          "source": {
+            "label": "Docker Docs — Get started (documentación oficial)",
+            "url": "https://docs.docker.com/get-started/"
+          }
+        },
+        {
+          "stem": "¿Qué caso encaja mejor con un contenedor que con una VM?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Una aplicación web empaquetada que se despliega varias veces al día"
+            },
+            {
+              "key": "b",
+              "text": "Un sistema operativo legado que exige un kernel concreto"
+            },
+            {
+              "key": "c",
+              "text": "Un servidor de base de datos con requisitos de hardware especiales"
+            },
+            {
+              "key": "d",
+              "text": "Un escritorio remoto completo"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Los contenedores son adecuados para aplicaciones empaquetadas y despliegues frecuentes; los sistemas completos y legados encajan mejor en VM.",
+          "source": {
+            "label": "Docker Docs — Get started (documentación oficial)",
+            "url": "https://docs.docker.com/get-started/"
+          }
+        }
+      ]
+    },
+    {
       "slug": "iii-20",
       "tema_path": "III.20",
       "title": "Práctica · Almacenamiento y copias de seguridad",
@@ -6102,6 +6525,287 @@
       ]
     },
     {
+      "slug": "iv-27",
+      "tema_path": "IV.27",
+      "title": "Práctica · Bases de datos relacionales",
+      "source": {
+        "label": "PostgreSQL Documentation — Constraints y modelo relacional (documentación oficial)",
+        "url": "https://www.postgresql.org/docs/current/ddl-constraints.html"
+      },
+      "questions": [
+        {
+          "stem": "¿Qué es una clave primaria?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Una columna que puede repetirse y admite nulos"
+            },
+            {
+              "key": "b",
+              "text": "Una clave candidata elegida que identifica de forma única cada fila y no admite nulos"
+            },
+            {
+              "key": "c",
+              "text": "Cualquier columna de texto"
+            },
+            {
+              "key": "d",
+              "text": "Un índice opcional"
+            }
+          ],
+          "correct": "b",
+          "explanation": "La clave primaria identifica cada fila de forma única y exige integridad de entidad: no puede ser nula.",
+          "source": {
+            "label": "PostgreSQL Documentation — Constraints y modelo relacional (documentación oficial)",
+            "url": "https://www.postgresql.org/docs/current/ddl-constraints.html"
+          }
+        },
+        {
+          "stem": "¿Qué garantiza una clave foránea?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Que los valores de una columna no se repiten"
+            },
+            {
+              "key": "b",
+              "text": "La integridad referencial entre dos tablas"
+            },
+            {
+              "key": "c",
+              "text": "Que la tabla tenga al menos un índice"
+            },
+            {
+              "key": "d",
+              "text": "Que las transacciones sean atómicas"
+            }
+          ],
+          "correct": "b",
+          "explanation": "La clave foránea referencia la clave primaria de otra tabla y evita referencias a filas inexistentes.",
+          "source": {
+            "label": "PostgreSQL Documentation — Constraints y modelo relacional (documentación oficial)",
+            "url": "https://www.postgresql.org/docs/current/ddl-constraints.html"
+          }
+        },
+        {
+          "stem": "¿Qué exige la primera forma normal (1FN)?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Valores atómicos y sin listas repetidas en una celda"
+            },
+            {
+              "key": "b",
+              "text": "Que no haya claves foráneas"
+            },
+            {
+              "key": "c",
+              "text": "Que todas las columnas sean numéricas"
+            },
+            {
+              "key": "d",
+              "text": "Que exista una clave foránea en cada tabla"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La 1FN exige que cada celda contenga un valor atómico, sin grupos repetidos ni listas.",
+          "source": {
+            "label": "PostgreSQL Documentation — Constraints y modelo relacional (documentación oficial)",
+            "url": "https://www.postgresql.org/docs/current/ddl-constraints.html"
+          }
+        },
+        {
+          "stem": "¿Qué problema elimina la segunda forma normal (2FN)?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Las dependencias parciales de parte de la clave"
+            },
+            {
+              "key": "b",
+              "text": "Los índices duplicados"
+            },
+            {
+              "key": "c",
+              "text": "Las transacciones concurrentes"
+            },
+            {
+              "key": "d",
+              "text": "Los valores nulos"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La 2FN exige 1FN y que ningún atributo no clave dependa solo de una parte de la clave compuesta.",
+          "source": {
+            "label": "PostgreSQL Documentation — Constraints y modelo relacional (documentación oficial)",
+            "url": "https://www.postgresql.org/docs/current/ddl-constraints.html"
+          }
+        },
+        {
+          "stem": "¿Qué elimina la tercera forma normal (3FN)?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Las dependencias transitivas entre columnas no clave"
+            },
+            {
+              "key": "b",
+              "text": "Las claves primarias"
+            },
+            {
+              "key": "c",
+              "text": "Las claves foráneas"
+            },
+            {
+              "key": "d",
+              "text": "Los índices"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La 3FN exige 2FN y que los atributos no clave no dependan de otros atributos no clave.",
+          "source": {
+            "label": "PostgreSQL Documentation — Constraints y modelo relacional (documentación oficial)",
+            "url": "https://www.postgresql.org/docs/current/ddl-constraints.html"
+          }
+        },
+        {
+          "stem": "¿Qué significa la integridad de entidad?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Que la clave primaria no puede ser nula"
+            },
+            {
+              "key": "b",
+              "text": "Que toda tabla debe tener una clave foránea"
+            },
+            {
+              "key": "c",
+              "text": "Que los datos deben estar normalizados"
+            },
+            {
+              "key": "d",
+              "text": "Que las transacciones deben ser duraderas"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La integridad de entidad exige que la clave primaria identifique la fila y no sea nula.",
+          "source": {
+            "label": "PostgreSQL Documentation — Constraints y modelo relacional (documentación oficial)",
+            "url": "https://www.postgresql.org/docs/current/ddl-constraints.html"
+          }
+        },
+        {
+          "stem": "¿Para qué sirve un índice?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Para acelerar búsquedas y uniones"
+            },
+            {
+              "key": "b",
+              "text": "Para garantizar la atomicidad"
+            },
+            {
+              "key": "c",
+              "text": "Para sustituir la clave primaria"
+            },
+            {
+              "key": "d",
+              "text": "Para eliminar la necesidad de normalizar"
+            }
+          ],
+          "correct": "a",
+          "explanation": "Los índices aceleran lecturas, aunque ocupan espacio y penalizan las escrituras; no sustituyen claves ni restricciones.",
+          "source": {
+            "label": "PostgreSQL Documentation — Constraints y modelo relacional (documentación oficial)",
+            "url": "https://www.postgresql.org/docs/current/ddl-constraints.html"
+          }
+        },
+        {
+          "stem": "¿Qué propiedad ACID garantiza que una transacción se aplique completa o no se aplique?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Atomicidad"
+            },
+            {
+              "key": "b",
+              "text": "Consistencia"
+            },
+            {
+              "key": "c",
+              "text": "Aislamiento"
+            },
+            {
+              "key": "d",
+              "text": "Durabilidad"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La atomicidad trata la transacción como una unidad indivisible: todo o nada.",
+          "source": {
+            "label": "PostgreSQL Documentation — Constraints y modelo relacional (documentación oficial)",
+            "url": "https://www.postgresql.org/docs/current/ddl-constraints.html"
+          }
+        },
+        {
+          "stem": "¿Cuándo puede tener sentido desnormalizar?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Cuando se prioriza el rendimiento de lectura y se asume el coste de duplicar datos"
+            },
+            {
+              "key": "b",
+              "text": "Siempre que haya claves foráneas"
+            },
+            {
+              "key": "c",
+              "text": "Cuando no hay clave primaria"
+            },
+            {
+              "key": "d",
+              "text": "Para evitar las restricciones CHECK"
+            }
+          ],
+          "correct": "a",
+          "explanation": "La desnormalización puede mejorar lecturas, pero introduce redundancia y riesgo de incoherencia; es una decisión con coste.",
+          "source": {
+            "label": "PostgreSQL Documentation — Constraints y modelo relacional (documentación oficial)",
+            "url": "https://www.postgresql.org/docs/current/ddl-constraints.html"
+          }
+        },
+        {
+          "stem": "¿Qué restricción obliga a que un valor no se repita?",
+          "options": [
+            {
+              "key": "a",
+              "text": "PRIMARY KEY únicamente"
+            },
+            {
+              "key": "b",
+              "text": "UNIQUE"
+            },
+            {
+              "key": "c",
+              "text": "CHECK"
+            },
+            {
+              "key": "d",
+              "text": "DEFAULT"
+            }
+          ],
+          "correct": "b",
+          "explanation": "UNIQUE impide valores repetidos; PRIMARY KEY también es única, pero además identifica la fila y no admite nulos.",
+          "source": {
+            "label": "PostgreSQL Documentation — Constraints y modelo relacional (documentación oficial)",
+            "url": "https://www.postgresql.org/docs/current/ddl-constraints.html"
+          }
+        }
+      ]
+    },
+    {
       "slug": "v-34",
       "tema_path": "V.34",
       "title": "Práctica · Seguridad de la información",
@@ -6666,12 +7370,12 @@
   ],
   "progress": {
     "total": 40,
-    "apuntesCompletos": 17,
+    "apuntesCompletos": 19,
     "soloResumen": 0,
-    "pendientes": 23,
-    "conPractica": 17,
-    "sinPractica": 23,
-    "questions": 170,
+    "pendientes": 21,
+    "conPractica": 19,
+    "sinPractica": 21,
+    "questions": 190,
     "convocatorias": 12
   }
 }
