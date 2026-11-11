@@ -143,7 +143,9 @@
             "apuntesStatus": "completos",
             "practicaStatus": "con_practica",
             "sectionCount": 6,
-            "questionCount": 10
+            "questionCount": 10,
+            "formato": "desarrollado",
+            "longWords": 1543
           },
           {
             "path": "I.2",
@@ -151,7 +153,9 @@
             "apuntesStatus": "completos",
             "practicaStatus": "con_practica",
             "sectionCount": 6,
-            "questionCount": 10
+            "questionCount": 10,
+            "formato": "esquema",
+            "longWords": 0
           },
           {
             "path": "I.3",
@@ -159,7 +163,9 @@
             "apuntesStatus": "completos",
             "practicaStatus": "con_practica",
             "sectionCount": 6,
-            "questionCount": 10
+            "questionCount": 10,
+            "formato": "esquema",
+            "longWords": 0
           },
           {
             "path": "I.4",
@@ -167,7 +173,9 @@
             "apuntesStatus": "completos",
             "practicaStatus": "con_practica",
             "sectionCount": 7,
-            "questionCount": 10
+            "questionCount": 10,
+            "formato": "esquema",
+            "longWords": 0
           },
           {
             "path": "I.5",
@@ -175,7 +183,9 @@
             "apuntesStatus": "completos",
             "practicaStatus": "con_practica",
             "sectionCount": 6,
-            "questionCount": 10
+            "questionCount": 10,
+            "formato": "esquema",
+            "longWords": 0
           },
           {
             "path": "I.6",
@@ -183,7 +193,9 @@
             "apuntesStatus": "completos",
             "practicaStatus": "con_practica",
             "sectionCount": 6,
-            "questionCount": 10
+            "questionCount": 10,
+            "formato": "esquema",
+            "longWords": 0
           },
           {
             "path": "I.7",
@@ -191,7 +203,9 @@
             "apuntesStatus": "completos",
             "practicaStatus": "con_practica",
             "sectionCount": 6,
-            "questionCount": 10
+            "questionCount": 10,
+            "formato": "esquema",
+            "longWords": 0
           },
           {
             "path": "I.8",
@@ -199,7 +213,9 @@
             "apuntesStatus": "completos",
             "practicaStatus": "con_practica",
             "sectionCount": 6,
-            "questionCount": 10
+            "questionCount": 10,
+            "formato": "esquema",
+            "longWords": 0
           },
           {
             "path": "I.9",
@@ -207,7 +223,9 @@
             "apuntesStatus": "completos",
             "practicaStatus": "con_practica",
             "sectionCount": 6,
-            "questionCount": 10
+            "questionCount": 10,
+            "formato": "esquema",
+            "longWords": 0
           },
           {
             "path": "I.10",
@@ -215,7 +233,9 @@
             "apuntesStatus": "completos",
             "practicaStatus": "con_practica",
             "sectionCount": 6,
-            "questionCount": 10
+            "questionCount": 10,
+            "formato": "esquema",
+            "longWords": 0
           },
           {
             "path": "I.11",
@@ -223,7 +243,9 @@
             "apuntesStatus": "completos",
             "practicaStatus": "con_practica",
             "sectionCount": 6,
-            "questionCount": 10
+            "questionCount": 10,
+            "formato": "esquema",
+            "longWords": 0
           },
           {
             "path": "I.12",
@@ -231,7 +253,9 @@
             "apuntesStatus": "completos",
             "practicaStatus": "con_practica",
             "sectionCount": 6,
-            "questionCount": 10
+            "questionCount": 10,
+            "formato": "esquema",
+            "longWords": 0
           }
         ]
       },
@@ -252,7 +276,9 @@
             "apuntesStatus": "completos",
             "practicaStatus": "con_practica",
             "sectionCount": 6,
-            "questionCount": 10
+            "questionCount": 10,
+            "formato": "desarrollado",
+            "longWords": 2692
           },
           {
             "path": "II.14",
@@ -260,7 +286,9 @@
             "apuntesStatus": "completos",
             "practicaStatus": "con_practica",
             "sectionCount": 6,
-            "questionCount": 10
+            "questionCount": 10,
+            "formato": "esquema",
+            "longWords": 0
           },
           {
             "path": "II.15",
@@ -268,7 +296,9 @@
             "apuntesStatus": "completos",
             "practicaStatus": "con_practica",
             "sectionCount": 7,
-            "questionCount": 10
+            "questionCount": 10,
+            "formato": "esquema",
+            "longWords": 0
           },
           {
             "path": "II.16",
@@ -276,7 +306,9 @@
             "apuntesStatus": "completos",
             "practicaStatus": "con_practica",
             "sectionCount": 7,
-            "questionCount": 10
+            "questionCount": 10,
+            "formato": "esquema",
+            "longWords": 0
           },
           {
             "path": "II.17",
@@ -284,7 +316,9 @@
             "apuntesStatus": "completos",
             "practicaStatus": "con_practica",
             "sectionCount": 7,
-            "questionCount": 10
+            "questionCount": 10,
+            "formato": "esquema",
+            "longWords": 0
           }
         ]
       },
@@ -305,7 +339,9 @@
             "apuntesStatus": "completos",
             "practicaStatus": "con_practica",
             "sectionCount": 7,
-            "questionCount": 10
+            "questionCount": 10,
+            "formato": "esquema",
+            "longWords": 0
           },
           {
             "path": "III.19",
@@ -313,7 +349,9 @@
             "apuntesStatus": "completos",
             "practicaStatus": "con_practica",
             "sectionCount": 6,
-            "questionCount": 10
+            "questionCount": 10,
+            "formato": "esquema",
+            "longWords": 0
           },
           {
             "path": "III.20",
@@ -321,7 +359,9 @@
             "apuntesStatus": "completos",
             "practicaStatus": "con_practica",
             "sectionCount": 6,
-            "questionCount": 10
+            "questionCount": 10,
+            "formato": "esquema",
+            "longWords": 0
           },
           {
             "path": "III.21",
@@ -329,7 +369,9 @@
             "apuntesStatus": "completos",
             "practicaStatus": "con_practica",
             "sectionCount": 6,
-            "questionCount": 10
+            "questionCount": 10,
+            "formato": "desarrollado",
+            "longWords": 3644
           },
           {
             "path": "III.22",
@@ -337,7 +379,9 @@
             "apuntesStatus": "completos",
             "practicaStatus": "con_practica",
             "sectionCount": 7,
-            "questionCount": 10
+            "questionCount": 10,
+            "formato": "esquema",
+            "longWords": 0
           },
           {
             "path": "III.23",
@@ -345,7 +389,9 @@
             "apuntesStatus": "completos",
             "practicaStatus": "con_practica",
             "sectionCount": 6,
-            "questionCount": 10
+            "questionCount": 10,
+            "formato": "esquema",
+            "longWords": 0
           },
           {
             "path": "III.24",
@@ -353,7 +399,9 @@
             "apuntesStatus": "completos",
             "practicaStatus": "con_practica",
             "sectionCount": 6,
-            "questionCount": 10
+            "questionCount": 10,
+            "formato": "esquema",
+            "longWords": 0
           },
           {
             "path": "III.25",
@@ -361,7 +409,9 @@
             "apuntesStatus": "completos",
             "practicaStatus": "con_practica",
             "sectionCount": 7,
-            "questionCount": 10
+            "questionCount": 10,
+            "formato": "esquema",
+            "longWords": 0
           },
           {
             "path": "III.26",
@@ -369,7 +419,9 @@
             "apuntesStatus": "completos",
             "practicaStatus": "con_practica",
             "sectionCount": 6,
-            "questionCount": 10
+            "questionCount": 10,
+            "formato": "esquema",
+            "longWords": 0
           }
         ]
       },
@@ -390,7 +442,9 @@
             "apuntesStatus": "completos",
             "practicaStatus": "con_practica",
             "sectionCount": 7,
-            "questionCount": 10
+            "questionCount": 10,
+            "formato": "desarrollado",
+            "longWords": 4421
           },
           {
             "path": "IV.28",
@@ -398,7 +452,9 @@
             "apuntesStatus": "completos",
             "practicaStatus": "con_practica",
             "sectionCount": 7,
-            "questionCount": 10
+            "questionCount": 10,
+            "formato": "esquema",
+            "longWords": 0
           },
           {
             "path": "IV.29",
@@ -406,7 +462,9 @@
             "apuntesStatus": "completos",
             "practicaStatus": "con_practica",
             "sectionCount": 6,
-            "questionCount": 10
+            "questionCount": 10,
+            "formato": "esquema",
+            "longWords": 0
           },
           {
             "path": "IV.30",
@@ -414,7 +472,9 @@
             "apuntesStatus": "completos",
             "practicaStatus": "con_practica",
             "sectionCount": 7,
-            "questionCount": 10
+            "questionCount": 10,
+            "formato": "esquema",
+            "longWords": 0
           },
           {
             "path": "IV.31",
@@ -422,7 +482,9 @@
             "apuntesStatus": "completos",
             "practicaStatus": "con_practica",
             "sectionCount": 7,
-            "questionCount": 10
+            "questionCount": 10,
+            "formato": "esquema",
+            "longWords": 0
           },
           {
             "path": "IV.32",
@@ -430,7 +492,9 @@
             "apuntesStatus": "completos",
             "practicaStatus": "con_practica",
             "sectionCount": 7,
-            "questionCount": 10
+            "questionCount": 10,
+            "formato": "esquema",
+            "longWords": 0
           },
           {
             "path": "IV.33",
@@ -438,7 +502,9 @@
             "apuntesStatus": "completos",
             "practicaStatus": "con_practica",
             "sectionCount": 7,
-            "questionCount": 10
+            "questionCount": 10,
+            "formato": "esquema",
+            "longWords": 0
           }
         ]
       },
@@ -459,7 +525,9 @@
             "apuntesStatus": "completos",
             "practicaStatus": "con_practica",
             "sectionCount": 6,
-            "questionCount": 10
+            "questionCount": 10,
+            "formato": "desarrollado",
+            "longWords": 4728
           },
           {
             "path": "V.35",
@@ -467,7 +535,9 @@
             "apuntesStatus": "completos",
             "practicaStatus": "con_practica",
             "sectionCount": 6,
-            "questionCount": 10
+            "questionCount": 10,
+            "formato": "desarrollado",
+            "longWords": 3557
           },
           {
             "path": "V.36",
@@ -475,7 +545,9 @@
             "apuntesStatus": "completos",
             "practicaStatus": "con_practica",
             "sectionCount": 7,
-            "questionCount": 10
+            "questionCount": 10,
+            "formato": "esquema",
+            "longWords": 0
           },
           {
             "path": "V.37",
@@ -483,7 +555,9 @@
             "apuntesStatus": "completos",
             "practicaStatus": "con_practica",
             "sectionCount": 7,
-            "questionCount": 10
+            "questionCount": 10,
+            "formato": "esquema",
+            "longWords": 0
           },
           {
             "path": "V.38",
@@ -491,7 +565,9 @@
             "apuntesStatus": "completos",
             "practicaStatus": "con_practica",
             "sectionCount": 7,
-            "questionCount": 10
+            "questionCount": 10,
+            "formato": "esquema",
+            "longWords": 0
           },
           {
             "path": "V.39",
@@ -499,7 +575,9 @@
             "apuntesStatus": "completos",
             "practicaStatus": "con_practica",
             "sectionCount": 7,
-            "questionCount": 10
+            "questionCount": 10,
+            "formato": "desarrollado",
+            "longWords": 3736
           },
           {
             "path": "V.40",
@@ -507,7 +585,9 @@
             "apuntesStatus": "completos",
             "practicaStatus": "con_practica",
             "sectionCount": 7,
-            "questionCount": 10
+            "questionCount": 10,
+            "formato": "esquema",
+            "longWords": 0
           }
         ]
       }
@@ -1665,6 +1745,89 @@
         "Confundir arquitectura von Neumann con Harvard."
       ],
       "reviewedAt": "2026-11-10",
+      "longSections": [
+        {
+          "heading": "1. Ficha oficial del tema",
+          "body": "**Tema II.13 — Arquitectura de ordenadores.** Bloque II (Tecnología básica) del temario común C1. El tema se estudia con tres fuentes del bloque: **Tema 1** (informática básica y arquitectura), **Tema 2** (periféricos y almacenamiento) y **Bloque 2 Actualizado 2026**, además del banco de preguntas del bloque II. Su núcleo es: estructura básica del ordenador (hardware y software), **modelo de Von Neumann** y el bus del sistema, **CPU** (ALU, unidad de control y registros), instrucciones y ciclo de ejecución, clasificación de procesadores (CISC/RISC y taxonomía de Flynn), **memorias** (RAM, ROM, caché y jerarquía), **placa base** (socket, chipset, BIOS, conectores) y periféricos, con especial atención al almacenamiento y a los RAID. Conecta con el tema **II.14**, sistemas operativos de usuario, que gestiona esos recursos. Es un tema de conceptos y clasificaciones: se pregunta por definiciones, diferencias y secuencias, no por productos de actualidad."
+        },
+        {
+          "heading": "2. Índice de epígrafes",
+          "body": "El tema se estudia en este orden: (1) datos, información y representación binaria; (2) estructura básica del ordenador: hardware y software; (3) Von Neumann, Harvard y el bus del sistema; (4) CPU: ALU, unidad de control, registros y flags; (5) instrucciones, direccionamiento y ciclo de instrucción; (6) clasificación de procesadores: CISC/RISC y taxonomía de Flynn; (7) memoria: características, tipos de RAM y ROM, jerarquía y caché; (8) placa base: socket, chipset, BIOS, conectores y ranuras; (9) periféricos, almacenamiento y RAID; (10) codificación de caracteres (ASCII, Unicode, UTF-8). Para el test pesan especialmente el modelo de Von Neumann, los **tres buses**, los **registros** y su función, el **orden del ciclo de instrucción**, la **jerarquía de memoria** y las diferencias entre los **RAID**."
+        },
+        {
+          "heading": "3. Introducción y contexto",
+          "body": "La arquitectura de ordenadores explica cómo se ejecuta un programa: dónde están las instrucciones y los datos, quién los procesa, cómo se comunican los componentes y cuánto cuesta cada acceso. Sin ese mapa, palabras como «caché», «bus» o «registro» se memorizan sueltas y se confunden en cuanto el examen cambia una frase.\n\nLa idea que ordena el tema es la de **niveles**: la CPU solo ejecuta instrucciones en **lenguaje máquina**; para ello necesita registros, una memoria donde leerlas y unos canales —los **buses**— que unan las piezas. El **modelo de Von Neumann** es la base de los ordenadores actuales: una única memoria para datos e instrucciones y ejecución instrucción a instrucción. A partir de ahí se entiende por qué existe la **jerarquía de memoria**, por qué el rendimiento depende del bus y de la caché, y qué aportan alternativas como **Harvard**.\n\nEs también el puente hacia el tema II.14: el sistema operativo gestiona memoria, procesos y dispositivos sobre esta arquitectura. Por eso el examen mezcla a veces preguntas de hardware con preguntas de sistemas operativos."
+        },
+        {
+          "heading": "4. Desarrollo por epígrafe",
+          "body": "**4.1 Estructura básica y modelo de Von Neumann.** Todo ordenador se divide en **hardware** (componentes físicos) y **software** (algoritmos y programas; el más importante, el sistema operativo). El modelo de Von Neumann se apoya en tres ideas (Tema 1, 3.1.2): datos e instrucciones se guardan en **una sola memoria de lectura-escritura**; el contenido se direcciona por su **posición**, sin considerar el tipo de dato; y la ejecución avanza **instrucción tras instrucción**. Ese diseño simplifica la máquina pero crea el llamado cuello de botella: instrucciones y datos compiten por el mismo camino. Frente a él, la **arquitectura Harvard** separa físicamente memorias y caminos de instrucciones y datos, lo que permite accesos simultáneos; la **Harvard modificada** permite acceder a la memoria de instrucciones como si fuera de datos y es la que implementan muchos equipos que se anuncian como Harvard.\n\nLa comunicación entre componentes se hace por el **bus del sistema**, formado por tres buses (Tema 1, 3.1.3): **control** (órdenes), **direcciones** (posiciones de memoria) y **datos** (los datos propiamente dichos). Se caracteriza por su **ancho** (información que puede transportar a la vez) y por su **velocidad**. Un **reloj maestro** marca los ciclos con los que la unidad de control coordina las operaciones.\n\n**4.2 CPU, ALU y registros.** La **CPU** ejecuta las instrucciones y controla el flujo de datos. Se divide en **ALU**, que agrupa los componentes que manipulan datos (operaciones de punto fijo, de punto flotante y de longitud variable), y **unidad de control (UC)**, que interpreta, genera señales y coordina la ejecución según el reloj. Puede incluir además una **FPU** de coma flotante y una **RPG** de generación de direcciones, ambas opcionales.\n\nLos **registros** son almacenamiento temporal de muy alta velocidad dentro de la CPU. Por su uso se distinguen de **uso general**, de **datos**, de **direcciones** y **flags** (bits de condición: resultado positivo, negativo, nulo, desbordamiento…). Los fundamentales son el **PC** (dirección de la siguiente instrucción), el **INC** (incrementa el PC), el **IR** (instrucción en curso, donde se analiza el código de operación), el **MAR** (dirección de memoria, conectado al bus de direcciones) y el **MBR** (palabra leída o pendiente de escribir, conectado al bus de datos). En la entrada/salida aparecen **E/SAR** (dirección del puerto) y **E/SBR** (datos entre un módulo E/S y la CPU), junto a registros genéricos **D0…Dn**.\n\n**4.3 Instrucciones, direccionamiento y ciclo.** Las instrucciones se guardan en binario en el **IR** y se agrupan en cuatro tipos: **CPU-Memoria** (transferencias), **CPU-E/S**, **procesamiento de datos** (aritmética o lógica) y **control** (alteran la secuencia de ejecución). Se componen de un **código de operación** y un **campo de dirección**; según cómo se obtiene el operando, el direccionamiento puede ser **inmediato** (el dato está en la instrucción), **directo** (la instrucción contiene la dirección) o **indirecto** (contiene la dirección de la dirección).\n\nEl **ciclo de instrucción** tiene una fase de lectura y otra de ejecución, con estos pasos (Tema 1, 3.1.7.1): **Instruction Fetch** (leer la instrucción), **Instruction Address Calculation** (calcular la dirección de la siguiente, sumando con el INC), **Instruction Operation Decoding** (decodificar la operación), **Operand Address Calculation** (calcular la dirección del operando), **Operand Fetch** (leer el operando), **Data Operation** (operar en la ALU) y **Operand Store** (guardar el resultado en memoria o enviarlo a E/S). Memorizar este orden es la mejor defensa ante las preguntas de secuencia.\n\n**4.4 Clasificación de procesadores.** Por el conjunto de instrucciones se distingue **CISC** (instrucciones complejas y numerosas, con microprogramación; típica de x86) y **RISC** (instrucciones reducidas y rápidas, menos ciclos por instrucción). El material del bloque añade **SISC** (conjunto simple orientado al paralelismo). Por el flujo de instrucciones y datos, la **taxonomía de Flynn** distingue **SISD** (un procesador, un dato: PC tradicional), **SIMD** (una instrucción sobre múltiples datos: GPU, gráficos, IA), **MISD** (varias instrucciones sobre el mismo dato: sistemas críticos como el control de vuelo) y **MIMD** (varios procesadores autónomos con instrucciones y datos distintos: servidores y supercomputación). Hoy dominan **SIMD y MIMD**. La **ley de Moore** describe el ritmo histórico de duplicación de transistores, no una ley física que se cumpla siempre.\n\n**4.5 Memorias.** La memoria principal guarda instrucciones y datos en celdas o palabras; sus parámetros son **capacidad**, **expansión**, **acceso aleatorio** (se llega a una celda sin recorrer las anteriores), **tiempo de acceso** y **ciclo de memoria**. La **RAM** es volátil y de lectura/escritura: **SRAM** (basada en transistores, sin refresco, muy rápida y cara; se usa en caché) y **DRAM** (basada en condensadores, necesita refresco; es la memoria principal), con variantes **SDRAM** y generaciones **SDR/DDR, DDR2, DDR3, DDR4 y DDR5** que no pueden mezclarse en la misma placa (el material cita 240 pines para DDR2 y DDR3 y 288 para DDR4). La **ROM** es no volátil y de solo lectura: **PROM** (se graba una vez), **EPROM** (se borra con rayos ultravioleta), **EEPROM** (borrado eléctrico) y **EAROM**; la **NVRAM** es híbrida y mantiene los datos sin alimentación, y la **CMOS**, alimentada por una pila, guarda la configuración del sistema.\n\n**4.6 Jerarquía y caché.** La **jerarquía de memoria** equilibra velocidad, tamaño y coste: **registros** (los más rápidos), **caché** (SRAM), **memoria principal** (RAM) y **almacenamiento secundario**. Funciona gracias a los principios de **localidad temporal** (se reutilizan los datos recientes) y **espacial** (se traen los datos contiguos). La caché se organiza en **L1** (la más rápida y pequeña, integrada en el núcleo), **L2** (mayor y algo más lenta) y **L3** (compartida entre núcleos, mayor y más lenta). Puede ser de **lectura** o de **escritura**, y de **instrucciones** o de **datos**; su organización puede ser de **correspondencia directa**, **asociativa por vías** o **completamente asociativa**, y ante un fallo se aplica una política de reemplazo: **aleatoria**, **LRU** (el menos usado recientemente) o **FIFO** (el primero en llegar, el primero en salir).\n\n**4.7 Placa base, periféricos y almacenamiento.** La **placa base** conecta todos los componentes: **socket** (ZIF) para la CPU, **ranuras de memoria** (SIMM, DIMM, SO-DIMM y RIMM, con doble canal), **chipset** —tradicionalmente **Northbridge** (memoria y CPU) y **Southbridge** (entrada/salida), hoy sustituido por el **PCH**—, **BIOS** en ROM o flash, que ejecuta el **POST** y guarda la configuración en CMOS, **conectores** PATA/SATA, **ranuras** PCI, AGP y PCIe, y **puertos** PS/2, serie, paralelo, USB y FireWire. Los **periféricos** se clasifican en entrada, salida, entrada/salida y almacenamiento. El **disco duro** organiza la información en **pistas, sectores y cilindros** y gira a 5.400, 7.200 o 15.000 rpm; el **SSD** usa memoria flash NAND y no tiene partes móviles; los **ópticos** (CD, DVD y Blu-ray) usan láser. El almacenamiento redundante se consigue con **RAID**: 0 (rendimiento, sin tolerancia), 1 (espejo), 5 (paridad distribuida, mínimo 3 discos y tolera 1 fallo), 6 (tolera 2 fallos, mínimo 4 discos) y 10 (anidado 1+0, mínimo 4 discos)."
+        },
+        {
+          "heading": "5. Tabla comparativa: arquitecturas y clasificaciones",
+          "body": "Comparar arquitecturas de memoria y clasificaciones de procesadores evita el error más típico: mezclar el modelo de memoria con el conjunto de instrucciones. Esta tabla resume las diferencias que se preguntan.",
+          "table": {
+            "columns": [
+              "Arquitectura o clasificación",
+              "Criterio",
+              "Ventaja / limitación",
+              "Uso típico"
+            ],
+            "rows": [
+              [
+                "Von Neumann",
+                "Una única memoria para datos e instrucciones",
+                "Diseño simple; cuello de botella al compartir el camino",
+                "Ordenadores y servidores"
+              ],
+              [
+                "Harvard",
+                "Memorias y caminos separados para instrucciones y datos",
+                "Accesos simultáneos y más velocidad; más compleja",
+                "Microcontroladores y sistemas embebidos"
+              ],
+              [
+                "Harvard modificada",
+                "Caminos separados, con acceso a instrucciones como datos",
+                "Combina ventajas de ambas",
+                "Equipos que se anuncian como Harvard"
+              ],
+              [
+                "CISC",
+                "Conjunto de instrucciones complejo y numeroso",
+                "Menos instrucciones por tarea; más lento",
+                "Arquitecturas x86 (Intel y AMD)"
+              ],
+              [
+                "RISC",
+                "Conjunto de instrucciones reducido",
+                "Instrucciones rápidas y menos ciclos",
+                "Procesadores que priorizan eficiencia"
+              ]
+            ]
+          },
+          "svg": "<svg viewBox='0 0 620 250' role='img' aria-label='Esquema de la arquitectura de Von Neumann'><rect x='20' y='20' width='580' height='30' fill='#e8f0fe' stroke='#2952a3'/><text x='310' y='41' text-anchor='middle' font-size='15' fill='#16191d'>BUS DEL SISTEMA (control, direcciones y datos)</text><rect x='20' y='90' width='160' height='110' fill='#ffffff' stroke='#8a94a6'/><text x='100' y='118' text-anchor='middle' font-size='14' fill='#16191d'>CPU</text><text x='100' y='140' text-anchor='middle' font-size='12' fill='#4b525c'>UC + ALU</text><text x='100' y='158' text-anchor='middle' font-size='12' fill='#4b525c'>registros</text><rect x='230' y='90' width='160' height='110' fill='#ffffff' stroke='#8a94a6'/><text x='310' y='118' text-anchor='middle' font-size='14' fill='#16191d'>Memoria</text><text x='310' y='140' text-anchor='middle' font-size='12' fill='#4b525c'>datos e instrucciones</text><text x='310' y='158' text-anchor='middle' font-size='12' fill='#4b525c'>direccionada por posición</text><rect x='440' y='90' width='160' height='110' fill='#ffffff' stroke='#8a94a6'/><text x='520' y='118' text-anchor='middle' font-size='14' fill='#16191d'>Entrada/Salida</text><text x='520' y='140' text-anchor='middle' font-size='12' fill='#4b525c'>periféricos</text><text x='520' y='158' text-anchor='middle' font-size='12' fill='#4b525c'>puertos y controladores</text><line x1='180' y1='50' x2='180' y2='90' stroke='#2952a3' stroke-width='2'/><line x1='390' y1='50' x2='390' y2='90' stroke='#2952a3' stroke-width='2'/><line x1='500' y1='50' x2='500' y2='150' stroke='#2952a3' stroke-width='2' transform='translate(0,-100)'/><line x1='600' y1='50' x2='600' y2='90' stroke='#2952a3' stroke-width='2'/></svg>"
+        },
+        {
+          "heading": "6. Ejemplo práctico resuelto",
+          "body": "**Supuesto.** Un programa debe sumar dos números guardados en memoria y dejar el resultado en otra posición. Describe qué hace la CPU y por dónde pasa la información, indicando qué registro o bus interviene en cada paso.\n\n**Resolución.** (1) El **PC** contiene la dirección de la instrucción; esa dirección se copia al **MAR** y se envía por el **bus de direcciones**. (2) La memoria devuelve la instrucción por el **bus de datos**, se guarda en el **MBR** y después en el **IR**. (3) La **unidad de control** decodifica el código de operación y calcula la dirección de los operandos; si el direccionamiento es directo, la propia instrucción contiene las direcciones. (4) Los operandos se leen de memoria (o de la **caché**, si están en ella) y se cargan en registros de datos. (5) La **ALU** suma y deja el resultado en el registro acumulador; los **flags** reflejan si es cero, negativo o ha habido desbordamiento. (6) El paso de **Operand Store** escribe el resultado en la dirección de destino. (7) El **INC** incrementa el PC para apuntar a la siguiente instrucción.\n\n**Conclusión.** En cada paso hay un registro y un bus implicados: si se confunde el MAR con el MBR o el PC con el IR, la secuencia se vuelve incoherente. La caché no cambia el orden lógico del ciclo: solo reduce el tiempo de acceso cuando el dato está próximo."
+        },
+        {
+          "heading": "7. Trampas típicas de examen",
+          "body": "- Confundir **Von Neumann** (una memoria para datos e instrucciones) con **Harvard** (memorias y caminos separados).\n- Alterar el **orden del ciclo de instrucción**: el cálculo de la dirección de la siguiente instrucción va después del fetch y antes de la decodificación.\n- Confundir **MAR** (dirección) con **MBR** (contenido), y **PC** (siguiente instrucción) con **IR** (instrucción en curso).\n- Confundir **SRAM** (caché, sin refresco) con **DRAM** (memoria principal, necesita refresco).\n- Decir que la **RAM** es no volátil o que la **ROM** es volátil: es al contrario.\n- Confundir **Northbridge** (memoria y CPU) con **Southbridge** (entrada/salida), y no saber que el **PCH** integra sus funciones en las placas actuales.\n- Confundir **RAID 5** (tolera 1 fallo, mínimo 3 discos) con **RAID 6** (tolera 2 fallos, mínimo 4) y con **RAID 10** (anidado 1+0, mínimo 4).\n- Creer que **RISC** es más lento que **CISC**: RISC usa un conjunto reducido y rápido; CISC interpreta instrucciones más complejas.\n- Confundir **SIMD** (una instrucción, múltiples datos: GPU) con **MIMD** (varios procesadores con instrucciones y datos distintos).\n- Creer que la **caché L3** es la más rápida: la más rápida y pequeña es **L1**; L3 es mayor, compartida y más lenta.\n- Confundir **ASCII** (7 bits, 128 caracteres) con **Unicode** (más de un millón de caracteres en 17 planos) o con **UTF-8** (codificación variable de 1 a 4 bytes).\n- Confundir el **bus de direcciones** (posiciones de memoria) con el **bus de datos** (contenido que se transporta)."
+        },
+        {
+          "heading": "8. Resumen para memorizar",
+          "body": "**Lo que hay que memorizar.**\n\n1. **Von Neumann**: una memoria de lectura-escritura para datos e instrucciones, direccionamiento por posición y ejecución instrucción a instrucción. **Harvard**: memorias y caminos separados; **modificada**: acceso a instrucciones como datos.\n2. **Bus del sistema**: control, direcciones y datos; se define por ancho y velocidad.\n3. **CPU**: ALU (punto fijo, flotante y longitud variable), UC (reloj y señales) y registros (PC, INC, IR, MAR, MBR, E/SAR, E/SBR y flags).\n4. **Ciclo de instrucción**: fetch → cálculo de la dirección de la siguiente instrucción → decodificación → dirección del operando → lectura del operando → operación en la ALU → almacenamiento del resultado.\n5. **Clasificación**: CISC y RISC por el conjunto de instrucciones; Flynn: SISD, SIMD, MISD y MIMD.\n6. **Memorias**: SRAM (caché, sin refresco), DRAM (principal, con refresco), ROM (PROM, EPROM, EEPROM y EAROM); DDR2 y DDR3 con 240 pines, DDR4 con 288; las generaciones no se mezclan.\n7. **Jerarquía**: registros, caché L1, L2, L3, RAM y almacenamiento secundario; localidad temporal y espacial; reemplazo aleatorio, LRU o FIFO.\n8. **Placa base**: socket, ranuras de memoria, chipset (Northbridge y Southbridge, hoy PCH), BIOS con POST y CMOS, conectores PATA/SATA y ranuras PCIe.\n9. **RAID**: 0 sin tolerancia, 1 espejo, 5 (mínimo 3 discos, 1 fallo), 6 (mínimo 4 discos, 2 fallos) y 10 (anidado 1+0, mínimo 4 discos).\n10. **Codificación**: ASCII de 7 bits, Unicode y UTF-8 de 1 a 4 bytes; BCD y código Gray como codificaciones específicas."
+        },
+        {
+          "heading": "9. Casos tipo test comentados (15 preguntas)",
+          "body": "**1.** ¿Qué tres buses forman el bus del sistema? **Respuesta: a)** Control, direcciones y datos (Tema 1, 3.1.3).\n\n**2.** En Von Neumann, instrucciones y datos… **Respuesta: c)** comparten una única memoria de lectura-escritura (Tema 1, 3.1.2).\n\n**3.** ¿Qué registro contiene la dirección de la siguiente instrucción? **Respuesta: b)** El PC (Tema 1, 3.1.6).\n\n**4.** ¿Qué registro almacena la instrucción que se está ejecutando? **Respuesta: d)** El IR (Tema 1, 3.1.6).\n\n**5.** ¿Qué unidad ejecuta las operaciones aritméticas y lógicas? **Respuesta: a)** La ALU (Tema 1, 3.1.6).\n\n**6.** ¿Qué arquitectura separa memorias y caminos para instrucciones y datos? **Respuesta: c)** Harvard (Bloque 2, arquitectura Harvard).\n\n**7.** ¿Qué tipo de RAM se usa habitualmente como caché? **Respuesta: d)** SRAM (Bloque 2, tipos de memoria RAM).\n\n**8.** ¿Qué memoria pierde su contenido al apagar el equipo? **Respuesta: a)** La RAM (Bloque 2, memoria RAM).\n\n**9.** ¿Cuál es la caché más rápida y pequeña? **Respuesta: b)** L1 (Bloque 2, caché L1, L2 y L3).\n\n**10.** ¿Cuántos discos exige como mínimo RAID 5 y cuántos fallos tolera? **Respuesta: c)** Tres discos y un fallo (Tema 2, 1.5 y Bloque 2, RAID).\n\n**11.** ¿Cuántos fallos de disco tolera RAID 6? **Respuesta: d)** Dos fallos (Bloque 2, RAID 6).\n\n**12.** Tras la lectura de la instrucción, ¿qué paso del ciclo sigue? **Respuesta: b)** El cálculo de la dirección de la siguiente instrucción (Tema 1, 3.1.7.1).\n\n**13.** ¿Qué categoría de Flynn usan las GPU al aplicar una instrucción a muchos datos? **Respuesta: c)** SIMD (Bloque 2, taxonomía de Flynn).\n\n**14.** ¿Qué memoria ROM se borra con rayos ultravioleta? **Respuesta: a)** La EPROM (Bloque 2, tipos de memoria ROM).\n\n**15.** ¿Qué componente concentra las conexiones externas y sustituye al chipset tradicional? **Respuesta: d)** El PCH (Bloque 2, placa base)."
+        },
+        {
+          "heading": "10. Fuentes citadas",
+          "body": "- **Tema 1.docx**, apartados 3.1 a 3.3: arquitectura, Von Neumann, buses, CPU y registros, instrucciones, ciclo, placa base y memorias (DOCX, sin paginación fija).\n- **Tema 2.docx**, apartados 1 y 1.4-1.5: periféricos, almacenamiento y RAID (DOCX).\n- **Bloque 2 Actualizado 2026.docx**, temas 1 y 2: memorias RAM y ROM, caché, ley de Moore, taxonomía de Flynn, arquitectura Harvard, placa base y periféricos (DOCX).\n- **PREGUNTAS BLOQUE II - DIVIDIDO POR MINITEMAS.pdf**: banco de preguntas usado para el estilo y el contraste de los testCases.\n- **II.13.txt**: texto consolidado de las fuentes anteriores (uso interno de trabajo).\n\nNo se copian párrafos literales; se sintetiza y se ordena el contenido, y las cifras citadas son las que aparecen en estas fuentes."
+        }
+      ],
       "practiceSlug": "ii-13"
     },
     "II.14": {
@@ -17902,6 +18065,995 @@
   ],
   "supuestos": [
     {
+      "slug": "tai-2019-l-s1",
+      "year": 2019,
+      "conv": "TAI-L 2019 · Supuesto I",
+      "block": "IV",
+      "title": "Gestión de procesos selectivos de oposiciones",
+      "difficulty": "media",
+      "official": true,
+      "estimatedMinutes": 30,
+      "statement": "En el departamento TIC al que acaba de incorporarse se va a desarrollar, para la Subdirección de Selección, un sistema de información que gestione los procesos selectivos y las convocatorias de oposiciones de la Administración General del Estado. El sistema cubrirá la inscripción de aspirantes, la gestión de colaboradores, la generación de listados, estadísticas y cuadros de mando, y la emisión de certificados para aspirantes y colaboradores.\n\nEl proyecto convive con lenguajes y tecnologías ya implantados: Java, C# y Python, varios gestores de bases de datos y Git como repositorio de código. El diagrama de clases simplificado del sistema relaciona cuatro entidades: **Opositor** (identificador y NIF), **Solicitud** (identificador, opositor y proceso), **Proceso** (identificador y forma de acceso) y **Ejercicio** (identificador, proceso y duración). Un opositor puede presentar varias solicitudes y cada solicitud pertenece a un proceso; un proceso consta de uno o varios ejercicios.\n\nEl enunciado del examen advierte de que el código de las preguntas tiene las clases, librerías y variables ya declaradas, que el HTML es HTML5 y que las sentencias SQL siguen el estándar ANSI SQL. La metodología de referencia del organismo es Métrica v3. Las preguntas se reparten entre desarrollo web (HTML, CSS, XML, JSON, JavaScript), programación en Python, Java y C#, bases de datos relacionales y SQL, y el uso de Git.",
+      "steps": [
+        "Leer el caso y quedarse con el reparto de áreas: desarrollo web (HTML, CSS, JavaScript, XML y JSON), programación (Java, C# y Python), bases de datos (normalización y SQL) y Git.",
+        "Repasar el diagrama de clases para saber qué tablas y relaciones se citan en las preguntas de SQL: Opositor, Solicitud, Proceso y Ejercicio.",
+        "Resolver primero las preguntas de sintaxis (HTML, CSS, XML, JSON, Java, C# y Python) comprobando la forma exacta de cada opción, no solo su intención.",
+        "En las preguntas de SQL, fijarse en el orden de las cláusulas (SELECT, FROM, WHERE, GROUP BY, HAVING) y en el uso de comodines y funciones de agregado.",
+        "Corregir con la plantilla oficial del Supuesto I y anotar los errores de sintaxis que más se repiten para repasarlos."
+      ],
+      "topics": [
+        "IV.27",
+        "IV.28",
+        "IV.30",
+        "IV.31",
+        "IV.32"
+      ],
+      "source": {
+        "label": "INAP — Cuestionario TAI-L 2019 (OEP 2019), Supuesto I",
+        "url": "https://sede.inap.gob.es/documents/59312/1925774/cues_1er_ejer_TAI-L_oep19_154AB89SD658.pdf/ac7ec9d6-3ac6-4457-6687-6ecf53aa158e",
+        "pages": "pp. 9-12"
+      },
+      "questions": [
+        {
+          "stem": "En una tabla HTML5, ¿qué etiqueta define la celda de encabezado de la columna «Proceso», con un formato de letra diferenciado?",
+          "options": [
+            {
+              "key": "a",
+              "text": "<th>Proceso</th>"
+            },
+            {
+              "key": "b",
+              "text": "<tableheader>Proceso</tableheader>"
+            },
+            {
+              "key": "c",
+              "text": "<theader>Proceso</theader>"
+            },
+            {
+              "key": "d",
+              "text": "<tableh>Proceso</tableh>"
+            }
+          ],
+          "correct": "a",
+          "justification": "th define una celda de encabezado dentro de una tabla y el navegador le aplica un formato diferenciado. tableheader, theader y tableh no son elementos HTML válidos."
+        },
+        {
+          "stem": "Se quiere mostrar un opositor con una lista anidada de sus dos primeras notas: el opositor como elemento principal y las notas como sublista. ¿Cuál es el código HTML5 correcto?",
+          "options": [
+            {
+              "key": "a",
+              "text": "<ul><li>Opositor<ul><li>Nota 1</li><li>Nota 2</li></ul></li></ul>"
+            },
+            {
+              "key": "b",
+              "text": "<ul><li>Opositor</li></ul><ul><li>Nota 1</li><li>Nota 2</li></ul>"
+            },
+            {
+              "key": "c",
+              "text": "<ul><li1>Opositor</li1><li2>Nota 1</li2><li2>Nota 2</li2></ul>"
+            },
+            {
+              "key": "d",
+              "text": "<ul><li>Opositor<li>Nota 1</li><li>Nota 2</li></li></ul>"
+            }
+          ],
+          "correct": "a",
+          "justification": "La lista anidada se consigue metiendo una segunda ul, con sus li, dentro del li del opositor. La opción b crea dos listas hermanas, la c inventa etiquetas li1 y li2 y la d deja un li sin cerrar antes de abrir los siguientes."
+        },
+        {
+          "stem": "En el formulario de inscripción se exige que el nombre del opositor sea obligatorio. ¿Qué código completa correctamente el campo de texto?",
+          "options": [
+            {
+              "key": "a",
+              "text": "<input type=\"text\" name=\"username\" required/>"
+            },
+            {
+              "key": "b",
+              "text": "<input type=\"text\" name=\"username\" enforced/>"
+            },
+            {
+              "key": "c",
+              "text": "<input type=\"text\" name=\"username\" mandatory/>"
+            },
+            {
+              "key": "d",
+              "text": "<input type=\"text\" name=\"username\" compulsory/>"
+            }
+          ],
+          "correct": "a",
+          "justification": "required es el atributo booleano de HTML5 que impide enviar el formulario si el campo está vacío. enforced, mandatory y compulsory no existen como atributos HTML; solo parecen traducciones de «obligatorio»."
+        },
+        {
+          "stem": "Se quiere aplicar color verde a todos los enlaces (etiqueta a) que sean hijos directos de un elemento li. ¿Qué selector CSS es el correcto?",
+          "options": [
+            {
+              "key": "a",
+              "text": "li.a {color: green;}"
+            },
+            {
+              "key": "b",
+              "text": "li>a {color: green;}"
+            },
+            {
+              "key": "c",
+              "text": "li#a {color: green;}"
+            },
+            {
+              "key": "d",
+              "text": "li_a {color: green;}"
+            }
+          ],
+          "correct": "b",
+          "justification": "El combinador > selecciona los hijos directos del elemento de la izquierda, de modo que li>a alcanza solo a los enlaces que cuelgan directamente de un li. li.a busca una clase, li#a un identificador y li_a no es un combinador válido."
+        },
+        {
+          "stem": "¿Qué regla CSS aplica el modelo Flexbox a un div cuyo id es «principal»?",
+          "options": [
+            {
+              "key": "a",
+              "text": "div#principal {display: flex;}"
+            },
+            {
+              "key": "b",
+              "text": "div#principal {display: flexbox;}"
+            },
+            {
+              "key": "c",
+              "text": "div#principal {display: flex-container;}"
+            },
+            {
+              "key": "d",
+              "text": "div#principal {display:flexible;}"
+            }
+          ],
+          "correct": "a",
+          "justification": "El valor que activa el modelo de caja flexible es display: flex. flexbox, flex-container y flexible no son valores válidos de la propiedad display."
+        },
+        {
+          "stem": "Se detectan errores en la exportación a XML de los listados de notas. Sin valorar si la información está bien representada, ¿cuál de estos fragmentos XML está bien formado?",
+          "options": [
+            {
+              "key": "a",
+              "text": "<Opositor>Winston Churchill<Nota1>95</nota1><Nota2>65</nota2></opositor>"
+            },
+            {
+              "key": "b",
+              "text": "<Opositor>Winston Churchill<Nota1>95</Nota1><Nota2>65</Opositor></Nota2>"
+            },
+            {
+              "key": "c",
+              "text": "<Opositor>Winston Churchill<Nota1/>95<Nota2/>65</Opositor>"
+            },
+            {
+              "key": "d",
+              "text": "<Opositor>Winston Churchill<Nota1>95</><Nota2>65</></>"
+            }
+          ],
+          "correct": "c",
+          "justification": "La opción c usa etiquetas equilibradas y autocerradas correctamente. La a mezcla mayúsculas y minúsculas en los nombres de etiqueta, la b cierra Opositor antes de cerrar Nota2 y la d emplea el cierre vacío </>, que no es XML bien formado."
+        },
+        {
+          "stem": "La Subdirección va a intercambiar datos en JSON. ¿Cuál de estos fragmentos es un JSON válido?",
+          "options": [
+            {
+              "key": "a",
+              "text": "{\"nombre\": \"Juana\", \"apellido\": \"Ruiz\"}"
+            },
+            {
+              "key": "b",
+              "text": "{'nombre': 'Juana', 'apellido': 'Ruiz'}"
+            },
+            {
+              "key": "c",
+              "text": "{nombre: \"Juana\", apellido: \"Ruiz\"}"
+            },
+            {
+              "key": "d",
+              "text": "{nombre: \"Juana\"; apellido: \"Ruiz\"}"
+            }
+          ],
+          "correct": "a",
+          "justification": "JSON exige comillas dobles tanto en las claves como en los valores de tipo cadena y separa los pares con comas. Las comillas simples, las claves sin comillas y el punto y coma como separador no son sintaxis JSON válida."
+        },
+        {
+          "stem": "¿Qué valor devuelve esta función JavaScript? (Con i = 1 y j = 0, mientras i sea menor que 7 se suma i a j y se incrementa i en 2).",
+          "options": [
+            {
+              "key": "a",
+              "text": "2"
+            },
+            {
+              "key": "b",
+              "text": "9"
+            },
+            {
+              "key": "c",
+              "text": "6"
+            },
+            {
+              "key": "d",
+              "text": "0"
+            }
+          ],
+          "correct": "b",
+          "justification": "El bucle se ejecuta con i = 1, 3 y 5: j acumula 1 + 3 + 5 = 9; al llegar i = 7 la condición i < 7 deja de cumplirse y se devuelve 9. Las demás opciones no coinciden con esa traza."
+        },
+        {
+          "stem": "Con la variable Python «opositor = {'nombre': 'Sandra Gomez', 'notas': [27, 36, 12]}», ¿qué expresión asigna 36 a la variable notaSegundoEjercicio?",
+          "options": [
+            {
+              "key": "a",
+              "text": "notaSegundoEjercicio = opositor.notas.Value.Item2"
+            },
+            {
+              "key": "b",
+              "text": "notaSegundoEjercicio = opositor['notas'][1]"
+            },
+            {
+              "key": "c",
+              "text": "notaSegundoEjercicio = opositor.Key[notas].Value[1]"
+            },
+            {
+              "key": "d",
+              "text": "notaSegundoEjercicio = opositor(notas(2))"
+            }
+          ],
+          "correct": "b",
+          "justification": "Se accede al diccionario por la clave 'notas', que devuelve la lista, y después al índice 1 de la lista, que es 36 porque los índices empiezan en 0. Las otras sintaxis no son propias de Python y la d, además, contaría el tercer elemento."
+        },
+        {
+          "stem": "Se valoran desarrollos de Machine Learning en Python. ¿Cuál de las siguientes es una librería válida para ese fin?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Keras"
+            },
+            {
+              "key": "b",
+              "text": "Yum"
+            },
+            {
+              "key": "c",
+              "text": "Mahotas"
+            },
+            {
+              "key": "d",
+              "text": "Openpyxl"
+            }
+          ],
+          "correct": "a",
+          "justification": "Keras es una librería de aprendizaje profundo para Python. Yum es un gestor de paquetes de sistemas Linux, Mahotas se orienta al procesamiento de imágenes y Openpyxl sirve para leer y escribir hojas de Excel."
+        },
+        {
+          "stem": "En uno de los módulos Java hay un bucle que une muchísimas cadenas de texto y lastra el rendimiento. ¿Qué clase de java.lang conviene usar para mejorarlo?",
+          "options": [
+            {
+              "key": "a",
+              "text": "StringConcat"
+            },
+            {
+              "key": "b",
+              "text": "StringConstruct"
+            },
+            {
+              "key": "c",
+              "text": "StringBuilder"
+            },
+            {
+              "key": "d",
+              "text": "StringCreator"
+            }
+          ],
+          "correct": "c",
+          "justification": "StringBuilder permite construir cadenas mutables y evita crear un objeto String nuevo en cada concatenación. StringConcat, StringConstruct y StringCreator no son clases de la API de Java."
+        },
+        {
+          "stem": "¿Cómo debe declarar el equipo en Java una clase llamada Ejercicio para impedir que se herede de ella?",
+          "options": [
+            {
+              "key": "a",
+              "text": "closed class Ejercicio"
+            },
+            {
+              "key": "b",
+              "text": "final class Ejercicio"
+            },
+            {
+              "key": "c",
+              "text": "private class Ejercicio"
+            },
+            {
+              "key": "d",
+              "text": "immutable class Ejercicio"
+            }
+          ],
+          "correct": "b",
+          "justification": "El modificador final aplicado a una clase impide que otras clases la extiendan. closed e immutable no son modificadores de Java y private no impide la herencia, sino que limita la visibilidad de la clase."
+        },
+        {
+          "stem": "En C# hay que crear un objeto SqlConnection y asegurar que se llama a Dispose al salir del bloque. ¿Qué instrucción se utiliza?",
+          "options": [
+            {
+              "key": "a",
+              "text": "using (SqlConnection conn = new SqlConnection(connString)) {conn.Open();}"
+            },
+            {
+              "key": "b",
+              "text": "scope (SqlConnection conn = new SqlConnection(connString)) {conn.Open();}"
+            },
+            {
+              "key": "c",
+              "text": "dispose (SqlConnection conn = new SqlConnection(connString)) {conn.Open();}"
+            },
+            {
+              "key": "d",
+              "text": "internal (SqlConnection conn = new SqlConnection(connString)) {conn.Open();}"
+            }
+          ],
+          "correct": "a",
+          "justification": "La instrucción using garantiza que el objeto se libere y se llame a Dispose al terminar el bloque, aunque se produzca una excepción. scope, dispose e internal no son instrucciones de control de C# para ese fin."
+        },
+        {
+          "stem": "¿Cuál es la forma correcta de declarar e inicializar un array de enteros en C#?",
+          "options": [
+            {
+              "key": "a",
+              "text": "int[] arrayEnteros = new {1, 2, 3};"
+            },
+            {
+              "key": "b",
+              "text": "int arrayEnteros[] = new() {1, 2, 3};"
+            },
+            {
+              "key": "c",
+              "text": "int[] arrayEnteros = new[] {1, 2, 3};"
+            },
+            {
+              "key": "d",
+              "text": "int arrayEnteros[] = new {1, 2, 3};"
+            }
+          ],
+          "correct": "c",
+          "justification": "En C# el tipo se escribe int[] antes del nombre y la inicialización implícita usa new[] con los valores. La opción a usa new sin corchetes, la b coloca los corchetes detrás del nombre al estilo de Java y la d combina ambas incorrecciones."
+        },
+        {
+          "stem": "En una base de datos antigua se guarda un registro con NIF, nombre, dos apellidos, dirección y el campo Teléfonos con el valor «916666666;917777777». ¿En qué forma normal está la tabla?",
+          "options": [
+            {
+              "key": "a",
+              "text": "En primera forma normal"
+            },
+            {
+              "key": "b",
+              "text": "En segunda forma normal"
+            },
+            {
+              "key": "c",
+              "text": "En tercera forma normal"
+            },
+            {
+              "key": "d",
+              "text": "No está en ninguna forma normal"
+            }
+          ],
+          "correct": "d",
+          "justification": "La primera forma normal exige valores atómicos, y el campo Teléfonos almacena dos números separados por punto y coma. Al incumplirse la 1NF no puede estar en 2NF ni en 3NF, por lo que no está en ninguna forma normal."
+        },
+        {
+          "stem": "El campo IdFormaAcceso de la tabla Proceso es char(1) y toma «L» o «P». ¿Qué sentencia obtiene el identificador del proceso junto al nombre descriptivo de la forma de acceso?",
+          "options": [
+            {
+              "key": "a",
+              "text": "SELECT IdProceso, IF IdFormaAcceso = 'L' THEN 'Ingreso Libre' ELSE 'Promocion Interna' ENDIF AS FormaAcceso FROM Proceso"
+            },
+            {
+              "key": "b",
+              "text": "SELECT IdProceso, CASE IdFormaAcceso WHEN 'L' THEN 'Ingreso Libre' WHEN 'P' THEN 'Promocion Interna' END AS FormaAcceso FROM Proceso"
+            },
+            {
+              "key": "c",
+              "text": "SELECT IdProceso, SWITCH IdFormaAcceso ('L' = 'Ingreso Libre', 'P' = 'Promocion Interna') AS FormaAcceso FROM Proceso"
+            },
+            {
+              "key": "d",
+              "text": "SELECT IdProceso, IIF(IdFormaAcceso, 'L' = 'Ingreso Libre', 'P' = 'Promocion Interna') AS FormaAcceso FROM Proceso"
+            }
+          ],
+          "correct": "b",
+          "justification": "CASE WHEN ... THEN ... END es la expresión condicional del estándar ANSI SQL y permite devolver un texto distinto según el código. IF ... ENDIF, SWITCH e IIF no forman parte del estándar SQL."
+        },
+        {
+          "stem": "¿Qué sentencia devuelve el identificador de los opositores con más de una solicitud en la tabla Solicitud?",
+          "options": [
+            {
+              "key": "a",
+              "text": "SELECT IdOpositor, COUNT(IdSolicitud) AS NumeroSolicitudes FROM Solicitud GROUP BY IdOpositor WHERE NumeroSolicitudes > 1"
+            },
+            {
+              "key": "b",
+              "text": "SELECT IdOpositor, IdSolicitud FROM Solicitud WHERE COUNT(IdSolicitud) > 1"
+            },
+            {
+              "key": "c",
+              "text": "SELECT IdOpositor, COUNT(IdSolicitud) FROM Solicitud WHERE COUNT(IdSolicitud) > 1 GROUP BY IdOpositor"
+            },
+            {
+              "key": "d",
+              "text": "SELECT IdOpositor, COUNT(IdSolicitud) FROM Solicitud GROUP BY IdOpositor HAVING COUNT(IdSolicitud) > 1"
+            }
+          ],
+          "correct": "d",
+          "justification": "La condición sobre una función de agregado se filtra con HAVING después de GROUP BY, que es lo que hace la opción d. WHERE no puede usarse con COUNT, el alias del SELECT no se puede utilizar en WHERE y la opción a coloca WHERE en un lugar sintácticamente incorrecto."
+        },
+        {
+          "stem": "¿Con qué sentencia ANSI SQL se incrementa un 10 % la columna Duracion de todos los registros de la tabla Ejercicio?",
+          "options": [
+            {
+              "key": "a",
+              "text": "UPDATE Duracion = Duracion + (0.10 * Duracion) FROM Ejercicio"
+            },
+            {
+              "key": "b",
+              "text": "UPDATE Ejercicio SET Duracion = Duracion * 1.1"
+            },
+            {
+              "key": "c",
+              "text": "UPDATE TABLE Ejercicio (Duracion = Duracion + 10%)"
+            },
+            {
+              "key": "d",
+              "text": "UPDATE SET Duracion *= 1.10 FROM Ejercicio"
+            }
+          ],
+          "correct": "b",
+          "justification": "UPDATE indica la tabla con SET y asigna a la columna su valor multiplicado por 1,1, que equivale a sumarle el 10 %. Las otras opciones usan orden de cláusulas incorrecto, UPDATE TABLE o el operador *= y el porcentaje dentro del cálculo, que no son válidos en ANSI SQL."
+        },
+        {
+          "stem": "El campo DNI de la tabla Opositor es char(9). ¿Qué sentencia devuelve los registros cuyo DNI empieza por 3?",
+          "options": [
+            {
+              "key": "a",
+              "text": "SELECT * FROM Opositor WHERE DNI = 3*"
+            },
+            {
+              "key": "b",
+              "text": "SELECT * FROM Opositor WHERE DNI IN ('3.')"
+            },
+            {
+              "key": "c",
+              "text": "SELECT * FROM Opositor WHERE DNI LIKE '3%'"
+            },
+            {
+              "key": "d",
+              "text": "SELECT DNI(3*) FROM Opositor"
+            }
+          ],
+          "correct": "c",
+          "justification": "LIKE con el comodín % al final busca todas las cadenas que comienzan por el carácter 3. El asterisco no es comodín SQL, IN ('3.') busca el valor literal 3. y la última opción no es una consulta válida."
+        },
+        {
+          "stem": "El repositorio de código de la unidad es Git. ¿Qué comando muestra una lista de los commits anteriores?",
+          "options": [
+            {
+              "key": "a",
+              "text": "git commit"
+            },
+            {
+              "key": "b",
+              "text": "git fetch"
+            },
+            {
+              "key": "c",
+              "text": "git status"
+            },
+            {
+              "key": "d",
+              "text": "git log"
+            }
+          ],
+          "correct": "d",
+          "justification": "git log muestra el historial de commits del repositorio. git commit crea una confirmación nueva, git fetch descarga referencias del remoto y git status resume el estado del árbol de trabajo, pero ninguno lista el historial."
+        }
+      ]
+    },
+    {
+      "slug": "tai-2019-l-s2",
+      "year": 2019,
+      "conv": "TAI-L 2019 · Supuesto II",
+      "block": "III",
+      "title": "Integración de dos organismos y traslado al CPD",
+      "difficulty": "media",
+      "official": true,
+      "estimatedMinutes": 30,
+      "statement": "La pandemia de la COVID-19 obligó a las administraciones públicas a impulsar el teletrabajo y a replantear su estrategia TIC. En ese contexto, a su departamento le asignan la integración de dos organismos que no pueden asumir por sí solos las nuevas demandas de servicios y conexiones: la Demarcación de Carreteras de Madrid (DCM), con máquinas físicas Red Hat Enterprise Linux (RHEL) organizadas en tres áreas de 20 personas cada una, y la Confederación Hidrográfica del Tajo (CHT), con máquinas físicas Solaris organizadas en cinco áreas de 50 personas cada una. Ambos organismos tienen además bastantes equipos Windows 10 y equipamiento específico que hay que trasladar al CPD. La salvaguarda de los datos es crítica: una pérdida o inconsistencia durante el proceso sería inasumible. Salvo que la pregunta indique lo contrario, se dispone de los permisos adecuados de sistema operativo y de red.",
+      "steps": [
+        "Leer el caso y fijar el escenario: dos organismos (DCM con RHEL y CHT con Solaris), equipos Windows 10, traslado al CPD y prioridad absoluta a la integridad de los datos.",
+        "Resolver primero el direccionamiento: máscara y clase de 10.0.4.0/255.255.255.128, y capacidad y rango de hosts de 10.0.0.0/21.",
+        "Repasar los comandos de los tres sistemas operativos: versión de RHEL, rutas persistentes en Solaris, fichero de contraseñas, grupos locales, políticas de cuentas y caché DNS en Windows.",
+        "Abordar la infraestructura: capacidad de RAID 6, copias comprimidas con tar, creación y listado de contenedores Docker, alimentación PoE y categoría de cableado.",
+        "Cerrar con seguridad y servicios de red (firewall de Windows, tipo de IPS y puerto de SMTPS) y corregir el intento con la plantilla oficial."
+      ],
+      "topics": [
+        "II.14",
+        "III.18",
+        "III.19",
+        "III.20",
+        "III.21",
+        "III.22",
+        "III.23",
+        "IV.28",
+        "IV.29",
+        "V.38"
+      ],
+      "source": {
+        "label": "INAP — Cuestionario TAI-L 2019, Supuesto II",
+        "url": "https://sede.inap.gob.es/documents/59312/1925774/cues_1er_ejer_TAI-L_oep19_154AB89SD658.pdf/ac7ec9d6-3ac6-4457-6687-6ecf53aa158e",
+        "pages": "pp. 13-15"
+      },
+      "questions": [
+        {
+          "stem": "La DCM recibe de comunicaciones la red 10.0.4.0/255.255.255.128. Si se cuenta en binario, ¿cuántos bits a 1 tiene esa máscara?",
+          "options": [
+            {
+              "key": "a",
+              "text": "24"
+            },
+            {
+              "key": "b",
+              "text": "26"
+            },
+            {
+              "key": "c",
+              "text": "25"
+            },
+            {
+              "key": "d",
+              "text": "23"
+            }
+          ],
+          "correct": "c",
+          "justification": "255.255.255.128 equivale a 11111111.11111111.11111111.10000000: hay 25 bits a 1, luego es un /25. Las opciones 24, 26 y 23 no corresponden a esa máscara."
+        },
+        {
+          "stem": "Esa misma red 10.0.4.0, ¿en qué clase de direccionamiento IPv4 se encuadra?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Clase A."
+            },
+            {
+              "key": "b",
+              "text": "Clase B."
+            },
+            {
+              "key": "c",
+              "text": "Clase C."
+            },
+            {
+              "key": "d",
+              "text": "Clase D."
+            }
+          ],
+          "correct": "a",
+          "justification": "El primer octeto, 10, empieza por 0 y cae dentro del rango 1-126 de la clase A. La clase B comienza en 128, la C en 192 y la D en 224."
+        },
+        {
+          "stem": "La CHT recibe el bloque 10.0.0.0/21. ¿Cuántos hosts se pueden direccionar como máximo en él?",
+          "options": [
+            {
+              "key": "a",
+              "text": "1024"
+            },
+            {
+              "key": "b",
+              "text": "2046"
+            },
+            {
+              "key": "c",
+              "text": "32"
+            },
+            {
+              "key": "d",
+              "text": "256"
+            }
+          ],
+          "correct": "b",
+          "justification": "Un /21 deja 32 − 21 = 11 bits de host: 2^11 = 2048 direcciones, menos la de red y la de broadcast, quedan 2046 hosts. Las otras cifras se corresponden con prefijos distintos o no descuentan las dos direcciones reservadas."
+        },
+        {
+          "stem": "¿Qué direcciones puede ocupar un host dentro del bloque 10.0.0.0/21 que se ha asignado a la CHT?",
+          "options": [
+            {
+              "key": "a",
+              "text": "10.0.3.1 - 10.0.3.254"
+            },
+            {
+              "key": "b",
+              "text": "10.0.0.1 - 10.0.0.254"
+            },
+            {
+              "key": "c",
+              "text": "10.0.3.0 - 10.0.3.255"
+            },
+            {
+              "key": "d",
+              "text": "10.0.0.1 - 10.0.7.254"
+            }
+          ],
+          "correct": "d",
+          "justification": "El bloque de un /21 avanza de 8 en 8 en el tercer octeto: la red 10.0.0.0/21 abarca de 10.0.0.0 a 10.0.7.255. Por tanto, los hosts utilizables van de 10.0.0.1 a 10.0.7.254; los rangos de las otras opciones pertenecen a subredes más pequeñas."
+        },
+        {
+          "stem": "La DCM no sabe qué versión de RHEL tiene instalada. ¿Qué comando permite averiguarlo?",
+          "options": [
+            {
+              "key": "a",
+              "text": "rm -f /etc/redhat-release"
+            },
+            {
+              "key": "b",
+              "text": "cat /etc/redhat-version"
+            },
+            {
+              "key": "c",
+              "text": "cat /etc/redhat-release"
+            },
+            {
+              "key": "d",
+              "text": "mv /etc/redhat-release"
+            }
+          ],
+          "correct": "c",
+          "justification": "La versión de Red Hat se consulta leyendo /etc/redhat-release. rm y mv modifican o borran el fichero, y /etc/redhat-version no existe como ruta habitual."
+        },
+        {
+          "stem": "En una máquina Solaris de la CHT hay que dejar una ruta persistente hacia la red 10.0.5.0/24, con máscara 255.255.255.0 y puerta de enlace 10.0.5.150. ¿Cuál es el comando correcto?",
+          "options": [
+            {
+              "key": "a",
+              "text": "route -p add -net 10.0.5.0/24 -gateway 10.0.5.150"
+            },
+            {
+              "key": "b",
+              "text": "route new -p -net 10.0.5.0/24 -gateway 10.0.5.150"
+            },
+            {
+              "key": "c",
+              "text": "route -static add -net 10.0.5.0/24 -gateway 10.0.5.150"
+            },
+            {
+              "key": "d",
+              "text": "route add -static -net 10.0.5.0/24 -gateway 10.0.5.150"
+            }
+          ],
+          "correct": "a",
+          "justification": "En Solaris la opción -p hace permanente la ruta y la sintaxis es «route -p add -net ... -gateway ...». Las otras tres formas no son válidas: no existen los verbos new ni las opciones -static en esa posición."
+        },
+        {
+          "stem": "En una auditoría de un servidor Linux se pregunta dónde se guardan las contraseñas cifradas de los usuarios. ¿Cuál es la ubicación correcta?",
+          "options": [
+            {
+              "key": "a",
+              "text": "/etc/passwd"
+            },
+            {
+              "key": "b",
+              "text": "/etc/users"
+            },
+            {
+              "key": "c",
+              "text": "/etc/shadow"
+            },
+            {
+              "key": "d",
+              "text": "/etc/groups"
+            }
+          ],
+          "correct": "c",
+          "justification": "Los hashes de las contraseñas se almacenan en /etc/shadow, accesible solo con privilegios. /etc/passwd ya no guarda las contraseñas, y /etc/users y /etc/groups no son ficheros del sistema."
+        },
+        {
+          "stem": "Tanto la DCM como la CHT utilizan Oracle, pero se desconoce la versión. ¿Qué consulta permite obtenerla?",
+          "options": [
+            {
+              "key": "a",
+              "text": "SELECT * FROM V$VERSION"
+            },
+            {
+              "key": "b",
+              "text": "SELECT * FROM V$VERSIONADO"
+            },
+            {
+              "key": "c",
+              "text": "SELECT * FROM V$VERSIONDB"
+            },
+            {
+              "key": "d",
+              "text": "SELECT * FROM V$VERSIONTABLE"
+            }
+          ],
+          "correct": "a",
+          "justification": "La vista V$VERSION devuelve la versión y los componentes de Oracle. Las otras tres vistas no existen en el diccionario de datos."
+        },
+        {
+          "stem": "Se quiere crear un backup comprimido con gzip del directorio /home/opositor/temas/ en RHEL. ¿Qué comando es el correcto?",
+          "options": [
+            {
+              "key": "a",
+              "text": "tar -czf TEMAS.tar.gz /home/opositor/temas/"
+            },
+            {
+              "key": "b",
+              "text": "tar -xzf TEMAS.tar.gz /home/opositor/temas/"
+            },
+            {
+              "key": "c",
+              "text": "tar -xzf /home/opositor/temas/ TEMAS.tar.gz"
+            },
+            {
+              "key": "d",
+              "text": "tar -cjf /home/opositor/temas/ TEMAS.tar.gz"
+            }
+          ],
+          "correct": "a",
+          "justification": "tar -czf crea un archivo con compresión gzip, indicando primero el nombre del fichero y después el directorio. -xzf sirve para extraer, -cjf usa bzip2 y la tercera opción invierte el orden de los argumentos."
+        },
+        {
+          "stem": "En un Windows hay que consultar qué usuarios forman parte del grupo local de administradores. ¿Qué orden lo muestra?",
+          "options": [
+            {
+              "key": "a",
+              "text": "net local administradores"
+            },
+            {
+              "key": "b",
+              "text": "net localgroup admin"
+            },
+            {
+              "key": "c",
+              "text": "net local admin"
+            },
+            {
+              "key": "d",
+              "text": "net localgroup administradores"
+            }
+          ],
+          "correct": "d",
+          "justification": "El comando «net localgroup» seguido del nombre del grupo local lista sus miembros; el grupo es «administradores». Las otras variantes usan verbos o nombres de grupo que no existen."
+        },
+        {
+          "stem": "También se necesita revisar cómo están configuradas las políticas de contraseñas y bloqueo de cuentas en un Windows local. ¿Qué orden de consola las muestra?",
+          "options": [
+            {
+              "key": "a",
+              "text": "net computer"
+            },
+            {
+              "key": "b",
+              "text": "net localgroup"
+            },
+            {
+              "key": "c",
+              "text": "net config"
+            },
+            {
+              "key": "d",
+              "text": "net accounts"
+            }
+          ],
+          "correct": "d",
+          "justification": "«net accounts» muestra y permite modificar la política de contraseñas y de bloqueo de cuentas. net computer y net localgroup hacen otras funciones y net config se refiere a la configuración de servicios."
+        },
+        {
+          "stem": "Se montan cinco discos de 6 TB en RAID 6. ¿Qué capacidad útil queda tras reservar la paridad?",
+          "options": [
+            {
+              "key": "a",
+              "text": "12 TB"
+            },
+            {
+              "key": "b",
+              "text": "18 TB"
+            },
+            {
+              "key": "c",
+              "text": "24 TB"
+            },
+            {
+              "key": "d",
+              "text": "30 TB"
+            }
+          ],
+          "correct": "b",
+          "justification": "En RAID 6 la capacidad útil es (n − 2) × tamaño del disco, porque se dedican dos discos a paridad: (5 − 2) × 6 TB = 18 TB. 24 TB correspondería a RAID 5 y 30 TB a RAID 0."
+        },
+        {
+          "stem": "No se dispone de un Windows Server 2008, pero hay Docker instalado. ¿Qué sentencia crea y arranca un contenedor a partir de la imagen SW2008?",
+          "options": [
+            {
+              "key": "a",
+              "text": "docker run SW2008"
+            },
+            {
+              "key": "b",
+              "text": "docker start SW2008"
+            },
+            {
+              "key": "c",
+              "text": "start docker SW2008"
+            },
+            {
+              "key": "d",
+              "text": "docker start run SW2008"
+            }
+          ],
+          "correct": "a",
+          "justification": "«docker run» crea un contenedor a partir de la imagen y lo arranca. «docker start» solo arranca un contenedor que ya existe, y las otras dos sentencias no son sintaxis válida de Docker."
+        },
+        {
+          "stem": "Para comprobar si el contenedor se ha arrancado, ¿qué comando lista todos los contenedores, estén o no en marcha?",
+          "options": [
+            {
+              "key": "a",
+              "text": "docker ps"
+            },
+            {
+              "key": "b",
+              "text": "docker ps -a"
+            },
+            {
+              "key": "c",
+              "text": "docker list"
+            },
+            {
+              "key": "d",
+              "text": "docker list-container -all"
+            }
+          ],
+          "correct": "b",
+          "justification": "«docker ps» muestra solo los contenedores en ejecución, mientras que «docker ps -a» incluye también los detenidos. «docker list» y «docker list-container» no existen."
+        },
+        {
+          "stem": "Hay que trasladar una sonda de unos 70 W que se usa una hora a la semana y debe poder encenderse de forma remota por red. ¿Es posible y con qué tecnología?",
+          "options": [
+            {
+              "key": "a",
+              "text": "No, no sería posible."
+            },
+            {
+              "key": "b",
+              "text": "Si, mediante PoE IEEE 802.3ct"
+            },
+            {
+              "key": "c",
+              "text": "Si, mediante PoE IEEE 802.3bt"
+            },
+            {
+              "key": "d",
+              "text": "Si, mediante PoE IEEE 802.3dt"
+            }
+          ],
+          "correct": "c",
+          "justification": "802.3bt (4PPoE) es el estándar PoE que cubre potencias de hasta 90 W en el dispositivo alimentado, suficiente para 70 W. 802.3ct y 802.3dt no son estándares PoE, y las variantes anteriores no llegan a esa potencia."
+        },
+        {
+          "stem": "Un medidor alojado en las instalaciones exige un enlace Ethernet de 30 Gbps. De acuerdo con ANSI/TIA-568, ¿qué categoría de cable hay que instalar?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Categoría 6."
+            },
+            {
+              "key": "b",
+              "text": "Categoría 7."
+            },
+            {
+              "key": "c",
+              "text": "Categoría 7A."
+            },
+            {
+              "key": "d",
+              "text": "Categoría 8."
+            }
+          ],
+          "correct": "d",
+          "justification": "La categoría 8 es la que el estándar asocia a 25/40GBASE-T (hasta 30 m), adecuada para ese caudal. Las categorías 6, 7 y 7A están orientadas a 10GBASE-T."
+        },
+        {
+          "stem": "Algunos equipos Windows no tienen habilitado el firewall. ¿Qué comando lo habilita?",
+          "options": [
+            {
+              "key": "a",
+              "text": "netsh advfirewall set allprofiles enable"
+            },
+            {
+              "key": "b",
+              "text": "netsh advfirewall set allprofiles state on"
+            },
+            {
+              "key": "c",
+              "text": "netsh advfirewall set allprofiles state online"
+            },
+            {
+              "key": "d",
+              "text": "netsh advfirewall set allprofiles on"
+            }
+          ],
+          "correct": "b",
+          "justification": "La sintaxis de netsh para activar el firewall es «set allprofiles state on». «enable», «online» y «on» sin la palabra state no son valores aceptados por el comando."
+        },
+        {
+          "stem": "En el CPD se busca un IPS que vigile el comportamiento del tráfico y detecte anomalías propias de DoS o malware. ¿Qué variante de IPS encaja?",
+          "options": [
+            {
+              "key": "a",
+              "text": "DIPS"
+            },
+            {
+              "key": "b",
+              "text": "WIPS"
+            },
+            {
+              "key": "c",
+              "text": "NBA"
+            },
+            {
+              "key": "d",
+              "text": "HIPS"
+            }
+          ],
+          "correct": "c",
+          "justification": "NBA (Network Behavior Analysis) analiza el comportamiento del tráfico de red para detectar anomalías como DoS o malware. DIPS y HIPS actúan sobre el host y WIPS se centra en redes inalámbricas."
+        },
+        {
+          "stem": "En la DCM se quiere usar SMTPS en lugar de SMTP. ¿Qué puerto por defecto debe solicitarse para SMTPS?",
+          "options": [
+            {
+              "key": "a",
+              "text": "25"
+            },
+            {
+              "key": "b",
+              "text": "465"
+            },
+            {
+              "key": "c",
+              "text": "443"
+            },
+            {
+              "key": "d",
+              "text": "425"
+            }
+          ],
+          "correct": "b",
+          "justification": "SMTPS usa por defecto el puerto 465. El 25 es el SMTP sin cifrar, el 443 corresponde a HTTPS y el 425 no es el puerto de ese servicio."
+        },
+        {
+          "stem": "Para evitar problemas de resolución de nombres en equipos Windows, se quiere limpiar la caché DNS. ¿Cuál es el comando adecuado?",
+          "options": [
+            {
+              "key": "a",
+              "text": "ifconfig /flushdns"
+            },
+            {
+              "key": "b",
+              "text": "ipconfig /flushdns"
+            },
+            {
+              "key": "c",
+              "text": "ipconfig /cleardns"
+            },
+            {
+              "key": "d",
+              "text": "ifconfig /cleardns"
+            }
+          ],
+          "correct": "b",
+          "justification": "En Windows la caché DNS se vacía con «ipconfig /flushdns». ifconfig es una utilidad de Unix/Linux y «/cleardns» no existe como parámetro."
+        }
+      ]
+    },
+    {
       "slug": "tai-2023-l-s1",
       "year": 2023,
       "conv": "TAI-L 2023 · Supuesto I",
@@ -20390,8 +21542,8 @@
     "questions": 400,
     "cases": 5,
     "caseQuestions": 50,
-    "supuestos": 5,
-    "supuestoQuestions": 100,
+    "supuestos": 7,
+    "supuestoQuestions": 140,
     "convocatorias": 12
   }
 }
