@@ -586,6 +586,388 @@
         "Mezclar las mayorías de la reforma ordinaria y la agravada."
       ],
       "reviewedAt": "2026-11-10",
+      "longSections": [
+        {
+          "heading": "1. Introducción: el proceso constituyente y las fechas clave",
+          "body": "La **Constitución Española de 1978** es la norma suprema del ordenamiento jurídico y el resultado de un proceso de transición política que buscó un consenso amplio. Las Cortes Generales aprobaron su texto el **31 de octubre de 1978**; el pueblo español lo ratificó en referéndum el **6 de diciembre**; el Rey lo sancionó y promulgó el **27 de diciembre**, y se publicó en el Boletín Oficial del Estado el **29 de diciembre de 1978**, día en que entró en vigor.\n\nEs una Constitución **escrita, codificada en un solo texto y rígida**: no se modifica por ley ordinaria, sino mediante los procedimientos del Título X. Su vocación de consenso se aprecia en tres decisiones: reconoce un amplio catálogo de derechos y libertades, organiza los poderes del Estado con un reparto de funciones y distribuye el poder territorialmente entre el Estado y las comunidades autónomas.\n\nEl texto se divide en dos grandes partes. La **parte dogmática** proclama los valores, los derechos y los deberes (preámbulo, título preliminar y Título I). La **parte orgánica** diseña las instituciones y los poderes (Títulos II a X). Situar cualquier precepto en una u otra parte es el primer paso para responder con seguridad a las preguntas de examen.\n\n*(Fuente: Constitución española.resumen.docx, apartados «Fechas Clave» y «Estructura»; Bloque 1 Actualizado 2026.docx, título preliminar.)*"
+        },
+        {
+          "heading": "2. Estructura formal y partes de la Constitución",
+          "body": "El texto se abre con un **preámbulo**, que expresa la voluntad de la Nación de garantizar la convivencia democrática, consolidar un Estado de Derecho, proteger los derechos humanos y promover el progreso; no tiene valor normativo directo, pero orienta la interpretación. Después, el **título preliminar** (artículos 1 a 9) fija los principios básicos del Estado.\n\nA continuación se suceden **diez títulos numerados** (I a X) que suman **169 artículos**. El Título I regula derechos y deberes; el II, la Corona; el III, las Cortes Generales; el IV, el Gobierno y la Administración; el V, las relaciones entre el Gobierno y las Cortes; el VI, el Poder Judicial; el VII, la economía y la hacienda; el VIII, la organización territorial; el IX, el Tribunal Constitucional, y el X, la reforma constitucional.\n\nLa Constitución se completa con **cuatro disposiciones adicionales, nueve transitorias, una derogatoria y una final**. La tabla resume las partes y su valor como mapa del texto.\n\n*(Fuente: Constitución española.resumen.docx, «Estructura».)*",
+          "table": {
+            "columns": [
+              "Parte",
+              "Títulos",
+              "Contenido principal"
+            ],
+            "rows": [
+              [
+                "Preámbulo y título preliminar",
+                "Preámbulo; arts. 1-9",
+                "Fines, valores, soberanía, lenguas, bandera, capital y principios del Estado"
+              ],
+              [
+                "Parte dogmática",
+                "Título I (arts. 10-55)",
+                "Derechos, deberes, principios rectores, garantías y suspensión"
+              ],
+              [
+                "Parte orgánica",
+                "Títulos II a X",
+                "Corona, Cortes, Gobierno, Poder Judicial, economía, organización territorial, TC y reforma"
+              ],
+              [
+                "Disposiciones",
+                "4 adicionales, 9 transitorias, 1 derogatoria y 1 final",
+                "Régimen transitorio y cierre del texto"
+              ]
+            ]
+          },
+          "svg": "<svg viewBox=\"0 0 560 300\" role=\"img\" aria-label=\"Estructura de la Constitución Española de 1978\"><rect x=\"20\" y=\"20\" width=\"520\" height=\"50\" fill=\"#e8f0fe\" stroke=\"#2952a3\"/><text x=\"280\" y=\"50\" text-anchor=\"middle\" font-size=\"18\" fill=\"#16191d\">Preámbulo + Título Preliminar (arts. 1-9)</text><rect x=\"20\" y=\"85\" width=\"250\" height=\"80\" fill=\"#ffffff\" stroke=\"#8a94a6\"/><text x=\"145\" y=\"112\" text-anchor=\"middle\" font-size=\"15\" fill=\"#16191d\">Título I</text><text x=\"145\" y=\"135\" text-anchor=\"middle\" font-size=\"13\" fill=\"#4b525c\">Derechos y deberes</text><text x=\"145\" y=\"153\" text-anchor=\"middle\" font-size=\"13\" fill=\"#4b525c\">arts. 10-55</text><rect x=\"290\" y=\"85\" width=\"250\" height=\"80\" fill=\"#ffffff\" stroke=\"#8a94a6\"/><text x=\"415\" y=\"112\" text-anchor=\"middle\" font-size=\"15\" fill=\"#16191d\">Títulos II-V</text><text x=\"415\" y=\"135\" text-anchor=\"middle\" font-size=\"13\" fill=\"#4b525c\">Corona, Cortes, Gobierno</text><text x=\"415\" y=\"153\" text-anchor=\"middle\" font-size=\"13\" fill=\"#4b525c\">y Poder Judicial</text><rect x=\"20\" y=\"180\" width=\"250\" height=\"80\" fill=\"#ffffff\" stroke=\"#8a94a6\"/><text x=\"145\" y=\"207\" text-anchor=\"middle\" font-size=\"15\" fill=\"#16191d\">Títulos VI-VIII</text><text x=\"145\" y=\"230\" text-anchor=\"middle\" font-size=\"13\" fill=\"#4b525c\">Economía, territorios</text><text x=\"145\" y=\"248\" text-anchor=\"middle\" font-size=\"13\" fill=\"#4b525c\">y organización territorial</text><rect x=\"290\" y=\"180\" width=\"250\" height=\"80\" fill=\"#ffffff\" stroke=\"#8a94a6\"/><text x=\"415\" y=\"207\" text-anchor=\"middle\" font-size=\"15\" fill=\"#16191d\">Títulos IX-X</text><text x=\"415\" y=\"230\" text-anchor=\"middle\" font-size=\"13\" fill=\"#4b525c\">Tribunal Constitucional</text><text x=\"415\" y=\"248\" text-anchor=\"middle\" font-size=\"13\" fill=\"#4b525c\">y reforma</text></svg>"
+        },
+        {
+          "heading": "3. El Título Preliminar: principios y valores",
+          "body": "El título preliminar contiene pocos artículos, pero de él dependen casi todas las respuestas. El **artículo 1** define España como un **Estado social y democrático de Derecho** que propugna como valores superiores del ordenamiento la **libertad, la justicia, la igualdad y el pluralismo político**; añade que la soberanía nacional reside en el **pueblo español** y que la forma política es la **monarquía parlamentaria**.\n\nEl **artículo 2** combina la **indisoluble unidad de la Nación española** con el **derecho a la autonomía** de las nacionalidades y regiones y la solidaridad entre ellas. El artículo 3 declara el castellano lengua oficial del Estado, con el deber de conocerla y el derecho a usarla, y permite que las demás lenguas sean oficiales en sus comunidades; el artículo 4 fija la bandera y el 5 la capital, Madrid. Los partidos políticos (artículo 6) y los sindicatos y asociaciones empresariales (artículo 7) son cauces de participación, con estructura y funcionamiento democráticos. El artículo 8 define las Fuerzas Armadas y el 9 somete a ciudadanos y poderes públicos a la Constitución y enumera los principios de legalidad, jerarquía normativa, publicidad, irretroactividad, seguridad jurídica, responsabilidad e interdicción de la arbitrariedad.\n\n*(Fuente: Bloque 1 Actualizado 2026.docx, título preliminar; resumen, «Título Preliminar».)*",
+          "table": {
+            "columns": [
+              "Artículo",
+              "Contenido que conviene memorizar"
+            ],
+            "rows": [
+              [
+                "1",
+                "Estado social y democrático de Derecho; valores superiores; soberanía popular; monarquía parlamentaria"
+              ],
+              [
+                "2",
+                "Unidad de la Nación y derecho a la autonomía; solidaridad"
+              ],
+              [
+                "3",
+                "Castellano, lengua oficial del Estado; demás lenguas oficiales según los Estatutos"
+              ],
+              [
+                "4 y 5",
+                "Bandera de España; capital del Estado: Madrid"
+              ],
+              [
+                "6 y 7",
+                "Partidos políticos; sindicatos y asociaciones empresariales"
+              ],
+              [
+                "8",
+                "Fuerzas Armadas: Ejército de Tierra, Armada y Ejército del Aire"
+              ],
+              [
+                "9",
+                "Sujeción a la Constitución; principios de legalidad y seguridad jurídica"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "4. El Título I: derechos, deberes y niveles de protección",
+          "body": "El Título I (artículos 10 a 55) es el más extenso. El **artículo 10** sitúa la dignidad de la persona y los derechos inviolables como fundamento del orden político y de la paz social, y ordena interpretar los derechos conforme a la Declaración Universal de Derechos Humanos y a los tratados ratificados por España.\n\nEl Título se divide en cinco capítulos. El **capítulo I** (artículos 11 a 13) regula la nacionalidad, la mayoría de edad y los derechos de los extranjeros. El **capítulo II** (artículos 14 a 38) contiene los derechos y libertades: el artículo 14 proclama la igualdad ante la ley, la **sección 1.ª** (artículos 15 a 29) recoge los derechos fundamentales y libertades públicas, y la **sección 2.ª** (artículos 30 a 38) los derechos y deberes de los ciudadanos. El **capítulo III** (artículos 39 a 52) enuncia los principios rectores de la política social y económica; el **capítulo IV** (artículos 53 y 54) regula las garantías, y el **capítulo V** (artículo 55) la suspensión.\n\nEsta clasificación determina la **protección**: los derechos de la sección 1.ª y la igualdad del artículo 14 pueden defenderse en amparo ante el Tribunal Constitucional; los de la sección 2.ª se tutelan ante la jurisdicción ordinaria, y los principios rectores informan la legislación y solo se alegan según las leyes que los desarrollan.\n\n*(Fuente: Bloque 1 Actualizado 2026.docx, Título I; resumen, «Título I».)*",
+          "table": {
+            "columns": [
+              "Capítulo del Título I",
+              "Artículos",
+              "Materia y protección"
+            ],
+            "rows": [
+              [
+                "I. Españoles y extranjeros",
+                "11-13",
+                "Nacionalidad, mayoría de edad, extranjería"
+              ],
+              [
+                "II. Derechos y libertades. Sección 1.ª",
+                "14-29",
+                "Derechos fundamentales; amparo constitucional"
+              ],
+              [
+                "II. Sección 2.ª",
+                "30-38",
+                "Derechos y deberes de los ciudadanos; tutela ordinaria"
+              ],
+              [
+                "III. Principios rectores",
+                "39-52",
+                "Política social y económica; informan la legislación"
+              ],
+              [
+                "IV. Garantías",
+                "53-54",
+                "Reserva de ley, contenido esencial, Defensor del Pueblo"
+              ],
+              [
+                "V. Suspensión",
+                "55",
+                "Supuestos y efectos de suspensión de derechos"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "5. Derechos y garantías que más se preguntan",
+          "body": "Algunos derechos concretos concentran la mayoría de las preguntas. La **detención preventiva** no puede durar más del tiempo estrictamente necesario y, en todo caso, **72 horas** antes de que el detenido sea puesto en libertad o a disposición judicial; debe informarse de sus derechos, tiene asistencia de abogado y existe el procedimiento de **hábeas corpus**. El **domicilio** es inviolable: solo se entra con consentimiento del titular, resolución judicial o flagrante delito. El **secreto de las comunicaciones** cede ante resolución judicial.\n\nLa **libertad ideológica y religiosa** no obliga a declarar sobre las propias creencias y ninguna confesión tiene carácter estatal. La **reunión pacífica** no necesita autorización previa; las manifestaciones requieren comunicación previa y solo pueden prohibirse por razones fundadas de alteración del orden público. La **asociación** se inscribe a los solos efectos de publicidad, y las asociaciones secretas o paramilitares están prohibidas. La **educación básica** es obligatoria y gratuita, y se reconocen la libertad de enseñanza y la autonomía universitaria. También son clásicos el derecho de **petición** por escrito, la **propiedad privada** con función social, la **libertad de empresa** y la **negociación colectiva**.\n\n*(Fuente: Bloque 1 Actualizado 2026.docx, arts. 15-29; TEST ART. 1-52 INDIST SIN SOLUCIONARIO.docx.)*",
+          "table": {
+            "columns": [
+              "Derecho (artículo)",
+              "Regla que hay que retener"
+            ],
+            "rows": [
+              [
+                "Libertad y detención (17)",
+                "Máximo 72 horas; información de derechos, abogado y hábeas corpus"
+              ],
+              [
+                "Domicilio (18)",
+                "Entrada solo con consentimiento, resolución judicial o flagrante delito"
+              ],
+              [
+                "Comunicaciones (18)",
+                "Secreto salvo resolución judicial"
+              ],
+              [
+                "Reunión (21)",
+                "Sin autorización previa; comunicación previa en la vía pública"
+              ],
+              [
+                "Asociación (22)",
+                "Inscripción a efectos de publicidad; prohibidas las secretas y paramilitares"
+              ],
+              [
+                "Educación (27)",
+                "Enseñanza básica obligatoria y gratuita; libertad de enseñanza"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "6. Las garantías institucionales: Defensor del Pueblo y Tribunal Constitucional",
+          "body": "El **Defensor del Pueblo** actúa como alto comisionado de las Cortes Generales y tiene encomendada la defensa de los derechos del Título I (artículo 54); supervisa la actividad de la Administración y da cuenta a las Cortes. Se designa por **mayoría de tres quintos** del Congreso y del Senado, su mandato dura **cinco años**, es inviolable e inmune y está legitimado para interponer recursos de inconstitucionalidad y de amparo.\n\nEl **Tribunal Constitucional** (Título IX, artículos 159 a 165) se compone de **doce miembros** nombrados por el Rey: cuatro a propuesta del Congreso por mayoría de tres quintos, cuatro a propuesta del Senado con la misma mayoría, dos a propuesta del Gobierno y dos a propuesta del Consejo General del Poder Judicial. Deben ser juristas de reconocida competencia con más de quince años de ejercicio. Su mandato es de **nueve años** y se renueva **por terceras partes cada tres años**. Conoce del recurso de inconstitucionalidad, del recurso de amparo, de los conflictos de competencia y de las demás materias que le atribuyan la Constitución y las leyes orgánicas. Pueden interponer el recurso de inconstitucionalidad el Presidente del Gobierno, el Defensor del Pueblo, cincuenta diputados o cincuenta senadores y los órganos ejecutivos y legislativos de las comunidades autónomas.\n\n*(Fuente: Bloque 1 Actualizado 2026.docx, arts. 54 y 159-165; resumen, «Título IX».)*",
+          "table": {
+            "columns": [
+              "Institución",
+              "Dato clave"
+            ],
+            "rows": [
+              [
+                "Defensor del Pueblo",
+                "Alto comisionado de las Cortes; 3/5 de cada Cámara; 5 años"
+              ],
+              [
+                "Composición del TC",
+                "12 miembros: 4 Congreso, 4 Senado, 2 Gobierno, 2 CGPJ"
+              ],
+              [
+                "Duración del TC",
+                "9 años, renovación por terceras partes cada 3 años"
+              ],
+              [
+                "Legitimación",
+                "Presidente del Gobierno, Defensor, 50 diputados o 50 senadores y órganos autonómicos"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "7. La Corona",
+          "body": "El Título II (artículos 56 a 65) regula la Corona. El Rey es el Jefe del Estado, símbolo de su unidad y permanencia, y arbitra y modera el funcionamiento regular de las instituciones. Sus funciones constitucionales están tasadas en el **artículo 62**: sancionar y promulgar las leyes, convocar y disolver las Cortes Generales y convocar elecciones, convocar referéndum en los casos previstos, proponer el candidato a Presidente del Gobierno y nombrarlo, nombrar y separar a los ministros a propuesta del Presidente, expedir los decretos acordados en Consejo de Ministros, conferir empleos civiles y militares, ser informado de los asuntos de Estado y presidir el Consejo de Ministros cuando lo estime oportuno a petición del Presidente, ejercer el mando supremo de las Fuerzas Armadas, ejercer el derecho de gracia sin autorizar indultos generales y ostentar el Alto Patronazgo de las Reales Academias.\n\nLos actos del Rey están sujetos a **refrendo**: los refrenda el Presidente del Gobierno y, en su caso, los ministros competentes; la propuesta y nombramiento del Presidente del Gobierno y la disolución prevista en el artículo 99 los refrenda el Presidente del Congreso. La Corona es hereditaria y el Título II regula también la sucesión, la regencia y la tutela del Rey menor.\n\n*(Fuente: Bloque 1 Actualizado 2026.docx, art. 62; TEST REPASO CE COMPLETA 2020.docx, preguntas sobre refrendo.)*",
+          "table": {
+            "columns": [
+              "Función del Rey (art. 62)",
+              "Alcance"
+            ],
+            "rows": [
+              [
+                "Sancionar y promulgar leyes",
+                "Tras su aprobación por las Cortes; plazo de quince días"
+              ],
+              [
+                "Convocar y disolver las Cortes",
+                "En los términos previstos en la Constitución"
+              ],
+              [
+                "Proponer y nombrar al Presidente",
+                "Conforme al artículo 99; refrendo del Presidente del Congreso"
+              ],
+              [
+                "Mando supremo de las Fuerzas Armadas",
+                "Función simbólica y de mando supremo"
+              ],
+              [
+                "Derecho de gracia",
+                "Con arreglo a la ley; nunca indultos generales"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "8. Las Cortes Generales y el procedimiento legislativo",
+          "body": "Las Cortes Generales (Título III, artículos 66 a 96) representan al pueblo español, ejercen la potestad legislativa, aprueban los presupuestos y controlan al Gobierno. Son **bicamerales**: el Congreso de los Diputados tiene entre **300 y 400 diputados** elegidos por circunscripción provincial y criterios de representación proporcional, con un diputado por Ceuta y otro por Melilla; el Senado es la **Cámara de representación territorial**, con cuatro senadores por provincia, tres por cada isla mayor y uno por las demás, dos por Ceuta y Melilla, más los designados por las comunidades autónomas (uno y otro más por cada millón de habitantes). Ambas Cámaras se eligen por **cuatro años**.\n\nDiputados y senadores son **inviolables** por las opiniones que emitan en el desempeño de su cargo y gozan de **inmunidad** mientras dura su mandato; las causas penales contra ellos corresponden a la Sala de lo Penal del Tribunal Supremo. El **procedimiento legislativo** parte de la iniciativa del Gobierno, de las Cámaras, de las comunidades autónomas o de la iniciativa popular (500.000 firmas). El Congreso aprueba el texto, el Senado dispone de **dos meses** para vetarlo o enmendarlo (**veinte días** si es urgente) y el Congreso puede levantar el veto por mayoría absoluta; después el Rey sanciona la ley en **quince días**. Las **leyes orgánicas** (artículo 81) exigen mayoría absoluta del Congreso en una votación final sobre el conjunto, y el **decreto-ley** debe convalidarse por el Congreso en **treinta días**.\n\n*(Fuente: Bloque 1 Actualizado 2026.docx, arts. 66-96; resumen, «Título III».)*",
+          "table": {
+            "columns": [
+              "Aspecto",
+              "Congreso",
+              "Senado"
+            ],
+            "rows": [
+              [
+                "Composición",
+                "300-400 diputados",
+                "4 por provincia, islas, Ceuta y Melilla y designación autonómica"
+              ],
+              [
+                "Circunscripción",
+                "Provincia; Ceuta y Melilla, un diputado cada una",
+                "Provincia, islas y comunidades autónomas"
+              ],
+              [
+                "Mandato",
+                "4 años",
+                "4 años"
+              ],
+              [
+                "Función principal",
+                "Legislar, presupuestos y control del Gobierno",
+                "Representación territorial y revisión legislativa"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "9. El Gobierno y sus relaciones con las Cortes",
+          "body": "El Título IV (artículos 97 a 107) regula el Gobierno. A este órgano corresponde la dirección de la política interior y exterior; también conduce la Administración civil y militar, asume la defensa del Estado y ejerce la función ejecutiva y la potestad reglamentaria. Se compone del **Presidente, los Vicepresidentes en su caso, los Ministros y los demás miembros que establezca la ley**. El Título V (artículos 108 a 116) regula el control parlamentario.\n\nLa **investidura** (artículo 99) exige que el candidato obtenga la confianza del Congreso por **mayoría absoluta** en primera votación o por **mayoría simple** cuarenta y ocho horas después; si en **dos meses** ningún candidato la obtiene, el Rey disuelve las Cámaras y convoca elecciones. La **cuestión de confianza** la plantea el Presidente sobre su programa y se aprueba por mayoría simple. La **moción de censura** debe proponerla al menos **la décima parte de los diputados**, incluir un candidato a la Presidencia y aprobarse por **mayoría absoluta**; si prospera, el candidato se entiende investido. El Presidente puede proponer la disolución, pero no mientras tramite una moción de censura ni antes de que pase un año desde la anterior, salvo el supuesto del artículo 99. Los **estados de alarma, excepción y sitio** (artículo 116) tienen plazos y mayorías específicas: el de alarma lo declara el Gobierno por un máximo de **quince días**, el de excepción requiere autorización del Congreso y dura como máximo **treinta días**, prorrogables por otro plazo igual, y el de sitio lo declara el Congreso por mayoría absoluta.\n\n*(Fuente: Bloque 1 Actualizado 2026.docx, arts. 97-116; resumen, «Título V».)*",
+          "table": {
+            "columns": [
+              "Mecanismo",
+              "Quién lo activa",
+              "Mayoría y efecto"
+            ],
+            "rows": [
+              [
+                "Investidura",
+                "Rey, a través del Presidente del Congreso",
+                "Absoluta; simple 48 horas después; 2 meses sin acuerdo: disolución"
+              ],
+              [
+                "Cuestión de confianza",
+                "Presidente del Gobierno",
+                "Mayoría simple; si se pierde, dimisión"
+              ],
+              [
+                "Moción de censura",
+                "1/10 de los diputados, con candidato",
+                "Mayoría absoluta; el candidato queda investido"
+              ],
+              [
+                "Disolución",
+                "Presidente del Gobierno, con decreto del Rey",
+                "No con moción en trámite; no antes de un año, salvo art. 99"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "10. Poder Judicial, economía, organización territorial y reforma",
+          "body": "El **Título VI** (artículos 117 a 127) regula el Poder Judicial: la justicia emana del pueblo y se administra en nombre del Rey por jueces y magistrados independientes, inamovibles, responsables y sometidos únicamente al imperio de la ley; el Consejo General del Poder Judicial es su órgano de gobierno. El **Título VII** (artículos 128 a 136) regula la economía y la hacienda: la riqueza del país está subordinada al interés general, se reconoce la iniciativa pública en la actividad económica y la planificación; los **Presupuestos Generales del Estado** los elabora el Gobierno y los examinan, enmiendan y aprueban las Cortes, y si no se aprueban antes del primer día del ejercicio se prorrogan automáticamente los anteriores. El **Tribunal de Cuentas** fiscaliza, como órgano supremo, las cuentas y la gestión económica del Estado y del conjunto del sector público; depende directamente de las Cortes Generales y una ley orgánica regula su composición, organización y funciones.\n\nEl **Título VIII** (artículos 137 a 158) organiza territorialmente el Estado en **municipios, provincias y comunidades autónomas**, con autonomía para la gestión de sus intereses y solidaridad entre ellas; las comunidades autónomas se constituyen mediante Estatutos y no cabe la federación entre ellas. El **Título X** (artículos 166 a 169) regula la reforma: la ordinaria exige mayoría de **tres quintos** de cada Cámara y se somete a referéndum si lo solicita una décima parte de los miembros de cualquiera de las Cámaras; la agravada, para la revisión total o la que afecte al título preliminar, al capítulo II, sección 1.ª, del Título I, al Título II o al Título IX, exige **dos tercios** de cada Cámara, disolución, ratificación por las nuevas Cámaras por dos tercios y referéndum obligatorio.\n\n*(Fuente: resumen, «Títulos VI-X»; TEST TITULO VII CE SIN SOLUCIONARIO.docx; Bloque 1, arts. 128-136.)*",
+          "table": {
+            "columns": [
+              "Título",
+              "Artículos",
+              "Contenido esencial"
+            ],
+            "rows": [
+              [
+                "VI. Poder Judicial",
+                "117-127",
+                "Independencia judicial; Consejo General del Poder Judicial"
+              ],
+              [
+                "VII. Economía y Hacienda",
+                "128-136",
+                "Iniciativa pública, planificación, presupuestos, Tribunal de Cuentas"
+              ],
+              [
+                "VIII. Organización territorial",
+                "137-158",
+                "Municipios, provincias y comunidades autónomas"
+              ],
+              [
+                "X. Reforma constitucional",
+                "166-169",
+                "Procedimiento ordinario (art. 167) y agravado (art. 168)"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "11. Ejemplo resuelto: tres casos con respuesta razonada",
+          "body": "**Caso 1. Reforma del artículo 24.** Un grupo parlamentario quiere reformar el artículo 24, que regula la tutela judicial efectiva y está en la sección 1.ª del capítulo II del Título I. No basta con el procedimiento ordinario: al afectar al capítulo II, sección 1.ª, del Título I, se aplica el **artículo 168**. Se exige mayoría de dos tercios de cada Cámara, disolución inmediata de las Cortes, ratificación del nuevo texto por las Cámaras elegidas con otra mayoría de dos tercios y, por último, **referéndum obligatorio**.\n\n**Caso 2. Un decreto-ley.** El Gobierno aprueba un decreto-ley para responder a una emergencia. Debe someterse inmediatamente al Congreso, que se pronuncia sobre su convalidación o derogación en el plazo de **treinta días**; además, tampoco puede regular las instituciones básicas del Estado, los derechos, deberes y libertades del Título I, el régimen de las comunidades autónomas ni el Derecho electoral general.\n\n**Caso 3. Investidura fallida.** Tras las elecciones, el candidato no obtiene mayoría absoluta en primera votación ni mayoría simple cuarenta y ocho horas después. Se tramitan propuestas sucesivas; si transcurren **dos meses** desde la primera votación sin investidura, el Rey disuelve ambas Cámaras y convoca nuevas elecciones. La clave es no confundir este plazo con el de la moción de censura ni con el de la cuestión de confianza.\n\n*(Fuente: Bloque 1 Actualizado 2026.docx, arts. 86, 99 y 168.)*",
+          "table": {
+            "columns": [
+              "Caso",
+              "Regla aplicable",
+              "Resultado"
+            ],
+            "rows": [
+              [
+                "Reforma del art. 24",
+                "Art. 168 (reforma agravada)",
+                "2/3, disolución, ratificación y referéndum"
+              ],
+              [
+                "Decreto-ley",
+                "Art. 86",
+                "Convalidación en 30 días; materias excluidas"
+              ],
+              [
+                "Investidura fallida",
+                "Art. 99",
+                "2 meses y disolución de las Cámaras"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "12. Lo que hay que memorizar y fuentes citadas",
+          "body": "**Fechas.** 31 de octubre de 1978 (aprobación por las Cortes), 6 de diciembre (referéndum), 27 de diciembre (sanción y promulgación) y 29 de diciembre (publicación en el BOE y entrada en vigor).\n\n**Cifras.** 169 artículos; 10 títulos numerados más el preliminar; 4 disposiciones adicionales, 9 transitorias, 1 derogatoria y 1 final; Congreso de 300 a 400 diputados; 4 senadores por provincia; Tribunal Constitucional de 12 miembros y 9 años; Defensor del Pueblo por 3/5 y 5 años; sanción de las leyes en 15 días; decreto-ley convalidado en 30 días; detención preventiva máxima de 72 horas.\n\n**Mayorías.** Ley orgánica: mayoría absoluta del Congreso. Reforma ordinaria: 3/5 de cada Cámara. Reforma agravada: 2/3, disolución, ratificación por 2/3 y referéndum. Moción de censura: mayoría absoluta. Cuestión de confianza: mayoría simple. Investidura: absoluta o simple 48 horas después.\n\n**Fuentes.** El contenido se ha redactado a partir de la extracción consolidada `data/fuentes/I.1.txt`, que reúne los apartados del Bloque 1, el resumen de la Constitución y los tres test indicados en el apartado siguiente. No se han copiado párrafos literales: se han sintetizado y ordenado los datos.",
+          "table": {
+            "columns": [
+              "Dato",
+              "Cifra o regla"
+            ],
+            "rows": [
+              [
+                "Artículos",
+                "169"
+              ],
+              [
+                "Títulos numerados",
+                "10 (más el preliminar)"
+              ],
+              [
+                "Disposiciones",
+                "4 adicionales, 9 transitorias, 1 derogatoria, 1 final"
+              ],
+              [
+                "Reforma ordinaria / agravada",
+                "3/5 / 2/3, disolución y referéndum"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Casos tipo test (respuestas razonadas)",
+          "body": "**1. ¿Cuándo aprobaron las Cortes Generales el texto de la Constitución de 1978?**\n\na) El 31 de octubre de 1978 · b) El 6 de diciembre de 1978 · c) El 27 de diciembre de 1978 · d) El 29 de diciembre de 1978\n\n**Respuesta: a.** La aprobación por las Cortes Generales fue el 31 de octubre; el 6 de diciembre se ratificó en referéndum, el 27 fue sancionada y el 29 se publicó y entró en vigor.\n\n**2. ¿Cuándo entró en vigor la Constitución Española de 1978?**\n\na) El 6 de diciembre de 1978 · b) El 29 de diciembre de 1978 · c) El 27 de diciembre de 1978 · d) El 31 de octubre de 1978\n\n**Respuesta: b.** Entró en vigor el mismo día de su publicación en el BOE, el 29 de diciembre de 1978.\n\n**3. Además del título preliminar, ¿cuántos títulos numerados tiene la Constitución?**\n\na) Nueve · b) Once · c) Doce · d) Diez\n\n**Respuesta: d.** Tiene diez títulos numerados (I a X) que, con el título preliminar, suman 169 artículos.\n\n**4. ¿Cuáles son los valores superiores del ordenamiento jurídico según el artículo 1.1?**\n\na) La unidad, la autonomía y la solidaridad · b) La dignidad, la libertad y la seguridad · c) La libertad, la justicia, la igualdad y el pluralismo político · d) La democracia, la monarquía y la participación\n\n**Respuesta: c.** El artículo 1.1 define España como Estado social y democrático de Derecho y propugna como valores superiores la libertad, la justicia, la igualdad y el pluralismo político.\n\n**5. ¿En quién reside la soberanía nacional?**\n\na) En las Cortes Generales · b) En el Rey · c) En el Gobierno · d) En el pueblo español\n\n**Respuesta: d.** El artículo 1.2 atribuye la soberanía nacional al conjunto de los españoles: de ellos proceden los poderes del Estado.\n\n**6. ¿Qué mayoría exige la aprobación de una ley orgánica?**\n\na) Mayoría simple del Congreso · b) Mayoría absoluta del Congreso en una votación final sobre el conjunto · c) Mayoría absoluta de ambas Cámaras · d) Dos tercios del Senado\n\n**Respuesta: b.** El artículo 81 exige la mayoría absoluta del Congreso en una votación final sobre el conjunto del proyecto para aprobar, modificar o derogar leyes orgánicas.\n\n**7. ¿Cuál es el plazo máximo de la detención preventiva antes de poner al detenido en libertad o a disposición judicial?**\n\na) 24 horas · b) 48 horas · c) 72 horas · d) 96 horas\n\n**Respuesta: c.** El artículo 17 fija un máximo de 72 horas, además de la información de derechos, la asistencia de abogado y el hábeas corpus.\n\n**8. ¿A qué edad se alcanza la mayoría de edad según la Constitución?**\n\na) A los 18 años · b) A los 16 años · c) A los 21 años · d) A los 20 años\n\n**Respuesta: a.** El artículo 12 dispone que los españoles son mayores de edad a los dieciocho años.\n\n**9. ¿Cómo se compone el Tribunal Constitucional?**\n\na) Nueve miembros con mandato de seis años · b) Diez miembros con mandato de nueve años · c) Doce miembros con mandato de seis años · d) Doce miembros con mandato de nueve años\n\n**Respuesta: d.** El artículo 159 fija doce miembros nombrados por el Rey (cuatro a propuesta del Congreso, cuatro del Senado, dos del Gobierno y dos del CGPJ), con mandato de nueve años y renovación por terceras partes cada tres.\n\n**10. ¿Qué es el Defensor del Pueblo?**\n\na) El alto comisionado de las Cortes Generales para la defensa de los derechos del Título I · b) Un órgano del Gobierno con funciones de control · c) Un órgano del Poder Judicial · d) Un alto comisionado del Rey\n\n**Respuesta: a.** El artículo 54 lo define como alto comisionado de las Cortes Generales, designado por estas para la defensa de los derechos comprendidos en el Título I.\n\n**11. ¿Qué exige la moción de censura?**\n\na) Mayoría simple del Congreso · b) Mayoría absoluta del Congreso e incluir un candidato a la Presidencia del Gobierno · c) Una décima parte de los diputados y mayoría simple · d) Dos tercios del Congreso\n\n**Respuesta: b.** El artículo 113 exige que la proponga al menos la décima parte de los diputados, que incluya un candidato y que se apruebe por mayoría absoluta; si prospera, el candidato queda investido.\n\n**12. ¿En qué plazo debe el Congreso convalidar o derogar un decreto-ley?**\n\na) Quince días · b) Dos meses · c) Veinte días · d) Treinta días\n\n**Respuesta: d.** El artículo 86 obliga a someter el decreto-ley al Congreso en los treinta días siguientes a su promulgación para que se pronuncie sobre su convalidación o derogación.\n\n**13. ¿Qué reforma constitucional exige dos tercios de cada Cámara, disolución y referéndum obligatorio?**\n\na) Cualquier reforma constitucional · b) Solo la que afecte al Título VIII · c) La revisión total o parcial que afecte al título preliminar, al capítulo II, sección 1.ª, del Título I, al Título II o al Título IX · d) Solo la que afecte al artículo 135\n\n**Respuesta: c.** El artículo 168 reserva el procedimiento agravado para la revisión total o la que afecte a esas materias: dos tercios de cada Cámara, disolución, ratificación por las nuevas Cámaras por dos tercios y referéndum.\n\n**14. ¿De quién depende directamente el Tribunal de Cuentas?**\n\na) De las Cortes Generales · b) Del Gobierno · c) Del Congreso de los Diputados · d) Del Ministerio de Hacienda\n\n**Respuesta: a.** El artículo 136 sitúa al Tribunal de Cuentas como el máximo órgano de fiscalización de las cuentas y de la gestión económica del Estado y del sector público, y lo vincula directamente a las Cortes Generales."
+        },
+        {
+          "heading": "Fuentes citadas",
+          "body": "- **data/fuentes/I.1.txt** — líneas 1-865 (Bloque 1), 2136-2207 (resumen), 2208-2848 y 2849-3759 (test). texto consolidado del que se extrajeron los datos; las citas concretas se detallan en las entradas siguientes\n- **Bloque 1 Actualizado 2026.docx** — DOCX sin paginación fija; apartados «LA CONSTITUCIÓN ESPAÑOLA DE 1978: ESTRUCTURA Y CONTENIDO», títulos preliminar, I, II, III, IV, V y IX. artículos 1 a 116 y 159 a 165; funciones del Rey; Cortes; Gobierno; estados de alarma, excepción y sitio; Defensor del Pueblo\n- **Constitución española.resumen.docx** — DOCX sin paginación fija; apartados «Resumen de la Constitución Española de 1978», «Estructura» y «Fechas Clave». estructura por títulos y capítulos, número de disposiciones, parte dogmática y orgánica y fechas de aprobación, referéndum, sanción y entrada en vigor\n- **TEST REPASO CE COMPLETA 2020.docx** — DOCX sin paginación fija; preguntas sobre Corona, refrendo, Poder Judicial, presupuestos y reforma constitucional. contraste de datos sobre refrendo, mayoría para la reforma, presupuestos y Tribunal de Cuentas\n- **TEST TITULO VII CE SIN SOLUCIONARIO.docx** — DOCX sin paginación fija; preguntas sobre el Título VII. contenido de economía y hacienda: presupuestos, deuda pública, Tribunal de Cuentas y bienes de dominio público\n- **TEST ART. 1-52 INDIST SIN SOLUCIONARIO.docx** — DOCX sin paginación fija; preguntas sobre los artículos 1 a 52. derechos y deberes del Título I y principios del título preliminar"
+        }
+      ],
       "practiceSlug": "i-1"
     },
     "I.10": {
@@ -2503,6 +2885,271 @@
         "Pensar que IPv6 usa broadcast o ARP: usa multicast y NDP."
       ],
       "reviewedAt": "2026-11-10",
+      "longSections": [
+        {
+          "heading": "1. Introducción: la red como tres planos de estudio",
+          "body": "Una red de comunicaciones reúne dispositivos finales e intermedios que se conectan entre sí para intercambiar información. Los finales generan y consumen datos (puestos de trabajo, servidores, impresoras); los intermedios los transportan (repetidores, conmutadores, encaminadores). El temario la estudia en tres planos que conviene no mezclar: el modelo de referencia, que organiza las funciones por capas; el direccionamiento, que identifica redes y equipos; y la infraestructura, que decide por dónde viajan los datos y con qué medios.\n\nEl orden de estudio recomendado es ese: primero las capas y la encapsulación, después el cálculo de direcciones y subredes, y por último conmutación, VLAN, encaminamiento, cableado y Wi-Fi. Las cifras proceden de las fuentes citadas al final y se indican en cada apartado; si dos fuentes discrepan, se señala. (Fuentes: Tema 11.docx, apartado 1; Tema 12.docx, apartado 1.)"
+        },
+        {
+          "heading": "2. Modelo OSI: siete capas, PDU y encapsulación",
+          "body": "El modelo OSI (Open Systems Interconnection) lo creó ISO en 1977 para que equipos de distintos fabricantes pudieran comunicarse. Divide la comunicación en siete capas; cada una presta un servicio a la superior y utiliza los servicios de la inferior, de modo que cambiar un protocolo de una capa no obliga a rehacer las demás.\n\nLas siete capas, de abajo arriba, son: **física** (transmisión de bits por el medio y características mecánicas, eléctricas, funcionales y de procedimiento), **enlace de datos** (tramas, sincronización, control de errores y de flujo entre equipos directamente conectados), **red** (paquetes, direccionamiento lógico y elección del camino a través de redes distintas), **transporte** (segmentos, entrega extremo a extremo, control de flujo y de errores), **sesión** (establecimiento, mantenimiento y cierre de diálogos), **presentación** (formato, compresión y cifrado) y **aplicación** (servicios de red para los programas del usuario).\n\nLa clave es la **encapsulación**. La capa superior entrega a la inferior una unidad de datos de servicio (SDU); la inferior añade su cabecera y forma una unidad de datos de protocolo (PDU), que en el receptor se desencapsula en orden inverso. El punto de intercambio entre capas se denomina SAP. Cada capa tiene su propia PDU: bits en física, tramas en enlace, paquetes en red, segmentos TCP o datagramas UDP en transporte y datos en las capas superiores. El modelo no es un conjunto de protocolos, sino una referencia para ordenar funciones; los protocolos reales se agrupan en la arquitectura TCP/IP. (Fuentes: Modelo.OSI.Resumen.docx, apartados 1-7; Tema 12.docx, apartados 1.1-1.2; Bloque 4 Actualizado 2026.docx, Tema 7.)",
+          "svg": "<svg viewBox=\"0 0 620 360\" role=\"img\" aria-label=\"Pila de las siete capas OSI\"><rect x=\"20\" y=\"10\" width=\"580\" height=\"44\" fill=\"#e8f0fe\"/><text x=\"310\" y=\"38\" text-anchor=\"middle\" font-size=\"18\" fill=\"#16191d\">Aplicación · Presentación · Sesión · Transporte · Red · Enlace · Física</text><g font-size=\"14\" fill=\"#16191d\"><rect x=\"20\" y=\"70\" width=\"580\" height=\"34\" fill=\"#ffffff\" stroke=\"#8a94a6\"/><text x=\"310\" y=\"92\" text-anchor=\"middle\">7 Aplicación — servicios al usuario (HTTP, SMTP, DNS)</text><rect x=\"20\" y=\"110\" width=\"580\" height=\"34\" fill=\"#ffffff\" stroke=\"#8a94a6\"/><text x=\"310\" y=\"132\" text-anchor=\"middle\">6 Presentación — formato, cifrado, compresión</text><rect x=\"20\" y=\"150\" width=\"580\" height=\"34\" fill=\"#ffffff\" stroke=\"#8a94a6\"/><text x=\"310\" y=\"172\" text-anchor=\"middle\">5 Sesión — diálogo y sincronización</text><rect x=\"20\" y=\"190\" width=\"580\" height=\"34\" fill=\"#ffffff\" stroke=\"#8a94a6\"/><text x=\"310\" y=\"212\" text-anchor=\"middle\">4 Transporte — TCP/UDP, puertos, fiabilidad</text><rect x=\"20\" y=\"230\" width=\"580\" height=\"34\" fill=\"#ffffff\" stroke=\"#8a94a6\"/><text x=\"310\" y=\"252\" text-anchor=\"middle\">3 Red — IP, direccionamiento y encaminamiento</text><rect x=\"20\" y=\"270\" width=\"580\" height=\"34\" fill=\"#ffffff\" stroke=\"#8a94a6\"/><text x=\"310\" y=\"292\" text-anchor=\"middle\">2 Enlace — MAC, Ethernet, VLAN, conmutación</text><rect x=\"20\" y=\"310\" width=\"580\" height=\"34\" fill=\"#ffffff\" stroke=\"#8a94a6\"/><text x=\"310\" y=\"332\" text-anchor=\"middle\">1 Física — bits, cable, fibra, radio</text></g></svg>"
+        },
+        {
+          "heading": "3. Arquitectura TCP/IP: capas, encapsulación real y comparación con OSI",
+          "body": "La arquitectura TCP/IP es el modelo práctico que utiliza Internet. Aquí conviene detectar una discrepancia entre apuntes: el Tema 12 la estructura en **cinco capas** (física, acceso a red, internet, transporte y aplicación), mientras que el Bloque 4 la resume en **cuatro** (acceso a red, internet, transporte y aplicación), separando o no la capa física. Es una diferencia de nomenclatura; lo importante es qué hace cada nivel.\n\nLa **capa de acceso a red** trabaja con direcciones físicas de 48 bits (MAC, escrita como seis bloques hexadecimales) y resuelve direcciones con ARP, que dada una IP devuelve la MAC; RARP hace lo contrario. La **capa internet** usa IP para encaminar paquetes entre redes distintas; el encaminador decide la mejor interfaz (enrutamiento) y envía el paquete por ella (conmutación). La **capa de transporte** ofrece TCP, orientado a conexión y fiable mediante retransmisiones y control de flujo, y UDP, sin garantías de entrega ni de orden. Una conexión TCP se identifica por la combinación de dirección IP y puerto de origen con dirección IP y puerto de destino: el llamado socket. La **capa de aplicación** agrupa los protocolos de usuario, como HTTP y HTTPS (puertos 80 y 443), DNS o el correo electrónico.\n\nFrente a OSI, TCP/IP no tiene capas de sesión y presentación separadas; sus funciones se reparten entre transporte y aplicación. (Fuentes: Tema 12.docx, apartados 2 y 2.1; Bloque 4 Actualizado 2026.docx, Tema 7; Modelo.OSI.Resumen.docx.)"
+        },
+        {
+          "heading": "4. Direccionamiento IPv4: clases, máscara y cabecera",
+          "body": "Una dirección IPv4 es una cadena de **32 bits** escrita como cuatro octetos decimales. Consta de una parte de red y una parte de host, y la frontera la marca la máscara. En el direccionamiento clásico (classful) el espacio se dividía en clases fijas: **A** (primer bit 0; 8 bits de red y 24 de host), **B** (dos primeros bits 10; 16 y 16) y **C** (tres primeros bits 110; 24 y 8). La clase **D** (224.0.0.0/4) se reservó para multicast y la **E** (240.0.0.0/4) para usos futuros, con la excepción del broadcast inundado 255.255.255.255.\n\nLa **máscara de subred** es otra cadena de 32 bits: los bits a 1 identifican la parte de red o subred y los bits a 0 la parte de host. De ahí salen dos direcciones no asignables: la **dirección de red**, con todos los bits de host a 0, y la **dirección de broadcast**, con todos a 1, utilizada para dirigirse a todos los equipos de la subred.\n\nLa cabecera IPv4 tiene un mínimo de 20 bytes y campos relevantes para el examen: versión, longitud de cabecera, tipo de servicio, longitud total (16 bits, hasta 65.535 bytes), identificación, indicadores y desplazamiento para la fragmentación, **TTL**, protocolo de la capa superior, checksum de cabecera y direcciones de origen y destino. El TTL se decrementa en cada router; si llega a cero, el paquete se descarta y se avisa al origen con ICMP, lo que evita bucles infinitos. (Fuentes: Tema 12.docx, apartados 2.1-2.2; Bloque 4 Actualizado 2026.docx, Tema 7.)"
+        },
+        {
+          "heading": "5. Subredes, CIDR y VLSM: cálculo con ejemplos resueltos",
+          "body": "El direccionamiento por clases desperdiciaba direcciones y hacía crecer las tablas de encaminamiento. La división en subredes introduce un tercer nivel —red, subred y host— y permite separar redes lógicas dentro de una organización y controlar el tráfico de broadcast.\n\nPara subnetear se toman bits de la parte de host. Con la máscara se fija cuántos bits son de subred y cuántos de host; el número de hosts utilizables de cada subred es 2^N − 2. Ejemplos del Tema 12: la red de clase A 95.0.0.0 tiene 2^24 − 2 = 16.777.214 direcciones de host; la de clase C 192.0.0.0 tiene 2^8 − 2 = 254. La dirección de broadcast es la última de la subred: para 34.254.0.17 (clase A) es 34.255.255.255.\n\n**CIDR** elimina las clases y usa un prefijo que indica cuántos bits son de red. En 208.128.0.0/11, los primeros 11 bits son de red y quedan 32 − 11 = 21 bits de host: 2^21 − 2 = 2.097.150 hosts. Cuanto mayor es el prefijo, menos hosts. La **máscara wildcard** es su inverso (unos donde la máscara tiene ceros) y se usa en ACL y en OSPF. **VLSM** permite subredes de distinto tamaño para adaptarse a cada red física.\n\n**Ejemplo resuelto.** Se dispone de 192.168.10.0/24 y se necesitan cuatro subredes iguales. Se toman 2 bits (2^2 = 4), el prefijo pasa a /26, la máscara es 255.255.255.192 y el bloque tiene 256 − 192 = 64 direcciones. Cada subred deja 2^6 − 2 = 62 hosts utilizables. (Fuentes: Tema 12.docx, apartados 2.2 y 4; Bloque 4 Actualizado 2026.docx, Tema 7.)",
+          "table": {
+            "columns": [
+              "Subred",
+              "Dirección de red",
+              "Primer host",
+              "Último host",
+              "Broadcast"
+            ],
+            "rows": [
+              [
+                "/26 (1.ª)",
+                "192.168.10.0",
+                "192.168.10.1",
+                "192.168.10.62",
+                "192.168.10.63"
+              ],
+              [
+                "/26 (2.ª)",
+                "192.168.10.64",
+                "192.168.10.65",
+                "192.168.10.126",
+                "192.168.10.127"
+              ],
+              [
+                "/26 (3.ª)",
+                "192.168.10.128",
+                "192.168.10.129",
+                "192.168.10.190",
+                "192.168.10.191"
+              ],
+              [
+                "/26 (4.ª)",
+                "192.168.10.192",
+                "192.168.10.193",
+                "192.168.10.254",
+                "192.168.10.255"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "6. Direcciones privadas, especiales y traducción NAT/PAT",
+          "body": "No todos los dispositivos se conectan directamente a Internet. La IANA reservó tres bloques de direcciones **privadas** para uso interno: 10.0.0.0-10.255.255.255, 172.16.0.0-172.31.255.255 y 192.168.0.0-192.168.255.255. Se pueden reutilizar en organizaciones distintas porque no se enrutan en Internet, y eso ahorra espacio global. Su inconveniente es que un dispositivo con dirección privada no puede salir a Internet sin un mecanismo adicional y que la renumeración puede complicarse al fusionar redes; DHCP ayuda en esa tarea.\n\nAdemás existen direcciones de propósito especial: 0.0.0.0/8 («esta red»), 127.0.0.0/8 (loopback), 169.254.0.0/16 (link-local, para hablar en un mismo enlace), 192.0.2.0/24 (documentación), 224.0.0.0/4 (multicast) y 240.0.0.0/4 (reservada), con 255.255.255.255 como broadcast inundado.\n\n**NAT**, definido en la RFC 1631, traduce direcciones privadas y públicas al cruzar la frontera de la red. Cuando el problema fue que muchas estaciones necesitaban salir a la vez, la RFC 3022 introdujo **PAT**, que además traduce puertos TCP/UDP: el NAPT mapea pares (IP local, puerto local) a (IP global, puerto asignado). Esto permite que toda la LAN navegue con una sola dirección pública, pero solo para sesiones originadas dentro; para publicar un servicio se configura una redirección estática de puerto. (Fuentes: Tema 12.docx, apartado 2.2; Bloque 4 Actualizado 2026.docx, Tema 7.)",
+          "table": {
+            "columns": [
+              "Bloque",
+              "Uso"
+            ],
+            "rows": [
+              [
+                "10.0.0.0/8",
+                "Dirección privada (RFC 1918)"
+              ],
+              [
+                "172.16.0.0/12",
+                "Dirección privada (RFC 1918)"
+              ],
+              [
+                "192.168.0.0/16",
+                "Dirección privada (RFC 1918)"
+              ],
+              [
+                "127.0.0.0/8",
+                "Loopback: el propio equipo"
+              ],
+              [
+                "169.254.0.0/16",
+                "Link-local (mismo enlace de datos)"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "7. IPv6: notación, compresión y tipos de dirección",
+          "body": "IPv6 nace para resolver la escasez de IPv4. Usa direcciones de **128 bits** escritas como ocho bloques de cuatro dígitos hexadecimales separados por dos puntos. Admite dos reglas de compresión: omitir los ceros a la izquierda de cada bloque y sustituir una secuencia de bloques nulos por «::», que solo puede aparecer **una vez** en una dirección. Así, 2001:0db8:85a3:0000:0000:8a2e:0370:7334 puede escribirse 2001:db8:85a3::8a2e:370:7334.\n\nEn IPv6 **no existe broadcast**; en su lugar hay unicast, multicast (FF00::/8), anycast (una dirección que identifica a varios equipos, pero se entrega a uno) y varios tipos de unicast: **link-local** FE80::/10, para comunicarse en el mismo enlace; **unique-local** FC00::/7 y FD00::/8, el equivalente a las direcciones privadas; y **global** 2000::/3, enrutables en Internet. El multicast de todos los nodos usa FF01::1 y FF02::1, y el de todos los routers FF02::2.\n\nLa cabecera IPv6 es de **40 bytes** y de longitud fija, más simple que la de IPv4. El campo de límite de saltos (8 bits) sustituye al TTL y la etiqueta de flujo (20 bits) permite tratar de forma especial los paquetes de un mismo flujo, por ejemplo para QoS. La fuente destaca también la autoconfiguración, las mejoras de enrutamiento, la seguridad incorporada y las mejoras de QoS; en la práctica, la convivencia con IPv4 es progresiva. (Fuentes: Bloque 4 Actualizado 2026.docx, Tema 7; Tema 12.docx, apartado 2.2.)",
+          "table": {
+            "columns": [
+              "Prefijo",
+              "Tipo de dirección"
+            ],
+            "rows": [
+              [
+                "FE80::/10",
+                "Link-local (mismo enlace)"
+              ],
+              [
+                "FC00::/7 y FD00::/8",
+                "Unique-local (equivalente privado)"
+              ],
+              [
+                "2000::/3",
+                "Global (enrutable en Internet)"
+              ],
+              [
+                "FF00::/8",
+                "Multicast"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "8. Conmutación, VLAN y enlaces troncales",
+          "body": "Un **conmutador** (switch) es un dispositivo de capa 2 que, como un puente multipuerto, aprende las direcciones MAC y las asocia a puertos. Tiene dos modos de envío: **almacenamiento y envío** (recibe la trama completa, comprueba el checksum y la descarta si es errónea, con más latencia) y **conmutación rápida** (empieza a reenviar en cuanto lee la MAC de destino, con menos latencia pero propagando posibles errores).\n\nCuando hay caminos redundantes aparecen bucles, tormentas de difusión e inestabilidad en las tablas. Para evitarlo se usa la familia del **Spanning Tree**: STP evita bucles, RSTP converge más rápido, MSTP permite varios árboles, BPDU transporta la información de topología y TCN notifica cambios; SPB es otra solución de conmutación para Ethernet virtualizada.\n\nUna **VLAN** (802.1Q) crea segmentos lógicos dentro de una red física: varios puertos del switch se comportan como LAN separadas aunque compartan el mismo equipo, lo que reduce el dominio de broadcast y separa departamentos o invitados. Para extender una VLAN por varios switches se usan **enlaces troncales**, que transportan tramas de varias VLAN y las distinguen con una etiqueta 802.1Q de **4 bytes** añadida a la cabecera Ethernet. Cada VLAN sigue siendo un dominio de broadcast distinto: para pasar tráfico entre VLAN hace falta un router o un switch de nivel 3. (Fuentes: Tema 11.docx, apartados 4 y 5; Bloque 4 Actualizado 2026.docx, Tema 7.)"
+        },
+        {
+          "heading": "9. Encaminamiento: rutas estáticas, protocolos y sistemas autónomos",
+          "body": "El **encaminador** (router) es un dispositivo de capa 3 que conecta redes lógicas diferentes. Construye una tabla de rutas con las redes conocidas y la interfaz por la que se alcanzan, y su trabajo tiene dos fases: **enrutamiento** (decidir la mejor interfaz para el destino) y **conmutación** (enviar el paquete por ella). Además acota los dominios de broadcast: un router crea tantos dominios de difusión como interfaces operativas tiene.\n\nLas rutas pueden ser **estáticas**, configuradas a mano por el administrador, o **dinámicas**, aprendidas con protocolos que intercambian información entre routers. La elección de destino se apoya en la tabla: si el destino es local se resuelve la MAC con ARP; si es remoto se envía a la MAC del encaminador de salida (la puerta de enlace). Los protocolos se clasifican por su forma de calcular rutas y por su ámbito: interiores (IGP) dentro de un sistema autónomo y exteriores (EGP) entre sistemas autónomos.\n\nLos protocolos que recogen los apuntes son: **RIP** (vector de distancia, máximo 15 saltos), **RIPng** (su versión para IPv6), **IS-IS y OSPF** (estado de enlace), **EIGRP** (híbrido, vector de distancia avanzado, de Cisco, con métricas de ancho de banda, retardo, fiabilidad y carga, convergencia rápida y sin límite fijo de saltos) y **BGP** (vector de camino o path-vector, el que conecta sistemas autónomos en Internet). (Fuentes: Tema 11.docx, apartados 4 y 5; Tema 12.docx, apartado 2; Bloque 4 Actualizado 2026.docx, Tema 7.)",
+          "table": {
+            "columns": [
+              "Protocolo",
+              "Tipo",
+              "Dato característico"
+            ],
+            "rows": [
+              [
+                "RIP / RIPng",
+                "Vector de distancia",
+                "Máximo 15 saltos; RIPng para IPv6"
+              ],
+              [
+                "OSPF / IS-IS",
+                "Estado de enlace",
+                "Calculan rutas a partir de la topología"
+              ],
+              [
+                "EIGRP",
+                "Híbrido (Cisco)",
+                "Ancho de banda, retardo, fiabilidad y carga"
+              ],
+              [
+                "BGP",
+                "Vector de camino",
+                "Entre sistemas autónomos (Internet)"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "10. Medios de transmisión y pruebas de cableado",
+          "body": "El medio guiado puede ser eléctrico (par trenzado o coaxial) u óptico (fibra). Al propagar la señal aparecen **atenuación** (pérdida de potencia con la distancia), **interferencia** (la diafonía es la que se produce entre pares paralelos), **ruido** (térmico, de intermodulación o impulsivo), desfase y dispersión. El **par trenzado no apantallado (UTP)** es el más usado por su bajo coste y facilidad de instalación; contiene cuatro pares de hilos de cobre. El **STP** es más caro pero menos sensible a las interferencias electromagnéticas. El **coaxial** tiene núcleo de cobre, aislamiento, malla de blindaje y revestimiento; el RG-58 (50 ohmios) se usó en 10BASE-2 y los RG-59 y RG-6U (75 ohmios) en televisión y cable-módem.\n\nLa **fibra óptica** usa dos hebras de vidrio o plástico (transmisión y recepción). Ofrece distancias y ancho de banda muy superiores al cobre (la fuente cita hasta 500 Gbps) y no es sensible a EMI ni a diafonía. La **monomodo** se usa en enlaces de larga distancia, con longitudes de onda típicas de 1.310 y 1.550 nm; la **multimodo**, en edificio y en tecnologías como Gigabit y 10 Gigabit Ethernet, con longitudes de 850 a 1.300 nm.\n\nLas pruebas básicas del cobre incluyen el reflectómetro en el dominio del tiempo (TDR), que mide longitud y detecta pares abiertos o cortocircuitos, el mapeo de hilos, la atenuación, la diafonía próxima y lejana (NEXT y FEXT), la relación atenuación/diafonía (ACR), la pérdida de retorno (RL/SRL) y el ruido. En fibra se usan el OTDR y el juego de fuente y medidor de potencia (OLTS) para medir potencia y atenuación. (Fuentes: Tema 11.docx, apartados 2 y 3.)",
+          "table": {
+            "columns": [
+              "Medio",
+              "Punto fuerte",
+              "Limitación"
+            ],
+            "rows": [
+              [
+                "UTP",
+                "Barato y fácil de instalar",
+                "Sensible a interferencias y diafonía"
+              ],
+              [
+                "STP",
+                "Menos sensible a EMI",
+                "Más caro que el UTP"
+              ],
+              [
+                "Coaxial",
+                "Blindaje y usos históricos (10BASE-2, TV)",
+                "Menos usado en LAN actuales"
+              ],
+              [
+                "Fibra monomodo",
+                "Larga distancia y gran ancho de banda",
+                "Instalación y equipos más caros"
+              ],
+              [
+                "Fibra multimodo",
+                "Edificio y distancias medias",
+                "Alcance menor que la monomodo"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "11. Wi-Fi: 802.11, acceso al medio y seguridad",
+          "body": "Las redes Wi-Fi se rigen por la familia IEEE 802.11 y comparten con Ethernet la idea de un medio compartido, pero necesitan una capa física y de acceso al medio específicas para el espectro radioeléctrico. Trabajan en las bandas de **2,4 GHz y 5 GHz**, a las que se añade la de 6 GHz en Wi-Fi 6E. En 2,4 GHz hay canales del 1 al 13 separados 5 MHz, pero como el ancho de banda analógico es de 22 MHz, los contiguos se solapan; el resumen del tema señala los canales 1, 7 y 13 como los que evitan ese solapamiento.\n\nEl acceso al medio cambia respecto a la red cableada. Ethernet usa CSMA/CD, que detecta colisiones; en radio no se puede escuchar mientras se transmite, así que 802.11 emplea **CSMA/CA**: comprueba si el canal está libre, espera un tiempo aleatorio y exige un ACK del receptor. Como no todas las estaciones se oyen entre sí (problema del **nodo oculto**), se añade el intercambio **RTS/CTS** con un vector de reserva (NAV). El control puede ser distribuido (DCF) o centralizado por sondeo (PCF).\n\nLa arquitectura puede ser **ad-hoc** (equipos que se comunican directamente) o **infraestructura**, con punto de acceso (AP) y controlador (AC). Los estándares han evolucionado desde 802.11 (1997, 2 Mbps) hasta 802.11ax (Wi-Fi 6, 2019, hasta 9,6 Gbps) y 802.11be (Wi-Fi 7, 2024, hasta 30 Gbps en el resumen IEEE), con 802.11ad (WiGig, 60 GHz) y 802.11af (bandas de TV) como variantes. En seguridad, WEP (RC4) quedó roto y fue sustituido por 802.11i/WPA2 con AES; el control de acceso por puertos 802.1X usa EAP contra un servidor RADIUS. (Fuentes: Tema 11.docx, apartados 6.1-6.4; IEEE.802.11.y.Wifi.Estandares.docx.)",
+          "table": {
+            "columns": [
+              "Estándar",
+              "Año",
+              "Banda",
+              "Velocidad máxima"
+            ],
+            "rows": [
+              [
+                "802.11b",
+                "1999",
+                "2,4 GHz",
+                "11 Mbps"
+              ],
+              [
+                "802.11a",
+                "1999",
+                "5 GHz",
+                "54 Mbps"
+              ],
+              [
+                "802.11g",
+                "2003",
+                "2,4 GHz",
+                "54 Mbps"
+              ],
+              [
+                "802.11n",
+                "2009",
+                "2,4 y 5 GHz",
+                "600 Mbps"
+              ],
+              [
+                "802.11ac",
+                "2013",
+                "5 GHz",
+                "1,3 Gbps (el Bloque 4 cita 3,5 Gbps)"
+              ],
+              [
+                "802.11ax (Wi-Fi 6)",
+                "2019",
+                "2,4 y 5 GHz",
+                "9,6 Gbps"
+              ],
+              [
+                "802.11be (Wi-Fi 7)",
+                "2024",
+                "2,4, 5 y 6 GHz",
+                "30 Gbps (el Bloque 4 cita 46 Gbps)"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "12. Resumen: lo que hay que memorizar y fuentes citadas",
+          "body": "Lo esencial que conviene retener:\n\n- OSI tiene **siete capas** y cada una una PDU distinta: bits, tramas, paquetes, segmentos/datagramas y datos por encima de transporte.\n- TCP/IP se describe en **cuatro** capas (acceso a red, internet, transporte y aplicación) o **cinco** si se separa la física, según la fuente.\n- En IPv4 la máscara marca red y host; hosts útiles = **2^N − 2**; la de broadcast es la última dirección de la subred.\n- Direcciones privadas: **10/8, 172.16-172.31 y 192.168/16**; NAT (RFC 1631) y PAT (RFC 3022) permiten compartir una IP pública.\n- IPv6 usa **128 bits**, no tiene broadcast, comprime con «::» una sola vez y distingue link-local (FE80::/10), unique-local (FC00::/7) y global (2000::/3).\n- Una **VLAN** segmenta lógicamente el switch y la etiqueta **802.1Q** ocupa 4 bytes; para cruzar VLAN hace falta un router.\n- RIP limita a **15 saltos**, OSPF e IS-IS son de estado de enlace y **BGP** conecta sistemas autónomos.\n- UTP, STP, coaxial y fibra: la fibra no sufre EMI y ofrece más distancia y ancho de banda.\n- Wi-Fi usa **CSMA/CA**, ACK y RTS/CTS para el nodo oculto; WEP está obsoleto y WPA2/802.11i usa AES.\n\nFuentes citadas: Tema 11.docx; Tema 12.docx; Bloque 4 Actualizado 2026.docx; Modelo.OSI.Resumen.docx; IEEE.802.11.y.Wifi.Estandares.docx. (Los PDF de subnetting son escaneados y no se han utilizado como fuente.)"
+        },
+        {
+          "heading": "Casos tipo test (respuestas razonadas)",
+          "body": "**1. ¿Cuántas capas tiene el modelo OSI?**\n\na) Siete · b) Cinco · c) Cuatro · d) Ocho\n\n**Respuesta: a.** ISO creó en 1977 un modelo de siete capas: física, enlace, red, transporte, sesión, presentación y aplicación. La arquitectura TCP/IP es la que se simplifica a cuatro o cinco capas.\n\n**2. ¿Cuál es la unidad de datos (PDU) de la capa de enlace de datos?**\n\na) Bits · b) Tramas · c) Paquetes · d) Segmentos\n\n**Respuesta: b.** En enlace de datos la PDU es la trama; la física trabaja con bits, la red con paquetes y el transporte con segmentos TCP o datagramas UDP.\n\n**3. ¿En cuántas capas describe el Bloque 4 la arquitectura TCP/IP?**\n\na) Siete · b) Cinco · c) Cuatro · d) Tres\n\n**Respuesta: c.** El Bloque 4 habla de cuatro capas (acceso a red, internet, transporte y aplicación); el Tema 12 separa la física y la describe en cinco. Es una diferencia de nomenclatura, no de funcionamiento.\n\n**4. ¿Qué máscara corresponde a un prefijo /26?**\n\na) 255.255.255.0 · b) 255.255.255.128 · c) 255.255.255.224 · d) 255.255.255.192\n\n**Respuesta: d.** Un /26 tiene 26 bits a 1: los tres primeros octetos completos y los dos primeros bits del cuarto, es decir, 255.255.255.192.\n\n**5. En una subred /26, ¿cuántos hosts utilizables hay?**\n\na) 62 · b) 64 · c) 126 · d) 30\n\n**Respuesta: a.** Quedan 6 bits de host: 2^6 = 64 direcciones, menos la de red y la de broadcast, dan 62 hosts utilizables.\n\n**6. ¿Cuál es la dirección de broadcast de la red 34.254.0.17 si es de clase A?**\n\na) 34.254.255.255 · b) 34.255.255.255 · c) 34.254.0.255 · d) 255.255.255.255\n\n**Respuesta: b.** En clase A los 8 primeros bits son de red y los 24 restantes de host; el broadcast pone todos los bits de host a 1, luego 34.255.255.255.\n\n**7. En la dirección 208.128.0.0/11, ¿cuántos bits se usan para hosts?**\n\na) 11 · b) 20 · c) 21 · d) 25\n\n**Respuesta: c.** El prefijo /11 reserva 11 bits para la red; como la dirección IPv4 tiene 32 bits, quedan 32 − 11 = 21 bits de host.\n\n**8. ¿Cuál de estas direcciones IPv4 pertenece al espacio privado?**\n\na) 172.32.0.1 · b) 11.0.0.1 · c) 192.169.0.1 · d) 172.20.5.1\n\n**Respuesta: d.** Los bloques privados son 10/8, 172.16.0.0/12 (172.16.0.0-172.31.255.255) y 192.168.0.0/16. 172.20.5.1 entra en el segundo bloque; 172.32.0.1 queda fuera.\n\n**9. ¿Cuántas veces puede aparecer el símbolo «::» en una dirección IPv6?**\n\na) Una vez · b) Dos veces · c) Tres veces · d) Sin límite\n\n**Respuesta: a.** La compresión de grupos nulos con «::» solo se permite una vez por dirección; si apareciera dos, no se podría reconstruir la dirección original.\n\n**10. ¿Qué prefijo identifica las direcciones IPv6 link-local?**\n\na) FC00::/7 · b) 2000::/3 · c) FE80::/10 · d) FF00::/8\n\n**Respuesta: c.** FE80::/10 es el prefijo link-local; 2000::/3 son las globales, FC00::/7 las unique-local y FF00::/8 multicast.\n\n**11. ¿Cuántos bytes añade la etiqueta 802.1Q a la cabecera Ethernet?**\n\na) 2 bytes · b) 4 bytes · c) 6 bytes · d) 8 bytes\n\n**Respuesta: b.** 802.1Q añade un campo de 4 bytes que identifica la VLAN, necesario para transportar varias VLAN por un enlace troncal.\n\n**12. ¿Cuál es el límite de saltos del protocolo RIP?**\n\na) 15 saltos · b) 10 saltos · c) 16 saltos · d) 255 saltos\n\n**Respuesta: a.** RIP es de vector de distancia y limita a 15 saltos; por eso solo tiene sentido en redes pequeñas. OSPF e IS-IS son de estado de enlace.\n\n**13. ¿Qué protocolo de encaminamiento se usa entre sistemas autónomos en Internet?**\n\na) OSPF · b) BGP · c) RIP · d) EIGRP\n\n**Respuesta: b.** BGP es un protocolo de vector de camino que interconnecta sistemas autónomos; OSPF, RIP y EIGRP son protocolos interiores.\n\n**14. ¿Qué mecanismo de 802.11 ayuda a resolver el problema del nodo oculto?**\n\na) CSMA/CD · b) STP · c) RTS/CTS · d) ARP\n\n**Respuesta: c.** En radio no se detectan colisiones como en el cable, así que CSMA/CA usa RTS/CTS y el vector NAV para reservar el medio y evitar el nodo oculto.\n\n**15. ¿Qué instrumento se emplea para probar la fibra óptica?**\n\na) TDR · b) NEXT · c) Mapeo de hilos · d) OTDR\n\n**Respuesta: d.** El OTDR (reflectómetro en el dominio del tiempo óptico) mide potencia y atenuación en fibra; TDR, NEXT y el mapeo de hilos son pruebas de cobre."
+        },
+        {
+          "heading": "Fuentes citadas",
+          "body": "- **Tema 12.docx** — DOCX, apartados 1.1-1.2, 2, 2.1-2.2 y 4. Capas OSI, arquitectura TCP/IP de cinco capas, clases IPv4, máscara, subredes, CIDR/VLSM, direcciones privadas y NAT/PAT\n- **Tema 11.docx** — DOCX, apartados 2, 4, 5 y 6.1-6.4. Medios guiados y pruebas de cableado, dispositivos de interconexión, VLAN/802.1Q, CSMA/CA, Wi-Fi y seguridad WEP/WPA2/802.1X\n- **Bloque 4 Actualizado 2026.docx** — DOCX, Tema 7 (OSI, VLAN, IPv4/IPv6, subnetting, CIDR y routing) y Tema 8. Encapsulación SDU/PDU/SAP, VLAN 802.1Q, IPv6 (notación, prefijos y cabecera), protocolos de encaminamiento y BGP entre sistemas autónomos\n- **Modelo.OSI.Resumen.docx** — DOCX, apartados 1-7. Unidades de datos de cada capa OSI y protocolos de ejemplo por capa\n- **IEEE.802.11.y.Wifi.Estandares.docx** — DOCX, tabla de estándares IEEE 802.11. Año, banda de frecuencia y velocidad máxima de las versiones 802.11 hasta 802.11be"
+        }
+      ],
       "practiceSlug": "iii-21"
     },
     "III.22": {
@@ -3095,6 +3742,130 @@
         "Creer que normalizar es siempre mejor: desnormalizar puede mejorar las lecturas a cambio de redundancia y riesgo de incoherencia."
       ],
       "reviewedAt": "2026-11-10",
+      "longSections": [
+        {
+          "heading": "1. Qué es una base de datos y qué aporta el sistema gestor",
+          "body": "Una base de datos es una colección de datos relacionados con un significado propio, organizada para un propósito concreto. No basta con acumular ficheros: debe haber coherencia interna, datos que representen el mundo real (el universo del discurso) y una audiencia interesada en consultarlos.\n\nEl sistema gestor de bases de datos (SGBD) es el software de propósito general que permite **definir** la estructura y las restricciones, **construir** la base almacenando los datos en un soporte controlado y **manipularla** consultando, insertando, modificando y borrando. Se sitúa entre el usuario y la información, y cumple tres funciones esenciales: descripción de los datos, manipulación y utilización o comunicación con la base.\n\nFrente a los ficheros clásicos, el enfoque aporta ventajas que hay que saber enumerar. La primera es el **control de la redundancia**: si un dato se guarda en varios sitios, una actualización obliga a repetirla y, si se olvida en uno, aparecen inconsistencias; el diseño concentra cada dato lógico en un solo lugar, aunque admite redundancia controlada para mejorar el rendimiento. La segunda es la **restricción de accesos no autorizados**, con autenticación, autorización y auditoría. A ellas se suman el almacenamiento persistente, los vínculos complejos, la integridad y las copias de seguridad.\n\nNada es gratuito: un SGBD exige inversión en equipo, software y formación y añade sobrecarga de seguridad, concurrencia, recuperación e integridad. La fuente señala tres casos en que compensa seguir con ficheros: base y aplicaciones simples y estables, requisitos estrictos de tiempo real y ausencia de multiusuario. (Tema 5.docx, apartados 1 y 1.3; Tema 7.docx, apartado 1.)"
+        },
+        {
+          "heading": "2. El modelo relacional de Codd y la arquitectura de tres esquemas",
+          "body": "El modelo relacional, propuesto por Edgar Frank Codd, se apoya en la **relación**, que el usuario percibe como una tabla bidimensional de filas y columnas. Codd formuló **doce reglas que en realidad son trece, numeradas del 0 al 12**: la fundamental, la de información, la del acceso garantizado, la del tratamiento sistemático de valores nulos, la del catálogo dinámico en línea, la del sublenguaje de datos completo, la de actualización de vistas, la de inserción, actualización y borrado de alto nivel, las de independencia física, lógica, de la integridad y de la distribución, y la de la no subversión.\n\nEl modelo persigue **independencia física**, **independencia lógica**, **flexibilidad**, **uniformidad** y **sencillez**. De ahí salen las propiedades de toda tabla: nombre propio; un solo valor por celda, porque no se admiten atributos multivaluados; sin filas duplicadas; orden de filas y columnas irrelevante; cada columna es un atributo con nombre distinto; cada columna tiene un tipo de datos y un intervalo de valores permitido, su **dominio**; y debe existir un atributo o conjunto que identifique cada fila de forma única.\n\n**Esquema** y **estado** no son lo mismo: el esquema es la descripción de la base, se fija en el diseño y se llama intensión; el estado o instantánea es el conjunto de datos de un momento y se llama extensión. Cada actualización produce un estado nuevo que el gestor valida contra el esquema.\n\nLa **arquitectura de tres esquemas** separa las aplicaciones del almacenamiento: el nivel **interno** describe cómo se guardan los datos y los caminos de acceso; el **conceptual** describe la estructura completa para la comunidad y oculta el detalle físico; y el **externo** o de vistas describe solo la parte que interesa a cada grupo. El gestor traduce cada solicitud entre niveles mediante correspondencias, y esa separación hace posible la **independencia lógica** (cambiar el conceptual sin tocar vistas ni programas) y la **independencia física** (cambiar el interno sin tocar el conceptual). (Bloque 3 Actualizado 2026.docx, Tema 1; Tema 5.docx, apartados 2.3 y 2.4.)"
+        },
+        {
+          "heading": "3. Claves e integridad: las reglas que sostienen la tabla",
+          "body": "La teoría relacional ordena las claves de lo general a lo concreto. Una **superclave** es cualquier conjunto de atributos que identifica de forma única cada fila. Una **clave candidata** es una superclave mínima: si se le quita cualquier atributo, deja de identificar. Entre las candidatas se elige la **clave primaria** (PK), identificador oficial de la fila, y las demás quedan como **claves alternas**. La **clave ajena** (FK) es un atributo o conjunto de atributos cuyos valores deben coincidir con los de la clave primaria de otra tabla, o de la misma cuando la relación es autorreferente.\n\nLa fuente define la clave primaria como la columna o grupo de columnas que identifica cada fila de forma exclusiva, y la clave foránea como la que señala de forma exclusiva una fila de otra tabla. Esa correspondencia materializa las relaciones del modelo entidad-relación y da sentido a la integridad referencial: sin clave ajena no hay forma de exigir que un pedido pertenezca a un cliente existente. La clave primaria debe ser **estable**: si se elige un dato que cambia (teléfono, correo, nombre), cada modificación obliga a propagarla por todas las tablas que lo referencian.\n\nLas reglas de integridad son las condiciones de todo estado válido. La **de entidad** exige que los atributos de la clave primaria no tengan nulos; la **de unicidad**, que la clave no se repita; la **referencial**, que todo valor de una clave ajena sea nulo o exista en la clave primaria referenciada; y la **de dominio**, que se respeten el tipo y las restricciones de cada columna.\n\nCuando una clave primaria está referenciada, el gestor decide qué hacer ante un borrado o modificación. La opción conservadora es **restringir**: no permitir borrar la tupla ni modificar los atributos de su clave mientras exista referencia. La otra es la **actualización en cascada**, que permite la operación y propaga el cambio a las tuplas que referenciaban la clave. (Bloque 3 Actualizado 2026.docx, Tema 1; Tema 7.docx, apartado 1.2.)"
+        },
+        {
+          "heading": "4. Tabla comparativa de restricciones SQL",
+          "table": {
+            "columns": [
+              "Restricción",
+              "Qué garantiza",
+              "Ejemplo de declaración"
+            ],
+            "rows": [
+              [
+                "PRIMARY KEY",
+                "Identifica cada fila y prohíbe nulos y duplicados en la clave",
+                "ALTER TABLE pokemon ADD PRIMARY KEY (numero_pokedex);"
+              ],
+              [
+                "UNIQUE",
+                "No admite valores repetidos en la columna o combinación",
+                "ALTER TABLE pokemon ADD CONSTRAINT uq_nombre UNIQUE (nombre);"
+              ],
+              [
+                "FOREIGN KEY",
+                "Todo valor es nulo o existe en la clave primaria referenciada",
+                "FOREIGN KEY (id_entrenador) REFERENCES entrenador(id_entrenador)"
+              ],
+              [
+                "CHECK",
+                "Limita el rango de valores admitidos en una columna",
+                "CHECK (ataque BETWEEN 1 AND 255)"
+              ],
+              [
+                "NOT NULL",
+                "Impide que la columna quede sin valor",
+                "nombre VARCHAR(40) NOT NULL"
+              ],
+              [
+                "DELETE / UPDATE en cascada",
+                "Propaga la operación a las filas que referencian la clave",
+                "ON DELETE CASCADE ON UPDATE CASCADE"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "5. Del modelo entidad-relación al modelo relacional",
+          "body": "El diseño empieza por un **modelo entidad-relación**: se identifican entidades (objetos del dominio), atributos y relaciones, y se dibuja el diagrama con sus cardinalidades. La fuente recuerda que las **relaciones reflexivas** —aquellas en las que solo participa una entidad, como un empleado que depende de otro empleado— se convierten en dos tablas: la de la entidad y la de la relación. Es la misma lógica de las relaciones de muchos a muchos, que necesitan su propia tabla intermedia.\n\nEl **paso al modelo relacional** es el diseño lógico: cada entidad se convierte en tabla, cada atributo en columna y cada relación en clave ajena o en tabla intermedia según su cardinalidad. La fuente cita el **DED** (diagrama de estructura de datos) como paso intermedio útil, porque está más cerca del modelo relacional y solo admite relaciones binarias, lo que simplifica la traducción. También menciona la notación «pata de gallo» o de cuervo, usada en el modelo E/R y en la métrica V3, para representar cardinalidades cero, uno y muchos.\n\nDespués llega el **diseño físico**, que decide cómo se almacenan los datos y qué estructuras de acceso se crean. El administrador es el único que conoce el almacenamiento real; el resto trabaja con una visión de alto nivel, que es justamente la independencia física que persigue el modelo. Un buen diseño lógico se juzga por las preguntas que responde sin ambigüedad y las reglas que impide violar. (Bloque 3 Actualizado 2026.docx, Tema 1.)"
+        },
+        {
+          "heading": "6. Normalización: dependencias funcionales y formas normales",
+          "body": "La **normalización** es la técnica formal que organiza los atributos para eliminar redundancias y evitar anomalías en la manipulación. Una relación está en una determinada **forma normal** cuando satisface un conjunto concreto de restricciones sobre sus atributos. Para aplicarla hay que dominar las **dependencias funcionales**: un atributo Y depende funcionalmente de X (X → Y) cuando a cada valor de X corresponde un solo valor de Y; X es el determinante e Y el implicado.\n\nLa fuente distingue varios tipos de dependencia. La **dependencia funcional completa** exige que Y dependa de todo X y de ninguno de sus atributos parciales. La **transitiva** aparece cuando Z depende de X a través de otro atributo Y, de modo que X → Y, Y no determina a X e Y → Z. La **multivaluada** se da cuando el atributo dependiente puede tomar más de un valor para cada valor del determinante.\n\nCon ese vocabulario se explican las formas normales clásicas, que la fuente cita en conjunto pero no desarrolla una a una. La **primera (1FN)** exige valores atómicos, sin multivaluados ni grupos repetidos. La **segunda (2FN)** exige estar en 1FN y que ningún atributo no primo dependa de una parte de la clave, es decir, sin dependencias parciales. La **tercera (3FN)** exige estar en 2FN y que no haya dependencias transitivas de atributos no primos respecto de la clave. La **forma normal de Boyce-Codd (BCNF)** es más estricta: todo determinante de una dependencia funcional debe ser clave candidata.\n\nNormalizar no es un fin en sí mismo: a veces conviene una **redundancia controlada** para mejorar el rendimiento, duplicando un dato a sabiendas y asumiendo el coste de mantenerlo coherente. Lo que no se puede es duplicar sin control, porque la anomalía de actualización aparece siempre por el mismo sitio: el mismo hecho guardado dos veces y actualizado una. (Bloque 3 Actualizado 2026.docx, Tema 1; Tema 5.docx, apartado 1.3.1.)"
+        },
+        {
+          "heading": "7. Tabla de formas normales",
+          "table": {
+            "columns": [
+              "Forma normal",
+              "Condición que exige",
+              "Anomalía que evita"
+            ],
+            "rows": [
+              [
+                "1FN",
+                "Valores atómicos: sin multivaluados ni grupos repetidos",
+                "Listas dentro de una celda y columnas repetidas"
+              ],
+              [
+                "2FN",
+                "1FN y sin dependencias parciales de parte de la clave",
+                "Datos que dependen solo de una parte de la clave compuesta"
+              ],
+              [
+                "3FN",
+                "2FN y sin dependencias transitivas de atributos no primos",
+                "Datos que dependen de otro atributo no clave"
+              ],
+              [
+                "BCNF",
+                "Todo determinante es clave candidata",
+                "Dependencias en las que un atributo no clave determina otro"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "8. SQL: definición, manipulación y consulta",
+          "body": "SQL es un lenguaje específico del dominio de la gestión de bases de datos relacionales y maneja el **álgebra y el cálculo relacional** para formular consultas. Dentro de SQL conviven el **lenguaje de definición de datos** (estructuras), el de **manipulación** (filas) y elementos de definición de vistas, restricciones y evolución del esquema, lo que lo convierte en un lenguaje integrado.\n\nLa consulta básica se construye con SELECT. **WHERE** filtra registros individuales; **BETWEEN** delimita un intervalo; **LIKE** busca patrones, con % para cualquier secuencia y el guion bajo _ para un carácter; **IN** comprueba pertenencia a una lista; **AND**, **OR** y **NOT** combinan condiciones; **ORDER BY** ordena, con ASC por defecto; **DISTINCT** elimina duplicados; e **IS NULL / IS NOT NULL** comprueba la ausencia de valor. Las funciones de agregado son COUNT, SUM, AVG, MIN y MAX, y se combinan con **GROUP BY**.\n\nLa diferencia entre **WHERE** y **HAVING** es clásica: WHERE filtra registros antes de agrupar y HAVING filtra grupos después de agrupar, por eso HAVING acompaña a funciones de agregado. Los **JOIN** combinan filas de dos o más tablas por un campo común: INNER JOIN devuelve solo coincidencias; LEFT JOIN conserva todas las filas de la izquierda y rellena con NULL la derecha cuando no hay coincidencia; RIGHT JOIN hace lo simétrico; FULL JOIN devuelve filas de ambos lados; y CROSS JOIN devuelve el producto cartesiano. Para combinar consultas existen UNION y UNION ALL (el primero elimina duplicados), INTERSECT y EXCEPT. Para limitar filas, la fuente distingue LIMIT en PostgreSQL, MySQL y SQLite, TOP en SQL Server y FETCH FIRST en Oracle y ANSI SQL.\n\nEn la manipulación, INSERT admite dos formas: indicando las columnas o pasando los valores de todas en orden. UPDATE modifica valores y DELETE elimina filas, con o sin WHERE. No hay que confundir tres operaciones parecidas: DELETE borra filas y conserva la estructura; TRUNCATE elimina todas las filas, sin WHERE, es más rápido y regenera la estructura; DROP elimina la tabla entera, estructura incluida, y no se puede deshacer. ALTER TABLE añade o quita columnas, cambia tipos, renombra, y añade o elimina claves y restricciones. El control de acceso se ejerce con GRANT y REVOKE, que en ANSI SQL cubren SELECT, INSERT, UPDATE y DELETE y que algunos gestores amplían con REFERENCES, EXECUTE, USAGE, CREATE, DROP o GRANT. (Bloque 3 Actualizado 2026.docx, Tema 3; Tema 7.docx, apartados 2 y 2.2.)"
+        },
+        {
+          "heading": "9. Transacciones y propiedades ACID",
+          "body": "Una **transacción** es un conjunto de operaciones que forman una unidad lógica de trabajo: accede y actualiza varios elementos y se delimita con instrucciones de inicio y fin. La fuente describe cinco estados: **activa**, mientras se ejecuta; **parcialmente comprometida**, tras ejecutar su última operación; **fallida**, cuando no puede continuar; **abortada**, cuando la base se deja como estaba; y **cometida**, cuando sus modificaciones quedan en almacenamiento estable. **COMMIT** confirma, hace visibles los cambios a otras sesiones y libera los bloqueos; **ROLLBACK** deshace antes de confirmar, vuelve al estado del último COMMIT y también libera bloqueos.\n\nToda transacción cumple **ACID**. **Atomicidad**: las operaciones se realizan todas o ninguna, sin quedarse a medias por un fallo. **Consistencia**: si la base estaba en un estado correcto antes, termina en un estado correcto. **Isolation** o aislamiento: aunque se ejecuten varias a la vez, el resultado equivale a ejecutarlas una detrás de otra. **Durabilidad**: terminada la transacción, los resultados quedan registrados de forma permanente.\n\nLas bases NoSQL no cumplen ACID y adoptan **BASE**: disponibilidad básica, estado blando y consistencia eventual. La fuente lo relaciona con el **teorema CAP de Brewer**: un sistema distribuido no puede garantizar a la vez consistencia, disponibilidad y tolerancia al particionado, sino solo dos de las tres. ACID y BASE son dos formas de repartir el mismo presupuesto de garantías. (Tema 7.docx, apartado 2.2; Tema 5.docx, apartados 1.1.4, 7.1 y 8.)"
+        },
+        {
+          "heading": "10. Concurrencia: anomalías, niveles de aislamiento y bloqueos",
+          "body": "Cuando varias transacciones acceden a la vez a los mismos datos pueden aparecer tres fenómenos. La **lectura errónea** o dirty read ocurre cuando una transacción lee datos escritos por otra que aún no ha confirmado con COMMIT. La **doble lectura** o non-repeatable read ocurre cuando una transacción lee un dato, lo vuelve a leer y descubre que otra ya confirmada lo modificó o borró entre las dos lecturas. La **lectura fantasma** o phantom read aparece cuando se repite una consulta y el conjunto de filas ha crecido porque otra transacción insertó filas y ya confirmó.\n\nSQL define cuatro niveles de aislamiento. **Read Uncommitted** es el más bajo, no bloquea y solo protege de datos físicamente dañados, sin garantizar coherencia. **Read Committed** evita las lecturas sucias pero no las no repetibles ni los fantasmas. El nivel de **lecturas repetibles** evita las no repetibles y no resuelve los fantasmas. **Serializable** es el que más se acerca a ACID y garantiza que dos SELECT de la misma transacción devuelven el mismo conjunto, bloqueando incluso registros que aún no existen para evitar los fantasmas, a costa de escalabilidad.\n\nEl control se apoya en **bloqueos**. Uno **compartido** permite que otras transacciones lean la misma información pero no escriban; uno **exclusivo** impide leer y escribir. El gestor mantiene una tabla de bloqueos y solo deja ejecutar transacciones legales, las que piden el bloqueo antes de leer o escribir y lo liberan después. El **bloqueo de dos fases (2PL)** exige que todos los bloqueos precedan a los desbloqueos; su riesgo es el **abrazo mortal** o deadlock, en el que dos transacciones se esperan mutuamente; el gestor suele detectarlo y deshacer primero la transacción que menos trabajo pierde. (Tema 7.docx, apartado 2.3.)"
+        },
+        {
+          "heading": "11. Ejemplo práctico: una matrícula mal y bien diseñada",
+          "body": "Supongamos una tabla única que guarda la matrícula de un centro: alumno, asignatura, profesor y despacho del profesor. Parece cómoda porque todo está junto, pero en cuanto se usa aparecen las tres anomalías clásicas. Si un alumno se matricula en tres asignaturas, sus datos se repiten tres veces y corregir el teléfono obliga a tres actualizaciones (anomalía de actualización). Si todavía no hay ningún alumno matriculado en una asignatura nueva, no hay forma de guardar esa asignatura ni su profesor (anomalía de inserción). Y si se da de baja el último alumno de una asignatura, se pierde también el dato del profesor (anomalía de borrado).\n\nEl diseño normalizado separa los hechos: una tabla de alumnos, una de asignaturas, una de profesores y una tabla de matrícula que relaciona alumno y asignatura y guarda la nota. Cada hecho se guarda una vez y las relaciones se expresan con claves ajenas. El esquema mínimo: ALUMNO(id_alumno, nombre, telefono) con PRIMARY KEY en id_alumno; ASIGNATURA(id_asignatura, titulo, creditos) con CHECK en creditos; PROFESOR(id_profesor, nombre, despacho); y MATRICULA(id_alumno, id_asignatura, nota), con clave primaria compuesta por las dos primeras columnas y claves ajenas a ALUMNO y ASIGNATURA.\n\nUna consulta como «nota media por asignatura de los alumnos con más de una matrícula» se escribe con JOIN y GROUP BY: se unen MATRICULA y ASIGNATURA por id_asignatura, se agrupa por titulo, se cuenta cuántas matrículas hay y se filtra con HAVING para quedarse con las asignaturas que superan una matrícula. Lo importante no es la consulta, sino lo que el diseño garantiza sin escribir código: no hay alumnos duplicados, no hay asignaturas sin profesor, no se puede matricular a alguien en una asignatura inexistente y dar de baja al último alumno no destruye el catálogo. Eso es lo que compran la normalización y las restricciones de integridad."
+        },
+        {
+          "heading": "12. Resumen para memorizar y fuentes",
+          "body": "Codd propuso doce reglas que son trece, numeradas del 0 al 12; el modelo persigue independencia física, independencia lógica, flexibilidad, uniformidad y sencillez. En una tabla relacional cada celda es atómica, no hay filas duplicadas, el orden no importa y cada columna tiene un dominio.\n\nLas cuatro reglas de integridad son: entidad (la clave primaria no admite nulos), unicidad (no admite repetidos), referencial (la clave ajena es nula o existe en la clave referenciada) y dominio (se respetan tipo y rango).\n\nNormalizar es eliminar dependencias indeseadas: la 1FN pide valores atómicos, la 2FN elimina dependencias parciales, la 3FN elimina transitivas y la BCNF exige que todo determinante sea clave candidata. La dependencia funcional se escribe X → Y, con X determinante e Y implicado.\n\nACID son atomicidad, consistencia, aislamiento y durabilidad; los estados de una transacción son activa, parcialmente comprometida, fallida, abortada y cometida; COMMIT confirma y ROLLBACK deshace. Los tres fenómenos de concurrencia son lectura sucia, no repetible y fantasma; los cuatro niveles son Read Uncommitted, Read Committed, lecturas repetibles y Serializable.\n\nEn SQL, WHERE filtra filas antes de agrupar y HAVING filtra grupos después; DELETE borra filas, TRUNCATE vacía la tabla y DROP elimina la tabla con su estructura.\n\nFuentes: Tema 5.docx (definición, ventajas, tres esquemas, lenguajes, NoSQL y ACID frente a BASE), Tema 7.docx (funciones del gestor, integridad, GRANT y REVOKE, transacciones y concurrencia) y Bloque 3 Actualizado 2026.docx (diseño, modelo relacional, integridad, normalización y SQL), citados por apartado porque no tienen paginación fija. Los PDF «PASO DE E-r a relacional.pdf» y «Supuesto Base de Datos.pdf» son escaneados sin texto extraíble y no se han utilizado; el detalle de cada forma normal es teoría relacional estándar, y las fuentes aportan la definición de dependencia funcional y el concepto de forma normal."
+        },
+        {
+          "heading": "Casos tipo test (respuestas razonadas)",
+          "body": "**1. ¿Cuántas reglas formuló Codd para el modelo relacional y cómo se numeran?**\n\nDoce reglas, numeradas del 1 al 12 · Doce reglas que en realidad son trece, numeradas del 0 al 12 · Diez reglas, numeradas del 1 al 10 · Siete reglas, numeradas del 0 al 6\n\n**Respuesta: b.** La fuente lo dice con precisión: son doce reglas, pero se cuentan trece porque van numeradas del 0 al 12. La regla 0 es la fundamental y la 12 es la de la no subversión.\n\n**2. Se reorganizan los ficheros y los índices de una base de datos sin modificar el esquema conceptual ni las vistas. ¿Qué tipo de independencia se está ejerciendo?**\n\nIndependencia lógica · Independencia de la integridad · Independencia física · Independencia de la distribución\n\n**Respuesta: c.** La independencia física permite modificar el esquema interno sin alterar el conceptual ni los externos. La lógica sería al revés: cambiar el conceptual sin tocar vistas ni programas.\n\n**3. ¿Qué exige la regla de integridad de entidad?**\n\nQue la clave ajena pueda tomar valores nulos · Que los atributos de la clave primaria no puedan tener valores nulos · Que ninguna columna de la tabla admita duplicados · Que todas las columnas tengan el mismo dominio\n\n**Respuesta: b.** La integridad de entidad se refiere a la clave primaria: sus atributos no admiten nulos, porque si no habría filas que no se podrían identificar. La unicidad es otra regla y afecta a que la clave no se repita.\n\n**4. Una clave ajena puede tomar un valor que no exista en la clave primaria que referencia siempre que…**\n\nsea nula, porque la integridad referencial admite el nulo como caso especial · pertenezca al dominio de la columna · la tabla referenciada tenga pocas filas · se haya declarado la columna como UNIQUE\n\n**Respuesta: a.** La integridad referencial dice que todo valor de la clave ajena es nulo o existe en la clave primaria referenciada. El nulo es la única excepción admitida; cualquier otro valor inexistente rompe la referencia.\n\n**5. Una tabla guarda en una sola celda la lista de asignaturas de un alumno separadas por comas. ¿Qué forma normal incumple como mínimo?**\n\nLa segunda forma normal · La tercera forma normal · La forma normal de Boyce-Codd · La primera forma normal\n\n**Respuesta: d.** La 1FN exige valores atómicos y prohíbe atributos multivaluados y grupos repetidos. Una lista dentro de una celda es exactamente eso, así que el incumplimiento empieza en la primera forma normal.\n\n**6. Una tabla tiene clave primaria compuesta por (id_pedido, id_linea) y guarda también el nombre del cliente, que depende solo de id_pedido. ¿Qué problema hay?**\n\nNinguno: es un dato redundante pero permitido · Una dependencia transitiva que incumple la 3FN · Una dependencia parcial que incumple la 2FN · Una violación de la integridad referencial\n\n**Respuesta: c.** El nombre del cliente depende de una parte de la clave, no de la clave completa: eso es una dependencia parcial y la 2FN prohíbe depender de parte de la clave. La 3FN se ocupa de otro caso, la dependencia transitiva.\n\n**7. La tercera forma normal exige, además de estar en 2FN, que…**\n\nno existan dependencias transitivas de atributos no primos respecto de la clave · todos los valores sean atómicos · la clave primaria sea simple y no compuesta · todo determinante sea clave candidata\n\n**Respuesta: a.** La 3FN elimina las dependencias transitivas: un atributo no primo no debe depender de otro atributo no clave. Que todo determinante sea clave candidata es la condición de la BCNF, que es más estricta.\n\n**8. ¿Qué condición añade la forma normal de Boyce-Codd sobre la tercera forma normal?**\n\nQue no haya filas duplicadas en ninguna columna · Que se eliminen los valores nulos · Que la tabla tenga una sola clave ajena · Que todo determinante de una dependencia funcional sea clave candidata\n\n**Respuesta: d.** La BCNF es una versión más estricta de la 3FN: exige que todo determinante sea clave candidata, lo que cubre casos que la 3FN deja pasar cuando hay varias claves candidatas solapadas.\n\n**9. La propiedad de atomicidad de una transacción significa que…**\n\ncada operación se ejecuta en un solo procesador · las operaciones se realizan todas o ninguna, sin quedarse a medias · los datos quedan visibles para el resto de sesiones al instante · la transacción no puede leer datos que otra no ha confirmado\n\n**Respuesta: b.** Atomicidad es indivisibilidad: la transacción es una unidad y no puede quedar ejecutada a medias. Que los datos se vean al instante es la durabilidad una vez confirmada, y no leer datos sin confirmar es aislamiento.\n\n**10. ¿Qué nivel de aislamiento evita la lectura fantasma?**\n\nRead Uncommitted · Read Committed · Lecturas repetibles · Serializable\n\n**Respuesta: d.** Solo Serializable evita los fantasmas, porque bloquea incluso los registros que todavía no existen. Las lecturas repetibles evitan la lectura no repetible, pero no el fantasma.\n\n**11. La lectura errónea o dirty read consiste en…**\n\nleer datos escritos por otra transacción que aún no ha confirmado · leer dos veces el mismo dato y obtener valores distintos · volver a ejecutar una consulta y encontrar filas nuevas · leer una tabla mientras se está reorganizando\n\n**Respuesta: a.** Es la lectura de datos no confirmados: la otra transacción todavía no ha hecho COMMIT y puede deshacer, de modo que lo leído puede no haber existido nunca. Las otras dos descripciones corresponden a la lectura no repetible y a la fantasma.\n\n**12. ¿Qué diferencia hay entre WHERE y HAVING?**\n\nWHERE filtra grupos y HAVING filtra filas individuales · Son sinónimos y se pueden usar indistintamente · WHERE solo admite comparaciones numéricas y HAVING admite texto · WHERE filtra registros antes de agrupar y HAVING filtra grupos después de agrupar\n\n**Respuesta: d.** WHERE actúa sobre registros individuales antes del GROUP BY; HAVING actúa sobre los grupos ya formados, por eso suele acompañar a funciones de agregado. Se pueden combinar en la misma sentencia.\n\n**13. ¿Cuál de estas afirmaciones sobre DELETE, TRUNCATE y DROP es correcta?**\n\nTRUNCATE elimina la tabla y su estructura, y DELETE solo las filas · TRUNCATE elimina todas las filas sin WHERE y regenera la estructura, mientras que DROP elimina la tabla entera · DELETE y DROP son equivalentes salvo por la velocidad · DROP solo se puede usar después de un TRUNCATE\n\n**Respuesta: b.** DELETE borra filas y conserva la estructura; TRUNCATE vacía la tabla sin admitir WHERE, es más rápido y regenera la estructura; DROP elimina la tabla completamente, estructura incluida, y no se puede deshacer.\n\n**14. El privilegio REFERENCES de ANSI SQL permite…**\n\ncrear una clave primaria en una tabla nueva · ejecutar un procedimiento almacenado · crear una clave ajena que haga referencia a una clave primaria de otra tabla · otorgar privilegios a otros usuarios\n\n**Respuesta: c.** REFERENCES autoriza a crear una clave foránea que apunte a la clave primaria de otra tabla. EXECUTE es para procedimientos, GRANT para otorgar privilegios y USAGE para utilizar objetos como secuencias."
+        },
+        {
+          "heading": "Fuentes citadas",
+          "body": "- **Tema 5.docx** — DOCX, apartados 1 y 1.3. definición de base de datos y de SGBD, ventajas del enfoque de bases de datos (control de redundancia, seguridad, integridad, copias y recuperación), costes y casos en que no compensa\n- **Tema 5.docx** — DOCX, apartados 2.3 y 2.4. arquitectura de tres esquemas, correspondencias entre niveles e independencia lógica y física\n- **Tema 5.docx** — DOCX, apartados 3.1, 5, 7 y 8. lenguajes LDD, LDV y LMD, clasificación de los SGBD, teorema CAP, bases NoSQL y comparación ACID frente a BASE\n- **Tema 7.docx** — DOCX, apartados 1 y 2.2. funciones del sistema gestor, tipos de datos, integridad referencial y actualización en cascada, concepto y estados de la transacción, COMMIT y ROLLBACK, propiedades ACID\n- **Tema 7.docx** — DOCX, apartado 2.3. lecturas sucias, no repetibles y fantasma, cuatro niveles de aislamiento, bloqueo de dos fases, deadlock y bloqueos compartido y exclusivo\n- **Bloque 3 Actualizado 2026.docx** — DOCX, Tema 1 (diseño de bases de datos). modelo entidad-relación y relaciones reflexivas, DED, modelo relacional de Codd y sus reglas, propiedades de la tabla, reglas de integridad, restricciones de borrado y modificación, normalización y tipos de dependencia funcional\n- **Bloque 3 Actualizado 2026.docx** — DOCX, Tema 3 (SQL). SELECT y sus cláusulas, operadores, funciones de agregado, cadena, matemáticas y fecha, GROUP BY y HAVING, JOIN, UNION, INTERSECT y EXCEPT, límites de filas por gestor, INSERT, UPDATE, DELETE, TRUNCATE y DROP, ALTER TABLE, restricciones y GRANT/REVOKE\n- **data/fuentes/IV.27.txt** — consolidado de las tres fuentes anteriores. texto de trabajo para localizar apartados y comprobar que no había contenido adicional sobre bases de datos en el resto del bloque; también confirma que los PDF de E-R y del supuesto están escaneados sin texto extraíble"
+        }
+      ],
       "practiceSlug": "iv-27"
     },
     "IV.28": {
@@ -3736,6 +4507,239 @@
         "Confundir transferir el riesgo (seguro o externalización) con aceptarlo."
       ],
       "reviewedAt": "2026-11-10",
+      "longSections": [
+        {
+          "heading": "1. Introducción y contexto",
+          "body": "La seguridad de los sistemas de información (SSI) debe cubrir la confidencialidad, la integridad y la disponibilidad frente a tres riesgos de una protección incorrecta: que la información se revele a personas no autorizadas, que los datos sean inexactos y que no se pueda acceder a ellos cuando se necesitan.\n\nNo se limita al programa del ordenador: abarca la protección física del equipo y de su entorno, la información que contiene y las redes que lo comunican con el exterior. Se define como un conjunto de reglas, planes y acciones que permiten asegurar la información de un sistema computacional, «un conjunto de soluciones técnicas a problemas no técnicos»; por eso hacen falta medidas en el nivel físico, humano, lógico y logístico, y un responsable que las mantenga.\n\nEste tema resume el material consolidado de *Tema 10.docx*, *Tema 14.docx* y *Bloque 4 Actualizado 2026.docx*. Los PDF de CCN-CERT están escaneados y sin texto extraíble: no se han usado ni se citan como leídos.\n\n*(Fuentes: Tema 10.docx, apartados 1 y 1.1; temario-c1.md, BLOQUE V, tema 34.)*"
+        },
+        {
+          "heading": "2. Confidencialidad, integridad y disponibilidad: la tríada CIA",
+          "body": "**Confidencialidad.** Asegura que la información no pueda estar disponible ni ser descubierta por personas, entidades o procesos no autorizados. No es solo impedir el acceso: garantiza que cada usuario llegue a la información que le corresponde según su grado o nivel de autoridad y que se respeten las disposiciones legales o los criterios estratégicos sobre información privada. Sus mecanismos típicos son el control de acceso y el cifrado.\n\n**Integridad.** Garantiza que la información solo la modifica —incluida su creación y su borrado— el personal autorizado, y que el sistema no la corrompe ni permite que otro lo haga; cubre la manipulación intencionada y los cambios accidentales. La autenticidad es un aspecto variante de la integridad: verifica el origen de los datos mediante códigos o firmas que se añaden en el origen y se recalculan en el destino.\n\n**Disponibilidad.** Es el grado en que un dato está en el lugar, momento y forma en que lo requiere el usuario autorizado, y el sistema sigue funcionando y puede recuperarse de un fallo. Su opuesto es la denegación de servicio: el sistema operativo se cae, falta memoria, los discos o impresoras no están disponibles o no se accede a la información.\n\nA la tríada se añaden la **autenticidad**, el **no repudio** (no poder negar ante terceros un envío o una recepción), la **consistencia**, el **aislamiento** y la **auditoría**.\n\n*(Fuente: Tema 10.docx, apartados 1 y 1.1.)*",
+          "svg": "<svg viewBox=\"0 0 520 300\" role=\"img\" aria-label=\"Triada CIA de seguridad de la información\"><polygon points=\"260,20 30,250 490,250\" fill=\"#e8f0fe\" stroke=\"#2952a3\" stroke-width=\"2\"/><text x=\"260\" y=\"80\" text-anchor=\"middle\" font-size=\"20\" font-weight=\"bold\" fill=\"#16191d\">Confidencialidad</text><text x=\"90\" y=\"275\" text-anchor=\"middle\" font-size=\"20\" font-weight=\"bold\" fill=\"#16191d\">Integridad</text><text x=\"430\" y=\"275\" text-anchor=\"middle\" font-size=\"20\" font-weight=\"bold\" fill=\"#16191d\">Disponibilidad</text><text x=\"260\" y=\"165\" text-anchor=\"middle\" font-size=\"14\" fill=\"#4b525c\">Solo quien debe accede</text><text x=\"260\" y=\"190\" text-anchor=\"middle\" font-size=\"14\" fill=\"#4b525c\">Dato completo y correcto</text><text x=\"260\" y=\"215\" text-anchor=\"middle\" font-size=\"14\" fill=\"#4b525c\">Servicio cuando se necesita</text></svg>"
+        },
+        {
+          "heading": "3. Activos, amenazas y vulnerabilidades",
+          "body": "Un **activo** es un recurso del sistema de información necesario para la organización. Una **amenaza** es un evento que puede desencadenar un incidente y producir daños materiales o pérdidas inmateriales; una **vulnerabilidad**, la probabilidad de sufrir un ataque en un plazo o, según Magerit, la potencialidad de que una amenaza se materialice sobre un activo; el **impacto** es su consecuencia y el **riesgo**, la posibilidad de que se produzca ese impacto. El bloque 4 añade el **riesgo inherente**, propio de la actividad sin controles, y el **residual**, el que queda tras tratarlos.\n\nLas vulnerabilidades se repiten: instalaciones por defecto, cuentas sin contraseña o débiles, copias incompletas o inexistentes, exceso de puertos abiertos, filtrado insuficiente de paquetes, registros incompletos y programas CGI vulnerables. Los catálogos específicos incluyen el salto Unicode, ISAPI y RDS, SMB/NetBIOS, las sesiones nulas y el hash débil de SAM en Windows; RPC, sendmail, BIND, los comandos «r», LPD, sadmind, mountd y las comunidades SNMP por omisión en UNIX; y, en la web, la falta de validación de parámetros, el control de acceso violado, las sesiones, los desbordamientos, la inyección de comandos, los errores que revelan trazas, el mal uso de criptografía y la configuración incorrecta.\n\n*(Fuentes: Tema 10.docx, apartados 1.1 y 4; Tema 14.docx, apartado 1.2; Bloque 4 Actualizado 2026.docx, Tema 5.)*",
+          "table": {
+            "columns": [
+              "Vulnerabilidad",
+              "Por qué aparece",
+              "Efecto principal"
+            ],
+            "rows": [
+              [
+                "Instalación por defecto",
+                "El instalador deja componentes y demostraciones que no se usan",
+                "Aumenta la superficie de ataque (confidencialidad e integridad)"
+              ],
+              [
+                "Cuentas sin contraseña o débiles",
+                "El nombre de usuario es fácil de obtener y toda la seguridad recae en la clave",
+                "Suplantación de identidad (confidencialidad)"
+              ],
+              [
+                "Copias de seguridad incompletas",
+                "No se verifica la restauración ni la frecuencia de las copias",
+                "Pérdida de datos y de servicio (integridad y disponibilidad)"
+              ],
+              [
+                "Exceso de puertos abiertos",
+                "Se abre lo que no se necesita y cada puerto es una vía de conexión",
+                "Acceso no autorizado y denegación de servicio"
+              ],
+              [
+                "Filtrado de paquetes insuficiente",
+                "No se comprueba el origen y el destino ni se filtra la entrada y la salida",
+                "Suplantación de IP y tráfico no deseado"
+              ],
+              [
+                "Registro de eventos incompleto",
+                "Los registros no se activan o no se conservan",
+                "Incidentes indetectables y auditoría inservible"
+              ],
+              [
+                "Programas CGI y configuración web laxa",
+                "El servidor web queda unido directamente al sistema operativo",
+                "Ejecución remota de código y fuga de información"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "4. Análisis y gestión de riesgos (MAGERIT)",
+          "body": "La gestión de riesgos une la política con las medidas concretas. Se empieza valorando lo que se protege: determinar los recursos y su valor, considerando el valor intrínseco del producto y los costes derivados de su pérdida, y buscar que atacar nuestros bienes sea más costoso que su valor, invirtiendo menos de lo que vale el activo. Después se analizan las vulnerabilidades y amenazas con su probabilidad y su coste, se definen las medidas en todos los niveles y se monitoriza el cumplimiento, revisando y mejorando cada vez que se detecte un problema.\n\nDos ideas resumen el método: la seguridad debe cubrir todos los posibles métodos de ataque y la máxima seguridad obtenible es la del elemento más débil. El riesgo es la probabilidad de que ocurra una amenaza ponderada por la magnitud del daño, y cada riesgo debe reducirse mitigando su probabilidad, reduciendo el perjuicio, diseñando métodos de recuperación rápida y corrigiendo las medidas.\n\nEl enunciado oficial cita a **MAGERIT** como marco de análisis y gestión de riesgos, y el material recoge de él las definiciones de vulnerabilidad, impacto y riesgo. El ciclo es continuo y el riesgo nunca se elimina del todo: el residual permanece tras aplicar los controles y debe aceptarse de forma consciente.\n\n*(Fuentes: Tema 10.docx, apartados 2 y 4; Tema 14.docx, apartado 1.2; Bloque 4 Actualizado 2026.docx, Tema 5; temario-c1.md, tema 34.)*"
+        },
+        {
+          "heading": "5. Tipos de medidas de seguridad",
+          "body": "Diseñar sistemas con criterios de seguridad es más complejo que asegurar cualquier otra función: las amenazas son poco cuantificables y variadas, toda medida tiene un coste y, a mayores y más restrictivas medidas, menos amigable resulta el sistema. El material clasifica las medidas en cinco grupos.\n\nLas **físicas** impiden el acceso directo no autorizado y protegen de desastres naturales: controles de acceso, protección contra incendios, resistencia de elementos constructivos, instalaciones auxiliares, grupos electrógenos, control medioambiental, vigilancia y sistemas de contingencia y recuperación (SAI, redundancia). Incluyen la protección de las líneas de telecomunicaciones, la ubicación de equipos y copias en áreas seguras y distintos sitios y el control de entrada y salida de personas con registro.\n\nLas **lógicas** abarcan el control de acceso a los recursos, el reparto de responsabilidades y la protección de la información: control de accesos, instalación y copia de software, criptografía, copias de seguridad y monitorización y auditoría. Las **humanas** definen funciones y responsabilidades de administradores y usuarios. Las **administrativas** documentan y publican la política y establecen un plan de formación. Las **legales** disuaden al atacante o permiten castigarlo.\n\n*(Fuente: Tema 10.docx, apartados 2 y 2.1.)*",
+          "table": {
+            "columns": [
+              "Tipo de medida",
+              "Qué protege",
+              "Ejemplos citados por la fuente"
+            ],
+            "rows": [
+              [
+                "Física",
+                "El acceso directo, las instalaciones y el entorno",
+                "Control de accesos, protección contra incendios, SAI, vigilancia, control ambiental"
+              ],
+              [
+                "Lógica",
+                "El acceso a recursos y la información almacenada",
+                "Control de accesos, criptografía, copias de seguridad, monitorización y auditoría"
+              ],
+              [
+                "Humana",
+                "Las funciones y responsabilidades de las personas",
+                "Administrador de sistema, administrador de seguridad, usuarios y terceros"
+              ],
+              [
+                "Administrativa",
+                "La organización y la formación",
+                "Documentación y publicación de la política, plan de formación"
+              ],
+              [
+                "Legal",
+                "La disuasión y el castigo del atacante",
+                "Normas fijadas por instituciones, como la protección de datos"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "6. Seguridad física: el CPD, TIA-942 y los niveles Tier",
+          "body": "Un **centro de proceso de datos (CPD)** concentra los recursos de almacenamiento, proceso y transmisión de la información para garantizar la continuidad y disponibilidad de los servicios; sus dos características clave son la confiabilidad o disponibilidad y la flexibilidad o escalabilidad. La norma **TIA-942** define directrices de planificación y construcción: arquitectura de red, diseño eléctrico, almacenamiento, backup y archivo, redundancia, gestión de bases de datos, control ambiental y protección contra riesgos físicos. Distingue áreas funcionales —entrada, distribución principal (MDA), horizontal (HDA), de zona (ZDA) y de equipos— con cableado EIA/TIA-568 y racks al 70 % de capacidad.\n\nEl calor y el consumo energético son el gran problema: la climatización se mantiene en torno a 16-24 ºC y 40-55 % de humedad y refrigeración por salas, filas, pasillos o racks. En energía se separan los circuitos, se usan dos o más acometidas y alimentación de emergencia con SAI y grupos electrógenos; los **SAI** pueden ser offline (equipos no críticos), inline (con estabilizador) u online (siempre generan tensión y protegen sistemas críticos).\n\nLa protección contra incendios reduce la probabilidad de que empiece el fuego, de que se propague y el daño causado: paredes con resistencia mínima de una hora, puertas con cierre propio, materiales incombustibles, cableado LSZH bajo el suelo, aspersión activada por dos detectores y mecanismos de dióxido de carbono que desplazan el oxígeno sin dañar los equipos. Se añaden armarios ignífugos, detectores de inundación y copias en ubicaciones distintas; la redundancia se mide en niveles **N**, **N+1** y **2N**, y ANSI/TIA-942 clasifica la fiabilidad en cuatro **Tier**.\n\n*(Fuentes: Tema 10.docx, apartado 9; Bloque 4 Actualizado 2026.docx, Tema 5.)*",
+          "table": {
+            "columns": [
+              "Tier",
+              "Redundancia y mantenimiento",
+              "Disponibilidad aproximada",
+              "Indisponibilidad anual"
+            ],
+            "rows": [
+              [
+                "Tier I (básico)",
+                "Sin redundancia; una única línea de alimentación y refrigeración",
+                "99,671 %",
+                "Hasta 28,8 horas"
+              ],
+              [
+                "Tier II (redundancia parcial)",
+                "Redundancia limitada y generadores de respaldo",
+                "99,741 %",
+                "Hasta 22 horas"
+              ],
+              [
+                "Tier III (mantenimiento concurrente)",
+                "Mantenimiento sin interrumpir el servicio; alimentación y refrigeración redundantes",
+                "99,982 %",
+                "Hasta 1,6 horas"
+              ],
+              [
+                "Tier IV (tolerante a fallos)",
+                "Redundancia total, doble fuente de energía activa y distribución independiente",
+                "99,995 %",
+                "Hasta 26,3 minutos"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "7. Seguridad lógica: identificación, control de acceso y criptografía",
+          "body": "Antes de dejar entrar a alguien hay que saber quién es, si está autorizado y qué puede hacer: son la **identificación**, la **autenticación o verificación** y la **autorización**. Las claves se descubren por fuerza bruta, no siempre se sabe si un intruso ha entrado y es difícil conseguir buenas prácticas; se reducen limitando los intentos y exigiendo longitud y variedad. El **modelo AAA** resume el ciclo: autenticación, autorización y auditoría.\n\nLa **criptografía** transforma un mensaje mediante una clave. En la **simétrica** la misma clave cifra y descifra (DES: bloques de 64 bits y clave efectiva de 56; 3DES: tres ejecuciones y 168 bits; AES: claves de 128, 192 o 256 bits y bloque de 128). En la **asimétrica** cada usuario tiene clave pública y privada: lo cifrado con una se descifra con la otra, lo que resuelve el intercambio de claves y permite firmar; se apoyan en la factorización de enteros (RSA) o en el logaritmo discreto (Diffie-Hellman) y son entre 100 y 1000 veces más lentas. Las **funciones hash** obtienen una huella de longitud fija (MD5, 128 bits; SHA-1, 160 bits) y dan integridad.\n\nLa **firma digital** aplica un hash al documento y cifra el resumen con la clave privada del autor: cualquiera con la clave pública comprueba autoría e integridad, y aporta identificación, integridad y no repudio. La **PKI** garantiza que una clave pública pertenece a quien dice: autoridades de certificación (CA), de registro (RA) y de fechado (TSA), repositorios y listas de revocación (CRL), con certificados X.509. En el puesto de trabajo, la seguridad lógica empieza por un sistema operativo actualizado: los parches corrigen vulnerabilidades críticas y el firmware (BIOS o UEFI) inicia el equipo con particionado MBR (2 TB y cuatro particiones primarias) o GPT.\n\n*(Fuentes: Tema 10.docx, apartados 3, 7 y 8; Tema 14.docx, apartado 1.5; Bloque 4 Actualizado 2026.docx, Tema 1.)*"
+        },
+        {
+          "heading": "8. Seguridad perimetral y en redes",
+          "body": "La **seguridad perimetral** reúne las técnicas, elementos y sistemas que protegen la frontera entre la red local y las externas. Los segmentos se organizan en zonas: **interna**, **externa** y **DMZ**, zona intermedia donde se sitúan los servidores que prestan servicio hacia fuera y que queda protegida por las reglas del firewall. El **host bastión** es un sistema especialmente asegurado y expuesto, punto de contacto entre la red interna y el exterior.\n\nUn **firewall** hace cumplir una política de control de acceso entre redes. Los de **filtrado de paquetes** deciden con información de las capas 2, 3 y 4 —direcciones de origen y destino, protocolo, tipo de tráfico, puertos e interfaz— y pueden descartar silenciosamente un paquete; son rápidos y baratos, pero no ven las capas altas y son vulnerables al spoofing. Los de **inspección de estado (SPI)** añaden una tabla de conexiones y protegen el tráfico UDP, aunque se limitan al análisis de TCP. Los de **nivel de aplicación** evalúan la capa 7, con registros detallados y autenticación, pero rinden menos y necesitan un servicio por protocolo.\n\nLos **IDS** complementan al firewall con monitorización, detección y respuesta, y vigilan una máquina (verificadores de integridad, monitores de registros, honeypots) o una red (con el puerto del switch en *port mirroring*), detectando por anomalías o por firmas. Los **IPS** añaden el bloqueo en tiempo real. Los **proxies** actúan de intermediario, cachean y filtran contenido.\n\nLa **VPN** crea una red privada sobre una infraestructura pública con túneles cifrados que garantizan autenticación, confidencialidad e integridad; puede ser *overlay* o *peer-to-peer* y, por topología, de acceso remoto, sitio a sitio o extranet. **IPSec** usa AH (integridad y autenticación) y ESP (confidencialidad y, opcionalmente, autenticación), con asociaciones de seguridad y modos transporte o túnel; **OpenVPN** es una alternativa libre con claves precompartidas o SSL/TLS. En el **puesto de usuario** se exige sistema operativo actualizado, cliente VPN y antivirus, y los dispositivos que no cumplen la política no acceden a la red, con NAC y segmentación lógica.\n\n*(Fuentes: Tema 14.docx, apartados 2, 3 y 4; Bloque 4 Actualizado 2026.docx, Tema 5.)*",
+          "table": {
+            "columns": [
+              "Tipo de firewall",
+              "Capas del modelo OSI",
+              "Ventaja principal",
+              "Limitación principal"
+            ],
+            "rows": [
+              [
+                "Filtrado de paquetes",
+                "2, 3 y 4",
+                "Rapidez, transparencia y bajo coste",
+                "No inspecciona las capas altas y es vulnerable al spoofing"
+              ],
+              [
+                "Inspección de estado (SPI)",
+                "3 y 4, con tabla de conexiones",
+                "Sigue las conexiones establecidas y protege el tráfico UDP",
+                "Se limita al análisis del protocolo TCP y no ve los protocolos de nivel alto"
+              ],
+              [
+                "Nivel de aplicación",
+                "5, 6 y 7",
+                "Registros detallados, autenticación y aislamiento de la red interna",
+                "Menor rendimiento y necesita un servicio específico por protocolo"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "9. Gestión de incidentes de seguridad",
+          "body": "Un **incidente de seguridad** es cualquier evento que puede provocar una interrupción o degradación de los servicios o afectar a la confidencialidad o a la integridad de la información. Para responder hace falta un **plan de respuesta a incidentes** que contemple equipo, procedimientos y actuaciones: un **CSIRT** (*Computer Security Incident Response Team*) reúne a las personas con experiencia y formación para gestionar incidencias y desastres, y sus procedimientos deben permitir restaurar la capacidad de proceso y comunicaciones y recuperar los datos dañados.\n\nLa **detección** se apoya en indicadores: escaneos de puertos o de vulnerabilidades, alarmas de IDS o antivirus, incrementos anormales en los registros, ficheros con nombres extraños, modificaciones en ficheros del sistema, caídas o reinicios inesperados, aumento de la carga, tráfico inusual, cambios de configuración, tarjetas en modo promiscuo, herramientas no autorizadas, cuentas nuevas y conexiones en horarios extraños. El **análisis** determina el alcance, si se ha comprometido información confidencial, el tipo de ataque y su método, y valora los daños.\n\nDespués llega la **contención**: actuar rápido (apagar equipos, desconectarlos, desactivar servicios), cuando peligran servicios críticos, o retrasarla para estudiar el incidente y reunir evidencias. La **erradicación** elimina los agentes causantes y sus secuelas (puertas traseras, rootkits). La **recuperación** reinstala el sistema desde una copia segura, cambia contraseñas comprometidas, desactiva cuentas y prueba el sistema. Por último, se documenta el incidente —tipo, hechos, daños, decisiones, comunicaciones, evidencias y recomendaciones— y, si se puede, se identifica al atacante mediante ping, traceroute o whois, sabiendo que el spoofing, los equipos de terceros, las IP dinámicas o los proxies con NAT pueden impedirlo.\n\n*(Fuente: Tema 10.docx, apartado 10.)*"
+        },
+        {
+          "heading": "10. Marco de gestión y normas: MAGERIT, ISO/IEC 27001 y 27002",
+          "body": "La seguridad no es solo una colección de herramientas: la **política de seguridad** es una declaración de alto nivel que cubre la seguridad y sirve de base para delimitar responsabilidades, y se despliega en normas, reglamentos y protocolos que definen las medidas y los mecanismos de control. Una política debe cubrir todos los aspectos del sistema, protegerlo en los niveles físico, humano, lógico y logístico, tener en cuenta los componentes y su interacción, adaptarse al tipo de organización y ajustarse a sus necesidades, recursos y al valor de lo que se protege. Después, el ciclo continúa con la monitorización del cumplimiento, la revisión y la mejora.\n\nEl enunciado oficial del tema incluye expresamente, dentro de la seguridad de la información, los riesgos y su análisis y gestión (**MAGERIT**) y las normas **ISO/IEC 27001 y 27002**. Conviene precisar el alcance: el material consolidado recoge las definiciones de Magerit y el método de valoración de activos, amenazas y riesgos, pero **no desarrolla el contenido normativo de ISO/IEC 27001 y 27002**. Aquí solo se deja constancia de su presencia en el programa: ISO/IEC 27001 se ocupa de los requisitos del sistema de gestión de la seguridad de la información e ISO/IEC 27002 del catálogo de controles, sin entrar en cláusulas, números de control ni plazos concretos. Los PDF de CCN-CERT que podrían completar esa parte están escaneados y sin texto extraíble: no se han leído ni se citan.\n\n*(Fuentes: Tema 10.docx, apartados 2 y 4; temario-c1.md, BLOQUE V, tema 34.)*"
+        },
+        {
+          "heading": "11. Caso práctico: de la política al control en una administración local",
+          "body": "Supongamos una administración local con un CPD pequeño, dos sedes y personal que teletrabaja. El activo más valioso no es el servidor, sino el expediente electrónico y los datos personales de los empleados: la confidencialidad protege que no se revelen, la integridad que no se alteren y la disponibilidad que se puedan consultar cuando toca. Las amenazas probables son el robo de credenciales por suplantación (phishing), el cifrado de datos por un código malicioso, la denegación de servicio y el error humano; las vulnerabilidades, una instalación por defecto, contraseñas débiles, copias sin verificar y exceso de puertos abiertos.\n\nEl análisis de riesgos valora cada pareja activo-amenaza y decide medidas en los cinco niveles: control de acceso físico al CPD con registro de entradas, protección contra incendios y SAI; control lógico de accesos, contraseñas robustas, cifrado de las comunicaciones y firma de los documentos; formación del personal frente al phishing; política documentada y publicada con un responsable de seguridad; y el marco legal de protección de datos. En el perímetro se separa la DMZ de la red interna, se filtran puertos y se mantiene un IDS; el acceso remoto se hace por VPN.\n\nPara la disponibilidad se combinan copias 3-2-1 —tres copias, en dos tipos de almacenamiento y una fuera del sitio— con objetivos medibles: el **RPO** marca cuántos datos se puede permitir perder (si es de una hora, hay que copiar al menos cada hora), el **RTO** el tiempo máximo de restauración y el **MTD** el tiempo máximo que el servicio puede estar caído sin consecuencias catastróficas. Y se prepara el plan de incidentes: equipo, indicadores, contención, erradicación, recuperación y documentación.\n\n*(Fuentes: Tema 10.docx, apartados 2.1, 9 y 10; Tema 14.docx, apartados 2 y 4; Bloque 4 Actualizado 2026.docx, Temas 2 y 5.)*",
+          "table": {
+            "columns": [
+              "Capa",
+              "Activo en riesgo",
+              "Control propuesto"
+            ],
+            "rows": [
+              [
+                "Física",
+                "Servidores y copias",
+                "Control de acceso con registro, protección contra incendios, SAI y copias fuera del sitio"
+              ],
+              [
+                "Lógica",
+                "Expedientes y datos personales",
+                "Control de acceso, contraseñas robustas, cifrado y firma digital"
+              ],
+              [
+                "Humana y administrativa",
+                "Personal y procedimientos",
+                "Formación frente al phishing, política publicada y responsable de seguridad"
+              ],
+              [
+                "Perímetro",
+                "Red interna",
+                "DMZ, filtrado de puertos, IDS y VPN para el acceso remoto"
+              ],
+              [
+                "Continuidad",
+                "Servicio y datos",
+                "Copias 3-2-1 con RPO, RTO y MTD definidos, y plan de respuesta a incidentes"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "12. Resumen: lo que hay que memorizar",
+          "body": "- **Tríada CIA**: confidencialidad (solo accede quien está autorizado), integridad (solo la modifica el personal autorizado) y disponibilidad (el dato está cuando se necesita). Se añaden autenticidad, no repudio, consistencia, aislamiento y auditoría.\n- **Términos**: activo; amenaza (evento que puede desencadenar un incidente); vulnerabilidad (potencialidad de que la amenaza se materialice); impacto (consecuencia). Riesgo = probabilidad de la amenaza ponderada por el daño; **inherente** sin controles y **residual** después de aplicarlos.\n- **Método**: valorar activos, analizar vulnerabilidades y amenazas con su probabilidad y coste, definir medidas en todos los niveles y monitorizar, revisar y mejorar. La seguridad es la del elemento más débil.\n- **Medidas**: físicas, lógicas, humanas, administrativas y legales.\n- **CPD**: TIA-942, climatización 16-24 ºC y 40-55 % de humedad, SAI offline/inline/online, Tier I-IV y redundancia N, N+1 y 2N.\n- **Criptografía**: simétrica (DES, 3DES, AES), asimétrica (RSA, Diffie-Hellman), hash (MD5, SHA), firma digital y PKI.\n- **Perímetro**: zonas interna, externa y DMZ; firewall de paquetes, SPI y de aplicación; IDS/IPS; proxys; VPN con IPSec u OpenVPN.\n- **Incidentes**: detección, análisis, contención, erradicación, recuperación, documentación e identificación del atacante; el CSIRT ejecuta el plan.\n- **Continuidad**: copias 3-2-1, RPO, RTO y MTD; copia completa, diferencial e incremental.\n- **Normas**: MAGERIT en el análisis y gestión de riesgos; ISO/IEC 27001 y 27002 figuran en el programa, pero el material no desarrolla su contenido normativo.\n\n*(Fuentes: Tema 10.docx; Tema 14.docx; Bloque 4 Actualizado 2026.docx; temario-c1.md, tema 34.)*"
+        },
+        {
+          "heading": "Casos tipo test (respuestas razonadas)",
+          "body": "**1. ¿Cuál de estas propiedades NO forma parte de la tríada clásica de la seguridad de la información (CIA)?**\n\na) Confidencialidad · b) Integridad · c) Disponibilidad · d) Autenticidad\n\n**Respuesta: d.** La tríada CIA son confidencialidad, integridad y disponibilidad. La autenticidad es una propiedad complementaria, considerada un aspecto variante de la integridad que verifica que el origen de los datos es correcto.\n\n**2. Según la definición que recoge el material, ¿qué es una amenaza?**\n\na) La consecuencia de que un riesgo se materialice sobre un activo · b) Un evento que puede desencadenar un incidente y producir daños materiales o pérdidas inmateriales en los activos · c) Un defecto o debilidad en el diseño o la implementación del sistema · d) La probabilidad de sufrir un ataque en un plazo de tiempo dado\n\n**Respuesta: b.** La amenaza es el evento o causa potencial que puede desencadenar un incidente. La opción a es el impacto, la c la vulnerabilidad como defecto y la d suele confundirse con la vulnerabilidad, que el material define como la potencialidad de que la amenaza se materialice sobre el activo.\n\n**3. ¿Cómo se define el riesgo en el tema?**\n\na) La probabilidad de que ocurra una amenaza ponderada por la magnitud del daño que puede ocasionar · b) El daño material producido en un activo cuando se materializa una amenaza · c) La capacidad del sistema de recuperarse tras un fallo · d) El conjunto de medidas físicas y lógicas que protegen el sistema\n\n**Respuesta: a.** El riesgo es la probabilidad de que ocurra una amenaza ponderada por la magnitud del daño; puede provenir de actos naturales, errores u omisiones humanas o actos intencionados. La opción b describe el impacto y la c la disponibilidad.\n\n**4. El riesgo residual es...**\n\na) El riesgo que existe antes de aplicar cualquier control · b) La probabilidad de que un atacante descubra una vulnerabilidad nueva · c) El riesgo que permanece tras el tratamiento del riesgo · d) El daño máximo tolerable por la organización\n\n**Respuesta: c.** El riesgo inherente es el propio de la actividad sin ejecutar ningún control; el residual es el que permanece tras ese tratamiento. Es la razón por la que la gestión de riesgos es un ciclo continuo y no un trámite único.\n\n**5. ¿Cuál de las siguientes es una medida lógica y no física?**\n\na) La protección contra incendios de la sala de servidores · b) El cifrado de la información y de las comunicaciones · c) El control de entrada y salida de personas con registro · d) La instalación de grupos electrógenos\n\n**Respuesta: b.** Las medidas lógicas incluyen el control de accesos, la política de instalación y copia de software, la criptografía, las copias de seguridad y la monitorización. Las otras tres opciones son medidas físicas del apartado 2.1.\n\n**6. Un CPD que puede realizar mantenimiento sin interrumpir el servicio y que tiene alimentación y refrigeración redundantes se corresponde con el Tier...**\n\na) Tier I · b) Tier II · c) Tier III · d) Tier IV\n\n**Respuesta: c.** ANSI/TIA-942 define el Tier III como mantenimiento concurrente: permite cualquier actividad planeada sin interrupción, con redundancia de los sistemas críticos y una disponibilidad aproximada del 99,982 %. El Tier IV añade tolerancia a fallos con redundancia total.\n\n**7. ¿Qué caracteriza a un SAI online frente a los modelos offline e inline?**\n\na) Solo genera tensión cuando se produce un corte · b) Es el más económico y se usa en equipos no críticos · c) No incorpora estabilizador de corriente · d) Genera siempre tensión eléctrica, independientemente de la entrada, y protege sistemas críticos\n\n**Respuesta: d.** El SAI offline es económico y solo genera tensión en caso de corte; el inline incorpora estabilizador y tampoco genera tensión de forma permanente; el online está diseñado para sistemas críticos y siempre genera tensión.\n\n**8. En relación con el cifrado simétrico, ¿qué afirmación es correcta?**\n\na) DES usa bloques de 64 bits y una clave efectiva de 56 bits, y AES admite claves de 128, 192 y 256 bits · b) DES y AES usan la misma clave para cifrar y descifrar, pero AES tiene bloques de 256 bits · c) 3DES aplica AES tres veces consecutivas · d) La criptografía simétrica usa un par de claves, una pública y otra privada\n\n**Respuesta: a.** DES es el prototipo de cifrado por bloques: bloque de 64 bits y 56 bits efectivos de clave. AES usa bloques de 128 bits y claves de 128, 192 o 256 bits. 3DES aplica DES tres veces, y el par de claves corresponde a la criptografía asimétrica.\n\n**9. ¿Qué aporta la firma digital de un documento?**\n\na) Confidencialidad del documento frente a terceros · b) Identificación del firmante, integridad del contenido y no repudio · c) Disponibilidad del documento en cualquier dispositivo · d) Compresión del documento para enviarlo por correo\n\n**Respuesta: b.** La firma digital identifica al firmante, permite comprobar que el documento no se ha alterado y da no repudio. No cifra el documento para ocultarlo: eso lo hace el cifrado, no la firma.\n\n**10. ¿Cuál de estos elementos NO se usa para decidir si un firewall de filtrado de paquetes acepta o descarta un paquete?**\n\na) La dirección IP de origen y de destino · b) El protocolo y el tipo de tráfico (TCP, UDP o ICMP) · c) Los puertos de origen y destino · d) El contenido de la aplicación, como el cuerpo de una petición HTTP\n\n**Respuesta: d.** El filtrado de paquetes decide con información de las capas 2, 3 y 4: direcciones, protocolo, tipo de tráfico, puertos e interfaz. El contenido de la aplicación lo examina un firewall de nivel de aplicación, no uno de filtrado de paquetes.\n\n**11. Un IDS basado en red que debe analizar todo el tráfico de un segmento conectado a un switch necesita que...**\n\na) el puerto del switch al que se conecta esté configurado con port mirroring · b) se instale un antivirus en cada equipo del segmento · c) se desactive la tabla de estados del firewall · d) el segmento se convierta en una DMZ\n\n**Respuesta: a.** El IDS de red monitoriza el tráfico de un segmento; si se conecta a un switch, el puerto debe configurarse con port mirroring para recibir ese tráfico. Los honeypots, los verificadores de integridad y los monitores de registros son IDS basados en máquina.\n\n**12. En el plan de respuesta a incidentes, ¿en qué etapa se eliminan las puertas traseras y rootkits dejados por el atacante?**\n\na) En la contención · b) En la detección · c) En la erradicación · d) En la recuperación\n\n**Respuesta: c.** La contención evita que el incidente se extienda; la erradicación elimina los agentes causantes y sus secuelas (backdoors, rootkits) y revisa los sistemas comprometidos; la recuperación devuelve los sistemas a su funcionamiento normal.\n\n**13. Si el RPO de un servicio es de una hora, ¿qué implica para las copias de seguridad?**\n\na) Que la copia debe restaurarse en menos de una hora · b) Que debe hacerse una copia al menos cada hora · c) Que el servicio puede estar caído una hora sin consecuencias · d) Que basta con una copia completa al mes\n\n**Respuesta: b.** El RPO es la cantidad de datos que se permite perder; si es de una hora, hay que copiar al menos cada hora. El tiempo de restauración es el RTO y el tiempo máximo de caída tolerable es el MTD."
+        },
+        {
+          "heading": "Fuentes citadas",
+          "body": "- **Tema 10.docx** — DOCX, apartados 1 y 1.1. Definición de seguridad de los sistemas de información, riesgos de una mala protección, tríada CIA y propiedades complementarias (autenticidad, no repudio, consistencia, aislamiento, auditoría).\n- **Tema 10.docx** — DOCX, apartados 2 y 2.1. Política de seguridad, reglas básicas, método de análisis de riesgos y clasificación de las medidas en físicas, lógicas, humanas, administrativas y legales.\n- **Tema 10.docx** — DOCX, apartado 3. Identificación, autenticación y autorización; problemas de las claves y control de acceso en el servidor o en la red.\n- **Tema 10.docx** — DOCX, apartado 4. Definiciones de amenaza, activo y vulnerabilidad; definiciones de Magerit (vulnerabilidad, impacto y riesgo) y catálogo de vulnerabilidades de sistemas, Windows, UNIX y servidores web.\n- **Tema 10.docx** — DOCX, apartados 5 y 6. Clasificación de los ataques (interrupción, intercepción, modificación y fabricación; activos y pasivos), modus operandi, DoS y conceptos de virus y troyanos.\n- **Tema 10.docx** — DOCX, apartado 7. Criptografía simétrica y asimétrica, funciones hash, modos de operación y autoridades de certificación.\n- **Tema 10.docx** — DOCX, apartado 8. Funcionamiento de la firma digital y las garantías que aporta (identificación, integridad y no repudio).\n- **Tema 10.docx** — DOCX, apartado 9. CPD, norma TIA-942, áreas funcionales, cableado, climatización, refrigeración, energía, SAI, incendios, inundaciones y copias fuera del sitio.\n- **Tema 10.docx** — DOCX, apartado 10. Incidentes de seguridad, CSIRT, detección, análisis, contención, erradicación, recuperación, identificación del atacante y documentación.\n- **Tema 14.docx** — DOCX, apartados 1.2, 1.3 y 1.4. Estándar X.800, definiciones de amenaza, vulnerabilidad y riesgo, clasificación de ataques, servicios y mecanismos de seguridad y medidas de prevención, detección y recuperación.\n- **Tema 14.docx** — DOCX, apartado 1.5. Firma digital, certificados digitales X.509, actores de la PKI, obtención, revocación y validación de certificados.\n- **Tema 14.docx** — DOCX, apartados 2, 3 y 4. Seguridad perimetral y zonas, firewalls y sus tipos, IDS/IPS, proxys, VPN (IPSec y OpenVPN) y seguridad en el puesto del usuario.\n- **Bloque 4 Actualizado 2026.docx** — DOCX, Tema 1, apartados 1-5. Gestión y actualización del sistema operativo, tipos de actualización (parche de seguridad, software y firmware), mantenimiento, reparación y firmware BIOS/UEFI con MBR y GPT.\n- **Bloque 4 Actualizado 2026.docx** — DOCX, Tema 2. Copias de seguridad: RPO, RTO, MTD y WRT, tipos de copia (completa, diferencial e incremental), regla 3-2-1 y snapshots.\n- **Bloque 4 Actualizado 2026.docx** — DOCX, Tema 5. Activos, amenaza, vulnerabilidad, riesgo, impacto y desastre; riesgo inherente y residual; modelo AAA; tipos de atacante; Tier y redundancia de CPD; NAC, monitorización y auditoría de red.\n- **data/fuentes/temario-c1.md** — BLOQUE V, tema 34. Enunciado oficial del tema: confidencialidad, integridad y disponibilidad; riesgos, análisis y gestión (MAGERIT); ISO 27001/27002.\n- **data/fuentes/V.34.txt** — Consolidado de Tema 10.docx, Tema 14.docx y Bloque 4 Actualizado 2026.docx. Texto consolidado empleado para redactar el tema; los dos PDF de CCN-CERT figuran en él como escaneados sin texto extraíble y no se han usado."
+        }
+      ],
       "practiceSlug": "v-34"
     },
     "V.35": {
@@ -3817,6 +4821,146 @@
         "Confundir el Anexo II (medidas que deben aplicarse) con la declaración de aplicabilidad (justifica qué medidas se aplican y por qué)."
       ],
       "reviewedAt": "2026-11-10",
+      "longSections": [
+        {
+          "heading": "1. Introducción y contexto",
+          "body": "El **Esquema Nacional de Seguridad (ENS)** es el marco común de seguridad de la información para el sector público español. No es un catálogo de buenas prácticas voluntarias: nace de la **Ley 40/2015**, cuyo artículo 156 lo configura como instrumento fundamental para garantizar la interoperabilidad y la seguridad de los sistemas y soluciones que usan las administraciones, y se desarrolla por el **Real Decreto 311/2022, de 3 de mayo**, que sustituye al Real Decreto 3/2010.\n\nLa norma persigue que los sistemas que prestan servicios públicos custoden la información y la mantengan disponible sin interrupciones ni alteraciones no autorizadas. Su objeto es doble: fijar los **principios básicos** de actuación y los **requisitos mínimos** que deben cumplir las entidades de su ámbito. La idea de fondo es que la seguridad no es un producto que se compra, sino un proceso que se planifica, se ejecuta, se audita y se revisa.\n\nEl ENS convive con otros marcos. La protección de datos personales se rige por el RGPD y la LOPDGDD; la interoperabilidad, por el ENI; y la seguridad de las redes y sistemas tiene su propia normativa (Real Decreto-ley 12/2018). El ENS no los sustituye: establece un nivel mínimo y exige que, cuando otra norma imponga medidas más estrictas, prevalezcan estas.\n\n*(Fuente: Real Decreto 311/2022, preámbulo y arts. 1-3.)*"
+        },
+        {
+          "heading": "2. Marco normativo y ámbito de aplicación",
+          "body": "El **ámbito de aplicación** es amplio. El ENS obliga a todo el **sector público** en el sentido del artículo 2 de la Ley 40/2015 —Administración General del Estado, comunidades autónomas, entidades locales y su sector público institucional— y se aplica también a los sistemas que tratan **información clasificada**, sin perjuicio de la Ley de Secretos Oficiales y de las medidas adicionales que exijan los compromisos internacionales.\n\nLa extensión al **sector privado** es una de las claves prácticas: la norma alcanza a los sistemas de las entidades privadas que, en virtud de una relación contractual y de la normativa aplicable, **presten servicios o provean soluciones** a las entidades del sector público para el ejercicio de sus competencias y potestades administrativas. Esas empresas deben disponer de la política de seguridad exigida por el artículo 12, y los pliegos de los contratos deben incorporar los requisitos necesarios para asegurar la conformidad con el ENS, incluidas las **declaraciones o certificaciones de conformidad**. La exigencia puede extenderse a la **cadena de suministro** cuando el análisis de riesgos lo justifique.\n\nCuando un sistema trate **datos personales**, se aplican además el RGPD y la LOPDGDD: el responsable realizará el análisis de riesgos y, cuando proceda, la evaluación de impacto, y si de ellos resultan medidas más exigentes que las del ENS, prevalecen las más estrictas. Existen además reglas específicas para el despliegue de **redes 5G** (Real Decreto-ley 7/2022).\n\n*(Fuente: Real Decreto 311/2022, arts. 2-3 y preámbulo.)*"
+        },
+        {
+          "heading": "3. Los siete principios básicos",
+          "body": "El artículo 5 del Real Decreto 311/2022 enumera **siete principios básicos** que orientan todo el esquema:\n\n1. **Seguridad como proceso integral**: abarca elementos humanos, materiales, técnicos, jurídicos y organizativos; excluye actuaciones puntuales y exige concienciación.\n2. **Gestión de la seguridad basada en los riesgos**: el análisis y la gestión de riesgos son continuos y las medidas se dimensionan de forma proporcionada.\n3. **Prevención, detección, respuesta y conservación**: hay que evitar el incidente, detectarlo si ocurre, responder para restaurar y conservar la información y el patrimonio digital.\n4. **Existencia de líneas de defensa**: varias capas organizativas, físicas y lógicas para que el fallo de una no comprometa todo el sistema.\n5. **Vigilancia continua**: detección de comportamientos anómalos y medición permanente del estado de la seguridad.\n6. **Reevaluación periódica**: las medidas se revisan y actualizan según cambian los riesgos y la tecnología.\n7. **Diferenciación de responsabilidades**: los cuatro responsables del sistema no se confunden entre sí y la responsabilidad de la seguridad se separa de la explotación.\n\nConviene memorizar la lista completa, porque es frecuente que un test pregunte por el principio que falta o por el número total. Algunos resúmenes de estudio agrupan o incluso omiten la vigilancia continua; el texto vigente enumera siete, y ese es el dato que debe fijarse.\n\n*(Fuente: Real Decreto 311/2022, arts. 5-11; Bloque 1 Actualizado 2026.docx, apartado «Esquema nacional de seguridad (ENS)».)*"
+        },
+        {
+          "heading": "4. Las cinco dimensiones de seguridad (DICAT)",
+          "body": "Las **dimensiones de seguridad** son las cinco propiedades que hay que proteger y valorar. Se resumen con la sigla **DICAT**: disponibilidad, integridad, confidencialidad, autenticidad y trazabilidad. Cada una se define por lo que garantiza:\n\n- **Disponibilidad**: los procesos autorizados acceden al activo cuando lo requieren.\n- **Integridad**: el activo no ha sido alterado de forma no autorizada.\n- **Confidencialidad**: la información no se pone a disposición ni se revela a quien no está autorizado.\n- **Autenticidad**: una entidad es quien dice ser o se garantiza la fuente de la que proceden los datos.\n- **Trazabilidad**: puede rastrearse a posteriori quién accedió a la información o la modificó.\n\nUn mismo incidente puede afectar a varias dimensiones a la vez: una caída de la sede electrónica afecta sobre todo a la disponibilidad; un cambio no autorizado en un expediente, a la integridad; una filtración de datos, a la confidencialidad; una suplantación de identidad, a la autenticidad; y la imposibilidad de reconstruir quién hizo qué, a la trazabilidad.",
+          "table": {
+            "columns": [
+              "Dimensión",
+              "Qué protege",
+              "Ejemplo de incidente"
+            ],
+            "rows": [
+              [
+                "Disponibilidad",
+                "Que el sistema y sus datos estén accesibles cuando se necesitan",
+                "Caída del servidor de la sede electrónica"
+              ],
+              [
+                "Integridad",
+                "Que la información no se altere sin autorización",
+                "Modificación de un expediente sin dejar rastro"
+              ],
+              [
+                "Confidencialidad",
+                "Que solo acceda quien está autorizado",
+                "Filtración de datos personales de solicitantes"
+              ],
+              [
+                "Autenticidad",
+                "Que la identidad o la fuente de los datos sea la que dice ser",
+                "Suplantación de un usuario o de un certificado"
+              ],
+              [
+                "Trazabilidad",
+                "Que quede registro de quién hizo qué y cuándo",
+                "Imposibilidad de saber quién consultó un expediente"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "5. Niveles de seguridad y categorización del sistema",
+          "body": "Para cada dimensión se valora un **nivel de seguridad**: **bajo**, **medio** o **alto**, según el perjuicio que causaría un incidente. El resumen de estudio lo describe así: un perjuicio limitado corresponde al nivel bajo; uno grave, al medio; y uno muy grave, al alto. Esta valoración no es un trámite: condiciona las medidas exigibles y el esfuerzo de auditoría.\n\nDe la combinación de niveles se obtiene la **categoría del sistema**, que puede ser **básica**, **media** o **alta**. La lógica es la del nivel más alto: si alguna dimensión exige nivel alto, el sistema es de categoría alta; si no hay ningún alto pero alguna dimensión es media, la categoría es media; y si todas las dimensiones son de nivel bajo, la categoría es básica. El **anexo I** desarrolla la secuencia de actuaciones para determinarla y el artículo 40 es la referencia legal de las categorías.\n\nLa categoría no la elige el proveedor ni se hereda de una plantilla: se justifica con el análisis de riesgos y se documenta. Un sistema de nóminas y un portal informativo municipal no tienen el mismo impacto, aunque ambos presten servicios públicos.\n\n*(Fuente: Real Decreto 311/2022, art. 40 y anexo I; Bloque 1 Actualizado 2026.docx, apartado ENS.)*",
+          "table": {
+            "columns": [
+              "Nivel",
+              "Perjuicio de un incidente",
+              "Efecto en el sistema"
+            ],
+            "rows": [
+              [
+                "Bajo",
+                "Limitado",
+                "Medidas básicas del anexo II y controles proporcionados al riesgo"
+              ],
+              [
+                "Medio",
+                "Grave",
+                "Mayor exigencia de medidas y de control sobre las dimensiones afectadas"
+              ],
+              [
+                "Alto",
+                "Muy grave",
+                "Máxima exigencia; la auditoría puede acordar la suspensión del servicio si hay deficiencias graves"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "6. Las medidas del anexo II: tres marcos",
+          "body": "El **anexo II** contiene las medidas de seguridad que cada entidad debe seleccionar e implantar. La fuente de estudio las agrupa en **tres marcos** y las cifra en **75 medidas**:\n\n- **Marco organizativo**: medidas relacionadas con la organización global de la seguridad (política, roles, documentación, gestión de riesgos y concienciación).\n- **Marco operacional**: medidas para proteger la operación del sistema como conjunto integral de componentes para un fin (control de accesos, incidentes, copias y continuidad).\n- **Medidas de protección**: controles sobre activos concretos, según su naturaleza y la calidad exigida por el nivel de seguridad de las dimensiones afectadas.\n\nLas medidas no se eligen a gusto: se seleccionan en función de los activos, de la categoría del sistema y de las decisiones de tratamiento de riesgos. El resultado se formaliza en la **Declaración de Aplicabilidad**, firmada por el responsable de la seguridad (artículo 28). Además, una medida puede sustituirse por otra **compensatoria** si se documenta que protege igual o mejor del riesgo y se indica la correspondencia entre ambas.\n\n*(Fuente: Real Decreto 311/2022, arts. 28 y 30 y anexo II; Bloque 1 Actualizado 2026.docx, apartado ENS.)*",
+          "table": {
+            "columns": [
+              "Marco",
+              "Qué cubre",
+              "Ejemplos de medidas"
+            ],
+            "rows": [
+              [
+                "Organizativo",
+                "Gobierno y organización global de la seguridad",
+                "Política de seguridad, roles, análisis de riesgos, concienciación"
+              ],
+              [
+                "Operacional",
+                "Funcionamiento del sistema en su conjunto",
+                "Control de accesos, gestión de incidentes, copias, continuidad"
+              ],
+              [
+                "De protección",
+                "Activos concretos y su nivel de seguridad",
+                "Protección de comunicaciones, soportes, equipos y aplicaciones"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "7. Política de seguridad y requisitos mínimos",
+          "body": "La **política de seguridad** es el conjunto de directrices con las que la organización gestiona y protege la información. Debe aprobarse formalmente por el órgano competente y contener, como mínimo (artículo 12): objetivos o misión; marco regulatorio; roles y responsabilidades; estructura y composición de los comités de seguridad; directrices para la documentación de seguridad; y los riesgos derivados del tratamiento de datos personales.\n\nSobre esa política se despliegan **quince requisitos mínimos**: organización e implantación del proceso; análisis y gestión de riesgos; gestión de personal; profesionalidad; autorización y control de accesos; protección de las instalaciones; adquisición de productos y servicios de seguridad; mínimo privilegio; integridad y actualización; protección de la información almacenada y en tránsito; prevención ante sistemas interconectados; registro de actividad y detección de código dañino; incidentes; continuidad de la actividad; y mejora continua.\n\nEl requisito de **mínimo privilegio** (artículo 20) es el más rentable de explicar: el sistema debe ofrecer solo la funcionalidad imprescindible, las funciones de administración deben ser las mínimas y ejercerse por personas autorizadas, y las funciones innecesarias se eliminan o desactivan mediante la configuración. La **seguridad por defecto** se apoya en la misma idea: la configuración de partida debe ser la segura, de modo que una utilización insegura exija un acto consciente del usuario.\n\n*(Fuente: Real Decreto 311/2022, arts. 12 y 20; Bloque 1 Actualizado 2026.docx, apartado ENS.)*"
+        },
+        {
+          "heading": "8. Gobernanza: los cuatro responsables",
+          "body": "El ENS exige **diferenciar responsabilidades** (artículo 11) y concreta cuatro figuras (artículo 13):\n\n- **Responsable de la información**: determina los requisitos de la información tratada.\n- **Responsable del servicio**: determina los requisitos de los servicios prestados.\n- **Responsable de la seguridad**: decide cómo satisfacer los requisitos, supervisa la implantación y reporta sobre ella.\n- **Responsable del sistema**: implanta la seguridad en el sistema y supervisa la operación diaria, pudiendo delegar en administradores u operadores bajo su responsabilidad.\n\nEl responsable de la **seguridad** debe ser distinto del responsable del **sistema** y no puede existir dependencia jerárquica entre ambos. Si una situación excepcional obliga a concentrar ambas funciones, deben aplicarse medidas compensatorias. En los servicios externalizados, la empresa proveedora designa un **POC** (punto o persona de contacto) de seguridad, sin que ello traslade la responsabilidad última, que sigue correspondiendo a la entidad pública.\n\n*(Fuente: Real Decreto 311/2022, arts. 11 y 13.)*"
+        },
+        {
+          "heading": "9. Auditoría de la seguridad y conformidad",
+          "body": "El **artículo 31** exige una **auditoría regular ordinaria al menos cada dos años** para verificar el cumplimiento de los requerimientos del ENS. Además, debe realizarse una **auditoría extraordinaria** cuando se produzcan modificaciones sustanciales en los sistemas que puedan repercutir en las medidas; esa auditoría extraordinaria reinicia el cómputo de los dos años. El plazo puede ampliarse tres meses cuando concurran impedimentos de fuerza mayor no imputables a la entidad.\n\nLa auditoría se realiza en función de la categoría y del perfil de cumplimiento específico, conforme a los anexos I y III y a la Instrucción Técnica de Seguridad de Auditoría. El **informe** debe dictaminar sobre el grado de cumplimiento, identificar los hallazgos de cumplimiento e incumplimiento y describir los criterios metodológicos, el alcance, el objetivo y las evidencias. Se presenta a los responsables del sistema y de la seguridad; el responsable de la seguridad analiza las conclusiones y las traslada para que se adopten las medidas correctoras. En los sistemas de **categoría alta**, si las deficiencias son graves, el responsable del sistema puede **suspender temporalmente** el tratamiento, la prestación del servicio o la operación del sistema hasta su subsanación.\n\nLa conformidad se completa con el **informe del estado de la seguridad** (artículo 32) y con la **respuesta a incidentes**, articulada por el CCN a través del **CCN-CERT** (artículos 33-34). Las entidades del sector público notifican al CCN-CERT los incidentes de impacto significativo; las organizaciones privadas que prestan servicios a entidades públicas notifican a través de **INCIBE-CERT**, que lo pone en conocimiento del CCN-CERT.\n\n*(Fuente: Real Decreto 311/2022, arts. 31-34.)*"
+        },
+        {
+          "heading": "10. Ejemplos prácticos de categorización",
+          "body": "**Caso 1. Sede electrónica de un ayuntamiento.** Permite presentar solicitudes y consultar expedientes con datos personales. La disponibilidad es crítica —sin sede no hay presentación electrónica—, la integridad y la autenticidad son altas por la firma y el registro, la confidencialidad es media y la trazabilidad, alta. Si alguna dimensión se valora como alta, la categoría resultante es **alta**; si el análisis justifica rebajarla (por ejemplo, por el alcance limitado del servicio y la existencia de canales alternativos), puede fundamentarse **media**. El error típico es categorizar por el tamaño del municipio: la categoría se decide por el impacto, no por la plantilla.\n\n**Caso 2. Portal informativo municipal.** Solo publica noticias, bandos y ordenanzas, sin datos personales ni trámites. La dimensión dominante es la disponibilidad; la integridad y la autenticidad se protegen con copias y control de cambios; la confidencialidad, con acceso de solo lectura. Si todas las dimensiones quedan en nivel bajo, el sistema es de categoría **básica**. Aun así debe tener política de seguridad, análisis de riesgos, las medidas del anexo II acordes y su Declaración de Aplicabilidad.\n\n**Lección práctica.** Un mismo ayuntamiento puede tener sistemas de categorías distintas. La categorización se hace **por sistema de información**, no por organismo, y debe revisarse cuando cambie el sistema, sus datos o su entorno."
+        },
+        {
+          "heading": "11. Resumen: lo que hay que memorizar",
+          "body": "**Lo que hay que memorizar.**\n\n- Norma vigente: **Real Decreto 311/2022** (sustituye al Real Decreto 3/2010); desarrolla el artículo 156 de la Ley 40/2015.\n- **7 principios** básicos: proceso integral, gestión basada en riesgos, prevención/detección/respuesta/conservación, líneas de defensa, vigilancia continua, reevaluación periódica y diferenciación de responsabilidades.\n- **5 dimensiones** (DICAT): disponibilidad, integridad, confidencialidad, autenticidad y trazabilidad.\n- **3 niveles** por dimensión: bajo, medio y alto (perjuicio limitado, grave o muy grave).\n- **3 categorías** del sistema: básica, media y alta; manda el nivel más alto de sus dimensiones.\n- **3 marcos** de medidas del anexo II: organizativo, operacional y de protección; la fuente de estudio las cifra en **75 medidas**.\n- **15 requisitos mínimos** y obligación de **Declaración de Aplicabilidad** firmada por el responsable de la seguridad.\n- **4 responsables**: información, servicio, seguridad y sistema; seguridad y sistema separados y sin dependencia jerárquica.\n- **Auditoría** ordinaria al menos cada **2 años** y extraordinaria por cambios sustanciales; el informe dictamina hallazgos y en categoría alta cabe suspender el servicio.\n- **CCN-CERT** como referencia de respuesta a incidentes del sector público; **INCIBE-CERT** para las organizaciones privadas que prestan servicios al sector público.\n- Plazo de adecuación de los sistemas preexistentes: **24 meses** (disposición transitoria única)."
+        },
+        {
+          "heading": "12. Fuentes, alcance y limitaciones",
+          "body": "Este tema se ha redactado a partir del apartado sobre el ENS del **Bloque 1 Actualizado 2026.docx** (resumen de estudio) y del texto consolidado del **Real Decreto 311/2022** consultado en el BOE. El fichero consolidado de fuentes del tema recoge ese apartado del DOCX y las marcas de dos PDF que no aportan texto.\n\n**Limitaciones.** Los ficheros **ENS.hellcito.pdf** y **Como Categorizar un Sistema en el ENS_V.04.pdf** son escaneados sin texto extraíble: no se han usado como fuente ni se citan como leídos. El resumen del DOCX enumera seis principios y omite la vigilancia continua, mientras que el artículo 5 de la norma vigente enumera siete: en caso de discrepancia se ha seguido la norma. Los detalles de ámbito, categorías, Declaración de Aplicabilidad y auditoría no aparecen desarrollados en el resumen de estudio y se han tomado del texto oficial del real decreto, no de su resumen.\n\n**Fuentes citadas:** Bloque 1 Actualizado 2026.docx (apartado «Esquema nacional de seguridad (ENS)»); Real Decreto 311/2022, arts. 1-3, 5-14, 20, 28 y 30-34, y anexos I-III; V.35.txt (apartado ENS del texto consolidado)."
+        },
+        {
+          "heading": "Casos tipo test (respuestas razonadas)",
+          "body": "**1. ¿Qué norma regula actualmente el Esquema Nacional de Seguridad?**\n\na) El Real Decreto 3/2010, de 8 de enero · b) El Real Decreto 311/2022, de 3 de mayo · c) La Ley 39/2015, de 1 de octubre · d) El Real Decreto 203/2021, de 30 de marzo\n\n**Respuesta: b.** El ENS se regula por el Real Decreto 311/2022, de 3 de mayo, cuya disposición derogatoria suprime el Real Decreto 3/2010.\n\n**2. ¿De qué ley deriva el ENS como instrumento para la seguridad de los sistemas del sector público?**\n\na) De la Ley 40/2015, de Régimen Jurídico del Sector Público (artículo 156) · b) De la Ley 39/2015, del Procedimiento Administrativo Común · c) De la Ley Orgánica 3/2018, de Protección de Datos Personales · d) De la Ley 9/2017, de Contratos del Sector Público\n\n**Respuesta: a.** El artículo 1 del real decreto señala que el ENS está establecido en el artículo 156.2 de la Ley 40/2015, de Régimen Jurídico del Sector Público.\n\n**3. ¿Cuántos principios básicos enumera el artículo 5 del Real Decreto 311/2022?**\n\na) Cinco · b) Seis · c) Siete · d) Ocho\n\n**Respuesta: c.** Son siete: seguridad como proceso integral; gestión basada en riesgos; prevención, detección, respuesta y conservación; líneas de defensa; vigilancia continua; reevaluación periódica; y diferenciación de responsabilidades. Algunos resúmenes omiten la vigilancia continua.\n\n**4. ¿Cuál de las siguientes NO es una de las cinco dimensiones de seguridad del ENS?**\n\na) Disponibilidad · b) Integridad · c) Escalabilidad · d) Trazabilidad\n\n**Respuesta: c.** Las dimensiones son disponibilidad, integridad, confidencialidad, autenticidad y trazabilidad (DICAT). La escalabilidad es una propiedad de la arquitectura, no una dimensión de seguridad del esquema.\n\n**5. ¿Qué principio exige que la seguridad se apoye en un análisis continuo y proporcionado de los riesgos?**\n\na) Seguridad como proceso integral · b) Existencia de líneas de defensa · c) Reevaluación periódica · d) Gestión de la seguridad basada en los riesgos\n\n**Respuesta: d.** El principio de gestión de la seguridad basada en los riesgos considera el análisis y la gestión de riesgos una actividad continua, con medidas proporcionadas a la naturaleza de la información y de los servicios.\n\n**6. Un incidente en una dimensión causaría un perjuicio muy grave. ¿Qué nivel de seguridad le corresponde?**\n\na) Alto · b) Medio · c) Bajo · d) Crítico\n\n**Respuesta: a.** El nivel alto corresponde a un perjuicio muy grave; el medio, a un perjuicio grave; y el bajo, a un perjuicio limitado.\n\n**7. Si una dimensión de un sistema se valora en nivel alto, ¿qué categoría tiene el sistema?**\n\na) Básica · b) Media · c) Alta · d) Depende del presupuesto disponible\n\n**Respuesta: c.** La categoría sigue el nivel más alto de las dimensiones: si alguna es de nivel alto, el sistema es de categoría alta; si no hay altos pero alguno es medio, la categoría es media; si todas son bajas, básica.\n\n**8. ¿Cuántos marcos o grupos de medidas distingue el anexo II del ENS?**\n\na) Dos · b) Tres · c) Cuatro · d) Cinco\n\n**Respuesta: b.** Tres: el marco organizativo, el marco operacional y las medidas de protección. La fuente de estudio las cifra en 75 medidas.\n\n**9. ¿Cómo se llama el documento que recoge las medidas de seguridad seleccionadas y que firma el responsable de la seguridad?**\n\na) La política de seguridad · b) El análisis de riesgos · c) El informe de auditoría · d) La Declaración de Aplicabilidad\n\n**Respuesta: d.** El artículo 28.2 exige formalizar la relación de medidas seleccionadas en la Declaración de Aplicabilidad, firmada por el responsable de la seguridad.\n\n**10. ¿Con qué periodicidad mínima debe realizarse la auditoría regular ordinaria del ENS?**\n\na) Cada año · b) Cada dos años · c) Cada tres años · d) Cada cinco años\n\n**Respuesta: b.** El artículo 31 exige una auditoría regular ordinaria al menos cada dos años, y una extraordinaria cuando se produzcan modificaciones sustanciales en los sistemas.\n\n**11. ¿Cuándo debe realizarse una auditoría extraordinaria del ENS?**\n\na) Cuando se produzcan modificaciones sustanciales en los sistemas que puedan repercutir en las medidas de seguridad · b) Cuando cambie el responsable de seguridad de la organización · c) Cada vez que se produzca cualquier incidente leve · d) Solo cuando lo solicite el CCN\n\n**Respuesta: a.** El artículo 31 prevé la auditoría extraordinaria ante modificaciones sustanciales de los sistemas; además, esa auditoría reinicia el cómputo de los dos años para la siguiente auditoría ordinaria.\n\n**12. ¿A qué entidades privadas se aplica el ENS?**\n\na) Solo a las que tratan datos de salud · b) A todas las empresas españolas, con independencia de su actividad · c) Solo a las que cotizan en bolsa · d) A las que prestan servicios o proveen soluciones al sector público en virtud de una relación contractual\n\n**Respuesta: d.** El artículo 2.3 extiende el ENS a los sistemas de las entidades privadas que, por relación contractual y conforme a la normativa aplicable, presten servicios o provean soluciones a las entidades del sector público para el ejercicio de sus competencias.\n\n**13. ¿Qué organismo articula la respuesta a los incidentes de seguridad del sector público en el marco del ENS?**\n\na) INCIBE-CERT · b) CCN-CERT · c) La Agencia Española de Protección de Datos · d) La CNMC\n\n**Respuesta: b.** El artículo 33 articula la respuesta en torno al CCN-CERT, sin perjuicio de las capacidades de respuesta de cada administración. Las organizaciones privadas que prestan servicios al sector público notifican a INCIBE-CERT, que informa al CCN-CERT.\n\n**14. ¿Qué responsable determina los requisitos de la información tratada por el sistema?**\n\na) El responsable de la información · b) El responsable del servicio · c) El responsable de la seguridad · d) El responsable del sistema\n\n**Respuesta: a.** Según el artículo 13, el responsable de la información determina los requisitos de la información; el del servicio, los de los servicios; el de la seguridad decide cómo satisfacerlos y supervisa; y el del sistema implanta y supervisa la operación diaria."
+        },
+        {
+          "heading": "Fuentes citadas",
+          "body": "- **Bloque 1 Actualizado 2026.docx** — apartado «Esquema nacional de seguridad (ENS)» (TAI I.8). los principios básicos resumidos, los tres grupos de medidas y la cifra de 75, así como las definiciones de las cinco dimensiones y de los niveles de impacto\n- **V.35.txt** — apartado «Esquema nacional de seguridad (ENS)» del texto consolidado de fuentes. contraste del mismo apartado del DOCX; no contiene desarrollo de ámbito, categorías, anexos ni auditoría\n- **Real Decreto 311/2022 (BOE-A-2022-7191)** — arts. 1-3, 5-14, 20, 28 y 30-34; anexos I-III. ámbito de aplicación, siete principios, requisitos mínimos, Declaración de Aplicabilidad, auditoría y categorías, tomados del texto oficial consolidado del BOE"
+        }
+      ],
       "practiceSlug": "v-35"
     },
     "V.36": {
