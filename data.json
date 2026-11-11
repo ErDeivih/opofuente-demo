@@ -371,7 +371,7 @@
             "sectionCount": 6,
             "questionCount": 10,
             "formato": "desarrollado",
-            "longWords": 3644
+            "longWords": 3887
           },
           {
             "path": "III.22",
@@ -2740,25 +2740,24 @@
       "reviewedAt": "2026-11-10",
       "longSections": [
         {
-          "heading": "1. Introducción: la red como tres planos de estudio",
+          "heading": "1. Ficha oficial del tema",
+          "body": "**Tema III.21 — Redes.** Bloque III (Sistemas, redes y comunicaciones) del temario común C1 y del TAI. Contenido: modelo OSI y TCP/IP, IPv4/IPv6, subredes/CIDR/VLSM, VLAN y conmutación, encaminamiento, medios de transmisión y Wi-Fi. Fuentes del escritorio: `Tema 9.docx`, `Tema 11.docx`, `Tema 12.docx`, `Bloque 4 Actualizado 2026.docx`, `Modelo.OSI.Resumen.docx` e `IEEE.802.11.y.Wifi.Estandares.docx`. Este tema tiene **10 apartados, 15 preguntas y fuentes citadas**; los PDF de subnetting están escaneados y no se citan como leídos."
+        },
+        {
+          "heading": "2. Índice de epígrafes",
+          "body": "1. Ficha oficial · 2. Índice · 3. Introducción · 4. Desarrollo por epígrafe (OSI, TCP/IP, IPv4, subredes, NAT, IPv6, VLAN, routing, medios y Wi-Fi) · 5. Tabla de subredes · 6. Ejemplo práctico · 7. Trampas · 8. Resumen · 9. Test comentado (15) · 10. Fuentes."
+        },
+        {
+          "heading": "3. Introducción y contexto",
           "body": "Una red de comunicaciones reúne dispositivos finales e intermedios que se conectan entre sí para intercambiar información. Los finales generan y consumen datos (puestos de trabajo, servidores, impresoras); los intermedios los transportan (repetidores, conmutadores, encaminadores). El temario la estudia en tres planos que conviene no mezclar: el modelo de referencia, que organiza las funciones por capas; el direccionamiento, que identifica redes y equipos; y la infraestructura, que decide por dónde viajan los datos y con qué medios.\n\nEl orden de estudio recomendado es ese: primero las capas y la encapsulación, después el cálculo de direcciones y subredes, y por último conmutación, VLAN, encaminamiento, cableado y Wi-Fi. Las cifras proceden de las fuentes citadas al final y se indican en cada apartado; si dos fuentes discrepan, se señala. (Fuentes: Tema 11.docx, apartado 1; Tema 12.docx, apartado 1.)"
         },
         {
-          "heading": "2. Modelo OSI: siete capas, PDU y encapsulación",
-          "body": "El modelo OSI (Open Systems Interconnection) lo creó ISO en 1977 para que equipos de distintos fabricantes pudieran comunicarse. Divide la comunicación en siete capas; cada una presta un servicio a la superior y utiliza los servicios de la inferior, de modo que cambiar un protocolo de una capa no obliga a rehacer las demás.\n\nLas siete capas, de abajo arriba, son: **física** (transmisión de bits por el medio y características mecánicas, eléctricas, funcionales y de procedimiento), **enlace de datos** (tramas, sincronización, control de errores y de flujo entre equipos directamente conectados), **red** (paquetes, direccionamiento lógico y elección del camino a través de redes distintas), **transporte** (segmentos, entrega extremo a extremo, control de flujo y de errores), **sesión** (establecimiento, mantenimiento y cierre de diálogos), **presentación** (formato, compresión y cifrado) y **aplicación** (servicios de red para los programas del usuario).\n\nLa clave es la **encapsulación**. La capa superior entrega a la inferior una unidad de datos de servicio (SDU); la inferior añade su cabecera y forma una unidad de datos de protocolo (PDU), que en el receptor se desencapsula en orden inverso. El punto de intercambio entre capas se denomina SAP. Cada capa tiene su propia PDU: bits en física, tramas en enlace, paquetes en red, segmentos TCP o datagramas UDP en transporte y datos en las capas superiores. El modelo no es un conjunto de protocolos, sino una referencia para ordenar funciones; los protocolos reales se agrupan en la arquitectura TCP/IP. (Fuentes: Modelo.OSI.Resumen.docx, apartados 1-7; Tema 12.docx, apartados 1.1-1.2; Bloque 4 Actualizado 2026.docx, Tema 7.)",
-          "svg": "<svg viewBox=\"0 0 620 360\" role=\"img\" aria-label=\"Pila de las siete capas OSI\"><rect x=\"20\" y=\"10\" width=\"580\" height=\"44\" fill=\"#e8f0fe\"/><text x=\"310\" y=\"38\" text-anchor=\"middle\" font-size=\"18\" fill=\"#16191d\">Aplicación · Presentación · Sesión · Transporte · Red · Enlace · Física</text><g font-size=\"14\" fill=\"#16191d\"><rect x=\"20\" y=\"70\" width=\"580\" height=\"34\" fill=\"#ffffff\" stroke=\"#8a94a6\"/><text x=\"310\" y=\"92\" text-anchor=\"middle\">7 Aplicación — servicios al usuario (HTTP, SMTP, DNS)</text><rect x=\"20\" y=\"110\" width=\"580\" height=\"34\" fill=\"#ffffff\" stroke=\"#8a94a6\"/><text x=\"310\" y=\"132\" text-anchor=\"middle\">6 Presentación — formato, cifrado, compresión</text><rect x=\"20\" y=\"150\" width=\"580\" height=\"34\" fill=\"#ffffff\" stroke=\"#8a94a6\"/><text x=\"310\" y=\"172\" text-anchor=\"middle\">5 Sesión — diálogo y sincronización</text><rect x=\"20\" y=\"190\" width=\"580\" height=\"34\" fill=\"#ffffff\" stroke=\"#8a94a6\"/><text x=\"310\" y=\"212\" text-anchor=\"middle\">4 Transporte — TCP/UDP, puertos, fiabilidad</text><rect x=\"20\" y=\"230\" width=\"580\" height=\"34\" fill=\"#ffffff\" stroke=\"#8a94a6\"/><text x=\"310\" y=\"252\" text-anchor=\"middle\">3 Red — IP, direccionamiento y encaminamiento</text><rect x=\"20\" y=\"270\" width=\"580\" height=\"34\" fill=\"#ffffff\" stroke=\"#8a94a6\"/><text x=\"310\" y=\"292\" text-anchor=\"middle\">2 Enlace — MAC, Ethernet, VLAN, conmutación</text><rect x=\"20\" y=\"310\" width=\"580\" height=\"34\" fill=\"#ffffff\" stroke=\"#8a94a6\"/><text x=\"310\" y=\"332\" text-anchor=\"middle\">1 Física — bits, cable, fibra, radio</text></g></svg>"
+          "heading": "4. Desarrollo por epígrafe",
+          "body": "**4. Modelo OSI: siete capas, PDU y encapsulación**\n\nEl modelo OSI (Open Systems Interconnection) lo creó ISO en 1977 para que equipos de distintos fabricantes pudieran comunicarse. Divide la comunicación en siete capas; cada una presta un servicio a la superior y utiliza los servicios de la inferior, de modo que cambiar un protocolo de una capa no obliga a rehacer las demás.\n\nLas siete capas, de abajo arriba, son: **física** (transmisión de bits por el medio y características mecánicas, eléctricas, funcionales y de procedimiento), **enlace de datos** (tramas, sincronización, control de errores y de flujo entre equipos directamente conectados), **red** (paquetes, direccionamiento lógico y elección del camino a través de redes distintas), **transporte** (segmentos, entrega extremo a extremo, control de flujo y de errores), **sesión** (establecimiento, mantenimiento y cierre de diálogos), **presentación** (formato, compresión y cifrado) y **aplicación** (servicios de red para los programas del usuario).\n\nLa clave es la **encapsulación**. La capa superior entrega a la inferior una unidad de datos de servicio (SDU); la inferior añade su cabecera y forma una unidad de datos de protocolo (PDU), que en el receptor se desencapsula en orden inverso. El punto de intercambio entre capas se denomina SAP. Cada capa tiene su propia PDU: bits en física, tramas en enlace, paquetes en red, segmentos TCP o datagramas UDP en transporte y datos en las capas superiores. El modelo no es un conjunto de protocolos, sino una referencia para ordenar funciones; los protocolos reales se agrupan en la arquitectura TCP/IP. (Fuentes: Modelo.OSI.Resumen.docx, apartados 1-7; Tema 12.docx, apartados 1.1-1.2; Bloque 4 Actualizado 2026.docx, Tema 7.)\n\n**5. Arquitectura TCP/IP: capas, encapsulación real y comparación con OSI**\n\nLa arquitectura TCP/IP es el modelo práctico que utiliza Internet. Aquí conviene detectar una discrepancia entre apuntes: el Tema 12 la estructura en **cinco capas** (física, acceso a red, internet, transporte y aplicación), mientras que el Bloque 4 la resume en **cuatro** (acceso a red, internet, transporte y aplicación), separando o no la capa física. Es una diferencia de nomenclatura; lo importante es qué hace cada nivel.\n\nLa **capa de acceso a red** trabaja con direcciones físicas de 48 bits (MAC, escrita como seis bloques hexadecimales) y resuelve direcciones con ARP, que dada una IP devuelve la MAC; RARP hace lo contrario. La **capa internet** usa IP para encaminar paquetes entre redes distintas; el encaminador decide la mejor interfaz (enrutamiento) y envía el paquete por ella (conmutación). La **capa de transporte** ofrece TCP, orientado a conexión y fiable mediante retransmisiones y control de flujo, y UDP, sin garantías de entrega ni de orden. Una conexión TCP se identifica por la combinación de dirección IP y puerto de origen con dirección IP y puerto de destino: el llamado socket. La **capa de aplicación** agrupa los protocolos de usuario, como HTTP y HTTPS (puertos 80 y 443), DNS o el correo electrónico.\n\nFrente a OSI, TCP/IP no tiene capas de sesión y presentación separadas; sus funciones se reparten entre transporte y aplicación. (Fuentes: Tema 12.docx, apartados 2 y 2.1; Bloque 4 Actualizado 2026.docx, Tema 7; Modelo.OSI.Resumen.docx.)\n\n**6. Direccionamiento IPv4: clases, máscara y cabecera**\n\nUna dirección IPv4 es una cadena de **32 bits** escrita como cuatro octetos decimales. Consta de una parte de red y una parte de host, y la frontera la marca la máscara. En el direccionamiento clásico (classful) el espacio se dividía en clases fijas: **A** (primer bit 0; 8 bits de red y 24 de host), **B** (dos primeros bits 10; 16 y 16) y **C** (tres primeros bits 110; 24 y 8). La clase **D** (224.0.0.0/4) se reservó para multicast y la **E** (240.0.0.0/4) para usos futuros, con la excepción del broadcast inundado 255.255.255.255.\n\nLa **máscara de subred** es otra cadena de 32 bits: los bits a 1 identifican la parte de red o subred y los bits a 0 la parte de host. De ahí salen dos direcciones no asignables: la **dirección de red**, con todos los bits de host a 0, y la **dirección de broadcast**, con todos a 1, utilizada para dirigirse a todos los equipos de la subred.\n\nLa cabecera IPv4 tiene un mínimo de 20 bytes y campos relevantes para el examen: versión, longitud de cabecera, tipo de servicio, longitud total (16 bits, hasta 65.535 bytes), identificación, indicadores y desplazamiento para la fragmentación, **TTL**, protocolo de la capa superior, checksum de cabecera y direcciones de origen y destino. El TTL se decrementa en cada router; si llega a cero, el paquete se descarta y se avisa al origen con ICMP, lo que evita bucles infinitos. (Fuentes: Tema 12.docx, apartados 2.1-2.2; Bloque 4 Actualizado 2026.docx, Tema 7.)\n\n**7. Subredes, CIDR y VLSM: cálculo con ejemplos resueltos**\n\nEl direccionamiento por clases desperdiciaba direcciones y hacía crecer las tablas de encaminamiento. La división en subredes introduce un tercer nivel —red, subred y host— y permite separar redes lógicas dentro de una organización y controlar el tráfico de broadcast.\n\nPara subnetear se toman bits de la parte de host. Con la máscara se fija cuántos bits son de subred y cuántos de host; el número de hosts utilizables de cada subred es 2^N − 2. Ejemplos del Tema 12: la red de clase A 95.0.0.0 tiene 2^24 − 2 = 16.777.214 direcciones de host; la de clase C 192.0.0.0 tiene 2^8 − 2 = 254. La dirección de broadcast es la última de la subred: para 34.254.0.17 (clase A) es 34.255.255.255.\n\n**CIDR** elimina las clases y usa un prefijo que indica cuántos bits son de red. En 208.128.0.0/11, los primeros 11 bits son de red y quedan 32 − 11 = 21 bits de host: 2^21 − 2 = 2.097.150 hosts. Cuanto mayor es el prefijo, menos hosts. La **máscara wildcard** es su inverso (unos donde la máscara tiene ceros) y se usa en ACL y en OSPF. **VLSM** permite subredes de distinto tamaño para adaptarse a cada red física.\n\n**Ejemplo resuelto.** Se dispone de 192.168.10.0/24 y se necesitan cuatro subredes iguales. Se toman 2 bits (2^2 = 4), el prefijo pasa a /26, la máscara es 255.255.255.192 y el bloque tiene 256 − 192 = 64 direcciones. Cada subred deja 2^6 − 2 = 62 hosts utilizables. (Fuentes: Tema 12.docx, apartados 2.2 y 4; Bloque 4 Actualizado 2026.docx, Tema 7.)\n\n**8. Direcciones privadas, especiales y traducción NAT/PAT**\n\nNo todos los dispositivos se conectan directamente a Internet. La IANA reservó tres bloques de direcciones **privadas** para uso interno: 10.0.0.0-10.255.255.255, 172.16.0.0-172.31.255.255 y 192.168.0.0-192.168.255.255. Se pueden reutilizar en organizaciones distintas porque no se enrutan en Internet, y eso ahorra espacio global. Su inconveniente es que un dispositivo con dirección privada no puede salir a Internet sin un mecanismo adicional y que la renumeración puede complicarse al fusionar redes; DHCP ayuda en esa tarea.\n\nAdemás existen direcciones de propósito especial: 0.0.0.0/8 («esta red»), 127.0.0.0/8 (loopback), 169.254.0.0/16 (link-local, para hablar en un mismo enlace), 192.0.2.0/24 (documentación), 224.0.0.0/4 (multicast) y 240.0.0.0/4 (reservada), con 255.255.255.255 como broadcast inundado.\n\n**NAT**, definido en la RFC 1631, traduce direcciones privadas y públicas al cruzar la frontera de la red. Cuando el problema fue que muchas estaciones necesitaban salir a la vez, la RFC 3022 introdujo **PAT**, que además traduce puertos TCP/UDP: el NAPT mapea pares (IP local, puerto local) a (IP global, puerto asignado). Esto permite que toda la LAN navegue con una sola dirección pública, pero solo para sesiones originadas dentro; para publicar un servicio se configura una redirección estática de puerto. (Fuentes: Tema 12.docx, apartado 2.2; Bloque 4 Actualizado 2026.docx, Tema 7.)\n\n**9. IPv6: notación, compresión y tipos de dirección**\n\nIPv6 nace para resolver la escasez de IPv4. Usa direcciones de **128 bits** escritas como ocho bloques de cuatro dígitos hexadecimales separados por dos puntos. Admite dos reglas de compresión: omitir los ceros a la izquierda de cada bloque y sustituir una secuencia de bloques nulos por «::», que solo puede aparecer **una vez** en una dirección. Así, 2001:0db8:85a3:0000:0000:8a2e:0370:7334 puede escribirse 2001:db8:85a3::8a2e:370:7334.\n\nEn IPv6 **no existe broadcast**; en su lugar hay unicast, multicast (FF00::/8), anycast (una dirección que identifica a varios equipos, pero se entrega a uno) y varios tipos de unicast: **link-local** FE80::/10, para comunicarse en el mismo enlace; **unique-local** FC00::/7 y FD00::/8, el equivalente a las direcciones privadas; y **global** 2000::/3, enrutables en Internet. El multicast de todos los nodos usa FF01::1 y FF02::1, y el de todos los routers FF02::2.\n\nLa cabecera IPv6 es de **40 bytes** y de longitud fija, más simple que la de IPv4. El campo de límite de saltos (8 bits) sustituye al TTL y la etiqueta de flujo (20 bits) permite tratar de forma especial los paquetes de un mismo flujo, por ejemplo para QoS. La fuente destaca también la autoconfiguración, las mejoras de enrutamiento, la seguridad incorporada y las mejoras de QoS; en la práctica, la convivencia con IPv4 es progresiva. (Fuentes: Bloque 4 Actualizado 2026.docx, Tema 7; Tema 12.docx, apartado 2.2.)\n\n**10. Conmutación, VLAN y enlaces troncales**\n\nUn **conmutador** (switch) es un dispositivo de capa 2 que, como un puente multipuerto, aprende las direcciones MAC y las asocia a puertos. Tiene dos modos de envío: **almacenamiento y envío** (recibe la trama completa, comprueba el checksum y la descarta si es errónea, con más latencia) y **conmutación rápida** (empieza a reenviar en cuanto lee la MAC de destino, con menos latencia pero propagando posibles errores).\n\nCuando hay caminos redundantes aparecen bucles, tormentas de difusión e inestabilidad en las tablas. Para evitarlo se usa la familia del **Spanning Tree**: STP evita bucles, RSTP converge más rápido, MSTP permite varios árboles, BPDU transporta la información de topología y TCN notifica cambios; SPB es otra solución de conmutación para Ethernet virtualizada.\n\nUna **VLAN** (802.1Q) crea segmentos lógicos dentro de una red física: varios puertos del switch se comportan como LAN separadas aunque compartan el mismo equipo, lo que reduce el dominio de broadcast y separa departamentos o invitados. Para extender una VLAN por varios switches se usan **enlaces troncales**, que transportan tramas de varias VLAN y las distinguen con una etiqueta 802.1Q de **4 bytes** añadida a la cabecera Ethernet. Cada VLAN sigue siendo un dominio de broadcast distinto: para pasar tráfico entre VLAN hace falta un router o un switch de nivel 3. (Fuentes: Tema 11.docx, apartados 4 y 5; Bloque 4 Actualizado 2026.docx, Tema 7.)\n\n**11. Encaminamiento: rutas estáticas, protocolos y sistemas autónomos**\n\nEl **encaminador** (router) es un dispositivo de capa 3 que conecta redes lógicas diferentes. Construye una tabla de rutas con las redes conocidas y la interfaz por la que se alcanzan, y su trabajo tiene dos fases: **enrutamiento** (decidir la mejor interfaz para el destino) y **conmutación** (enviar el paquete por ella). Además acota los dominios de broadcast: un router crea tantos dominios de difusión como interfaces operativas tiene.\n\nLas rutas pueden ser **estáticas**, configuradas a mano por el administrador, o **dinámicas**, aprendidas con protocolos que intercambian información entre routers. La elección de destino se apoya en la tabla: si el destino es local se resuelve la MAC con ARP; si es remoto se envía a la MAC del encaminador de salida (la puerta de enlace). Los protocolos se clasifican por su forma de calcular rutas y por su ámbito: interiores (IGP) dentro de un sistema autónomo y exteriores (EGP) entre sistemas autónomos.\n\nLos protocolos que recogen los apuntes son: **RIP** (vector de distancia, máximo 15 saltos), **RIPng** (su versión para IPv6), **IS-IS y OSPF** (estado de enlace), **EIGRP** (híbrido, vector de distancia avanzado, de Cisco, con métricas de ancho de banda, retardo, fiabilidad y carga, convergencia rápida y sin límite fijo de saltos) y **BGP** (vector de camino o path-vector, el que conecta sistemas autónomos en Internet). (Fuentes: Tema 11.docx, apartados 4 y 5; Tema 12.docx, apartado 2; Bloque 4 Actualizado 2026.docx, Tema 7.)\n\n**12. Medios de transmisión y pruebas de cableado**\n\nEl medio guiado puede ser eléctrico (par trenzado o coaxial) u óptico (fibra). Al propagar la señal aparecen **atenuación** (pérdida de potencia con la distancia), **interferencia** (la diafonía es la que se produce entre pares paralelos), **ruido** (térmico, de intermodulación o impulsivo), desfase y dispersión. El **par trenzado no apantallado (UTP)** es el más usado por su bajo coste y facilidad de instalación; contiene cuatro pares de hilos de cobre. El **STP** es más caro pero menos sensible a las interferencias electromagnéticas. El **coaxial** tiene núcleo de cobre, aislamiento, malla de blindaje y revestimiento; el RG-58 (50 ohmios) se usó en 10BASE-2 y los RG-59 y RG-6U (75 ohmios) en televisión y cable-módem.\n\nLa **fibra óptica** usa dos hebras de vidrio o plástico (transmisión y recepción). Ofrece distancias y ancho de banda muy superiores al cobre (la fuente cita hasta 500 Gbps) y no es sensible a EMI ni a diafonía. La **monomodo** se usa en enlaces de larga distancia, con longitudes de onda típicas de 1.310 y 1.550 nm; la **multimodo**, en edificio y en tecnologías como Gigabit y 10 Gigabit Ethernet, con longitudes de 850 a 1.300 nm.\n\nLas pruebas básicas del cobre incluyen el reflectómetro en el dominio del tiempo (TDR), que mide longitud y detecta pares abiertos o cortocircuitos, el mapeo de hilos, la atenuación, la diafonía próxima y lejana (NEXT y FEXT), la relación atenuación/diafonía (ACR), la pérdida de retorno (RL/SRL) y el ruido. En fibra se usan el OTDR y el juego de fuente y medidor de potencia (OLTS) para medir potencia y atenuación. (Fuentes: Tema 11.docx, apartados 2 y 3.)\n\n**13. Wi-Fi: 802.11, acceso al medio y seguridad**\n\nLas redes Wi-Fi se rigen por la familia IEEE 802.11 y comparten con Ethernet la idea de un medio compartido, pero necesitan una capa física y de acceso al medio específicas para el espectro radioeléctrico. Trabajan en las bandas de **2,4 GHz y 5 GHz**, a las que se añade la de 6 GHz en Wi-Fi 6E. En 2,4 GHz hay canales del 1 al 13 separados 5 MHz, pero como el ancho de banda analógico es de 22 MHz, los contiguos se solapan; el resumen del tema señala los canales 1, 7 y 13 como los que evitan ese solapamiento.\n\nEl acceso al medio cambia respecto a la red cableada. Ethernet usa CSMA/CD, que detecta colisiones; en radio no se puede escuchar mientras se transmite, así que 802.11 emplea **CSMA/CA**: comprueba si el canal está libre, espera un tiempo aleatorio y exige un ACK del receptor. Como no todas las estaciones se oyen entre sí (problema del **nodo oculto**), se añade el intercambio **RTS/CTS** con un vector de reserva (NAV). El control puede ser distribuido (DCF) o centralizado por sondeo (PCF).\n\nLa arquitectura puede ser **ad-hoc** (equipos que se comunican directamente) o **infraestructura**, con punto de acceso (AP) y controlador (AC). Los estándares han evolucionado desde 802.11 (1997, 2 Mbps) hasta 802.11ax (Wi-Fi 6, 2019, hasta 9,6 Gbps) y 802.11be (Wi-Fi 7, 2024, hasta 30 Gbps en el resumen IEEE), con 802.11ad (WiGig, 60 GHz) y 802.11af (bandas de TV) como variantes. En seguridad, WEP (RC4) quedó roto y fue sustituido por 802.11i/WPA2 con AES; el control de acceso por puertos 802.1X usa EAP contra un servidor RADIUS. (Fuentes: Tema 11.docx, apartados 6.1-6.4; IEEE.802.11.y.Wifi.Estandares.docx.)"
         },
         {
-          "heading": "3. Arquitectura TCP/IP: capas, encapsulación real y comparación con OSI",
-          "body": "La arquitectura TCP/IP es el modelo práctico que utiliza Internet. Aquí conviene detectar una discrepancia entre apuntes: el Tema 12 la estructura en **cinco capas** (física, acceso a red, internet, transporte y aplicación), mientras que el Bloque 4 la resume en **cuatro** (acceso a red, internet, transporte y aplicación), separando o no la capa física. Es una diferencia de nomenclatura; lo importante es qué hace cada nivel.\n\nLa **capa de acceso a red** trabaja con direcciones físicas de 48 bits (MAC, escrita como seis bloques hexadecimales) y resuelve direcciones con ARP, que dada una IP devuelve la MAC; RARP hace lo contrario. La **capa internet** usa IP para encaminar paquetes entre redes distintas; el encaminador decide la mejor interfaz (enrutamiento) y envía el paquete por ella (conmutación). La **capa de transporte** ofrece TCP, orientado a conexión y fiable mediante retransmisiones y control de flujo, y UDP, sin garantías de entrega ni de orden. Una conexión TCP se identifica por la combinación de dirección IP y puerto de origen con dirección IP y puerto de destino: el llamado socket. La **capa de aplicación** agrupa los protocolos de usuario, como HTTP y HTTPS (puertos 80 y 443), DNS o el correo electrónico.\n\nFrente a OSI, TCP/IP no tiene capas de sesión y presentación separadas; sus funciones se reparten entre transporte y aplicación. (Fuentes: Tema 12.docx, apartados 2 y 2.1; Bloque 4 Actualizado 2026.docx, Tema 7; Modelo.OSI.Resumen.docx.)"
-        },
-        {
-          "heading": "4. Direccionamiento IPv4: clases, máscara y cabecera",
-          "body": "Una dirección IPv4 es una cadena de **32 bits** escrita como cuatro octetos decimales. Consta de una parte de red y una parte de host, y la frontera la marca la máscara. En el direccionamiento clásico (classful) el espacio se dividía en clases fijas: **A** (primer bit 0; 8 bits de red y 24 de host), **B** (dos primeros bits 10; 16 y 16) y **C** (tres primeros bits 110; 24 y 8). La clase **D** (224.0.0.0/4) se reservó para multicast y la **E** (240.0.0.0/4) para usos futuros, con la excepción del broadcast inundado 255.255.255.255.\n\nLa **máscara de subred** es otra cadena de 32 bits: los bits a 1 identifican la parte de red o subred y los bits a 0 la parte de host. De ahí salen dos direcciones no asignables: la **dirección de red**, con todos los bits de host a 0, y la **dirección de broadcast**, con todos a 1, utilizada para dirigirse a todos los equipos de la subred.\n\nLa cabecera IPv4 tiene un mínimo de 20 bytes y campos relevantes para el examen: versión, longitud de cabecera, tipo de servicio, longitud total (16 bits, hasta 65.535 bytes), identificación, indicadores y desplazamiento para la fragmentación, **TTL**, protocolo de la capa superior, checksum de cabecera y direcciones de origen y destino. El TTL se decrementa en cada router; si llega a cero, el paquete se descarta y se avisa al origen con ICMP, lo que evita bucles infinitos. (Fuentes: Tema 12.docx, apartados 2.1-2.2; Bloque 4 Actualizado 2026.docx, Tema 7.)"
-        },
-        {
-          "heading": "5. Subredes, CIDR y VLSM: cálculo con ejemplos resueltos",
-          "body": "El direccionamiento por clases desperdiciaba direcciones y hacía crecer las tablas de encaminamiento. La división en subredes introduce un tercer nivel —red, subred y host— y permite separar redes lógicas dentro de una organización y controlar el tráfico de broadcast.\n\nPara subnetear se toman bits de la parte de host. Con la máscara se fija cuántos bits son de subred y cuántos de host; el número de hosts utilizables de cada subred es 2^N − 2. Ejemplos del Tema 12: la red de clase A 95.0.0.0 tiene 2^24 − 2 = 16.777.214 direcciones de host; la de clase C 192.0.0.0 tiene 2^8 − 2 = 254. La dirección de broadcast es la última de la subred: para 34.254.0.17 (clase A) es 34.255.255.255.\n\n**CIDR** elimina las clases y usa un prefijo que indica cuántos bits son de red. En 208.128.0.0/11, los primeros 11 bits son de red y quedan 32 − 11 = 21 bits de host: 2^21 − 2 = 2.097.150 hosts. Cuanto mayor es el prefijo, menos hosts. La **máscara wildcard** es su inverso (unos donde la máscara tiene ceros) y se usa en ACL y en OSPF. **VLSM** permite subredes de distinto tamaño para adaptarse a cada red física.\n\n**Ejemplo resuelto.** Se dispone de 192.168.10.0/24 y se necesitan cuatro subredes iguales. Se toman 2 bits (2^2 = 4), el prefijo pasa a /26, la máscara es 255.255.255.192 y el bloque tiene 256 − 192 = 64 direcciones. Cada subred deja 2^6 − 2 = 62 hosts utilizables. (Fuentes: Tema 12.docx, apartados 2.2 y 4; Bloque 4 Actualizado 2026.docx, Tema 7.)",
+          "heading": "5. Tabla comparativa: subredes /26",
+          "body": "Ejemplo de segmentación de 192.168.10.0/24 en cuatro subredes /26; cada una tiene 62 hosts útiles.",
           "table": {
             "columns": [
               "Subred",
@@ -2800,206 +2799,23 @@
           }
         },
         {
-          "heading": "6. Direcciones privadas, especiales y traducción NAT/PAT",
-          "body": "No todos los dispositivos se conectan directamente a Internet. La IANA reservó tres bloques de direcciones **privadas** para uso interno: 10.0.0.0-10.255.255.255, 172.16.0.0-172.31.255.255 y 192.168.0.0-192.168.255.255. Se pueden reutilizar en organizaciones distintas porque no se enrutan en Internet, y eso ahorra espacio global. Su inconveniente es que un dispositivo con dirección privada no puede salir a Internet sin un mecanismo adicional y que la renumeración puede complicarse al fusionar redes; DHCP ayuda en esa tarea.\n\nAdemás existen direcciones de propósito especial: 0.0.0.0/8 («esta red»), 127.0.0.0/8 (loopback), 169.254.0.0/16 (link-local, para hablar en un mismo enlace), 192.0.2.0/24 (documentación), 224.0.0.0/4 (multicast) y 240.0.0.0/4 (reservada), con 255.255.255.255 como broadcast inundado.\n\n**NAT**, definido en la RFC 1631, traduce direcciones privadas y públicas al cruzar la frontera de la red. Cuando el problema fue que muchas estaciones necesitaban salir a la vez, la RFC 3022 introdujo **PAT**, que además traduce puertos TCP/UDP: el NAPT mapea pares (IP local, puerto local) a (IP global, puerto asignado). Esto permite que toda la LAN navegue con una sola dirección pública, pero solo para sesiones originadas dentro; para publicar un servicio se configura una redirección estática de puerto. (Fuentes: Tema 12.docx, apartado 2.2; Bloque 4 Actualizado 2026.docx, Tema 7.)",
-          "table": {
-            "columns": [
-              "Bloque",
-              "Uso"
-            ],
-            "rows": [
-              [
-                "10.0.0.0/8",
-                "Dirección privada (RFC 1918)"
-              ],
-              [
-                "172.16.0.0/12",
-                "Dirección privada (RFC 1918)"
-              ],
-              [
-                "192.168.0.0/16",
-                "Dirección privada (RFC 1918)"
-              ],
-              [
-                "127.0.0.0/8",
-                "Loopback: el propio equipo"
-              ],
-              [
-                "169.254.0.0/16",
-                "Link-local (mismo enlace de datos)"
-              ]
-            ]
-          }
+          "heading": "6. Ejemplo práctico resuelto",
+          "body": "**Caso.** Un aula necesita 50 equipos y se dispone de 192.168.10.0/24. **Resolución.** Para 50 hosts se necesitan 6 bits de host: 2^6 - 2 = 62 hosts; la máscara es /26 (255.255.255.192). La primera subred es 192.168.10.0/26 (hosts .1-.62, broadcast .63); la segunda 192.168.10.64/26, la tercera .128/26 y la cuarta .192/26. Si se necesitaran 100 hosts habría que usar /25 (126 hosts) o sumar dos /26. Comprobación: 4 subredes × 62 = 248 hosts útiles; el resto son direcciones de red y broadcast."
         },
         {
-          "heading": "7. IPv6: notación, compresión y tipos de dirección",
-          "body": "IPv6 nace para resolver la escasez de IPv4. Usa direcciones de **128 bits** escritas como ocho bloques de cuatro dígitos hexadecimales separados por dos puntos. Admite dos reglas de compresión: omitir los ceros a la izquierda de cada bloque y sustituir una secuencia de bloques nulos por «::», que solo puede aparecer **una vez** en una dirección. Así, 2001:0db8:85a3:0000:0000:8a2e:0370:7334 puede escribirse 2001:db8:85a3::8a2e:370:7334.\n\nEn IPv6 **no existe broadcast**; en su lugar hay unicast, multicast (FF00::/8), anycast (una dirección que identifica a varios equipos, pero se entrega a uno) y varios tipos de unicast: **link-local** FE80::/10, para comunicarse en el mismo enlace; **unique-local** FC00::/7 y FD00::/8, el equivalente a las direcciones privadas; y **global** 2000::/3, enrutables en Internet. El multicast de todos los nodos usa FF01::1 y FF02::1, y el de todos los routers FF02::2.\n\nLa cabecera IPv6 es de **40 bytes** y de longitud fija, más simple que la de IPv4. El campo de límite de saltos (8 bits) sustituye al TTL y la etiqueta de flujo (20 bits) permite tratar de forma especial los paquetes de un mismo flujo, por ejemplo para QoS. La fuente destaca también la autoconfiguración, las mejoras de enrutamiento, la seguridad incorporada y las mejoras de QoS; en la práctica, la convivencia con IPv4 es progresiva. (Fuentes: Bloque 4 Actualizado 2026.docx, Tema 7; Tema 12.docx, apartado 2.2.)",
-          "table": {
-            "columns": [
-              "Prefijo",
-              "Tipo de dirección"
-            ],
-            "rows": [
-              [
-                "FE80::/10",
-                "Link-local (mismo enlace)"
-              ],
-              [
-                "FC00::/7 y FD00::/8",
-                "Unique-local (equivalente privado)"
-              ],
-              [
-                "2000::/3",
-                "Global (enrutable en Internet)"
-              ],
-              [
-                "FF00::/8",
-                "Multicast"
-              ]
-            ]
-          }
+          "heading": "7. Trampas típicas de examen",
+          "body": "- Confundir el número de capas OSI (7) con TCP/IP (4 o 5 según el modelo).\n- Decir que /26 tiene 64 hosts útiles: son **62** (se restan red y broadcast).\n- Confundir dirección de red, primer host, último host y broadcast.\n- Creer que IPv6 usa NAT de forma habitual o que «::» puede aparecer dos veces.\n- Confundir VLAN (segmentación lógica) con subred (segmentación IP).\n- Decir que RIP no tiene límite de saltos: el máximo es 15; 16 es inalcanzable.\n- Confundir 802.1Q (etiqueta VLAN) con 802.1X (autenticación de puerto).\n- Confundir WPA2 con WEP o afirmar que WPS es seguro."
         },
         {
-          "heading": "8. Conmutación, VLAN y enlaces troncales",
-          "body": "Un **conmutador** (switch) es un dispositivo de capa 2 que, como un puente multipuerto, aprende las direcciones MAC y las asocia a puertos. Tiene dos modos de envío: **almacenamiento y envío** (recibe la trama completa, comprueba el checksum y la descarta si es errónea, con más latencia) y **conmutación rápida** (empieza a reenviar en cuanto lee la MAC de destino, con menos latencia pero propagando posibles errores).\n\nCuando hay caminos redundantes aparecen bucles, tormentas de difusión e inestabilidad en las tablas. Para evitarlo se usa la familia del **Spanning Tree**: STP evita bucles, RSTP converge más rápido, MSTP permite varios árboles, BPDU transporta la información de topología y TCN notifica cambios; SPB es otra solución de conmutación para Ethernet virtualizada.\n\nUna **VLAN** (802.1Q) crea segmentos lógicos dentro de una red física: varios puertos del switch se comportan como LAN separadas aunque compartan el mismo equipo, lo que reduce el dominio de broadcast y separa departamentos o invitados. Para extender una VLAN por varios switches se usan **enlaces troncales**, que transportan tramas de varias VLAN y las distinguen con una etiqueta 802.1Q de **4 bytes** añadida a la cabecera Ethernet. Cada VLAN sigue siendo un dominio de broadcast distinto: para pasar tráfico entre VLAN hace falta un router o un switch de nivel 3. (Fuentes: Tema 11.docx, apartados 4 y 5; Bloque 4 Actualizado 2026.docx, Tema 7.)"
+          "heading": "8. Resumen para memorizar",
+          "body": "1. OSI: 7 capas; TCP/IP: 4/5. 2. PDU: bits, tramas, paquetes, segmentos, datos. 3. IPv4: 32 bits; IPv6: 128 bits. 4. Máscara /26 = 255.255.255.192, 62 hosts. 5. Privadas: 10/8, 172.16/12, 192.168/16. 6. VLAN 802.1Q: etiqueta de 4 bytes. 7. RIP: máximo 15 saltos. 8. Wi-Fi 6 = 802.11ax. 9. WPA3 sustituye a WEP/WPA2. 10. NAT traduce direcciones; PAT comparte una IP."
         },
         {
-          "heading": "9. Encaminamiento: rutas estáticas, protocolos y sistemas autónomos",
-          "body": "El **encaminador** (router) es un dispositivo de capa 3 que conecta redes lógicas diferentes. Construye una tabla de rutas con las redes conocidas y la interfaz por la que se alcanzan, y su trabajo tiene dos fases: **enrutamiento** (decidir la mejor interfaz para el destino) y **conmutación** (enviar el paquete por ella). Además acota los dominios de broadcast: un router crea tantos dominios de difusión como interfaces operativas tiene.\n\nLas rutas pueden ser **estáticas**, configuradas a mano por el administrador, o **dinámicas**, aprendidas con protocolos que intercambian información entre routers. La elección de destino se apoya en la tabla: si el destino es local se resuelve la MAC con ARP; si es remoto se envía a la MAC del encaminador de salida (la puerta de enlace). Los protocolos se clasifican por su forma de calcular rutas y por su ámbito: interiores (IGP) dentro de un sistema autónomo y exteriores (EGP) entre sistemas autónomos.\n\nLos protocolos que recogen los apuntes son: **RIP** (vector de distancia, máximo 15 saltos), **RIPng** (su versión para IPv6), **IS-IS y OSPF** (estado de enlace), **EIGRP** (híbrido, vector de distancia avanzado, de Cisco, con métricas de ancho de banda, retardo, fiabilidad y carga, convergencia rápida y sin límite fijo de saltos) y **BGP** (vector de camino o path-vector, el que conecta sistemas autónomos en Internet). (Fuentes: Tema 11.docx, apartados 4 y 5; Tema 12.docx, apartado 2; Bloque 4 Actualizado 2026.docx, Tema 7.)",
-          "table": {
-            "columns": [
-              "Protocolo",
-              "Tipo",
-              "Dato característico"
-            ],
-            "rows": [
-              [
-                "RIP / RIPng",
-                "Vector de distancia",
-                "Máximo 15 saltos; RIPng para IPv6"
-              ],
-              [
-                "OSPF / IS-IS",
-                "Estado de enlace",
-                "Calculan rutas a partir de la topología"
-              ],
-              [
-                "EIGRP",
-                "Híbrido (Cisco)",
-                "Ancho de banda, retardo, fiabilidad y carga"
-              ],
-              [
-                "BGP",
-                "Vector de camino",
-                "Entre sistemas autónomos (Internet)"
-              ]
-            ]
-          }
-        },
-        {
-          "heading": "10. Medios de transmisión y pruebas de cableado",
-          "body": "El medio guiado puede ser eléctrico (par trenzado o coaxial) u óptico (fibra). Al propagar la señal aparecen **atenuación** (pérdida de potencia con la distancia), **interferencia** (la diafonía es la que se produce entre pares paralelos), **ruido** (térmico, de intermodulación o impulsivo), desfase y dispersión. El **par trenzado no apantallado (UTP)** es el más usado por su bajo coste y facilidad de instalación; contiene cuatro pares de hilos de cobre. El **STP** es más caro pero menos sensible a las interferencias electromagnéticas. El **coaxial** tiene núcleo de cobre, aislamiento, malla de blindaje y revestimiento; el RG-58 (50 ohmios) se usó en 10BASE-2 y los RG-59 y RG-6U (75 ohmios) en televisión y cable-módem.\n\nLa **fibra óptica** usa dos hebras de vidrio o plástico (transmisión y recepción). Ofrece distancias y ancho de banda muy superiores al cobre (la fuente cita hasta 500 Gbps) y no es sensible a EMI ni a diafonía. La **monomodo** se usa en enlaces de larga distancia, con longitudes de onda típicas de 1.310 y 1.550 nm; la **multimodo**, en edificio y en tecnologías como Gigabit y 10 Gigabit Ethernet, con longitudes de 850 a 1.300 nm.\n\nLas pruebas básicas del cobre incluyen el reflectómetro en el dominio del tiempo (TDR), que mide longitud y detecta pares abiertos o cortocircuitos, el mapeo de hilos, la atenuación, la diafonía próxima y lejana (NEXT y FEXT), la relación atenuación/diafonía (ACR), la pérdida de retorno (RL/SRL) y el ruido. En fibra se usan el OTDR y el juego de fuente y medidor de potencia (OLTS) para medir potencia y atenuación. (Fuentes: Tema 11.docx, apartados 2 y 3.)",
-          "table": {
-            "columns": [
-              "Medio",
-              "Punto fuerte",
-              "Limitación"
-            ],
-            "rows": [
-              [
-                "UTP",
-                "Barato y fácil de instalar",
-                "Sensible a interferencias y diafonía"
-              ],
-              [
-                "STP",
-                "Menos sensible a EMI",
-                "Más caro que el UTP"
-              ],
-              [
-                "Coaxial",
-                "Blindaje y usos históricos (10BASE-2, TV)",
-                "Menos usado en LAN actuales"
-              ],
-              [
-                "Fibra monomodo",
-                "Larga distancia y gran ancho de banda",
-                "Instalación y equipos más caros"
-              ],
-              [
-                "Fibra multimodo",
-                "Edificio y distancias medias",
-                "Alcance menor que la monomodo"
-              ]
-            ]
-          }
-        },
-        {
-          "heading": "11. Wi-Fi: 802.11, acceso al medio y seguridad",
-          "body": "Las redes Wi-Fi se rigen por la familia IEEE 802.11 y comparten con Ethernet la idea de un medio compartido, pero necesitan una capa física y de acceso al medio específicas para el espectro radioeléctrico. Trabajan en las bandas de **2,4 GHz y 5 GHz**, a las que se añade la de 6 GHz en Wi-Fi 6E. En 2,4 GHz hay canales del 1 al 13 separados 5 MHz, pero como el ancho de banda analógico es de 22 MHz, los contiguos se solapan; el resumen del tema señala los canales 1, 7 y 13 como los que evitan ese solapamiento.\n\nEl acceso al medio cambia respecto a la red cableada. Ethernet usa CSMA/CD, que detecta colisiones; en radio no se puede escuchar mientras se transmite, así que 802.11 emplea **CSMA/CA**: comprueba si el canal está libre, espera un tiempo aleatorio y exige un ACK del receptor. Como no todas las estaciones se oyen entre sí (problema del **nodo oculto**), se añade el intercambio **RTS/CTS** con un vector de reserva (NAV). El control puede ser distribuido (DCF) o centralizado por sondeo (PCF).\n\nLa arquitectura puede ser **ad-hoc** (equipos que se comunican directamente) o **infraestructura**, con punto de acceso (AP) y controlador (AC). Los estándares han evolucionado desde 802.11 (1997, 2 Mbps) hasta 802.11ax (Wi-Fi 6, 2019, hasta 9,6 Gbps) y 802.11be (Wi-Fi 7, 2024, hasta 30 Gbps en el resumen IEEE), con 802.11ad (WiGig, 60 GHz) y 802.11af (bandas de TV) como variantes. En seguridad, WEP (RC4) quedó roto y fue sustituido por 802.11i/WPA2 con AES; el control de acceso por puertos 802.1X usa EAP contra un servidor RADIUS. (Fuentes: Tema 11.docx, apartados 6.1-6.4; IEEE.802.11.y.Wifi.Estandares.docx.)",
-          "table": {
-            "columns": [
-              "Estándar",
-              "Año",
-              "Banda",
-              "Velocidad máxima"
-            ],
-            "rows": [
-              [
-                "802.11b",
-                "1999",
-                "2,4 GHz",
-                "11 Mbps"
-              ],
-              [
-                "802.11a",
-                "1999",
-                "5 GHz",
-                "54 Mbps"
-              ],
-              [
-                "802.11g",
-                "2003",
-                "2,4 GHz",
-                "54 Mbps"
-              ],
-              [
-                "802.11n",
-                "2009",
-                "2,4 y 5 GHz",
-                "600 Mbps"
-              ],
-              [
-                "802.11ac",
-                "2013",
-                "5 GHz",
-                "1,3 Gbps (el Bloque 4 cita 3,5 Gbps)"
-              ],
-              [
-                "802.11ax (Wi-Fi 6)",
-                "2019",
-                "2,4 y 5 GHz",
-                "9,6 Gbps"
-              ],
-              [
-                "802.11be (Wi-Fi 7)",
-                "2024",
-                "2,4, 5 y 6 GHz",
-                "30 Gbps (el Bloque 4 cita 46 Gbps)"
-              ]
-            ]
-          }
-        },
-        {
-          "heading": "12. Resumen: lo que hay que memorizar y fuentes citadas",
-          "body": "Lo esencial que conviene retener:\n\n- OSI tiene **siete capas** y cada una una PDU distinta: bits, tramas, paquetes, segmentos/datagramas y datos por encima de transporte.\n- TCP/IP se describe en **cuatro** capas (acceso a red, internet, transporte y aplicación) o **cinco** si se separa la física, según la fuente.\n- En IPv4 la máscara marca red y host; hosts útiles = **2^N − 2**; la de broadcast es la última dirección de la subred.\n- Direcciones privadas: **10/8, 172.16-172.31 y 192.168/16**; NAT (RFC 1631) y PAT (RFC 3022) permiten compartir una IP pública.\n- IPv6 usa **128 bits**, no tiene broadcast, comprime con «::» una sola vez y distingue link-local (FE80::/10), unique-local (FC00::/7) y global (2000::/3).\n- Una **VLAN** segmenta lógicamente el switch y la etiqueta **802.1Q** ocupa 4 bytes; para cruzar VLAN hace falta un router.\n- RIP limita a **15 saltos**, OSPF e IS-IS son de estado de enlace y **BGP** conecta sistemas autónomos.\n- UTP, STP, coaxial y fibra: la fibra no sufre EMI y ofrece más distancia y ancho de banda.\n- Wi-Fi usa **CSMA/CA**, ACK y RTS/CTS para el nodo oculto; WEP está obsoleto y WPA2/802.11i usa AES.\n\nFuentes citadas: Tema 11.docx; Tema 12.docx; Bloque 4 Actualizado 2026.docx; Modelo.OSI.Resumen.docx; IEEE.802.11.y.Wifi.Estandares.docx. (Los PDF de subnetting son escaneados y no se han utilizado como fuente.)"
-        },
-        {
-          "heading": "Casos tipo test (respuestas razonadas)",
+          "heading": "9. Casos tipo test comentados (15 preguntas)",
           "body": "**1. ¿Cuántas capas tiene el modelo OSI?**\n\na) Siete · b) Cinco · c) Cuatro · d) Ocho\n\n**Respuesta: a.** ISO creó en 1977 un modelo de siete capas: física, enlace, red, transporte, sesión, presentación y aplicación. La arquitectura TCP/IP es la que se simplifica a cuatro o cinco capas.\n\n**2. ¿Cuál es la unidad de datos (PDU) de la capa de enlace de datos?**\n\na) Bits · b) Tramas · c) Paquetes · d) Segmentos\n\n**Respuesta: b.** En enlace de datos la PDU es la trama; la física trabaja con bits, la red con paquetes y el transporte con segmentos TCP o datagramas UDP.\n\n**3. ¿En cuántas capas describe el Bloque 4 la arquitectura TCP/IP?**\n\na) Siete · b) Cinco · c) Cuatro · d) Tres\n\n**Respuesta: c.** El Bloque 4 habla de cuatro capas (acceso a red, internet, transporte y aplicación); el Tema 12 separa la física y la describe en cinco. Es una diferencia de nomenclatura, no de funcionamiento.\n\n**4. ¿Qué máscara corresponde a un prefijo /26?**\n\na) 255.255.255.0 · b) 255.255.255.128 · c) 255.255.255.224 · d) 255.255.255.192\n\n**Respuesta: d.** Un /26 tiene 26 bits a 1: los tres primeros octetos completos y los dos primeros bits del cuarto, es decir, 255.255.255.192.\n\n**5. En una subred /26, ¿cuántos hosts utilizables hay?**\n\na) 62 · b) 64 · c) 126 · d) 30\n\n**Respuesta: a.** Quedan 6 bits de host: 2^6 = 64 direcciones, menos la de red y la de broadcast, dan 62 hosts utilizables.\n\n**6. ¿Cuál es la dirección de broadcast de la red 34.254.0.17 si es de clase A?**\n\na) 34.254.255.255 · b) 34.255.255.255 · c) 34.254.0.255 · d) 255.255.255.255\n\n**Respuesta: b.** En clase A los 8 primeros bits son de red y los 24 restantes de host; el broadcast pone todos los bits de host a 1, luego 34.255.255.255.\n\n**7. En la dirección 208.128.0.0/11, ¿cuántos bits se usan para hosts?**\n\na) 11 · b) 20 · c) 21 · d) 25\n\n**Respuesta: c.** El prefijo /11 reserva 11 bits para la red; como la dirección IPv4 tiene 32 bits, quedan 32 − 11 = 21 bits de host.\n\n**8. ¿Cuál de estas direcciones IPv4 pertenece al espacio privado?**\n\na) 172.32.0.1 · b) 11.0.0.1 · c) 192.169.0.1 · d) 172.20.5.1\n\n**Respuesta: d.** Los bloques privados son 10/8, 172.16.0.0/12 (172.16.0.0-172.31.255.255) y 192.168.0.0/16. 172.20.5.1 entra en el segundo bloque; 172.32.0.1 queda fuera.\n\n**9. ¿Cuántas veces puede aparecer el símbolo «::» en una dirección IPv6?**\n\na) Una vez · b) Dos veces · c) Tres veces · d) Sin límite\n\n**Respuesta: a.** La compresión de grupos nulos con «::» solo se permite una vez por dirección; si apareciera dos, no se podría reconstruir la dirección original.\n\n**10. ¿Qué prefijo identifica las direcciones IPv6 link-local?**\n\na) FC00::/7 · b) 2000::/3 · c) FE80::/10 · d) FF00::/8\n\n**Respuesta: c.** FE80::/10 es el prefijo link-local; 2000::/3 son las globales, FC00::/7 las unique-local y FF00::/8 multicast.\n\n**11. ¿Cuántos bytes añade la etiqueta 802.1Q a la cabecera Ethernet?**\n\na) 2 bytes · b) 4 bytes · c) 6 bytes · d) 8 bytes\n\n**Respuesta: b.** 802.1Q añade un campo de 4 bytes que identifica la VLAN, necesario para transportar varias VLAN por un enlace troncal.\n\n**12. ¿Cuál es el límite de saltos del protocolo RIP?**\n\na) 15 saltos · b) 10 saltos · c) 16 saltos · d) 255 saltos\n\n**Respuesta: a.** RIP es de vector de distancia y limita a 15 saltos; por eso solo tiene sentido en redes pequeñas. OSPF e IS-IS son de estado de enlace.\n\n**13. ¿Qué protocolo de encaminamiento se usa entre sistemas autónomos en Internet?**\n\na) OSPF · b) BGP · c) RIP · d) EIGRP\n\n**Respuesta: b.** BGP es un protocolo de vector de camino que interconnecta sistemas autónomos; OSPF, RIP y EIGRP son protocolos interiores.\n\n**14. ¿Qué mecanismo de 802.11 ayuda a resolver el problema del nodo oculto?**\n\na) CSMA/CD · b) STP · c) RTS/CTS · d) ARP\n\n**Respuesta: c.** En radio no se detectan colisiones como en el cable, así que CSMA/CA usa RTS/CTS y el vector NAV para reservar el medio y evitar el nodo oculto.\n\n**15. ¿Qué instrumento se emplea para probar la fibra óptica?**\n\na) TDR · b) NEXT · c) Mapeo de hilos · d) OTDR\n\n**Respuesta: d.** El OTDR (reflectómetro en el dominio del tiempo óptico) mide potencia y atenuación en fibra; TDR, NEXT y el mapeo de hilos son pruebas de cobre."
         },
         {
-          "heading": "Fuentes citadas",
+          "heading": "10. Fuentes citadas",
           "body": "- **Tema 12.docx** — DOCX, apartados 1.1-1.2, 2, 2.1-2.2 y 4. Capas OSI, arquitectura TCP/IP de cinco capas, clases IPv4, máscara, subredes, CIDR/VLSM, direcciones privadas y NAT/PAT\n- **Tema 11.docx** — DOCX, apartados 2, 4, 5 y 6.1-6.4. Medios guiados y pruebas de cableado, dispositivos de interconexión, VLAN/802.1Q, CSMA/CA, Wi-Fi y seguridad WEP/WPA2/802.1X\n- **Bloque 4 Actualizado 2026.docx** — DOCX, Tema 7 (OSI, VLAN, IPv4/IPv6, subnetting, CIDR y routing) y Tema 8. Encapsulación SDU/PDU/SAP, VLAN 802.1Q, IPv6 (notación, prefijos y cabecera), protocolos de encaminamiento y BGP entre sistemas autónomos\n- **Modelo.OSI.Resumen.docx** — DOCX, apartados 1-7. Unidades de datos de cada capa OSI y protocolos de ejemplo por capa\n- **IEEE.802.11.y.Wifi.Estandares.docx** — DOCX, tabla de estándares IEEE 802.11. Año, banda de frecuencia y velocidad máxima de las versiones 802.11 hasta 802.11be"
         }
       ],
