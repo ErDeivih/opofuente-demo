@@ -340,8 +340,8 @@
             "practicaStatus": "con_practica",
             "sectionCount": 7,
             "questionCount": 10,
-            "formato": "esquema",
-            "longWords": 0
+            "formato": "desarrollado",
+            "longWords": 2485
           },
           {
             "path": "III.19",
@@ -483,8 +483,8 @@
             "practicaStatus": "con_practica",
             "sectionCount": 7,
             "questionCount": 10,
-            "formato": "esquema",
-            "longWords": 0
+            "formato": "desarrollado",
+            "longWords": 2898
           },
           {
             "path": "IV.32",
@@ -493,8 +493,8 @@
             "practicaStatus": "con_practica",
             "sectionCount": 7,
             "questionCount": 10,
-            "formato": "esquema",
-            "longWords": 0
+            "formato": "desarrollado",
+            "longWords": 2782
           },
           {
             "path": "IV.33",
@@ -2571,6 +2571,224 @@
         "Usar cuentas de administrador para tareas diarias."
       ],
       "reviewedAt": "2026-11-10",
+      "longSections": [
+        {
+          "heading": "1. Ficha oficial del tema",
+          "body": "**Tema:** III.18, «Sistemas operativos de servidor», del bloque III (Sistemas, redes y comunicaciones) del temario común de informática C1. **Materias que cubre:** papel y tareas del administrador de sistemas, gestión de servicios e incidencias, instalación y configuración del servidor, actualización del sistema operativo, mantenimiento y reparación, monitorización, copias de seguridad y continuidad del servicio. **Relación con otros temas:** se apoya en III.23 (servicios de red) y en los temas de virtualización, contenedores y cloud, y sirve de base a la administración de sistemas y a la seguridad. **Fuentes:** `Tema 6.docx` y `Bloque 4 Actualizado 2026.docx`, volcados en `data/fuentes/III.18.txt`.\n\n**Limitación de la fuente:** el volcado de III.18 se centra en la administración del sistema operativo (Windows Update, WSUS, gestores de paquetes Linux, reparación, copias y continuidad) y no desarrolla los roles concretos de Windows Server (Active Directory, DNS, DHCP, GPO) ni systemd o SSH. Para no inventar, este tema no incluye apartados específicos de esas materias y se limita a los contenidos que sí documenta la fuente.",
+          "table": {
+            "columns": [
+              "Dato de la ficha",
+              "Valor"
+            ],
+            "rows": [
+              [
+                "Tema",
+                "III.18 Sistemas operativos de servidor"
+              ],
+              [
+                "Bloque",
+                "III · Sistemas, redes y comunicaciones"
+              ],
+              [
+                "Materias",
+                "Administración, actualizaciones, mantenimiento, reparación, copias y continuidad"
+              ],
+              [
+                "Temas relacionados",
+                "III.23 Servicios de red; virtualización, contenedores y cloud"
+              ],
+              [
+                "Fuente",
+                "Tema 6.docx y Bloque 4 Actualizado 2026.docx"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "2. Índice de epígrafes",
+          "body": "El desarrollo del tema se organiza en los epígrafes del apartado 4:\n\n- **4.1.** El administrador de sistemas: papel, tareas y responsabilidades.\n- **4.2.** Gestión de servicios e incidencias: SLA, SLM y prioridades.\n- **4.3.** Instalación y configuración del servidor.\n- **4.4.** Actualización del sistema operativo.\n- **4.5.** Mantenimiento y reparación del sistema.\n- **4.6.** Monitorización del servicio.\n- **4.7.** Copias de seguridad y recuperación.\n- **4.8.** Continuidad del servicio y alta disponibilidad.\n\nCompletan el tema la tabla comparativa (apartado 5), el ejemplo práctico (6), las trampas de examen (7), el resumen para memorizar (8), los quince casos tipo test (9) y las fuentes citadas (10)."
+        },
+        {
+          "heading": "3. Introducción y contexto",
+          "body": "Un sistema operativo de servidor no se juzga por su interfaz, sino por su capacidad de prestar servicio de forma continua, segura y medible. Frente a un equipo de escritorio, el servidor concentra usuarios, datos y servicios críticos: si cae, no se queda sin escribir un documento, se queda sin nóminas, sin correo o sin sede electrónica.\n\nPor eso la administración de servidores es una disciplina de procesos: instalar y configurar el sistema, actualizarlo, mantenerlo, repararlo, vigilarlo, hacer copias y preparar la continuidad. El temario agrupa esas tareas en dos bloques: el papel del administrador y la gestión de incidencias (Tema 6) y la administración concreta del sistema operativo y del software de base (Bloque 4).\n\nEste tema ordena las tareas, las herramientas y las métricas que se preguntan, y las conecta con la disponibilidad: de nada sirve tener un servidor rápido si no se puede restaurar una copia o si el CPD no permite mantenerlo sin cortar el servicio.",
+          "table": {
+            "columns": [
+              "Fuente",
+              "Qué aporta"
+            ],
+            "rows": [
+              [
+                "Tema 6.docx",
+                "Tareas y responsabilidades del administrador, SLA/SLM, prioridades y herramientas de gestión"
+              ],
+              [
+                "Bloque 4 Actualizado 2026.docx",
+                "Instalación, actualizaciones, mantenimiento, reparación, backups, CPD, virtualización, contenedores y cloud"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "4. Desarrollo por epígrafe",
+          "body": "**4.1. El administrador de sistemas.** En los sistemas multiusuario, el administrador es la persona o el grupo que responde del correcto funcionamiento del sistema, tanto de la red como de los sistemas operativos conectados. Debe conocer el sistema, diseñarlo de forma fiable, hacerlo fácil de usar, anticiparse a los problemas y tener un plan de contingencia. Entre sus tareas están instalar servidores (con gran capacidad de memoria, subsistemas RAID, varios procesadores y tolerancia a fallos con SAI o memoria correctora), gestionarlos y obtener estadísticas, mantener las estaciones de trabajo y la red, crear y retirar cuentas de usuario, instalar hardware y software, hacer copias, monitorizar los servicios con sus ficheros de registro, resolver problemas, mantener la documentación y ayudar a los usuarios. Sus responsabilidades se reparten entre el hardware (esquema del sistema, periféricos, red, mantenimiento preventivo), el software (sistema operativo, sistemas de archivos, recursos, copias, impresión, comunicaciones y actualizaciones), los usuarios (accesos, altas y bajas, necesidades y crecimiento) y la documentación (qué se hizo, quién, cuándo y cómo).\n\n**4.2. Gestión de servicios e incidencias.** El **SLA** es el contrato que fija los niveles de servicio con parámetros objetivos: tipo de servicio, soporte, seguridad, garantías, tiempos de respuesta, disponibilidad, conectividad, penalizaciones y especificaciones de **MTBF** y **MTTR**. El **SLM** es la metodología que asegura que los clientes reciben los niveles acordados y que los acuerdos internos y de soporte son coherentes. Las incidencias se clasifican por severidad: **urgente** (aplicación crítica, sin alternativa), **alta** (crítica pero con solución temporal), **media** (afecta a la operación normal con alternativa y sin urgencia temporal) y **baja** (documentación o procedimientos). La matriz **RACI** reparte roles: responsable de hacer el trabajo, responsable único del resultado, consultado e informado.\n\n**4.3. Instalación y configuración.** La instalación se hace desde USB, DVD o red y exige decidir el particionado, los usuarios y el software adicional. En la configuración se crean cuentas y permisos (Panel de Control y Administrador de usuarios en Windows; adduser, chmod y chown en Linux), se eligen los sistemas de archivos y se prepara el almacenamiento. El **firmware** inicia el hardware: **BIOS** usa **MBR** (hasta 2 TB y cuatro particiones primarias) y **UEFI** usa **GPT** (discos mayores, más particiones y mayor fiabilidad). En servidores con RAID conviene recordar las capacidades útiles: RAID 0 = discos × tamaño; RAID 1 = un disco; RAID 5 = (n − 1) × tamaño; RAID 6 = (n − 2) × tamaño; RAID 10 = mitad del total; JBOD = suma de discos.\n\n**4.4. Actualización del sistema.** Las actualizaciones mejoran la seguridad, corrigen errores y optimizan el rendimiento. En Windows se usa **Windows Update** (descargas automáticas o manuales); desde Windows XP existe **BITS** (Background Intelligent Transfer Service) y en 2002 aparece **WSUS** para descargar desde un servidor y administrar de forma centralizada las actualizaciones de los equipos y servidores de la red. En Linux se usan los gestores de paquetes de cada distribución: **apt** en Debian y Ubuntu (con `sudo apt-get update` se actualiza la lista de paquetes y con `apt-get upgrade` se instalan las versiones descargadas), **YUM** en sistemas basados en RPM (Red Hat, Fedora, CentOS) y también **dnf** o **pacman** según la distribución; macOS emplea la App Store y `softwareupdate`. Los tipos de actualización son parche de seguridad, actualización de software y actualización de firmware.\n\n**4.5. Mantenimiento y reparación.** El mantenimiento se clasifica según dónde esté el técnico (in site, on site o remoto) y según la acción (correctivo para corregir errores, evolutivo para cubrir nuevas necesidades, adaptativo para cambios de hardware o software de base y perfectivo para revisar y detectar focos de problemas). Incluye eliminar temporales y caché (CCleaner o bleachbit), desfragmentar HDD (no SSD) y liberar espacio (Storage Sense o `du -sh`). Para reparar, Windows ofrece el **Modo Seguro**, **bootrec.exe** (con /FixMBR para el MBR, /FixBoot para el sector de arranque, /RebuildBCD para el almacén BCD y /ScanOS), **SFC.exe** (examina archivos protegidos y recupera la versión correcta) y **DISM.exe** (`/Online /Cleanup-Image /RestoreHealth` repara archivos con Windows Update), además de **CHKDSK**; Linux aporta el modo de recuperación, **fsck** y snapshots de btrfs o zfs; los Live CD permiten recuperar archivos de sistemas corruptos.\n\n**4.6. Monitorización.** El administrador comprueba a diario que funcionan el web, el proxy, el correo y el resto de servicios, y los ficheros de registro recogen la actividad. Para supervisar CPU, RAM y disco se usan el Administrador de tareas (Windows) y Htop (Linux), y el sistema de monitorización más implantado según el temario es **Nagios**. La monitorización puede ser proactiva (detecta problemas antes de que afecten al servicio) o reactiva (actúa cuando la incidencia ya se ha producido).\n\n**4.7. Copias de seguridad.** Hay tres métodos principales: **completa** (copia todo), **diferencial** (lo cambiado desde la última completa) e **incremental** (lo cambiado desde la última copia, sea completa o incremental). Se añaden el espejo (solo la última copia), el clonado (réplica exacta) y la protección continua (CDP). La estrategia **3-2-1** pide tres copias, en dos tipos de almacenamiento y una fuera del sitio. Los objetivos se miden con **RPO** (datos que se pueden perder), **RTO** (tiempo para restaurar), **MTD** (tiempo máximo tolerable sin servicio) y **WRT** (tiempo para volver al trabajo normal). Los **snapshots** son capturas puntuales para recuperación rápida y no sustituyen a las copias. Se optimizan con deduplicación, compresión y cifrado, y se apoyan en herramientas como Historial de archivos, Time Machine, rsync o tar, con copia local o en la nube.\n\n**4.8. Continuidad del servicio.** La continuidad se apoya en el CPD y en la redundancia. El estándar ANSI/TIA-942 clasifica los CPD en cuatro **Tier**: I (básico, sin redundancia, 99,671 % y hasta 28,8 horas anuales sin servicio), II (redundancia parcial, 99,741 % y 22 horas), III (mantenimiento concurrente, 99,982 % y 1,6 horas) y IV (tolerante a fallos, 99,995 % y 26,3 minutos). La redundancia puede ser N, N+1, 2N o 2N+1. La **virtualización** permite ejecutar varios sistemas en un servidor físico con hipervisores de tipo I (sobre el hardware: ESXi, Hyper-V, XenServer) o de tipo II (sobre un sistema anfitrión: Workstation, VirtualBox); el aprovisionamiento de almacenamiento puede ser thick (reserva todo) o thin (crece con el uso), y los escritorios virtuales (VDI) pueden ser persistentes o no persistentes. Los **contenedores** (Docker, Podman, LXC) y su orquestación (Docker Swarm, Kubernetes, OpenShift) facilitan el despliegue y el escalado. La **nube** ofrece IaaS, PaaS y SaaS en modalidad pública, privada, híbrida o comunitaria. Para la alta disponibilidad se usa el **clúster** (nodos cercanos y homogéneos, administración centralizada, balanceo y alta disponibilidad), frente a la **grid** (nodos distribuidos y heterogéneos orientada al cálculo). La automatización se apoya en SaltStack, Ansible, Terraform o Puppet, y la entrega en CI/CD.",
+          "table": {
+            "columns": [
+              "Epígrafe",
+              "Datos que hay que retener"
+            ],
+            "rows": [
+              [
+                "Administrador",
+                "Instalar, gestionar, mantener, copiar, monitorizar, documentar y resolver incidencias"
+              ],
+              [
+                "Servicios",
+                "SLA y SLM; prioridades urgente, alta, media y baja; matriz RACI; MTBF y MTTR"
+              ],
+              [
+                "Instalación",
+                "BIOS/MBR y UEFI/GPT; RAID 0, 1, 5, 6 y 10; cuentas y permisos"
+              ],
+              [
+                "Actualización",
+                "Windows Update, BITS y WSUS; apt, YUM, dnf y pacman; parches, software y firmware"
+              ],
+              [
+                "Mantenimiento",
+                "In site, on site y remoto; correctivo, evolutivo, adaptativo y perfectivo"
+              ],
+              [
+                "Reparación",
+                "bootrec (/FixMBR, /FixBoot, /RebuildBCD), SFC, DISM, CHKDSK, fsck y snapshots"
+              ],
+              [
+                "Copias",
+                "Completa, diferencial e incremental; 3-2-1; RPO, RTO, MTD y WRT; snapshots"
+              ],
+              [
+                "Continuidad",
+                "Tier I-IV; N, N+1, 2N y 2N+1; virtualización, contenedores, cloud y clúster"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "5. Tabla comparativa: administración en Windows y Linux",
+          "body": "La tabla resume las herramientas que el temario asocia a cada sistema para las tareas de administración más preguntadas.",
+          "table": {
+            "columns": [
+              "Tarea",
+              "Windows",
+              "Linux"
+            ],
+            "rows": [
+              [
+                "Usuarios y permisos",
+                "Panel de Control y Administrador de usuarios",
+                "adduser, chmod y chown"
+              ],
+              [
+                "Actualizaciones",
+                "Windows Update; BITS; WSUS centralizado",
+                "apt (Debian/Ubuntu), YUM/dnf (Red Hat) y pacman (Arch)"
+              ],
+              [
+                "Monitorización",
+                "Administrador de tareas",
+                "Htop"
+              ],
+              [
+                "Reparación del arranque",
+                "bootrec.exe (/FixMBR, /FixBoot, /RebuildBCD) y SFC/DISM",
+                "Modo de recuperación y fsck"
+              ],
+              [
+                "Copias",
+                "Historial de archivos",
+                "rsync, tar y snapshots de btrfs o zfs"
+              ],
+              [
+                "Mantenimiento",
+                "Modo Seguro, CHKDSK y System Restore",
+                "Recovery Mode, fsck y Live CD"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "6. Ejemplo práctico resuelto",
+          "body": "**Supuesto.** Un ayuntamiento va a montar un servidor para la aplicación de nóminas y contabilidad. Dispone de cuatro discos de 2 TB, quiere actualizaciones controladas, copias verificables y el menor corte de servicio posible.\n\n**Resolución.**\n\n- **Instalación y almacenamiento:** se instala el sistema desde USB o red, se particiona el disco y se configura un **RAID 5** con los cuatro discos: la capacidad útil es (4 − 1) × 2 TB = **6 TB**, con tolerancia al fallo de un disco. Si el equipo usa UEFI, el esquema de particionado será **GPT**.\n- **Usuarios y permisos:** se crean cuentas para el personal de nóminas y se separan los privilegios administrativos de las cuentas de trabajo; en Linux se gestionarían con adduser, chmod y chown.\n- **Actualizaciones:** en una red Windows se implanta **WSUS** para aprobar y distribuir las actualizaciones desde un servidor, ahorrando ancho de banda y evitando que cada equipo decida cuándo actualizar.\n- **Copias:** se aplica la regla **3-2-1** con una copia completa semanal, incrementales diarias y una copia externa cifrada; se define un **RPO** de 24 horas y un **RTO** de 4 horas, y se prueba la restauración trimestralmente.\n- **Monitorización:** se vigilan CPU, memoria, disco y servicio con el Administrador de tareas o Htop y con **Nagios**, revisando los registros y las alertas.\n- **Continuidad:** el CPD debe ser al menos **Tier III** para permitir mantenimiento concurrente; si se virtualiza el servidor, se usan hipervisores de tipo I y, para la alta disponibilidad, un **clúster** con balanceo; los snapshots se usan para recuperaciones rápidas, nunca como única copia.\n\n**Conclusión.** La disponibilidad no depende de un componente aislado: se construye con RAID, actualizaciones controladas, copias probadas, monitorización y un CPD con redundancia.",
+          "table": {
+            "columns": [
+              "Necesidad",
+              "Decisión",
+              "Dato clave"
+            ],
+            "rows": [
+              [
+                "Almacenamiento tolerante",
+                "RAID 5 con 4 discos de 2 TB",
+                "6 TB útiles y un fallo tolerado"
+              ],
+              [
+                "Actualizaciones controladas",
+                "WSUS",
+                "Descarga y distribución centralizada"
+              ],
+              [
+                "Copias verificables",
+                "3-2-1 con RPO 24 h y RTO 4 h",
+                "Restauración probada"
+              ],
+              [
+                "Continuidad",
+                "CPD Tier III y clúster",
+                "Mantenimiento concurrente y balanceo"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "7. Trampas típicas de examen",
+          "body": "Las confusiones más frecuentes de este tema son estas:\n\n- **Confundir Windows Update con WSUS**: Windows Update es el servicio de actualización del equipo; WSUS es el servidor que centraliza y distribuye actualizaciones en una red.\n- **Confundir BITS con un gestor de paquetes**: BITS es el servicio de transferencia en segundo plano de Windows; en Linux el gestor es apt, YUM, dnf o pacman.\n- **Confundir `apt-get update` con `apt-get upgrade`**: update actualiza la lista de paquetes; upgrade instala las versiones nuevas ya descargadas.\n- **Confundir los parámetros de bootrec**: /FixMBR repara el MBR, /FixBoot el sector de arranque, /RebuildBCD el almacén BCD y /ScanOS busca sistemas instalados.\n- **Confundir SFC, DISM y CHKDSK**: SFC verifica archivos protegidos, DISM repara la imagen del sistema y CHKDSK comprueba el disco.\n- **Confundir los tipos de mantenimiento**: correctivo corrige errores, evolutivo cubre nuevas necesidades, adaptativo responde a cambios de hardware o software de base y perfectivo revisa para detectar problemas.\n- **Confundir MTBF con MTTR**: MTBF es el tiempo medio entre fallos y MTTR el tiempo medio de reparación.\n- **Confundir copia diferencial e incremental**: la diferencial parte de la última completa; la incremental, de la última copia de cualquier tipo.\n- **Confundir RPO, RTO y MTD**: RPO mide datos que se pueden perder, RTO el tiempo de restauración y MTD el tiempo máximo tolerable sin servicio.\n- **Creer que un snapshot es una copia de seguridad**: es una captura puntual y no sustituye a la copia.\n- **Confundir hipervisor de tipo I con el de tipo II**: el tipo I se ejecuta sobre el hardware; el tipo II, sobre un sistema anfitrión.\n- **Confundir clúster con grid**: el clúster es cercano y homogéneo; la grid, distribuida y heterogénea.",
+          "table": {
+            "columns": [
+              "Confusión",
+              "Lo correcto"
+            ],
+            "rows": [
+              [
+                "Windows Update = WSUS",
+                "Windows Update actualiza el equipo; WSUS centraliza en red"
+              ],
+              [
+                "apt update = apt upgrade",
+                "update refresca la lista; upgrade instala versiones"
+              ],
+              [
+                "MTBF = MTTR",
+                "MTBF mide tiempo entre fallos; MTTR, tiempo de reparación"
+              ],
+              [
+                "Snapshot = copia",
+                "El snapshot es puntual y no sustituye a la copia"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "8. Resumen para memorizar",
+          "body": "**Administrador.** Conoce y diseña el sistema, lo hace fácil de usar, se anticipa y tiene plan de contingencia; instala, configura, actualiza, mantiene, repara, monitoriza, copia y documenta.\n\n**Servicios.** SLA con niveles medibles (tipo de servicio, soporte, seguridad, disponibilidad, tiempos y penalizaciones); SLM; prioridades urgente, alta, media y baja; RACI; MTBF y MTTR.\n\n**Instalación.** BIOS/MBR (2 TB y 4 particiones primarias) y UEFI/GPT; RAID 0, 1, 5, 6, 10 y JBOD con sus fórmulas de capacidad.\n\n**Actualizaciones.** Windows Update, BITS y WSUS; apt (Debian/Ubuntu), YUM (RPM), dnf y pacman; tipos: parche de seguridad, software y firmware.\n\n**Mantenimiento y reparación.** In site, on site y remoto; correctivo, evolutivo, adaptativo y perfectivo; bootrec (/FixMBR, /FixBoot, /RebuildBCD, /ScanOS), SFC, DISM, CHKDSK, fsck, Modo Seguro, Recovery Mode y snapshots.\n\n**Monitorización.** Administrador de tareas, Htop, Nagios y registros; proactiva y reactiva.\n\n**Copias.** Completa, diferencial e incremental; espejo, clonado y CDP; 3-2-1; RPO, RTO, MTD y WRT; deduplicación, compresión y cifrado; el snapshot no sustituye a la copia.\n\n**Continuidad.** CPD Tier I a IV (III: mantenimiento concurrente, 99,982 %); N, N+1, 2N y 2N+1; virtualización tipo I/II, VDI, thick/thin; contenedores y Kubernetes; IaaS, PaaS y SaaS; clúster frente a grid; Ansible, Puppet, Terraform y CI/CD."
+        },
+        {
+          "heading": "9. Casos tipo test comentados (15 preguntas)",
+          "body": "Los quince casos siguientes reproducen el estilo de pregunta del bloque III. Cada uno incluye la respuesta correcta y una explicación que recuerda el dato del temario; la referencia indica el epígrafe y la fuente donde está el contenido. Conviene contestarlos sin mirar la solución y revisar después solo los fallos."
+        },
+        {
+          "heading": "10. Fuentes citadas",
+          "body": "El tema se ha redactado a partir de `data/fuentes/III.18.txt`, que reúne el volcado de `Tema 6.docx` (funciones y tareas del administrador, gestión de incidencias, actualizaciones, mantenimiento y reparación) y de `Bloque 4 Actualizado 2026.docx` (administración del sistema operativo, actualizaciones, backups, RAID, CPD, virtualización, contenedores, cloud, clústeres y automatización). Las citas por apartado aparecen en la lista `sources` y en la referencia de cada caso tipo test. No se han copiado párrafos literales y no se han añadido datos que no figuren en esas fuentes; en particular, el volcado no desarrolla Active Directory, DNS, DHCP, GPO, systemd ni SSH, por lo que no se incluyen contenidos de esas materias."
+        }
+      ],
       "practiceSlug": "iii-18"
     },
     "III.19": {
@@ -4647,6 +4865,82 @@
         "Creer que `HttpOnly` cifra la cookie: impide que JavaScript la lea, pero no la cifra; para eso está HTTPS con `Secure`."
       ],
       "reviewedAt": "2026-11-10",
+      "longSections": [
+        {
+          "heading": "1. Ficha oficial del tema",
+          "body": "**Tema IV.31 — Desarrollo web.** Bloque IV del temario común C1. Se estudia con dos fuentes principales: **Tema 13** (arquitectura de Internet, servicios y protocolos HTTP, HTTPS y SSL/TLS) y **Bloque 3 Actualizado 2026** (lenguajes, Jakarta EE, servicios web SOAP y REST, HTML5, CSS, JSON y XML, accesibilidad y seguridad web). Su núcleo es: **arquitectura cliente-servidor** y ciclo HTTP; **HTML5** (elementos, formularios, APIs y DOM); **JavaScript** (DOM, eventos y AJAX); **CSS** (tipos, selectores, modelo de caja y prioridad); **frontend y backend** (MVC, Servlets, JAX-RS, frameworks y SPA); **APIs y servicios web** (SOAP, UDDI, WSDL, REST y sus métodos); **autenticación y sesiones**; **seguridad web** (propiedades, HTTPS/TLS y pruebas con OWASP ZAP y Burp Suite) y **accesibilidad** (WCAG 2.2, niveles A/AA/AAA y diseño universal). Conecta con el tema **IV.30** (programación) y con los temas de bases de datos (IV.27-IV.29) por la capa de persistencia."
+        },
+        {
+          "heading": "2. Índice de epígrafes",
+          "body": "El tema se estudia en este orden: (1) arquitectura cliente-servidor y la Web; (2) HTTP: mensajes, métodos y tipos de respuesta; (3) HTTPS y la seguridad de la capa de transporte (SSL/TLS); (4) HTML5: estructura, elementos, formularios y APIs; (5) el DOM y JavaScript: selección, manipulación, eventos y AJAX; (6) CSS: tipos, selectores, modelo de caja y prioridad; (7) frontend y backend: MVC, Jakarta EE, Servlets, JAX-RS y frameworks; (8) servicios web: SOAP, UDDI, WSDL y REST; (9) formatos de intercambio: JSON, XML, DTD, CSV y SGML; (10) autenticación y gestión de sesiones; (11) seguridad web y pruebas de seguridad; (12) accesibilidad WCAG y diseño universal. Para el test pesan los **métodos HTTP**, la diferencia **SOAP/REST**, las **etiquetas y APIs de HTML5**, la **prioridad de CSS**, **JSON/XML** y los **niveles WCAG**."
+        },
+        {
+          "heading": "3. Introducción y contexto",
+          "body": "El desarrollo web cubre cómo se construye y se ejecuta una aplicación que el usuario usa a través de un navegador: qué protocolos transportan la información, cómo se estructura la página, cómo se le da estilo y comportamiento, cómo se comunica con el servidor y cómo se protege y se hace accesible.\n\nLa idea que ordena el tema es la **separación de responsabilidades**. En el cliente (frontend), HTML aporta la estructura, CSS la presentación y JavaScript el comportamiento. En el servidor (backend), la lógica de negocio atiende peticiones, accede a los datos y devuelve respuestas, normalmente en JSON o XML. Entre ambos media **HTTP**, un protocolo sin estado: cada petición debe llevar lo necesario para ser entendida, y la sesión del usuario se gestiona aparte.\n\nSobre esa base se apoyan los **servicios web** (SOAP y REST), los **frameworks** (Bootstrap para estilos, Angular para SPA) y los requisitos de **accesibilidad** y **seguridad** que hoy son obligatorios en el sector público. Es también el complemento natural del tema IV.30: allí se estudian los lenguajes y su lógica; aquí, cómo se aplican a la web y cómo se comunican las piezas."
+        },
+        {
+          "heading": "4. Desarrollo por epígrafe",
+          "body": "**4.1 Arquitectura web y HTTP.** La Web se basa en **HTTP** (protocolo de aplicación, cliente-servidor y **sin estado**) y en **HTML** para crear las páginas; CSS aporta el formato y lenguajes de script como JavaScript la funcionalidad (Tema 13, 3 y 5). HTTP usa el puerto **TCP 80** y funciona por transacciones: el cliente abre una conexión TCP, envía una **petición** (método, URL y mensaje MIME con los parámetros) y el servidor devuelve una **respuesta** con información de estado, código de éxito o error y cuerpo. Los métodos básicos del material son **GET** (obtener la información identificada por la URL), **HEAD** (idéntico a GET pero sin cuerpo), **POST** (aceptar la información adjunta) y **PUT** (aceptar una entidad de información adjunta). Las respuestas se clasifican en informativas, de redirección, de error del cliente y de error del servidor.\n\n**4.2 HTTPS y SSL/TLS.** **HTTPS** es HTTP sobre **SSL/TLS**, con puerto por defecto **TCP 443**, y proporciona **cifrado y autenticación** de servidor y cliente (Tema 13, 5). El servidor TLS espera primero un mensaje de tipo ClientHello; el cliente debe comprobar la **identidad del servidor** en el certificado y avisar si el nombre no coincide. SSL/TLS sitúa una capa de seguridad entre transporte y aplicación y consta de dos capas: **registro** y **handshake**. En el handshake se negocian el identificador de sesión, el certificado X509, la compresión, los algoritmos de cifrado y la clave maestra; el acuerdo sigue cuatro pasos: capacidades de seguridad, autenticación del servidor e intercambio de clave, autenticación del cliente e intercambio de clave, y finalización.\n\n**4.3 HTML5, DOM y JavaScript.** HTML es un lenguaje de **marcado** cuyos elementos tienen atributos y contenido y buscan la mayor **semántica** posible (Bloque 3, TEMA 7). HTML5 incorpora APIs muy citadas: **Canvas** (gráficos), **Geolocation** (ubicación), **Web Storage** (datos en cliente), **Web Workers** (tareas en segundo plano sin afectar al rendimiento), **WebSockets** (comunicación en tiempo real), **WebRTC** (audio y vídeo), **Web Audio** y **Drag and Drop**. Los motores de renderizado son Blink (Chrome y Edge), Gecko (Firefox), WebKit (Safari) y Trident (Internet Explorer hasta la 11). Los **formularios** se crean con `<form>`, cuyo atributo **action** indica la URL de envío y **method** el método HTTP, que puede ser **GET** o **POST**; se organizan con `<fieldset>`, `<legend>`, `<label>`, `<input>`, `<select>`, `<textarea>`, etc. JavaScript trabaja sobre el **DOM**, representación en árbol de la página: `getElementById`, `getElementsByTagName`, `querySelector` (primer elemento que coincide con el selector CSS) y `querySelectorAll`; puede navegar por el árbol (parentNode, childNodes, nextSibling) y modificar contenido con `innerHTML`. Los eventos (onclick, onchange, onsubmit, onload…) conectan la interacción del usuario con el código, y **AJAX** permite actualizar partes de la página sin recargarla.\n\n**4.4 CSS.** Las hojas de estilo en cascada definen la presentación. Hay tres tipos (Bloque 3, TEMA 7): **interno** (etiqueta `<style>` en el head), **externo** (archivo enlazado con `<link>`) y **en línea** (atributo `style` de un elemento, que afecta solo a ese elemento). Se usan **selectores** (etiqueta, clase, id, atributos y pseudo-clases como `:invalid` y `:required`), el **modelo de caja** (contenido, relleno, borde y margen) y dos comportamientos básicos: **inline** y **block**. La **prioridad** se resuelve por importancia (`!important`), origen, especificidad y, a igualdad, por el orden de aparición: gana la regla que aparece más tarde. Existen preprocesadores como LESS, SASS, STYLUS y PostCSS.\n\n**4.5 Frontend, backend y frameworks.** La arquitectura **cliente-servidor** reparte responsabilidades: el cliente inicia peticiones y el servidor las atiende (Bloque 3, TEMA 6). En el backend Java empresarial, **Jakarta EE** define una arquitectura de capas con **Servlets** (procesan solicitudes HTTP con GET y POST), **JAX-RS** (servicios REST con GET, POST, PUT y DELETE), **WebSockets**, **EJB** (lógica de negocio), **CDI** (inyección de dependencias) y **JPA** (persistencia); desde Jakarta EE 9 los paquetes pasan de `javax.*` a `jakarta.*` y la seguridad se gestiona con **Jakarta Security** (JAAS queda como tecnología heredada). El patrón **MVC** separa datos y lógica de negocio de la interfaz y del módulo que gestiona eventos y comunicaciones. En el frontend, **Bootstrap** es un framework HTML y CSS de diseño, **Angular** es un framework de Google para aplicaciones **SPA** (Single Page Application), **Modernizr** detecta compatibilidad con HTML5 y CSS3 y **Web Workers** ejecuta scripts en segundo plano.\n\n**4.6 APIs y servicios web: SOAP y REST.** **SOAP** es un protocolo estándar basado en **XML** que define cómo dos objetos en procesos diferentes se comunican; su mensaje tiene Envelope (obligatorio), Header, Body (obligatorio) y Fault, y se apoya en tres características: extensibilidad (seguridad y WS-routing), neutralidad (puede ir sobre HTTP, SMTP o JMS) e independencia (cualquier modelo de programación). **UDDI** es el registro de servicios y **WSDL** el documento XML que describe la forma de comunicación, los requisitos de protocolo y el formato de los mensajes (con Types, Message, PortType, Binding y Service). **REST** es un **estilo de arquitectura** basado en HTTP y **URI**: cada recurso es direccionable por su URI, la arquitectura es cliente-servidor, **sin estado** (cada petición lleva toda la información), cacheable y en capas. Sus métodos son GET (obtener), POST (crear), PUT (actualizar o reemplazar) y DELETE (eliminar), más PATCH (modificación parcial), TRACE, OPTIONS, CONNECT y HEAD. REST es más simple, flexible y rápido que SOAP y admite JSON y XML; SOAP se reserva para aplicaciones empresariales de misión crítica.\n\n**4.7 Formatos de intercambio.** **JSON** es un formato de texto sencillo para intercambiar datos, subconjunto de la notación de objetos de JavaScript, más liviano que XML, con dos estructuras: **objetos** (pares clave-valor entre llaves) y **arreglos** (valores entre corchetes); los valores pueden ser cadenas, números, booleanos, arreglos, objetos o null. **XML** es un lenguaje de marcado extensible: un documento es **bien formado** si cumple las reglas sintácticas (un único elemento raíz, etiquetas de cierre…) y es **válido** si además es conforme a una **DTD** o a un **XML Schema**; los namespaces evitan colisiones de nombres. **CSV** guarda datos tabulares separados por comas o punto y coma y **SGML** es el modelo del que provienen HTML y XML.\n\n**4.8 Autenticación, sesiones y seguridad web.** Como HTTP es **sin estado**, la autenticación y la sesión se gestionan aparte: el cliente envía credenciales por un canal seguro (HTTPS) y el servidor valida la identidad; en Java empresarial se usan **JAAS** (heredado) y **Jakarta Security**, y en ASP.NET la sesión puede guardarse en el proceso (**InProc**), en un servicio de Windows (**StateServer**) o en una base de datos SQL Server. La seguridad web se entiende con las propiedades de la información: **disponibilidad, integridad, confidencialidad, autenticidad y trazabilidad**; a ellas se suman el cifrado y la autenticación de TLS y la validación del certificado del servidor. Las pruebas de seguridad verifican los mecanismos de control de acceso y se apoyan en herramientas como **OWASP ZAP** y **Burp Suite**. El material no desarrolla ataques concretos como XSS o CSRF: se limita a las propiedades y a las pruebas.\n\n**4.9 Accesibilidad y usabilidad.** Las **WCAG 2.2** se organizan en **4 principios, 13 pautas, 78 criterios de conformidad y 580 técnicas** suficientes y recomendables (Bloque 3, TEMA 8). Hay tres niveles: **A** (mínimo), **AA** (recomendado y exigido habitualmente en España y la UE) y **AAA** (máximo). Para evaluarla se usan herramientas como **AChecker**, **WAVE**, **Snook** (contraste), **TPGi**, **Axe DevTools**, **Freedom Scientific** y **SortSite**, y lectores de pantalla como JAWS, NVDA, VoiceOver, ORCA y Talkback. El **diseño responsivo** adapta la visualización a distintos dispositivos, y el **diseño universal** persigue productos utilizables por el mayor número de personas sin adaptaciones especiales, con siete principios: uso equitativo, flexibilidad, uso simple e intuitivo, información perceptible, tolerancia al error, esfuerzo físico bajo y tamaño y espacio para el acceso."
+        },
+        {
+          "heading": "5. Tabla comparativa: SOAP frente a REST",
+          "body": "La confusión más habitual es tratar SOAP y REST como si fueran lo mismo. Esta tabla resume sus diferencias según el material.",
+          "table": {
+            "columns": [
+              "Aspecto",
+              "SOAP",
+              "REST"
+            ],
+            "rows": [
+              [
+                "Enfoque",
+                "Protocolo de mensajería con formato estructurado",
+                "Estilo de arquitectura basado en HTTP y URI"
+              ],
+              [
+                "Formato",
+                "XML (Envelope, Header, Body y Fault)",
+                "Admite JSON y XML"
+              ],
+              [
+                "Complejidad y rendimiento",
+                "Más complejo; define reglas de estructura y procesamiento",
+                "Más simple, flexible y rápido; permite cachear"
+              ],
+              [
+                "Estado",
+                "Puede transportar estado en el mensaje",
+                "Sin estado: cada petición lleva toda la información"
+              ],
+              [
+                "Uso típico",
+                "Aplicaciones empresariales de misión crítica que exigen seguridad y fiabilidad",
+                "Aplicaciones web y móviles"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "6. Ejemplo práctico resuelto",
+          "body": "**Supuesto.** Un ayuntamiento quiere un portal web para que la ciudadanía presente solicitudes y consulte su estado. Debe elegir protocolos, estructura y seguridad, y cumplir accesibilidad. Razona la solución.\n\n**Resolución.** (1) **Canal y protocolo:** el portal se sirve por **HTTPS** (HTTP sobre TLS, puerto 443), de modo que las credenciales y los datos viajan cifrados y el navegador puede validar el certificado del servidor. (2) **Frontend:** HTML5 semántico para la estructura, CSS externo para la presentación y JavaScript para la interacción; un framework como **Bootstrap** acelera el diseño responsivo y, si la aplicación es de una sola página, **Angular** permite construir una **SPA**. (3) **Backend:** una API **REST** con recursos como `/solicitudes` y métodos GET (listar y consultar), POST (crear) y PUT (actualizar), que responde en **JSON**; las operaciones se agrupan con el patrón **MVC**. (4) **Autenticación:** el usuario se identifica en el servidor por HTTPS; como HTTP es sin estado, la sesión se gestiona en el servidor (por ejemplo, almacenada en base de datos). (5) **Seguridad:** se limita el acceso según roles, se registra la actividad (trazabilidad) y se realizan pruebas de seguridad con **OWASP ZAP**. (6) **Accesibilidad:** se toman como referencia las **WCAG 2.2** nivel **AA**, con formularios etiquetados, contraste suficiente y navegación por teclado, y se comprueba con **Axe DevTools** o **WAVE**.\n\n**Conclusión.** Cada decisión responde a un requisito: HTTPS a la confidencialidad y autenticidad, REST a la comunicación entre frontend y backend, JSON al intercambio de datos y WCAG AA a la accesibilidad exigida."
+        },
+        {
+          "heading": "7. Trampas típicas de examen",
+          "body": "- Confundir **HTTP** (puerto 80) con **HTTPS** (HTTP sobre SSL/TLS, puerto 443).\n- Confundir los métodos: **GET** obtiene, **POST** crea o envía datos, **PUT** actualiza o reemplaza y **DELETE** elimina; **PATCH** aplica modificaciones parciales.\n- Creer que HTTP mantiene el estado de la sesión: HTTP es **sin estado**; REST también exige **statelessness**.\n- Confundir **SOAP** (protocolo XML con Envelope, Header, Body y Fault) con **REST** (estilo de arquitectura sobre HTTP y URI).\n- Confundir **UDDI** (registro de servicios) con **WSDL** (descripción XML del servicio).\n- Confundir **XML bien formado** (cumple la sintaxis) con **XML válido** (además es conforme a una DTD o a un XML Schema).\n- Confundir **JSON** (objetos entre llaves y arreglos entre corchetes) con **XML** (etiquetas) y con **CSV** (datos tabulares sin estándar).\n- Confundir los tipos de CSS: **interno** (`<style>`), **externo** (`<link>`) y **en línea** (`style` en el elemento).\n- Olvidar la prioridad de CSS: gana `!important`, después la especificidad y, a igualdad, la regla que aparece más tarde.\n- Confundir **`querySelector`** (primer elemento que coincide con el selector) con **`querySelectorAll`** (todos) y con **`getElementById`** (por id).\n- Confundir los frameworks: **Bootstrap** (HTML y CSS), **Angular** (SPA de Google), **Modernizr** (detección de compatibilidad) y **Web Workers** (segundo plano).\n- Confundir los niveles **WCAG**: A (mínimo), AA (recomendado y exigido habitualmente en España y la UE) y AAA (máximo).\n- Confundir los motores de renderizado: **Blink** (Chrome y Edge), **Gecko** (Firefox), **WebKit** (Safari) y **Trident** (Internet Explorer)."
+        },
+        {
+          "heading": "8. Resumen para memorizar",
+          "body": "**Lo que hay que memorizar.**\n\n1. **HTTP**: protocolo de aplicación, cliente-servidor, sin estado, puerto **80**; HTTPS es HTTP sobre **SSL/TLS**, puerto **443**, con cifrado y autenticación.\n2. **Métodos HTTP**: GET (obtener), HEAD (como GET sin cuerpo), POST (enviar/crear), PUT (actualizar o reemplazar), DELETE (eliminar) y PATCH (parcial).\n3. **HTML5**: elementos con atributos y contenido; APIs Canvas, Geolocation, Web Storage, Web Workers, WebSockets, WebRTC, Web Audio y Drag and Drop; motores Blink, Gecko, WebKit y Trident.\n4. **Formularios**: `<form>` con **action** (URL) y **method** (GET o POST); fieldset, legend, label, input, select, textarea.\n5. **DOM y JavaScript**: árbol de la página; getElementById, querySelector, querySelectorAll, innerHTML; eventos y AJAX.\n6. **CSS**: interno, externo y en línea; selectores y pseudo-clases; modelo de caja; inline y block; prioridad por importancia, especificidad y orden.\n7. **Backend**: MVC; Jakarta EE con Servlets, JAX-RS, WebSockets, EJB, CDI y JPA; Jakarta Security.\n8. **Servicios web**: SOAP (XML, Envelope/Header/Body/Fault, UDDI y WSDL) frente a REST (HTTP y URI, sin estado, cacheable, GET/POST/PUT/DELETE).\n9. **Formatos**: JSON (objetos y arreglos; cadenas, números, booleanos, null), XML (bien formado y válido con DTD/XSD), CSV y SGML.\n10. **Accesibilidad**: WCAG 2.2 (4 principios, 13 pautas, 78 criterios y 580 técnicas), niveles A/AA/AAA; en España y la UE se exige habitualmente **AA**."
+        },
+        {
+          "heading": "9. Casos tipo test comentados (15 preguntas)",
+          "body": "**1.** ¿Qué protocolo permite la transmisión de datos de la Web y en qué puerto trabaja por defecto? **Respuesta: a)** HTTP, puerto TCP 80 (Tema 13, 5).\n\n**2.** ¿Qué método HTTP solicita obtener la información identificada por la URL? **Respuesta: b)** GET (Tema 13, 5).\n\n**3.** En una API REST, ¿qué método se usa normalmente para crear un recurso nuevo? **Respuesta: c)** POST (Bloque 3, TEMA 6).\n\n**4.** ¿Cuál es una diferencia clave entre SOAP y REST? **Respuesta: d)** SOAP es un protocolo de mensajería basado en XML y REST un estilo de arquitectura basado en HTTP y URI (Bloque 3, TEMA 6).\n\n**5.** ¿Qué característica de REST implica que cada petición debe contener toda la información necesaria? **Respuesta: a)** La ausencia de estado (statelessness) (Bloque 3, TEMA 6).\n\n**6.** ¿Qué protocolo y puerto utiliza HTTPS? **Respuesta: b)** HTTP sobre SSL/TLS, puerto 443 (Tema 13, 5).\n\n**7.** ¿Qué lenguaje define la estructura y el significado de una página web? **Respuesta: c)** HTML (Bloque 3, TEMA 7).\n\n**8.** ¿Cómo se enlaza una hoja de estilos externa en HTML? **Respuesta: d)** Con la etiqueta `<link>` (Bloque 3, TEMA 7).\n\n**9.** ¿Cómo se aplica un estilo directamente a un elemento HTML? **Respuesta: a)** Con el atributo `style` del elemento (CSS en línea) (Bloque 3, TEMA 7).\n\n**10.** ¿Qué método del DOM devuelve el primer elemento que coincide con un selector CSS? **Respuesta: b)** `querySelector` (Bloque 3, TEMA 2).\n\n**11.** En JSON, ¿qué estructura es una colección de pares clave-valor encerrada entre llaves? **Respuesta: c)** Un objeto (Bloque 3, TEMA 7).\n\n**12.** ¿Cuándo es válido un documento XML? **Respuesta: d)** Cuando además de estar bien formado es conforme a una DTD o a un XML Schema (Bloque 3, TEMA 7).\n\n**13.** ¿Qué nivel de conformidad WCAG se exige habitualmente en España y la UE? **Respuesta: a)** El nivel AA (Bloque 3, TEMA 8).\n\n**14.** ¿Qué framework de Google se utiliza para aplicaciones web SPA? **Respuesta: b)** Angular (Bloque 3, TEMA 8).\n\n**15.** ¿Qué API de HTML5 ejecuta tareas en segundo plano sin afectar al rendimiento de la página? **Respuesta: c)** Web Workers (Bloque 3, TEMA 7)."
+        },
+        {
+          "heading": "10. Fuentes citadas",
+          "body": "- **Tema 13.docx**, apartados 3, 4 y 5: World Wide Web, DNS y protocolos HTTP, HTTPS y SSL/TLS (DOCX, sin paginación fija).\n- **Bloque 3 Actualizado 2026.docx**, TEMA 6 (servicios web SOAP, UDDI, WSDL y REST), TEMA 7 (HTML5, CSS, JSON, XML y CSV) y TEMA 8 (WCAG, diseño universal y seguridad web); también el apartado de JavaScript y DOM.\n- **IV.31.txt**: texto consolidado de las fuentes anteriores (uso interno de trabajo).\n\nNo se copian párrafos literales; se sintetiza y se ordena el contenido. El material no desarrolla ataques concretos como XSS o CSRF ni mecanismos de sesión basados en cookies: la seguridad se ha redactado con lo que sí recoge (propiedades, HTTPS/TLS, autenticación y herramientas de prueba)."
+        }
+      ],
       "practiceSlug": "iv-31"
     },
     "IV.32": {
@@ -4737,6 +5031,82 @@
         "Creer que basta con reintentar: sin idempotencia, un reintento en una operación sensible produce duplicados."
       ],
       "reviewedAt": "2026-11-10",
+      "longSections": [
+        {
+          "heading": "1. Ficha oficial del tema",
+          "body": "**Tema IV.32 · Interoperabilidad e integración.** Bloque IV (Datos y desarrollo) del temario común de Técnicos Auxiliares de Informática. Se apoya en el tema IV.31 (desarrollo web), que explica la parte visible de los sistemas que aquí se conectan.\n\n**Objetivo de examen.** Distinguir los formatos de intercambio (XML, JSON y CSV), reconocer los elementos de los servicios web (SOAP, WSDL, UDDI y REST), entender las arquitecturas de integración (cliente-servidor, capas, SOA y microservicios) y aplicar criterios de seguridad e idempotencia al conectar sistemas. Dificultad **media**: la terminología es amplia y el examen mezcla siglas parecidas (JAX-WS/JAX-RS, SOAP/REST, WSDL/UDDI).\n\n**Fuentes de este tema.** El consolidado data/fuentes/IV.32.txt, formado por Tema 7.docx (gestión y seguridad de bases de datos) y Bloque 3 Actualizado 2026.docx (servicios web, Jakarta EE, .NET, XML/DTD, JSON, CSV y seguridad de aplicaciones web). (Fuente: data/fuentes/IV.32.txt.)"
+        },
+        {
+          "heading": "2. Índice de epígrafes",
+          "body": "Este tema se ordena en diez apartados:\n\n1. Ficha oficial del tema: ubicación, objetivo, dificultad y fuentes.\n2. Índice de epígrafes: el mapa que está leyendo.\n3. Introducción y contexto: qué significa interoperar y por qué necesitamos formatos y protocolos comunes.\n4. Desarrollo por epígrafe: formatos de intercambio, servicios web SOAP/WSDL/UDDI/REST, arquitecturas de integración, plataformas (Jakarta EE y .NET), colas, idempotencia y seguridad.\n5. Tabla comparativa SOAP frente a REST.\n6. Ejemplo práctico resuelto.\n7. Trampas típicas de examen.\n8. Resumen para memorizar.\n9. Casos tipo test comentados (15 preguntas).\n10. Fuentes citadas.\n\nLos epígrafes oficiales (formatos, servicios web, integración, idempotencia y seguridad) se cubren en el apartado 4; los casos del apartado 9 coinciden con los quince testCases del fichero. (Fuente: data/fuentes/IV.32.txt.)"
+        },
+        {
+          "heading": "3. Introducción y contexto",
+          "body": "Interoperar es conseguir que sistemas construidos con tecnologías distintas se entiendan y compartan datos. En una administración conviven aplicaciones Java, servicios .NET, bases de datos relacionales y sistemas heredados; integrarlas exige acordar **formatos** (cómo se representa la información) y **protocolos** (cómo se transporta y se invoca).\n\nLos servicios web son la respuesta clásica a ese problema: OASIS y W3C son los comités que definen su arquitectura y sus reglas. En esa arquitectura hay tres papeles: el proveedor que publica el servicio, el solicitante que lo consume y el intermediario que facilita el encuentro entre ambos. Sobre esa base, SOAP aporta un protocolo de mensajería basado en XML, WSDL describe el servicio y UDDI actúa como registro de negocios y servicios; REST propone un estilo arquitectónico apoyado en HTTP y URI.\n\nLa integración también se plantea en el diseño: la arquitectura cliente-servidor y las arquitecturas por capas separan presentación, lógica y datos; la orientación a servicios (SOA) convierte funciones en servicios reutilizables; y los microservicios componen funcionalidades pequeñas. Este tema estudia esos conceptos y su reflejo en las plataformas Jakarta EE y .NET. (Fuentes: Bloque 3 Actualizado 2026.docx, Tema 6 de servicios web y Tema 5 de Jakarta EE; Tema 7.docx, seguridad de la base de datos.)"
+        },
+        {
+          "heading": "4. Desarrollo por epígrafe",
+          "body": "**1) Formatos de intercambio.** **XML** es un lenguaje de marcado extensible, derivado de SGML, que almacena datos de forma legible. Todo documento tiene un prólogo (versión y, si procede, DOCTYPE) y un cuerpo de elementos; debe existir un único elemento raíz, las etiquetas deben anidarse correctamente, todos los elementos tienen cierre (o la forma abreviada de etiqueta vacía), los nombres distinguen mayúsculas y minúsculas y los valores de los atributos van entre comillas. Los espacios de nombres (NameSpace) son una recomendación del W3C para que elementos y atributos tengan nombres únicos. Un documento está **bien formado** si cumple la sintaxis; es **válido** si además respeta una DTD o un XML Schema. La **DTD** define la estructura (elementos, atributos, entidades, notaciones y cardinalidades) y puede ser interna, externa o mixta, y de uso público (PUBLIC) o privado (SYSTEM); sus declaraciones típicas son ELEMENT, ATTLIST, ENTITY y NOTATION, con #PCDATA y CDATA para el contenido analizable o literal.\n\n**JSON** es un formato de texto para el intercambio de datos, subconjunto de la notación de objetos de JavaScript y hoy independiente del lenguaje; se presenta como alternativa más simple y ligera al XML y se usa con AJAX. Su sintaxis se apoya en objetos (pares clave-valor entre llaves) y arrays (listas entre corchetes); los valores pueden ser cadenas, números, booleanos, arrays, objetos o null. Los ficheros llevan extensión .json y herramientas como JSONLint permiten validarlos. **CSV** es un formato de texto tabular en el que cada fila es un registro y cada columna un campo, separados por coma o punto y coma y con saltos de línea entre registros; no está estandarizado y se usa mucho para intercambiar datos entre aplicaciones.\n\n**2) Servicios web.** **SOAP** define cómo dos objetos de procesos distintos se comunican intercambiando datos XML. Su mensaje es un documento XML con Envelope (obligatorio), Header (extensiones), Body (obligatorio) y Fault (errores). Se apoya en tres características, conocidas como E.N.I: extensibilidad (permite seguridad y WS-routing), neutralidad (puede viajar sobre HTTP, SMTP o JMS) e independencia del modelo de programación. **UDDI** es el registro accesible por mensajes SOAP que conduce a documentos WSDL y organiza la información en páginas blancas (datos de contacto), amarillas (categorización industrial) y verdes (información técnica). **WSDL** es un documento XML que describe la forma de comunicación, los requisitos del protocolo y el formato de los mensajes; se estructura en Types, Message, PortType, Binding y Service.\n\n**REST** es un estilo de arquitectura para crear servicios web basado en HTTP y URI: cada recurso es direccionable por su URI y la arquitectura es cliente-servidor. Sus características son stateless (cada petición lleva toda la información), cacheabilidad, cliente-servidor y sistema por capas. Sus métodos son GET (obtener), POST (crear), PUT (actualizar o reemplazar, o crear si no existe) y DELETE (eliminar), además de PATCH, TRACE, OPTIONS, CONNECT y HEAD. Frente a SOAP, REST es un estilo y no un protocolo, es más sencillo, suele rendir mejor y encaja en aplicaciones web y móviles; SOAP es un protocolo de mensajería más complejo y se prefiere en entornos empresariales y de misión crítica que exigen alta seguridad y fiabilidad.\n\n**3) Arquitecturas de integración.** En la arquitectura **cliente-servidor** el cliente inicia peticiones y espera respuestas, mientras el servidor espera, procesa y responde; puede ser stateless o stateful. Frente a ella, la arquitectura P2P hace que los nodos actúen a la vez como clientes y servidores. La arquitectura de **dos capas** admite cliente grueso (la lógica está en el cliente y el servidor gestiona datos) o cliente ligero (el cliente solo presenta y el servidor procesa); la de **tres capas** separa presentación, lógica de negocio y datos (CRUD), y puede ampliarse a n capas. La **SOA** crea servicios reutilizables e independientes, con bajo acoplamiento y alta cohesión, que se comunican por interfaces bien definidas con HTTP, SOAP o REST y formatos XML o JSON. Los **microservicios** componen funcionalidades a partir de servicios pequeños y usan dos estrategias de composición: coreografía y orquestación.\n\n**4) Plataformas de integración.** En **Jakarta EE** los componentes (Servlets, EJBs, JSP) se ejecutan en contenedores que ofrecen servicios (seguridad, red, logging, integridad). Sus capas son cliente, web, negocio y datos/EIS; para integración destacan JAX-RS (servicios REST), JAX-WS y JAXB (servicios web y XML), JPA/Hibernate/JDBC (persistencia), JMS (mensajería asíncrona), los Message-Driven Beans (procesan mensajes), CDI (inyección y desacoplamiento), JTA (transacciones distribuidas) y DTO (objetos para transferir datos entre capas sin acoplar entidades y presentación). La seguridad se gestiona con Jakarta Security, quedando JAAS como tecnología heredada. En **.NET**, ADO.NET ofrece proveedores de datos (Connection, Command, DataReader y DataAdapter) y objetos en memoria (DataSet y DataTable); el modelo conectado usa Connection, Command y DataReader y el desconectado trabaja con DataAdapter y DataSet. ASP.NET cubre aplicaciones y servicios web, y Bibliotecas como System.Text.Json gestionan JSON.\n\n**5) Colas y asincronía.** La mensajería asíncrona desacopla emisor y receptor: el primero publica un mensaje y el segundo lo procesa cuando puede. En Jakarta EE ese papel lo cubren Jakarta Messaging (JMS) y los Message-Driven Beans; la fuente no entra en productos concretos de colas, así que basta con retener el concepto: comunicación por mensajes frente a la llamada síncrona.\n\n**6) Idempotencia.** Aunque la fuente no emplea el término, en integración se llama idempotencia a la propiedad por la que repetir la misma petición produce el mismo efecto que hacerla una vez. Los métodos GET, PUT y DELETE son idempotentes; POST no lo es, porque cada envío puede crear un recurso nuevo. Es clave al reintentar operaciones tras un fallo de red.\n\n**7) Seguridad.** En una aplicación web la seguridad se divide en disponibilidad, integridad, confidencialidad, autenticidad y trazabilidad. En la integración, SOAP incorpora la seguridad entre sus extensiones (junto a WS-routing), Jakarta EE la resuelve con Jakarta Security y la fuente recuerda que SOAP se prefiere cuando se exige alta seguridad y fiabilidad. No conviene confundir la seguridad del canal con la del mensaje: son capas distintas. (Fuentes: Bloque 3 Actualizado 2026.docx, Tema 6 de servicios web, Tema 5 de Jakarta EE, .NET/ADO.NET, XML/DTD, JSON, CSV y seguridad web; Tema 7.docx, seguridad de la base de datos.)"
+        },
+        {
+          "heading": "5. Tabla comparativa: SOAP frente a REST",
+          "body": "Resumen de las diferencias que recoge la fuente entre los dos enfoques de servicios web. (Fuente: Bloque 3 Actualizado 2026.docx, Tema 6 de servicios web.)",
+          "table": {
+            "columns": [
+              "Criterio",
+              "SOAP",
+              "REST"
+            ],
+            "rows": [
+              [
+                "Naturaleza",
+                "Protocolo de mensajería con formato estructurado",
+                "Estilo de arquitectura sobre HTTP y URI"
+              ],
+              [
+                "Formato del mensaje",
+                "Documento XML con Envelope, Header, Body y Fault",
+                "Recursos con soporte de JSON y XML"
+              ],
+              [
+                "Complejidad",
+                "Mayor: define reglas de estructura y procesamiento",
+                "Menor: se apoya en HTTP"
+              ],
+              [
+                "Rendimiento y caché",
+                "Más pesado; pensado para fiabilidad empresarial",
+                "Suele ser más rápido y sus respuestas se pueden cachear"
+              ],
+              [
+                "Uso típico",
+                "Aplicaciones empresariales y de misión crítica con alta seguridad",
+                "Aplicaciones web y móviles"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "6. Ejemplo práctico resuelto",
+          "body": "**Supuesto.** Un organismo quiere que su sistema de becas consulte el estado de un expediente en un servicio externo y registre una solicitud. Debe elegir entre un servicio REST y uno SOAP, enviar datos en un formato común y repetir la operación sin duplicar efectos si falla la red.\n\n**Resolución con REST.**\n- Se identifica el recurso por su URI: el expediente se consulta con GET y la solicitud se crea con POST.\n- El intercambio se hace en JSON: un objeto con las claves del expediente y del solicitante, y un array con los documentos aportados.\n- El cliente Java puede implementarse con JAX-RS, que permite crear servicios REST con los métodos HTTP; Jackson se encarga del JSON y JAXB del XML si el servicio externo lo exige.\n- La consulta GET puede repetirse sin problema; la creación con POST no es idempotente, así que se usa una clave de operación para no duplicar la solicitud si hay que reintentar.\n\nEjemplo de JSON (objeto y array):\n- {\"expediente\": \"BEC-2026-001\", \"estado\": \"pendiente\", \"documentos\": [\"dni.pdf\", \"titulo.pdf\"]}\n\n**Resolución con SOAP.** Si el servicio externo publica WSDL, se lee su descripción (Types, Message, PortType, Binding y Service) y se construye un mensaje XML con Envelope y Body; los errores llegan en Fault. La operación se invoca con JAX-WS y los objetos se convierten desde XML con JAXB.\n\n**Qué se aprende.** REST encaja si el servicio es sencillo y orientado a recursos; SOAP aporta un contrato formal y extensiones de seguridad cuando el entorno es empresarial. En ambos casos hay que acordar el formato, controlar la idempotencia de los reintentos y tratar los errores de forma explícita. (Fuente: Bloque 3 Actualizado 2026.docx, Tema 6, Tema 5 (JAX-RS, JAX-WS, JAXB, Jackson) y apartados de JSON y XML.)"
+        },
+        {
+          "heading": "7. Trampas típicas de examen",
+          "body": "- **SOAP no es un estilo y REST no es un protocolo.** SOAP es un protocolo de mensajería basado en XML; REST es un estilo de arquitectura sobre HTTP y URI.\n- **WSDL no describe servicios REST.** WSDL describe la comunicación de un servicio web (normalmente SOAP) con Types, Message, PortType, Binding y Service; para REST se documenta con OpenAPI u otras descripciones.\n- **UDDI no es un formato de mensaje.** Es un registro de negocios y servicios con páginas blancas, amarillas y verdes.\n- **El mensaje SOAP no es solo el Body.** Envelope es obligatorio y contiene Header, Body y Fault; confundir Envelope con Body es un error clásico.\n- **REST no guarda estado entre peticiones.** Cada petición debe llevar toda la información; si el servicio recuerda la sesión, no es stateless.\n- **POST no es idempotente; PUT y DELETE sí.** Reintentar un POST puede crear duplicados.\n- **JSON no es XML.** JSON usa objetos y arrays; XML usa etiquetas, atributos y una jerarquía con un único elemento raíz.\n- **Bien formado no es lo mismo que válido.** Un XML bien formado cumple la sintaxis; es válido si además respeta una DTD o un XML Schema.\n- **CSV no está estandarizado.** El separador puede ser coma o punto y coma y no hay una norma única.\n- **Dos capas no son tres.** La de dos capas reparte cliente y servidor; la de tres añade la capa de lógica de negocio entre presentación y datos.\n- **SOA no es microservicios.** SOA busca servicios reutilizables y bajo acoplamiento; los microservicios componen funcionalidades pequeñas con coreografía u orquestación.\n- **JAX-WS no es JAX-RS.** JAX-WS atiende servicios web (SOAP), JAX-RS crea servicios REST; JAXB convierte entre XML y objetos.\n- **JMS no es una base de datos.** Es la API de mensajería asíncrona de Jakarta EE, y los Message-Driven Beans procesan esos mensajes.\n(Fuente: Bloque 3 Actualizado 2026.docx, Tema 6, Tema 5 y apartados de XML, JSON y CSV.)"
+        },
+        {
+          "heading": "8. Resumen para memorizar",
+          "body": "Lo que hay que retener:\n- Interoperar exige formatos comunes (XML, JSON, CSV) y protocolos de comunicación.\n- XML: prólogo y cuerpo, un único elemento raíz, anidamiento correcto, cierre obligatorio, distingue mayúsculas, atributos entre comillas; bien formado frente a válido; DTD interna, externa o mixta, PUBLIC o SYSTEM.\n- JSON: objetos entre llaves y arrays entre corchetes; valores de tipo cadena, número, booleano, array, objeto o null; extensión .json.\n- CSV: filas como registros y columnas como campos, separadas por coma o punto y coma; no está estandarizado.\n- Servicios web: proveedor, solicitante e intermediario. SOAP (Envelope, Header, Body, Fault; E.N.I), WSDL (Types, Message, PortType, Binding, Service) y UDDI (páginas blancas, amarillas y verdes).\n- REST: estilo sobre HTTP y URI, stateless, cacheable, por capas y cliente-servidor; GET, POST, PUT, DELETE y otros métodos.\n- SOAP es un protocolo y suele preferirse en entornos críticos; REST es un estilo más simple y habitual en web y móviles.\n- Arquitecturas: cliente-servidor, dos capas (cliente grueso o ligero), tres capas (presentación, negocio, datos), n capas, SOA y microservicios (coreografía y orquestación).\n- Plataformas: Jakarta EE (JAX-RS, JAX-WS, JAXB, JPA, JMS, CDI, JTA, DTO, Jakarta Security) y .NET (ADO.NET conectado y desconectado, ASP.NET).\n- Idempotencia: GET, PUT y DELETE la cumplen; POST no. Seguridad web: disponibilidad, integridad, confidencialidad, autenticidad y trazabilidad.\n(Fuente: Bloque 3 Actualizado 2026.docx; Tema 7.docx.)"
+        },
+        {
+          "heading": "9. Casos tipo test comentados (15 preguntas)",
+          "body": "Los quince casos del fichero, comentados y con su referencia:\n\n**1.** Formato en el que se basa SOAP. **Respuesta: a)** XML (apartado 4, servicios web).\n\n**2.** Papeles de la arquitectura de servicios web. **Respuesta: b)** Proveedor, solicitante e intermediario (apartado 4, servicios web).\n\n**3.** Elemento de WSDL que define las operaciones permitidas. **Respuesta: c)** PortType (apartado 4, servicios web).\n\n**4.** Información técnica de un negocio en UDDI. **Respuesta: d)** Páginas verdes (apartado 4, servicios web).\n\n**5.** Característica de REST que evita guardar estado entre peticiones. **Respuesta: a)** Statelessness (apartado 4, servicios web).\n\n**6.** Método HTTP que crea un nuevo recurso. **Respuesta: b)** POST (apartado 4, servicios web).\n\n**7.** Método idempotente entre los siguientes. **Respuesta: c)** PUT (apartado 4, idempotencia).\n\n**8.** Elemento obligatorio y raíz del mensaje SOAP. **Respuesta: d)** Envelope (apartado 4, servicios web).\n\n**9.** Delimitadores de un objeto JSON. **Respuesta: a)** Las llaves {} (apartado 4, formatos).\n\n**10.** Requisito de un documento XML bien formado. **Respuesta: b)** Un único elemento raíz (apartado 4, formatos).\n\n**11.** Tipo de DTD privada. **Respuesta: c)** SYSTEM (apartado 4, formatos).\n\n**12.** Qué caracteriza al formato CSV. **Respuesta: d)** No está estandarizado (apartado 4, formatos).\n\n**13.** API de mensajería asíncrona de Jakarta EE. **Respuesta: c)** JMS (apartado 4, colas).\n\n**14.** API de Jakarta EE para crear servicios REST. **Respuesta: b)** JAX-RS (apartado 4, plataformas).\n\n**15.** Modelo de ADO.NET que trabaja en memoria sin conexión permanente. **Respuesta: d)** DataAdapter + DataSet (apartado 4, plataformas).\n\nCada caso incluye su explicación completa y la referencia de fuente en el campo reference de testCases. (Fuente: Bloque 3 Actualizado 2026.docx.)"
+        },
+        {
+          "heading": "10. Fuentes citadas",
+          "body": "- **Bloque 3 Actualizado 2026.docx**, Tema 6 (servicios web): OASIS y W3C, proveedor/solicitante/intermediario, SOAP (Envelope, Header, Body, Fault; extensibilidad, neutralidad, independencia), UDDI (páginas blancas, amarillas y verdes), WSDL (Types, Message, PortType, Binding, Service), REST (stateless, cacheable, cliente-servidor, por capas; métodos HTTP y diferencias con SOAP), arquitecturas cliente-servidor, P2P, dos y tres capas, SOA y microservicios.\n- **Bloque 3 Actualizado 2026.docx**, Tema 5 (Jakarta EE y .NET): JAX-RS, JAX-WS, JAXB, JPA/Hibernate/JDBC, JMS y Message-Driven Beans, CDI, JTA, DTO y Jakarta Security; ADO.NET (Connection, Command, DataReader, DataAdapter, DataSet y DataTable; modelo conectado y desconectado) y ASP.NET.\n- **Bloque 3 Actualizado 2026.docx**, apartados de XML y DTD, JSON y CSV, y seguridad en aplicaciones web (disponibilidad, integridad, confidencialidad, autenticidad y trazabilidad).\n- **Tema 7.docx**, apartado 2 (seguridad en la base de datos): contexto de autenticación, autorización y permisos en los sistemas que se integran.\n- **data/fuentes/IV.32.txt**: texto consolidado de las fuentes anteriores, utilizado para verificar las citas.\n\nTodas las afirmaciones técnicas del tema proceden de estas fuentes; los ejemplos de JSON y de servicios se han redactado con las estructuras que describen. (Fuente: data/fuentes/IV.32.txt.)"
+        }
+      ],
       "practiceSlug": "iv-32"
     },
     "IV.33": {
@@ -23581,6 +23951,496 @@
           "justification": "La copia solo es útil si se puede restaurar; debe estar protegida, fuera del servidor y probada."
         }
       ]
+    },
+    {
+      "slug": "tai-propio-iv-web",
+      "year": 2026,
+      "conv": "Supuesto propio · OpoFuente 2026",
+      "block": "IV",
+      "title": "Integración de una sede electrónica con servicios externos",
+      "difficulty": "media",
+      "official": false,
+      "estimatedMinutes": 30,
+      "statement": "Una sede electrónica debe integrarse con un registro, una pasarela de pago y un servicio de consulta de datos. El equipo revisa el contrato de API, los formatos de intercambio, la autenticación y el tratamiento de errores antes de desplegar.",
+      "steps": [
+        "1. Identificar recursos, métodos y códigos HTTP.",
+        "2. Elegir formatos y validar el contrato.",
+        "3. Resolver autenticación y autorización.",
+        "4. Tratar errores, reintentos e idempotencia.",
+        "5. Documentar y probar la integración."
+      ],
+      "topics": [
+        "IV.31",
+        "IV.32",
+        "IV.28"
+      ],
+      "source": {
+        "label": "Elaboración propia · OpoFuente",
+        "url": "https://erdeivih.github.io/opofuente-demo/",
+        "pages": "Material propio de la demo"
+      },
+      "questions": [
+        {
+          "stem": "¿Qué método HTTP se usa normalmente para obtener un recurso?",
+          "options": [
+            {
+              "key": "a",
+              "text": "GET"
+            },
+            {
+              "key": "b",
+              "text": "POST"
+            },
+            {
+              "key": "c",
+              "text": "DELETE"
+            },
+            {
+              "key": "d",
+              "text": "PATCH"
+            }
+          ],
+          "correct": "a",
+          "justification": "GET recupera un recurso sin modificarlo; POST crea, PUT/PATCH actualizan y DELETE elimina."
+        },
+        {
+          "stem": "¿Qué significa un código de estado 404?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El servidor ha fallado"
+            },
+            {
+              "key": "b",
+              "text": "El recurso no existe o no se encuentra"
+            },
+            {
+              "key": "c",
+              "text": "La petición se ha creado"
+            },
+            {
+              "key": "d",
+              "text": "El usuario no está autenticado"
+            }
+          ],
+          "correct": "b",
+          "justification": "404 es error del cliente: el recurso solicitado no existe; 401 es no autenticado y 500 error del servidor."
+        },
+        {
+          "stem": "¿Qué lenguaje define la estructura de una página web?",
+          "options": [
+            {
+              "key": "a",
+              "text": "JavaScript"
+            },
+            {
+              "key": "b",
+              "text": "CSS"
+            },
+            {
+              "key": "c",
+              "text": "HTML"
+            },
+            {
+              "key": "d",
+              "text": "SQL"
+            }
+          ],
+          "correct": "c",
+          "justification": "HTML aporta estructura y significado; CSS la presentación y JavaScript el comportamiento."
+        },
+        {
+          "stem": "¿Qué es un diseño responsive?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Un protocolo de red"
+            },
+            {
+              "key": "b",
+              "text": "Un diseño que solo funciona en escritorio"
+            },
+            {
+              "key": "c",
+              "text": "Una base de datos distribuida"
+            },
+            {
+              "key": "d",
+              "text": "Un diseño que se adapta y sigue siendo usable en distintos tamaños de pantalla"
+            }
+          ],
+          "correct": "d",
+          "justification": "El diseño responsive adapta la interfaz y la experiencia a móvil, tableta y escritorio."
+        },
+        {
+          "stem": "¿Qué formato es habitual en una API REST?",
+          "options": [
+            {
+              "key": "a",
+              "text": "JSON"
+            },
+            {
+              "key": "b",
+              "text": "PDF"
+            },
+            {
+              "key": "c",
+              "text": "DOCX"
+            },
+            {
+              "key": "d",
+              "text": "CSV siempre"
+            }
+          ],
+          "correct": "a",
+          "justification": "JSON es el formato más habitual en APIs REST, aunque también puede usarse XML."
+        },
+        {
+          "stem": "¿Qué es XSS?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Un ataque de fuerza bruta al servidor"
+            },
+            {
+              "key": "b",
+              "text": "Inyección de scripts en una página que ejecuta el navegador"
+            },
+            {
+              "key": "c",
+              "text": "Un error de base de datos"
+            },
+            {
+              "key": "d",
+              "text": "Un protocolo de correo"
+            }
+          ],
+          "correct": "b",
+          "justification": "XSS (Cross-Site Scripting) inyecta código en la página; se mitiga escapando la salida y aplicando CSP."
+        },
+        {
+          "stem": "¿Cómo se evita la inyección SQL en el back-end?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Desactivando HTTPS"
+            },
+            {
+              "key": "b",
+              "text": "Concatenando la entrada del usuario"
+            },
+            {
+              "key": "c",
+              "text": "Con consultas parametrizadas y validación"
+            },
+            {
+              "key": "d",
+              "text": "Ocultando los errores"
+            }
+          ],
+          "correct": "c",
+          "justification": "Las consultas parametrizadas separan datos y código; concatenar entrada permite inyección."
+        },
+        {
+          "stem": "¿Para qué sirve una cookie HttpOnly?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Para bloquear el correo"
+            },
+            {
+              "key": "b",
+              "text": "Para cifrar la base de datos"
+            },
+            {
+              "key": "c",
+              "text": "Para acelerar la web"
+            },
+            {
+              "key": "d",
+              "text": "Para que JavaScript no pueda leerla y reducir el robo de sesión"
+            }
+          ],
+          "correct": "d",
+          "justification": "HttpOnly impide el acceso desde JavaScript, lo que limita el impacto de un XSS sobre la cookie de sesión."
+        },
+        {
+          "stem": "¿Qué ventaja ofrece una CDN?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Serve recursos estáticos desde ubicaciones cercanas y reduce latencia"
+            },
+            {
+              "key": "b",
+              "text": "Sustituye la base de datos"
+            },
+            {
+              "key": "c",
+              "text": "Elimina la necesidad de HTTPS"
+            },
+            {
+              "key": "d",
+              "text": "Compila el back-end"
+            }
+          ],
+          "correct": "a",
+          "justification": "La CDN cachea y distribuye contenido estático geográficamente, mejorando tiempos de carga."
+        },
+        {
+          "stem": "¿Dónde debe validarse de forma obligatoria una entrada del usuario?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Solo en el cliente"
+            },
+            {
+              "key": "b",
+              "text": "En el servidor, aunque también se valide en el cliente"
+            },
+            {
+              "key": "c",
+              "text": "Solo en la base de datos"
+            },
+            {
+              "key": "d",
+              "text": "En la CDN"
+            }
+          ],
+          "correct": "b",
+          "justification": "El cliente puede omitirse o manipularse; la validación definitiva debe hacerse en el servidor."
+        },
+        {
+          "stem": "¿Qué es la interoperabilidad?",
+          "options": [
+            {
+              "key": "a",
+              "text": "La velocidad de la red"
+            },
+            {
+              "key": "b",
+              "text": "La capacidad de dos sistemas de intercambiar información y usarla de forma útil"
+            },
+            {
+              "key": "c",
+              "text": "Un tipo de base de datos"
+            },
+            {
+              "key": "d",
+              "text": "Un lenguaje de programación"
+            }
+          ],
+          "correct": "b",
+          "justification": "La interoperabilidad combina acuerdo técnico, semántico y organizativo para que la información sea usable."
+        },
+        {
+          "stem": "¿Qué formato es habitual en APIs REST?",
+          "options": [
+            {
+              "key": "a",
+              "text": "DOCX"
+            },
+            {
+              "key": "b",
+              "text": "PDF"
+            },
+            {
+              "key": "c",
+              "text": "JSON"
+            },
+            {
+              "key": "d",
+              "text": "ZIP"
+            }
+          ],
+          "correct": "c",
+          "justification": "JSON es ligero y legible y se usa habitualmente en APIs REST; XML es común en SOAP."
+        },
+        {
+          "stem": "¿Qué añade un esquema como JSON Schema?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Convierte el JSON en PDF"
+            },
+            {
+              "key": "b",
+              "text": "Cifra el JSON"
+            },
+            {
+              "key": "c",
+              "text": "Comprime el JSON"
+            },
+            {
+              "key": "d",
+              "text": "Valida la estructura y los tipos del JSON"
+            }
+          ],
+          "correct": "d",
+          "justification": "El esquema define campos, tipos y obligatoriedad, y permite rechazar mensajes mal formados."
+        },
+        {
+          "stem": "¿Qué es una operación idempotente?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Una que puede repetirse sin producir efectos adicionales"
+            },
+            {
+              "key": "b",
+              "text": "Una que siempre falla"
+            },
+            {
+              "key": "c",
+              "text": "Una que solo se ejecuta una vez al día"
+            },
+            {
+              "key": "d",
+              "text": "Una que no necesita autenticación"
+            }
+          ],
+          "correct": "a",
+          "justification": "Repetir una operación idempotente deja el mismo estado; es clave para reintentos seguros."
+        },
+        {
+          "stem": "¿Qué método HTTP es idempotente por definición?",
+          "options": [
+            {
+              "key": "a",
+              "text": "POST"
+            },
+            {
+              "key": "b",
+              "text": "GET"
+            },
+            {
+              "key": "c",
+              "text": "CONNECT"
+            },
+            {
+              "key": "d",
+              "text": "NINGUNO"
+            }
+          ],
+          "correct": "b",
+          "justification": "GET no modifica el recurso y puede repetirse; POST no es idempotente por defecto."
+        },
+        {
+          "stem": "¿Qué hace un API gateway?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Compila el front-end"
+            },
+            {
+              "key": "b",
+              "text": "Sustituye la base de datos"
+            },
+            {
+              "key": "c",
+              "text": "Centraliza el acceso a APIs con autenticación, límites y monitorización"
+            },
+            {
+              "key": "d",
+              "text": "Cifra los discos"
+            }
+          ],
+          "correct": "c",
+          "justification": "El gateway es un punto único de entrada que aplica políticas y facilita la observabilidad."
+        },
+        {
+          "stem": "¿Qué protocolo de autorización se usa habitualmente para APIs?",
+          "options": [
+            {
+              "key": "a",
+              "text": "NTP"
+            },
+            {
+              "key": "b",
+              "text": "SMTP"
+            },
+            {
+              "key": "c",
+              "text": "DHCP"
+            },
+            {
+              "key": "d",
+              "text": "OAuth 2.0"
+            }
+          ],
+          "correct": "d",
+          "justification": "OAuth 2.0 permite autorizar el acceso con alcances y tokens; no es un protocolo de correo ni de red."
+        },
+        {
+          "stem": "¿Qué es un ETL?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Extraer, transformar y cargar datos entre sistemas"
+            },
+            {
+              "key": "b",
+              "text": "Un tipo de firewall"
+            },
+            {
+              "key": "c",
+              "text": "Un formato de imagen"
+            },
+            {
+              "key": "d",
+              "text": "Un protocolo de correo"
+            }
+          ],
+          "correct": "a",
+          "justification": "ETL (Extract, Transform, Load) mueve y transforma datos para sincronización o analítica."
+        },
+        {
+          "stem": "¿Qué debe incluir una respuesta de error de API?",
+          "options": [
+            {
+              "key": "a",
+              "text": "La traza completa del servidor"
+            },
+            {
+              "key": "b",
+              "text": "Código, mensaje claro y detalle útil sin exponer secretos"
+            },
+            {
+              "key": "c",
+              "text": "La contraseña de la base de datos"
+            },
+            {
+              "key": "d",
+              "text": "Solo un código 200"
+            }
+          ],
+          "correct": "b",
+          "justification": "Los errores deben ser consistentes y accionables, sin filtrar información interna."
+        },
+        {
+          "stem": "¿Para qué sirve un identificador de correlación?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Para comprimir la respuesta"
+            },
+            {
+              "key": "b",
+              "text": "Para cifrar la petición"
+            },
+            {
+              "key": "c",
+              "text": "Para seguir una operación entre sistemas en los registros"
+            },
+            {
+              "key": "d",
+              "text": "Para cambiar el formato"
+            }
+          ],
+          "correct": "c",
+          "justification": "El correlation ID permite rastrear una misma operación a través de varios servicios y logs."
+        }
+      ]
     }
   ],
   "progress": {
@@ -23593,8 +24453,8 @@
     "questions": 400,
     "cases": 5,
     "caseQuestions": 50,
-    "supuestos": 10,
-    "supuestoQuestions": 200,
+    "supuestos": 11,
+    "supuestoQuestions": 220,
     "convocatorias": 12
   }
 }
