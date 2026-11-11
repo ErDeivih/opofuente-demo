@@ -297,8 +297,8 @@
             "practicaStatus": "con_practica",
             "sectionCount": 7,
             "questionCount": 10,
-            "formato": "esquema",
-            "longWords": 0
+            "formato": "desarrollado",
+            "longWords": 1923
           },
           {
             "path": "II.16",
@@ -307,8 +307,8 @@
             "practicaStatus": "con_practica",
             "sectionCount": 7,
             "questionCount": 10,
-            "formato": "esquema",
-            "longWords": 0
+            "formato": "desarrollado",
+            "longWords": 2186
           },
           {
             "path": "II.17",
@@ -317,8 +317,8 @@
             "practicaStatus": "con_practica",
             "sectionCount": 7,
             "questionCount": 10,
-            "formato": "esquema",
-            "longWords": 0
+            "formato": "desarrollado",
+            "longWords": 2434
           }
         ]
       },
@@ -410,8 +410,8 @@
             "practicaStatus": "con_practica",
             "sectionCount": 7,
             "questionCount": 10,
-            "formato": "esquema",
-            "longWords": 0
+            "formato": "desarrollado",
+            "longWords": 2818
           },
           {
             "path": "III.26",
@@ -420,8 +420,8 @@
             "practicaStatus": "con_practica",
             "sectionCount": 6,
             "questionCount": 10,
-            "formato": "esquema",
-            "longWords": 0
+            "formato": "desarrollado",
+            "longWords": 2730
           }
         ]
       },
@@ -503,8 +503,8 @@
             "practicaStatus": "con_practica",
             "sectionCount": 7,
             "questionCount": 10,
-            "formato": "esquema",
-            "longWords": 0
+            "formato": "desarrollado",
+            "longWords": 2349
           }
         ]
       },
@@ -2230,6 +2230,228 @@
         "Publicar un documento con metadatos o macros sin revisar."
       ],
       "reviewedAt": "2026-11-10",
+      "longSections": [
+        {
+          "heading": "1. Ficha oficial del tema",
+          "body": "**Tema:** II.15, «Ofimática», del bloque II (Informática básica y ofimática) del temario común de informática C1. **Materias que cubre:** procesador de textos, hoja de cálculo, presentaciones, formatos de archivo, PDF, plantillas y estilos, accesibilidad y buenas prácticas de uso. **Relación con otros temas:** se apoya en II.14 (sistemas operativos de usuario) y conecta con V.40 (accesibilidad y usabilidad). **Fuente:** no hay documento de ofimática en el escritorio de fuentes; este tema se ha redactado como material propio de OpoFuente, sin copiar textos ajenos y sin citar fuentes que no existen.",
+          "table": {
+            "columns": [
+              "Dato de la ficha",
+              "Valor"
+            ],
+            "rows": [
+              [
+                "Tema",
+                "II.15 Ofimática"
+              ],
+              [
+                "Bloque",
+                "II · Informática básica y ofimática"
+              ],
+              [
+                "Materias",
+                "Procesador de textos, hoja de cálculo, presentaciones, formatos, PDF, plantillas y accesibilidad"
+              ],
+              [
+                "Temas relacionados",
+                "II.14 Sistemas operativos de usuario; V.40 Accesibilidad"
+              ],
+              [
+                "Fuente",
+                "Elaboración propia · OpoFuente"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "2. Índice de epígrafes",
+          "body": "El desarrollo del tema se organiza en los epígrafes del apartado 4:\n\n- **4.1.** El procesador de textos: Word y Writer.\n- **4.2.** La hoja de cálculo: Excel y Calc.\n- **4.3.** Las presentaciones: PowerPoint e Impress.\n- **4.4.** Los formatos de archivo ofimáticos.\n- **4.5.** El PDF como formato de distribución.\n- **4.6.** Plantillas, estilos y normas de formato.\n- **4.7.** Accesibilidad de los documentos.\n- **4.8.** Buenas prácticas, riesgos y colaboración.\n\nCompletan el tema la tabla comparativa (apartado 5), el ejemplo práctico (6), las trampas de examen (7), el resumen para memorizar (8), los quince casos tipo test (9) y las fuentes citadas (10)."
+        },
+        {
+          "heading": "3. Introducción y contexto",
+          "body": "La ofimática es el conjunto de aplicaciones que permiten crear, editar, almacenar y compartir documentos de uso administrativo y profesional: textos, hojas de cálculo, presentaciones y documentos portables. En una Administración Pública, la ofimática es la herramienta de trabajo diaria: una memoria, un presupuesto, un informe, una presentación para una reunión o una resolución que se publica en PDF.\n\nLas suites ofimáticas más extendidas son Microsoft Office o Microsoft 365, LibreOffice y Google Workspace. Todas ofrecen aplicaciones equivalentes (procesador de textos, hoja de cálculo y presentaciones) y formatos propios o abiertos que condicionan la interoperabilidad: no es lo mismo guardar un documento en el formato nativo de la suite que exportarlo a un formato abierto o a PDF.\n\nEste tema ordena las funciones básicas de cada aplicación, los formatos que se usan en la Administración, las ventajas del PDF y las reglas de accesibilidad, cada vez más exigidas por la normativa y por los pliegos de contratación.",
+          "table": {
+            "columns": [
+              "Aplicación",
+              "Uso principal",
+              "Formato nativo"
+            ],
+            "rows": [
+              [
+                "Procesador de textos",
+                "Memorias, informes, resoluciones y escritos",
+                "DOCX / ODT"
+              ],
+              [
+                "Hoja de cálculo",
+                "Presupuestos, listados, cálculos y gráficos",
+                "XLSX / ODS"
+              ],
+              [
+                "Presentaciones",
+                "Reuniones, formación y exposición de resultados",
+                "PPTX / ODP"
+              ],
+              [
+                "Lector de PDF",
+                "Consulta y distribución de documentos cerrados",
+                "PDF"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "4. Desarrollo por epígrafe",
+          "body": "**4.1. El procesador de textos.** Word y Writer sirven para redactar documentos con formato. El documento se organiza en **caracteres**, **párrafos**, **secciones** y **páginas**; cada nivel admite formato propio (fuente, tamaño, negrita, alineación, sangría, interlineado, bordes y sombreado). Los **estilos** agrupan ese formato y permiten cambiar el aspecto de todo el documento de una vez, generar un índice automático y mantener la coherencia. Las funciones habituales son: tablas, imágenes y objetos, encabezados y pies de página, numeración y viñetas, notas al pie, comentarios, control de cambios, revisión ortográfica y gramatical, índices y referencias, combinación de correspondencia y protección del documento. En la Administración se usan además plantillas corporativas, logotipos y normas de estilo.\n\n**4.2. La hoja de cálculo.** Excel y Calc organizan la información en un **libro** formado por **hojas**, y cada hoja en **celdas** identificadas por columna y fila (A1, B7). Las celdas contienen números, texto, fechas o fórmulas. Un **rango** es un conjunto de celdas (A1:B10). Las **referencias** pueden ser **relativas** (A1), **absolutas** ($A$1) o **mixtas** ($A1, A$1), y su comportamiento al copiar una fórmula es una de las preguntas clásicas. Las **fórmulas** empiezan por el signo igual y combinan operadores y funciones: SUMA, PROMEDIO, MAX, MIN, CONTAR, SI, BUSCARV, XLOOKUP, SUMAR.SI, CONTAR.SI, etc. La hoja de cálculo permite ordenar y filtrar, validar datos, aplicar formato condicional, crear gráficos, tablas dinámicas, escenarios y macros. El formato de celdas (número, moneda, porcentaje, fecha) no cambia el valor, solo su presentación.\n\n**4.3. Las presentaciones.** PowerPoint e Impress organizan el contenido en **diapositivas**, con diseños y un **patrón** que fija colores, fuentes y logotipos. Cada diapositiva admite texto, imágenes, tablas, gráficos, vídeos y formas. Las **transiciones** son efectos entre diapositivas y las **animaciones** son efectos dentro de una diapositiva; no deben confundirse. Las presentaciones se pueden proyectar, imprimir como documento, exportar a PDF o guardar como presentación con diapositivas. Una buena presentación tiene poco texto por diapositiva, una idea por diapositiva y un orden claro.\n\n**4.4. Los formatos de archivo.** Los formatos nativos actuales son **OOXML** (DOCX, XLSX y PPTX) en Microsoft Office y **ODF** (ODT, ODS y ODP) en LibreOffice; ambos son estándares abiertos y comprimidos (son paquetes de XML y otros recursos). También existen formatos de intercambio: **RTF** (texto enriquecido), **TXT** (texto plano), **CSV** (valores separados por comas, sin formato ni fórmulas), **HTML** y **PDF**. La conversión entre suites puede perder formato, fórmulas o macros; por eso conviene comprobar el resultado y, cuando el documento es final, distribuirlo en PDF. Los formatos propietarios antiguos (DOC, XLS, PPT) siguen apareciendo y exigen compatibilidad.\n\n**4.5. El PDF.** El **PDF** (Portable Document Format) es un formato de documento que conserva el diseño y las fuentes tal como se creó, con independencia del equipo o del sistema operativo. Se genera desde la aplicación ofimática mediante «Exportar a PDF» o «Guardar como PDF». Es el formato habitual de distribución porque garantiza que el receptor ve el documento igual que el autor, admite contraseña y permisos, firma digital, formularios y compresión, y puede ser **accesible** si se etiqueta correctamente. Su edición es limitada: para modificar el contenido hay que volver al archivo original. Para conservación a largo plazo se usa **PDF/A**, una variante normalizada para el archivo.\n\n**4.6. Plantillas, estilos y normas.** Una **plantilla** es un documento base con formato, estilos, logotipos y contenido fijo que se reutiliza para crear documentos nuevos. Las extensiones típicas son DOTX/DOTM en Word, XLTX/XLSM en Excel y POTX/POTM en PowerPoint, y OTT, OTS y OTP en LibreOffice. Las plantillas ahorran trabajo, unifican la imagen corporativa y reducen errores. Los **estilos** y **temas** aplican formato coherente y permiten actualizaciones globales; en Excel los estilos de celda y las tablas con formato cumplen una función similar. Una norma de estilo fija márgenes, tipografías, colores, numeración y estructuras obligatorias.\n\n**4.7. Accesibilidad de los documentos.** Un documento accesible puede ser leído y comprendido por personas con discapacidad y por productos de apoyo como lectores de pantalla. Las reglas básicas son: usar **estilos de encabezado** para la estructura (no negritas manuales), añadir **texto alternativo** a imágenes, tablas y gráficos, incluir **encabezados de tabla**, mantener un **orden de lectura** lógico, usar contraste y tamaños de fuente suficientes, no transmitir información solo por color, subtitular vídeos y audios, y comprobar la accesibilidad con la herramienta de la suite. En PDF, la accesibilidad exige que el archivo esté etiquetado y que conserve la estructura y el texto alternativo; exportar un documento accesible a PDF no garantiza por sí solo un PDF accesible.\n\n**4.8. Buenas prácticas y riesgos.** Conviene guardar con nombres claros y versiones, usar plantillas y estilos, evitar formatos y macros innecesarios y proteger los documentos con contraseña cuando contengan datos personales. Las **macros** son programas incrustados que pueden ejecutar acciones maliciosas: hay que abrir solo documentos de confianza y mantener la seguridad de macros activada. Los **metadatos** (autor, fecha, comentarios) pueden revelar información y deben revisarse antes de publicar. La **colaboración** mediante coedición o carpetas compartidas exige control de versiones y permisos; los cambios deben revisarse antes de dar un documento por definitivo.",
+          "table": {
+            "columns": [
+              "Epígrafe",
+              "Datos que hay que retener"
+            ],
+            "rows": [
+              [
+                "Procesador",
+                "Carácter, párrafo, sección; estilos; índice; control de cambios; combinar correspondencia"
+              ],
+              [
+                "Hoja de cálculo",
+                "Libro, hoja y celda; referencias relativas, absolutas y mixtas; funciones; tablas dinámicas"
+              ],
+              [
+                "Presentaciones",
+                "Diapositivas, patrón, transiciones (entre diapositivas) y animaciones (dentro de una)"
+              ],
+              [
+                "Formatos",
+                "DOCX/XLSX/PPTX (OOXML) y ODT/ODS/ODP (ODF); RTF, TXT, CSV, HTML, PDF"
+              ],
+              [
+                "PDF",
+                "Diseño fijo, fuentes incrustadas, firma, formularios; PDF/A para archivo"
+              ],
+              [
+                "Plantillas",
+                "DOTX, XLTX, POTX y OTT, OTS, OTP; estilos y temas"
+              ],
+              [
+                "Accesibilidad",
+                "Encabezados, texto alternativo, encabezados de tabla, contraste, orden de lectura, PDF etiquetado"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "5. Tabla comparativa: aplicaciones y usos",
+          "body": "La tabla resume la equivalencia entre las suites más habituales y el uso de cada aplicación, con sus extensiones nativas y de plantilla.",
+          "table": {
+            "columns": [
+              "Función",
+              "Microsoft",
+              "LibreOffice",
+              "Uso típico"
+            ],
+            "rows": [
+              [
+                "Procesador de textos",
+                "Word (DOCX; plantilla DOTX)",
+                "Writer (ODT; plantilla OTT)",
+                "Memorias, informes, resoluciones"
+              ],
+              [
+                "Hoja de cálculo",
+                "Excel (XLSX; plantilla XLTX)",
+                "Calc (ODS; plantilla OTS)",
+                "Presupuestos, listados, cálculos"
+              ],
+              [
+                "Presentaciones",
+                "PowerPoint (PPTX; plantilla POTX)",
+                "Impress (ODP; plantilla OTP)",
+                "Reuniones, formación"
+              ],
+              [
+                "Documento final",
+                "PDF (exportar)",
+                "PDF (exportar)",
+                "Distribución y publicación"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "6. Ejemplo práctico resuelto",
+          "body": "**Supuesto.** Una unidad administrativa debe preparar la memoria anual de su servicio, un presupuesto con desglose por conceptos y una presentación para la reunión de dirección. Los documentos deben publicarse en la sede electrónica y ser accesibles.\n\n**Resolución.**\n\n- **Memoria:** se parte de la plantilla corporativa en el procesador de textos, se aplican estilos de título y de párrafo y se genera el índice automático. Las imágenes llevan texto alternativo y las tablas, encabezados de columna. Antes de cerrar se revisan los comentarios y se aceptan o rechazan los cambios.\n- **Presupuesto:** se crea un libro con una hoja de datos y otra de resumen. Las fórmulas usan referencias absolutas cuando deben apuntar siempre a la misma celda (por ejemplo, el tipo de IVA) y relativas cuando se copian hacia abajo. Se añade formato condicional para destacar las desviaciones y una tabla dinámica para el resumen por conceptos.\n- **Presentación:** se usa la plantilla de la organización, una idea por diapositiva y pocas transiciones; los gráficos se copian desde la hoja de cálculo y se actualizan al cambiar los datos.\n- **Publicación:** los tres documentos se exportan a **PDF** para garantizar que el receptor los ve igual, y se comprueba que el PDF conserva los encabezados, el texto alternativo y el orden de lectura. Los archivos originales se conservan para futuras modificaciones.\n\n**Conclusión.** La ofimática no consiste solo en escribir o calcular: exige elegir bien el formato, mantener la estructura y los estilos y garantizar que el documento final sea accesible y reutilizable.",
+          "table": {
+            "columns": [
+              "Entregable",
+              "Herramienta",
+              "Punto clave"
+            ],
+            "rows": [
+              [
+                "Memoria",
+                "Word/Writer",
+                "Plantilla, estilos, índice y texto alternativo"
+              ],
+              [
+                "Presupuesto",
+                "Excel/Calc",
+                "Referencias absolutas y relativas, tabla dinámica"
+              ],
+              [
+                "Presentación",
+                "PowerPoint/Impress",
+                "Patrón, una idea por diapositiva"
+              ],
+              [
+                "Publicación",
+                "Exportar a PDF",
+                "PDF accesible y archivo original conservado"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "7. Trampas típicas de examen",
+          "body": "Las confusiones más frecuentes de este tema son estas:\n\n- **Confundir extensión y formato**: DOCX es OOXML y ODT es ODF; ambos son estándares abiertos, pero no son el mismo formato.\n- **Confundir referencia relativa y absoluta**: A1 cambia al copiar la fórmula; $A$1 se mantiene fija; $A1 y A$1 son mixtas.\n- **Confundir transición y animación**: la transición es el efecto entre diapositivas; la animación, el efecto dentro de una diapositiva.\n- **Confundir PDF con un formato editable**: el PDF conserva el diseño, pero para modificar el contenido hay que volver al archivo original.\n- **Creer que CSV guarda fórmulas o formato**: CSV es texto plano con valores separados por comas.\n- **Confundir plantilla con documento**: la plantilla sirve de base; el documento es el resultado que se guarda con otro nombre.\n- **Creer que exportar a PDF garantiza accesibilidad**: hace falta que el PDF esté etiquetado y conserve estructura y texto alternativo.\n- **Olvidar la seguridad de las macros**: abrir documentos con macros de origen desconocido es un riesgo.\n- **Usar negritas en lugar de estilos de encabezado**: rompe el índice automático y la accesibilidad.",
+          "table": {
+            "columns": [
+              "Confusión",
+              "Lo correcto"
+            ],
+            "rows": [
+              [
+                "DOCX = ODT",
+                "Son formatos distintos: OOXML y ODF"
+              ],
+              [
+                "A1 = $A$1",
+                "A1 es relativa; $A$1 es absoluta"
+              ],
+              [
+                "Transición = animación",
+                "Transición entre diapositivas; animación dentro de una"
+              ],
+              [
+                "PDF = editable",
+                "El PDF no es el formato de edición; se edita el original"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "8. Resumen para memorizar",
+          "body": "**Procesador de textos.** Carácter, párrafo y sección; estilos; tablas, imágenes, índices, control de cambios y combinación de correspondencia.\n\n**Hoja de cálculo.** Libro, hoja y celda; referencias relativas (A1), absolutas ($A$1) y mixtas ($A1, A$1); funciones (SUMA, SI, BUSCARV, CONTAR); gráficos, validación, formato condicional y tablas dinámicas.\n\n**Presentaciones.** Diapositivas, diseños y patrón; transiciones entre diapositivas y animaciones dentro de ellas; notas y exportación.\n\n**Formatos.** OOXML (DOCX, XLSX, PPTX) y ODF (ODT, ODS, ODP); RTF, TXT, CSV, HTML y PDF; las conversiones pueden perder formato o fórmulas.\n\n**PDF.** Diseño fijo, fuentes incrustadas, firma, formularios y compresión; PDF/A para archivo a largo plazo; no es el formato de edición.\n\n**Plantillas.** DOTX, XLTX, POTX y OTT, OTS, OTP; estilos y temas para mantener la coherencia.\n\n**Accesibilidad.** Encabezados, texto alternativo, encabezados de tabla, contraste, orden de lectura y PDF etiquetado.\n\n**Buenas prácticas.** Nombres y versiones, plantillas, protección de datos, cuidado con macros y metadatos, y control de cambios antes de publicar."
+        },
+        {
+          "heading": "9. Casos tipo test comentados (15 preguntas)",
+          "body": "Los quince casos siguientes reproducen el estilo de pregunta del bloque II. Cada uno incluye la respuesta correcta y una explicación que recuerda el concepto del apartado correspondiente; la referencia indica el epígrafe donde se desarrolla. Conviene contestarlos sin mirar la solución y revisar después solo los fallos."
+        },
+        {
+          "heading": "10. Fuentes citadas",
+          "body": "Este tema se ha redactado como **material propio de OpoFuente**, ante la ausencia de un documento de ofimática en el escritorio de fuentes. No se han copiado textos de academias, blogs ni apuntes privados, y no se citan fuentes inexistentes: la entrada de `sources` lo deja constancia de forma expresa. Las referencias de los casos tipo test apuntan a los apartados de este mismo tema."
+        }
+      ],
       "practiceSlug": "ii-15"
     },
     "II.16": {
@@ -2332,6 +2554,229 @@
         "Abrir adjuntos inesperados o enlaces de remitentes desconocidos."
       ],
       "reviewedAt": "2026-11-10",
+      "longSections": [
+        {
+          "heading": "1. Ficha oficial del tema",
+          "body": "**Tema:** II.16, «Correo electrónico y colaboración», del bloque II (Informática básica y ofimática) del temario común de informática C1. **Materias que cubre:** redes de trabajo en grupo y recursos compartidos, arquitectura del correo (MUA, MTA, MDA y MAA), SMTP, POP3 e IMAP, MIME, webmail, listas de correo, seguridad del correo (TLS y SPF) y continuidad del servicio. **Relación con otros temas:** se apoya en II.14 (sistemas operativos de usuario) y III.23 (servicios de red). **Fuentes:** `Tema 9.docx` y `Tema 13.docx`, volcados en `data/fuentes/II.16.txt`.\n\n**Limitación de la fuente:** el volcado de II.16 desarrolla el correo y la colaboración basada en recursos compartidos, pero no contiene apartados específicos de Microsoft Teams, SharePoint ni calendarios compartidos. Para no inventar, este tema no incluye esas herramientas y se limita a los contenidos que sí documenta la fuente.",
+          "table": {
+            "columns": [
+              "Dato de la ficha",
+              "Valor"
+            ],
+            "rows": [
+              [
+                "Tema",
+                "II.16 Correo electrónico y colaboración"
+              ],
+              [
+                "Bloque",
+                "II · Informática básica y ofimática"
+              ],
+              [
+                "Materias",
+                "SMTP, POP3, IMAP, MIME, webmail, recursos compartidos, TLS y SPF"
+              ],
+              [
+                "Temas relacionados",
+                "II.14 Sistemas operativos de usuario; III.23 Servicios de red"
+              ],
+              [
+                "Fuente",
+                "Tema 9.docx y Tema 13.docx"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "2. Índice de epígrafes",
+          "body": "El desarrollo del tema se organiza en los epígrafes del apartado 4:\n\n- **4.1.** Redes de trabajo en grupo y recursos compartidos.\n- **4.2.** La arquitectura del correo: agentes y funciones.\n- **4.3.** SMTP: el envío de mensajes.\n- **4.4.** POP3: la recepción diferida.\n- **4.5.** IMAP4: la recepción sincronizada.\n- **4.6.** Webmail, listas de correo y colaboración.\n- **4.7.** Seguridad del correo y buenas prácticas.\n- **4.8.** Administración y continuidad del servicio.\n\nCompletan el tema la tabla comparativa (apartado 5), el ejemplo práctico (6), las trampas de examen (7), el resumen para memorizar (8), los quince casos tipo test (9) y las fuentes citadas (10)."
+        },
+        {
+          "heading": "3. Introducción y contexto",
+          "body": "El correo electrónico es el servicio de Internet que permite enviar y recibir mensajes de forma **asíncrona**, con la posibilidad de adjuntar archivos y de aplicar formatos y prioridades. En la Administración es una herramienta de trabajo cotidiana: notificaciones, comunicaciones internas, convocatorias y traslado de documentos. A su alrededor han crecido los servicios de **colaboración**: carpetas y recursos compartidos, directorios de usuarios, agendas y herramientas web que permiten trabajar en grupo.\n\nTécnicamente, el correo se apoya en tres piezas: un cliente que redacta y lee los mensajes, servidores que los transfieren y almacenan, y protocolos que regulan el envío y la recepción. Entender esa arquitectura es lo que permite responder sin dudas a las preguntas sobre SMTP, POP3 e IMAP, sus puertos y sus comandos.\n\nEste tema explica también cómo se comparte información en una red (modelo de trabajo en grupo frente a red basada en servidor) y qué medidas protegen el correo: cifrado TLS, autenticación y registros SPF contra el spam.",
+          "table": {
+            "columns": [
+              "Fuente",
+              "Qué aporta"
+            ],
+            "rows": [
+              [
+                "Tema 9.docx",
+                "Administración de redes, trabajo en grupo, servidores, usuarios, recursos compartidos y mensajería"
+              ],
+              [
+                "Tema 13.docx",
+                "Correo electrónico, agentes, SMTP, POP3, IMAP, MIME, DNS y Web"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "4. Desarrollo por epígrafe",
+          "body": "**4.1. Redes de trabajo en grupo y recursos compartidos.** En una red local conviven servidores (equipos que ofrecen recursos), clientes (equipos que los usan), el medio de conexión y los recursos compartidos: archivos, impresoras y otros periféricos. Hay dos modelos. En el **trabajo en grupo (workgroup)** no hay servidores dedicados ni jerarquía: todos los equipos son iguales y actúan como cliente y servidor, cada usuario decide qué comparte, y resulta adecuado para grupos pequeños de hasta diez usuarios cuando la seguridad no es crítica. En la **red basada en servidor** hay servidores dedicados, optimizados para atender peticiones y garantizar la seguridad; existen servidores especializados de archivos e impresión, de aplicaciones, de correo, de fax, de comunicaciones y de servicios de directorio. El software cliente incorpora un **redirector** que envía las peticiones de recursos al servidor correspondiente y permite acceder a una unidad de red o a una impresora remota como si fueran locales. Los sistemas operativos de red gestionan usuarios y grupos, asignan permisos, controlan el acceso simultáneo y ofrecen herramientas de gestión y mensajería (avisos y alarmas).\n\n**4.2. La arquitectura del correo.** Un sistema de correo se organiza en cuatro agentes. El **MUA** (Mail User Agent) es el cliente con el que el usuario redacta, envía y recibe mensajes; usa SMTP para el envío y POP3 o IMAP para la recepción, y puede ser una aplicación de escritorio o un **webmail** (por ejemplo, squirrelmail). El **MTA** (Mail Transfer Agent) transfiere el mensaje entre servidores o desde el MUA hasta el servidor de destino; ejemplos son postfix, qmail, exim, cyrus y courier. El **MDA** (Mail Delivery Agent) recibe el mensaje del MTA y lo almacena en el buzón, pudiendo procesarlo con programas auxiliares (listas de correo, filtros); ejemplos son procmail y maildrop. El **MAA** (Mail Access Agent) hace accesible el buzón a los clientes remotos y su protocolo más usado es POP3; ejemplos son dovecot, uw y qpopper.\n\n**4.3. SMTP.** SMTP es el protocolo de **envío** de correo entre hosts TCP/IP; no recibe mensajes. El emisor abre una conexión TCP con el servidor de destino en el puerto **25**, espera el saludo 220 y comienza el diálogo: **HELO** (o EHLO, si se negocian extensiones) identifica al emisor; **MAIL FROM** indica el remitente; **RCPT TO** añade cada destinatario; **DATA** inicia el contenido y el final se marca con la secuencia de retorno de carro y línea en blanco; **QUIT** cierra la sesión (código 221). El servidor responde con códigos como 250 (aceptado), 354 (continuar con los datos) o 550 (buzón inexistente). SMTP solo admite texto en ASCII de 7 bits y líneas de hasta 1000 caracteres, por lo que se añadieron las **extensiones de servicio** y **MIME**: MIME codifica datos binarios y texto de otros idiomas sobre ASCII de 7 bits y permite adjuntos y contenido incrustado. Para localizar el servidor de correo de un dominio, el emisor consulta en DNS los registros **MX**, que incluyen una preferencia entre varios servidores.\n\n**4.4. POP3.** POP3 es un protocolo de **recepción** con funciones de cliente y servidor. El cliente abre una conexión TCP en el puerto **110** y pasa por tres estados: **autenticación** (USER y PASS, o APOP), **transacción** (STAT y LIST para consultar, RETR para recuperar, DELE para borrar) y **actualización** al enviar QUIT. POP3 está pensado para descargar los mensajes al equipo local y trabajar sin conexión; es eficiente en la recepción asíncrona, pero no está diseñado para sincronizar varios dispositivos.\n\n**4.5. IMAP4.** IMAP4 mejora la recepción: el servidor almacena los mensajes de varios usuarios y el cliente mantiene una **sincronización** entre el buzón del servidor y su copia local. Los mensajes permanecen en el servidor, se identifican con un **UID** y el cliente puede trabajar en modo desconectado y sincronizar los cambios al reconectarse. IMAP4 interpreta el contenido MIME multiparte, lo que permite descargar objetos sueltos de un mensaje. El cliente conecta por el puerto **143** y el servidor responde con marcas identificativas y códigos OK, NO o BAD.\n\n**4.6. Webmail, listas y colaboración.** El **webmail** es un MUA que se ejecuta en el navegador: el usuario accede a su buzón desde cualquier equipo sin instalar un cliente. La Web se basa en HTTP y HTML, y el término **Web 2.0** se asocia a aplicaciones que facilitan la compartición de información y los entornos colaborativos. En el correo, las **listas de correo** son una extensión de funcionalidad y el MDA puede procesar los mensajes para distribuirlos a los miembros; también existen filtros y respuestas automáticas. La colaboración en red se apoya además en recursos compartidos (carpetas, impresoras), directorios de usuarios y mensajería interna.\n\n**4.7. Seguridad del correo.** El correo nació sin cifrado ni autenticación y hoy se protege con **SSL/TLS**: SMTP seguro en el puerto **465**, POP3 seguro en el **995** e IMAP seguro en el **993**, además de las variantes con STARTTLS. El **SPF** (Sender Policy Framework) es un registro DNS que combate el spam: indica qué servidores están autorizados a enviar correo en nombre de un dominio y permite comparar la IP del emisor con esa lista. En el lado del usuario, la seguridad depende de contraseñas robustas, cuentas nominativas, permisos y de no abrir adjuntos sospechosos.\n\n**4.8. Administración y continuidad.** En una red basada en servidor, el administrador define la política de seguridad para todos los usuarios, programa copias de seguridad, aprovecha la redundancia de los servidores y puede atender a un número elevado de usuarios; en un workgroup cada usuario es su propio administrador y la seguridad es más difícil de controlar. El servidor de correo se comporta como un servidor de aplicaciones: el buzón y los mensajes residen en el servidor y el cliente recibe datos de forma selectiva. La monitorización y la gestión de la red permiten detectar problemas antes de que el servicio caiga.",
+          "table": {
+            "columns": [
+              "Epígrafe",
+              "Datos que hay que retener"
+            ],
+            "rows": [
+              [
+                "Trabajo en grupo",
+                "Sin servidores dedicados, equipos iguales, máximo 10 usuarios, seguridad débil"
+              ],
+              [
+                "Red con servidor",
+                "Servidores dedicados, administración centralizada, seguridad, copias y redundancia"
+              ],
+              [
+                "Agentes",
+                "MUA (cliente), MTA (transferencia), MDA (entrega al buzón), MAA (acceso)"
+              ],
+              [
+                "SMTP",
+                "Solo envío; puerto 25; HELO/EHLO, MAIL FROM, RCPT TO, DATA y QUIT"
+              ],
+              [
+                "POP3",
+                "Recepción; puerto 110; autenticación, transacción y actualización; descarga local"
+              ],
+              [
+                "IMAP4",
+                "Recepción sincronizada; puerto 143; mensajes en servidor y UID"
+              ],
+              [
+                "Seguridad",
+                "TLS en 465 (SMTP), 995 (POP3) y 993 (IMAP); SPF contra el spam"
+              ],
+              [
+                "Colaboración",
+                "Recursos compartidos, webmail, listas de correo, directorios y mensajería"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "5. Tabla comparativa: POP3 frente a IMAP",
+          "body": "La tabla resume la diferencia que más se pregunta: POP3 descarga y trabaja en local; IMAP mantiene el buzón en el servidor y sincroniza. De ahí se derivan el uso en varios dispositivos, el consumo de espacio y el modo de trabajo.",
+          "table": {
+            "columns": [
+              "Aspecto",
+              "POP3",
+              "IMAP"
+            ],
+            "rows": [
+              [
+                "Función",
+                "Recepción de correo",
+                "Recepción de correo"
+              ],
+              [
+                "Puerto",
+                "110; 995 con TLS",
+                "143; 993 con TLS"
+              ],
+              [
+                "Ubicación de los mensajes",
+                "Se descargan al equipo local",
+                "Permanecen en el servidor"
+              ],
+              [
+                "Sincronización",
+                "No sincroniza varios dispositivos",
+                "Sincroniza el buzón entre dispositivos"
+              ],
+              [
+                "Modo de trabajo",
+                "Diferido, sin conexión permanente",
+                "En línea o desconectado con sincronización"
+              ],
+              [
+                "Uso típico",
+                "Un único equipo y buzón pequeño",
+                "Varios dispositivos y buzón grande"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "6. Ejemplo práctico resuelto",
+          "body": "**Supuesto.** Un organismo quiere dar correo a sus empleados y compartir documentación de trabajo. Dispone de un dominio propio y de servidores Linux. Los empleados usan el portátil y el móvil, y algunos acceden desde casa con el navegador.\n\n**Resolución.**\n\n- **Dominio y DNS:** se publica el registro **MX** del dominio, con preferencia, para que los servidores de otros dominios encuentren el servidor de correo del organismo.\n- **Envío:** se instala un **MTA** (por ejemplo, postfix) que recibe los mensajes del MUA y los transfiere al destino; se abre el puerto **25** para el intercambio entre servidores y se configura TLS.\n- **Recepción:** como los empleados leen el correo en varios dispositivos, se elige **IMAP** (puerto 143 o 993 con TLS) para que el buzón permanezca en el servidor y se sincronice; POP3 se reservaría para un buzón consultado desde un solo equipo.\n- **Webmail:** se habilita un **webmail** (por ejemplo, squirrelmail) para acceder desde el navegador sin instalar cliente.\n- **Colaboración:** se publican carpetas compartidas en el servidor de archivos y se usa el directorio de usuarios para autenticar y asignar permisos; el **redirector** de los clientes permite acceder a esas carpetas como unidades de red.\n- **Seguridad:** se activa TLS en SMTP, POP3 e IMAP, se publica un registro **SPF** que autoriza solo a los servidores del organismo a enviar correo en su nombre y se forma a los usuarios para no abrir adjuntos sospechosos.\n\n**Conclusión.** El correo funciona cuando DNS, SMTP, recepción, seguridad y administración están coordinados; la colaboración se apoya en recursos compartidos y en un directorio centralizado de usuarios.",
+          "table": {
+            "columns": [
+              "Necesidad",
+              "Solución",
+              "Dato clave"
+            ],
+            "rows": [
+              [
+                "Encontrar el servidor de correo",
+                "Registro MX",
+                "Preferencia entre servidores"
+              ],
+              [
+                "Enviar correo",
+                "SMTP en el puerto 25",
+                "HELO, MAIL FROM, RCPT TO y DATA"
+              ],
+              [
+                "Leer en varios dispositivos",
+                "IMAP",
+                "Buzón en el servidor y sincronización"
+              ],
+              [
+                "Acceder desde el navegador",
+                "Webmail",
+                "MUA ejecutado en el navegador"
+              ],
+              [
+                "Evitar spam",
+                "Registro SPF",
+                "Solo autoriza a los servidores del dominio"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "7. Trampas típicas de examen",
+          "body": "Las confusiones más frecuentes de este tema son estas:\n\n- **Confundir los agentes**: el MUA es el cliente; el MTA transfiere entre servidores; el MDA entrega al buzón y el MAA da acceso al buzón.\n- **Creer que SMTP recibe correo**: SMTP solo envía; la recepción corresponde a POP3 o IMAP.\n- **Confundir POP3 e IMAP**: POP3 descarga y trabaja en local; IMAP mantiene el buzón en el servidor y sincroniza.\n- **Confundir los puertos**: SMTP 25 (y 465 con TLS), POP3 110 (995 con TLS), IMAP 143 (993 con TLS).\n- **Creer que MIME es un protocolo de transporte**: MIME es una extensión de formato que permite adjuntos y otros idiomas sobre ASCII de 7 bits.\n- **Olvidar el registro MX**: es el que indica a otros servidores dónde entregar el correo del dominio.\n- **Confundir workgroup con red basada en servidor**: el workgroup no tiene servidores dedicados y se limita a grupos pequeños; la red con servidor centraliza la administración y la seguridad.\n- **Creer que el webmail es un protocolo**: es un MUA que se ejecuta en el navegador.\n- **Confundir SPF con un sistema de cifrado**: SPF autoriza servidores emisores; el cifrado lo aporta TLS.",
+          "table": {
+            "columns": [
+              "Confusión",
+              "Lo correcto"
+            ],
+            "rows": [
+              [
+                "SMTP recibe",
+                "SMTP solo envía; POP3 e IMAP reciben"
+              ],
+              [
+                "POP3 = IMAP",
+                "POP3 descarga; IMAP sincroniza con el servidor"
+              ],
+              [
+                "MIME = protocolo",
+                "MIME es una extensión de formato"
+              ],
+              [
+                "SPF = cifrado",
+                "SPF autoriza emisores; TLS cifra"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "8. Resumen para memorizar",
+          "body": "**Trabajo en grupo.** Sin servidores dedicados, equipos iguales, máximo 10 usuarios, seguridad débil; red con servidor: administración centralizada, seguridad, copias y redundancia.\n\n**Agentes.** MUA (cliente), MTA (transferencia entre servidores), MDA (entrega al buzón) y MAA (acceso al buzón); ejemplos de MTA: postfix, qmail, exim; de MDA: procmail, maildrop; de MAA: dovecot, qpopper.\n\n**SMTP.** Solo envío; puerto 25; HELO/EHLO, MAIL FROM, RCPT TO, DATA, QUIT; códigos 220, 250, 354, 550 y 221; ASCII de 7 bits y 1000 caracteres; extensiones y MIME; DNS MX para localizar el destino.\n\n**POP3.** Puerto 110 (995 con TLS); estados de autenticación (USER/PASS/APOP), transacción (STAT, LIST, RETR, DELE) y actualización; descarga local y trabajo sin conexión.\n\n**IMAP4.** Puerto 143 (993 con TLS); buzón en el servidor, sincronización, UID, contenido MIME multiparte y trabajo desconectado.\n\n**Webmail y colaboración.** Webmail como MUA en el navegador; listas de correo; recursos compartidos, directorios de usuarios y mensajería.\n\n**Seguridad.** TLS en SMTP 465, POP3 995 e IMAP 993; SPF contra el spam; contraseñas robustas, cuentas nominativas y precaución con adjuntos."
+        },
+        {
+          "heading": "9. Casos tipo test comentados (15 preguntas)",
+          "body": "Los quince casos siguientes reproducen el estilo de pregunta del bloque II. Cada uno incluye la respuesta correcta y una explicación que recuerda el dato del temario; la referencia indica el epígrafe y la fuente donde está el contenido. Conviene contestarlos sin mirar la solución y revisar después solo los fallos."
+        },
+        {
+          "heading": "10. Fuentes citadas",
+          "body": "El tema se ha redactado a partir de `data/fuentes/II.16.txt`, que reúne el volcado de `Tema 9.docx` (administración de redes, trabajo en grupo, servidores, usuarios y recursos compartidos) y de `Tema 13.docx` (correo electrónico, agentes, SMTP, POP3, IMAP, MIME, DNS y Web). Las citas por apartado aparecen en la lista `sources` y en la referencia de cada caso tipo test. No se han copiado párrafos literales y no se han añadido datos que no figuren en esas fuentes; en particular, el volcado no desarrolla Teams, SharePoint, calendarios compartidos ni phishing, por lo que no se incluyen contenidos de esas materias."
+        }
+      ],
       "practiceSlug": "ii-16"
     },
     "II.17": {
@@ -2449,6 +2894,94 @@
         "Mezclar componentes con licencias incompatibles."
       ],
       "reviewedAt": "2026-11-10",
+      "longSections": [
+        {
+          "heading": "1. Ficha oficial del tema",
+          "body": "**Tema II.17 — Licencias y software libre.** Bloque II del temario común C1. Se estudia a partir de la ficha publicada del tema y de las fuentes oficiales de las licencias: la definición de software libre del **Proyecto GNU**, el catálogo de licencias aprobadas por la **Open Source Initiative (OSI)**, las licencias **Creative Commons**, la lista de identificadores **SPDX** y la **EUPL** de la Comisión Europea. Su núcleo es: **derecho de autor y licencia** (incluida la EULA del software propietario); **software libre y open source** con sus cuatro libertades; **licencias permisivas** (MIT, BSD y Apache 2.0) frente a **copyleft** (GPL, LGPL y AGPL); **licencias de contenido y datos** (Creative Commons y CC0); **modelos de licencia propietaria** (OEM, volumen, suscripción y servicio); **compatibilidad, cumplimiento y auditoría** de dependencias; y **software libre en la Administración** (publicación, reutilización y EUPL). Conecta con el tema **II.14** (sistemas operativos) y con la reutilización de aplicaciones en el sector público."
+        },
+        {
+          "heading": "2. Índice de epígrafes",
+          "body": "El tema se estudia en este orden: (1) derecho de autor, licencia y EULA; (2) qué es el software libre: las cuatro libertades y el acceso al código fuente; (3) open source, freeware, shareware y dominio público; (4) licencias permisivas: MIT, BSD y Apache 2.0; (5) copyleft: GPL, LGPL y AGPL; (6) licencias de contenido y datos: Creative Commons y CC0; (7) licencias y modelos del software propietario; (8) compatibilidad de licencias, cumplimiento y auditoría (inventario, SBOM y SPDX); (9) software libre en la Administración y EUPL; (10) resumen y casos tipo test. Para el test pesan las **cuatro libertades**, la diferencia **permisiva/copyleft**, **GPL/LGPL/AGPL** y las **licencias Creative Commons**."
+        },
+        {
+          "heading": "3. Introducción y contexto",
+          "body": "El software está protegido por el **derecho de autor**. Sin un permiso del titular, nadie puede copiarlo, modificarlo ni redistribuirlo más allá de lo que permita la ley. Ese permiso es la **licencia**: un contrato o autorización que fija qué se puede hacer con el programa, con qué obligaciones y bajo qué condiciones.\n\nLa confusión más frecuente es identificar «software libre» con «software gratuito». El software libre es una cuestión de **libertad**: su licencia garantiza poder ejecutar, estudiar, modificar y redistribuir el programa y su código fuente. Se puede cobrar por él y se puede usar comercialmente; lo que no se puede es impedir esas libertades a quien recibe una copia.\n\nEl tema importa en la Administración por dos razones: la **reutilización** de aplicaciones entre administraciones y el **cumplimiento** de las obligaciones de cada licencia cuando se combinan componentes. Una licencia mal elegida o una dependencia incompatible puede impedir publicar o distribuir el conjunto. Por eso el tema se ordena desde el derecho de autor hasta la auditoría de dependencias."
+        },
+        {
+          "heading": "4. Desarrollo por epígrafe",
+          "body": "**4.1 Derecho de autor, licencia y EULA.** El autor o titular conserva los derechos de explotación; la licencia autoriza determinados usos sin transferir la titularidad. El **software propietario** suele distribuirse con una **EULA** (End User License Agreement) que permite usar el programa en las condiciones fijadas, pero no acceder al código fuente ni redistribuirlo. La licencia puede ser gratuita o de pago: el precio no cambia su naturaleza jurídica.\n\n**4.2 Software libre y open source.** Un programa es **software libre** si su licencia concede las **cuatro libertades esenciales** (GNU): la **libertad 0**, ejecutar el programa como se desee con cualquier propósito; la **libertad 1**, estudiar cómo funciona y modificarlo, para lo que el **código fuente** es condición necesaria; la **libertad 2**, redistribuir copias; y la **libertad 3**, distribuir copias de las versiones modificadas. El software libre **puede ser comercial**: se puede vender, y lo que no puede hacer la licencia es prohibir esas libertades. El **open source** es una corriente con filosofía y definición práctica propias, aunque en la práctica casi todo el software de código abierto es libre; la OSI publica las licencias que considera aprobadas. No deben confundirse con el software libre el **freeware** (gratuito pero propietario), el **shareware** (prueba antes de comprar) ni el **dominio público** (sin derechos de autor o con renuncia a ellos).\n\n**4.3 Licencias permisivas.** Permiten usar, modificar y redistribuir el código, incluso dentro de productos propietarios, con obligaciones mínimas. **MIT** exige conservar el aviso de copyright y la licencia; **BSD** (en sus variantes de 2 y 3 cláusulas) es igualmente permisiva y añade en algunas versiones la prohibición de usar el nombre del proyecto para promocionar derivados; **Apache 2.0** es permisiva, incluye una concesión expresa de patentes y exige conservar avisos y el archivo NOTICE cuando corresponda. Ninguna de ellas obliga a publicar el código de las obras derivadas.\n\n**4.4 Copyleft.** El **copyleft** exige que las obras derivadas se distribuyan con la misma licencia (o una compatible), de modo que el código siga siendo libre. La **GPL** es copyleft fuerte: si se distribuye un derivado, hay que entregar el código fuente y mantener la licencia. La **LGPL** es copyleft débil: permite enlazar la biblioteca con software propietario bajo condiciones y obliga a compartir los cambios de la propia biblioteca. La **AGPL** extiende la obligación al uso en red: si se ofrece el programa como servicio, también hay que facilitar el código fuente a los usuarios. El copyleft **no prohíbe el uso comercial**: prohíbe cerrar el derivado.\n\n**4.5 Licencias de contenido y datos.** Para textos, imágenes, datos o música se usan licencias como **Creative Commons**, que ofrecen un espectro de «algunos derechos reservados»: **CC BY** exige atribución y permite uso comercial y derivados; **CC BY-SA** añade compartir igual; **CC BY-ND** prohíbe derivados; **CC BY-NC** limita a usos no comerciales; y las variantes **NC-SA** y **NC-ND** combinan condiciones. **CC0** es una renuncia a los derechos en la medida que permite la ley, próxima al dominio público. En datos abiertos, la atribución y la interoperabilidad son esenciales.\n\n**4.6 Licencias y modelos del software propietario.** Además de la EULA, el software propietario se comercializa con modelos como la licencia **OEM** (preinstalada y vinculada al equipo), la licencia por **volumen** (para organizaciones con muchos equipos), la **suscripción** (pago periódico) y el **servicio en la nube** (SaaS), donde no se posee el programa sino el derecho a usarlo. Estos modelos condicionan el número de instalaciones, la transferibilidad y el soporte.\n\n**4.7 Compatibilidad, cumplimiento y auditoría.** Cada licencia impone obligaciones que deben poder cumplirse **a la vez**: si dos componentes tienen licencias incompatibles, el conjunto no se puede distribuir legalmente. Por eso es necesario un **inventario de dependencias** (SBOM), identificar cada licencia con su **identificador SPDX**, conservar los avisos de copyright, incluir un archivo LICENSE y revisar la compatibilidad antes de publicar. La **EUPL** es una licencia copyleft de la Comisión Europea, con identificador SPDX **EUPL-1.2**, pensada para obras europeas y con un mecanismo de compatibilidad con otras licencias libres. La auditoría de licencias debe ser continua: cada actualización de una dependencia puede cambiar sus condiciones.\n\n**4.8 Software libre en la Administración.** La administración pública no solo usa software libre: también lo **publica y reutiliza**. Publicar una aplicación con licencia libre permite que otras administraciones la adapten y que el dinero público genere bienes reutilizables. Las buenas prácticas son: comprobar la compatibilidad de todas las dependencias, conservar avisos de copyright y un archivo LICENSE claro, documentar versión, procedencia y obligaciones de cada componente y usar catálogos y repositorios institucionales. La **EUPL** es una opción habitual para obras de la Administración europea, pero su elección debe revisarse con el resto del stack.\n\n*(Fuentes: ficha del tema II.17; GNU, OSI, Creative Commons, SPDX y EUPL.)*"
+        },
+        {
+          "heading": "5. Tabla comparativa: licencias de software",
+          "body": "La diferencia práctica entre licencias está en qué obligaciones imponen al distribuir y en si permiten cerrar el código del derivado. Esta tabla resume las más preguntadas.",
+          "table": {
+            "columns": [
+              "Licencia",
+              "Tipo",
+              "Obligación principal",
+              "¿Permite derivado propietario?"
+            ],
+            "rows": [
+              [
+                "MIT",
+                "Permisiva",
+                "Conservar aviso de copyright y licencia",
+                "Sí"
+              ],
+              [
+                "BSD (2/3 cláusulas)",
+                "Permisiva",
+                "Conservar aviso; en 3 cláusulas, no usar el nombre para promocionar",
+                "Sí"
+              ],
+              [
+                "Apache 2.0",
+                "Permisiva",
+                "Avisos, NOTICE y concesión de patentes",
+                "Sí"
+              ],
+              [
+                "GPL",
+                "Copyleft fuerte",
+                "Distribuir el derivado con GPL y facilitar el código fuente",
+                "No"
+              ],
+              [
+                "LGPL",
+                "Copyleft débil",
+                "Compartir los cambios de la biblioteca; permite enlazar con propietario",
+                "Sí, bajo condiciones"
+              ],
+              [
+                "AGPL",
+                "Copyleft fuerte (red)",
+                "Como GPL, también al ofrecer el programa como servicio en red",
+                "No"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "6. Ejemplo práctico resuelto",
+          "body": "**Supuesto.** Un ayuntamiento publica una aplicación web para gestionar subvenciones y quiere que otras administraciones puedan reutilizarla, pero sin permitir que una empresa la cierre y la venda como propietaria. La aplicación usa tres bibliotecas: una MIT, una Apache 2.0 y una GPL. ¿Qué licencia elige y qué debe comprobar?\n\n**Resolución.** (1) **Objetivo:** se busca una licencia **copyleft** que impida cerrar el derivado; la **EUPL** (EUPL-1.2) o la **GPL** son candidatas adecuadas para el conjunto. (2) **Dependencias:** la biblioteca MIT y la Apache 2.0 son permisivas y no impiden distribuir el conjunto bajo copyleft; la GPL impone que el derivado se distribuya con la misma licencia, lo que es coherente con el objetivo. Aun así, hay que revisar cada compatibilidad concreta (por ejemplo, las condiciones de Apache 2.0 y la versión de GPL elegida) antes de publicar. (3) **Obligaciones:** conservar avisos de copyright, incluir el texto de la licencia y el archivo NOTICE de los componentes Apache, y documentar la procedencia de cada biblioteca. (4) **Datos e imágenes:** si se usan datos o imágenes de terceros, se revisa su licencia (CC BY, CC0, etc.) y se atribuye correctamente. (5) **Auditoría:** se genera un inventario de dependencias con identificadores SPDX y se revisa en cada actualización.\n\n**Conclusión.** Publicar el código no basta: hay que elegir una licencia compatible con el objetivo, comprobar la cadena de dependencias, cumplir las obligaciones de atribución y mantener la auditoría en el tiempo."
+        },
+        {
+          "heading": "7. Trampas típicas de examen",
+          "body": "- Confundir **software libre** con **software gratuito**: libre se refiere a las libertades, no al precio; se puede vender.\n- Creer que el software libre **no puede usarse comercialmente**: las cuatro libertades incluyen el uso con cualquier propósito, también comercial.\n- Confundir **open source** con **software libre**: son corrientes con filosofías distintas, aunque en la práctica casi todo el código abierto es libre.\n- Confundir **freeware** (gratuito pero propietario), **shareware** (prueba) y **dominio público** (sin derechos) con el software libre.\n- Creer que **MIT o BSD** obligan a publicar el código del derivado: son permisivas y solo exigen avisos.\n- Confundir **GPL** (copyleft fuerte) con **LGPL** (copyleft débil, permite enlazar con propietario) y con **AGPL** (incluye el uso en red).\n- Pensar que **GPL prohíbe vender** el software: permite venderlo; lo que exige es mantener las libertades y la licencia en los derivados.\n- Confundir **EULA** (licencia de usuario final del software propietario) con una licencia libre.\n- Confundir **CC BY-SA** (compartir igual) con **CC BY-ND** (sin derivados) y con **CC BY-NC** (no comercial).\n- Creer que **CC0** es una licencia permisiva al estilo MIT: es una renuncia a derechos, próxima al dominio público.\n- Ignorar la **compatibilidad**: mezclar componentes con licencias incompatibles puede impedir distribuir el conjunto.\n- Creer que **SPDX** es una licencia: es una lista de identificadores normalizados para nombrar licencias.\n- Pensar que el **dominio público** y una licencia permisiva son lo mismo: en el dominio público no hay derechos que atribuir; una licencia permisiva conserva el copyright y exige avisos."
+        },
+        {
+          "heading": "8. Resumen para memorizar",
+          "body": "**Lo que hay que memorizar.**\n\n1. **Derecho de autor**: el software está protegido; la **licencia** autoriza usos y fija obligaciones; la **EULA** es la del software propietario.\n2. **Cuatro libertades** (GNU): 0 ejecutar, 1 estudiar y modificar (con código fuente), 2 redistribuir copias, 3 distribuir versiones modificadas.\n3. **Libre no es gratis**: se puede vender y usar comercialmente; lo que no se puede es quitar libertades.\n4. **Permisivas**: MIT, BSD y Apache 2.0; permiten derivados propietarios con avisos (Apache añade patentes y NOTICE).\n5. **Copyleft**: GPL (fuerte), LGPL (débil, permite enlazar con propietario) y AGPL (incluye el servicio en red); exigen mantener la licencia y facilitar el código.\n6. **Contenido**: CC BY (atribución), CC BY-SA (compartir igual), CC BY-ND (sin derivados), CC BY-NC (no comercial) y CC0 (renuncia, próxima al dominio público).\n7. **Propietario**: EULA, OEM, volumen, suscripción y servicio en la nube.\n8. **Cumplimiento**: compatibilidad entre licencias, inventario de dependencias (SBOM), identificadores **SPDX**, archivo LICENSE, avisos y NOTICE.\n9. **Administración**: publicar y reutilizar aplicaciones; la **EUPL** (EUPL-1.2) es una licencia copyleft europea con mecanismo de compatibilidad.\n10. **Auditoría**: cada actualización de dependencias puede cambiar las condiciones; hay que revisarlas de forma continua."
+        },
+        {
+          "heading": "9. Casos tipo test comentados (15 preguntas)",
+          "body": "**1.** ¿Qué es una licencia de software? **Respuesta: a)** El permiso o contrato por el que el titular autoriza determinados usos del programa (ficha II.17).\n\n**2.** ¿En qué consiste la libertad 0 del software libre? **Respuesta: b)** En ejecutar el programa como se desee, con cualquier propósito (GNU, cuatro libertades).\n\n**3.** ¿Significa «software libre» que sea siempre gratuito? **Respuesta: c)** No: es una cuestión de libertad, no de precio (GNU).\n\n**4.** ¿Qué licencia es permisiva y permite usar el código en un producto propietario? **Respuesta: d)** MIT (ficha II.17).\n\n**5.** ¿Qué exige la GPL al distribuir una obra derivada? **Respuesta: a)** Que se distribuya con la misma licencia y se facilite el código fuente (ficha II.17).\n\n**6.** ¿Qué caracteriza a la LGPL frente a la GPL? **Respuesta: b)** Es copyleft débil: permite enlazar con software propietario bajo condiciones (ficha II.17).\n\n**7.** ¿Qué añade la AGPL a la GPL? **Respuesta: c)** Extiende la obligación a quien ofrece el programa como servicio en red (ficha II.17).\n\n**8.** ¿Qué rasgo distingue a Apache 2.0 de otras licencias permisivas? **Respuesta: d)** Incluye una concesión expresa de patentes y exige avisos y NOTICE (Apache 2.0).\n\n**9.** ¿Qué obligación impone una licencia BSD? **Respuesta: a)** Conservar el aviso de copyright (y, en la variante de 3 cláusulas, no usar el nombre para promocionar) (ficha II.17).\n\n**10.** ¿Qué es una EULA? **Respuesta: b)** La licencia de usuario final del software propietario (ficha II.17).\n\n**11.** ¿Qué exige la licencia CC BY? **Respuesta: c)** Atribuir la autoría de la obra (Creative Commons).\n\n**12.** ¿Qué licencia se acerca más al dominio público? **Respuesta: d)** CC0, que renuncia a los derechos en la medida permitida por la ley (Creative Commons).\n\n**13.** ¿Por qué importa la compatibilidad de licencias? **Respuesta: a)** Porque mezclar componentes con condiciones incompatibles puede impedir distribuir el conjunto (ficha II.17).\n\n**14.** ¿Qué es SPDX? **Respuesta: b)** Una lista de identificadores normalizados para nombrar licencias (SPDX License List).\n\n**15.** ¿Prohíbe el copyleft el uso comercial del software? **Respuesta: c)** No: permite el uso comercial; lo que exige es que el derivado mantenga la licencia y las libertades (GNU)."
+        },
+        {
+          "heading": "10. Fuentes citadas",
+          "body": "- **Ficha publicada del tema** (`fixtures/demo/temas/II.17.json`): secciones de derecho de autor, cuatro libertades, permisivas y copyleft, contenido abierto, tabla de licencias, software libre en la Administración y ejemplo resuelto.\n- **GNU — ¿Qué es el software libre?** (gnu.org, `philosophy/free-sw.es.html`): las cuatro libertades esenciales, el carácter comercial del software libre y el copyleft.\n- **Creative Commons — CC licenses** (creativecommons.org): los seis tipos de licencia, la atribución, el compartir igual, las restricciones NC y ND y CC0.\n- **SPDX License List** (spdx.org, versión 3.29.0): identificadores normalizados de licencias.\n- **EUPL 1.2** (Interoperable Europe Portal, Comisión Europea): licencia copyleft europea, versión e identificador SPDX EUPL-1.2.\n- **`data/fuentes/II.17.txt`**: texto consolidado de trabajo. **Aviso:** este fichero no contiene el desarrollo del apartado de licencias (recoge correo, hardware y Linux del bloque), por lo que no se ha usado para datos concretos; el contenido se ha elaborado con la ficha del tema y las fuentes oficiales anteriores. No se copian párrafos literales."
+        }
+      ],
       "practiceSlug": "ii-17"
     },
     "III.18": {
@@ -4381,6 +4914,82 @@
         "Confundir nube híbrida con nube pública: la híbrida combina pública y privada."
       ],
       "reviewedAt": "2026-11-10",
+      "longSections": [
+        {
+          "heading": "1. Ficha oficial del tema",
+          "body": "**Tema III.25 — Cloud y centros de datos.** Bloque III del temario común C1. Se estudia con dos fuentes principales: **Tema 7** (virtualización de sistemas, almacenamiento y virtualización de puestos de usuario) y **Bloque 4 Actualizado 2026** (TEMA 2: almacenamiento; TEMA 5: CPD, Tiers y conceptos de seguridad; TEMA 10: virtualización, contenedores y computación en la nube). Su núcleo es: **computación en la nube** (definición, escalabilidad, flexibilidad y pago por uso); **modelos de servicio** (IaaS, PaaS y SaaS); **modelos de despliegue** (nube pública, privada, híbrida y comunitaria); **centros de procesamiento de datos** y sus **Tiers** con sus niveles de disponibilidad; **virtualización** (completa, paravirtualización, a nivel de sistema operativo, hipervisores tipo I y II y VDI); **contenedores y orquestación** (Docker, Docker Swarm, Kubernetes, Podman, LXC, OpenShift y CRI-O); **almacenamiento y aprovisionamiento** (thick y thin); **seguridad y continuidad** (propiedades de la información, redundancia N, N+1 y 2N, copias y acceso seguro) y **costes y automatización** (pago por uso e infraestructura como código con Terraform y Puppet). Conecta con el tema **III.19** (virtualización y contenedores) y con III.20 (almacenamiento y copias)."
+        },
+        {
+          "heading": "2. Índice de epígrafes",
+          "body": "El tema se estudia en este orden: (1) qué es la computación en la nube y qué ventajas declara; (2) modelos de servicio: IaaS, PaaS y SaaS; (3) modelos de despliegue: pública, privada, híbrida y comunitaria; (4) el CPD: fiabilidad, Tiers del 1 al 4 y tiempo de inactividad; (5) redundancia del CPD: N, N+1 y 2N; (6) virtualización: completa, paravirtualización, a nivel de sistema operativo, hipervisores y VDI; (7) contenedores y orquestación; (8) almacenamiento y aprovisionamiento en entornos virtualizados; (9) seguridad, continuidad y alta disponibilidad; (10) costes, escalabilidad y automatización (Terraform y Puppet). Para el test pesan los **modelos de servicio**, los **Tiers del CPD**, la diferencia **máquina virtual/contenedor** y el nivel de redundancia."
+        },
+        {
+          "heading": "3. Introducción y contexto",
+          "body": "La computación en la nube cambia dónde y cómo se ejecutan los sistemas: en lugar de poseer toda la infraestructura, se contrata un servicio a través de Internet. Para la Administración es una decisión con impacto en costes, en continuidad y en seguridad, y por eso hay que entender qué se contrata (IaaS, PaaS o SaaS) y sobre qué infraestructura se presta (CPD propio o de un proveedor).\n\nEl tema se ordena en tres capas. La **nube** explica los modelos de servicio y de despliegue. El **centro de datos** explica la fiabilidad física: Tiers, redundancia y disponibilidad. Y la **virtualización y los contenedores** explican cómo se aprovecha el hardware: máquinas virtuales con hipervisor, entornos aislados a nivel de sistema operativo y orquestadores de contenedores.\n\nEs un tema muy conectado con III.19 (virtualización) y III.20 (almacenamiento y copias): la nube no elimina la necesidad de copias ni de continuidad, solo cambia quién pone el hardware. Por eso el tema termina con seguridad, continuidad y costes, que son los tres criterios con los que se decide una migración."
+        },
+        {
+          "heading": "4. Desarrollo por epígrafe",
+          "body": "**4.1 Computación en la nube.** La **nube** permite acceder a recursos de cómputo (servidores, almacenamiento, bases de datos…) a través de Internet sin poseer la infraestructura física (Bloque 4, TEMA 10). Ofrece **escalabilidad**, **flexibilidad** y **reducción de costes**, y permite usar solo los recursos que se necesitan en cada momento. Esa elasticidad de consumo no elimina las obligaciones de seguridad, continuidad y cumplimiento: el proveedor presta la infraestructura, pero el servicio sigue siendo responsabilidad de la organización.\n\n**4.2 Modelos de servicio.** En **IaaS** (Infrastructure as a Service) el proveedor ofrece recursos básicos —máquinas virtuales, redes y almacenamiento— y el cliente gestiona el sistema operativo y las aplicaciones; ejemplos citados en el material son AWS EC2 y Azure Virtual Machines. En **PaaS** (Platform as a Service) se ofrece una plataforma completa para desarrollar y desplegar aplicaciones sin gestionar la infraestructura subyacente. En **SaaS** (Software as a Service) se ofrece la aplicación completa accesible por web y el proveedor gestiona toda la infraestructura y el software. La frontera es de responsabilidad: a medida que se sube de IaaS a SaaS, más capas gestiona el proveedor y menos el cliente.\n\n**4.3 Modelos de despliegue.** La **nube pública** es infraestructura compartida ofrecida por un proveedor externo (AWS, Azure, Google Cloud). La **nube privada** es infraestructura exclusiva de una organización, con mayor control y seguridad. La **nube híbrida** combina nube pública y privada y permite mover cargas entre ambas. La **nube comunitaria** es infraestructura compartida entre varias organizaciones con intereses comunes. La elección depende de la criticidad de los datos, de las obligaciones de protección y del coste.\n\n**4.4 El CPD y sus Tiers.** El **Tier** indica el nivel de fiabilidad de un centro de procesamiento de datos: a mayor número, mayor disponibilidad y menor tiempo de inactividad (Bloque 4, TEMA 5). El material atribuye al estándar ANSI/TIA-942 la clasificación en cuatro niveles: **Tier I (básico)**, sin redundancia, una sola línea de alimentación y refrigeración y una disponibilidad aproximada del **99,671 %**, con hasta **28,8 horas** de inactividad anual; **Tier II (redundancia parcial)**, con redundancia limitada y generadores de respaldo, **99,741 %** y hasta **22 horas**; **Tier III (mantenimiento concurrente)**, que permite mantener sin interrumpir el servicio gracias a la redundancia de los sistemas críticos, **99,982 %** y hasta **1,6 horas**; y **Tier IV (tolerante a fallos)**, con redundancia total y doble fuente de energía activa, **99,995 %** y hasta **26,3 minutos**. Tier IV se emplea en infraestructuras críticas (banca, organismos gubernamentales y grandes proveedores cloud).\n\n**4.5 Redundancia del CPD.** La **redundancia** es la capacidad adicional disponible para mantener el servicio ante fallos de alimentación, climatización o red. El nivel **N** es la capacidad mínima, sin respaldo: cualquier fallo provoca interrupción. **N+1** añade un componente de respaldo y permite seguir operando si falla un elemento individual. **2N** duplica por completo todos los sistemas críticos y es el nivel más alto, asociado a CPD de máxima criticidad.\n\n**4.6 Virtualización.** Virtualizar es crear una **capa de abstracción** entre el recurso real y los sistemas operativos que lo usan (Tema 7, 6). El software que gestiona esa capa es el hipervisor o sistema anfitrión, y los sistemas virtualizados son los invitados. Permite virtualizar servidores, almacenamiento, redes y puestos de trabajo, y aporta flexibilidad y mejor utilización de los recursos. Se distingue la **virtualización completa o de hardware** (el hipervisor traduce las peticiones de los invitados; es la técnica más usada), la **paravirtualización** (el invitado usa una interfaz especial con hypercalls y requiere modificar el sistema operativo; ejemplos Xen, UML y OpenVZ) y la **virtualización a nivel de sistema operativo** (contenedores, sin hipervisor: varios entornos aislados comparten el mismo SO y sus librerías, con estructura de directorios propia; Docker es el ejemplo típico). Los hipervisores se clasifican en **tipo I o bare metal** (se ejecutan directamente sobre el hardware; VMware ESXi, Microsoft Hyper-V, Citrix XenServer) y **tipo II o hosted** (se ejecutan como aplicación sobre un SO existente; VMware Workstation, VirtualBox, Parallels Desktop), con mejor rendimiento y seguridad en los de tipo I. La **VDI** (Virtual Desktop Infrastructure) separa el escritorio del equipo físico: el usuario se conecta a un servidor central donde se ejecuta su escritorio, y puede acceder desde cualquier dispositivo con el cliente adecuado; el modo **alojado** lo presta un proveedor externo.\n\n**4.7 Contenedores y orquestación.** Un **contenedor** es un proceso aislado con las librerías, archivos y configuraciones necesarias para una aplicación, que aprovecha el SO sobre el que se ejecuta en lugar de llevar un SO completo como la máquina virtual. Sus ventajas son la **flexibilidad** y el arranque rápido: arrancar un contenedor tarda lo mismo que arrancar un proceso, frente al tiempo de arranque de una máquina virtual. El ecosistema incluye **Docker** (creación y ejecución de contenedores), **Docker Swarm** (orquestación nativa, más sencilla que Kubernetes pero menos potente en entornos empresariales), **Kubernetes** (orquestación a gran escala de microservicios y aplicaciones), **Podman** (gestión sin daemon centralizado, compatible con OCI), **LXC** (contenedores a nivel de sistema operativo en Linux), **OpenShift** (plataforma basada en Kubernetes de Red Hat) y **CRI-O** (runtime optimizado para Kubernetes).\n\n**4.8 Almacenamiento y aprovisionamiento.** La nube y el CPD se apoyan en las arquitecturas de almacenamiento vistas en III.20 (DAS, NAS y SAN) y en cabinas con controladoras redundantes, RAID y caché en espejo. En entornos virtualizados el **aprovisionamiento** puede ser **thick** (se reserva toda la capacidad por adelantado) o **thin** (se asigna según se consume), y la virtualización del almacenamiento (VSAN) permite mover los datos entre cabinas sin que el servidor lo note. La copia de seguridad sigue siendo imprescindible: la nube no sustituye al backup.\n\n**4.9 Seguridad y continuidad.** La seguridad de la información se apoya en las propiedades **DICAT** (disponibilidad, integridad, confidencialidad, autenticidad y trazabilidad) y en los controles de acceso y de red. En el CPD, la disponibilidad se consigue con redundancia y Tiers; en la nube, con la arquitectura del proveedor y con las copias y la configuración del cliente. El acceso remoto se protege con **VPN** y con protocolos seguros como HTTPS, y la **alta disponibilidad y el balanceo de carga** reparten el tráfico y evitan un punto único de fallo. Una migración a la nube sin plan de continuidad ni de copias es una migración sin red de seguridad.\n\n**4.10 Costes y automatización.** La nube permite el **pago por uso**: se paga por los recursos consumidos y se puede escalar sin comprar hardware, lo que contribuye a la reducción de costes si se dimensiona bien. La **infraestructura como código (IaC)** permite definir y aprovisionar la infraestructura con archivos de configuración declarativos: **Terraform** aprovisiona recursos en la nube y **Puppet** gestiona la configuración de los servidores. La automatización hace reproducible el despliegue y reduce errores manuales, pero exige control de versiones y revisión de los cambios."
+        },
+        {
+          "heading": "5. Tabla comparativa: IaaS, PaaS y SaaS",
+          "body": "La diferencia entre los modelos de servicio está en quién gestiona cada capa. Esta tabla resume las responsabilidades y los ejemplos que cita el material.",
+          "table": {
+            "columns": [
+              "Modelo",
+              "Qué ofrece",
+              "Qué gestiona el cliente",
+              "Ejemplos"
+            ],
+            "rows": [
+              [
+                "IaaS",
+                "Recursos básicos: máquinas virtuales, redes y almacenamiento",
+                "El sistema operativo y las aplicaciones",
+                "AWS EC2, Azure Virtual Machines"
+              ],
+              [
+                "PaaS",
+                "Plataforma completa para desarrollar y desplegar aplicaciones",
+                "La aplicación y sus datos; no gestiona la infraestructura",
+                "Plataformas de aplicaciones gestionadas"
+              ],
+              [
+                "SaaS",
+                "Aplicación completa accesible por web",
+                "Solo el uso de la aplicación",
+                "Aplicaciones en la nube de correo, ofimática o gestión"
+              ],
+              [
+                "On-premise (referencia)",
+                "Infraestructura y software en las instalaciones propias",
+                "Toda la pila: hardware, SO y aplicaciones",
+                "CPD propio"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "6. Ejemplo práctico resuelto",
+          "body": "**Supuesto.** Un ayuntamiento quiere trasladar a la nube su aplicación de expedientes y el portal de transparencia. Debe elegir el modelo de servicio y de despliegue, garantizar la continuidad y controlar el coste. Razona la solución.\n\n**Resolución.** (1) **Modelo de servicio:** para la aplicación de expedientes, que necesita control del sistema operativo y de la base de datos, se contrata **IaaS** (máquinas virtuales, red y almacenamiento); para el portal de transparencia, de carga variable y sin requisitos especiales, puede usarse **PaaS** o incluso **SaaS**. (2) **Modelo de despliegue:** se opta por una **nube híbrida**: los expedientes con datos personales se mantienen en la **nube privada** o en el CPD propio, y el portal y los entornos de prueba se alojan en la **nube pública** para aprovechar la escalabilidad. (3) **CPD:** los servicios críticos se alojan en un CPD **Tier III** (mantenimiento concurrente) o **Tier IV** si se exige tolerancia a fallos, con redundancia **N+1** o **2N** para alimentación y refrigeración. (4) **Virtualización y contenedores:** la aplicación se ejecuta en máquinas virtuales o, si se moderniza, en contenedores orquestados con **Kubernetes** y empaquetados con **Docker**. (5) **Continuidad y seguridad:** copias periódicas, plan de recuperación, acceso remoto por **VPN**, HTTPS, control de accesos y monitorización; la nube del proveedor no sustituye las copias del cliente. (6) **Coste y automatización:** aprovisionamiento declarado con **Terraform** para reproducir entornos y controlar el gasto, con revisión periódica de los recursos consumidos.\n\n**Conclusión.** Cada decisión responde a un criterio: el modelo de servicio, al control que se necesita; el de despliegue, a la criticidad y a la protección de datos; el Tier, a la disponibilidad; y la automatización, al coste y a la reproducibilidad."
+        },
+        {
+          "heading": "7. Trampas típicas de examen",
+          "body": "- Confundir **IaaS** (recursos básicos; el cliente gestiona SO y aplicaciones), **PaaS** (plataforma para desplegar; no se gestiona la infraestructura) y **SaaS** (aplicación completa; el proveedor lo gestiona todo).\n- Confundir **nube pública** (infraestructura compartida de un proveedor externo), **privada** (exclusiva de la organización), **híbrida** (combina ambas) y **comunitaria** (compartida por organizaciones con intereses comunes).\n- Creer que **nube privada** significa necesariamente «en las instalaciones propias»: es una cuestión de exclusividad, no de ubicación física.\n- Confundir los **Tiers**: Tier I sin redundancia, Tier II redundancia parcial, Tier III mantenimiento concurrente y Tier IV tolerante a fallos (doble fuente activa).\n- Confundir **N+1** (un componente adicional de respaldo) con **2N** (duplicación completa de los sistemas críticos).\n- Confundir **hipervisor tipo I** (bare metal: ESXi, Hyper-V, XenServer) con **tipo II** (hosted: Workstation, VirtualBox, Parallels).\n- Confundir **máquina virtual** (lleva un SO completo) con **contenedor** (aprovecha el SO del host y arranca en el tiempo de un proceso).\n- Confundir **Docker Swarm** (orquestación nativa de Docker, más sencilla) con **Kubernetes** (orquestación a gran escala).\n- Creer que **Podman** necesita un daemon centralizado como Docker: funciona sin él y es compatible con OCI.\n- Confundir **LXC** (contenedores a nivel de sistema operativo) con una máquina virtual tradicional.\n- Pensar que la nube **sustituye a las copias de seguridad**: el proveedor ofrece infraestructura, pero la copia y la recuperación siguen siendo responsabilidad del cliente.\n- Confundir **Terraform** (infraestructura como código declarativa) con **Puppet** (gestión de configuración de servidores).\n- Creer que la nube es **siempre más barata**: el pago por uso puede encarecer el servicio si no se dimensiona ni se controla el gasto."
+        },
+        {
+          "heading": "8. Resumen para memorizar",
+          "body": "**Lo que hay que memorizar.**\n\n1. **Nube**: acceso a recursos de cómputo por Internet sin infraestructura propia; escalabilidad, flexibilidad y reducción de costes; pago por uso.\n2. **IaaS**: máquinas virtuales, redes y almacenamiento; el cliente gestiona SO y aplicaciones (AWS EC2, Azure VM). **PaaS**: plataforma de desarrollo y despliegue. **SaaS**: aplicación completa por web.\n3. **Despliegue**: pública (compartida), privada (exclusiva), híbrida (combina) y comunitaria (intereses comunes).\n4. **Tiers**: I básico sin redundancia (99,671 %, 28,8 h), II redundancia parcial (99,741 %, 22 h), III mantenimiento concurrente (99,982 %, 1,6 h), IV tolerante a fallos (99,995 %, 26,3 min).\n5. **Redundancia**: N (mínima), N+1 (un respaldo), 2N (duplicación completa).\n6. **Virtualización**: completa o de hardware, paravirtualización (hypercalls) y a nivel de SO (contenedores); hipervisores tipo I (bare metal) y tipo II (hosted); VDI.\n7. **Contenedores**: Docker, Docker Swarm, Kubernetes, Podman, LXC, OpenShift y CRI-O; comparten el SO del host y arrancan como un proceso.\n8. **Almacenamiento**: DAS/NAS/SAN y VSAN; aprovisionamiento thick y thin; las copias siguen siendo imprescindibles.\n9. **Seguridad y continuidad**: DICAT, redundancia, copias, VPN/HTTPS, alta disponibilidad y balanceo de carga.\n10. **Costes y automatización**: pago por uso; Terraform (IaC) y Puppet (configuración); control del gasto y reproducibilidad."
+        },
+        {
+          "heading": "9. Casos tipo test comentados (15 preguntas)",
+          "body": "**1.** ¿Qué modelo de servicio ofrece máquinas virtuales, redes y almacenamiento, y deja al cliente la gestión del sistema operativo y las aplicaciones? **Respuesta: a)** IaaS (Bloque 4, TEMA 10).\n\n**2.** ¿Qué modelo ofrece una plataforma completa para desarrollar y desplegar aplicaciones sin gestionar la infraestructura? **Respuesta: b)** PaaS (Bloque 4, TEMA 10).\n\n**3.** ¿Qué modelo ofrece una aplicación completa accesible por web y gestionada por el proveedor? **Respuesta: c)** SaaS (Bloque 4, TEMA 10).\n\n**4.** ¿Qué modelo de despliegue combina nube pública y privada y permite mover cargas entre ambas? **Respuesta: d)** Nube híbrida (Bloque 4, TEMA 10).\n\n**5.** ¿Qué modelo de despliegue es una infraestructura compartida entre varias organizaciones con intereses comunes? **Respuesta: a)** Nube comunitaria (Bloque 4, TEMA 10).\n\n**6.** ¿Qué Tier permite el mantenimiento concurrente sin interrumpir el servicio? **Respuesta: b)** Tier III (Bloque 4, TEMA 5).\n\n**7.** ¿Qué Tier es tolerante a fallos y dispone de doble fuente de energía activa? **Respuesta: c)** Tier IV (Bloque 4, TEMA 5).\n\n**8.** ¿Qué Tier no dispone de redundancia en sus componentes? **Respuesta: d)** Tier I (Bloque 4, TEMA 5).\n\n**9.** ¿Qué significa el nivel de redundancia N+1? **Respuesta: a)** Un componente adicional de respaldo sobre la capacidad mínima (Bloque 4, TEMA 5).\n\n**10.** ¿Qué significa el nivel de redundancia 2N? **Respuesta: b)** Duplicación completa de todos los sistemas críticos (Bloque 4, TEMA 5).\n\n**11.** ¿Qué hipervisor se ejecuta directamente sobre el hardware (bare metal)? **Respuesta: c)** El de tipo I, como VMware ESXi, Hyper-V o XenServer (Bloque 4, TEMA 10).\n\n**12.** ¿Qué hipervisor se ejecuta como aplicación sobre un sistema operativo existente? **Respuesta: d)** El de tipo II, como VMware Workstation o VirtualBox (Bloque 4, TEMA 10).\n\n**13.** ¿Qué diferencia principal hay entre un contenedor y una máquina virtual? **Respuesta: a)** El contenedor aprovecha el SO del host y arranca como un proceso; la VM lleva un SO completo (Tema 7, 6.2).\n\n**14.** ¿Qué herramienta se usa para orquestar contenedores y microservicios a gran escala? **Respuesta: b)** Kubernetes (Bloque 4, TEMA 10).\n\n**15.** ¿Qué herramienta define y aprovisiona infraestructura mediante archivos de configuración declarativos (infraestructura como código)? **Respuesta: c)** Terraform (Bloque 4, TEMA 10)."
+        },
+        {
+          "heading": "10. Fuentes citadas",
+          "body": "- **Tema 7.docx**, apartados 3 y 6: sistemas de almacenamiento y su virtualización, virtualización de sistemas, hipervisores, virtualización a nivel de SO y VDI (DOCX, sin paginación fija).\n- **Bloque 4 Actualizado 2026.docx**, TEMA 2 (almacenamiento y aprovisionamiento), TEMA 5 (CPD, Tiers y redundancia) y TEMA 10 (virtualización, contenedores, computación en la nube, alta disponibilidad y herramientas de automatización).\n- **III.25.txt**: texto consolidado de las fuentes anteriores (uso interno de trabajo).\n\nNo se copian párrafos literales; se sintetiza y se ordena el contenido. Las cifras de disponibilidad e inactividad de los Tiers y los porcentajes de redundancia son las que recoge el material."
+        }
+      ],
       "practiceSlug": "iii-25"
     },
     "III.26": {
@@ -4467,6 +5076,77 @@
         "Dar de baja un equipo sin borrar el disco ni recuperar las licencias."
       ],
       "reviewedAt": "2026-11-10",
+      "longSections": [
+        {
+          "heading": "1. Ficha oficial del tema",
+          "body": "**Tema III.26 · Soporte al puesto de trabajo.** Bloque III (Sistemas, redes y comunicaciones) del temario común de Técnicos Auxiliares de Informática. Se relaciona con el tema III.24 (monitorización y gestión de incidencias): el soporte al puesto es el día a día del service desk y de la administración de equipos.\n\n**Objetivo de examen.** Reconocer el ciclo de vida del puesto (inventario, imagen, despliegue, mantenimiento y retirada), aplicar los niveles de servicio (SLA, SLM, OLA y UC), clasificar incidencias por severidad y prioridad, distinguir los tipos de mantenimiento y resolver las tareas típicas de actualización, reparación, seguridad del puesto y teletrabajo. Dificultad **media**: mucha terminología y siglas fáciles de confundir.\n\n**Fuentes de este tema.** El consolidado data/fuentes/III.26.txt, formado por Tema 6.docx (administración del sistema, incidencias y SLA/SLM), Tema 10.docx (seguridad de los sistemas y del puesto) y Bloque 4 Actualizado 2026.docx (administración del SO, actualización, copias, MDM/BYOD, VPN y VDI). (Fuente: data/fuentes/III.26.txt.)"
+        },
+        {
+          "heading": "2. Índice de epígrafes",
+          "body": "Este tema se ordena en diez apartados:\n\n1. Ficha oficial del tema: ubicación, objetivo, dificultad y fuentes.\n2. Índice de epígrafes: el mapa que está leyendo.\n3. Introducción y contexto: el ciclo de vida del puesto de trabajo.\n4. Desarrollo por epígrafe: inventario, imagen y despliegue, mantenimiento, incidencias, SLA/SLM, helpdesk, seguridad del puesto, teletrabajo y métricas.\n5. Tabla comparativa: tipos de mantenimiento.\n6. Ejemplo práctico resuelto.\n7. Trampas típicas de examen.\n8. Resumen para memorizar.\n9. Casos tipo test comentados (15 preguntas).\n10. Fuentes citadas.\n\nLos epígrafes oficiales (inventario, imagen, despliegue, incidencias, helpdesk, SLA, seguridad del puesto y teletrabajo) se cubren en el apartado 4; los casos del apartado 9 coinciden con los quince testCases del fichero. (Fuente: data/fuentes/III.26.txt.)"
+        },
+        {
+          "heading": "3. Introducción y contexto",
+          "body": "El soporte al puesto de trabajo cubre todo lo que ocurre desde que se prepara un equipo para un usuario hasta que se retira. No es solo «arreglar ordenadores»: incluye inventariar el parque, preparar una imagen base, desplegarla, mantener el sistema actualizado, atender incidencias con unos niveles de servicio, proteger el endpoint y dar servicio a quienes trabajan fuera de la oficina.\n\nLa fuente ordena esas tareas desde el papel del administrador: conoce el sistema, lo diseña de forma fiable, lo hace fácil de usar, se anticipa a los problemas y tiene un plan de contingencia. Entre sus funciones están instalar y configurar estaciones, gestionar usuarios, altas y bajas, agregar o quitar hardware, hacer copias, instalar software, monitorizar, resolver problemas y mantener la documentación al día. Esa documentación («qué, quién, cuándo y cómo») es la base del inventario y del histórico de cada equipo.\n\nSobre esa operación se apoyan dos capas: los **acuerdos de nivel de servicio** (SLA, SLM, OLA y UC), que fijan qué se promete y cómo se mide, y la **seguridad del puesto**, que protege el equipo y los datos con actualizaciones, antivirus, cortafuegos y políticas de uso. El teletrabajo añade una tercera dimensión: el acceso remoto seguro y la gestión de dispositivos fuera de la oficina. (Fuentes: Tema 6.docx, apartados 2 y 3; Tema 10.docx, apartados 2 y 6.2; Bloque 4 Actualizado 2026.docx, Tema 1.)"
+        },
+        {
+          "heading": "4. Desarrollo por epígrafe",
+          "body": "**1) Inventario y ciclo de vida.** Inventariar es mantener un registro actualizado de cada equipo y de su configuración: usuario asignado, hardware, software instalado, número de serie, ubicación y garantía. La fuente relaciona esta tarea con las responsabilidades del administrador: crear y mantener el esquema de hardware, documentar la configuración del SO y del cableado, los registros de mantenimiento y las copias. Un inventario bien llevado permite saber qué hay, dónde está y qué hay que actualizar o retirar; sin él, el soporte se vuelve reactivo y se duplican compras.\n\n**2) Imagen y despliegue.** Una **imagen** es una plantilla del sistema operativo y del software base que se instala en los equipos nuevos para que todos partan de una configuración homogénea y probada. La fuente menciona la instalación desde USB, DVD o red, la configuración de particiones y usuarios y la herramienta DISM de Windows («Administración y mantenimiento de imagen de implementación»), que sirve para preparar y mantener imágenes de implementación. El **despliegue** es el proceso de distribuir esa imagen a los puestos; hacerlo por imágenes reduce errores y tiempo frente a instalar equipo a equipo. Después del despliegue hay que actualizar el inventario y entregar el equipo con sus instrucciones de uso.\n\n**3) Configuración, actualización y mantenimiento.** La configuración incluye usuarios y permisos (Panel de Control y Administrador de Usuarios en Windows; adduser, chmod y chown en Linux). Actualizar aporta seguridad, corrige fallos y mejora el rendimiento; en Windows se usan Windows Update y WSUS (que centraliza y distribuye las actualizaciones en la red), y en Linux los gestores de paquetes (apt en Debian/Ubuntu, yum/dnf en Red Hat/CentOS, pacman en Arch). En macOS se usa la App Store y softwareupdate. La fuente distingue parches de seguridad, actualizaciones de software y de firmware.\n\nEl **mantenimiento** se clasifica de dos formas. Según dónde esté el técnico: «in site» (se desplaza a la oficina), «on site» (ya está en ella) y **remoto** (resuelve problemas de software con herramientas de control remoto). Según la acción: **correctivo** (corrige errores), **evolutivo** (cubre nuevas necesidades), **adaptativo** (adapta el entorno de hardware o software) y **perfectivo** (revisa para detectar focos de problemas). Para reparar se dispone de Modo Seguro o Recovery Mode, CHKDSK/fsck, System Restore o snapshots y Live CD; en Windows, bootrec (FixMBR, FixBoot, RebuildBCD), SFC y DISM.\n\n**4) Incidencias: severidad y prioridad.** Una incidencia puede venir de un comportamiento anómalo del software, de la red, de incompatibilidades entre arquitecturas o sistemas o de una actualización. Toda incidencia tiene un **nivel de severidad** y una **prioridad** de resolución. La fuente distingue: **Urgente** (aplicación crítica, plazo que se puede vencer, impacto directo y sin workaround), **Alta** (crítica y sensible al tiempo, impacto indirecto, pero con workaround), **Media** (afecta a operaciones normales, hay workaround y no es sensible al tiempo) y **Baja** (afecta a documentación o procedimientos, sin impacto en la capacidad del usuario y con workaround). El **workaround** es la alternativa temporal que suple al componente afectado.\n\n**5) SLA y SLM.** El **SLA** es el contrato que fija los niveles de un servicio con parámetros objetivos: tipo de servicio, soporte y asistencia, seguridad y datos, garantías y tiempos de respuesta, disponibilidad, conectividad, multas por caída y especificaciones de MTBF y MTTR. La prestación incluye instalar y mantener versiones del SO y software base, monitorizar y optimizar, configurar comunicaciones, administrar usuarios y grupos y mantener las copias. La fuente agrupa los procesos en gestión de disponibilidad, configuración, rendimiento, seguridad y backup. El **SLM** (Service Level Management) es la metodología que asegura que los clientes reciben los niveles acordados y que los OLA y UC son apropiados.\n\n**6) Helpdesk y funciones de soporte.** La fuente habla del grupo de soporte y de la matriz **RACI** para definir roles: **Responsible** (hace el trabajo), **Accountable** (responsable único del resultado), **Consulted** (se le consulta) e **Informed** (debe estar al tanto). En el marco estándar, el **helpdesk o service desk** es el punto único de contacto: registra el ticket, lo clasifica, lo prioriza, lo resuelve o lo escala (primer, segundo y tercer nivel; escalado funcional o jerárquico) y lo cierra con confirmación. La fuente no desarrolla el service desk como tal; se resume como concepto estándar.\n\n**7) Seguridad del puesto.** El endpoint se protege en capas: políticas de seguridad y medidas (la fuente distingue medidas de prevención, detección y recuperación), antivirus y antitroyanos, cortafuegos local y proxies, actualizaciones y parches, control de usuarios y permisos, y control de acceso a la red (NAC) para autorizar o denegar dispositivos según políticas. La formación del usuario y la política de uso completan la protección: el eslabón humano sigue siendo el principal vector de entrada.\n\n**8) Teletrabajo y acceso remoto.** El teletrabajo se apoya en la **VPN de acceso remoto**, que da al usuario un acceso seguro a la red corporativa desde cualquier conexión a Internet; la VPN garantiza confidencialidad, integridad y autenticación mediante túneles cifrados (IPsec, OpenVPN basado en SSL/TLS, L2TP/IPsec, etc.). El **split tunneling** decide qué tráfico se encamina por el túnel y cuál va directo a Internet. Para publicar escritorios se usa **VDI** (infraestructura de escritorio virtual), con escritorios persistentes (el usuario personaliza su imagen) o no persistentes (vuelven a su estado original al cerrar sesión). Los dispositivos se gestionan con MDM y modelos BYOD, CYOD, COBO o COPE.\n\n**9) Métricas.** El **tiempo de respuesta** es el que transcurre desde el aviso hasta que el equipo técnico se dispone a resolver; el **MTTR** mide desde la notificación hasta la restitución; el **MTBF** es el periodo medio entre fallos consecutivos y se usa como medida de calidad. En copias de seguridad, la fuente añade RPO (pérdida máxima de datos), RTO (tiempo máximo de restauración), MTD (caída máxima tolerable) y WRT (tiempo para retomar el trabajo). La disponibilidad y el cumplimiento del SLA se calculan con estas métricas. (Fuentes: Tema 6.docx, apartados 2, 3 y 4; Tema 10.docx, apartados 2, 6 y 6.2; Bloque 4 Actualizado 2026.docx, Tema 1, Tema 2, Tema 9 y Tema 10.)"
+        },
+        {
+          "heading": "5. Tabla comparativa: tipos de mantenimiento",
+          "body": "Clasificación del mantenimiento según la acción realizada, con un ejemplo de cada tipo. (Fuente: Tema 6.docx, apartado 4.2.)",
+          "table": {
+            "columns": [
+              "Tipo",
+              "Qué busca",
+              "Ejemplo"
+            ],
+            "rows": [
+              [
+                "Correctivo",
+                "Corregir errores concretos",
+                "Reparar un servicio que no arranca"
+              ],
+              [
+                "Evolutivo",
+                "Cubrir nuevas necesidades o cambios",
+                "Añadir una función solicitada por los usuarios"
+              ],
+              [
+                "Adaptativo",
+                "Adaptar el entorno de hardware o software",
+                "Actualizar el sistema para una nueva versión del SO"
+              ],
+              [
+                "Perfectivo",
+                "Detectar focos de problemas antes de que aparezcan",
+                "Revisar y optimizar el rendimiento periódicamente"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "6. Ejemplo práctico resuelto",
+          "body": "**Supuesto.** Un organismo incorpora a un nuevo empleado. Hay que preparar su puesto, entregarlo con seguridad y atender una incidencia de correo en su primer día.\n\n**Resolución.**\n\n- **Inventario:** se da de alta el equipo en el inventario con número de serie, usuario, ubicación y software autorizado.\n- **Imagen y despliegue:** se aplica la imagen base del organismo (SO y aplicaciones ofimáticas) y se personaliza la cuenta; se comprueba que el equipo arranca y que la configuración coincide con la imagen.\n- **Actualización y seguridad:** se instalan parches por WSUS, se actualiza el antivirus, se activa el cortafuegos y se aplican las políticas de usuario y de acceso a la red.\n- **Entrega:** se documenta la entrega y se explica al usuario cómo solicitar soporte y cómo usar la VPN si va a teletrabajar.\n- **Incidencia:** el usuario no puede enviar correo. Se abre un ticket, se clasifica como **Alta** (aplicación crítica, sensible al tiempo, con workaround: puede usar la web de correo) y se resuelve en el primer nivel reconfigurando el cliente. El tiempo desde la notificación hasta la restitución es de 40 minutos, dentro del SLA.\n\n**Qué se aprende.** El puesto se soporta mejor con procesos: inventario para saber qué hay, imagen para desplegar igual en todas partes, actualizaciones y seguridad para prevenir, SLA para comprometer plazos y un ticket para dejar trazabilidad. (Fuentes: Tema 6.docx, apartados 2, 3 y 4; Bloque 4 Actualizado 2026.docx, Tema 1.)"
+        },
+        {
+          "heading": "7. Trampas típicas de examen",
+          "body": "- **SLA no es SLM.** El SLA es el acuerdo concreto con parámetros y penalizaciones; el SLM es la metodología que vela por cumplir los niveles acordados.\n- **OLA no es UC.** La OLA es un acuerdo interno entre equipos y el UC un contrato con un proveedor externo.\n- **Severidad no es prioridad.** La severidad describe el impacto; la prioridad ordena la resolución combinando impacto y urgencia.\n- **Workaround no es solución.** Es la alternativa temporal que permite seguir trabajando mientras se busca la causa.\n- **«In site» no es «on site».** «In site» implica que el técnico se desplaza; «on site» que ya está en la oficina; el remoto resuelve por control remoto.\n- **Correctivo no es perfectivo.** El correctivo repara un error; el perfectivo busca focos de problemas antes de que ocurran.\n- **MTTR no es MTBF.** El MTTR mide la reparación; el MTBF, el tiempo entre fallos. El tiempo de respuesta es otro concepto distinto.\n- **Windows Update no es WSUS.** Windows Update descarga del fabricante; WSUS centraliza y distribuye actualizaciones en la red.\n- **apt-get update no instala.** Actualiza la lista de paquetes; para instalar o actualizar se usa upgrade u otra orden equivalente.\n- **bootrec, SFC y DISM no son lo mismo.** bootrec repara el arranque; SFC comprueba archivos protegidos; DISM mantiene y repara imágenes de Windows.\n- **VPN no es proxy.** La VPN cifra todo el tráfico; el proxy solo redirige y no cifra.\n- **VDI persistente no es no persistente.** La persistente conserva la personalización; la no persistente vuelve al estado original al cerrar sesión.\n- **BYOD no es COPE.** En BYOD el dispositivo es del empleado; en COPE es de la empresa con permiso de uso personal.\n\n(Fuentes: Tema 6.docx, apartados 3 y 4; Tema 10.docx, apartados 6 y 6.2; Bloque 4 Actualizado 2026.docx, Tema 1, Tema 9 y Tema 10.)"
+        },
+        {
+          "heading": "8. Resumen para memorizar",
+          "body": "Lo que hay que retener:\n\n- Ciclo del puesto: inventario, imagen, despliegue, configuración, mantenimiento y retirada; la documentación es la base del inventario.\n- Imagen base y despliegue homogéneo; DISM para imágenes de Windows; instalación desde USB, DVD o red.\n- Actualizaciones: Windows Update y WSUS en Windows; apt, yum/dnf y pacman en Linux; parches de seguridad, software y firmware.\n- Mantenimiento según lugar: in site, on site y remoto. Según acción: correctivo, evolutivo, adaptativo y perfectivo.\n- Reparación: Modo Seguro/Recovery, CHKDSK/fsck, System Restore, bootrec, SFC y DISM.\n- Incidencias: severidad y prioridad; Urgente, Alta, Media y Baja según criticidad, plazo y workaround.\n- SLA con sus apartados; SLM, OLA y UC. Procesos: disponibilidad, configuración, rendimiento, seguridad y backup.\n- RACI: Responsible, Accountable, Consulted, Informed.\n- Seguridad del puesto: antivirus, antitroyanos, cortafuegos, parches, permisos, NAC y formación.\n- Teletrabajo: VPN de acceso remoto, split tunneling, VDI persistente o no persistente y MDM/BYOD/CYOD/COBO/COPE.\n- Métricas: tiempo de respuesta, MTTR, MTBF, disponibilidad; en copias, RPO, RTO, MTD y WRT.\n\n(Fuentes: Tema 6.docx, apartados 2-4; Tema 10.docx, apartados 2 y 6; Bloque 4 Actualizado 2026.docx, Tema 1, Tema 2, Tema 9 y Tema 10.)"
+        },
+        {
+          "heading": "9. Casos tipo test comentados (15 preguntas)",
+          "body": "Los quince casos del fichero, comentados y con su referencia:\n\n**1.** Qué es un SLA. **Respuesta: a)** El acuerdo con el cliente que fija niveles medibles del servicio (apartado 4, SLA).\n\n**2.** Criterio de una incidencia «Urgente». **Respuesta: b)** Aplicación crítica, plazo sensible y sin workaround (apartado 4, incidencias).\n\n**3.** Rol RACI responsable único del resultado final. **Respuesta: c)** Accountable (apartado 4, helpdesk y funciones).\n\n**4.** Mantenimiento que corrige errores concretos. **Respuesta: d)** Correctivo (apartado 4, mantenimiento).\n\n**5.** Mantenimiento en el que el técnico ya está en la oficina. **Respuesta: a)** On site (apartado 4, mantenimiento).\n\n**6.** Qué hace WSUS. **Respuesta: b)** Centraliza y distribuye actualizaciones Windows en la red (apartado 4, actualización).\n\n**7.** Qué hace «sudo apt-get update». **Respuesta: c)** Actualiza la lista de paquetes disponibles (apartado 4, actualización).\n\n**8.** Para qué sirve DISM. **Respuesta: d)** Mantener y reparar imágenes de Windows (apartado 4, reparación).\n\n**9.** Qué repara bootrec con /FixMBR. **Respuesta: a)** El MBR (apartado 4, reparación).\n\n**10.** Qué mide el MTTR. **Respuesta: b)** El tiempo entre la notificación y la restitución (apartado 4, métricas).\n\n**11.** Qué mide el MTBF. **Respuesta: c)** El periodo medio entre fallos consecutivos (apartado 4, métricas).\n\n**12.** Qué permite la VPN de acceso remoto. **Respuesta: d)** Acceder con seguridad a la red corporativa desde Internet (apartado 4, teletrabajo).\n\n**13.** Qué permite el split tunneling. **Respuesta: a)** Decidir qué tráfico va por la VPN y qué tráfico sale directo (apartado 4, teletrabajo).\n\n**14.** Qué caracteriza al VDI no persistente. **Respuesta: b)** El escritorio vuelve a su estado original al cerrar sesión (apartado 4, teletrabajo).\n\n**15.** Qué es BYOD. **Respuesta: c)** El empleado usa su dispositivo personal (apartado 4, teletrabajo).\n\nCada caso incluye su explicación completa y la referencia de fuente en el campo reference de testCases. (Fuentes: Tema 6.docx, apartados 3 y 4; Bloque 4 Actualizado 2026.docx, Tema 1, Tema 9 y Tema 10.)"
+        },
+        {
+          "heading": "10. Fuentes citadas",
+          "body": "- **Tema 6.docx**, apartados 1-4: tipos de software, tareas y responsabilidades del administrador, gestión de incidencias (SLA/SLM, severidad y prioridad, RACI, herramientas de gestión), actualización del SO (Windows Update, WSUS, YUM, APT), mecanismos de reparación (bootrec, SFC, DISM), tipos de mantenimiento y métricas (tiempo de respuesta, MTTR, MTBF).\n- **Tema 10.docx**, apartados 2 y 6: políticas de seguridad, tipos de medidas, identificación y autenticación, amenazas, virus, programas de defensa (cortafuegos, antitroyanos, proxys).\n- **Bloque 4 Actualizado 2026.docx**, Tema 1 (administración del SO, instalación, actualización, mantenimiento y reparación), Tema 2 (copias: RPO, RTO, MTD y WRT), Tema 9 (VPN: acceso remoto, túnel, split tunneling, IPsec, OpenVPN, VDI) y Tema 10 (MDM, BYOD, CYOD, COBO y COPE; NAC).\n- **data/fuentes/III.26.txt**: texto consolidado de las fuentes anteriores, utilizado para verificar las citas.\n\nAviso de alcance: la fuente no desarrolla el inventario como proceso formal, el despliegue por imágenes ni el helpdesk/service desk con niveles; esos conceptos se resumen en el apartado 4 como práctica estándar de soporte y se identifican como tales. (Fuente: data/fuentes/III.26.txt.)"
+        }
+      ],
       "practiceSlug": "iii-26"
     },
     "IV.27": {
@@ -5576,6 +6256,77 @@
         "Presentar un KPI sin periodo, unidad o denominador: una cifra correcta se interpreta mal."
       ],
       "reviewedAt": "2026-11-10",
+      "longSections": [
+        {
+          "heading": "1. Ficha oficial del tema",
+          "body": "**Tema IV.33 · Informes y explotación de datos.** Bloque IV (Datos y desarrollo) del temario común de Técnicos Auxiliares de Informática. Se apoya en el tema IV.28 (SQL) y en el IV.27 (bases de datos relacionales): aquí no se diseñan las tablas, sino que se extrae información de ellas para decidir.\n\n**Objetivo de examen.** Distinguir el tratamiento operativo del analítico, escribir consultas de explotación con agregación, uniones y subconsultas, usar vistas, extraer y exportar datos en formatos habituales (CSV, JSON y XML), cuidar la calidad del dato y aplicar permisos y criterios de seguridad. Dificultad **media**: la sintaxis SQL se domina en IV.28; el reto es el enfoque de informe y los matices (WHERE/HAVING, NULL en agregados, vista no es copia).\n\n**Fuentes de este tema.** El consolidado data/fuentes/IV.33.txt, formado por Tema 7.docx (sistema gestor, informes, seguridad e índices) y Bloque 3 Actualizado 2026.docx (Tema 3, SQL: consultas, agregación, uniones, subconsultas, vistas, tipos y formatos CSV/JSON/XML). (Fuente: data/fuentes/IV.33.txt.)"
+        },
+        {
+          "heading": "2. Índice de epígrafes",
+          "body": "Este tema se ordena en diez apartados:\n\n1. Ficha oficial del tema: ubicación, objetivo, dificultad y fuentes.\n2. Índice de epígrafes: el mapa que está leyendo.\n3. Introducción y contexto: de los datos operativos a la información para decidir.\n4. Desarrollo por epígrafe: OLTP y OLAP, ETL, consultas de explotación, agregación, vistas, formatos de extracción, informes y BI, calidad del dato, seguridad y optimización.\n5. Tabla comparativa: OLTP frente a OLAP.\n6. Ejemplo práctico resuelto.\n7. Trampas típicas de examen.\n8. Resumen para memorizar.\n9. Casos tipo test comentados (15 preguntas).\n10. Fuentes citadas.\n\nLos epígrafes oficiales (OLTP/OLAP, ETL, consultas, agregación, informes, BI, calidad y exportación) se cubren en el apartado 4; los casos del apartado 9 coinciden con los quince testCases del fichero. (Fuente: data/fuentes/IV.33.txt.)"
+        },
+        {
+          "heading": "3. Introducción y contexto",
+          "body": "Explotar datos es convertir registros en información útil para tomar decisiones. Una base de datos guarda el día a día (altas, modificaciones, bajas), pero un informe responde a preguntas distintas: cuántas solicitudes se resolvieron este mes, qué tipo de incidencias crece, qué unidad tarda más. Esa diferencia entre **registrar** y **analizar** separa dos mundos: el operativo y el analítico.\n\nLa fuente define los **informes** como el mecanismo que establece la presentación de los datos recuperados. No son una copia de la base de datos: son el resultado de una consulta, con un formato y un destinatario. Por eso el informe se apoya en SQL (selección, filtros, agrupación, uniones y subconsultas) y en un formato de salida (una tabla, un CSV, un JSON o un XML).\n\nEste tema añade a IV.28 la mirada de explotación: separar el sistema transaccional del analítico, extraer y transformar los datos, construir consultas agregadas, decidir cómo se presentan, comprobar que el dato es correcto y controlar quién puede verlo. Los conceptos de OLTP/OLAP, ETL y BI que la fuente no desarrolla se explican como estándar y se identifican como tales; las consultas, vistas, formatos y permisos sí están tomados de la fuente. (Fuentes: Tema 7.docx, apartados 1 y 1.1; Bloque 3 Actualizado 2026.docx, Tema 3.)"
+        },
+        {
+          "heading": "4. Desarrollo por epígrafe",
+          "body": "**1) OLTP y OLAP.** Un sistema **OLTP** (procesamiento de transacciones) registra operaciones unitarias y rápidas: insertar una solicitud, modificar un estado, consultar un expediente concreto. Está normalizado, recibe muchas escrituras y trabaja con datos actuales. Un sistema **OLAP** (procesamiento analítico) responde a consultas de agregación sobre grandes volúmenes: totales por mes, medias por unidad, comparaciones entre periodos. Está desnormalizado y se orienta a lectura. La fuente no usa estos términos; se explican como estándar porque el examen los pregunta junto a los informes.\n\n**2) ETL.** Para analizar sin castigar el sistema operativo se copian los datos a un almacén analítico. El proceso **ETL** tiene tres pasos: **extraer** de las fuentes, **transformar** (limpiar, unificar formatos, calcular campos) y **cargar** en el destino. La extracción se hace con consultas SQL o con exportaciones; la transformación resuelve duplicados, nulos y unidades; la carga alimenta el almacén o el modelo de informes.\n\n**3) Consultas de explotación.** La base es SELECT con la lista de columnas, FROM con la tabla y WHERE con la condición. ORDER BY ordena (ASC por defecto) y AS pone alias. Para acotar rangos y patrones se usan BETWEEN, LIKE (con % y _), IN y las combinaciones AND, OR y NOT. Para contar filas distintas se usa DISTINCT. Una consulta de informe no debe traer más datos de los necesarios: conviene elegir columnas concretas y filtrar.\n\n**4) Agregación.** GROUP BY agrupa filas con los mismos valores y las funciones COUNT, SUM, AVG, MIN y MAX resumen cada grupo. WHERE filtra filas antes de agrupar y HAVING filtra grupos después; se pueden combinar. Un ejemplo de informe: SELECT tipo, SUM(poder) FROM criatura GROUP BY tipo HAVING SUM(poder) > 500. Para tratar ausencias se usa IS NULL e IS NOT NULL.\n\n**5) Uniones y subconsultas.** INNER JOIN devuelve las filas con coincidencia en ambas tablas; LEFT JOIN conserva las de la izquierda y rellena con NULL la derecha. Las subconsultas permiten comparar con un resultado: SELECT nombre FROM empleado WHERE sueldo > (SELECT AVG(sueldo) FROM empleado);. Son la base de informes como «los que superan la media» o «los que no tienen ningún documento asociado».\n\n**6) Vistas.** Una vista se define con CREATE VIEW y una consulta AS; no guarda datos, guarda la consulta que se ejecuta al consultarla. Simplifica informes complejos, reutiliza la lógica y permite ocultar columnas o filas a determinados usuarios. Si cambian las tablas subyacentes, cambia el resultado de la vista.\n\n**7) Extracción y formatos.** Para entregar un informe se eligen formatos de intercambio. **CSV** es texto tabular con filas como registros y columnas como campos, separadas por coma o punto y coma; no está estandarizado y es habitual para pasar datos entre aplicaciones. **JSON** usa objetos (pares de clave y valor entre llaves) y arrays (listas entre corchetes), con valores de tipo cadena, número, booleano, array, objeto o null; se usa mucho en servicios y aplicaciones web. **XML** es un lenguaje de marcado con un elemento raíz, etiquetas bien anidadas y atributos entre comillas; admite validación con DTD o XML Schema. La fuente recoge los tres formatos y sus reglas básicas.\n\n**8) Informes y BI.** Un **informe** presenta los datos recuperados con un formato y un destinatario; puede ser una tabla, un listado o un documento exportado. La **inteligencia de negocio (BI)** agrupa las herramientas que explotan esos datos: consultas, informes, cuadros de mando y análisis. La fuente no desarrolla BI; se resume como estándar.\n\n**9) Calidad del dato.** Un informe solo es fiable si el dato lo es. La calidad se mide por exactitud (el dato coincide con la realidad), completitud (no faltan valores), consistencia (no hay contradicciones), unicidad (no hay duplicados) y actualidad. En la base se apoya en restricciones (PRIMARY KEY, UNIQUE, CHECK, FOREIGN KEY) y en la validación de las cargas; en el informe se revisan totales, nulos y duplicados antes de publicarlo.\n\n**10) Seguridad y optimización.** Los permisos se gestionan con GRANT y REVOKE (SELECT, INSERT, UPDATE, DELETE y otros privilegios), y las vistas ayudan a exponer solo lo necesario. Para que un informe no degrade el sistema conviene filtrar por índices, evitar traer columnas innecesarias y revisar las consultas; la fuente recuerda que el administrador define índices y optimiza consultas. (Fuentes: Bloque 3 Actualizado 2026.docx, Tema 3; Tema 7.docx, apartados 1, 1.1, 1.2 y 2.)"
+        },
+        {
+          "heading": "5. Tabla comparativa: OLTP frente a OLAP",
+          "body": "Comparación estándar entre el tratamiento operativo y el analítico; la fuente no usa las siglas, pero su diferencia aclara qué es un informe. (Fuentes: Tema 7.docx, apartado 1; Bloque 3 Actualizado 2026.docx, Tema 3.)",
+          "table": {
+            "columns": [
+              "Criterio",
+              "OLTP",
+              "OLAP"
+            ],
+            "rows": [
+              [
+                "Finalidad",
+                "Registrar operaciones del día a día",
+                "Analizar y resumir para decidir"
+              ],
+              [
+                "Operaciones",
+                "Muchas escrituras pequeñas",
+                "Lecturas y agregaciones sobre muchos datos"
+              ],
+              [
+                "Datos",
+                "Actuales y normalizados",
+                "Históricos y desnormalizados"
+              ],
+              [
+                "Ejemplo",
+                "Alta de una solicitud",
+                "Total de solicitudes por mes y estado"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "6. Ejemplo práctico resuelto",
+          "body": "**Supuesto.** Se quiere un informe mensual de solicitudes de beca por estado y la media de días de tramitación, y entregarlo también en CSV para otra aplicación.\n\n**Resolución.**\n- **Pregunta y fuentes:** se parte de las tablas SolicitudBeca (identificador, estado, fecha de presentación, días de tramitación) y Estado (código y descripción).\n- **Consulta agregada:** se agrupa por mes y estado, se cuenta cada grupo y se calcula la media: SELECT estado, COUNT(*) AS total, AVG(dias_tramitacion) AS media FROM solicitud GROUP BY estado;.\n- **Filtro de grupos:** si solo interesan los estados con volumen relevante, se añade HAVING COUNT(*) > 10.\n- **Unión con el catálogo:** para mostrar la descripción y no el código: SELECT estado.descripcion, COUNT(*) FROM solicitud INNER JOIN estado ON solicitud.estado = estado.codigo GROUP BY estado.descripcion;.\n- **Vista reutilizable:** CREATE VIEW informe_solicitudes AS SELECT estado, COUNT(*) AS total FROM solicitud GROUP BY estado; y después se consulta la vista.\n- **Exportación:** el resultado se vuelca a CSV con separador punto y coma o a JSON con un array de objetos, según lo espere el sistema destino; antes de enviarlo se comprueban totales y nulos.\n- **Seguridad:** se concede SELECT sobre la vista solo al equipo de planificación con GRANT SELECT ON informe_solicitudes TO planificacion;.\n\n**Qué se aprende.** Un informe es una consulta con un propósito, no un volcado de tablas: se eligen columnas, se agrega, se filtra después de agrupar, se reutiliza con una vista y se entrega en un formato acordado. (Fuentes: Bloque 3 Actualizado 2026.docx, Tema 3: SELECT, GROUP BY, HAVING, JOIN, vistas, GRANT; formatos CSV y JSON.)"
+        },
+        {
+          "heading": "7. Trampas típicas de examen",
+          "body": "- **OLTP no es OLAP.** OLTP registra operaciones; OLAP analiza y agrega. Un informe es analítico, no una transacción.\n- **ETL no es una consulta.** Es un proceso con tres pasos: extraer, transformar y cargar.\n- **WHERE no es HAVING.** WHERE filtra filas antes de agrupar; HAVING filtra grupos después.\n- **COUNT(*) no siempre es COUNT(columna).** COUNT(*) cuenta filas; COUNT(columna) no cuenta los valores NULL de esa columna.\n- **SUM ignora los NULL.** Los agregados tratan las ausencias según la función; conviene comprobarlo antes de publicar el informe.\n- **Una vista no guarda datos.** Almacena la consulta y la ejecuta al consultarla; si cambian las tablas, cambia el resultado.\n- **CSV no está estandarizado.** El separador puede ser coma o punto y coma; no da formato ni tipos.\n- **JSON no es XML.** JSON usa objetos y arrays; XML usa etiquetas, atributos y un único elemento raíz.\n- **Traer todas las columnas no es un informe.** SELECT * no elige qué se necesita y encarece la consulta.\n- **Un índice no acelera todo.** Ayuda a filtrar y ordenar, pero puede penalizar las escrituras; no sustituye a una consulta bien escrita.\n- **Los permisos no son opcionales.** GRANT y REVOKE controlan qué puede ver cada usuario; una vista puede ocultar datos, pero no sustituye al control de acceso.\n(Fuentes: Bloque 3 Actualizado 2026.docx, Tema 3; Tema 7.docx, apartados 1, 1.1 y 2.)"
+        },
+        {
+          "heading": "8. Resumen para memorizar",
+          "body": "Lo que hay que retener:\n- Explotar datos es obtener información para decidir; el informe presenta los datos recuperados, no es una copia de la base.\n- OLTP: operaciones del día a día, normalizado y muchas escrituras. OLAP: análisis, agregación y datos históricos.\n- ETL: extraer de las fuentes, transformar (limpiar, unificar, calcular) y cargar en el destino.\n- Consultas: SELECT, WHERE, ORDER BY, AS, BETWEEN, LIKE (% y _), IN, AND/OR/NOT y DISTINCT.\n- Agregación: GROUP BY con COUNT, SUM, AVG, MIN y MAX; WHERE filtra filas y HAVING filtra grupos.\n- Uniones: INNER JOIN (coincidencias) y LEFT JOIN (conserva la izquierda); subconsultas para comparar con un resultado.\n- Vistas: CREATE VIEW ... AS, no guardan datos y simplifican los informes.\n- Formatos: CSV (tabular, separador coma o punto y coma, sin estandarizar), JSON (objetos y arrays) y XML (marcado con raíz y etiquetas).\n- Calidad del dato: exactitud, completitud, consistencia, unicidad y actualidad; apoyo en PRIMARY KEY, UNIQUE, CHECK y FOREIGN KEY.\n- Seguridad: GRANT y REVOKE; las vistas ocultan datos pero no sustituyen al control de acceso.\n- Optimización: filtrar, elegir columnas, usar índices y revisar las consultas.\n(Fuentes: Bloque 3 Actualizado 2026.docx, Tema 3; Tema 7.docx, apartados 1, 1.1 y 2.)"
+        },
+        {
+          "heading": "9. Casos tipo test comentados (15 preguntas)",
+          "body": "Los quince casos del fichero, comentados y con su referencia:\n\n**1.** Diferencia entre OLTP y OLAP. **Respuesta: a)** OLTP registra operaciones y OLAP analiza y agrega (apartado 4, OLTP/OLAP).\n\n**2.** Pasos del proceso ETL. **Respuesta: b)** Extraer, transformar y cargar (apartado 4, ETL).\n\n**3.** Para qué sirve GROUP BY. **Respuesta: c)** Para agrupar filas con los mismos valores (apartado 4, agregación).\n\n**4.** Qué filtra HAVING. **Respuesta: d)** Los grupos ya formados (apartado 4, agregación).\n\n**5.** Función que calcula la media. **Respuesta: a)** AVG (apartado 4, agregación).\n\n**6.** Qué guarda una vista. **Respuesta: b)** La consulta, no los datos (apartado 4, vistas).\n\n**7.** Qué caracteriza al CSV. **Respuesta: c)** No está estandarizado y usa coma o punto y coma (apartado 4, formatos).\n\n**8.** Delimitadores de un objeto JSON. **Respuesta: d)** Las llaves {} (apartado 4, formatos).\n\n**9.** Diferencia entre COUNT(*) y COUNT(columna). **Respuesta: a)** COUNT(*) cuenta filas y COUNT(columna) no cuenta los NULL (apartado 7, trampas).\n\n**10.** Cómo trata SUM los valores NULL. **Respuesta: b)** Los ignora (apartado 7, trampas).\n\n**11.** Para qué sirve un JOIN en un informe. **Respuesta: c)** Para combinar filas de varias tablas por un campo común (apartado 4, uniones).\n\n**12.** Para qué sirve un índice. **Respuesta: d)** Para acelerar búsquedas y ordenaciones (apartado 4, optimización).\n\n**13.** Qué mide la calidad del dato. **Respuesta: a)** Exactitud, completitud, consistencia, unicidad y actualidad (apartado 4, calidad).\n\n**14.** Qué es un informe según la fuente. **Respuesta: b)** El mecanismo que define la presentación de los datos recuperados (apartado 4, informes).\n\n**15.** Qué sentencias controlan los permisos. **Respuesta: c)** GRANT y REVOKE (apartado 4, seguridad).\n\nCada caso incluye su explicación completa y la referencia de fuente en el campo reference de testCases. (Fuentes: Bloque 3 Actualizado 2026.docx, Tema 3; Tema 7.docx, apartados 1 y 2.)"
+        },
+        {
+          "heading": "10. Fuentes citadas",
+          "body": "- **Bloque 3 Actualizado 2026.docx**, Tema 3 (SQL): SELECT, WHERE, BETWEEN, LIKE, IN, GROUP BY, HAVING, funciones de agregación, JOIN, UNION, subconsultas, vistas, tipos de dato, restricciones y formatos CSV/JSON/XML.\n- **Tema 7.docx**, apartados 1 y 1.1 (sistema gestor y funciones para el usuario final: consultas e informes), 1.2 (funciones del administrador: índices, optimización, seguridad con vistas y autorizaciones) y 2 (seguridad y permisos con GRANT/REVOKE).\n- **data/fuentes/IV.33.txt**: texto consolidado de las fuentes anteriores, utilizado para verificar las citas.\n\nAviso de alcance: la fuente no desarrolla OLTP/OLAP, ETL, BI ni la calidad del dato como metodologías; esos conceptos se resumen en el apartado 4 como estándar de explotación de datos y se identifican como tales. (Fuente: data/fuentes/IV.33.txt.)"
+        }
+      ],
       "practiceSlug": "iv-33"
     },
     "V.34": {
@@ -22863,6 +23614,496 @@
       ]
     },
     {
+      "slug": "tai-propio-ii-puesto",
+      "year": 2026,
+      "conv": "Supuesto propio · OpoFuente 2026",
+      "block": "II",
+      "title": "Puesto de trabajo ofimático y correo",
+      "difficulty": "media",
+      "official": false,
+      "estimatedMinutes": 30,
+      "statement": "Una unidad municipal renueva 15 puestos ofimáticos y su correo. El equipo debe elegir suites, formatos, plantillas, accesibilidad, protocolo de correo y política de seguridad antes de desplegar.",
+      "steps": [
+        "1. Inventariar puestos y necesidades.",
+        "2. Elegir suite y formatos.",
+        "3. Diseñar plantillas y accesibilidad.",
+        "4. Configurar correo y colaboración.",
+        "5. Desplegar y documentar."
+      ],
+      "topics": [
+        "II.15",
+        "II.16",
+        "II.17"
+      ],
+      "source": {
+        "label": "Elaboración propia · OpoFuente",
+        "url": "https://erdeivih.github.io/opofuente-demo/",
+        "pages": "Material propio de la demo"
+      },
+      "questions": [
+        {
+          "stem": "¿Qué formato es el nativo de LibreOffice Calc?",
+          "options": [
+            {
+              "key": "a",
+              "text": "ODS"
+            },
+            {
+              "key": "b",
+              "text": "DOCX"
+            },
+            {
+              "key": "c",
+              "text": "PPTX"
+            },
+            {
+              "key": "d",
+              "text": "PDF"
+            }
+          ],
+          "correct": "a",
+          "justification": "Calc usa ODS (OpenDocument Spreadsheet) como formato nativo; XLSX es el de Excel."
+        },
+        {
+          "stem": "¿Qué hace una referencia absoluta como `$A$1`?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Cambia de fila al copiar"
+            },
+            {
+              "key": "b",
+              "text": "Mantiene la referencia al copiar la fórmula"
+            },
+            {
+              "key": "c",
+              "text": "Convierte el valor en texto"
+            },
+            {
+              "key": "d",
+              "text": "Elimina la fórmula"
+            }
+          ],
+          "correct": "b",
+          "justification": "Los signos `$` fijan columna y fila, de modo que la referencia no se desplaza al copiar la fórmula."
+        },
+        {
+          "stem": "¿Para qué sirve la función SUMA?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Crear una tabla dinámica"
+            },
+            {
+              "key": "b",
+              "text": "Ordenar alfabéticamente"
+            },
+            {
+              "key": "c",
+              "text": "Sumar los valores de un rango"
+            },
+            {
+              "key": "d",
+              "text": "Cambiar el formato de una celda"
+            }
+          ],
+          "correct": "c",
+          "justification": "SUMA agrega los valores de las celdas o rangos indicados."
+        },
+        {
+          "stem": "¿Qué permite una tabla dinámica?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Comprimir imágenes"
+            },
+            {
+              "key": "b",
+              "text": "Cambiar el idioma del documento"
+            },
+            {
+              "key": "c",
+              "text": "Firmar digitalmente un PDF"
+            },
+            {
+              "key": "d",
+              "text": "Resumir y agrupar datos por filas, columnas y valores"
+            }
+          ],
+          "correct": "d",
+          "justification": "Las tablas dinámicas resumen grandes conjuntos de datos y permiten analizarlos desde distintos puntos de vista."
+        },
+        {
+          "stem": "¿Por qué conviene usar estilos en un documento de texto?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Para mantener coherencia, generar índices y mejorar la accesibilidad"
+            },
+            {
+              "key": "b",
+              "text": "Para que el documento ocupe más"
+            },
+            {
+              "key": "c",
+              "text": "Para impedir la edición"
+            },
+            {
+              "key": "d",
+              "text": "Para eliminar las tablas"
+            }
+          ],
+          "correct": "a",
+          "justification": "Los estilos aplican formato coherente y permiten índices automáticos y una estructura accesible."
+        },
+        {
+          "stem": "¿Qué formato se recomienda para conservar un documento final sin alterar su apariencia?",
+          "options": [
+            {
+              "key": "a",
+              "text": "TXT"
+            },
+            {
+              "key": "b",
+              "text": "PDF"
+            },
+            {
+              "key": "c",
+              "text": "CSV"
+            },
+            {
+              "key": "d",
+              "text": "ODP"
+            }
+          ],
+          "correct": "b",
+          "justification": "El PDF conserva la apariencia y es el formato habitual de distribución; PDF/A se usa para conservación a largo plazo."
+        },
+        {
+          "stem": "¿Qué hay que comprobar al importar un CSV en una hoja de cálculo?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El número de diapositivas"
+            },
+            {
+              "key": "b",
+              "text": "El color de la primera fila"
+            },
+            {
+              "key": "c",
+              "text": "El separador y la codificación de caracteres"
+            },
+            {
+              "key": "d",
+              "text": "La firma digital"
+            }
+          ],
+          "correct": "c",
+          "justification": "Un CSV no guarda tipos ni formato; el separador y la codificación (por ejemplo, UTF-8) determinan si las columnas y acentos se leen bien."
+        },
+        {
+          "stem": "¿Qué es una plantilla maestra en una presentación?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Una hoja de cálculo"
+            },
+            {
+              "key": "b",
+              "text": "Una diapositiva con una imagen"
+            },
+            {
+              "key": "c",
+              "text": "Un archivo PDF"
+            },
+            {
+              "key": "d",
+              "text": "Un patrón que define fondos, fuentes y estilos de las diapositivas"
+            }
+          ],
+          "correct": "d",
+          "justification": "La plantilla maestra da coherencia visual y evita repetir formato en cada diapositiva."
+        },
+        {
+          "stem": "¿Para qué sirve LibreOffice Base?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Para crear bases de datos de escritorio, consultas e informes"
+            },
+            {
+              "key": "b",
+              "text": "Para editar vídeo"
+            },
+            {
+              "key": "c",
+              "text": "Para diseñar circuitos"
+            },
+            {
+              "key": "d",
+              "text": "Para navegar por internet"
+            }
+          ],
+          "correct": "a",
+          "justification": "Base es el componente de bases de datos de LibreOffice, útil para pequeñas aplicaciones locales."
+        },
+        {
+          "stem": "¿Qué mejora la accesibilidad de un documento ofimático?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Usar solo imágenes escaneadas"
+            },
+            {
+              "key": "b",
+              "text": "Usar texto alternativo, estructura de encabezados y buen contraste"
+            },
+            {
+              "key": "c",
+              "text": "Eliminar los estilos"
+            },
+            {
+              "key": "d",
+              "text": "Guardar todo en CSV"
+            }
+          ],
+          "correct": "b",
+          "justification": "El texto alternativo, la jerarquía de encabezados y el contraste permiten que más personas y tecnologías de apoyo usen el documento."
+        },
+        {
+          "stem": "¿Qué protocolo se usa para enviar correo electrónico?",
+          "options": [
+            {
+              "key": "a",
+              "text": "POP3"
+            },
+            {
+              "key": "b",
+              "text": "SMTP"
+            },
+            {
+              "key": "c",
+              "text": "IMAP"
+            },
+            {
+              "key": "d",
+              "text": "CalDAV"
+            }
+          ],
+          "correct": "b",
+          "justification": "SMTP (Simple Mail Transfer Protocol) se usa para el envío entre cliente y servidor y entre servidores."
+        },
+        {
+          "stem": "¿Qué protocolo sincroniza carpetas y estados entre varios dispositivos?",
+          "options": [
+            {
+              "key": "a",
+              "text": "SMTP"
+            },
+            {
+              "key": "b",
+              "text": "POP3"
+            },
+            {
+              "key": "c",
+              "text": "IMAP"
+            },
+            {
+              "key": "d",
+              "text": "DNS"
+            }
+          ],
+          "correct": "c",
+          "justification": "IMAP mantiene el correo en el servidor y sincroniza carpetas, leídos y marcas entre dispositivos."
+        },
+        {
+          "stem": "¿Qué hace POP3 al descargar el correo?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Cifra el disco del usuario"
+            },
+            {
+              "key": "b",
+              "text": "Sincroniza siempre todas las carpetas"
+            },
+            {
+              "key": "c",
+              "text": "Envía el correo a otro dominio"
+            },
+            {
+              "key": "d",
+              "text": "Puede descargar los mensajes y, según la configuración, borrarlos del servidor"
+            }
+          ],
+          "correct": "d",
+          "justification": "POP3 está orientado a descargar; según la configuración puede eliminar los mensajes del servidor, a diferencia de IMAP."
+        },
+        {
+          "stem": "¿Qué permite MIME en un mensaje?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Incluir texto con acentos, HTML y adjuntos codificados"
+            },
+            {
+              "key": "b",
+              "text": "Comprimir el buzón"
+            },
+            {
+              "key": "c",
+              "text": "Firmar digitalmente el dominio"
+            },
+            {
+              "key": "d",
+              "text": "Cambiar la contraseña"
+            }
+          ],
+          "correct": "a",
+          "justification": "MIME define cómo codificar las distintas partes del mensaje (texto, HTML y adjuntos) para que se transmitan correctamente."
+        },
+        {
+          "stem": "¿Qué puerto es habitual para la sumisión de correo con autenticación?",
+          "options": [
+            {
+              "key": "a",
+              "text": "110"
+            },
+            {
+              "key": "b",
+              "text": "587"
+            },
+            {
+              "key": "c",
+              "text": "143"
+            },
+            {
+              "key": "d",
+              "text": "53"
+            }
+          ],
+          "correct": "b",
+          "justification": "El puerto 587 se usa para sumisión de correo autenticada; 465 es SMTPS y 25 el envío entre servidores."
+        },
+        {
+          "stem": "¿Qué protocolo usa el puerto 993?",
+          "options": [
+            {
+              "key": "a",
+              "text": "SMTP"
+            },
+            {
+              "key": "b",
+              "text": "POP3S"
+            },
+            {
+              "key": "c",
+              "text": "IMAPS"
+            },
+            {
+              "key": "d",
+              "text": "HTTP"
+            }
+          ],
+          "correct": "c",
+          "justification": "993 es el puerto seguro de IMAP (IMAPS); 995 es POP3S y 465 SMTPS."
+        },
+        {
+          "stem": "¿Qué es el phishing?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Un tipo de firma digital"
+            },
+            {
+              "key": "b",
+              "text": "Un protocolo de correo"
+            },
+            {
+              "key": "c",
+              "text": "Un formato de adjunto"
+            },
+            {
+              "key": "d",
+              "text": "Un fraude que suplanta a una entidad para robar credenciales o datos"
+            }
+          ],
+          "correct": "d",
+          "justification": "El phishing suplanta a una entidad de confianza para que la víctima entregue datos o abra un adjunto malicioso."
+        },
+        {
+          "stem": "¿Cuál es una buena práctica de seguridad en el correo?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Usar TLS, segundo factor y desconfiar de adjuntos inesperados"
+            },
+            {
+              "key": "b",
+              "text": "Compartir la contraseña con el equipo"
+            },
+            {
+              "key": "c",
+              "text": "Desactivar el filtro de spam"
+            },
+            {
+              "key": "d",
+              "text": "Abrir todos los enlaces para comprobar si funcionan"
+            }
+          ],
+          "correct": "a",
+          "justification": "TLS, segundo factor y prudencia con enlaces y adjuntos reducen el riesgo de interceptación y phishing."
+        },
+        {
+          "stem": "¿Qué ventaja tiene IMAP para un usuario con móvil, portátil y webmail?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Ocupa menos en el servidor"
+            },
+            {
+              "key": "b",
+              "text": "Mantiene el mismo estado y carpetas en todos los dispositivos"
+            },
+            {
+              "key": "c",
+              "text": "No necesita contraseña"
+            },
+            {
+              "key": "d",
+              "text": "Envía el correo más rápido"
+            }
+          ],
+          "correct": "b",
+          "justification": "IMAP sincroniza el buzón en el servidor, por lo que el estado se ve igual desde todos los dispositivos."
+        },
+        {
+          "stem": "¿Qué documento no conviene enviar como adjunto masivo sin más?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Un horario sin datos personales"
+            },
+            {
+              "key": "b",
+              "text": "Una convocatoria pública"
+            },
+            {
+              "key": "c",
+              "text": "Un documento con datos personales sensibles"
+            },
+            {
+              "key": "d",
+              "text": "Un cartel de un evento"
+            }
+          ],
+          "correct": "c",
+          "justification": "Los datos personales sensibles deben compartirse por canales aprobados, con cifrado y control de acceso, no como adjunto abierto."
+        }
+      ]
+    },
+    {
       "slug": "tai-propio-ii13",
       "year": 2026,
       "conv": "Supuesto propio · OpoFuente 2026",
@@ -23348,6 +24589,497 @@
           ],
           "correct": "c",
           "justification": "RAID 5 distribuye la paridad entre los discos, requiere al menos tres discos y tolera el fallo de uno. Ref.: Tema 2, 1.5 y Bloque 2, RAID."
+        }
+      ]
+    },
+    {
+      "slug": "tai-propio-iii-cloud",
+      "year": 2026,
+      "conv": "Supuesto propio · OpoFuente 2026",
+      "block": "III",
+      "title": "Migración de servicios a la nube",
+      "difficulty": "media",
+      "official": false,
+      "estimatedMinutes": 30,
+      "statement": "Un organismo quiere mover parte de sus servicios a la nube manteniendo datos sensibles en su CPD. El equipo debe elegir modelo de servicio, despliegue, redundancia, almacenamiento, seguridad y costes.",
+      "steps": [
+        "1. Clasificar servicios y datos.",
+        "2. Elegir IaaS/PaaS/SaaS y despliegue.",
+        "3. Diseñar redundancia y continuidad.",
+        "4. Resolver seguridad y costes.",
+        "5. Planificar la migración."
+      ],
+      "topics": [
+        "III.25",
+        "III.19",
+        "III.20",
+        "IV.33"
+      ],
+      "source": {
+        "label": "Elaboración propia · OpoFuente",
+        "url": "https://erdeivih.github.io/opofuente-demo/",
+        "pages": "Material propio de la demo"
+      },
+      "questions": [
+        {
+          "stem": "¿Qué modelo ofrece máquinas, red y almacenamiento y deja al cliente el sistema operativo?",
+          "options": [
+            {
+              "key": "a",
+              "text": "SaaS"
+            },
+            {
+              "key": "b",
+              "text": "PaaS"
+            },
+            {
+              "key": "c",
+              "text": "IaaS"
+            },
+            {
+              "key": "d",
+              "text": "On-premise"
+            }
+          ],
+          "correct": "c",
+          "justification": "En IaaS el proveedor gestiona la infraestructura y el cliente el sistema operativo, el middleware y la aplicación."
+        },
+        {
+          "stem": "¿Qué modelo ofrece un entorno de ejecución y el cliente solo despliega su aplicación?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Colocation"
+            },
+            {
+              "key": "b",
+              "text": "IaaS"
+            },
+            {
+              "key": "c",
+              "text": "SaaS"
+            },
+            {
+              "key": "d",
+              "text": "PaaS"
+            }
+          ],
+          "correct": "d",
+          "justification": "En PaaS el proveedor gestiona la infraestructura y el runtime; el cliente se centra en la aplicación y los datos."
+        },
+        {
+          "stem": "¿Qué significa responsabilidad compartida en la nube?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El proveedor protege la infraestructura y el cliente sus datos, identidades y configuración"
+            },
+            {
+              "key": "b",
+              "text": "El proveedor se responsabiliza de todo"
+            },
+            {
+              "key": "c",
+              "text": "El cliente se responsabiliza de todo"
+            },
+            {
+              "key": "d",
+              "text": "No hay responsabilidades de seguridad"
+            }
+          ],
+          "correct": "a",
+          "justification": "La seguridad se reparte: el proveedor protege la plataforma y el cliente gestiona datos, accesos y configuración."
+        },
+        {
+          "stem": "¿Qué característica del NIST permite aprovisionar recursos sin intervención del proveedor?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Elasticidad rápida"
+            },
+            {
+              "key": "b",
+              "text": "Autoservicio bajo demanda"
+            },
+            {
+              "key": "c",
+              "text": "Servicio medido"
+            },
+            {
+              "key": "d",
+              "text": "Agrupación de recursos"
+            }
+          ],
+          "correct": "b",
+          "justification": "El autoservicio permite al cliente obtener recursos por sí mismo; la elasticidad es la capacidad de escalar."
+        },
+        {
+          "stem": "¿Qué es una nube híbrida?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Un centro de datos sin virtualización"
+            },
+            {
+              "key": "b",
+              "text": "Una nube solo para empleados"
+            },
+            {
+              "key": "c",
+              "text": "Una combinación de nube pública y privada"
+            },
+            {
+              "key": "d",
+              "text": "Un modelo sin facturación"
+            }
+          ],
+          "correct": "c",
+          "justification": "La nube híbrida combina entornos públicos y privados y permite mover cargas según requisitos."
+        },
+        {
+          "stem": "¿Qué es una zona de disponibilidad?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Una copia de seguridad"
+            },
+            {
+              "key": "b",
+              "text": "Un tipo de contrato"
+            },
+            {
+              "key": "c",
+              "text": "Un protocolo de correo"
+            },
+            {
+              "key": "d",
+              "text": "Una ubicación separada con infraestructura redundante dentro de una región"
+            }
+          ],
+          "correct": "d",
+          "justification": "Las zonas de disponibilidad están separadas físicamente para que un fallo local no afecte a toda la región."
+        },
+        {
+          "stem": "¿Qué debe incluir un contrato de nube para evitar dependencia excesiva?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Exportación de datos y un plan de salida"
+            },
+            {
+              "key": "b",
+              "text": "Solo el precio mensual"
+            },
+            {
+              "key": "c",
+              "text": "La promesa de no cambiar nunca"
+            },
+            {
+              "key": "d",
+              "text": "La eliminación de las copias"
+            }
+          ],
+          "correct": "a",
+          "justification": "La portabilidad exige poder exportar datos y servicios; sin plan de salida el lock-in es alto."
+        },
+        {
+          "stem": "¿Quién sigue siendo responsable del tratamiento de datos personales en la nube?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El proveedor de la nube"
+            },
+            {
+              "key": "b",
+              "text": "La administración que contrata el servicio"
+            },
+            {
+              "key": "c",
+              "text": "El fabricante del hardware"
+            },
+            {
+              "key": "d",
+              "text": "Nadie"
+            }
+          ],
+          "correct": "b",
+          "justification": "El proveedor puede ser encargado del tratamiento, pero el responsable sigue siendo la administración."
+        },
+        {
+          "stem": "¿Por qué una copia en la nube no es automáticamente una copia de seguridad?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Porque las copias solo se hacen en cinta"
+            },
+            {
+              "key": "b",
+              "text": "Porque la nube no almacena datos"
+            },
+            {
+              "key": "c",
+              "text": "Porque la sincronización replica también borrados y cifrado; hace falta una copia independiente y probada"
+            },
+            {
+              "key": "d",
+              "text": "Porque la nube no tiene cifrado"
+            }
+          ],
+          "correct": "c",
+          "justification": "La replicación o sincronización no protege de borrados, ransomware o errores; se necesita copia independiente, retención y prueba de restauración."
+        },
+        {
+          "stem": "¿Qué decisión debe tomarse antes de elegir nube para un sistema público?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Eliminar el plan de continuidad"
+            },
+            {
+              "key": "b",
+              "text": "Elegir el proveedor más barato sin analizar"
+            },
+            {
+              "key": "c",
+              "text": "Subir todos los datos sin cifrar"
+            },
+            {
+              "key": "d",
+              "text": "Clasificar la información y revisar requisitos legales y de soberanía"
+            }
+          ],
+          "correct": "d",
+          "justification": "La clasificación de datos y los requisitos legales determinan qué puede ir a la nube y con qué garantías."
+        },
+        {
+          "stem": "¿Qué es un KPI?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Un lenguaje de programación"
+            },
+            {
+              "key": "b",
+              "text": "Un tipo de tabla de base de datos"
+            },
+            {
+              "key": "c",
+              "text": "Un indicador clave con fórmula, periodo y meta para medir un objetivo"
+            },
+            {
+              "key": "d",
+              "text": "Un protocolo de red"
+            }
+          ],
+          "correct": "c",
+          "justification": "El KPI mide un objetivo de forma accionable; debe tener fórmula, unidad, periodo y meta."
+        },
+        {
+          "stem": "¿Qué significa ETL?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Editar, tabular y leer"
+            },
+            {
+              "key": "b",
+              "text": "Enviar, transmitir y listar"
+            },
+            {
+              "key": "c",
+              "text": "Evaluar, testear y lanzar"
+            },
+            {
+              "key": "d",
+              "text": "Extraer, transformar y cargar datos"
+            }
+          ],
+          "correct": "d",
+          "justification": "ETL mueve datos desde fuentes, los limpia y transforma, y los carga en un destino analítico."
+        },
+        {
+          "stem": "¿Qué gráfico es más adecuado para comparar categorías?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Barras"
+            },
+            {
+              "key": "b",
+              "text": "Líneas"
+            },
+            {
+              "key": "c",
+              "text": "Tarta"
+            },
+            {
+              "key": "d",
+              "text": "Dispersión"
+            }
+          ],
+          "correct": "a",
+          "justification": "Las barras comparan magnitudes entre categorías; las líneas muestran evolución temporal."
+        },
+        {
+          "stem": "¿Qué gráfico muestra mejor una evolución temporal?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Tarta"
+            },
+            {
+              "key": "b",
+              "text": "Líneas"
+            },
+            {
+              "key": "c",
+              "text": "Barras horizontales"
+            },
+            {
+              "key": "d",
+              "text": "Mapa"
+            }
+          ],
+          "correct": "b",
+          "justification": "La línea representa la evolución de un valor a lo largo del tiempo."
+        },
+        {
+          "stem": "¿Qué es una vista materializada?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Un índice de texto"
+            },
+            {
+              "key": "b",
+              "text": "Una tabla temporal que se borra al cerrar"
+            },
+            {
+              "key": "c",
+              "text": "Una consulta cuyo resultado se guarda para acelerar lecturas"
+            },
+            {
+              "key": "d",
+              "text": "Un tipo de gráfico"
+            }
+          ],
+          "correct": "c",
+          "justification": "La vista materializada almacena el resultado y debe actualizarse; acelera consultas costosas."
+        },
+        {
+          "stem": "¿Qué permite un modelo en estrella?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Sustituir el ETL"
+            },
+            {
+              "key": "b",
+              "text": "Eliminar la necesidad de SQL"
+            },
+            {
+              "key": "c",
+              "text": "Cifrar los datos"
+            },
+            {
+              "key": "d",
+              "text": "Separar hechos y dimensiones para facilitar el análisis"
+            }
+          ],
+          "correct": "d",
+          "justification": "El modelo en estrella organiza hechos y dimensiones y simplifica filtros y agregaciones."
+        },
+        {
+          "stem": "¿Qué debe incluir un panel para no engañar?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Periodo, unidad, fuente y definición de cada KPI"
+            },
+            {
+              "key": "b",
+              "text": "Solo colores llamativos"
+            },
+            {
+              "key": "c",
+              "text": "La mayor cantidad de gráficos posible"
+            },
+            {
+              "key": "d",
+              "text": "Datos personales sin protección"
+            }
+          ],
+          "correct": "a",
+          "justification": "El contexto y las definiciones evitan interpretaciones erróneas y permiten auditar las cifras."
+        },
+        {
+          "stem": "¿Qué es drill-down?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Eliminar filtros"
+            },
+            {
+              "key": "b",
+              "text": "Pasar de un resumen a un nivel de detalle mayor"
+            },
+            {
+              "key": "c",
+              "text": "Cambiar el color del gráfico"
+            },
+            {
+              "key": "d",
+              "text": "Exportar a PDF"
+            }
+          ],
+          "correct": "b",
+          "justification": "El drill-down permite navegar del agregado al detalle para investigar una cifra."
+        },
+        {
+          "stem": "¿Qué riesgo tiene un panel con datos personales?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Que no se pueda exportar"
+            },
+            {
+              "key": "b",
+              "text": "Que los gráficos sean más lentos"
+            },
+            {
+              "key": "c",
+              "text": "Exponer información si no se controla el acceso y se minimiza"
+            },
+            {
+              "key": "d",
+              "text": "Ninguno, si está en la intranet"
+            }
+          ],
+          "correct": "c",
+          "justification": "Los datos personales requieren base jurídica, minimización, control de acceso y, a menudo, agregación."
+        },
+        {
+          "stem": "¿Por qué hay que validar la calidad del dato antes de publicar un informe?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Porque mejora el color"
+            },
+            {
+              "key": "b",
+              "text": "Porque el informe ocupa más"
+            },
+            {
+              "key": "c",
+              "text": "Porque lo exige el lenguaje SQL"
+            },
+            {
+              "key": "d",
+              "text": "Porque nulos, duplicados o rangos erróneos producen conclusiones falsas"
+            }
+          ],
+          "correct": "d",
+          "justification": "Un informe con datos sucios transmite errores con apariencia de rigor; la validación es parte del proceso."
         }
       ]
     },
@@ -25812,8 +27544,8 @@
     "questions": 400,
     "cases": 5,
     "caseQuestions": 50,
-    "supuestos": 13,
-    "supuestoQuestions": 260,
+    "supuestos": 15,
+    "supuestoQuestions": 300,
     "convocatorias": 12
   }
 }
