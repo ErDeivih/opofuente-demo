@@ -287,8 +287,8 @@
             "practicaStatus": "con_practica",
             "sectionCount": 6,
             "questionCount": 10,
-            "formato": "esquema",
-            "longWords": 0
+            "formato": "desarrollado",
+            "longWords": 2082
           },
           {
             "path": "II.15",
@@ -380,8 +380,8 @@
             "practicaStatus": "con_practica",
             "sectionCount": 7,
             "questionCount": 10,
-            "formato": "esquema",
-            "longWords": 0
+            "formato": "desarrollado",
+            "longWords": 2950
           },
           {
             "path": "III.23",
@@ -453,8 +453,8 @@
             "practicaStatus": "con_practica",
             "sectionCount": 7,
             "questionCount": 10,
-            "formato": "esquema",
-            "longWords": 0
+            "formato": "desarrollado",
+            "longWords": 2481
           },
           {
             "path": "IV.29",
@@ -1913,6 +1913,211 @@
         "Confundir los gestores de paquetes: apt es de Debian/Ubuntu, dnf de Fedora y pacman de Arch."
       ],
       "reviewedAt": "2026-11-10",
+      "longSections": [
+        {
+          "heading": "1. Ficha oficial del tema",
+          "body": "**Tema:** II.14, «Sistemas operativos de usuario», del bloque II (Informática básica y ofimática) del temario común de informática C1. **Materias que cubre:** concepto y tipos de sistema operativo, componentes y arquitectura, procesos y planificación, gestión de memoria y de ficheros, Linux de escritorio (distribuciones, jerarquía de directorios, usuarios, permisos y procesos), Windows (características, herramientas, ejecutables y comandos), actualizaciones de software, resolución de problemas y sistemas operativos móviles y macOS. **Relación con otros temas:** se apoya en II.13 (arquitectura de ordenadores) y sirve de base a III.18 (sistemas operativos de servidor). **Fuentes:** `Tema 4.docx` y `Bloque 2 Actualizado 2026.docx`, volcados en `data/fuentes/II.14.txt`.",
+          "table": {
+            "columns": [
+              "Dato de la ficha",
+              "Valor"
+            ],
+            "rows": [
+              [
+                "Tema",
+                "II.14 Sistemas operativos de usuario"
+              ],
+              [
+                "Bloque",
+                "II · Informática básica y ofimática"
+              ],
+              [
+                "Materias",
+                "Windows, Linux, permisos, procesos, ficheros, actualizaciones, diagnóstico y móviles"
+              ],
+              [
+                "Temas relacionados",
+                "II.13 Arquitectura de ordenadores; III.18 Sistemas operativos de servidor"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "2. Índice de epígrafes",
+          "body": "El desarrollo del tema se organiza en los siguientes epígrafes, que se corresponden con el apartado 4:\n\n- **4.1.** Qué es un sistema operativo y qué tipos existen.\n- **4.2.** Componentes y arquitectura por capas.\n- **4.3.** Procesos, estados y planificación.\n- **4.4.** Gestión de memoria y de ficheros.\n- **4.5.** Linux de escritorio: distribuciones, jerarquía, usuarios, permisos y procesos.\n- **4.6.** Windows: características, herramientas, ejecutables y comandos.\n- **4.7.** Actualizaciones, diagnóstico y otros sistemas operativos de usuario.\n\nCompletan el tema la tabla comparativa (apartado 5), el ejemplo práctico (6), las trampas de examen (7), el resumen para memorizar (8), los quince casos tipo test (9) y las fuentes citadas (10)."
+        },
+        {
+          "heading": "3. Introducción y contexto",
+          "body": "El sistema operativo es el software básico del ordenador: el conjunto de programas y funciones que gestionan el hardware y el software, el primer programa que se carga en memoria al encender el equipo y el principal administrador de recursos. Sin él, el resto de programas no podría usar el procesador, la memoria ni los dispositivos.\n\nEn la oposición se pregunta por dos perspectivas complementarias. La primera es **teórica**: qué tipos de sistema operativo existen, cómo se organiza su núcleo, qué es un proceso, cómo se planifica y cómo se administran la memoria y los ficheros. La segunda es **práctica y comparada**: cómo se trabaja en un escritorio Linux y en uno Windows, qué permisos hay, qué comandos y herramientas de administración se usan y cómo se actualiza y se diagnostica un equipo.\n\nEl temario insiste en las clasificaciones y en los nombres exactos (kernel, PID, PPID, NTFS, UAC, FHS, eventvwr.msc, ipconfig), porque muchas preguntas se responden recordando un dato concreto. Este tema ordena esos datos y los relaciona con la práctica diaria del puesto de trabajo.",
+          "table": {
+            "columns": [
+              "Fuente",
+              "Qué aporta"
+            ],
+            "rows": [
+              [
+                "Tema 4.docx",
+                "Teoría general del sistema operativo: tipos, componentes, procesos, memoria, ficheros y E/S"
+              ],
+              [
+                "Bloque 2 Actualizado 2026.docx",
+                "Linux y Windows de usuario, sistemas móviles y macOS"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "4. Desarrollo por epígrafe",
+          "body": "**4.1. Qué es un sistema operativo y qué tipos existen.** El sistema operativo gestiona los recursos y ofrece la interfaz de uso. Se clasifica por el número de usuarios (monousuario, como MS-DOS o Windows 95, y multiusuario, como UNIX, Linux, macOS y Windows 2000 y superiores); por el número de procesos (monotarea o multitarea, en la que la CPU reparte su tiempo entre procesos); por el número de procesadores (monoprocesador o multiprocesador, con variante simétrica si cada procesador ejecuta una copia idéntica del sistema, y asimétrica si hay un procesador maestro que reparte tareas); por el tiempo de respuesta (tiempo real por hardware o por software, y tiempo compartido) y por la interfaz de gestión (línea de comandos o interfaz gráfica).\n\n**4.2. Componentes y arquitectura por capas.** El **kernel** es el componente principal: traslada el control entre programas, programa la entrada/salida, atiende interrupciones, gestiona la memoria y la comunicación entre procesos. A su alrededor están los programas de control (procesador, memoria y periféricos), los programas de proceso (traductores como ensambladores, compiladores e intérpretes) y los programas de servicio o utilidades. La arquitectura se organiza por capas: kernel (control general y procesos), ejecutivo (memoria), supervisor (comunicación y entrada/salida) y usuario (procesos del usuario).\n\n**4.3. Procesos, estados y planificación.** Un **proceso** es un programa en ejecución, con una parte fija (el programa) y otra variable (su estado). Sus estados son **activo**, **bloqueado**, **preparado** y **muerto**; las operaciones básicas son crear, destruir, cambiar prioridad, bloquear, activar y despachar. La planificación busca justicia en el reparto de la CPU y evitar demoras indefinidas, y usa algoritmos como FCFS (por orden de llegada), SJF (primero el trabajo más corto, con versión preemptiva y no preemptiva), prioridad (con envejecimiento de cola) y Round Robin (lista circular basada en FCFS). La comunicación entre procesos exige proteger las secciones críticas para que dos procesos no las ejecuten a la vez.\n\n**4.4. Gestión de memoria y de ficheros.** La memoria se administra en modo real (particiones fijas o variables, con Best Fit, First Fit y Worst Fit) o con **memoria virtual**, que permite direcciones virtuales y se apoya en el disco: paginación con tablas de páginas y TLB, fallos de página, swapping y algoritmos de sustitución como FIFO, LRU, segunda oportunidad, LFU o MFU. Cuando un proceso pasa más tiempo paginando que ejecutando se produce **thrashing**. El sistema de ficheros define atributos, operaciones (crear, escribir, leer, borrar), estructuras de directorios (un nivel, dos niveles, árbol, grafo acíclico) y métodos de asignación (contigua, encadenada e indexada).\n\n**4.5. Linux de escritorio.** Linux es el kernel, monolítico y modular, y GNU/Linux el sistema completo con las herramientas GNU; es multiusuario y multitarea. Las distribuciones se agrupan por familia de paquetes: Debian (Debian, Ubuntu con versiones LTS y Linux Mint), Red Hat (RHEL, Fedora, CentOS sustituida por AlmaLinux y Rocky Linux), rolling release (Arch Linux y Manjaro) y especializadas (Kali, Parrot, Tails, OpenSUSE). Los gestores de paquetes instalan, actualizan y eliminan software y resuelven dependencias. La **jerarquía FHS** fija el papel de cada directorio: /bin (binarios de arranque), /sbin (administración), /boot (arranque), /dev (dispositivos), /etc (configuración), /media (montajes), /opt (aplicaciones de terceros), /proc (ficheros virtuales de procesos y núcleo), /tmp (temporales) y /usr (aplicaciones y bibliotecas compartidas). Hay dos tipos de usuario, **root** (acceso total) y usuarios estándar, y los permisos son **r** (lectura), **w** (escritura) y **x** (ejecución) para tres grupos de usuarios; se cambian con **chmod** y los valores por defecto con **umask** (por ejemplo, umask 022 impide la escritura del grupo y de otros). Los procesos se identifican con **PID**, **PPID**, **UID** y **GID**, usan llamadas como **fork()**, **exec()** y **wait()**, y se consultan con **ps**, **top** y **kill**.\n\n**4.6. Windows.** Windows incorpora seguridad con Windows Defender, el Firewall de Windows y el Control de cuentas de usuario (**UAC**), un kernel que gestiona los recursos, interfaz gráfica, sistemas de archivos **NTFS, FAT32, exFAT y ReFS**, virtualización con Hyper-V y paginación de memoria. Para administrarlo dispone de herramientas como certmgr.msc (certificados), control (panel de control), gpedit.msc (directivas de grupo local), services.msc (servicios), eventvwr.msc (Visor de sucesos), msconfig (configuración de inicio y servicios), regedit (registro), winver (versión del sistema) y msinfo32 (información del sistema). Los ejecutables habituales son .exe, .bat, .cmd y .msi (paquete de Windows Installer), y entre los comandos más usados están dir, cd, cls, xcopy, del, type, ping, ipconfig y netstat. Windows 11 añade mejoras táctiles y para dispositivos 2 en 1, integración con Teams, aplicaciones Android a través de Microsoft Store y **TPM 2.0** para reforzar la seguridad.\n\n**4.7. Actualizaciones, diagnóstico y otros sistemas operativos.** En Linux las actualizaciones y la instalación de software se hacen con el gestor de paquetes de la distribución, que resuelve dependencias; las distribuciones LTS priorizan estabilidad y las rolling release reciben cambios continuos. En Windows los paquetes .msi y la Microsoft Store son las vías de instalación que recoge el temario. Para diagnosticar, Windows ofrece el Visor de sucesos (eventvwr.msc), Servicios (services.msc), Configuración del sistema (msconfig), el Editor del Registro (regedit) y msinfo32; Linux aporta ps, top y kill para procesos, y ping, ipconfig y netstat para red en Windows. En movilidad, los sistemas principales son Android (kernel Linux modificado, capas kernel/HAL/bibliotecas/ART/aplicaciones, Android Studio, sandbox y Play Store; Java, Kotlin, C/C++, JavaScript y Dart) e iOS, con HarmonyOS como alternativa y Windows Phone, BlackBerry OS y Symbian en desuso. macOS sigue su propia línea, con macOS 15 Sequoia y macOS 26 Tahoe como referencia en el temario.",
+          "table": {
+            "columns": [
+              "Epígrafe",
+              "Ideas que hay que retener"
+            ],
+            "rows": [
+              [
+                "4.1 Tipos de SO",
+                "Monousuario/multiusuario, monotarea/multitarea, mono/multiprocesador, tiempo real/compartido"
+              ],
+              [
+                "4.2 Componentes",
+                "Kernel, programas de control, de proceso y de servicio; capas kernel, ejecutivo, supervisor y usuario"
+              ],
+              [
+                "4.3 Procesos",
+                "Estados activo, bloqueado, preparado y muerto; FCFS, SJF, prioridad y Round Robin"
+              ],
+              [
+                "4.4 Memoria y ficheros",
+                "Paginación, swapping, thrashing; asignación contigua, encadenada e indexada"
+              ],
+              [
+                "4.5 Linux",
+                "Distribuciones, FHS, root, permisos r/w/x, chmod, umask, PID/PPID, ps/top/kill"
+              ],
+              [
+                "4.6 Windows",
+                "NTFS/FAT32/exFAT/ReFS, UAC, herramientas .msc, ipconfig, .msi, TPM 2.0"
+              ],
+              [
+                "4.7 Actualizaciones y móviles",
+                "Gestores de paquetes, diagnóstico, Android/iOS/HarmonyOS, macOS"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "5. Tabla comparativa: Windows y Linux de usuario",
+          "body": "La tabla resume las diferencias que más se preguntan entre los dos escritorios. Conviene fijarse en el sistema de archivos, el modelo de permisos y las herramientas de administración, porque son los tres ejes de las preguntas comparativas.",
+          "table": {
+            "columns": [
+              "Aspecto",
+              "Windows",
+              "Linux"
+            ],
+            "rows": [
+              [
+                "Núcleo",
+                "Kernel propio de Windows",
+                "Kernel Linux monolítico y modular"
+              ],
+              [
+                "Sistemas de archivos",
+                "NTFS, FAT32, exFAT y ReFS",
+                "Los de cada distribución (ext4, XFS, Btrfs, etc.)"
+              ],
+              [
+                "Usuarios",
+                "Cuentas de usuario y grupos; UAC",
+                "root y usuarios estándar; UID y GID"
+              ],
+              [
+                "Permisos",
+                "Seguridad de Windows y herencia",
+                "r, w y x para tres grupos; chmod y umask"
+              ],
+              [
+                "Herramientas de administración",
+                "gpedit.msc, services.msc, eventvwr.msc, regedit, msconfig",
+                "ps, top, kill y el gestor de paquetes de la distribución"
+              ],
+              [
+                "Instalación de software",
+                ".msi, .exe y Microsoft Store",
+                "Gestor de paquetes de la distribución (instala, actualiza y resuelve dependencias)"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "6. Ejemplo práctico resuelto",
+          "body": "**Supuesto.** En un aula con equipos Ubuntu y Windows se detectan tres problemas: una alumna no puede modificar un fichero de configuración del sistema, un proceso se ha quedado colgado y un equipo Windows no arranca un servicio correctamente.\n\n**Resolución en Linux.** La alumna trabaja con un usuario estándar y el fichero está en `/etc`, el directorio de configuración del sistema, propiedad de root; por eso no puede escribir en él. Los permisos se consultan y ajustan con **chmod**, y si se crean ficheros nuevos el valor por defecto lo fija **umask** (con umask 022 el grupo y otros no reciben escritura). El proceso colgado se localiza con **ps** o, en tiempo real, con **top**; una vez identificado su **PID**, se termina con **kill**. Si el equipo va lento por exceso de paginación, hay que revisar la memoria y el uso del disco de intercambio.\n\n**Resolución en Windows.** Se abre el **Visor de sucesos** (eventvwr.msc) para leer el error del servicio, se comprueba su estado en **services.msc** y se revisa el arranque con **msconfig**. Si el problema es de configuración del sistema, **msinfo32** da la información del equipo y **winver** confirma la versión. Para la red se usan **ipconfig** y **ping**, y **netstat** muestra las conexiones activas.\n\n**Conclusión.** El diagnóstico sigue un orden: identificar el recurso (permisos, proceso, servicio o red), usar la herramienta adecuada en cada sistema y actuar solo después de leer el error.",
+          "table": {
+            "columns": [
+              "Problema",
+              "Sistema",
+              "Herramienta o concepto"
+            ],
+            "rows": [
+              [
+                "No se puede escribir en /etc",
+                "Linux",
+                "Usuario estándar, root, chmod y umask"
+              ],
+              [
+                "Proceso colgado",
+                "Linux",
+                "ps, top, PID y kill"
+              ],
+              [
+                "Servicio que no arranca",
+                "Windows",
+                "eventvwr.msc, services.msc y msconfig"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "7. Trampas típicas de examen",
+          "body": "Las confusiones más frecuentes en este tema son las siguientes:\n\n- **Confundir kernel con sistema operativo completo**: el kernel es el núcleo; GNU/Linux es el sistema completo con las herramientas GNU.\n- **Dar por multiusuario a cualquier Windows**: el temario sitúa esa característica en Windows 2000 y superiores; MS-DOS y Windows 95 son monousuario.\n- **Confundir los directorios FHS**: `/etc` guarda configuración y `/usr` aplicaciones y bibliotecas compartidas; `/proc` es virtual y documenta procesos y estado del núcleo.\n- **Cambiar el propietario con chmod**: chmod cambia permisos; el propietario y el grupo se gestionan con otras herramientas, y umask fija los permisos por defecto.\n- **Confundir PID con PPID**: PID identifica el proceso y PPID el proceso padre; UID y GID identifican al usuario y al grupo propietarios.\n- **Confundir herramientas de Windows**: eventvwr.msc es el Visor de sucesos, services.msc los servicios y gpedit.msc las directivas de grupo local.\n- **Creer que .msi es un ejecutable cualquiera**: es el paquete de instalación de Windows Installer; .exe, .bat y .cmd tienen otras funciones.\n- **Confundir distribuciones**: Ubuntu es de la familia Debian, Fedora de la familia Red Hat y Arch es rolling release.",
+          "table": {
+            "columns": [
+              "Confusión",
+              "Lo correcto"
+            ],
+            "rows": [
+              [
+                "Kernel = sistema operativo",
+                "Kernel es el núcleo; GNU/Linux es el sistema completo"
+              ],
+              [
+                "Todo Windows es multiusuario",
+                "Windows 2000 y superiores; MS-DOS y 95 son monousuario"
+              ],
+              [
+                "/etc = aplicaciones",
+                "/etc es configuración; /usr es aplicaciones y bibliotecas"
+              ],
+              [
+                "chmod = propietario",
+                "chmod cambia permisos; no cambia el propietario"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "8. Resumen para memorizar",
+          "body": "**Clasificación.** Usuarios (monousuario/multiusuario), procesos (monotarea/multitarea), procesadores (mono/multiprocesador: simétrico y asimétrico), tiempo de respuesta (tiempo real y tiempo compartido) e interfaz (comandos o gráfica).\n\n**Núcleo y capas.** Kernel (control, E/S, interrupciones, memoria y comunicación), programas de control, de proceso y de servicio; capas kernel, ejecutivo, supervisor y usuario.\n\n**Procesos.** Programa en ejecución; estados activo, bloqueado, preparado y muerto; operaciones crear, destruir, cambiar prioridad, bloquear, activar y despachar; algoritmos FCFS, SJF, prioridad y Round Robin.\n\n**Linux.** Distribuciones por familia (Debian, Red Hat, rolling release, especializadas); gestores de paquetes; FHS (/bin, /sbin, /boot, /dev, /etc, /media, /opt, /proc, /tmp, /usr); root y usuarios estándar; permisos r/w/x; chmod y umask; PID, PPID, UID y GID; fork, exec y wait; ps, top y kill.\n\n**Windows.** Defender, Firewall y UAC; NTFS, FAT32, exFAT y ReFS; Hyper-V; herramientas certmgr, gpedit, services, eventvwr, msconfig, regedit, winver y msinfo32; extensiones .exe, .bat, .cmd y .msi; comandos dir, cd, cls, xcopy, del, type, ping, ipconfig y netstat; TPM 2.0 en Windows 11.\n\n**Móviles.** Android (kernel Linux modificado, ART, Play Store, Java y Kotlin), iOS y HarmonyOS; en desuso Windows Phone, BlackBerry OS y Symbian; macOS 15 Sequoia y macOS 26 Tahoe."
+        },
+        {
+          "heading": "9. Casos tipo test comentados (15 preguntas)",
+          "body": "Los quince casos siguientes reproducen el estilo de pregunta del bloque II. Cada uno incluye la respuesta correcta y una explicación que recuerda el dato del temario; la referencia indica el epígrafe y la fuente donde está el contenido. Se recomienda contestarlos sin mirar la solución y revisar después solo los fallos."
+        },
+        {
+          "heading": "10. Fuentes citadas",
+          "body": "El tema se ha redactado a partir de `data/fuentes/II.14.txt`, que reúne el volcado de `Tema 4.docx` (teoría general del sistema operativo) y de `Bloque 2 Actualizado 2026.docx` (Linux, Windows, sistemas móviles y macOS). Las citas concretas por apartado aparecen en la lista `sources` y en la referencia de cada caso tipo test. No se han copiado párrafos literales: los contenidos se han sintetizado y ordenado, y no se han añadido cifras ni normas que no figuren en esas fuentes."
+        }
+      ],
       "practiceSlug": "ii-14"
     },
     "II.15": {
@@ -2931,6 +3136,82 @@
         "Usar WEP o redes abiertas para el personal."
       ],
       "reviewedAt": "2026-11-10",
+      "longSections": [
+        {
+          "heading": "1. Ficha oficial del tema",
+          "body": "**Tema III.22 — Comunicaciones.** Bloque III (sistemas y comunicaciones) del temario común C1. Se estudia con tres fuentes del bloque: **Tema 11** (comunicaciones, medios, equipos, conmutación, WLAN y telefonía móvil), **Bloque 4 Actualizado 2026** (estándares Wi-Fi actuales, FTTH, 5G, VoIP, VPN y MPLS) y **IEEE.802.11.y.Wifi.Estandares.docx** (evolución del estándar Wi-Fi). Su núcleo es: modelo de comunicación, **medios de transmisión** guiados (par trenzado, coaxial y fibra) y no guiados, perturbaciones de la señal y pruebas del cableado, **equipos de interconexión** por capa (repetidor y hub, puente y switch, router, pasarela y proxy), **redes y conmutación** (circuitos, paquetes, tramas y celdas), **redes inalámbricas** (Wi-Fi 802.11, seguridad y arquitectura), telefonía móvil, **VoIP**, **VPN** y **MPLS**. Conecta con el tema **III.21** (redes), que estudia direccionamiento, protocolos y servicios. Es un tema de conceptos y comparaciones: definiciones, dispositivo por capa y diferencias entre tecnologías."
+        },
+        {
+          "heading": "2. Índice de epígrafes",
+          "body": "El tema se estudia en este orden: (1) modelo de un sistema de comunicación (fuente, transmisor, medio, receptor y destino); (2) medios guiados: par trenzado UTP/STP, cable coaxial y fibra óptica; (3) medios no guiados: radiofrecuencia, microondas e infrarrojos; (4) perturbaciones de la señal (atenuación, interferencia, diafonía, ruido y desfase) y pruebas del cableado; (5) equipos de interconexión por capa del modelo OSI; (6) tipos de redes y de conmutación (circuitos, paquetes, tramas y celdas); (7) redes inalámbricas: Wi-Fi 802.11, capa física, acceso al medio y seguridad; (8) telefonía móvil: celdas, hand-over, roaming y generaciones; (9) VoIP y calidad de servicio; (10) VPN, MPLS y acceso de banda ancha (FTTH). Para el test pesan los medios de transmisión, CSMA/CD frente a CSMA/CA, los estándares Wi-Fi, los tipos de conmutación y la diferencia entre VPN, proxy y MPLS."
+        },
+        {
+          "heading": "3. Introducción y contexto",
+          "body": "Las comunicaciones explican cómo viaja la información de un dispositivo a otro: qué elementos intervienen, por qué medio se transmite, qué la degrada, qué equipos la encaminan y qué tecnologías la soportan. Sin ese mapa, siglas como CSMA/CA, WPA2, Frame Relay o MPLS se memorizan sueltas y se confunden en cuanto el examen cambia una frase.\n\nEl tema se ordena por **niveles y por capas**. Primero, el modelo básico de comunicación (fuente, transmisor, sistema de transmisión, receptor y destino) y los medios físicos. Después, los equipos que interconectan redes, clasificados por la capa en la que trabajan (capa 1, 2, 3 o 7). Y por encima, las tecnologías de red: conmutación, Wi-Fi, móviles, VoIP, VPN y MPLS.\n\nComplementa al tema III.21: aquí se estudia cómo se transmite y con qué equipos; allí, el direccionamiento, los protocolos y los servicios de red."
+        },
+        {
+          "heading": "4. Desarrollo por epígrafe",
+          "body": "**4.1 Modelo de comunicación y medios de transmisión.** Un sistema de comunicación se representa con cinco elementos (Tema 11, 1): **fuente** (genera los datos), **transmisor** (los transforma y codifica para el medio; por ejemplo, el módem modula en señal analógica), **sistema de transmisión** (el medio), **receptor** (acepta la señal y la adapta) y **destino** (equipo que procesa los datos). El modelo exige interfaces, generación de señales, sincronización, control de errores y de flujo, direccionamiento y enrutamiento.\n\nLos medios pueden ser **guiados** (la señal viaja confinada: par trenzado, coaxial y fibra) o **no guiados** (la señal se propaga por el espacio: radiofrecuencia, microondas e infrarrojos). Entre los guiados, el **par trenzado** es el más usado por coste y facilidad de instalación: **UTP** (cuatro pares de hilos de cobre, mejor relación calidad/precio) y **STP** (blindado, más caro y menos susceptible a interferencias). El **cable coaxial** tiene núcleo de cobre, aislamiento, malla de blindaje y revestimiento: el **RG-58** es de 50 ohmios y se usó en 10-BASE-2; el **RG-59** y el **RG-6U** son de 75 ohmios (TV por cable y viviendas). La **fibra óptica** usa dos hebras de vidrio o plástico; destaca por distancias y ancho de banda muy superiores al cobre y por no ser susceptible a interferencias electromagnéticas ni a diafonía. Hay **multimodo** (el haz rebota en el revestimiento, longitudes típicas de 850 a 1.300 nm y uso en FDDI, Gigabit y 10 Gigabit Ethernet dentro de edificios) y **monomodo** (el haz no rebota, longitudes típicas de 1.310 y 1.550 nm, usada en enlaces de proveedor y de campus). Entre los no guiados, la **radiofrecuencia** cubre de 3 kHz a 300 GHz; las **microondas** (300 MHz a 300 GHz) exigen línea de visión directa; los **infrarrojos** (IrDA) sirven para corto alcance y no atraviesan paredes.\n\n**4.2 Perturbaciones de la señal y pruebas del cableado.** Al transmitir se producen efectos negativos (Tema 11, 2): **atenuación** (pérdida de potencia con la distancia; en cobre por resistencia y calor, en fibra por absorción de luz), **interferencia** (la **diafonía** es la interferencia entre señales que discurren por medios paralelos), **ruido** (térmico por agitación de los conductores, de intermodulación por compartir frecuencias, impulsivo por rayos o cortocircuitos) y **desfase** (la onda no viaja a la misma velocidad en todas las frecuencias). En el cableado de cobre se comprueba la continuidad con **reflectometría en el dominio del tiempo** (TDR), el **mapeo de hilos** y, para certificar, impedancia, pérdida de retorno, **atenuación**, **NEXT**, **FEXT** y **ACR**. En fibra se miden la **potencia óptica** y la **atenuación** con un OLTS y se localizan problemas con un **OTDR**; en multimodo se prueba a 850 y 1.300 nm y en monomodo a 1.300 nm.\n\n**4.3 Equipos de interconexión por capa.** Los dispositivos finales (hosts) generan o consumen información; los intermedios la acercan al destino. Por capa del modelo OSI (Tema 11, 4): en **capa 1** están el **repetidor** y el **hub**, que regeneran la señal y **amplían el dominio de colisión** compartiendo el ancho de banda. En **capa 2** están el **puente** y el **conmutador**: aprenden direcciones **MAC**, consultan una tabla de conmutación, reenvían la trama por el puerto correcto (o por todos si la MAC no se conoce) y **dividen dominios de colisión**; el switch lo hace por hardware, es full-duplex y puede usar **store-and-forward** (comprueba la trama y descarta las erróneas, con más latencia) o **conmutación rápida** (reenvía tras leer la MAC de destino, con menos latencia pero sin filtrar errores). El **STP (802.1D)** evita bucles en topologías redundantes y **802.1Q** etiqueta tramas para separar **VLAN** (añade un campo de 4 bytes a la cabecera Ethernet). En **capa 3** está el **router**, que decide la ruta por la dirección IP de destino con su tabla de enrutamiento (rutas estáticas o protocolos como RIP, OSPF, EIGRP, IS-IS o BGP) y **separa dominios de difusión**.\n\n**4.4 Redes y tipos de conmutación.** Según la tecnología de transmisión, hay redes de **difusión** (un canal compartido: el origen envía y todos reciben) y **punto a punto** (múltiples enlaces entre pares). Por su ámbito: **LAN** (edificio, privada, 10 Mbps a 100 Gbps con Ethernet o anillo Token Ring), **MAN** (ciudad; WiMAX, IEEE 802.16) y **WAN** (áreas extensas con proveedor de servicios). Las WAN se clasifican por cómo conmutan (Tema 11, 5): **circuitos** (camino dedicado previo; RTB y RDSI), **paquetes** (datagramas sin recursos reservados; X.25), **tramas** (decisiones por cabeceras y direcciones de **capa 2**; Frame Relay) y **celdas** (tramas de tamaño fijo y pequeño; ATM). Las topologías típicas son bus, anillo, estrella, estrella extendida, árbol, malla parcial y malla completa.\n\n**4.5 Redes inalámbricas y Wi-Fi.** Según el alcance: **WPAN** (Bluetooth 802.15.1, Zigbee 802.15.4), **WLAN** (Wi-Fi 802.11, HiperLAN), **WMAN** (WiMAX 802.16) y **WWAN** (LTE, UMTS, GPRS). Wi-Fi usa las bandas de **2,4 GHz y 5 GHz**; en 2,4 GHz hay canales del 1 al 13 separados 5 MHz con un ancho de 22 MHz, por lo que se solapan, y el material del bloque señala como canales recomendados para puntos de acceso adyacentes el 1, el 7 y el 13. En la capa física destacan el **espectro ensanchado** (**FHSS**, que cambia periódicamente la portadora, y **DSSS**, que usa todo el ancho de banda con una secuencia de bits) y **OFDM** (divide el ancho de banda en subportadoras). En la subcapa MAC no se puede detectar la colisión mientras se transmite: se usa **CSMA/CA con ACK** y, para el **nodo oculto**, **RTS/CTS**; el control puede ser distribuido (**DCF**) o centralizado (**PCF**). La arquitectura puede ser **ad-hoc** (sin punto de acceso) o **infraestructura** (clientes, **AP** y controlador **AC**). Por estándares: **802.11b** (DSSS, 11 Mbps, 2,4 GHz, unos 100 m), **802.11a** (OFDM, 54 Mbps, 5 GHz), **802.11g** (54 Mbps, 2,4 GHz, OFDM o DSSS para interoperar), **802.11n** (2,4 y 5 GHz, hasta 600 Mbps, MIMO) y **802.11ac** (5 GHz, hasta 1,3 Gbps, WPA2 con AES). El **Bloque 4** amplía el cuadro con **Wi-Fi 6/6E** (802.11ax), **Wi-Fi 7** (802.11be), **WiGig** (802.11ad, 60 GHz), **Wi-Fi HaLow** (802.11ah, sub-1 GHz, IoT) y **White-Fi** (802.11af, bandas de TV). En seguridad, **WEP** cifra con **RC4** (claves de 40, 128 o 256 bits) y resultó vulnerable; **WPA2** (IEEE 802.11i) usa **AES (Rijndael)**; **802.1X con EAP y RADIUS** controla el acceso por puertos.\n\n**4.6 Telefonía móvil.** Los sistemas celulares dividen la cobertura en **células** con un transceptor y un conjunto limitado de frecuencias; las frecuencias se reutilizan en células no contiguas y un **clúster** agrupa células adyacentes con casi todas las frecuencias. El **hand-over** mantiene la llamada al cambiar de celda dentro de la misma central, y el **roaming** la mantiene al pasar a una celda de otra central. Por generaciones: **1G** analógica (AMPS, NMT-450, NMT-900, TACS), **2G** digital (TDMA y CDMA; GSM y DCS-1800), **2.5G** (GPRS y EDGE), **3G** (UMTS, con servicios multimedia), **3.5G** (HSDPA hasta 14,4 Mbps y LTE con OFDM y MIMO), **4G** (todo IP, más de 100 Mbps en movimiento y 1 Gbps en reposo, con LTE Advanced y WiMax2 como auténticos 4G) y **5G**, con modos **NSA** (apoyado en 4G) y **SA** (menor latencia) y latencias de 1-2 ms en SA frente a 5-10 ms en NSA.\n\n**4.7 VoIP, VPN, MPLS y acceso de banda ancha.** La **VoIP** convierte la voz analógica en paquetes IP; es sensible a **latencia, jitter y pérdida de paquetes**. Usa **SIP** para establecer, modificar y finalizar sesiones, **RTP** para transportar voz y vídeo en tiempo real, **SRTP** cifrado, **H.323** (más antiguo), **MGCP** para conectar con la red telefónica tradicional y **WebRTC** para comunicación desde el navegador. Los equipos son softphones, teléfonos IP, gateways VoIP y centrales **PBX IP**; la **QoS** prioriza el tráfico de voz. La **VPN** permite enviar y recibir datos sobre redes públicas como si fuera una red privada y debe aportar **confidencialidad, integridad y autenticación**: puede ser de **acceso remoto** o **sitio a sitio**, usa **tunelización** y a menudo **IPsec**; con **split tunneling** se decide qué tráfico va por la VPN. Implementaciones: PPP, PPTP (antiguo y poco seguro), SSTP, L2F, L2TP (sin cifrado propio, se combina con IPsec), OpenVPN (SSL/TLS) e IPsec. Un **proxy** es un intermediario que no cifra el tráfico y solo oculta la IP en tráfico HTTP/S, a diferencia de la VPN. **MPLS** opera entre la capa de enlace y la de red y enruta por **etiquetas**: **LER** inicia o termina el túnel y añade o quita etiquetas, **LSR** encamina por etiquetas, **FEC** agrupa paquetes con características similares, **LSP** es el camino y **LDP** distribuye las etiquetas. En el acceso de banda ancha, **FTTH** lleva fibra hasta el hogar, sustituye a **ADSL** y a **HFC** (coaxial) y aporta estabilidad, inmunidad a interferencias y latencias más bajas."
+        },
+        {
+          "heading": "5. Tabla comparativa: medios de transmisión guiados",
+          "body": "Los medios guiados se diferencian por su soporte físico, su inmunidad a las interferencias y su uso típico. Esta tabla resume los datos que se preguntan.",
+          "table": {
+            "columns": [
+              "Medio",
+              "Características",
+              "Datos del material",
+              "Uso típico"
+            ],
+            "rows": [
+              [
+                "Par trenzado UTP/STP",
+                "Cuatro pares de hilos de cobre trenzados; UTP sin blindaje y STP blindado",
+                "UTP: mejor relación calidad/precio; STP: más caro y menos susceptible a interferencias",
+                "Cableado de LAN y telefonía"
+              ],
+              [
+                "Cable coaxial",
+                "Núcleo de cobre, aislamiento, malla de blindaje y revestimiento",
+                "RG-58: 50 ohmios (10-BASE-2); RG-59 y RG-6U: 75 ohmios (TV y viviendas)",
+                "Redes antiguas, TV por cable y cable-módem"
+              ],
+              [
+                "Fibra óptica multimodo",
+                "El haz rebota en el revestimiento; permite más de un nodo de luz",
+                "Longitudes típicas de 850 a 1.300 nm",
+                "FDDI, Gigabit y 10 Gigabit Ethernet dentro de edificios"
+              ],
+              [
+                "Fibra óptica monomodo",
+                "El haz no rebota en el revestimiento",
+                "Longitudes típicas de 1.310 y 1.550 nm",
+                "Enlaces de proveedor, intercontinentales y de campus"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "6. Ejemplo práctico resuelto",
+          "body": "**Supuesto.** Un ayuntamiento quiere conectar dos sedes separadas por varios kilómetros, dar Wi-Fi a los usuarios de la sede principal y migrar su telefonía a VoIP. Elabora una solución razonada indicando medio, equipos y tecnologías de cada tramo.\n\n**Resolución.** (1) Entre sedes, la distancia y el ancho de banda exigen **fibra óptica monomodo** (longitudes de 1.310/1.550 nm) o un enlace WAN contratado al operador; si se contrata, puede usarse **MPLS** para transportar varios tipos de tráfico con etiquetas y garantías. (2) En cada sede, un **switch** de capa 2 con **VLAN** por departamento separa el tráfico; el enlace entre switches se configura como **troncal 802.1Q** para transportar varias VLAN. (3) Un **router** de capa 3 conecta las redes lógicas y separa los dominios de difusión. (4) El Wi-Fi se despliega en modo **infraestructura** con puntos de acceso y controlador; en 2,4 GHz se reparten los canales 1, 7 y 13 para evitar solapamientos, se usa **WPA2 con AES** y, si hay equipos antiguos, se aísla la red. (5) Para el teletrabajo se configura una **VPN de acceso remoto** con IPsec o SSL/TLS, y para unir las dos sedes una **VPN sitio a sitio** si no se contrata MPLS. (6) La telefonía pasa a **VoIP** con **SIP** para la señalización y **RTP** para la voz; se crea una VLAN de voz y se aplica **QoS** para reducir latencia y jitter.\n\n**Conclusión.** Cada decisión se justifica por una característica técnica: el medio por la distancia, el switch por la segmentación, el router por el enrutamiento, el Wi-Fi por la movilidad y la QoS por la sensibilidad de la voz."
+        },
+        {
+          "heading": "7. Trampas típicas de examen",
+          "body": "- Confundir **CSMA/CD** (redes cableadas: detecta la colisión mientras transmite) con **CSMA/CA** (Wi-Fi: evita la colisión y exige ACK).\n- Olvidar que **RTS/CTS** sirve para el problema del **nodo oculto**, no para cifrar.\n- Confundir **WEP** (RC4, claves de 40, 128 o 256 bits, vulnerable) con **WPA2** (AES/Rijndael, IEEE 802.11i).\n- Mezclar bandas y velocidades de Wi-Fi: **802.11b** (2,4 GHz, 11 Mbps), **802.11a** (5 GHz, 54 Mbps), **802.11g** (2,4 GHz, 54 Mbps), **802.11n** (2,4 y 5 GHz, 600 Mbps, MIMO) y **802.11ac** (5 GHz).\n- Confundir los tipos de conmutación: **circuitos** (RTB y RDSI), **paquetes** (X.25), **tramas** (Frame Relay, capa 2) y **celdas** (ATM, tamaño fijo).\n- Confundir **repetidor y hub** (capa 1, amplían el dominio de colisión) con **puente y switch** (capa 2, lo dividen) y con **router** (capa 3, separa dominios de difusión).\n- Confundir en MPLS **LER** (añade o quita etiquetas al inicio y fin) con **LSR** (encamina por etiquetas) y con **LDP** (distribuye etiquetas).\n- Creer que un **proxy** cifra el tráfico: el proxy no cifra; la **VPN** cifra todo el tráfico de red.\n- Confundir en VoIP **SIP** (señalización de sesiones) con **RTP** (transporte de voz y vídeo en tiempo real).\n- Confundir en fibra **multimodo** (850-1.300 nm, edificios) con **monomodo** (1.310/1.550 nm, larga distancia) y el coaxial **RG-58** (50 ohmios) con **RG-59** (75 ohmios)."
+        },
+        {
+          "heading": "8. Resumen para memorizar",
+          "body": "**Lo que hay que memorizar.**\n\n1. **Modelo**: fuente, transmisor, sistema de transmisión, receptor y destino; el módem modula la señal.\n2. **Medios guiados**: UTP/STP, coaxial (RG-58 50 ohmios; RG-59/RG-6U 75 ohmios) y fibra (multimodo 850-1.300 nm; monomodo 1.310/1.550 nm).\n3. **No guiados**: radiofrecuencia (3 kHz-300 GHz), microondas (300 MHz-300 GHz, línea de visión) e infrarrojos (IrDA).\n4. **Perturbaciones**: atenuación, interferencia y diafonía, ruido (térmico, intermodulación, impulsivo) y desfase.\n5. **Equipos por capa**: capa 1 repetidor y hub; capa 2 puente y switch; capa 3 router; capa 7 ALG y proxy.\n6. **Conmutación**: circuitos (RTB/RDSI), paquetes (X.25), tramas (Frame Relay) y celdas (ATM).\n7. **Wi-Fi**: CSMA/CA con ACK, RTS/CTS para nodo oculto, DCF y PCF; 802.11b 11 Mbps, a/g 54 Mbps, n 600 Mbps (MIMO), ac 5 GHz; WPA2 con AES.\n8. **Móviles**: células, clúster, hand-over y roaming; 1G analógica, 2G digital, 2.5G GPRS/EDGE, 3G UMTS, 4G todo IP, 5G NSA/SA.\n9. **VoIP**: SIP (señalización), RTP (voz y vídeo), SRTP (cifrado), H.323, MGCP y WebRTC; QoS para latencia y jitter.\n10. **VPN y MPLS**: VPN con tunelización e IPsec, de acceso remoto o sitio a sitio; proxy sin cifrado; MPLS con LER, LSR, FEC, LSP y LDP."
+        },
+        {
+          "heading": "9. Casos tipo test comentados (15 preguntas)",
+          "body": "**1.** ¿Qué elemento del sistema de comunicación transforma y codifica los datos para el medio? **Respuesta: b)** El transmisor (Tema 11, 1).\n\n**2.** ¿Cómo se llama la pérdida de potencia de la señal con la distancia? **Respuesta: a)** Atenuación (Tema 11, 2).\n\n**3.** ¿Qué es la diafonía? **Respuesta: c)** La interferencia entre señales que discurren por medios paralelos (Tema 11, 2).\n\n**4.** ¿Qué caracteriza a la fibra monomodo? **Respuesta: d)** Longitudes típicas de 1.310 y 1.550 nm, sin rebote del haz en el revestimiento (Tema 11, 2).\n\n**5.** En Wi-Fi, ¿qué variante de CSMA se usa en la subcapa MAC? **Respuesta: b)** CSMA/CA con ACK (Tema 11, 6.1.2).\n\n**6.** ¿Qué algoritmo simétrico usa WPA2? **Respuesta: c)** AES (Rijndael), según IEEE 802.11i (Tema 11, 6.4).\n\n**7.** ¿En qué banda opera 802.11ac? **Respuesta: d)** Solo en 5 GHz (Tema 11, 6.3).\n\n**8.** ¿Qué tecnología usa conmutación de celdas de tamaño fijo? **Respuesta: a)** ATM (Tema 11, 5).\n\n**9.** La conmutación de tramas toma decisiones según direcciones de… **Respuesta: b)** Capa 2 (Frame Relay) (Tema 11, 5).\n\n**10.** ¿Qué estándar etiqueta las tramas Ethernet para identificar la VLAN? **Respuesta: c)** IEEE 802.1Q (Tema 11, 4).\n\n**11.** ¿Qué dispositivos amplían el dominio de colisión? **Respuesta: d)** Repetidores y hubs (Tema 11, 4).\n\n**12.** ¿Qué protocolo establece, modifica y finaliza sesiones en VoIP? **Respuesta: a)** SIP (Bloque 4, TEMA 6).\n\n**13.** ¿Cuál es la diferencia clave entre proxy y VPN? **Respuesta: b)** La VPN cifra todo el tráfico y el proxy no cifra (Bloque 4, TEMA 9).\n\n**14.** En MPLS, ¿qué elemento añade o quita etiquetas al inicio y fin del túnel? **Respuesta: d)** El LER (Bloque 4, TEMA 10).\n\n**15.** ¿Qué estándar ofrece hasta 600 Mbps con MIMO en 2,4 y 5 GHz? **Respuesta: d)** 802.11n (Tema 11, 6.3)."
+        },
+        {
+          "heading": "10. Fuentes citadas",
+          "body": "- **Tema 11.docx**, apartados 1 a 7: modelo de comunicación, medios guiados y no guiados, perturbaciones y pruebas, equipos de interconexión, redes y conmutación, WLAN/Wi-Fi y telefonía móvil (DOCX, sin paginación fija).\n- **Bloque 4 Actualizado 2026.docx**, TEMA 6 (comunicaciones: estándares Wi-Fi, FTTH, 5G y VoIP), TEMA 9 (VPN y proxy) y TEMA 10 (MPLS y topologías de red local).\n- **IEEE.802.11.y.Wifi.Estandares.docx**, evolución y características de los estándares IEEE 802.11.\n- **III.22.txt**, texto consolidado de las fuentes anteriores (uso interno de trabajo).\n\nNo se copian párrafos literales; se sintetiza y se ordena el contenido, y las cifras citadas son las que aparecen en estas fuentes."
+        }
+      ],
       "practiceSlug": "iii-22"
     },
     "III.23": {
@@ -3620,6 +3901,82 @@
         "Pensar que un `JOIN` conserva las filas sin coincidencia: eso solo ocurre en `LEFT`, `RIGHT` o `FULL`, no en `INNER`."
       ],
       "reviewedAt": "2026-11-10",
+      "longSections": [
+        {
+          "heading": "1. Ficha oficial del tema",
+          "body": "**Tema IV.28 · SQL.** Bloque IV (Datos y desarrollo) del temario común de Técnicos Auxiliares de Informática. Se apoya en el tema IV.27 (bases de datos relacionales: modelo, claves y normalización), que explica dónde se ejecutan las sentencias que aquí se estudian.\n\n**Objetivo de examen.** Reconocer qué sentencia pertenece a cada familia del lenguaje, escribir consultas con filtros, ordenación, agrupación y uniones, distinguir las operaciones de modificación de datos y las de definición de objetos, y controlar permisos y transacciones. Dificultad **media**: la sintaxis es corta, pero los matices (WHERE frente a HAVING, DELETE frente a TRUNCATE, UNION frente a UNION ALL) deciden muchas preguntas.\n\n**Fuentes de este tema.** El consolidado data/fuentes/IV.28.txt, formado por Tema 7.docx (sistema gestor, seguridad y transacciones), Bloque 3 Actualizado 2026.docx (Tema 3, SQL) y Tema 5.docx (lenguajes del DBMS). (Fuente: data/fuentes/IV.28.txt.)"
+        },
+        {
+          "heading": "2. Índice de epígrafes",
+          "body": "Este tema se ordena en diez apartados para que sirva de repaso rápido:\n\n1. Ficha oficial del tema (este apartado): ubicación, objetivo, dificultad y fuentes.\n2. Índice de epígrafes: el mapa que está leyendo.\n3. Introducción y contexto: qué es SQL, por qué es un estándar y cómo se relaciona con el modelo relacional.\n4. Desarrollo por epígrafe: DDL, DML, DCL y TCL; SELECT y filtros; agregación; JOIN; operaciones de conjuntos; subconsultas; vistas, disparadores y procedimientos.\n5. Tabla comparativa de las familias de sentencias SQL.\n6. Ejemplo práctico resuelto sobre una tabla de pokemon.\n7. Trampas típicas de examen.\n8. Resumen para memorizar.\n9. Casos tipo test comentados (15 preguntas).\n10. Fuentes citadas.\n\nLos epígrafes oficiales del tema (definición y manipulación de datos, consultas, vistas y objetos programables) quedan cubiertos en el apartado 4; los casos tipo test del apartado 9 se corresponden con los quince testCases de este fichero. (Fuente: data/fuentes/IV.28.txt, estructura del Tema 3 de SQL.)"
+        },
+        {
+          "heading": "3. Introducción y contexto",
+          "body": "SQL (Structured Query Language) es un lenguaje específico de dominio para gestionar y manipular bases de datos relacionales. La fuente lo describe como un lenguaje que maneja el álgebra y el cálculo relacional para efectuar consultas: el usuario declara **qué datos quiere**, no cómo recorrerlos.\n\nUna instrucción SQL se compone de un comando, cláusulas, operadores y funciones de agregado; no es obligatorio que estén los cuatro, pero sí debe haber al menos un comando y una cláusula. Los comentarios se escriben con «--» en una línea o con «/* ... */» en varias, igual que en Java.\n\nSQL no es un lenguaje de programación general: es el lenguaje integrado de los gestores relacionales y reúne en un mismo estándar la definición de esquemas (LDD), la definición de vistas (LDV) y la manipulación de datos (LMD). Por eso se dice que es un lenguaje **declarativo** de alto nivel: una sola sentencia puede recuperar muchos registros. Los apuntes recuerdan además que, aunque SQL es estándar, cada gestor añade matices propios (por ejemplo, LIMIT, TOP o FETCH FIRST para limitar filas). Antes de escribir consultas conviene tener claro el modelo del tema IV.27: tablas, claves primarias y foráneas, y relaciones. (Fuentes: Tema 7.docx, apartado 1; Bloque 3 Actualizado 2026.docx, Tema 3; Tema 5.docx, apartado 3.1.)"
+        },
+        {
+          "heading": "4. Desarrollo por epígrafe",
+          "body": "**1) Familias de sentencias.** Aunque la fuente usa la terminología clásica (LDD, LDV, LMD), en el examen es habitual la clasificación por familias: **DDL** o definición (crear, modificar y borrar objetos), **DML** o manipulación (recuperar, insertar, actualizar y borrar filas), **DCL** o control de permisos y **TCL** o control de transacciones. Una misma sentencia puede tener matices de dos familias (TRUNCATE borra filas pero se comporta como una operación de definición), así que conviene fijarse en el efecto, no solo en el nombre.\n\n**2) DDL: definir objetos y restricciones.** Los apuntes recogen ALTER TABLE con sus operaciones habituales:\n\n- ALTER TABLE pokemon ADD COLUMN color_Pokemon;\n- ALTER TABLE pokemon DROP COLUMN color_Pokemon;\n- ALTER TABLE pokemon ALTER COLUMN ataque TYPE INTEGER;\n- ALTER TABLE pokemon RENAME COLUMN ataque TO ATAK;\n- ALTER TABLE pokemon ADD PRIMARY KEY (número_Pokedex);\n- ALTER TABLE pokemon ADD CONSTRAINT nombre_x UNIQUE (nombre);\n\nLa tabla puede declarar restricciones: **PRIMARY KEY** identifica de forma exclusiva cada fila, **FOREIGN KEY** referencia la clave de otra tabla, **UNIQUE** impide valores duplicados y **CHECK** limita el rango de valores de una columna. Para una columna con valor automático, MySQL usa AUTO_INCREMENT, SQL Server usa IDENTITY y Oracle/ANSI emplea CREATE SEQUENCE. Los tipos de dato que recoge la fuente son CHAR y VARCHAR (fijas y variables), BIT y BIT VARYING, INTEGER/SMALLINT/BIGINT, NUMERIC/DECIMAL, REAL/DOUBLE PRECISION, DATE, TIME y TIMESTAMP. Las vistas se definen con CREATE VIEW, seguido del nombre, AS y la consulta; **una vista no almacena datos**, guarda la consulta que se ejecuta al acceder.\n\n**3) DML: SELECT y filtros.** La estructura básica es SELECT columnas FROM tabla, con * para todas las columnas, y WHERE para la condición de cada fila. Los operadores de filtro que aparecen en la fuente son BETWEEN (intervalo), LIKE (patrones, con % para cualquier secuencia y _ para un carácter) e IN (lista de valores), junto con AND, OR y NOT. ORDER BY ordena (ASC por defecto, DESC descendente) y AS pone alias. Para limitar filas, PostgreSQL, MySQL y SQLite usan LIMIT; SQL Server, TOP; Oracle y ANSI SQL, FETCH FIRST ... ROWS ONLY.\n\n**4) Agregación y grupos.** GROUP BY agrupa filas con los mismos valores y las funciones de agregado resumen cada grupo: COUNT, SUM, AVG, MIN y MAX. HAVING filtra **después** de agrupar, mientras que WHERE filtra filas antes; pueden combinarse en la misma sentencia. DISTINCT elimina duplicados. Para tratar ausencias se usa IS NULL e IS NOT NULL, nunca la comparación con = NULL.\n\n**5) JOIN.** INNER JOIN devuelve solo las filas con coincidencia en ambas tablas; LEFT JOIN conserva todas las de la izquierda y rellena con NULL la derecha cuando no hay coincidencia; RIGHT JOIN hace lo simétrico; FULL JOIN combina ambas y no lo soportan algunos gestores; CROSS JOIN devuelve el producto cartesiano. La forma general es SELECT columnas FROM A INNER JOIN B ON A.columna = B.columna;.\n\n**6) Operaciones de conjuntos y subconsultas.** UNION combina resultados de dos SELECT y elimina duplicados; UNION ALL los conserva; INTERSECT devuelve las filas comunes y EXCEPT las que no son comunes. Las dos consultas deben tener el mismo número de columnas, tipos y orden. Una subconsulta es una consulta dentro de otra y puede aparecer en SELECT, FROM, WHERE o HAVING; el ejemplo típico compara cada salario con la media: SELECT nombre FROM empleado WHERE sueldo > (SELECT AVG(sueldo) FROM empleado);. El operador ALL compara con todos los valores de la subconsulta y EXISTS/NOT EXISTS comprueban si la lista tiene datos.\n\n**7) DCL y TCL.** GRANT otorga permisos y REVOKE los retira: GRANT SELECT ON pokemon TO Koco; GRANT ALL PRIVILEGES ON pokemon TO Koco; REVOKE ALL PRIVILEGES ON pokemon FROM Koco;. Los privilegios ANSI básicos son SELECT, INSERT, UPDATE y DELETE, y otros gestores añaden REFERENCES, EXECUTE, USAGE, CREATE, DROP o GRANT. Para las transacciones, BEGIN o START TRANSACTION inicia, COMMIT confirma, ROLLBACK deshace, SAVEPOINT crea un punto de control parcial y SET TRANSACTION fija sus características. La fuente recuerda que estos comandos se usan con INSERT, DELETE y UPDATE, y que la transacción debe cumplir ACID (atomicidad, consistencia, aislamiento y durabilidad).\n\n**8) Objetos programables.** Un TRIGGER se ejecuta automáticamente ante un evento (inserción, actualización o borrado) y puede referirse a una columna concreta con OF en un UPDATE, por ejemplo CREATE TRIGGER X BEFORE UPDATE OF TIPO1 ON POKEMON. Un **procedimiento almacenado** agrupa lógica y se ejecuta cuando se invoca, no automáticamente; la fuente indica que se llama con EXEC o EXECUTE. Los eventos son tareas programadas que se ejecutan en un momento o al cumplirse una condición. La sintaxis completa de procedimientos y eventos depende del gestor y en los apuntes aparece en capturas, por lo que aquí se explica el concepto y se conservan solo las formas que el texto muestra con claridad. (Fuentes: Bloque 3 Actualizado 2026.docx, Tema 3; Tema 7.docx, apartados 2 y 2.3; Tema 5.docx, apartado 3.1.)"
+        },
+        {
+          "heading": "5. Tabla comparativa: familias de sentencias SQL",
+          "body": "Resumen de las cuatro familias que conviene distinguir en el examen, con ejemplos tomados de la fuente. (Fuente: Bloque 3 Actualizado 2026.docx, Tema 3; Tema 5.docx, apartado 3.1.)",
+          "table": {
+            "columns": [
+              "Familia",
+              "Para qué sirve",
+              "Sentencias típicas",
+              "Ejemplo de la fuente"
+            ],
+            "rows": [
+              [
+                "DDL (definición)",
+                "Crear, modificar y borrar objetos; definir restricciones",
+                "CREATE, ALTER, DROP",
+                "ALTER TABLE pokemon ADD COLUMN color_Pokemon;"
+              ],
+              [
+                "DML (manipulación)",
+                "Recuperar, insertar, actualizar y borrar filas",
+                "SELECT, INSERT, UPDATE, DELETE",
+                "INSERT INTO pokemon (Nº, nombre, tipo1) VALUES (1, 'Bulbasaur', 'Planta');"
+              ],
+              [
+                "DCL (control de permisos)",
+                "Conceder y retirar privilegios",
+                "GRANT, REVOKE",
+                "GRANT SELECT ON pokemon TO Koco;"
+              ],
+              [
+                "TCL (control de transacciones)",
+                "Agrupar operaciones y confirmarlas o deshacerlas",
+                "BEGIN/START TRANSACTION, COMMIT, ROLLBACK, SAVEPOINT",
+                "COMMIT;"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "6. Ejemplo práctico resuelto",
+          "body": "**Supuesto.** Se parte de una tabla Pokemon con las columnas nombre, tipo1, tipo2 y ataque, y se pide preparar una pequeña consulta de explotación: añadir un contador de capturas, insertar un registro, listar los pokemon de fuego, obtener el ataque total por tipo, cruzar la tabla con una tabla Tipo y crear una vista para el personal de consulta.\n\n**Resolución.**\n\n- Se añade la columna con la sintaxis de la fuente: ALTER TABLE pokemon ADD COLUMN numero_capturas;\n- Se inserta un registro indicando columnas y valores: INSERT INTO pokemon (nombre, tipo1, ataque) VALUES ('Charmander', 'Fuego', 60);\n- Se filtran los de fuego: SELECT nombre, ataque FROM pokemon WHERE tipo1 = 'Fuego';\n- Se agrupa y se filtra el grupo por la media: SELECT tipo1, AVG(ataque) FROM pokemon GROUP BY tipo1 HAVING AVG(ataque) > 50;\n- Se cruza con la tabla Tipo: SELECT pokemon.nombre, tipo.descripcion FROM pokemon INNER JOIN tipo ON pokemon.tipo1 = tipo.tipo1;\n- Se crea una vista: CREATE VIEW vista_fuego AS SELECT nombre, ataque FROM pokemon WHERE tipo1 = 'Fuego';\n- Se concede permiso de lectura sobre la vista: GRANT SELECT ON vista_fuego TO Koco;\n\n**Cómo comprobarlo.** La consulta agrupada devuelve una fila por tipo y solo los grupos cuya media de ataque supera 50; el INNER JOIN descarta los pokemon cuyo tipo no exista en la tabla Tipo; la vista no copia los datos, solo guarda la consulta, de modo que si cambia la tabla cambia el resultado de la vista. Si se quisiera conservar también a los pokemon sin tipo, habría que usar LEFT JOIN. (Fuente: Bloque 3 Actualizado 2026.docx, Tema 3: ALTER TABLE, INSERT, SELECT, GROUP BY/HAVING, JOIN, CREATE VIEW y GRANT.)"
+        },
+        {
+          "heading": "7. Trampas típicas de examen",
+          "body": "- **WHERE frente a HAVING.** WHERE filtra filas individuales antes de agrupar; HAVING filtra grupos después. Una condición con una función de agregado no puede ir en WHERE.\n- **DELETE, TRUNCATE y DROP.** DELETE borra filas (con o sin WHERE) y conserva la tabla; TRUNCATE borra todas las filas, no admite WHERE y es más rápido; DROP elimina el objeto completo y su estructura, y no se puede deshacer.\n- **CHAR frente a VARCHAR.** CHAR es de longitud fija y VARCHAR de longitud variable; el examen juega con esas definiciones.\n- **UNION frente a UNION ALL.** UNION elimina filas repetidas; UNION ALL las muestra todas. Para que la combinación sea válida, los SELECT deben tener el mismo número de columnas, tipos y orden.\n- **INNER frente a LEFT.** INNER solo devuelve coincidencias; LEFT conserva todas las filas de la izquierda y rellena con NULL las columnas de la derecha cuando no hay coincidencia.\n- **NULL no es un valor.** Se comprueba con IS NULL o IS NOT NULL; comparar con = NULL no devuelve lo que se espera.\n- **Limitar filas depende del gestor.** LIMIT (MySQL/PostgreSQL/SQLite), TOP (SQL Server) y FETCH FIRST (Oracle/ANSI) no son intercambiables.\n- **Vista no es copia.** Una vista almacena una consulta, no datos; su resultado se calcula al consultarla.\n- **Disparador frente a procedimiento.** El TRIGGER se ejecuta automáticamente ante un evento; el procedimiento se ejecuta cuando se invoca (EXEC o EXECUTE).\n- **COMMIT frente a ROLLBACK.** COMMIT confirma y hace persistentes los cambios; ROLLBACK los deshace hasta el último COMMIT o hasta el SAVEPOINT correspondiente.\n\n(Fuente: Bloque 3 Actualizado 2026.docx, Tema 3; Tema 7.docx, apartado 2.)"
+        },
+        {
+          "heading": "8. Resumen para memorizar",
+          "body": "Lo que hay que retener:\n\n- SQL es un lenguaje declarativo y estándar; una instrucción combina comando, cláusulas, operadores y funciones de agregado, con al menos comando y cláusula.\n- Familias: DDL (CREATE/ALTER/DROP), DML (SELECT/INSERT/UPDATE/DELETE), DCL (GRANT/REVOKE) y TCL (COMMIT/ROLLBACK/SAVEPOINT/BEGIN).\n- Filtros: WHERE, BETWEEN, LIKE (% y _), IN, AND/OR/NOT, IS NULL. Orden con ORDER BY (ASC por defecto) y alias con AS.\n- Agregación: GROUP BY + COUNT/SUM/AVG/MIN/MAX; HAVING filtra grupos; DISTINCT quita duplicados.\n- JOIN: INNER (coincidencias), LEFT/RIGHT (conservan un lado), FULL (ambos), CROSS (producto cartesiano).\n- Conjuntos: UNION elimina duplicados, UNION ALL no; INTERSECT comunes; EXCEPT no comunes.\n- DDL: PRIMARY KEY, FOREIGN KEY, UNIQUE y CHECK; vistas con CREATE VIEW (no guardan datos).\n- DCL: privilegios SELECT, INSERT, UPDATE y DELETE, más REFERENCES, EXECUTE, USAGE, CREATE, DROP y GRANT en otros gestores.\n- TCL: ACID; COMMIT confirma, ROLLBACK deshace y SAVEPOINT marca un punto intermedio.\n- Programables: TRIGGER automático ante evento; procedimiento manual con EXEC/EXECUTE; eventos programados.\n\n(Fuente: Bloque 3 Actualizado 2026.docx, Tema 3; Tema 7.docx, apartados 1-2; Tema 5.docx, apartado 3.1.)"
+        },
+        {
+          "heading": "9. Casos tipo test comentados (15 preguntas)",
+          "body": "Los quince casos del fichero, comentados y con su referencia de fuente:\n\n**1.** Borrar todas las filas de una tabla conservando su estructura. **Respuesta: b)** TRUNCATE TABLE (apartado 4, DML).\n\n**2.** Filtrar los grupos ya formados en una consulta con GROUP BY. **Respuesta: c)** HAVING (apartado 4, agregación).\n\n**3.** JOIN que conserva todas las filas de la tabla izquierda. **Respuesta: a)** LEFT JOIN (apartado 4, JOIN).\n\n**4.** Diferencia entre UNION y UNION ALL. **Respuesta: d)** UNION elimina duplicados; UNION ALL los mantiene (apartado 4, conjuntos).\n\n**5.** Función de agregado que calcula la media. **Respuesta: b)** AVG (apartado 4, agregación).\n\n**6.** Comodín de LIKE para un único carácter. **Respuesta: c)** El guion bajo _ (apartado 4, filtros).\n\n**7.** Comprobación de ausencia de valor. **Respuesta: a)** IS NULL (apartado 4, NULL).\n\n**8.** Orden por defecto de ORDER BY. **Respuesta: b)** Ascendente (apartado 4, filtros).\n\n**9.** Limitar filas en SQL Server. **Respuesta: c)** TOP (apartado 4, filtros).\n\n**10.** Sentencia que concede permisos sobre un objeto. **Respuesta: a)** GRANT (apartado 4, DCL).\n\n**11.** Comando que deshace una transacción no confirmada. **Respuesta: d)** ROLLBACK (apartado 4, TCL).\n\n**12.** Qué guarda una vista. **Respuesta: b)** La consulta que la define, no los datos (apartado 4, DDL).\n\n**13.** Objeto que se ejecuta automáticamente ante un evento. **Respuesta: c)** El trigger (apartado 4, programables).\n\n**14.** Sentencia que elimina la tabla y su estructura. **Respuesta: d)** DROP TABLE (apartado 4 y apartado 7).\n\n**15.** Consulta que compara cada sueldo con la media mediante subconsulta. **Respuesta: a)** Los empleados por encima de la media (apartado 4, subconsultas).\n\nCada caso incluye su explicación completa y la referencia de fuente en el campo reference de testCases. (Fuente: Bloque 3 Actualizado 2026.docx, Tema 3.)"
+        },
+        {
+          "heading": "10. Fuentes citadas",
+          "body": "- **Tema 7.docx**, apartados 1 (sistema gestor de base de datos), 2 (seguridad y usuarios) y 2.3 (concurrencia y bloqueos): funciones del DBMS, CREATE/ALTER/DROP USER y propiedades ACID.\n- **Bloque 3 Actualizado 2026.docx**, Tema 3 (SQL): operadores, SELECT, BETWEEN, LIKE, IN, GROUP BY, HAVING, DISTINCT, NULL, JOIN, UNION/INTERSECT/EXCEPT, restricciones, INSERT, DELETE/TRUNCATE/DROP, UPDATE, GRANT/REVOKE, transacciones, eventos, triggers, vistas, subconsultas, tipos de dato y procedimientos.\n- **Tema 5.docx**, apartado 3.1 (lenguajes del DBMS): LDD, LDV, LMD y el carácter integrado de SQL.\n- **data/fuentes/IV.28.txt**: texto consolidado de las fuentes anteriores, utilizado para verificar las citas de este tema.\n\nTodas las sentencias que aparecen en el tema están tomadas de estas fuentes; cuando un gestor concreto varía la sintaxis (LIMIT, TOP, FETCH FIRST; AUTO_INCREMENT, IDENTITY, CREATE SEQUENCE), se indica expresamente. (Fuente: data/fuentes/IV.28.txt.)"
+        }
+      ],
       "practiceSlug": "iv-28"
     },
     "IV.29": {
