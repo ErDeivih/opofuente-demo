@@ -390,8 +390,8 @@
             "practicaStatus": "con_practica",
             "sectionCount": 6,
             "questionCount": 10,
-            "formato": "esquema",
-            "longWords": 0
+            "formato": "desarrollado",
+            "longWords": 2528
           },
           {
             "path": "III.24",
@@ -463,8 +463,8 @@
             "practicaStatus": "con_practica",
             "sectionCount": 6,
             "questionCount": 10,
-            "formato": "esquema",
-            "longWords": 0
+            "formato": "desarrollado",
+            "longWords": 2679
           },
           {
             "path": "IV.30",
@@ -473,8 +473,8 @@
             "practicaStatus": "con_practica",
             "sectionCount": 7,
             "questionCount": 10,
-            "formato": "esquema",
-            "longWords": 0
+            "formato": "desarrollado",
+            "longWords": 2591
           },
           {
             "path": "IV.31",
@@ -3298,6 +3298,268 @@
         "Creer que NTP es prescindible: sin sincronía de hora fallan registros, certificados y Kerberos."
       ],
       "reviewedAt": "2026-11-10",
+      "longSections": [
+        {
+          "heading": "1. Ficha oficial del tema",
+          "body": "**Tema:** III.23, «Servicios de red», del bloque III (Sistemas, redes y comunicaciones) del temario común de informática C1. **Materias que cubre:** DNS, organismos de asignación de direcciones y nombres, NTP, LDAP y Active Directory, servidores web y protocolos HTTP/HTTPS/TLS, correo electrónico (SMTP, POP3, IMAP y MIME), proxy y alta disponibilidad (CPD, clústeres y balanceo). **Relación con otros temas:** se apoya en III.21 (redes y direccionamiento) y III.18 (sistemas operativos de servidor), y sirve de base a los temas de seguridad y administración electrónica. **Fuentes:** `Tema 9.docx`, `Tema 13.docx` y `Bloque 4 Actualizado 2026.docx`, volcados en `data/fuentes/III.23.txt`.\n\n**Limitación de la fuente:** el volcado de III.23 no contiene un desarrollo del servicio DHCP; para no inventar datos, este tema no incluye un apartado específico de DHCP y se limita a la asignación de direcciones y nombres que sí documenta la fuente (IANA, ICANN y los RIR).",
+          "table": {
+            "columns": [
+              "Dato de la ficha",
+              "Valor"
+            ],
+            "rows": [
+              [
+                "Tema",
+                "III.23 Servicios de red"
+              ],
+              [
+                "Bloque",
+                "III · Sistemas, redes y comunicaciones"
+              ],
+              [
+                "Materias",
+                "DNS, NTP, LDAP/AD, web, correo, proxy y alta disponibilidad"
+              ],
+              [
+                "Temas relacionados",
+                "III.21 Redes; III.18 Sistemas operativos de servidor"
+              ],
+              [
+                "Fuente",
+                "Tema 9.docx, Tema 13.docx y Bloque 4 Actualizado 2026.docx"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "2. Índice de epígrafes",
+          "body": "El desarrollo del tema se organiza en los epígrafes del apartado 4:\n\n- **4.1.** DNS: componentes, jerarquía, tipos de servidores, consultas y registros.\n- **4.2.** Organismos de Internet y asignación de direcciones y nombres.\n- **4.3.** NTP y la hora oficial.\n- **4.4.** LDAP y Active Directory: usuarios, grupos y dominios.\n- **4.5.** La web: HTTP, HTTPS y TLS.\n- **4.6.** El correo electrónico: agentes, SMTP, POP3 e IMAP.\n- **4.7.** Proxy y proxy inverso.\n- **4.8.** Alta disponibilidad: CPD, clústeres y balanceo.\n\nCompletan el tema la tabla de protocolos y puertos (apartado 5), el ejemplo práctico (6), las trampas de examen (7), el resumen para memorizar (8), los quince casos tipo test (9) y las fuentes citadas (10)."
+        },
+        {
+          "heading": "3. Introducción y contexto",
+          "body": "Los servicios de red son la capa que convierte una red de comunicaciones en una infraestructura útil: sin DNS no se encuentran los nombres, sin correo no circulan los mensajes, sin web no se publican los contenidos y sin una hora común no se pueden interpretar los registros ni validar certificados. Además, un organismo público no puede permitirse que esos servicios dependan de un único servidor: de ahí la importancia de la alta disponibilidad.\n\nEste tema estudia los servicios desde dentro: qué componente hace cada tarea, qué protocolo se usa, qué puerto se abre y qué registro o tipo de servidor hay que configurar. También repasa los organismos que coordinan Internet a escala global, porque son pregunta habitual (IETF, IANA, ICANN y los RIR).\n\nEl enfoque es práctico: se agrupan los servicios por función (resolver nombres, dar hora, autenticar usuarios, publicar web, mover correo, intermediar el tráfico y mantener el servicio) y se ordenan los datos que más se preguntan.",
+          "table": {
+            "columns": [
+              "Fuente",
+              "Qué aporta"
+            ],
+            "rows": [
+              [
+                "Tema 9.docx",
+                "Administración de redes, dominios, usuarios, grupos, LDAP y Kerberos"
+              ],
+              [
+                "Tema 13.docx",
+                "Internet, correo, Web, DNS y protocolos HTTP/HTTPS/TLS"
+              ],
+              [
+                "Bloque 4 Actualizado 2026.docx",
+                "Correo, LDAP, HTTP/TLS, proxy, CPD, NTP, clústeres y balanceo"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "4. Desarrollo por epígrafe",
+          "body": "**4.1. DNS.** El sistema de nombres de dominio es una base de datos distribuida y jerárquica que asocia nombres legibles con direcciones IP y localiza, entre otros, los servidores de correo de cada dominio. Sus componentes son los clientes DNS, los servidores DNS y las zonas de autoridad, que son la parte del espacio de nombres de la que un servidor guarda los datos. Cada dominio tiene al menos un servidor autoritativo, y la jerarquía arranca en los servidores raíz, que conocen las direcciones de los servidores de los dominios de primer nivel (TLD).\n\nLos servidores pueden ser **primarios o preferidos** (autoritativos, permiten lectura y escritura), **secundarios o alternativos** (autoritativos de solo lectura, que se actualizan desde el primario mediante una transferencia de zona) y **locales o caché** (no autoritativos, guardan respuestas para acelerar consultas). Las consultas pueden ser **recursivas**, cuando el cliente pide una respuesta final autoritativa y el servidor encadena las consultas necesarias, o **iterativas**, cuando un servidor responde con la dirección de otro servidor. Las respuestas son **autoritativas** si proceden del servidor con autoridad sobre el dominio, y **no autoritativas** si solo indican otro servidor.\n\nLos registros principales son **A** (nombre a IPv4), **AAAA** (nombre a IPv6), **CNAME** (alias), **NS** (servidores de nombres de la zona), **MX** (servidor de correo del dominio, con preferencia), **PTR** (resolución inversa de IP a nombre), **SOA** (datos del servidor primario de la zona), **TXT** (texto libre para verificación y políticas), **HINFO**, **LOC**, **SRV** y **SPF** o **SPF/TXT** para autorizar emisores de correo.\n\n**4.2. Organismos de Internet.** La **IETF** es la comunidad que crea grupos de trabajo y publica las especificaciones y los RFC; la **IESG** hace avanzar las propuestas por las fases de aprobación hasta convertirlas en estándar; la **IAB** supervisa técnicamente y publica los RFC; la **ISOC** promociona la cooperación global, y la **IRTF** investiga en protocolos, aplicaciones y arquitectura. En la asignación de recursos, **IANA** coordina identificadores como nombres de dominio, números de sistema autónomo, direcciones IP, números de protocolo y puertos; **ICANN** asumió sus funciones y coordina el sistema de servidores raíz y la administración de DNS. El espacio de direcciones se delega jerárquicamente en los **RIR**: ARIN, RIPE NCC, APNIC, LACNIC y AFRINIC.\n\n**4.3. NTP.** En España la referencia de la hora oficial es el Real Instituto y Observatorio de la Armada, y los equipos sincronizan su reloj mediante el protocolo **NTP** (Network Time Protocol), que funciona sobre el puerto **123 UDP**. Una hora coherente es imprescindible para los registros, la autenticación y los certificados.\n\n**4.4. LDAP y Active Directory.** **LDAP** es el protocolo de directorio con el que se centraliza la administración de cuentas, grupos y permisos en una red corporativa. **Active Directory** es el servicio de directorio de Microsoft: en Windows Server, un dominio es una colección de equipos y usuarios que comparten políticas de seguridad y una base de datos común; se designa un controlador principal de dominio (PDC) que mantiene los servicios de directorio y autentica a los usuarios. Existen cuatro modelos de dominio (dominio único, maestro único, maestro múltiple y confianza completa) y cinco roles FSMO: maestro de esquema, maestro de nombres de dominio, maestro de identificadores relativos (RID), maestro emulador de PDC y maestro de infraestructuras. Los usuarios se agrupan en grupos globales, locales y universales; la autenticación moderna se apoya en **Kerberos** (basado en tickets) y NTLM queda como mecanismo heredado. Además, **WSUS** permite administrar y distribuir de forma centralizada las actualizaciones de Windows.\n\n**4.5. La web: HTTP, HTTPS y TLS.** **HTTP** es un protocolo de aplicación cliente-servidor, sin estado, que no proporciona cifrado, autenticación ni integridad y que usa el puerto **80**. En una petición se emplean métodos como GET (obtener), HEAD (igual que GET pero sin cuerpo), POST (enviar datos) y PUT (aceptar una entidad); la respuesta incluye un código de estado de las familias 1xx (informativo), 2xx (éxito), 3xx (redirección), 4xx (error del cliente) y 5xx (error del servidor), con ejemplos como 200 OK, 301, 400, 401, 403, 404, 500, 502, 503 y 504. **HTTPS** no es un protocolo nuevo: es HTTP sobre TLS, usa el puerto **443** y aporta confidencialidad, integridad y autenticación del servidor mediante certificados. **SSL** está obsoleto; el estándar actual es **TLS**, que además de HTTPS se usa en SMTP sobre TLS, IMAPS, POP3S, FTPS y DNS sobre TLS (DoT).\n\n**4.6. Correo electrónico.** El correo se organiza con agentes: **MUA** (cliente que envía y recibe con SMTP y POP3 o IMAP), **MTA** (transfiere el correo entre servidores), **MDA** (lo entrega en el buzón del usuario final) y **MSA** (recibe del MUA para el envío). **SMTP** solo envía: usa los puertos 25 (sin cifrado, en desuso), 465 (SMTPS, en desuso) y 587 (STARTTLS, recomendado), y sus comandos básicos son HELO/EHLO, MAIL FROM, RCPT TO, DATA y QUIT; el receptor contesta con códigos como 220, 250, 354 o 550. Para recepción se usan dos protocolos: **POP3** (puerto 110; 995 con TLS) descarga los mensajes del servidor al dispositivo, funciona en diferido y por defecto borra los mensajes del servidor, con comandos STAT, LIST, RETR, DELE, RSET, TOP y QUIT; **IMAP** (puerto 143; 993 con TLS) mantiene los mensajes en el servidor en tiempo real, sincroniza varios dispositivos y permite organizar carpetas, con comandos SELECT, FETCH, STORE, COPY, EXPUNGE y LOGOUT. **MIME** resuelve la limitación de SMTP (ASCII de 7 bits) y permite adjuntos, idiomas distintos y contenido incrustado; SMTP se apoya en los registros **MX** del DNS para localizar el servidor de destino.\n\n**4.7. Proxy.** Un proxy es un intermediario entre los puestos de una red e Internet: recibe sus peticiones web, las reenvía al servidor de destino y administra el tráfico, pero **no lo cifra**. Puede ser **transparente** (no requiere configuración y el usuario no lo nota), **anónimo** (oculta la IP pero puede revelar que se usa un proxy), **elite** (oculta la IP y la existencia del proxy) o **inverso** (se sitúa frente a servidores web, filtra solicitudes y mejora seguridad y rendimiento). Un proxy solo oculta la IP en tráfico HTTP/HTTPS; una VPN cifra todo el tráfico.\n\n**4.8. Alta disponibilidad.** Un **clúster** es un conjunto de computadoras interconectadas que trabajan como un único sistema, con nodos cercanos y homogéneos, administración centralizada, alta disponibilidad y balanceo de carga; una **grid** distribuye nodos geográficamente con recursos heterogéneos y se orienta al cálculo intensivo. En los centros de procesamiento de datos, el estándar ANSI/TIA-942 clasifica los CPD en cuatro **Tier**: I (básico, sin redundancia, 99,671 % y hasta 28,8 horas de inactividad anual), II (redundancia parcial, 99,741 % y hasta 22 horas), III (mantenimiento concurrente, 99,982 % y hasta 1,6 horas) y IV (tolerante a fallos, 99,995 % y hasta 26,3 minutos). La redundancia se mide como N (sin respaldo), N+1 (un componente adicional), 2N (duplicación completa) y 2N+1. Para las copias se usan objetivos como **RPO** (pérdida máxima de datos), **RTO** (tiempo máximo de restauración) y **MTD** (tiempo máximo tolerable de inactividad).",
+          "table": {
+            "columns": [
+              "Epígrafe",
+              "Datos que hay que retener"
+            ],
+            "rows": [
+              [
+                "DNS",
+                "Zonas, primario/secundario/caché, consultas recursiva e iterativa, registros A/AAAA/CNAME/NS/MX/PTR/SOA"
+              ],
+              [
+                "Organismos",
+                "IETF, IESG, IAB, ISOC, IRTF, IANA, ICANN y los cinco RIR"
+              ],
+              [
+                "NTP",
+                "Hora oficial de España, Real Instituto y Observatorio de la Armada, puerto 123 UDP"
+              ],
+              [
+                "LDAP/AD",
+                "Servicio de directorio, dominio, PDC, cuatro modelos de dominio y cinco roles FSMO"
+              ],
+              [
+                "Web",
+                "HTTP 80 sin cifrado; HTTPS 443 con TLS; familias de códigos 1xx a 5xx"
+              ],
+              [
+                "Correo",
+                "MUA/MTA/MDA/MSA; SMTP 25/465/587; POP3 110/995; IMAP 143/993; MIME"
+              ],
+              [
+                "Proxy",
+                "Transparente, anónimo, elite e inverso; no cifra; la VPN sí cifra"
+              ],
+              [
+                "Alta disponibilidad",
+                "Clúster frente a grid; Tier I-IV; N, N+1, 2N y 2N+1; RPO, RTO y MTD"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "5. Tabla comparativa: servicios, protocolos y puertos",
+          "body": "La tabla reúne los puertos que la fuente asocia a cada servicio. Conviene memorizarlos por parejas (servicio sin cifrar y con TLS) porque las preguntas suelen mezclarlos.",
+          "table": {
+            "columns": [
+              "Servicio",
+              "Protocolo",
+              "Puerto"
+            ],
+            "rows": [
+              [
+                "Web",
+                "HTTP",
+                "80 TCP"
+              ],
+              [
+                "Web segura",
+                "HTTPS (HTTP sobre TLS)",
+                "443 TCP"
+              ],
+              [
+                "Correo, envío",
+                "SMTP",
+                "25 TCP"
+              ],
+              [
+                "Correo, envío con STARTTLS",
+                "SMTP",
+                "587 TCP"
+              ],
+              [
+                "Correo, envío seguro",
+                "SMTPS",
+                "465 TCP"
+              ],
+              [
+                "Correo, recepción",
+                "POP3",
+                "110 TCP"
+              ],
+              [
+                "Correo, recepción segura",
+                "POP3S",
+                "995 TCP"
+              ],
+              [
+                "Correo, recepción",
+                "IMAP",
+                "143 TCP"
+              ],
+              [
+                "Correo, recepción segura",
+                "IMAPS",
+                "993 TCP"
+              ],
+              [
+                "Hora",
+                "NTP",
+                "123 UDP"
+              ],
+              [
+                "Transferencia de ficheros",
+                "FTP",
+                "21 TCP"
+              ],
+              [
+                "Transferencia trivial",
+                "TFTP",
+                "69 UDP"
+              ],
+              [
+                "Terminal remoto seguro",
+                "SSH",
+                "22 TCP"
+              ],
+              [
+                "Terminal remoto sin cifrar",
+                "Telnet",
+                "23 TCP"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "6. Ejemplo práctico resuelto",
+          "body": "**Supuesto.** Un ayuntamiento quiere publicar el portal `sede.ayuntamiento.es`, gestionar el correo de sus empleados y mantener el servicio disponible aunque falle un servidor. El dominio ya está registrado y el CPD es de nivel III.\n\n**Resolución.**\n\n- **DNS:** se crea la zona del dominio con un registro **A** para el servidor web y un registro **MX** que apunte al servidor de correo; si se quiere que un alias `www` apunte al mismo equipo, se usa un **CNAME**. Los servidores secundarios se configuran como autoritativos de solo lectura y se actualizan desde el primario por transferencia de zona.\n- **Web:** el portal se publica en **HTTPS** (443) con un certificado válido para el dominio, porque TLS aporta confidencialidad, integridad y autenticación; el HTTP (80) queda como puerto de entrada sin cifrar y no debe usarse para datos personales.\n- **Correo:** los usuarios se conectan con su **MUA** al servidor de envío por el puerto **587** con STARTTLS y reciben por **IMAP** (143 o 993 con TLS), de modo que el buzón se sincroniza entre varios dispositivos; el **MTA** entrega los mensajes a otros dominios consultando el registro MX del destino.\n- **Hora:** todos los servidores sincronizan su reloj con **NTP** (123 UDP) para que los registros y los certificados sean coherentes.\n- **Salida a Internet:** se coloca un **proxy** para el tráfico web de los puestos y un **proxy inverso** delante del portal; el proxy no cifra, así que la confidencialidad la aporta TLS.\n- **Alta disponibilidad:** se monta un **clúster** con balanceo de carga; al ser un CPD **Tier III** se puede hacer mantenimiento concurrente sin cortar el servicio, y los sistemas críticos se duplican (2N o 2N+1).\n\n**Conclusión.** Cada servicio necesita su registro o su puerto, y la disponibilidad se diseña con redundancia y con objetivos medibles (RPO y RTO), no solo con buenos servidores.",
+          "table": {
+            "columns": [
+              "Necesidad",
+              "Servicio",
+              "Dato clave"
+            ],
+            "rows": [
+              [
+                "Publicar el portal",
+                "DNS + HTTPS",
+                "Registro A y puerto 443 con TLS"
+              ],
+              [
+                "Correo de empleados",
+                "SMTP + IMAP",
+                "587 con STARTTLS y 993 con TLS"
+              ],
+              [
+                "Hora coherente",
+                "NTP",
+                "123 UDP"
+              ],
+              [
+                "Alta disponibilidad",
+                "Clúster y CPD Tier III",
+                "Mantenimiento concurrente y redundancia 2N"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "7. Trampas típicas de examen",
+          "body": "Las confusiones más frecuentes de este tema son estas:\n\n- **Confundir los registros DNS**: A es IPv4, AAAA es IPv6, MX es correo, CNAME es alias y PTR es la resolución inversa.\n- **Confundir los tipos de servidor DNS**: el primario permite lectura y escritura; el secundario es de solo lectura y se actualiza por transferencia de zona; el de caché no es autoritativo.\n- **Confundir consulta recursiva e iterativa**: la recursiva la hace el cliente y pide una respuesta final autoritativa; la iterativa se responde con la dirección de otro servidor.\n- **Creer que HTTPS es un protocolo nuevo**: es HTTP sobre TLS; el puerto es 443 y el certificado autentica al servidor.\n- **Confundir SSL con TLS**: SSL está obsoleto; el estándar actual es TLS.\n- **Creer que SMTP recibe correo**: SMTP solo envía; la recepción corresponde a POP3 o IMAP, y MIME solo permite adjuntos y otros idiomas.\n- **Confundir POP3 con IMAP**: POP3 descarga y por defecto borra del servidor; IMAP mantiene y sincroniza el buzón en el servidor.\n- **Creer que el proxy cifra**: el proxy no cifra; la VPN sí cifra todo el tráfico.\n- **Confundir proxy inverso con proxy de salida**: el inverso se sitúa delante de los servidores web.\n- **Confundir clúster con grid**: el clúster es cercano, homogéneo y centralizado; la grid es distribuida y heterogénea.\n- **Confundir los Tier del CPD**: el III permite mantenimiento concurrente; el IV es tolerante a fallos.",
+          "table": {
+            "columns": [
+              "Confusión",
+              "Lo correcto"
+            ],
+            "rows": [
+              [
+                "A = correo",
+                "MX es correo; A es IPv4 y AAAA es IPv6"
+              ],
+              [
+                "HTTPS es un protocolo nuevo",
+                "HTTPS es HTTP sobre TLS, puerto 443"
+              ],
+              [
+                "SMTP recibe correo",
+                "SMTP solo envía; POP3 e IMAP reciben"
+              ],
+              [
+                "El proxy cifra",
+                "El proxy no cifra; la VPN sí"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "8. Resumen para memorizar",
+          "body": "**DNS.** Base de datos jerárquica y distribuida; zonas de autoridad; servidores primarios (lectura y escritura), secundarios (solo lectura, transferencia de zona) y de caché; consultas recursivas (cliente, respuesta final) e iterativas (otro servidor); respuestas autoritativas y no autoritativas; registros A, AAAA, CNAME, NS, MX, PTR, SOA, TXT, SRV y SPF.\n\n**Organismos.** IETF, IESG, IAB, ISOC e IRTF en la estandarización; IANA e ICANN en la asignación de nombres y direcciones; RIR: ARIN, RIPE NCC, APNIC, LACNIC y AFRINIC.\n\n**NTP.** Hora oficial de España con el Real Instituto y Observatorio de la Armada; puerto 123 UDP.\n\n**LDAP/Active Directory.** LDAP gestiona de forma centralizada usuarios, grupos y permisos; Active Directory organiza dominios, con PDC, cuatro modelos de dominio y cinco roles FSMO; Kerberos es la autenticación moderna y WSUS distribuye actualizaciones.\n\n**Web.** HTTP: puerto 80, sin estado y sin cifrado; métodos GET, HEAD, POST y PUT; códigos 1xx a 5xx. HTTPS: HTTP sobre TLS, puerto 443, confidencialidad, integridad y autenticación; SSL obsoleto.\n\n**Correo.** MUA, MTA, MDA y MSA; SMTP 25/465/587 para enviar; POP3 110/995 y IMAP 143/993 para recibir; MIME para adjuntos e idiomas; el destino se localiza con el registro MX.\n\n**Proxy.** Transparente, anónimo, elite e inverso; no cifra el tráfico; la VPN cifra todo.\n\n**Alta disponibilidad.** Clúster (cercano, homogéneo, centralizado) frente a grid (distribuida, heterogénea); CPD Tier I a IV (III: mantenimiento concurrente, 99,982 %); redundancia N, N+1, 2N y 2N+1; RPO, RTO y MTD."
+        },
+        {
+          "heading": "9. Casos tipo test comentados (15 preguntas)",
+          "body": "Los quince casos siguientes reproducen el estilo de pregunta del bloque III. Cada uno incluye la respuesta correcta y una explicación que recuerda el dato del temario; la referencia indica el epígrafe y la fuente donde está el contenido. Conviene contestarlos sin mirar la solución y revisar después solo los fallos."
+        },
+        {
+          "heading": "10. Fuentes citadas",
+          "body": "El tema se ha redactado a partir de `data/fuentes/III.23.txt`, que reúne el volcado de `Tema 9.docx` (administración de redes, dominios y usuarios), `Tema 13.docx` (Internet, correo, web, DNS y TLS) y `Bloque 4 Actualizado 2026.docx` (correo, LDAP, HTTP/TLS, proxy, CPD, NTP, clústeres y balanceo). Las citas por apartado aparecen en la lista `sources` y en la referencia de cada caso tipo test. No se han copiado párrafos literales y no se han añadido datos que no figuren en esas fuentes; en particular, el volcado no desarrolla DHCP, por lo que no se incluyen contenidos de ese servicio."
+        }
+      ],
       "practiceSlug": "iii-23"
     },
     "III.24": {
@@ -4058,6 +4320,77 @@
         "Dar por buena una copia porque el proceso terminó sin error: sin restauración probada es una hipótesis."
       ],
       "reviewedAt": "2026-11-10",
+      "longSections": [
+        {
+          "heading": "1. Ficha oficial del tema",
+          "body": "**Tema IV.29 — Gestores de bases de datos.** Bloque IV del temario común C1. Se estudia con tres fuentes: **Tema 7** (sistema gestor, seguridad, almacenamiento y copias), **Tema 5** (gestión de bases de datos relacionales, roles, ACID, NoSQL y teorema CAP) y **Bloque 3 Actualizado 2026** (TEMA 3, SQL y Oracle Database). Su núcleo es: funciones y usuarios del SGBD, **seguridad y permisos** (usuarios, roles, GRANT y REVOKE), **estructuras de almacenamiento** (en Oracle: tablespace, segmento, extensión y bloque; datafile, redo log y control file), **copias y recuperación** (física y lógica, en frío y en caliente, completa, incremental y diferencial; esquemas de rotación; redo logs), **transacciones y concurrencia** (ACID, niveles de aislamiento, bloqueos y deadlock), **rendimiento y alta disponibilidad** (índices, optimización, almacenamiento redundante) y las **diferencias de dialecto** entre Oracle, SQL Server, PostgreSQL y MySQL. Conecta con el tema **IV.27** (modelo relacional y diseño) y con **IV.28** (SQL)."
+        },
+        {
+          "heading": "2. Índice de epígrafes",
+          "body": "El tema se estudia en este orden: (1) qué es un SGBD y qué funciones cumple; (2) usuarios y roles de una base de datos; (3) seguridad: autenticación, autorización, permisos de objeto y de sistema; (4) estructuras lógicas y físicas de almacenamiento, con Oracle como modelo; (5) almacenamiento externo y redundancia (cabinas, DAS, NAS, SAN y clústeres); (6) copias de seguridad: tipos, estrategias de rotación y ventana de copia; (7) recuperación: redo logs, recuperación de bloque y recuperación física; (8) transacciones: ACID, estados, COMMIT y ROLLBACK; (9) concurrencia: fenómenos, niveles de aislamiento, bloqueos y deadlock; (10) rendimiento y alta disponibilidad; (11) dialectos SQL y rasgos de Oracle, SQL Server, PostgreSQL y MySQL; (12) NoSQL, teorema CAP y ACID frente a BASE. Para el test pesan las **estructuras de Oracle**, los **tipos de copia**, los **niveles de aislamiento** y las **diferencias de dialecto**."
+        },
+        {
+          "heading": "3. Introducción y contexto",
+          "body": "Un gestor de bases de datos es el software que se sitúa entre el usuario y los datos: permite definirlos, construirlos y manipularlos, y se encarga de la seguridad, la concurrencia, la recuperación y el rendimiento. Sin ese intermediario, cada aplicación tendría que gestionar ficheros, permisos y fallos por su cuenta.\n\nEl tema se ordena por **responsabilidades**. Primero, qué hace el SGBD y quién lo usa (administrador, diseñadores, programadores y usuarios finales). Después, cómo protege la información (usuarios, roles y permisos) y cómo la almacena (estructuras lógicas y físicas). A continuación, cómo la conserva (copias y recuperación) y cómo garantiza que las operaciones simultáneas no la corrompan (transacciones y concurrencia). Por último, cómo se compara entre los gestores comerciales y de código abierto.\n\nEs un tema muy ligado a los dos anteriores: el modelo relacional (IV.27) explica cómo se organizan los datos y SQL (IV.28) cómo se consultan; aquí se estudia el **motor** que lo soporta y las decisiones de explotación que asume el administrador."
+        },
+        {
+          "heading": "4. Desarrollo por epígrafe",
+          "body": "**4.1 Función, usuarios y ventajas del SGBD.** El SGBD actúa de interfaz entre el usuario y la información almacenada y cumple tres funciones esenciales (Tema 7, 1): **descripción** (definir los elementos de datos), **manipulación** (buscar, añadir, suprimir o modificar datos) y **utilización** (comunicarse con la base de datos). Sus usuarios típicos son el **administrador** (diseño, definición y control), los **programadores** (acceso desde lenguajes de alto nivel) y los **usuarios finales**, que necesitan medios sencillos; el Tema 5 añade diseñadores, analistas y varias categorías de usuario final (ocasionales, simples, avanzados y autónomos). Frente al tratamiento por ficheros, el enfoque de bases de datos aporta **control de la redundancia**, restricción de accesos no autorizados, independencia entre programas y datos, múltiples vistas, integridad, copias y recuperación y capacidad multiusuario, a cambio de costes de implantación y gestión.\n\n**4.2 Seguridad y permisos.** El DBMS incorpora un sistema de **autenticación y autorización** (Tema 7, 2). Los usuarios se crean con **CREATE USER**, se modifican con **ALTER USER** y se eliminan con **DROP USER** (la opción **CASCADE** borra también los objetos del usuario). Los permisos se conceden con **GRANT** y se retiran con **REVOKE**, y pueden ser **de objeto** (SELECT, INSERT, DELETE, UPDATE, ALTER, REFERENCES, INDEX, EXECUTE, ALL…) o **de sistema** (crear, modificar, borrar o consultar objetos, usuarios y roles). El propietario tiene todos los permisos sobre el objeto. La tendencia es agrupar permisos en **roles** para no asignarlos uno a uno: en Oracle la seguridad se gestiona con usuarios, roles y privilegios.\n\n**4.3 Estructuras de almacenamiento.** En Oracle (Bloque 3, TEMA 3) se separan estructuras **lógicas** y **físicas**. Lógicas: el **tablespace** agrupa segmentos relacionados; el **segmento** es un conjunto de extensiones que almacena un tipo de información (tablas, índices…); la **extensión** son bloques de datos contiguos; y el **bloque de datos** es la unidad mínima de almacenamiento. Físicas: los **datafiles** almacenan los datos de los tablespaces, los **redo log files** registran todos los cambios y son esenciales para la recuperación, y los **control files** contienen la estructura de la base, el estado de datafiles y redo logs y la información necesaria para el arranque y la recuperación. Esa separación aporta flexibilidad, escalabilidad y recuperación eficiente. Por debajo, el almacenamiento puede ser interno o externo: **DAS** (conexión directa), **NAS** (almacenamiento en red de ficheros) y **SAN** (red dedicada de bloques); las cabinas añaden controladoras, RAID, caché y copias instantáneas, y los clústeres permiten que varios servidores accedan coordinadamente a los mismos datos.\n\n**4.4 Copias y recuperación.** Planear y probar las copias es la única garantía frente a fallos; las causas pueden ser de **funcionamiento** (errores humanos, mala configuración o procedimientos mal planteados), de **hardware** o de **software**. Se distingue la copia **física** (se copian los ficheros que soportan la base) de la **lógica** (se extraen los datos con SQL mediante utilidades de exportación e importación). Entre las físicas: la copia del **sistema operativo** (sencilla pero lenta e inaccesible durante el proceso), la copia **en frío** (se para la base y se copian todos los ficheros) y la copia **en caliente** (la base sigue abierta en modo **archivelog**; se copian los ficheros de un tablespace, los redo log archivados y los ficheros de control). Para recuperar se usan los redo logs archivados: la **recuperación de bloque** reconstruye un bloque dañado y la **recuperación física** convierte los ficheros de copia en actuales aplicando los cambios perdidos. En la estrategia de copias (Tema 7, 4) hay una **ventana de copia** y tres tipos: **completa** (todo; recuperación más rápida), **incremental** (solo lo modificado desde la última copia) y **diferencial** (lo modificado desde la última copia completa; recuperar exige como máximo dos medios). Los esquemas de rotación clásicos son **hijo** (una cinta por día), **padre e hijo** (una semana más otra) y **padre, hijo y abuelo** (el más común: copias semanales y mensuales para conservar un año).\n\n**4.5 Transacciones y concurrencia.** Una **transacción** es una colección de operaciones que forman una unidad lógica de trabajo, delimitada por un inicio y un fin, y debe cumplir **ACID**: atomicidad (todo o nada), consistencia (no deja datos contradictorios), aislamiento (el resultado es como si se ejecutaran en serie) y durabilidad (lo confirmado permanece). Sus estados son activa, parcialmente comprometida, fallida y cometida. **COMMIT** confirma los cambios, los hace visibles y libera los bloqueos; **ROLLBACK** deshace hasta el último COMMIT y también libera bloqueos. El control de concurrencia evita tres fenómenos (Tema 7, 2.3): **lecturas sucias** (leer datos no confirmados), **lecturas no repetibles** (el mismo dato cambia entre dos lecturas) y **lecturas fantasma** (aparecen filas nuevas). Los cuatro niveles de aislamiento son **Read Uncommitted** (el más bajo y concurrente; no garantiza coherencia), **Read Committed** (evita lecturas sucias), **Repeatable Read** (evita las no repetibles, no las fantasma) y **Serializable** (el más estricto, bloquea también registros inexistentes y reduce la escalabilidad). Los bloqueos sostienen la consistencia; el **bloqueo de dos fases (2PL)** puede provocar un **deadlock** o abrazo mortal, que el DBMS resuelve con rollback de la transacción en la que tenga que deshacer menos.\n\n**4.6 Rendimiento, integridad y alta disponibilidad.** El administrador define la estructura física, crea **índices** y optimiza consultas para acelerar el acceso (Tema 7, 1.2). El DBMS garantiza las **restricciones de integridad** (tipos, relaciones, unicidad) y ofrece utilidades de control de rendimiento y de copia. La disponibilidad se apoya en el almacenamiento: RAID y controladoras redundantes en las cabinas, caché en espejo, replicación, clústeres de servidores y copias en caliente de máquinas virtuales con plugins y snapshots. Una copia que no se restaura no protege nada: la prueba de recuperación forma parte de la estrategia.\n\n**4.7 Gestores y dialectos SQL.** **Oracle Database** usa SQL y **PL/SQL** como lenguaje procedimental, separa estructuras lógicas y físicas, organiza la seguridad con usuarios, roles y privilegios y ofrece **RMAN** para copias y recuperaciones en línea y **Flashback** para recuperar datos modificados o eliminados; sus versiones se distinguen entre LTS (19c) e innovation (21c, 23ai, 26ai). En el resto de gestores, el material destaca diferencias de dialecto: para limitar filas, **PostgreSQL y MySQL** usan **LIMIT**, **SQL Server** usa **TOP** y **Oracle y ANSI SQL** usan **FETCH FIRST**; para el autoincremento, **MySQL** usa **AUTO_INCREMENT**, **SQL Server** usa **IDENTITY** y **Oracle-ANSI** usa **CREATE SEQUENCE**; **FULL JOIN** no es compatible con SQLite y MySQL; y en SQL Server hay sesiones almacenadas en una base de datos. En Java, la conexión se realiza con **JDBC**, cuyos drivers se clasifican en cuatro tipos: puente JDBC-ODBC (1), nativo (2), de red (3) y puro Java (4, el más usado por no requerir bibliotecas nativas)."
+        },
+        {
+          "heading": "5. Tabla comparativa: rasgos de los gestores",
+          "body": "Comparar los gestores por sus rasgos de dialecto evita el error de aplicar la sintaxis de uno a otro. Esta tabla recoge lo que el material destaca de cada uno.",
+          "table": {
+            "columns": [
+              "Gestor",
+              "Rasgo que recoge el material",
+              "Cuidado en el test"
+            ],
+            "rows": [
+              [
+                "Oracle Database",
+                "PL/SQL, estructuras lógicas (tablespace, segmento, extensión) y físicas (datafiles, redo logs, control files); RMAN y Flashback",
+                "No confundir tablespace (lógico) con datafile (físico)"
+              ],
+              [
+                "SQL Server",
+                "Usa TOP para limitar filas e IDENTITY para el autoincremento; sesiones almacenadas en una base de datos SQL Server",
+                "TOP no es LIMIT"
+              ],
+              [
+                "PostgreSQL",
+                "Usa LIMIT para limitar filas y admite FULL JOIN",
+                "El material no lo desarrolla en profundidad; no extrapolar rasgos de Oracle"
+              ],
+              [
+                "MySQL",
+                "Usa LIMIT y AUTO_INCREMENT; FULL JOIN no es compatible con MySQL",
+                "AUTO_INCREMENT no es IDENTITY"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "6. Ejemplo práctico resuelto",
+          "body": "**Supuesto.** Una administración va a explotar en Oracle una base de datos de expedientes. Debe definir usuarios y permisos, organizar el almacenamiento, diseñar las copias y fijar el nivel de aislamiento. Propón una solución razonada.\n\n**Resolución.** (1) **Usuarios y roles:** se crean cuentas distintas para la aplicación, la lectura y la administración con CREATE USER; los permisos se agrupan en roles y se conceden con GRANT (SELECT, INSERT, UPDATE sobre las tablas de la aplicación) y se retiran con REVOKE; la cuenta de administración es la única con permisos de sistema. (2) **Almacenamiento:** se crean tablespaces separados para datos, índices y datos temporales; cada tablespace se apoya en sus datafiles, y la base se configura en modo **archivelog** para que los redo logs archivados permitan recuperar. (3) **Copias:** copia **completa** semanal en frío o en caliente, **incremental** diaria y conservación mensual según el esquema **padre, hijo y abuelo**; la copia se prueba restaurando en un entorno aparte. (4) **Recuperación:** ante la pérdida de un datafile, se restaura la copia y se aplican los redo logs archivados; ante un borrado lógico, se valora **Flashback**. (5) **Concurrencia:** la aplicación trabaja con **Read Committed**; las operaciones críticas usan transacciones cortas con COMMIT y ROLLBACK para no mantener bloqueos. (6) **Rendimiento:** se indexan las columnas de búsqueda frecuente y se revisan las consultas lentas antes de añadir índices.\n\n**Conclusión.** Cada decisión se justifica por una característica del gestor: el rol por el principio de mínimo privilegio, el tablespace por la separación lógica, el modo archivelog por la recuperación y el nivel de aislamiento por el equilibrio entre consistencia y concurrencia."
+        },
+        {
+          "heading": "7. Trampas típicas de examen",
+          "body": "- Confundir **copia física** (ficheros de la base) con **copia lógica** (Export/Import, extracción con SQL).\n- Confundir copia **en frío** (base parada) con **en caliente** (base abierta en modo archivelog).\n- Confundir **incremental** (desde la última copia, de cualquier tipo) con **diferencial** (desde la última copia completa).\n- Confundir **tablespace** (estructura lógica) con **datafile** (estructura física) y **redo log** (registro de cambios para recuperación) con **control file** (estructura y estado de la base).\n- Pensar que **COMMIT** deshace cambios: confirma, hace visibles los cambios y libera bloqueos; **ROLLBACK** es el que deshace hasta el último COMMIT.\n- Confundir **lectura sucia** (datos no confirmados) con **lectura no repetible** (el dato cambia entre dos lecturas) y con **lectura fantasma** (aparecen filas nuevas).\n- Decir que **Repeatable Read** evita las lecturas fantasma: no las evita; el nivel que las evita es **Serializable**.\n- Creer que 2PL impide los deadlocks: 2PL garantiza la legalidad del planificador, pero puede producir abrazos mortales, que el DBMS resuelve con rollback.\n- Confundir los dialectos: **LIMIT** (PostgreSQL y MySQL), **TOP** (SQL Server) y **FETCH FIRST** (Oracle y ANSI).\n- Confundir autoincremento: **AUTO_INCREMENT** (MySQL), **IDENTITY** (SQL Server) y **CREATE SEQUENCE** (Oracle-ANSI).\n- Confundir **DELETE** (borra filas y admite WHERE), **TRUNCATE** (vacía la tabla y es más rápido) y **DROP** (elimina la tabla y su estructura, sin deshacer).\n- Olvidar que el teorema **CAP** solo permite garantizar dos de las tres propiedades (consistencia, disponibilidad y tolerancia al particionado); las bases NoSQL renuncian a alguna y usan el modelo **BASE** frente a **ACID**."
+        },
+        {
+          "heading": "8. Resumen para memorizar",
+          "body": "**Lo que hay que memorizar.**\n\n1. **Funciones del SGBD**: describir, manipular y utilizar; usuarios: administrador, programadores y usuarios finales.\n2. **Seguridad**: CREATE/ALTER/DROP USER (CASCADE), GRANT y REVOKE; permisos de objeto (SELECT, INSERT, DELETE, UPDATE, ALTER, REFERENCES, INDEX, EXECUTE, ALL) y de sistema.\n3. **Oracle lógico**: tablespace, segmento, extensión y bloque. **Físico**: datafile, redo log y control file.\n4. **Almacenamiento externo**: DAS, NAS y SAN; cabinas con RAID, caché y copias instantáneas; clústeres.\n5. **Copias**: física y lógica; en frío y en caliente (archivelog); completa, incremental y diferencial; rotación hijo, padre-hijo y padre-hijo-abuelo.\n6. **Recuperación**: redo logs archivados, recuperación de bloque y recuperación física.\n7. **Transacciones**: ACID; estados activa, parcialmente comprometida, fallida y cometida; COMMIT y ROLLBACK.\n8. **Concurrencia**: lecturas sucias, no repetibles y fantasma; niveles Read Uncommitted, Read Committed, Repeatable Read y Serializable; bloqueos, 2PL y deadlock.\n9. **Dialectos**: LIMIT (PostgreSQL/MySQL), TOP (SQL Server), FETCH FIRST (Oracle/ANSI); AUTO_INCREMENT (MySQL), IDENTITY (SQL Server), CREATE SEQUENCE (Oracle-ANSI).\n10. **Oracle**: PL/SQL, RMAN y Flashback; versiones LTS (19c) e innovation. **NoSQL**: teorema CAP (dos de tres) y ACID frente a BASE."
+        },
+        {
+          "heading": "9. Casos tipo test comentados (15 preguntas)",
+          "body": "**1.** ¿Qué función del SGBD permite buscar, añadir, suprimir o modificar datos? **Respuesta: b)** La manipulación (Tema 7, 1).\n\n**2.** ¿Qué sentencia crea un usuario? **Respuesta: a)** CREATE USER (Tema 7, 2).\n\n**3.** ¿Qué sentencia retira permisos? **Respuesta: c)** REVOKE (Tema 7, 2).\n\n**4.** ¿Cómo se llama la copia que se hace con la base abierta en modo archivelog? **Respuesta: d)** En caliente (Tema 7, 2.1).\n\n**5.** ¿Qué utilidades realizan una copia lógica? **Respuesta: a)** Export/Import (Tema 7, 2.1).\n\n**6.** Una copia que incluye solo lo modificado desde la última copia (de cualquier tipo) es… **Respuesta: b)** Incremental (Tema 7, 4).\n\n**7.** ¿Qué esquema de rotación es el más común y conserva copias un año? **Respuesta: c)** Padre, hijo y abuelo (Tema 7, 4).\n\n**8.** En Oracle, ¿qué estructura lógica agrupa segmentos relacionados? **Respuesta: d)** El tablespace (Bloque 3, TEMA 3).\n\n**9.** ¿Qué fichero registra todos los cambios y es esencial para la recuperación? **Respuesta: a)** El redo log (Bloque 3, TEMA 3).\n\n**10.** ¿Qué hace COMMIT? **Respuesta: b)** Confirma los cambios, los hace visibles y libera los bloqueos (Tema 7, 2.2).\n\n**11.** ¿Qué nivel de aislamiento evita las lecturas no repetibles pero no las fantasma? **Respuesta: c)** Repeatable Read (Tema 7, 2.3).\n\n**12.** Leer datos escritos por otra transacción que aún no ha confirmado es… **Respuesta: d)** Una lectura sucia (Tema 7, 2.3).\n\n**13.** Ante un deadlock, ¿cómo actúa habitualmente el DBMS? **Respuesta: a)** Con rollback de la transacción en la que tenga que deshacer menos (Tema 7, 2.3).\n\n**14.** En SQL Server, ¿qué palabra limita el número de filas devueltas? **Respuesta: b)** TOP (Bloque 3, TEMA 3).\n\n**15.** ¿Qué usa MySQL para el autoincremento? **Respuesta: c)** AUTO_INCREMENT (Bloque 3, TEMA 3)."
+        },
+        {
+          "heading": "10. Fuentes citadas",
+          "body": "- **Tema 7.docx**, apartados 1 a 6: sistema gestor, usuarios, seguridad y permisos, copias y recuperación, transacciones y concurrencia, almacenamiento y virtualización (DOCX, sin paginación fija).\n- **Tema 5.docx**, apartados 1 a 8: bases de datos relacionales, roles, ACID, lenguajes del DBMS, clasificación de SGBD, objetos y NoSQL, teorema CAP y ACID frente a BASE.\n- **Bloque 3 Actualizado 2026.docx**, TEMA 3 (SQL): dialectos y diferencias entre gestores, transacciones y Oracle Database (estructuras, usuarios, RMAN y Flashback, JDBC).\n- **IV.29.txt**: texto consolidado de las fuentes anteriores (uso interno de trabajo).\n\nNo se copian párrafos literales; se sintetiza y se ordena el contenido, y los datos citados son los que aparecen en estas fuentes. El material desarrolla Oracle en profundidad y el resto de gestores a través de sus diferencias de dialecto, no de sus herramientas de copia."
+        }
+      ],
       "practiceSlug": "iv-29"
     },
     "IV.30": {
@@ -4148,6 +4481,82 @@
         "Confundir encapsulación con herencia: son pilares distintos de la POO; encapsular es ocultar detalles internos."
       ],
       "reviewedAt": "2026-11-10",
+      "longSections": [
+        {
+          "heading": "1. Ficha oficial del tema",
+          "body": "**Tema IV.30 · Programación.** Bloque IV (Datos y desarrollo) del temario común de Técnicos Auxiliares de Informática. Se apoya en el tema IV.31 (desarrollo web), que aplica estos mismos conceptos a la construcción de aplicaciones para el navegador.\n\n**Objetivo de examen.** Reconocer los tipos de datos y las estructuras básicas, leer e interpretar estructuras de control, distinguir funciones y métodos, aplicar los pilares de la programación orientada a objetos, manejar el control de versiones con Git y clasificar los tipos de prueba de software. Dificultad **media**: los conceptos son asequibles, pero el examen pregunta por matices (sobrecarga frente a sobreescritura, finally, fetch frente a pull, caja blanca frente a caja negra).\n\n**Fuentes de este tema.** El consolidado data/fuentes/IV.30.txt, formado por Tema 3.docx (estructuras de datos, ficheros y algoritmos de búsqueda y ordenación) y Bloque 3 Actualizado 2026.docx (lenguaje Java, otros lenguajes, Git y pruebas). (Fuente: data/fuentes/IV.30.txt.)"
+        },
+        {
+          "heading": "2. Índice de epígrafes",
+          "body": "Este tema se ordena en diez apartados para el repaso:\n\n1. Ficha oficial del tema: ubicación, objetivo, dificultad y fuentes.\n2. Índice de epígrafes: el mapa que está leyendo.\n3. Introducción y contexto: qué es programar, qué lenguajes hay y cómo se clasifican.\n4. Desarrollo por epígrafe: tipos y estructuras, tipado, control de flujo, funciones, modularidad y POO, excepciones, algoritmos, Git y pruebas.\n5. Tabla comparativa de los tipos de prueba de software.\n6. Ejemplo práctico resuelto en Java.\n7. Trampas típicas de examen.\n8. Resumen para memorizar.\n9. Casos tipo test comentados (15 preguntas).\n10. Fuentes citadas.\n\nLos epígrafes oficiales del tema (tipos, control, funciones, modularidad, POO, Git y pruebas) quedan cubiertos en el apartado 4; los casos del apartado 9 se corresponden con los quince testCases de este fichero. (Fuente: data/fuentes/IV.30.txt.)"
+        },
+        {
+          "heading": "3. Introducción y contexto",
+          "body": "Programar consiste en escribir instrucciones que un ordenador ejecuta para resolver un problema. Un programa se apoya en **algoritmos** (la secuencia lógica de pasos) y en **estructuras de datos** (la forma de organizar la información que esos pasos manejan). La fuente insiste en esa pareja: las estructuras simples y complejas se manipulan mediante algoritmos.\n\nLos lenguajes de alto nivel se clasifican con varios criterios. Por su **paradigma**, el imperativo indica paso a paso qué hacer (C, Java, Python) y el declarativo describe el resultado dejando los detalles al lenguaje (SQL, HTML, Haskell). Por su **tipado**, el estático fija el tipo en compilación y no cambia (Java) y el dinámico lo decide en ejecución (Python); además, el tipado fuerte exige conversiones explícitas y el débil mezcla tipos automáticamente (JavaScript). Por su **ejecución**, hay lenguajes compilados (C, Go) e interpretados o con máquina virtual (Java, Python).\n\nEn Java, el código fuente se guarda en ficheros .java y la compilación produce ficheros .class con bytecode, que se ejecuta sobre la máquina virtual. En Python, en cambio, no hay compilación explícita y la indentación es obligatoria: marca los bloques con tabulación o cuatro espacios. Comprender estas diferencias ayuda a interpretar los enunciados de examen, que con frecuencia mezclan dos lenguajes en la misma pregunta. (Fuentes: Tema 3.docx, apartados 1-2; Bloque 3 Actualizado 2026.docx, Tema 2 y apartado de lenguajes.)"
+        },
+        {
+          "heading": "4. Desarrollo por epígrafe",
+          "body": "**1) Tipos y estructuras de datos.** La fuente distingue valores simples (booleanos, enteros, reales, caracteres y punteros o referencias) y estructuras complejas formadas por otras (vectores o arrays, con celdas e índices, y registros, con campos y nombres). Los arrays de caracteres forman los String. Sobre esa base se construyen listas, pilas (LIFO), colas (FIFO), árboles (jerárquicos, con raíz, hojas, nivel y altura) y grafos (vértices y aristas, dirigidos o ponderados). Una lista puede ser densa o enlazada; la enlazada es dinámica porque cada nodo apunta al siguiente. Los árboles binarios se recorren en preorden, inorden, postorden o por niveles, y un árbol binario de búsqueda cumple que el subárbol izquierdo es menor y el derecho mayor; el AVL mantiene el equilibrio.\n\n**2) Tipado.** Estático frente a dinámico y fuerte frente a débil son dos ejes distintos. En Java, declarar un int e intentar asignarle una cadena da error de compilación; en Python la misma variable puede cambiar de tipo en ejecución. El tipado fuerte impide sumar un número y una cadena sin conversión explícita, mientras que el débil la convierte sola (JavaScript). Para convertir en Java se usan Integer.parseInt y Float.parseFloat; valueOf devuelve un objeto y toString pasa el número a cadena.\n\n**3) Control de flujo.** El if ejecuta un bloque si la condición es verdadera; el if-else añade el camino alternativo y else if encadena condiciones. El switch evalúa casos con case y sale con break; si un case no lleva break, se ejecutan los siguientes hasta encontrar uno o terminar. El bucle while evalúa antes de entrar; el do-while ejecuta el bloque al menos una vez y comprueba después; el for repite con inicialización, condición e incremento, y el for-each recorre arrays y colecciones. Break sale del bucle y continue salta al siguiente ciclo.\n\n**4) Funciones y métodos.** Un método pertenece a una clase y puede ser void (no devuelve nada) o devolver un valor con return. Los métodos static pertenecen a la clase y solo pueden usar datos static; se invocan con el nombre de la clase sin crear objeto. Un método recursivo se llama a sí mismo. Las funciones lambda son funciones anónimas que se escriben allí donde se usan. La clase Main es el punto de entrada y su método main es estático. En Python los bloques se marcan con indentación y el código de una función se declara con def.\n\n**5) Modularidad y POO.** Modularizar es dividir el programa en piezas con una interfaz clara: funciones, clases, interfaces y librerías. Los cuatro pilares de la POO son **abstracción** (aislar lo relevante y definir clases y métodos abstractos), **encapsulamiento** (ocultar los detalles y exponer solo lo necesario; el ejemplo típico es un atributo privado con getColor y setColor), **herencia** (una clase deriva de otra con extends, y this/super acceden a la clase propia y a la padre; final impide heredar una clase o cambiar una variable) y **polimorfismo** (el mismo mensaje produce respuestas distintas). Hay polimorfismo estático, la sobrecarga, que se resuelve en compilación y exige mismo nombre con distinto número o tipo de parámetros, y dinámico, la sobreescritura, que se resuelve en ejecución cuando la subclase redefine el método del padre y puede anotarse con @Override. El constructor tiene el nombre de la clase, se ejecuta al crear el objeto y lo inicializa. Un método abstracto no tiene cuerpo y obliga a que la clase sea abstract; una interfaz declara métodos y constantes y se implementa con implements, con métodos default desde Java 8.\n\n**6) Excepciones.** En Java se capturan con try (código que puede fallar), catch (manejo del error) y finally (se ejecuta siempre); las excepciones derivan de Throwable, con las ramas Error y Exception. En Python se usa try y except, con finally opcional, y raise para lanzar.\n\n**7) Algoritmos.** La búsqueda secuencial recorre el array; la binaria exige que esté ordenado y divide por la mitad; el hashing transforma la clave en un índice y resuelve las colisiones con la siguiente posición libre o con listas enlazadas. En ordenación interna destacan selección, burbuja, inserción directa, inserción binaria y Shell; la ordenación externa trabaja con ficheros y la fusión combina intercalación y división recursiva.\n\n**8) Git.** Un proyecto Git tiene directorio de trabajo, área de preparación (staging) y directorio del repositorio. Un archivo puede estar untracked, staged, committed o modified. git fetch descarga los cambios del remoto sin fusionarlos; git pull los descarga y los fusiona en la rama actual. Git es distribuido (lo creó Linus Torvalds) y convive con sistemas centralizados como CVS o SVN; GitHub y GitLab son plataformas de desarrollo colaborativo basadas en Git.\n\n**9) Pruebas.** Las unitarias comprueban cada componente por separado y suelen ser de caja blanca; el enfoque de caja negra mira solo entradas y salidas. Las de integración verifican el ensamblaje entre componentes; las de aceptación validan el sistema con el usuario; las de regresión comprueban que un cambio no rompe lo que ya funcionaba; las de sistema incluyen comunicaciones, disponibilidad de datos, entorno, facilidad de uso, funcionales, operación, rendimiento, seguridad, sobrecarga y volumen. (Fuentes: Tema 3.docx, apartados 1-4; Bloque 3 Actualizado 2026.docx, Tema 2, lenguajes, Tema 9 Git y apartado de pruebas.)"
+        },
+        {
+          "heading": "5. Tabla comparativa: tipos de prueba de software",
+          "body": "Resumen de los tipos de prueba que recoge la fuente, con su objetivo y sus herramientas habituales. (Fuente: Bloque 3 Actualizado 2026.docx, apartado de pruebas.)",
+          "table": {
+            "columns": [
+              "Tipo de prueba",
+              "Qué comprueba",
+              "Herramientas de la fuente"
+            ],
+            "rows": [
+              [
+                "Unitarias",
+                "Funcionalidad y estructura de cada componente por separado",
+                "JUnit (Java), NUnit (.NET), Mocha (JavaScript), Pytest (Python)"
+              ],
+              [
+                "Integración",
+                "Ensamblaje e interacción entre componentes ya probados",
+                "Postman, SoapUI, Jenkins"
+              ],
+              [
+                "Aceptación",
+                "Que el sistema cumple lo esperado y el usuario lo acepta",
+                "Cucumber"
+              ],
+              [
+                "Regresión",
+                "Que los cambios no rompen componentes no modificados",
+                "Selenium"
+              ],
+              [
+                "Sistema",
+                "Funcionamiento global: rendimiento, seguridad, sobrecarga, volumen",
+                "LoadRunner y NeoLoad, OWASP ZAP y Burp Suite, JMeter"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "6. Ejemplo práctico resuelto",
+          "body": "**Supuesto.** Se quiere una pequeña clase en Java que guarde las notas de un grupo, calcule su media y muestre un mensaje. Debe encapsular los datos, usar un array con un bucle y controlar un posible error de conversión al leer una nota.\n\n**Resolución.** Se define la clase Grupo con un atributo privado de tipo array y se exponen métodos públicos para consultar y fijar los datos (encapsulamiento). El constructor inicializa el array y el método media recorre las posiciones con un for, suma y devuelve el resultado con return. En el main se crea el objeto, se llama al método y se imprime el resultado; la conversión de una cadena a entero se hace con Integer.parseInt dentro de un try-catch para no romper el programa si el texto no es numérico.\n\n- private int[] notas; (atributo encapsulado)\n- public Grupo(int tamano) { notas = new int[tamano]; } (constructor)\n- public double media() { int suma = 0; for (int i = 0; i < notas.length; i++) { suma += notas[i]; } return (double) suma / notas.length; }\n- try { int nota = Integer.parseInt(texto); } catch (Exception e) { System.out.println(\"Nota no válida\"); }\n- public static void main(String[] args) { /* creación del objeto y llamada a media() */ }\n\n**Por qué funciona así.** El atributo privado impide que se modifique desde fuera sin pasar por los métodos; el for recorre el array desde la posición 0 hasta length - 1; el return devuelve un double para no perder los decimales de la media; y el finally, si se añade, se ejecutaría tanto si la conversión funciona como si lanza una excepción. (Fuente: Bloque 3 Actualizado 2026.docx, Tema 2: encapsulamiento, constructores, arrays, bucles y try-catch.)"
+        },
+        {
+          "heading": "7. Trampas típicas de examen",
+          "body": "- **Sobrecarga frente a sobreescritura.** La sobrecarga tiene el mismo nombre con distintos parámetros y se resuelve en compilación; la sobreescritura redefine el método del padre con la misma firma y se resuelve en ejecución.\n- **static.** Un método static pertenece a la clase, no al objeto, y solo puede acceder a datos static; no puede usar variables de instancia.\n- **final.** En una clase impide heredarla; en una variable la convierte en constante; en un método impide redefinirlo.\n- **abstract frente a interfaz.** La clase abstracta puede tener métodos concretos y abstractos; la interfaz declara el contrato y se implementa con implements (con métodos default desde Java 8).\n- **do-while.** Ejecuta el bloque al menos una vez, aunque la condición sea falsa desde el principio.\n- **switch sin break.** Si un case no termina en break, se ejecutan los siguientes casos hasta encontrar uno o acabar.\n- **try-catch-finally.** El bloque finally se ejecuta siempre, se lance o no la excepción; las excepciones derivan de Throwable.\n- **.java frente a .class.** El .java es texto fuente legible; el .class es bytecode compilado.\n- **Tipado estático frente a dinámico, y fuerte frente a débil.** Son ejes distintos: Java es estático y Python dinámico; JavaScript es débil.\n- **fetch frente a pull.** fetch descarga sin fusionar; pull descarga y fusiona en la rama actual.\n- **Caja blanca frente a caja negra.** La blanca revisa la estructura interna; la negra solo entradas y salidas.\n- **Regresión.** No es repetir todas las pruebas: comprueba que un cambio no rompe lo que antes funcionaba.\n\n(Fuente: Bloque 3 Actualizado 2026.docx, Tema 2, Tema 9 y apartado de pruebas.)"
+        },
+        {
+          "heading": "8. Resumen para memorizar",
+          "body": "Lo que hay que retener:\n\n- Un programa combina algoritmos y estructuras de datos; las simples son booleanos, enteros, reales, caracteres y punteros; las complejas, arrays y registros.\n- Estructuras típicas: lista (densa o enlazada), pila LIFO, cola FIFO, árbol (raíz, hojas, nivel, altura) y grafo (vértices y aristas).\n- Tipado estático (Java) frente a dinámico (Python); fuerte frente a débil (JavaScript).\n- Control: if/else/else if, switch con break, while, do-while, for, for-each, break y continue.\n- Funciones: void o con return; static de clase; recursivas; lambda; en Java, .java fuente y .class bytecode.\n- POO: abstracción, encapsulamiento, herencia (extends, this/super, final) y polimorfismo (sobrecarga en compilación, sobreescritura en ejecución).\n- Interfaz: contrato con interface e implements; métodos default desde Java 8.\n- Excepciones: try-catch-finally en Java; try-except-finally y raise en Python.\n- Algoritmos: búsqueda secuencial, binaria (array ordenado) y hash; ordenación por selección, burbuja, inserción, Shell y fusión.\n- Git: directorio de trabajo, staging y repositorio; estados untracked, staged, committed y modified; fetch no fusiona, pull sí.\n- Pruebas: unitarias (JUnit, NUnit, Mocha, Pytest), integración (Postman, SoapUI, Jenkins), aceptación (Cucumber), regresión (Selenium) y sistema (rendimiento, seguridad, sobrecarga, volumen).\n\n(Fuente: Tema 3.docx, apartados 1-4; Bloque 3 Actualizado 2026.docx, Tema 2, Tema 9 y pruebas.)"
+        },
+        {
+          "heading": "9. Casos tipo test comentados (15 preguntas)",
+          "body": "Los quince casos del fichero, comentados y con su referencia:\n\n**1.** Pilar de la POO que oculta los detalles internos y expone solo lo necesario. **Respuesta: a)** Encapsulamiento (apartado 4, POO).\n\n**2.** Momento en el que se resuelve la sobrecarga de métodos. **Respuesta: b)** En tiempo de compilación (apartado 4, POO).\n\n**3.** Palabra clave de Java para heredar de otra clase. **Respuesta: c)** extends (apartado 4, POO).\n\n**4.** Efecto de declarar una clase como final. **Respuesta: d)** No puede heredarse (apartado 4, POO).\n\n**5.** Bucle que ejecuta su bloque al menos una vez. **Respuesta: a)** do-while (apartado 4, control).\n\n**6.** A qué puede acceder un método static. **Respuesta: b)** Solo a datos static (apartado 4, funciones).\n\n**7.** Contenido de un fichero .class. **Respuesta: c)** Bytecode compilado (apartado 4, funciones).\n\n**8.** Palabra clave para implementar una interfaz en Java. **Respuesta: a)** implements (apartado 4, modularidad y POO).\n\n**9.** Cuándo se ejecuta el bloque finally. **Respuesta: d)** Siempre, se lance o no la excepción (apartado 4, excepciones).\n\n**10.** Framework de pruebas unitarias para Java. **Respuesta: b)** JUnit (apartado 4, pruebas).\n\n**11.** Prueba que comprueba que un cambio no rompe lo que ya funcionaba. **Respuesta: c)** Regresión (apartado 4, pruebas).\n\n**12.** Enfoque que solo considera entradas y salidas del sistema. **Respuesta: a)** Caja negra (apartado 4, pruebas).\n\n**13.** Diferencia entre git fetch y git pull. **Respuesta: d)** pull descarga y fusiona; fetch solo descarga (apartado 4, Git).\n\n**14.** Método que se llama a sí mismo. **Respuesta: b)** Recursivo (apartado 4, funciones).\n\n**15.** Lenguaje de tipado dinámico entre los siguientes. **Respuesta: c)** Python (apartado 4, tipado).\n\nCada caso incluye su explicación completa y la referencia de fuente en el campo reference de testCases. (Fuente: Bloque 3 Actualizado 2026.docx, Tema 2, Tema 9 y pruebas.)"
+        },
+        {
+          "heading": "10. Fuentes citadas",
+          "body": "- **Tema 3.docx**, apartados 1-4: estructuras de datos simples y complejas, listas, pilas, colas, árboles y grafos, organización de ficheros, algoritmos de búsqueda (secuencial, binaria y hash) y de ordenación (selección, burbuja, inserción, Shell y fusión).\n- **Bloque 3 Actualizado 2026.docx**, Tema 2 (lenguaje Java): pilares de la POO, herencia, encapsulamiento, abstracción, polimorfismo, constructores, control de flujo, métodos, arrays, excepciones e interfaces; apartados de otros lenguajes (C, C#, Python, PHP, JavaScript y Go) y de tipado estático/dinámico y fuerte/débil; Tema 9 (Git): secciones, estados, fetch y pull, sistemas de control de versiones y plataformas; apartado de pruebas: unitarias, integración, aceptación, regresión y sistema, con sus herramientas.\n- **data/fuentes/IV.30.txt**: texto consolidado de las fuentes anteriores, utilizado para verificar las citas de este tema.\n\nTodas las afirmaciones técnicas del tema están tomadas de estas fuentes; el código que se muestra es una adaptación propia con las construcciones que aparecen en ellas. (Fuente: data/fuentes/IV.30.txt.)"
+        }
+      ],
       "practiceSlug": "iv-30"
     },
     "IV.31": {
@@ -22682,6 +23091,496 @@
           "justification": "BGP es un protocolo de vector de camino que interconnecta sistemas autónomos; OSPF, RIP y EIGRP son protocolos interiores."
         }
       ]
+    },
+    {
+      "slug": "tai-propio-iv-bd",
+      "year": 2026,
+      "conv": "Supuesto propio · OpoFuente 2026",
+      "block": "IV",
+      "title": "Auditoría y recuperación de una base de datos",
+      "difficulty": "media",
+      "official": false,
+      "estimatedMinutes": 30,
+      "statement": "Una base de datos municipal ha sufrido un borrado accidental y el equipo debe revisar usuarios y privilegios, comprobar las copias, elegir el nivel de aislamiento y restaurar el servicio sin perder los datos confirmados. El tribunal pide justificar cada decisión con la norma o la técnica aplicable.",
+      "steps": [
+        "1. Revisar usuarios, roles y privilegios.",
+        "2. Identificar el tipo de copia y el punto de recuperación.",
+        "3. Elegir aislamiento y política de bloqueos.",
+        "4. Ejecutar la restauración y validar la integridad.",
+        "5. Documentar la causa y la prevención."
+      ],
+      "topics": [
+        "IV.27",
+        "IV.29",
+        "IV.28"
+      ],
+      "source": {
+        "label": "Elaboración propia · OpoFuente",
+        "url": "https://erdeivih.github.io/opofuente-demo/",
+        "pages": "Material propio de la demo"
+      },
+      "questions": [
+        {
+          "stem": "¿Qué es una clave primaria?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Una clave candidata elegida que identifica de forma única cada fila y no admite nulos"
+            },
+            {
+              "key": "b",
+              "text": "Una columna que puede repetirse y admite nulos"
+            },
+            {
+              "key": "c",
+              "text": "Cualquier columna de texto"
+            },
+            {
+              "key": "d",
+              "text": "Un índice opcional"
+            }
+          ],
+          "correct": "a",
+          "justification": "La clave primaria identifica cada fila de forma única y exige integridad de entidad: no puede ser nula."
+        },
+        {
+          "stem": "¿Qué garantiza una clave foránea?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Que los valores de una columna no se repiten"
+            },
+            {
+              "key": "b",
+              "text": "La integridad referencial entre dos tablas"
+            },
+            {
+              "key": "c",
+              "text": "Que la tabla tenga al menos un índice"
+            },
+            {
+              "key": "d",
+              "text": "Que las transacciones sean atómicas"
+            }
+          ],
+          "correct": "b",
+          "justification": "La clave foránea referencia la clave primaria de otra tabla y evita referencias a filas inexistentes."
+        },
+        {
+          "stem": "¿Qué exige la primera forma normal (1FN)?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Que todas las columnas sean numéricas"
+            },
+            {
+              "key": "b",
+              "text": "Que no haya claves foráneas"
+            },
+            {
+              "key": "c",
+              "text": "Valores atómicos y sin listas repetidas en una celda"
+            },
+            {
+              "key": "d",
+              "text": "Que exista una clave foránea en cada tabla"
+            }
+          ],
+          "correct": "c",
+          "justification": "La 1FN exige que cada celda contenga un valor atómico, sin grupos repetidos ni listas."
+        },
+        {
+          "stem": "¿Qué problema elimina la segunda forma normal (2FN)?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Los valores nulos"
+            },
+            {
+              "key": "b",
+              "text": "Los índices duplicados"
+            },
+            {
+              "key": "c",
+              "text": "Las transacciones concurrentes"
+            },
+            {
+              "key": "d",
+              "text": "Las dependencias parciales de parte de la clave"
+            }
+          ],
+          "correct": "d",
+          "justification": "La 2FN exige 1FN y que ningún atributo no clave dependa solo de una parte de la clave compuesta."
+        },
+        {
+          "stem": "¿Qué elimina la tercera forma normal (3FN)?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Las dependencias transitivas entre columnas no clave"
+            },
+            {
+              "key": "b",
+              "text": "Las claves primarias"
+            },
+            {
+              "key": "c",
+              "text": "Las claves foráneas"
+            },
+            {
+              "key": "d",
+              "text": "Los índices"
+            }
+          ],
+          "correct": "a",
+          "justification": "La 3FN exige 2FN y que los atributos no clave no dependan de otros atributos no clave."
+        },
+        {
+          "stem": "¿Qué significa la integridad de entidad?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Que toda tabla debe tener una clave foránea"
+            },
+            {
+              "key": "b",
+              "text": "Que la clave primaria no puede ser nula"
+            },
+            {
+              "key": "c",
+              "text": "Que los datos deben estar normalizados"
+            },
+            {
+              "key": "d",
+              "text": "Que las transacciones deben ser duraderas"
+            }
+          ],
+          "correct": "b",
+          "justification": "La integridad de entidad exige que la clave primaria identifique la fila y no sea nula."
+        },
+        {
+          "stem": "¿Para qué sirve un índice?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Para sustituir la clave primaria"
+            },
+            {
+              "key": "b",
+              "text": "Para garantizar la atomicidad"
+            },
+            {
+              "key": "c",
+              "text": "Para acelerar búsquedas y uniones"
+            },
+            {
+              "key": "d",
+              "text": "Para eliminar la necesidad de normalizar"
+            }
+          ],
+          "correct": "c",
+          "justification": "Los índices aceleran lecturas, aunque ocupan espacio y penalizan las escrituras; no sustituyen claves ni restricciones."
+        },
+        {
+          "stem": "¿Qué propiedad ACID garantiza que una transacción se aplique completa o no se aplique?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Durabilidad"
+            },
+            {
+              "key": "b",
+              "text": "Consistencia"
+            },
+            {
+              "key": "c",
+              "text": "Aislamiento"
+            },
+            {
+              "key": "d",
+              "text": "Atomicidad"
+            }
+          ],
+          "correct": "d",
+          "justification": "La atomicidad trata la transacción como una unidad indivisible: todo o nada."
+        },
+        {
+          "stem": "¿Cuándo puede tener sentido desnormalizar?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Cuando se prioriza el rendimiento de lectura y se asume el coste de duplicar datos"
+            },
+            {
+              "key": "b",
+              "text": "Siempre que haya claves foráneas"
+            },
+            {
+              "key": "c",
+              "text": "Cuando no hay clave primaria"
+            },
+            {
+              "key": "d",
+              "text": "Para evitar las restricciones CHECK"
+            }
+          ],
+          "correct": "a",
+          "justification": "La desnormalización puede mejorar lecturas, pero introduce redundancia y riesgo de incoherencia; es una decisión con coste."
+        },
+        {
+          "stem": "¿Qué restricción obliga a que un valor no se repita?",
+          "options": [
+            {
+              "key": "a",
+              "text": "PRIMARY KEY únicamente"
+            },
+            {
+              "key": "b",
+              "text": "UNIQUE"
+            },
+            {
+              "key": "c",
+              "text": "CHECK"
+            },
+            {
+              "key": "d",
+              "text": "DEFAULT"
+            }
+          ],
+          "correct": "b",
+          "justification": "UNIQUE impide valores repetidos; PRIMARY KEY también es única, pero además identifica la fila y no admite nulos."
+        },
+        {
+          "stem": "¿Qué es un SGBD?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Un protocolo de red"
+            },
+            {
+              "key": "b",
+              "text": "Un lenguaje de programación"
+            },
+            {
+              "key": "c",
+              "text": "Un sistema que almacena, organiza y protege datos y ofrece acceso mediante un lenguaje"
+            },
+            {
+              "key": "d",
+              "text": "Un tipo de copia de seguridad"
+            }
+          ],
+          "correct": "c",
+          "justification": "El SGBD gestiona datos, usuarios, transacciones, copias y rendimiento, además de ejecutar consultas."
+        },
+        {
+          "stem": "¿Qué herramienta se usa en PostgreSQL para un volcado lógico?",
+          "options": [
+            {
+              "key": "a",
+              "text": "XtraBackup"
+            },
+            {
+              "key": "b",
+              "text": "RMAN"
+            },
+            {
+              "key": "c",
+              "text": "mysqldump"
+            },
+            {
+              "key": "d",
+              "text": "pg_dump"
+            }
+          ],
+          "correct": "d",
+          "justification": "pg_dump genera un volcado lógico de una base; pg_dumpall incluye roles y bases."
+        },
+        {
+          "stem": "¿Qué herramienta es característica de Oracle para copias y recuperación?",
+          "options": [
+            {
+              "key": "a",
+              "text": "RMAN"
+            },
+            {
+              "key": "b",
+              "text": "pg_dump"
+            },
+            {
+              "key": "c",
+              "text": "mysqldump"
+            },
+            {
+              "key": "d",
+              "text": "SQL Server Backup"
+            }
+          ],
+          "correct": "a",
+          "justification": "RMAN (Recovery Manager) es la herramienta de Oracle para copias y recuperación."
+        },
+        {
+          "stem": "¿Qué permite la recuperación a un punto en el tiempo (PITR)?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Eliminar los índices"
+            },
+            {
+              "key": "b",
+              "text": "Volver a un instante concreto usando copias y registros de cambios"
+            },
+            {
+              "key": "c",
+              "text": "Cambiar el gestor de base de datos"
+            },
+            {
+              "key": "d",
+              "text": "Crear un usuario nuevo"
+            }
+          ],
+          "correct": "b",
+          "justification": "PITR combina una copia base con registros de transacciones (WAL en PostgreSQL) para restaurar hasta un momento."
+        },
+        {
+          "stem": "¿Qué es un esquema en una base de datos?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Un tipo de índice"
+            },
+            {
+              "key": "b",
+              "text": "Una copia de seguridad"
+            },
+            {
+              "key": "c",
+              "text": "Un espacio que agrupa objetos como tablas, vistas y funciones"
+            },
+            {
+              "key": "d",
+              "text": "Un usuario administrador"
+            }
+          ],
+          "correct": "c",
+          "justification": "El esquema organiza objetos dentro de la base; no es lo mismo que la base de datos."
+        },
+        {
+          "stem": "¿Qué principio debe aplicarse a las cuentas de la aplicación?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Desactivar la autenticación"
+            },
+            {
+              "key": "b",
+              "text": "Usar el usuario administrador para todo"
+            },
+            {
+              "key": "c",
+              "text": "Compartir una cuenta entre aplicaciones"
+            },
+            {
+              "key": "d",
+              "text": "Mínimo privilegio: solo los permisos necesarios"
+            }
+          ],
+          "correct": "d",
+          "justification": "La aplicación debe tener permisos limitados; el administrador se reserva para tareas de administración."
+        },
+        {
+          "stem": "¿Qué es una réplica de base de datos?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Una copia mantenida en otro servidor para disponibilidad o lectura"
+            },
+            {
+              "key": "b",
+              "text": "Un índice temporal"
+            },
+            {
+              "key": "c",
+              "text": "Un procedimiento almacenado"
+            },
+            {
+              "key": "d",
+              "text": "Un tipo de tabla"
+            }
+          ],
+          "correct": "a",
+          "justification": "La réplica recibe cambios del primario y puede usarse para alta disponibilidad o para repartir lecturas."
+        },
+        {
+          "stem": "¿Qué hay que probar en una estrategia de alta disponibilidad?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Solo el color del panel"
+            },
+            {
+              "key": "b",
+              "text": "El failover o conmutación ante la caída del primario"
+            },
+            {
+              "key": "c",
+              "text": "La velocidad de la impresora"
+            },
+            {
+              "key": "d",
+              "text": "El tamaño del disco"
+            }
+          ],
+          "correct": "b",
+          "justification": "Una conmutación no probada es una hipótesis; hay que medir tiempo y comprobar que la aplicación se recupera."
+        },
+        {
+          "stem": "¿Por qué las migraciones deben estar versionadas?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Para eliminar las copias"
+            },
+            {
+              "key": "b",
+              "text": "Para que la base ocupe más"
+            },
+            {
+              "key": "c",
+              "text": "Para aplicar cambios de forma reproducible y poder revertirlos"
+            },
+            {
+              "key": "d",
+              "text": "Para que el usuario no vea los datos"
+            }
+          ],
+          "correct": "c",
+          "justification": "Las migraciones versionadas permiten revisar, reproducir y revertir cambios de esquema."
+        },
+        {
+          "stem": "¿Qué debe cumplir una copia de seguridad de base de datos?",
+          "options": [
+            {
+              "key": "a",
+              "text": "No cifrarse nunca"
+            },
+            {
+              "key": "b",
+              "text": "Estar solo en el mismo disco"
+            },
+            {
+              "key": "c",
+              "text": "No documentarse"
+            },
+            {
+              "key": "d",
+              "text": "Ser externa, cifrada, con retención y probada con restauraciones"
+            }
+          ],
+          "correct": "d",
+          "justification": "La copia solo es útil si se puede restaurar; debe estar protegida, fuera del servidor y probada."
+        }
+      ]
     }
   ],
   "progress": {
@@ -22694,8 +23593,8 @@
     "questions": 400,
     "cases": 5,
     "caseQuestions": 50,
-    "supuestos": 9,
-    "supuestoQuestions": 180,
+    "supuestos": 10,
+    "supuestoQuestions": 200,
     "convocatorias": 12
   }
 }
