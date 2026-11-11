@@ -5319,6 +5319,150 @@
         "Olvidar que la notificación no accedida en plazo se entiende rechazada y el procedimiento sigue."
       ],
       "reviewedAt": "2026-11-10",
+      "longSections": [
+        {
+          "heading": "1. Introducción: administrar electrónicamente",
+          "body": "La **administración electrónica** no es una oficina virtual añadida a la administración tradicional: es la forma ordinaria de tramitar. La **Ley 39/2015**, del procedimiento administrativo común, y la **Ley 40/2015**, del régimen jurídico del sector público, diseñaron un modelo en el que los procedimientos se tramitan por medios electrónicos y las administraciones se relacionan entre sí también por esos medios. El desarrollo práctico llegó con el **Real Decreto 203/2021**, que aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos.\n\nEl Reglamento persigue cuatro objetivos: mejorar la **eficiencia administrativa**, incrementar la **transparencia y la participación**, garantizar **servicios digitales fácilmente utilizables** y reforzar la **seguridad jurídica**. Para lograrlo se apoya en principios como la **neutralidad tecnológica**, la **accesibilidad**, la **facilidad de uso**, la **interoperabilidad**, la **proporcionalidad** y la **personalización y proactividad** de los servicios.\n\nEste tema recorre lo que hay que dominar: quién está obligado a relacionarse electrónicamente, qué es una sede y en qué se diferencia de un portal, cómo funcionan el registro, la identificación, la representación, las notificaciones, el expediente y el archivo, y qué papel juegan la interoperabilidad y los servicios comunes del Estado.\n\n*(Fuente: V.39.txt, TEMA 8; RD 203/2021, preámbulo.)*"
+        },
+        {
+          "heading": "2. Derecho y obligación de relacionarse electrónicamente",
+          "body": "**Personas físicas y sujetos obligados.** Como regla general, las personas físicas **eligen** en cada momento si se relacionan con la Administración por medios electrónicos o presenciales, y pueden cambiar esa elección. Pero hay sujetos **obligados** a hacerlo por vía electrónica: las **personas jurídicas**, las **entidades sin personalidad jurídica**, quienes ejercen una **actividad profesional con colegiación obligatoria**, quienes **representan** a un interesado que está obligado y los **empleados públicos** para los trámites que realicen por su condición de empleado.\n\n**Canales de asistencia.** La Administración no puede limitarse a exigir el canal electrónico y dejar solo al ciudadano: el Reglamento obliga a prestar asistencia a través de varios canales, como el **presencial** en oficinas de asistencia, los **portales y sedes electrónicas**, las **redes sociales**, el **teléfono** y el **correo electrónico**. Esa asistencia es la contrapartida del derecho a relacionarse electrónicamente.\n\n**Consecuencia práctica.** Para los sujetos obligados, el cauce electrónico es el previsto legalmente; para la persona física no obligada sigue siendo una opción. Esta distinción es la primera que hay que dejar clara en un supuesto práctico, porque condiciona qué canal, qué identificación y qué representación se admiten.\n\n*(Fuente: V.39.txt, TEMA 8; Ley 39/2015, art. 14; RD 203/2021.)*"
+        },
+        {
+          "heading": "3. Sede electrónica, portal de internet y Punto de Acceso General",
+          "body": "**Sede electrónica.** Es una **dirección electrónica** disponible por redes de telecomunicaciones cuya **titularidad** corresponde a una administración pública, o a uno o varios organismos o entidades de derecho público en el ejercicio de sus competencias. Su establecimiento conlleva la **responsabilidad** del titular sobre la **integridad, veracidad y actualización** de la información y los servicios a los que se accede. Debe garantizar la **identificación del órgano titular**, medios para sugerencias y quejas, **comunicaciones seguras** y certificados de autenticación de sitio web, y se rige por los principios de transparencia, publicidad, responsabilidad, calidad, seguridad, disponibilidad, accesibilidad, neutralidad e interoperabilidad.\n\n**Portal de internet.** Es el punto de acceso electrónico titularidad de una administración, organismo o entidad de derecho público que permite acceder a la información publicada y, en su caso, a la sede electrónica. La diferencia es sustancial: el portal **informa**; la sede **presta servicios y trámites** con garantías jurídicas y responsabilidad del titular.\n\n**Punto de Acceso General (PAG).** Es el portal de acceso general que reúne el acceso a los servicios de las administraciones. El Reglamento desarrolla su funcionamiento y el de la **Carpeta Ciudadana** como área personalizada para consultar trámites y notificaciones. Existen además **sedes electrónicas asociadas**, que permiten a entidades sin medios propios adherirse a la sede de otra administración.\n\n*(Fuente: V.39.txt, TEMA 8; RD 203/2021, preámbulo y título I.)*",
+          "table": {
+            "columns": [
+              "Concepto",
+              "Qué es",
+              "Responsabilidad"
+            ],
+            "rows": [
+              [
+                "Sede electrónica",
+                "Dirección electrónica titularidad de una administración para prestar servicios y trámites",
+                "Del titular: integridad, veracidad y actualización de información y servicios"
+              ],
+              [
+                "Portal de internet",
+                "Punto de acceso que publica información y enlaza, en su caso, con la sede",
+                "De la administración titular del portal"
+              ],
+              [
+                "Punto de Acceso General",
+                "Acceso general a los servicios de las administraciones y a las notificaciones",
+                "De la administración que lo mantiene, sin sustituir a cada sede"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "4. El registro electrónico",
+          "body": "**Qué es y para qué sirve.** Los registros electrónicos reciben y remiten **solicitudes, escritos y comunicaciones** y deben ser **plenamente interoperables** para garantizar su compatibilidad informática e interconexión. Cada administración dispone de un **Registro Electrónico General** en el que se asienta todo documento presentado o recibido en cualquier órgano, organismo público o entidad de derecho público vinculada o dependiente; esos organismos pueden tener su propio registro, interconectado con el general.\n\n**Qué se puede presentar.** Se admiten **documentos electrónicos normalizados** correspondientes a los trámites previstos, cumplimentados en los formatos establecidos, y **cualquier solicitud, escrito o comunicación** dirigida a una administración pública. Las **oficinas de asistencia en materia de registros** atienden a quien no dispone de medios, digitalizan la documentación y la incorporan al expediente.\n\n**Interconexión.** El **Sistema de Interconexión de Registros (SIR)** conecta los registros de las administraciones para que un asiento presentado ante una administración llegue al órgano competente de otra. En el catálogo de servicios comunes figuran piezas como el **Registro Electrónico Común**, **GEISER** (gestión de entrada y salida en oficinas de asistencia) y **ORVE** (oficina de registro virtual).\n\n**Hora oficial.** Los sistemas que intervienen en un servicio público electrónico deben sincronizarse con la **hora oficial** para garantizar la certidumbre de los plazos; el ENI fija esa sincronización con el Real Instituto y Observatorio de la Armada.\n\n*(Fuente: V.39.txt, TEMA 8 y TEMA 9; ENI, RD 4/2010, art. 15.)*"
+        },
+        {
+          "heading": "5. Identificación y firma electrónica",
+          "body": "**Identificarse no es firmar.** La **identificación** acredita quién es el interesado; la **firma** expresa su voluntad y da autenticidad al documento. La Ley 39/2015 regula los sistemas de identificación y de firma, y el Reglamento de administración electrónica precisa las condiciones de interoperabilidad, las plataformas de verificación y la acreditación de la representación.\n\n**Sistemas del ciudadano.** Los más habituales son el **certificado electrónico** reconocido o cualificado, incluido el **DNIe**, y los sistemas de **Cl@ve**: Cl@ve Móvil, Cl@ve PIN y Cl@ve Permanente. **Cl@ve Firma** permite firmar con certificados centralizados. La administración, por su parte, se identifica con un **sello electrónico** basado en certificado reconocido o cualificado, que incluye el NIF y la denominación de la entidad, y cuya relación debe ser pública y verificable.\n\n**Firma del empleado público.** El personal público firma con certificados de empleado público; **Port@firmas** aporta la firma electrónica del empleado, **FIRe** ofrece una solución integral de firma y **@firma** valida certificados y firmas, con **Valide** y **TS@** para validación y sellado de tiempo. La **política de firma electrónica y de certificados** del ENI fija perfiles, algoritmos y formatos para que las firmas se reconozcan entre administraciones.\n\n*(Fuente: V.39.txt, TEMA 8 y TEMA 9; ENI, RD 4/2010.)*",
+          "table": {
+            "columns": [
+              "Sistema",
+              "Quién lo usa",
+              "Para qué"
+            ],
+            "rows": [
+              [
+                "DNIe o certificado electrónico",
+                "Ciudadanía y profesionales",
+                "Identificarse y firmar con certificado reconocido o cualificado"
+              ],
+              [
+                "Cl@ve (Móvil, PIN y Permanente)",
+                "Ciudadanía",
+                "Identificación y autenticación ante las administraciones"
+              ],
+              [
+                "Sello electrónico",
+                "Administraciones y órganos",
+                "Identificar a la administración y autenticar su actuación"
+              ],
+              [
+                "Port@firmas y FIRe",
+                "Empleados públicos",
+                "Firmar documentos en el ejercicio de su puesto"
+              ],
+              [
+                "@firma, Valide y TS@",
+                "Aplicaciones y sedes",
+                "Validar firmas y certificados y sellar el tiempo"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "6. Representación y apoderamientos",
+          "body": "**Representación.** El interesado puede actuar por medio de **representante** ante la Administración. La representación puede acreditarse mediante **apoderamiento apud acta**, presencial o electrónico, por **documento público** o por comparecencia en la sede. Para el entorno electrónico existe el **Registro Electrónico de Apoderamientos**, que permite inscribir y consultar los poderes para que el representante actúe sin aportar el documento en cada trámite.\n\n**Quién está obligado.** Si el representado está obligado a relacionarse electrónicamente, su representante también lo está. El catálogo de servicios comunes incluye **Apodera** para otorgar poderes, **Habilit@** como registro de funcionarios habilitados, **Representa** para validar la identidad de profesionales que actúan por terceros y **Notaria** para consultar poderes notariales y de administradores.\n\n**Ejemplo de uso.** Un asesor colegiado que presenta solicitudes en nombre de varios clientes inscribe su poder en el registro electrónico y actúa con su propia identificación; la sede comprueba la representación sin exigir papeles en cada expediente. Si el poder se revoca, la inscripción debe actualizarse para que la sede no admita actuaciones no cubiertas.\n\n*(Fuente: V.39.txt, TEMA 8 y TEMA 9; RD 203/2021, preámbulo.)*"
+        },
+        {
+          "heading": "7. Notificaciones electrónicas",
+          "body": "**Dónde se notifica.** Las notificaciones electrónicas se practican mediante **comparecencia en la sede electrónica** de la administración actuante, a través de la **Dirección Electrónica Habilitada única (DEHú)** o por ambos sistemas. El aviso de puesta a disposición informa de que hay una notificación, pero el aviso no es la notificación.\n\n**Momento de la práctica.** La notificación se entiende practicada cuando se **accede a su contenido**. Cuando la notificación es obligatoria o el interesado la eligió, se entiende **rechazada** si transcurren **diez días naturales** desde la puesta a disposición sin acceder. El **Punto de Acceso General** funciona como portal de acceso a las notificaciones. En el catálogo común aparecen **Notifica**, **DEHú**, **SNE** (entrega en la dirección electrónica habilitada) y **SIM** (avisos por SMS o correo electrónico).\n\n**Consecuencias.** El rechazo no paraliza el procedimiento: la notificación se tiene por practicada y el plazo sigue. Por eso conviene consultar DEHú con frecuencia y mantener actualizados los datos de contacto. En un supuesto práctico, distinguir «aviso enviado» de «notificación practicada» es la diferencia entre acertar y fallar la pregunta.\n\n*(Fuente: V.39.txt, TEMA 8; Ley 39/2015, art. 43; RD 203/2021.)*"
+        },
+        {
+          "heading": "8. Expediente electrónico y archivo",
+          "body": "**Documento y expediente.** El **documento administrativo electrónico** es la unidad documental; el **expediente electrónico** es el conjunto ordenado de documentos y actuaciones que forman un procedimiento, con un **índice electrónico firmado** que garantiza su integridad y permite su recuperación. Los documentos se asocian a **metadatos** mínimos obligatorios y complementarios que los identifican y describen a lo largo de su ciclo de vida.\n\n**Copias auténticas.** La administración puede emitir **copias auténticas** de documentos públicos o privados con la misma validez que el original cuando cumple los requisitos; la digitalización se realiza con formatos, resoluciones y metadatos normalizados.\n\n**Conservación y archivo.** El **archivo electrónico único** conserva los expedientes durante su ciclo de vida y los pone a disposición cuando procede. Se conserva el **formato** original, preferentemente un estándar abierto, junto con la firma y los metadatos; cuando el formato queda obsoleto se aplican procedimientos de **copiado auténtico** y migración. El catálogo común incluye **InSiDe** para gestión documental, **Archive** para archivo definitivo y **eVisor** para generar copias auténticas en papel de documentos electrónicos firmados.\n\n*(Fuente: V.39.txt, TEMA 8 y TEMA 9; ENI, RD 4/2010, arts. 21-23.)*"
+        },
+        {
+          "heading": "9. Tramitación electrónica, automatización y responsabilidad",
+          "body": "**Tramitación de principio a fin.** El Reglamento regula la **actuación administrativa automatizada** —actos producidos por sistemas sin intervención directa de una persona—, el régimen de **subsanaciones** y la tramitación por medios electrónicos. La sede y el registro son las puertas de entrada y salida de la información, y el expediente electrónico es el soporte de la tramitación.\n\n**Responsabilidad de la tramitación.** Los titulares de las unidades administrativas y el personal que tiene a su cargo la resolución o el despacho de los asuntos son **responsables directos de la tramitación** y deben eliminar los obstáculos que impidan, dificulten o retrasen el ejercicio de los derechos de los interesados. La responsabilidad no desaparece porque el trámite sea electrónico.\n\n**Automatización con garantías.** La actuación automatizada exige identificar al órgano y el sistema que adopta la decisión, dejar traza y mantener las garantías del procedimiento: motivación cuando proceda, audiencia y control. La comodidad del sistema no puede recortar derechos ni trasladar al ciudadano errores de la administración. En el catálogo de servicios, **ACCEDA** cubre la sede y la gestión electrónica de procedimientos.\n\n*(Fuente: V.39.txt, TEMA 8; Ley 39/2015, art. 20; RD 203/2021.)*"
+        },
+        {
+          "heading": "10. Interoperabilidad (ENI) y servicios comunes",
+          "body": "**El ENI.** El **Esquema Nacional de Interoperabilidad**, aprobado por el **Real Decreto 4/2010**, es el conjunto de criterios y recomendaciones de seguridad, normalización y conservación que aseguran la interoperabilidad **organizativa, semántica y técnica** de los sistemas de las administraciones. Se apoya en tres principios específicos: la interoperabilidad como **cualidad integral**, su **carácter multidimensional** y el **enfoque de soluciones multilaterales**. El ENI fue modificado por el propio RD 203/2021 para adaptar el catálogo de estándares, los inventarios de información y la política de firma.\n\n**Normas técnicas.** El ENI se desarrolla mediante **Normas Técnicas de Interoperabilidad (NTI)**: catálogo de estándares, documento electrónico, digitalización, expediente electrónico, política de firma electrónica y de certificados, protocolos de intermediación de datos, modelos de datos, política de gestión de documentos, requisitos de conexión a la red de las administraciones, copiado auténtico y conversión, intercambio de asientos registrales, reutilización y declaración de conformidad. La **Red SARA** presta la red de comunicaciones de las administraciones públicas españolas.\n\n**Servicios comunes.** La administración no debe construir de cero lo que ya existe: el catálogo ofrece identificación (Cl@ve), firma y validación (@firma, Valide, TS@), notificaciones (DEHú), registro (SIR, ORVE), intermediación de datos (PID) y consulta ciudadana (Carpeta Ciudadana), entre otros. La reutilización de aplicaciones se canaliza por el **Centro de Transferencia de Tecnología (CTT)** y el ENI regula las condiciones de licenciamiento.\n\n*(Fuente: V.39.txt, TEMA 8 y TEMA 9; ENI, RD 4/2010, arts. 4-13 y disposición adicional primera.)*",
+          "table": {
+            "columns": [
+              "Servicio",
+              "Para qué sirve"
+            ],
+            "rows": [
+              [
+                "Cl@ve",
+                "Identificación y autenticación de la ciudadanía"
+              ],
+              [
+                "@firma, Valide y TS@",
+                "Validación de firmas y certificados y sellado de tiempo"
+              ],
+              [
+                "DEHú y Notifica",
+                "Notificaciones electrónicas y su puesta a disposición"
+              ],
+              [
+                "SIR y ORVE",
+                "Interconexión de registros entre administraciones"
+              ],
+              [
+                "PID y Carpeta Ciudadana",
+                "Intermediación de datos y consulta de trámites y notificaciones"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "11. Ejemplo práctico resuelto",
+          "body": "**Supuesto.** Un vecino, persona física no obligada, quiere que una asesora colegiada presente en su nombre una solicitud de ayuda en la sede electrónica de una consejería y que le lleguen las notificaciones electrónicas.\n\n**Resolución.** (1) El vecino y la asesora acuerdan la representación; si se inscribe en el **Registro Electrónico de Apoderamientos**, el poder se acredita electrónicamente sin aportar documentos en cada trámite. (2) La asesora está obligada a relacionarse electrónicamente por su colegiación obligatoria y usa su certificado o Cl@ve para identificarse y firmar la solicitud. (3) La solicitud se presenta en la **sede electrónica**, que genera el **justificante** con fecha, hora y número de registro; si se presentara ante otra administración, el **SIR** la encaminaría al órgano competente. (4) La administración forma el **expediente electrónico** con los documentos y su índice firmado y notifica en la sede o en **DEHú**. (5) El vecino debe acceder al contenido: si no lo hace en **diez días naturales** y la notificación es obligatoria o elegida, se entenderá rechazada y el procedimiento continuará. (6) La administración puede consultar datos que ya obran en su poder mediante la **intermediación de datos (PID)**, evitando que el vecino aporte certificados innecesarios.\n\n**Conclusión.** Cada pieza tiene una función: registro, sede, identificación, representación, notificación y expediente. El error típico es confundir el **aviso** con la notificación o creer que no acceder paraliza el procedimiento."
+        },
+        {
+          "heading": "12. Resumen y fuentes",
+          "body": "**Lo que hay que memorizar.**\n\n- **RD 203/2021**: desarrolla la Ley 39/2015 y la Ley 40/2015; consta de 65 artículos, cuatro títulos, diez disposiciones adicionales y un anexo.\n- **Cuatro objetivos**: eficiencia administrativa, transparencia y participación, servicios digitales utilizables y seguridad jurídica.\n- **Obligados** (Ley 39/2015, art. 14): personas jurídicas, entidades sin personalidad, colegiación obligatoria, representantes de obligados y empleados públicos.\n- **Sede** = dirección electrónica con titularidad y responsabilidad; **portal** = punto de acceso; **PAG** = acceso general y a las notificaciones.\n- **Registro Electrónico General** en cada administración, interoperable y conectado por el **SIR**.\n- **Notificaciones**: sede o DEHú; se practican con el acceso; se rechazan a los **diez días naturales**.\n- **Expediente electrónico**: índice firmado, metadatos, copias auténticas y **archivo electrónico único**.\n- **ENI (RD 4/2010)**: interoperabilidad organizativa, semántica y técnica; NTI; Red SARA; hora oficial.\n- **Servicios comunes**: Cl@ve, @firma/Valide, DEHú, SIR, PID y Carpeta Ciudadana.\n\n**Fuentes.** Tema elaborado a partir del apartado de administración electrónica del Bloque 1 (TEMA 8 y TEMA 9) y contrastado con el RD 203/2021, la Ley 39/2015 y el ENI (RD 4/2010), publicados en el BOE. No se reproducen párrafos literales; los plazos citados están tomados de la ley (los diez días naturales del rechazo de la notificación)."
+        },
+        {
+          "heading": "Casos tipo test (respuestas razonadas)",
+          "body": "**1. ¿Qué norma aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos?**\n\na) El Real Decreto 203/2021, de 30 de marzo · b) El Real Decreto 4/2010, de 8 de enero · c) El Real Decreto 311/2022, de 3 de mayo · d) El Real Decreto 1671/2009, de 6 de noviembre\n\n**Respuesta: a.** El RD 203/2021 aprueba ese Reglamento y deroga el RD 1671/2009. El RD 4/2010 regula el ENI y el RD 311/2022 el ENS.\n\n**2. ¿Cuál de los siguientes es uno de los cuatro objetivos del Reglamento de administración electrónica?**\n\na) Regular el régimen disciplinario de los empleados públicos · b) Sustituir la Ley 39/2015 por un reglamento · c) Establecer el régimen retributivo del personal · d) Mejorar la eficiencia administrativa y garantizar servicios digitales utilizables\n\n**Respuesta: d.** Los cuatro objetivos son mejorar la eficiencia administrativa, incrementar la transparencia y la participación, garantizar servicios digitales fácilmente utilizables y reforzar la seguridad jurídica; no regula régimen disciplinario ni retribuciones.\n\n**3. ¿Qué sujetos están obligados a relacionarse electrónicamente con las administraciones públicas?**\n\na) Todas las personas físicas, sin excepción · b) Las personas jurídicas y las entidades sin personalidad jurídica, entre otros · c) Solo los empleados públicos · d) Solo quien lo solicite expresamente\n\n**Respuesta: b.** El artículo 14 de la Ley 39/2015 incluye a personas jurídicas, entidades sin personalidad, profesionales con colegiación obligatoria, representantes de obligados y empleados públicos por su condición; las personas físicas no obligadas pueden elegir.\n\n**4. ¿Qué diferencia hay entre una sede electrónica y un portal de internet?**\n\na) Son exactamente lo mismo · b) La sede solo publica noticias y el portal tramita · c) El portal permite acceder a la información y, en su caso, a la sede; la sede es la dirección electrónica con titularidad y responsabilidad para prestar servicios y trámites · d) El portal solo existe en la Administración General del Estado\n\n**Respuesta: c.** La sede electrónica es una dirección electrónica de titularidad pública con responsabilidad sobre la información y los servicios; el portal es un punto de acceso que informa y enlaza con la sede, sin sustituirla.\n\n**5. ¿Cuál de los siguientes canales de asistencia a la ciudadanía prevé el Reglamento?**\n\na) El presencial en oficinas de asistencia · b) El telefónico · c) Los portales de internet y sedes electrónicas · d) Todos los anteriores, junto con las redes sociales y el correo electrónico\n\n**Respuesta: d.** El Reglamento enumera los canales presencial, portales y sedes, redes sociales, telefónico y correo electrónico; la administración debe prestar asistencia por alguno o varios de ellos.\n\n**6. ¿Qué sistemas de identificación se agrupan bajo la plataforma Cl@ve?**\n\na) Cl@ve Móvil, Cl@ve PIN y Cl@ve Permanente · b) Únicamente el DNI electrónico · c) El sello electrónico de órgano · d) Port@firmas y TS@\n\n**Respuesta: a.** Cl@ve ofrece Cl@ve Móvil, Cl@ve PIN y Cl@ve Permanente para identificarse; el DNIe es un certificado, el sello electrónico identifica a la administración y Port@firmas y TS@ son servicios de firma y sellado.\n\n**7. ¿Para qué sirve el sello electrónico de una administración pública?**\n\na) Para firmar el DNI de los ciudadanos · b) Para sustituir al registro electrónico · c) Para identificar a la administración y autenticar su actuación, con su NIF y denominación · d) Para cifrar el correo electrónico de los empleados\n\n**Respuesta: c.** El sello electrónico se basa en un certificado reconocido o cualificado e incluye el NIF y la denominación de la entidad; identifica a la administración y autentica su actuación. La relación de sellos debe ser pública.\n\n**8. Si una notificación electrónica obligatoria no se abre, ¿cuándo se entiende rechazada?**\n\na) A los cinco días hábiles · b) A los diez días naturales desde la puesta a disposición · c) A los diez días hábiles · d) A los quince días naturales\n\n**Respuesta: b.** Cuando la notificación es obligatoria o fue elegida por el interesado, se entiende rechazada transcurridos diez días naturales desde su puesta a disposición sin acceder a su contenido.\n\n**9. ¿Cuándo se entiende practicada una notificación electrónica?**\n\na) Cuando se envía el aviso de puesta a disposición · b) A los diez días de la puesta a disposición, siempre · c) Cuando el interesado la firma · d) Cuando se accede a su contenido\n\n**Respuesta: d.** La notificación se entiende practicada en el momento del acceso a su contenido; el aviso solo informa de que está disponible y la firma no es requisito para tenerla por practicada.\n\n**10. ¿Qué servicio constituye la Dirección Electrónica Habilitada única para notificaciones?**\n\na) El SIR · b) La PID · c) DEHú · d) GEISER\n\n**Respuesta: c.** DEHú es la Dirección Electrónica Habilitada única, punto único de notificaciones para las administraciones. El SIR interconecta registros, la PID intermedia datos y GEISER gestiona el registro de entrada y salida en oficinas.\n\n**11. ¿Qué se puede presentar en un registro electrónico?**\n\na) Solo documentos electrónicos normalizados · b) Solo escritos presentados en papel · c) Documentos electrónicos normalizados y cualquier solicitud, escrito o comunicación dirigida a una administración · d) Solo documentos que ya estén firmados por la administración\n\n**Respuesta: c.** Los registros admiten los documentos normalizados de los trámites previstos y cualquier solicitud, escrito o comunicación dirigida a una administración pública.\n\n**12. ¿Qué sistema interconecta los registros de las distintas administraciones públicas?**\n\na) El Sistema de Interconexión de Registros (SIR) · b) La Plataforma de Intermediación de Datos (PID) · c) GEISER · d) El Punto de Acceso General\n\n**Respuesta: a.** El SIR conecta los registros para que un asiento presentado ante una administración llegue al órgano competente de otra; la PID intermedia datos y GEISER gestiona la entrada y salida en oficinas de registro.\n\n**13. ¿Qué dimensiones comprende la interoperabilidad según el ENI?**\n\na) Física, lógica y organizativa · b) Funcional, técnica y legal · c) Únicamente la técnica · d) Organizativa, semántica y técnica\n\n**Respuesta: d.** El ENI exige interoperabilidad organizativa, semántica y técnica, con un enfoque integral y multilateral; las dimensiones física, lógica o funcional no son las que define el esquema.\n\n**14. ¿Qué red presta la red de comunicaciones de las administraciones públicas españolas?**\n\na) RedIRIS · b) Red SARA · c) DEHú · d) El Punto de Acceso General\n\n**Respuesta: b.** La Red SARA presta la red de comunicaciones de las administraciones públicas españolas; RedIRIS es la red académica y DEHú y el PAG son servicios de notificación y acceso, no redes de comunicaciones.\n\n**15. ¿Qué finalidad tiene el archivo electrónico único?**\n\na) Guardar únicamente copias en papel de los expedientes · b) Conservar los expedientes electrónicos durante su ciclo de vida y ponerlos a disposición cuando procede · c) Sustituir al registro electrónico en la recepción de solicitudes · d) Eliminar las firmas electrónicas para ahorrar espacio\n\n**Respuesta: b.** El archivo electrónico único conserva los documentos y expedientes electrónicos con su formato, firma y metadatos durante el ciclo de vida; no sustituye al registro ni elimina las firmas."
+        },
+        {
+          "heading": "Fuentes citadas",
+          "body": "- **V.39.txt** — apartados «TEMA 8 Reglamento Real Decreto 203/2021» y «TEMA 9. Catálogo de servicios». canales de asistencia, derecho y obligación de relacionarse electrónicamente, registro, sede, portal, sellos, notificaciones, resumen del ENS y del ENI y catálogo de servicios comunes\n- **Real Decreto 203/2021 (BOE-A-2021-5032)** — preámbulo y títulos I-IV. objetivos, principios, PAGe, sedes electrónicas y asociadas, registros, notificaciones, expediente, archivo electrónico único y SIR\n- **Ley 39/2015 (BOE-A-2015-10565)** — arts. 9-10, 14, 20, 43 y 50. identificación y firma, sujetos obligados, responsabilidad de la tramitación, notificaciones electrónicas y conversión de actos viciados\n- **Real Decreto 4/2010, Esquema Nacional de Interoperabilidad (BOE-A-2010-1331)** — arts. 4-13, 18-28 y disposición adicional primera. principios y dimensiones de la interoperabilidad, Red SARA, hora oficial, normas técnicas de interoperabilidad, firma y conservación del documento electrónico"
+        }
+      ],
       "practiceSlug": "v-39"
     },
     "V.40": {
@@ -19552,6 +19696,998 @@
           "justification": "En C# el operador ? aplicado a un tipo de valor declara un Nullable<T>, de modo que la variable puede contener un valor o null. Las formas int|null, int:null e int ?? no son sintaxis válida para declarar el tipo."
         }
       ]
+    },
+    {
+      "slug": "tai-2024-a-s2",
+      "year": 2024,
+      "conv": "TAI-L 2024 · modelo A",
+      "block": "III",
+      "title": "El organismo OEOF: red, servicios y seguridad del CPD",
+      "difficulty": "alta",
+      "official": true,
+      "estimatedMinutes": 30,
+      "statement": "El Ministerio de Educación, Formación Profesional y Deportes tiene asignada la red 10.9.0.0/16. Dentro de ella se ha creado el organismo OEOF, dedicado a la enseñanza online de formadores, que recibe la última de las dieciséis subredes iguales en que se ha dividido la red ministerial.\n\nEl sistema de enseñanza se apoya en un servidor accesible desde Internet en la dirección https://www.profesores.es. Los servidores web, HTTP, DNS, DHCP y LDAP utilizan Ubuntu Linux; el portal se publica con Apache Tomcat y su certificado SSL corresponde al dominio profesores.es. El correo de los profesores se gestiona con Postfix, el DNS con BIND y las direcciones IP se asignan por DHCP. Un servidor llamado BIBLIOTECA guarda documentación de utilidad para los profesores y solo admite acceso remoto por RDP a los usuarios del grupo Profesores del Directorio Activo, sin que existan elementos de red que impidan esa conexión dentro de su VLAN. La base de datos de la biblioteca es MySQL.\n\nSobre servidores Ubuntu se han instalado Tenable Nessus y Nmap para detectar vulnerabilidades, y Nagios para monitorizar sistemas y aplicaciones web. Los profesores trabajan con escritorios virtuales y los switches que configuran las VLAN son Cisco con Cisco IOS. El CPD principal es TIER III, tiene redundancia de componentes, energía y red, y cuenta con un CPD secundario que no está configurado en activo-activo: los cambios de servicio se trasladan a mano.\n\nLas preguntas recorren direccionamiento y conmutación, administración de servidores Linux, servicios de red y correo, seguridad de la información y del CPD, virtualización y movilidad. Una de ellas fue anulada por el tribunal y se conserva marcada como tal.",
+      "steps": [
+        "Leer el caso y anotar los datos de red: red 10.9.0.0/16, 16 subredes iguales y la última asignada al organismo.",
+        "Calcular el prefijo de cada subred y el número de direcciones utilizables antes de mirar las opciones de la primera pregunta.",
+        "Separar los ámbitos del temario: redes y conmutación (III.21), comunicaciones (III.22), servidores Linux (III.18), contenedores y Kubernetes (III.19), CPD (III.25), soporte y movilidad (III.26), correo (II.16), MySQL (IV.29) y seguridad (V.34, V.36 y V.38).",
+        "En cada pregunta, fijarse en la palabra clave del enunciado (comando, protocolo, dimensión de seguridad, dispositivo) y descartar opciones por un detalle técnico concreto.",
+        "Tener presente que la pregunta 15 está anulada: no puntúa. Corregir el resto con la plantilla oficial del modelo A."
+      ],
+      "topics": [
+        "II.16",
+        "III.18",
+        "III.19",
+        "III.21",
+        "III.22",
+        "III.25",
+        "III.26",
+        "IV.29",
+        "V.34",
+        "V.36",
+        "V.38"
+      ],
+      "source": {
+        "label": "INAP — Cuestionario TAI-L 2024, modelo A (Supuesto II)",
+        "url": "https://sede.inap.gob.es/documents/59312/2364268/Cuestionario_TAI_LI_2024_A_M8L91VL1CL_154AB89SD658.pdf/43a5d8c6-3f74-dbca-8452-c00408125ff8",
+        "pages": "pp. 11-14"
+      },
+      "questions": [
+        {
+          "stem": "La red 10.9.0.0/16 se divide en 16 subredes iguales y el organismo recibe la última. ¿Cuántas direcciones de host utilizables tiene esa subred?",
+          "options": [
+            {
+              "key": "a",
+              "text": "4094"
+            },
+            {
+              "key": "b",
+              "text": "65534"
+            },
+            {
+              "key": "c",
+              "text": "4096"
+            },
+            {
+              "key": "d",
+              "text": "65536"
+            }
+          ],
+          "correct": "a",
+          "justification": "Para obtener 16 subredes se toman 4 bits del campo de host, así que el prefijo pasa de /16 a /20 y quedan 12 bits para hosts. Son 2^12 = 4096 direcciones, de las que se descuentan la de red y la de broadcast: 4094 utilizables."
+        },
+        {
+          "stem": "Al arrancar el servidor web aparece un error en la partición sda8, que no se ha podido montar. ¿Qué comando repara automáticamente los errores del sistema de ficheros?",
+          "options": [
+            {
+              "key": "a",
+              "text": "mount -T /dev/sda8"
+            },
+            {
+              "key": "b",
+              "text": "fsck -y /dev/sda8"
+            },
+            {
+              "key": "c",
+              "text": "fsck -m /dev/sda8"
+            },
+            {
+              "key": "d",
+              "text": "checkdisk /dev/sda8"
+            }
+          ],
+          "correct": "b",
+          "justification": "fsck comprueba y repara el sistema de ficheros, y la opción -y responde afirmativamente a las reparaciones sin preguntar. mount no repara nada, checkdisk no existe en Linux y fsck -m no aplica la reparación automática."
+        },
+        {
+          "stem": "Un servidor web publica el sitio por HTTPS. ¿Qué recomienda el Centro Criptológico Nacional respecto al puerto 80?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Mostrar una web estática que avise de que ese no es el sitio actual"
+            },
+            {
+              "key": "b",
+              "text": "Cambiar el puerto de HTTPS al 8892"
+            },
+            {
+              "key": "c",
+              "text": "Analizar las cabeceras HTTP que llegan al puerto 80"
+            },
+            {
+              "key": "d",
+              "text": "Mantener el puerto TCP/80 con una redirección automática de HTTP a HTTPS"
+            }
+          ],
+          "correct": "d",
+          "justification": "La recomendación es dejar el puerto 80 a la escucha para redirigir de forma automática cada petición HTTP hacia HTTPS, de modo que el usuario acabe siempre en la conexión cifrada. Las otras opciones no evitan que el tráfico inicial viaje sin cifrar ni ofrecen una redirección correcta."
+        },
+        {
+          "stem": "Una persona no autorizada entra en el CPD siguiendo de cerca a un operador con tarjeta y PIN, sin que este advierta su presencia. ¿Cómo se denomina este incidente de ingeniería social física?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Tailgating o piggybacking"
+            },
+            {
+              "key": "b",
+              "text": "Quid pro quo"
+            },
+            {
+              "key": "c",
+              "text": "Pretexto"
+            },
+            {
+              "key": "d",
+              "text": "Disrupción"
+            }
+          ],
+          "correct": "a",
+          "justification": "El tailgating o piggybacking consiste en aprovechar el acceso legítimo de otra persona para colarse detrás de ella sin acreditarse. El quid pro quo y el pretexto son técnicas de ingeniería social no presenciales, y la disrupción es una interrupción del servicio."
+        },
+        {
+          "stem": "El circuito cerrado de televisión del CPD usa una red coaxial y hay que conectarlo a la red local Ethernet para monitorizar las cámaras. ¿Qué dispositivo de red se emplea?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Un cortafuegos (firewall)"
+            },
+            {
+              "key": "b",
+              "text": "Una pasarela (gateway)"
+            },
+            {
+              "key": "c",
+              "text": "Un conmutador (switch)"
+            },
+            {
+              "key": "d",
+              "text": "Un repetidor (repeater)"
+            }
+          ],
+          "correct": "b",
+          "justification": "La pasarela interconecta redes de tecnologías distintas y se encarga de la conversión necesaria entre ellas. Un switch o un repetidor trabajan en el ámbito Ethernet y no traducen el medio coaxial, y el cortafuegos filtra tráfico pero no hace de puente entre medios."
+        },
+        {
+          "stem": "En el sistema conviven DNS y FTP seguro. Según el modelo TCP/IP, ¿en qué se diferencian?",
+          "options": [
+            {
+              "key": "a",
+              "text": "DNS es un protocolo de usuario y FTP es un protocolo de soporte"
+            },
+            {
+              "key": "b",
+              "text": "DNS siempre está orientado a conexión y FTP no"
+            },
+            {
+              "key": "c",
+              "text": "No hay diferencia: ambos son protocolos de soporte"
+            },
+            {
+              "key": "d",
+              "text": "FTP es un protocolo de usuario y DNS es un protocolo de soporte"
+            }
+          ],
+          "correct": "d",
+          "justification": "En la clasificación del modelo TCP/IP, FTP es un protocolo de usuario porque presta servicio directo a la aplicación del usuario, mientras que DNS se considera un protocolo de soporte que resuelve nombres para el resto. DNS puede usar UDP o TCP, así que la opción que lo hace siempre orientado a conexión es falsa."
+        },
+        {
+          "stem": "En un switch Cisco IOS se ejecuta el comando «switchport access vlan 1». ¿Qué consigue?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Asignar un puerto a la VLAN 1"
+            },
+            {
+              "key": "b",
+              "text": "Asignar el puerto 1 del switch a la VLAN en la que estamos situados"
+            },
+            {
+              "key": "c",
+              "text": "Mostrar todos los hosts asignados a la VLAN 1"
+            },
+            {
+              "key": "d",
+              "text": "Asignar todos los hosts del switch a la VLAN 1"
+            }
+          ],
+          "correct": "a",
+          "justification": "El comando se ejecuta dentro de la configuración de una interfaz y declara ese puerto como puerto de acceso de la VLAN indicada, en este caso la 1. No lista hosts ni afecta a todos los puertos del switch: solo al puerto en el que se aplica."
+        },
+        {
+          "stem": "La base de datos de la biblioteca se corrompe y los usuarios dejan de poder consultarla. ¿Qué dimensiones de la seguridad se ven afectadas?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Disponibilidad e integridad"
+            },
+            {
+              "key": "b",
+              "text": "Solo confidencialidad"
+            },
+            {
+              "key": "c",
+              "text": "Solo disponibilidad"
+            },
+            {
+              "key": "d",
+              "text": "Solo trazabilidad"
+            }
+          ],
+          "correct": "a",
+          "justification": "El servicio no está accesible, lo que afecta a la disponibilidad, y el fichero de la base de datos está corrupto, lo que afecta a la integridad. No hay indicios de que los datos se hayan expuesto a personas no autorizadas, por lo que no puede afirmarse una pérdida de confidencialidad."
+        },
+        {
+          "stem": "La red local es Gigabit Ethernet. Al conectar un dispositivo nuevo, en su tarjeta de red parpadea una luz naranja. ¿A qué se debe?",
+          "options": [
+            {
+              "key": "a",
+              "text": "A que la VLAN del dispositivo está mal configurada"
+            },
+            {
+              "key": "b",
+              "text": "A que la tarjeta transmite a una velocidad menor que la que permite la red"
+            },
+            {
+              "key": "c",
+              "text": "A que la tarjeta está estropeada y no hay conexión"
+            },
+            {
+              "key": "d",
+              "text": "A que el cable es coaxial en vez de Ethernet"
+            }
+          ],
+          "correct": "b",
+          "justification": "En muchos adaptadores Ethernet, el led naranja indica un enlace a 100 Mbps y el verde un enlace a 1 Gbps, de modo que el dispositivo está conectado pero negocia a menor velocidad. Si la tarjeta estuviera estropeada no habría enlace, y una VLAN mal configurada no se deduce del color del led."
+        },
+        {
+          "stem": "Hay una vulnerabilidad que afecta a una versión del kernel de Ubuntu. ¿Con qué comando se consulta la versión del kernel instalada?",
+          "options": [
+            {
+              "key": "a",
+              "text": "sudo dpkg -i linux*.deb"
+            },
+            {
+              "key": "b",
+              "text": "uname -r"
+            },
+            {
+              "key": "c",
+              "text": "uname -o"
+            },
+            {
+              "key": "d",
+              "text": "kexec -l"
+            }
+          ],
+          "correct": "b",
+          "justification": "uname -r muestra la versión del kernel en ejecución. La opción -o informa del sistema operativo, dpkg -i instala un paquete y kexec carga un nuevo kernel, pero ninguno de ellos consulta la versión instalada."
+        },
+        {
+          "stem": "Sobre SFTP y FTPS, ¿cuál de estas afirmaciones es INCORRECTA?",
+          "options": [
+            {
+              "key": "a",
+              "text": "SFTP usa típicamente el puerto 22 de SSH, mientras que FTPS emplea el puerto en el que se haya definido SSL/TLS"
+            },
+            {
+              "key": "b",
+              "text": "SFTP usa autenticación con certificado de clave pública, mientras que FTPS usa usuario y contraseña"
+            },
+            {
+              "key": "c",
+              "text": "FTPS usa dos puertos, uno para comandos y otro para datos, mientras que SFTP usa el mismo puerto para ambas tareas"
+            },
+            {
+              "key": "d",
+              "text": "FTPS no tiene comandos estandarizados para manipular directorios o listar atributos, mientras que SFTP sí"
+            }
+          ],
+          "correct": "b",
+          "justification": "La afirmación incorrecta es la b: ni SFTP se limita a la autenticación con clave pública ni FTPS se limita a usuario y contraseña, ya que ambos pueden combinarse con certificados. Las otras tres describen correctamente el uso de puertos y las capacidades de cada protocolo."
+        },
+        {
+          "stem": "El CCN ha instalado CLAUDIA para detectar malware complejo y movimiento lateral de APT. ¿Cómo define el Centro Criptológico Nacional una APT?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Un ransomware como WannaCry que cifra archivos y pide un rescate"
+            },
+            {
+              "key": "b",
+              "text": "Una suplantación de un usuario corriente con escalada de privilegios hasta un alto cargo"
+            },
+            {
+              "key": "c",
+              "text": "Un ataque selectivo de ciberespionaje o cibersabotaje dirigido por un país u organización adversaria, con fines que van más allá de lo económico o delictivo"
+            },
+            {
+              "key": "d",
+              "text": "Un ataque masivo aprovechando un fallo desconocido para el que no existe parche"
+            }
+          ],
+          "correct": "c",
+          "justification": "La definición de APT destaca su carácter selectivo, persistente y patrocinado por un Estado u organización adversaria, con objetivos de espionaje o sabotaje que superan el beneficio económico o la protesta. El ransomware, la suplantación de identidad y el ataque masivo por vulnerabilidad desconocida describen otras categorías de amenaza."
+        },
+        {
+          "stem": "Para mejorar la escalabilidad se plantea una arquitectura de microservicios con Kubernetes. ¿Qué protocolos de servicio admite Kubernetes?",
+          "options": [
+            {
+              "key": "a",
+              "text": "SCTP, TCP (por defecto) y UDP"
+            },
+            {
+              "key": "b",
+              "text": "HTTP (por defecto), HTTPS y FTP"
+            },
+            {
+              "key": "c",
+              "text": "SSH, SFTP (por defecto) y UDP"
+            },
+            {
+              "key": "d",
+              "text": "UDP (por defecto) y TCP"
+            }
+          ],
+          "correct": "a",
+          "justification": "Los servicios de Kubernetes admiten SCTP, TCP y UDP, y el protocolo por defecto es TCP. HTTP, HTTPS, FTP, SSH y SFTP son protocolos de aplicación que viajan sobre esos transportes, no protocolos de servicio de Kubernetes."
+        },
+        {
+          "stem": "El responsable pide enrolar veinte móviles nuevos en la solución MDM de la organización. ¿En qué consiste esa tarea?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Emparejar en el MDM a cada usuario con su móvil"
+            },
+            {
+              "key": "b",
+              "text": "Dar de alta en una base de datos administrativa todos los dispositivos"
+            },
+            {
+              "key": "c",
+              "text": "Insertar la tarjeta SIM correspondiente a cada móvil"
+            },
+            {
+              "key": "d",
+              "text": "Formatear a fábrica todos los dispositivos"
+            }
+          ],
+          "correct": "a",
+          "justification": "Enrolar un dispositivo en un MDM es registrarlo en la plataforma y asociarlo a su usuario, para poder aplicar políticas, distribuir aplicaciones y gestionarlo. La SIM es un elemento de conectividad y el formateo es una acción previa o posterior, no el enrolamiento."
+        },
+        {
+          "stem": "Se valora alimentar la climatización del CPD desde la toma de climatización del resto del edificio. ¿Por qué no se aconseja?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Porque la humedad recomendada para un CPD es mucho menor que la de las personas"
+            },
+            {
+              "key": "b",
+              "text": "Porque la temperatura recomendada para un CPD es mucho mayor que la de las personas"
+            },
+            {
+              "key": "c",
+              "text": "Porque el filtro de impurezas para las personas es más sensible que el de un CPD"
+            },
+            {
+              "key": "d",
+              "text": "Porque el aire acondicionado de un CPD debe venir siempre del techo y el de las personas puede ser lateral"
+            }
+          ],
+          "correct": "ANULADA",
+          "justification": "Pregunta anulada por la plantilla oficial: no puntúa ni suma ni resta. Se conserva en el simulacro para que el examen sea fiel al original, pero no debe usarse como referencia de estudio."
+        },
+        {
+          "stem": "Se descarga una herramienta antimalware del sitio del CCN-CERT y justo debajo aparece un hash de comprobación. ¿Qué medida de seguridad representa ese hash?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Una medida antimalware que sanea el fichero y lo deja libre de malware"
+            },
+            {
+              "key": "b",
+              "text": "Una medida para asegurar la integridad de la descarga: si el hash calculado no coincide, el fichero no es válido"
+            },
+            {
+              "key": "c",
+              "text": "La firma del CCN como autoridad de certificación que garantiza que el software es apto para sistemas de nivel ALTO"
+            },
+            {
+              "key": "d",
+              "text": "La firma de la página web para evitar que se sustituya el fichero por otro"
+            }
+          ],
+          "correct": "b",
+          "justification": "El hash publicado permite comprobar que el fichero descargado es exactamente el que ofrece el CCN, es decir, protege su integridad frente a modificaciones o descargas corruptas. Un hash no limpia el fichero, no certifica su aptitud y no es la firma de la página."
+        },
+        {
+          "stem": "La VoIP usa SIP y las llamadas con usuarios externos se cortan o congelan y después se restablecen; entre usuarios internos funciona bien. ¿Cuál es la causa probable?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Se están usando mal los códecs"
+            },
+            {
+              "key": "b",
+              "text": "La salida a Internet emplea NAT"
+            },
+            {
+              "key": "c",
+              "text": "El cortafuegos de Internet intercepta el tráfico"
+            },
+            {
+              "key": "d",
+              "text": "La CPU del ordenador es insuficiente"
+            }
+          ],
+          "correct": "b",
+          "justification": "NAT traduce direcciones y puertos y puede romper la señalización SIP y las direcciones anunciadas en el SDP cuando el tráfico cruza a Internet. En las llamadas internas no hay NAT de por medio, por eso funcionan; la solución habitual pasa por un SBC o por mecanismos de traversal como STUN y TURN."
+        },
+        {
+          "stem": "El servidor de correo Postfix está instalado y se decide entre POP3 e IMAP para los clientes. ¿Qué afirmación es INCORRECTA?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Con IMAP los mensajes quedan en el servidor y varios clientes pueden leer los mismos"
+            },
+            {
+              "key": "b",
+              "text": "POP3 solo permite una sincronización unidireccional: descargar correos del servidor al cliente"
+            },
+            {
+              "key": "c",
+              "text": "Con IMAP el correo enviado y recibido se guarda en el servidor hasta que el usuario lo borra"
+            },
+            {
+              "key": "d",
+              "text": "Con POP3, si el usuario organiza las carpetas en un dispositivo, esa organización se replica en los demás"
+            }
+          ],
+          "correct": "d",
+          "justification": "POP3 no replica carpetas ni el estado del buzón entre dispositivos: cada cliente descarga los mensajes y la organización local no se propaga. IMAP sí mantiene el buzón y sus carpetas en el servidor, que es lo que describen las opciones a) y c)."
+        },
+        {
+          "stem": "Hay que averiguar qué usuarios acceden a la base de datos MySQL de la biblioteca y desde qué host o IP. ¿Qué comando se ejecuta?",
+          "options": [
+            {
+              "key": "a",
+              "text": "SELECT * FROM all_users"
+            },
+            {
+              "key": "b",
+              "text": "SELECT user FROM mysql.user"
+            },
+            {
+              "key": "c",
+              "text": "SELECT user,host FROM mysql.user"
+            },
+            {
+              "key": "d",
+              "text": "sudo mysql -u root -p"
+            }
+          ],
+          "correct": "c",
+          "justification": "La tabla mysql.user guarda las cuentas y el host desde el que se conectan, por lo que hay que seleccionar las columnas user y host. all_users pertenece a Oracle, la consulta que solo pide user deja fuera el host y el último comando abre una sesión, pero no muestra la información."
+        },
+        {
+          "stem": "Para aplicar políticas de seguridad al grupo Profesores con Active Directory y GPO, ¿qué conviene definir primero?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Una unidad organizativa (OU) para el grupo Profesores"
+            },
+            {
+              "key": "b",
+              "text": "Las ACL que tendrán las GPO del grupo Profesores"
+            },
+            {
+              "key": "c",
+              "text": "Un nuevo bosque de Active Directory"
+            },
+            {
+              "key": "d",
+              "text": "Relaciones de confianza entre el dominio actual y el del grupo Profesores"
+            }
+          ],
+          "correct": "a",
+          "justification": "Las GPO se enlazan a contenedores del directorio, y la buena práctica es agrupar a los usuarios en una unidad organizativa para aplicarles la política de forma ordenada y heredable. Crear un bosque o relaciones de confianza es desproporcionado, y las ACL se definen después de tener la estructura."
+        }
+      ]
+    },
+    {
+      "slug": "tai-2024-b-s1",
+      "year": 2024,
+      "conv": "TAI-L 2024 · modelo B",
+      "block": "IV",
+      "title": "Concesión de becas para personas opositoras",
+      "difficulty": "media",
+      "official": true,
+      "estimatedMinutes": 30,
+      "statement": "El organismo en el que se presta servicio es el competente para conceder unas becas para personas opositoras, y necesita un sistema de información que cubra todas las fases de la concesión. El modelo de datos del sistema, con claves primarias señaladas en negrita y foráneas en cursiva, incluye tablas como SolicitudBeca, FicheroAdjunto, CuerpoBecado y Subsanacion. El frontal web permite a los interesados autenticarse, firmar y presentar solicitudes, subsanaciones y alegaciones, así como descargar los listados que publique el organismo. El backend atiende al frontal y, mediante una aplicación de gestión, permite al personal público consultar la información y la documentación presentadas y publicar los listados. El frontal se construye con un framework JavaScript, HTML5 y CSS3; el backend puede desarrollarse en .NET o en Java según la experiencia del equipo. El código se aloja en GitHub, la documentación aportada se gestiona en un gestor documental y se reutilizan servicios del Catálogo de Servicios de Administración Digital.",
+      "steps": [
+        "Leer el caso y fijar las piezas: modelo de datos, frontal web, backend, aplicación de gestión, GitHub, gestor documental y servicios reutilizados.",
+        "Recorrer las tablas y sus claves (SolicitudBeca, FicheroAdjunto, CuerpoBecado, Subsanacion) para resolver relaciones y sentencias SQL.",
+        "Separar las áreas del temario que toca cada pregunta: bases de datos y SQL (IV.27, IV.28 y IV.29), programación, UML y Java (IV.30), desarrollo web (IV.31), interoperabilidad y servicios web (IV.32) y accesibilidad (V.40).",
+        "Descartar opciones por un dato técnico verificable (tipo de C#, nivel de aislamiento, palabra clave SQL, atributo HTML, clase de Java) y no por impresión general.",
+        "Corregir con la plantilla oficial del modelo B y revisar los fallos para localizar el concepto exacto que hay que repasar."
+      ],
+      "topics": [
+        "IV.27",
+        "IV.28",
+        "IV.29",
+        "IV.30",
+        "IV.31",
+        "IV.32",
+        "V.40"
+      ],
+      "source": {
+        "label": "INAP — Cuestionario TAI-L 2024, modelo B (Supuesto I)",
+        "url": "https://sede.inap.gob.es/documents/59312/2364268/Cuestionario_TAI_LI_2024_B_DNFGFEK45R_154AB89SD658.pdf/f20d579c-5036-0013-4a90-ba7e24fc9bf9",
+        "pages": "pp. 8-10"
+      },
+      "questions": [
+        {
+          "stem": "El backend se ha decidido desarrollar en .NET con C#. ¿Cómo se indica que un tipo de dato es opcional?",
+          "options": [
+            {
+              "key": "a",
+              "text": "int? Telefono"
+            },
+            {
+              "key": "b",
+              "text": "int|null Telefono"
+            },
+            {
+              "key": "c",
+              "text": "int:null Telefono"
+            },
+            {
+              "key": "d",
+              "text": "int ?? Telefono"
+            }
+          ],
+          "correct": "a",
+          "justification": "En C# el operador ? detrás del tipo lo convierte en un tipo anulable (int? equivale a Nullable<int>). Las formas int|null, int:null e int ?? no son sintaxis válida para declarar opcionalidad; ?? es el operador de coalescencia, que actúa sobre valores."
+        },
+        {
+          "stem": "El sistema se integra con la Plataforma de Intermediación de Datos, definida como arquitectura orientada a servicios (SOA). ¿Cuáles son sus componentes principales?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Servicio, Proveedor de servicios, Consumidor de servicios y Orquestador de servicios."
+            },
+            {
+              "key": "b",
+              "text": "Servicio, Proveedor de servicios, Consumidor de servicios y Depurador de servicios."
+            },
+            {
+              "key": "c",
+              "text": "Servicio, Proveedor de servicios, Consumidor de servicios y Comparador de servicios."
+            },
+            {
+              "key": "d",
+              "text": "Servicio, Proveedor de servicios, Consumidor de servicios y Registro de servicios."
+            }
+          ],
+          "correct": "d",
+          "justification": "A los tres roles básicos de SOA (servicio, proveedor y consumidor) se suma el registro de servicios, donde se publican y se descubren. Orquestador, depurador y comparador de servicios no forman parte de esa lista de componentes principales."
+        },
+        {
+          "stem": "Si se trabaja con SCRUM y durante un sprint se detecta una mala práctica que ralentiza el proyecto, ¿en qué reunión se comenta para buscar la mejora continua?",
+          "options": [
+            {
+              "key": "a",
+              "text": "En la Daily Scrum."
+            },
+            {
+              "key": "b",
+              "text": "En la Sprint Retrospective."
+            },
+            {
+              "key": "c",
+              "text": "En la Sprint Planning."
+            },
+            {
+              "key": "d",
+              "text": "En la Sprint Review."
+            }
+          ],
+          "correct": "b",
+          "justification": "La retrospectiva es la reunión de cierre del sprint dedicada a revisar cómo se ha trabajado y a acordar mejoras para el siguiente. La daily sirve para coordinarse a diario, la planning para planificar y la review para mostrar el incremento."
+        },
+        {
+          "stem": "Según «Técnicas y Prácticas» de Métrica v3, para optimizar el modelo físico de datos y reducir accesos a la base de datos, ¿qué acción se aplicaría?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Combinar entidades si los accesos son frecuentes en transacciones distintas."
+            },
+            {
+              "key": "b",
+              "text": "Eliminar entidades."
+            },
+            {
+              "key": "c",
+              "text": "Introducir elementos redundantes."
+            },
+            {
+              "key": "d",
+              "text": "Normalizar las tablas en Forma Normal de Boyce-Codd (FNBC)."
+            }
+          ],
+          "correct": "c",
+          "justification": "La optimización del modelo físico puede introducir redundancia controlada para evitar uniones y reducir el número de accesos. Combinar o eliminar entidades son decisiones de diseño lógico y normalizar en FNBC persigue eliminar redundancias, justo el objetivo contrario."
+        },
+        {
+          "stem": "Para generar un PDF de justificante con la librería iText en .NET, ¿qué comando instala el paquete NuGet?",
+          "options": [
+            {
+              "key": "a",
+              "text": "dotnet add package iText."
+            },
+            {
+              "key": "b",
+              "text": "dotnet install package iText."
+            },
+            {
+              "key": "c",
+              "text": "dotnet add iText."
+            },
+            {
+              "key": "d",
+              "text": "dotnet install iText."
+            }
+          ],
+          "correct": "a",
+          "justification": "La CLI de .NET añade paquetes NuGet con «dotnet add package». «dotnet install» no existe como verbo y «dotnet add iText» no indica que se trate de un paquete."
+        },
+        {
+          "stem": "La integración con GEISER se hace mediante servicios web SOAP. ¿Con qué se firman las peticiones que genera la aplicación?",
+          "options": [
+            {
+              "key": "a",
+              "text": "WS-Security."
+            },
+            {
+              "key": "b",
+              "text": "SAML."
+            },
+            {
+              "key": "c",
+              "text": "JWT."
+            },
+            {
+              "key": "d",
+              "text": "XML-Encryption."
+            }
+          ],
+          "correct": "a",
+          "justification": "WS-Security es la extensión de los servicios web SOAP que incorpora la firma y el cifrado en las cabeceras de los mensajes. SAML y JWT son mecanismos de aserción o token, y XML-Encryption solo cifra el contenido, no lo firma."
+        },
+        {
+          "stem": "Se espera un alto volumen de concurrencia. ¿Qué nivel de aislamiento impide lecturas sucias y lecturas no repetibles, pero permite lecturas fantasmas?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Serializable."
+            },
+            {
+              "key": "b",
+              "text": "Read committed."
+            },
+            {
+              "key": "c",
+              "text": "Read uncommited."
+            },
+            {
+              "key": "d",
+              "text": "Repeatable read."
+            }
+          ],
+          "correct": "d",
+          "justification": "Repeatable read evita leer datos no confirmados y que una misma consulta devuelva filas distintas dentro de la transacción, pero no impide que aparezcan filas nuevas (fantasmas). Serializable también las evita, Read committed permite lecturas no repetibles y Read uncommitted permite lecturas sucias."
+        },
+        {
+          "stem": "Hay que añadir al esquema la tabla Subsanacion. Tendrá dos identificadores numéricos (IdSubsanacion e IdSolicitudBeca) y un campo de texto TextoFundamento de hasta 2000 caracteres. ¿Qué sentencia lo hace correctamente?",
+          "options": [
+            {
+              "key": "a",
+              "text": "CREATE TABLE Subsanacion (IdSubsanacion bigint, IdSolicitudBeca bigint, TextoFundamento varchar(2000));"
+            },
+            {
+              "key": "b",
+              "text": "CREATE Subsanacion (IdSubsanacion bigint, IdSolicitudBeca bigint, TextoFundamento varchar(2000));"
+            },
+            {
+              "key": "c",
+              "text": "CREATE NEW TABLE Subsanacion (IdSubsanacion bigint, IdSolicitudBeca bigint, TextoFundamento varchar(2000));"
+            },
+            {
+              "key": "d",
+              "text": "CREATE TABLE Subsanacion AS (IdSubsanacion bigint, IdSolicitudBeca bigint, TextoFundamento varchar(2000));"
+            }
+          ],
+          "correct": "a",
+          "justification": "La sentencia correcta es CREATE TABLE seguida de la definición de columnas. CREATE sin TABLE, CREATE NEW TABLE y CREATE TABLE ... AS (pensada para crear una tabla a partir de una consulta) no son válidas para este caso."
+        },
+        {
+          "stem": "La aplicación de gestión va a consumir servicios web. ¿Cuál de estas opciones NO es válida para documentarlos?",
+          "options": [
+            {
+              "key": "a",
+              "text": "RAML."
+            },
+            {
+              "key": "b",
+              "text": "REST."
+            },
+            {
+              "key": "c",
+              "text": "WSDL."
+            },
+            {
+              "key": "d",
+              "text": "OpenAPI/Swagger."
+            }
+          ],
+          "correct": "b",
+          "justification": "RAML, WSDL y OpenAPI/Swagger son lenguajes o formatos para describir servicios web. REST es un estilo de arquitectura, no un formato de documentación, por lo que no sirve para documentar la interfaz."
+        },
+        {
+          "stem": "Si el backend se desarrolla en Java, ¿qué clase nativa permite manejar una fecha y una hora a la vez?",
+          "options": [
+            {
+              "key": "a",
+              "text": "LocalDateTime."
+            },
+            {
+              "key": "b",
+              "text": "LocalDate."
+            },
+            {
+              "key": "c",
+              "text": "LocalTime."
+            },
+            {
+              "key": "d",
+              "text": "OffsetTime."
+            }
+          ],
+          "correct": "a",
+          "justification": "LocalDateTime combina fecha y hora sin zona horaria. LocalDate solo representa la fecha, LocalTime solo la hora y OffsetTime añade el desplazamiento respecto a UTC pero no la fecha."
+        },
+        {
+          "stem": "El equipo quiere incorporar utilidades que revisen la calidad del código. ¿Cuál de estas NO cumple esa función?",
+          "options": [
+            {
+              "key": "a",
+              "text": "SonarQube."
+            },
+            {
+              "key": "b",
+              "text": "Un linter de JavaScript."
+            },
+            {
+              "key": "c",
+              "text": "PMD."
+            },
+            {
+              "key": "d",
+              "text": "Mercurial."
+            }
+          ],
+          "correct": "d",
+          "justification": "Mercurial es un sistema de control de versiones distribuido, no un analizador de calidad. SonarQube, los linters y PMD revisan estilo, errores y malas prácticas del código."
+        },
+        {
+          "stem": "En un backend Java, ¿qué tecnología se utiliza para mapear elementos XML a clases?",
+          "options": [
+            {
+              "key": "a",
+              "text": "JAXB."
+            },
+            {
+              "key": "b",
+              "text": "JPA."
+            },
+            {
+              "key": "c",
+              "text": "JAXR."
+            },
+            {
+              "key": "d",
+              "text": "JAX-RS."
+            }
+          ],
+          "correct": "a",
+          "justification": "JAXB (Java Architecture for XML Binding) enlaza documentos XML con clases Java. JPA es persistencia objeto-relacional, JAXR se ocupa de registros y JAX-RS de servicios REST."
+        },
+        {
+          "stem": "En el entorno Java, ¿qué tecnología permite generar un cliente de servicios web?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Apache Flink."
+            },
+            {
+              "key": "b",
+              "text": "Apache Xalan."
+            },
+            {
+              "key": "c",
+              "text": "Apache Xerces."
+            },
+            {
+              "key": "d",
+              "text": "Apache CXF."
+            }
+          ],
+          "correct": "d",
+          "justification": "Apache CXF es un framework de servicios web que genera clientes y servidores. Flink se dedica al procesamiento de flujos, y Xalan y Xerces trabajan con XML (transformación y análisis), no con clientes de servicios."
+        },
+        {
+          "stem": "El alta de una solicitud encadena autenticación, firma, guardado en base de datos, asiento registral y justificante. ¿Qué diagrama UML representa ese flujo de acciones?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Diagrama de paquetes."
+            },
+            {
+              "key": "b",
+              "text": "Diagrama de objetos."
+            },
+            {
+              "key": "c",
+              "text": "Diagrama de secuencia."
+            },
+            {
+              "key": "d",
+              "text": "Diagrama de Entidad/Relación."
+            }
+          ],
+          "correct": "c",
+          "justification": "El diagrama de secuencia muestra la interacción ordenada en el tiempo entre los objetos que participan en el flujo. Los diagramas de paquetes y de objetos describen estructura, y el de Entidad/Relación modela datos, no el orden de las acciones."
+        },
+        {
+          "stem": "El formulario de solicitud es extenso y hace muchas consultas de datos. ¿Qué técnica renderiza la página en el servidor?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Server Sent Events."
+            },
+            {
+              "key": "b",
+              "text": "Ajax."
+            },
+            {
+              "key": "c",
+              "text": "WebSocket."
+            },
+            {
+              "key": "d",
+              "text": "Server Side Rendering."
+            }
+          ],
+          "correct": "d",
+          "justification": "El renderizado en el servidor (SSR) genera el HTML completo en el backend antes de enviarlo al navegador. SSE y WebSocket son canales de comunicación y Ajax actualiza partes de la página desde el cliente."
+        },
+        {
+          "stem": "Al sistema le resulta aplicable la normativa de accesibilidad. ¿Qué herramienta automatizada permite comprobar el cumplimiento de los estándares de accesibilidad?",
+          "options": [
+            {
+              "key": "a",
+              "text": "QualWeb."
+            },
+            {
+              "key": "b",
+              "text": "Equal Automatic Checker."
+            },
+            {
+              "key": "c",
+              "text": "AccSite."
+            },
+            {
+              "key": "d",
+              "text": "Shovel."
+            }
+          ],
+          "correct": "a",
+          "justification": "QualWeb es una herramienta real de evaluación automática de accesibilidad web. Las otras denominaciones no corresponden a herramientas conocidas de ese tipo."
+        },
+        {
+          "stem": "En el modelo de datos, ¿qué correspondencia existe entre las tablas SolicitudBeca y FicheroAdjunto?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Un registro de SolicitudBeca puede tener N registros de FicheroAdjunto."
+            },
+            {
+              "key": "b",
+              "text": "Un registro de SolicitudBeca puede tener como máximo un registro de FicheroAdjunto."
+            },
+            {
+              "key": "c",
+              "text": "N registros de SolicitudBeca pueden tener M registros de FicheroAdjunto."
+            },
+            {
+              "key": "d",
+              "text": "Un registro de SolicitudBeca puede tener cero o como máximo un registro de FicheroAdjunto."
+            }
+          ],
+          "correct": "a",
+          "justification": "El modelo relaciona los ficheros con su solicitud mediante una clave foránea: una solicitud puede tener varios ficheros adjuntos (relación 1:N). Las opciones b y d limitan a un único fichero y la c plantea una relación N:M que no recoge el modelo."
+        },
+        {
+          "stem": "¿Qué sentencia añade un nuevo registro a la tabla CuerpoBecado?",
+          "options": [
+            {
+              "key": "a",
+              "text": "INSERT INTO CuerpoBecado (Codigo, Denominacion) VALUES ('TAI, 'Técnico Auxiliar de Informática');"
+            },
+            {
+              "key": "b",
+              "text": "INSERT INTO CuerpoBecado (Codigo, Denominacion) VALUES (TAI, Técnico Auxiliar de Informática);"
+            },
+            {
+              "key": "c",
+              "text": "INSERT TO CuerpoBecado (Codigo, Denominacion) VALUES ('TAI', 'Técnico Auxiliar de Informática');"
+            },
+            {
+              "key": "d",
+              "text": "INSERT INTO CuerpoBecado (Codigo, Denominacion) VALUES ('TAI', 'Técnico Auxiliar de Informática');"
+            }
+          ],
+          "correct": "d",
+          "justification": "INSERT INTO ... VALUES exige los literales de texto entre comillas. La primera opción deja una comilla sin cerrar, la segunda omite las comillas y la tercera emplea «INSERT TO», que no existe."
+        },
+        {
+          "stem": "¿Qué ORM corresponde a cada una de las dos posibles soluciones de backend?",
+          "options": [
+            {
+              "key": "a",
+              "text": "JPA en .NET e Hibernate en Java."
+            },
+            {
+              "key": "b",
+              "text": "Hibernate en .NET y Entity Framework en Java."
+            },
+            {
+              "key": "c",
+              "text": "Entity Framework en .NET e Hibernate en Java."
+            },
+            {
+              "key": "d",
+              "text": "Spring Data en .NET e Hibernate en Java."
+            }
+          ],
+          "correct": "c",
+          "justification": "Entity Framework es el ORM de .NET e Hibernate el de Java. JPA es una especificación de Java y Spring Data pertenece también al ecosistema Java, por lo que las otras combinaciones asignan mal las tecnologías."
+        },
+        {
+          "stem": "En el formulario, el correo electrónico no debe superar los 100 caracteres. ¿Qué atributo HTML lo consigue?",
+          "options": [
+            {
+              "key": "a",
+              "text": "<input type='email' id='email' name='email' size='100'>"
+            },
+            {
+              "key": "b",
+              "text": "<input type='email' id='email' name='email' max='100'>"
+            },
+            {
+              "key": "c",
+              "text": "<input type='email' id='email' name='email' maxlength='100'>"
+            },
+            {
+              "key": "d",
+              "text": "<input type='email' id='email' name='email' length='100'>"
+            }
+          ],
+          "correct": "c",
+          "justification": "maxlength limita el número máximo de caracteres que admite el campo. size solo indica el ancho visible, max no existe con esa finalidad y length no es un atributo válido de input."
+        }
+      ]
     }
   ],
   "progress": {
@@ -19564,8 +20700,8 @@
     "questions": 400,
     "cases": 5,
     "caseQuestions": 50,
-    "supuestos": 3,
-    "supuestoQuestions": 60,
+    "supuestos": 5,
+    "supuestoQuestions": 100,
     "convocatorias": 12
   }
 }
