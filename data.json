@@ -254,8 +254,8 @@
             "practicaStatus": "con_practica",
             "sectionCount": 6,
             "questionCount": 10,
-            "formato": "esquema",
-            "longWords": 0
+            "formato": "desarrollado",
+            "longWords": 2952
           }
         ]
       },
@@ -546,8 +546,8 @@
             "practicaStatus": "con_practica",
             "sectionCount": 7,
             "questionCount": 10,
-            "formato": "esquema",
-            "longWords": 0
+            "formato": "desarrollado",
+            "longWords": 2143
           },
           {
             "path": "V.37",
@@ -556,8 +556,8 @@
             "practicaStatus": "con_practica",
             "sectionCount": 7,
             "questionCount": 10,
-            "formato": "esquema",
-            "longWords": 0
+            "formato": "desarrollado",
+            "longWords": 2475
           },
           {
             "path": "V.38",
@@ -566,8 +566,8 @@
             "practicaStatus": "con_practica",
             "sectionCount": 7,
             "questionCount": 10,
-            "formato": "esquema",
-            "longWords": 0
+            "formato": "desarrollado",
+            "longWords": 2881
           },
           {
             "path": "V.39",
@@ -586,8 +586,8 @@
             "practicaStatus": "con_practica",
             "sectionCount": 7,
             "questionCount": 10,
-            "formato": "esquema",
-            "longWords": 0
+            "formato": "desarrollado",
+            "longWords": 2371
           }
         ]
       }
@@ -984,6 +984,82 @@
         "Confundir el plazo de un mes para responder a los derechos del interesado en protección de datos (ampliable dos meses) con el plazo de un mes para resolver la solicitud de acceso (ampliable otro mes)."
       ],
       "reviewedAt": "2026-11-10",
+      "longSections": [
+        {
+          "heading": "1. Ficha oficial del tema",
+          "body": "**Tema I.12 · Transparencia y protección de datos en la Administración.** Bloque I (Administración y normativa) del temario común de Técnicos Auxiliares de Informática. Se relaciona con el tema V.37 (protección de datos aplicada), que estudia el RGPD y la LOPDGDD desde la perspectiva de la seguridad de la información.\n\n**Objetivo de examen.** Distinguir la Ley 19/2013 de transparencia del régimen de protección de datos, manejar sus normas y autoridades (Consejo de Transparencia y Buen Gobierno y Agencia Española de Protección de Datos), aplicar los límites del derecho de acceso y el artículo 15 de la Ley 19/2013, y conocer los derechos y garantías básicos del RGPD y la LOPDGDD. Dificultad **media**: es materia muy literal y los artículos se confunden con facilidad.\n\n**Fuentes de este tema.** El consolidado data/fuentes/I.12.txt, cuyo contenido jurídico procede de Bloque 1 Actualizado 2026.docx (Constitución, TREBEP, Ley 19/2013, LOPDGDD y RGPD). El PDF Tema 4.2. Aspectos Legales.pdf no tiene texto extraíble y no se cita como leído. (Fuente: data/fuentes/I.12.txt.)"
+        },
+        {
+          "heading": "2. Índice de epígrafes",
+          "body": "Este tema se ordena en diez apartados:\n\n1. Ficha oficial del tema: ubicación, objetivo, dificultad y fuentes.\n2. Índice de epígrafes: el mapa que está leyendo.\n3. Introducción y contexto: dos derechos que se cruzan.\n4. Desarrollo por epígrafe: Ley 19/2013, publicidad activa, derecho de acceso, límites, artículo 15, Consejo de Transparencia, LOPDGDD y RGPD, DPD, AEPD y derechos digitales.\n5. Tabla comparativa: transparencia frente a protección de datos.\n6. Ejemplo práctico resuelto.\n7. Trampas típicas de examen.\n8. Resumen para memorizar.\n9. Casos tipo test comentados (15 preguntas).\n10. Fuentes citadas.\n\nLos epígrafes oficiales (Ley 19/2013, publicidad activa, derecho de acceso, límites, reclamación, protección de datos y DPO) se cubren en el apartado 4; los casos del apartado 9 coinciden con los quince testCases del fichero. (Fuente: data/fuentes/I.12.txt.)"
+        },
+        {
+          "heading": "3. Introducción y contexto",
+          "body": "**Transparencia** y **protección de datos** son dos derechos que tiran en direcciones distintas y a la vez se necesitan. La transparencia busca que la ciudadanía conozca cómo actúan las administraciones; la protección de datos busca que la información personal no se use ni se difunda sin control. El ordenamiento español los regula con dos normas que conviene no mezclar: la **Ley 19/2013**, sobre transparencia y derecho de acceso a la información pública, y el **RGPD** (Reglamento UE 2016/679), aplicable directamente, desarrollado en España por la **LOPDGDD** (LO 3/2018).\n\nLa Ley 19/2013 desarrolla la previsión constitucional del artículo 105.b) sobre consulta de archivos y registros públicos. Su artículo 12 formula el derecho de acceso a la información pública, pero no es un derecho absoluto: el artículo 14 fija límites y el artículo 15 protege los datos personales que aparezcan en la información solicitada.\n\nLa clave es identificar qué norma responde cada pregunta: si se pregunta por el portal, los límites o el Consejo de Transparencia, la respuesta está en la Ley 19/2013; si se pregunta por la edad del consentimiento, las categorías especiales o la portabilidad, la respuesta está en el RGPD y la LOPDGDD. (Fuentes: Bloque 1 Actualizado 2026.docx, apartados de la Ley 19/2013, LOPDGDD y RGPD; Constitución, artículo 105.b.)"
+        },
+        {
+          "heading": "4. Desarrollo por epígrafe",
+          "body": "**1) Ley 19/2013: estructura y ámbito.** La norma se ordena en un título I (publicidad activa y derecho de acceso), un título II (buen gobierno) y un título III (Consejo de Transparencia y Buen Gobierno). Su artículo 2 fija el ámbito subjetivo: las administraciones, la Seguridad Social, las entidades públicas, las sociedades con capital público del 50 %, las fundaciones, los partidos y las entidades privadas que reciban ayudas por encima de 100.000 euros o del 40 %, con el umbral mínimo de 5.000 euros que recoge la fuente. El artículo 10 crea el Portal de la Transparencia de la Administración General del Estado, dependiente del Ministerio de la Presidencia, y el artículo 11 fija los principios técnicos: accesibilidad, interoperabilidad y reutilización.\n\n**2) Publicidad activa.** Es la obligación de publicar información de oficio, sin que nadie la solicite: información institucional y organizativa, normativa, planificación, contratos, presupuestos y retribuciones, entre otras. La fuente no enumera los artículos que la regulan, pero identifica el capítulo II del título I como el bloque de obligaciones de publicidad y atribuye al Consejo de Transparencia la función de velar por su cumplimiento (artículo 38).\n\n**3) Derecho de acceso.** El artículo 12 reconoce a cualquier persona el derecho de acceso a la información pública conforme al artículo 105.b) de la Constitución. El artículo 17 regula la solicitud: se dirige al titular del órgano que posee la información (o a la Administración de la que dependa, si la posee un particular que presta servicios públicos), se presenta por cualquier medio que deje constancia de la identidad, la información pedida, una dirección de contacto preferentemente electrónica y la modalidad de acceso, y **no exige motivación** (aunque el solicitante puede exponer sus motivos y estos se valoran al resolver). Puede presentarse en las lenguas cooficiales del territorio. La fuente cita además el artículo 24 como cauce de reclamación ante el Consejo de Transparencia.\n\n**4) Límites del artículo 14.** El acceso puede limitarse cuando suponga un perjuicio para la seguridad nacional, la defensa, las relaciones exteriores, la seguridad pública, la prevención, investigación y sanción de ilícitos penales, administrativos o disciplinarios, la igualdad de las partes en el proceso y la tutela judicial efectiva, las funciones de vigilancia, inspección y control, los intereses económicos y comerciales, la política económica y monetaria, el secreto profesional y la propiedad intelectual e industrial, la confidencialidad o el secreto en la toma de decisiones y la protección del medio ambiente. Son límites tasados: no valen razones genéricas.\n\n**5) Artículo 15: datos personales y acceso.** Si la información contiene datos que revelan ideología, afiliación sindical, religión o creencias, el acceso solo se autoriza con **consentimiento expreso y por escrito** del afectado, salvo que los hubiera hecho manifiestamente públicos antes. Si contiene origen racial, salud, vida sexual, datos genéticos o biométricos o datos sobre infracciones penales o administrativas sin amonestación pública, se exige consentimiento expreso o una norma con rango de ley. Con carácter general se concede el acceso a datos meramente identificativos ligados a la organización, funcionamiento o actividad pública, siempre que no prevalezca la protección de datos u otros derechos constitucionales. Si no hay datos especialmente protegidos, el órgano pondera el interés público y los derechos de los afectados, considerando el transcurso de los plazos de la Ley 16/1985 del Patrimonio Histórico, la condición de investigador o el ejercicio de un derecho, el carácter meramente identificativo y la afectación a la intimidad, la seguridad o los menores. El apartado 4 permite el acceso si los datos se disocian de modo que no se identifique a las personas, y el apartado 5 somete el tratamiento posterior a la normativa de protección de datos.\n\n**6) Consejo de Transparencia y Buen Gobierno.** El artículo 34 fija sus fines: promover la transparencia, velar por las obligaciones de publicidad, salvaguardar el derecho de acceso y garantizar la observancia del buen gobierno. Se compone de la Comisión de Transparencia y Buen Gobierno y de su Presidente (artículo 35); la Comisión incluye al Presidente, un Diputado, un Senador, un representante del Tribunal de Cuentas, uno del Defensor del Pueblo, uno de la Agencia Española de Protección de Datos, uno de la Secretaría de Estado de Administraciones Públicas y uno de la Autoridad Independiente de Responsabilidad Fiscal (artículo 36). El Presidente se nombra por un periodo **no renovable de cinco años** mediante Real Decreto (artículo 37) y asume, entre otras, la función de conocer las reclamaciones del artículo 24 (artículo 38).\n\n**7) LOPDGDD y RGPD.** El RGPD es directamente aplicable y la LOPDGDD lo desarrolla. La LOPDGDD regula el deber de confidencialidad (artículo 5), el consentimiento como manifestación libre, específica, informada e inequívoca (artículo 6), la edad de **catorce años** para el consentimiento del menor (artículo 7), el tratamiento por obligación legal o interés público con norma con rango de ley (artículo 8), el ejercicio de derechos (artículo 12), el derecho de acceso mediante consulta remota, directa y segura (artículo 13), la rectificación (artículo 14) y las obligaciones y riesgos del responsable y encargado (artículo 28). En el RGPD destacan las condiciones del consentimiento y su retirada (artículo 7), el consentimiento del niño en servicios de la sociedad de la información (artículo 8: dieciséis años, aunque los Estados pueden fijar una edad inferior no menor de trece), las categorías especiales de datos y sus excepciones (artículo 9), la rectificación (artículo 16), la portabilidad (artículo 20) y las decisiones individuales automatizadas (artículo 22).\n\n**8) DPD y AEPD.** El **delegado de protección de datos (DPD/DPO)** asesora y supervisa el cumplimiento y sirve de enlace con la autoridad de control; la fuente no desarrolla su régimen, por lo que se resume como concepto estándar. La **Agencia Española de Protección de Datos (AEPD)** es la autoridad de control en España; la fuente la menciona al regular la composición de la Comisión del Consejo de Transparencia, no sus funciones.\n\n**9) Derechos digitales.** La LOPDGDD dedica su título X a los derechos digitales (artículos 79 a 89): libertades en Internet, neutralidad de Internet, acceso universal, seguridad digital, educación digital, protección de los menores, rectificación en Internet, intimidad en el uso de dispositivos digitales del trabajo, desconexión digital, videovigilancia y geolocalización laborales, derechos digitales en la negociación colectiva y protección de datos de los menores, derecho al olvido en buscadores y redes sociales, portabilidad en redes sociales y testamento digital.\n\n**10) Cómo se cruzan ambos regímenes.** La transparencia no autoriza a publicar cualquier dato personal: cuando la información contiene datos personales, se aplica el artículo 15 de la Ley 19/2013 y, para el tratamiento posterior, el RGPD y la LOPDGDD (artículo 15.5). La disociación, la ponderación y los límites del artículo 14 son las herramientas para conciliar interés público y derechos de las personas. (Fuentes: Bloque 1 Actualizado 2026.docx, apartados de la Ley 19/2013, LOPDGDD y RGPD; Constitución, artículo 105.b.)"
+        },
+        {
+          "heading": "5. Tabla comparativa: transparencia frente a protección de datos",
+          "body": "Resumen de las dos normas que conviven en este tema, con lo que aporta cada una. (Fuentes: Bloque 1 Actualizado 2026.docx, apartados de la Ley 19/2013, LOPDGDD y RGPD.)",
+          "table": {
+            "columns": [
+              "Aspecto",
+              "Ley 19/2013 (transparencia)",
+              "RGPD / LOPDGDD (protección de datos)"
+            ],
+            "rows": [
+              [
+                "Finalidad",
+                "Que se conozca la actividad pública y se acceda a la información",
+                "Proteger a las personas frente al tratamiento de sus datos"
+              ],
+              [
+                "Objeto principal",
+                "Información pública y buen gobierno",
+                "Datos personales y derechos del interesado"
+              ],
+              [
+                "Autoridad",
+                "Consejo de Transparencia y Buen Gobierno",
+                "Agencia Española de Protección de Datos"
+              ],
+              [
+                "Norma clave",
+                "Artículos 12, 14, 15, 17 y 34-38",
+                "RGPD (arts. 7, 8, 9, 16, 20, 22) y LOPDGDD (arts. 5-14 y 28)"
+              ],
+              [
+                "Límite típico",
+                "Los límites tasados del artículo 14",
+                "Los principios y bases jurídicas del tratamiento"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "6. Ejemplo práctico resuelto",
+          "body": "**Supuesto.** Un ayuntamiento recibe una solicitud de acceso a la lista de personas beneficiarias de unas ayudas, con nombre, DNI y, en algunos casos, datos de salud. Se pregunta cómo debe resolverse y qué límites y garantías se aplican.\n\n**Resolución.**\n\n- **Norma aplicable:** Ley 19/2013. La solicitud se dirige al órgano que posee la información (artículo 17) y no es obligatorio motivarla.\n- **¿Hay datos personales?** Sí: nombres, DNI y datos de salud. Se aplica el artículo 15.\n- **Datos de salud:** son una categoría especialmente protegida; solo se autoriza el acceso con consentimiento expreso del afectado o si lo ampara una norma con rango de ley.\n- **Datos meramente identificativos:** con carácter general se concede el acceso a los datos identificativos ligados a la actividad pública, salvo que prevalezca la protección de datos u otros derechos; el órgano debe ponderar interés público y derechos de los afectados.\n- **Límites:** si el acceso perjudicara alguno de los supuestos del artículo 14 (por ejemplo, la investigación de ilícitos o la seguridad pública), podría limitarse.\n- **Disociación:** si se eliminan los datos que identifican a las personas, el apartado 4 del artículo 15 permite el acceso sin las cautelas anteriores.\n- **Después del acceso:** el tratamiento posterior de los datos obtenidos queda sujeto al RGPD y a la LOPDGDD (artículo 15.5).\n\n**Qué se aprende.** La transparencia no es un permiso para publicar datos personales: el artículo 15 obliga a distinguir datos especialmente protegidos, identificativos y disociados, y a ponderar el interés público con los derechos de las personas. (Fuentes: Bloque 1 Actualizado 2026.docx, apartados de la Ley 19/2013 y LOPDGDD.)"
+        },
+        {
+          "heading": "7. Trampas típicas de examen",
+          "body": "- **Transparencia no es protección de datos.** La Ley 19/2013 regula el acceso a la información pública; el RGPD y la LOPDGDD protegen los datos personales.\n- **El derecho de acceso no es absoluto.** Tiene los límites del artículo 14 y las reglas del artículo 15.\n- **El artículo 14 no es el 15.** El 14 enumera los límites; el 15 regula los datos personales que aparecen en la información.\n- **No todos los datos personales tienen el mismo régimen.** Los especialmente protegidos (ideología, salud, etc.) exigen consentimiento expreso o norma con rango de ley; los meramente identificativos tienen otra regla.\n- **La disociación cambia el régimen.** Si no se puede identificar a las personas, no se aplican las cautelas del artículo 15.\n- **Catorce no es dieciséis.** La LOPDGDD fija catorce años para el consentimiento del menor; el RGPD fija dieciséis para los servicios de la sociedad de la información, con posibilidad de bajarlo a trece.\n- **El consentimiento no siempre es la base.** También lo son la obligación legal, el interés público o el ejercicio de poderes públicos (LOPDGDD, artículo 8).\n- **Responsable no es encargado.** El responsable decide el tratamiento; el encargado lo realiza por cuenta del responsable, y la fuente recuerda que el responsable tiene mayor jerarquía.\n- **El Consejo de Transparencia no es la AEPD.** El primero vela por la transparencia y el acceso; la segunda es la autoridad de control de protección de datos.\n- **Publicidad activa no es derecho de acceso.** La primera es una obligación de publicar de oficio; el segundo exige solicitud.\n- **La solicitud no necesita motivación.** La falta de motivación no es causa de rechazo (artículo 17).\n- **Cinco años y no renovable.** Es el mandato del Presidente del Consejo de Transparencia (artículo 37).\n\n(Fuentes: Bloque 1 Actualizado 2026.docx, apartados de la Ley 19/2013, LOPDGDD y RGPD.)"
+        },
+        {
+          "heading": "8. Resumen para memorizar",
+          "body": "Lo que hay que retener:\n\n- Ley 19/2013: transparencia y derecho de acceso a la información pública (y buen gobierno); desarrolla el artículo 105.b) de la Constitución.\n- Ámbito (artículo 2): las administraciones, la Seguridad Social, las entidades públicas, las sociedades con capital público del 50 %, las fundaciones, los partidos y las entidades privadas con ayudas por encima de los umbrales (100.000 euros o 40 %, mínimo 5.000).\n- Portal de la Transparencia (artículo 10): Administración General del Estado, Ministerio de la Presidencia. Principios técnicos (artículo 11): accesibilidad, interoperabilidad y reutilización.\n- Derecho de acceso (artículo 12) y solicitud (artículo 17): cualquier medio con constancia, sin obligación de motivar, lenguas cooficiales.\n- Límites (artículo 14): seguridad nacional, defensa, relaciones exteriores, seguridad pública, ilícitos, tutela judicial, vigilancia, intereses económicos, política económica, secreto profesional, confidencialidad y medio ambiente.\n- Artículo 15: datos especialmente protegidos con consentimiento expreso (y por escrito en ideología, sindicato, religión o creencias); identificativos con regla general; ponderación; disociación; tratamiento posterior sometido al RGPD.\n- Consejo de Transparencia y Buen Gobierno (artículos 34-38): fines, composición, Presidente de cinco años no renovable, reclamaciones del artículo 24.\n- LOPDGDD: confidencialidad (5), consentimiento (6), catorce años (7), obligación legal/interés público (8), ejercicio de derechos (12), acceso (13), rectificación (14), obligaciones y riesgos (28).\n- RGPD: consentimiento y retirada (7), niño en servicios de la sociedad de la información (8), categorías especiales (9), rectificación (16), portabilidad (20), decisiones automatizadas (22).\n- DPD y AEPD; derechos digitales (LOPDGDD, artículos 79-89).\n\n(Fuentes: Bloque 1 Actualizado 2026.docx, apartados de la Ley 19/2013, LOPDGDD y RGPD; Constitución, artículo 105.b.)"
+        },
+        {
+          "heading": "9. Casos tipo test comentados (15 preguntas)",
+          "body": "Los quince casos del fichero, comentados y con su referencia:\n\n**1.** Norma que regula la transparencia y el acceso a la información pública. **Respuesta: a)** La Ley 19/2013 (apartado 4, Ley 19/2013).\n\n**2.** Edad de consentimiento del menor en la LOPDGDD. **Respuesta: b)** Catorce años (apartado 4, LOPDGDD).\n\n**3.** Edad del RGPD para el consentimiento del niño en servicios de la sociedad de la información. **Respuesta: c)** Dieciséis años, con posibilidad de bajarla a trece (apartado 4, RGPD).\n\n**4.** Cuál figura entre los límites del artículo 14. **Respuesta: d)** La seguridad nacional (apartado 4, límites).\n\n**5.** Qué se exige para acceder a datos que revelan ideología o creencias. **Respuesta: a)** Consentimiento expreso y por escrito del afectado (apartado 4, artículo 15).\n\n**6.** De quién depende el Portal de la Transparencia de la AGE. **Respuesta: b)** Del Ministerio de la Presidencia (apartado 4, artículo 10).\n\n**7.** Principios técnicos del artículo 11. **Respuesta: c)** Accesibilidad, interoperabilidad y reutilización (apartado 4, Ley 19/2013).\n\n**8.** Duración del mandato del Presidente del Consejo de Transparencia. **Respuesta: d)** Cinco años no renovables (apartado 4, artículo 37).\n\n**9.** Ante quién se reclama en materia de acceso. **Respuesta: a)** Ante el Consejo de Transparencia y Buen Gobierno (apartado 4, artículo 24).\n\n**10.** Derecho de acceso en la LOPDGDD mediante sistema remoto. **Respuesta: b)** Acceso permanente, remoto y seguro (apartado 4, artículo 13 LOPDGDD).\n\n**11.** Derecho del RGPD a recibir los datos en formato estructurado. **Respuesta: c)** Portabilidad (apartado 4, artículo 20 RGPD).\n\n**12.** Derecho del RGPD frente a decisiones solo automatizadas. **Respuesta: d)** A no ser objeto de ellas (apartado 4, artículo 22 RGPD).\n\n**13.** Deber de los responsables y encargados de mantener la reserva. **Respuesta: a)** Deber de confidencialidad (apartado 4, artículo 5 LOPDGDD).\n\n**14.** Norma que prohíbe con carácter general el tratamiento de categorías especiales. **Respuesta: b)** El RGPD, artículo 9 (apartado 4, RGPD).\n\n**15.** Derecho digital recogido en la LOPDGDD. **Respuesta: c)** La neutralidad de Internet (apartado 4, derechos digitales).\n\nCada caso incluye su explicación completa y la referencia de fuente en el campo reference de testCases. (Fuente: Bloque 1 Actualizado 2026.docx, apartados de la Ley 19/2013, LOPDGDD y RGPD.)"
+        },
+        {
+          "heading": "10. Fuentes citadas",
+          "body": "- **Bloque 1 Actualizado 2026.docx**, apartados de la Ley 19/2013 (artículos 2, 10, 11, 12, 14, 15, 17 y 34-38), de la LOPDGDD (artículos 5, 6, 7, 8, 12, 13, 14, 28 y 79-89) y del RGPD (artículos 7, 8, 9, 16, 20 y 22); también el artículo 105.b) de la Constitución Española.\n- **data/fuentes/I.12.txt**: texto consolidado de las fuentes anteriores, utilizado para verificar las citas.\n\nAviso de alcance: la fuente no desarrolla la publicidad activa artículo por artículo, el régimen del DPD ni las funciones de la AEPD; se resumen como concepto estándar. (Fuente: data/fuentes/I.12.txt.)"
+        }
+      ],
       "practiceSlug": "i-12"
     },
     "I.2": {
@@ -6986,6 +7062,220 @@
         "Atribuir el equivalente legal de la firma manuscrita a la firma simple o a la avanzada en lugar de a la cualificada."
       ],
       "reviewedAt": "2026-11-10",
+      "longSections": [
+        {
+          "heading": "1. Ficha oficial del tema",
+          "body": "**Tema:** V.36, «Criptografía y firma electrónica», del bloque V (Seguridad y administración electrónica) del temario común de informática C1. **Materias que cubre:** criptografía simétrica y asimétrica, funciones hash, firma digital, certificados X.509, infraestructura de clave pública (PKI), revocación y validación de certificados, y TLS/HTTPS. **Relación con otros temas:** se apoya en V.34 (seguridad de la información) y sirve de base a V.39 (administración electrónica práctica) y a los servicios de identificación y firma. **Fuentes:** `Tema 14.docx` y `Bloque 4 Actualizado 2026.docx`, volcados en `data/fuentes/V.36.txt`.\n\n**Limitación de la fuente:** el volcado de V.36 desarrolla la criptografía, los certificados, la PKI y TLS, pero no contiene apartados específicos sobre el **sellado de tiempo** ni sobre el **DNI electrónico**, y tampoco el marco legal de la firma electrónica (Ley 59/2003 o eIDAS). Para no inventar, el tema no incluye esas materias y se limita a los contenidos que sí documenta la fuente.",
+          "table": {
+            "columns": [
+              "Dato de la ficha",
+              "Valor"
+            ],
+            "rows": [
+              [
+                "Tema",
+                "V.36 Criptografía y firma electrónica"
+              ],
+              [
+                "Bloque",
+                "V · Seguridad y administración electrónica"
+              ],
+              [
+                "Materias",
+                "Simétrica, asimétrica, hash, firma digital, X.509, PKI, CRL/OCSP y TLS"
+              ],
+              [
+                "Temas relacionados",
+                "V.34 Seguridad de la información; V.39 Administración electrónica"
+              ],
+              [
+                "Fuente",
+                "Tema 14.docx y Bloque 4 Actualizado 2026.docx"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "2. Índice de epígrafes",
+          "body": "El desarrollo del tema se organiza en los epígrafes del apartado 4:\n\n- **4.1.** La criptografía simétrica.\n- **4.2.** La criptografía asimétrica o de clave pública.\n- **4.3.** Las funciones hash y la integridad.\n- **4.4.** La firma digital.\n- **4.5.** Los certificados digitales X.509.\n- **4.6.** La infraestructura de clave pública (PKI).\n- **4.7.** TLS y HTTPS.\n- **4.8.** Buenas prácticas y errores frecuentes.\n\nCompletan el tema la tabla comparativa (apartado 5), el ejemplo práctico (6), las trampas de examen (7), el resumen para memorizar (8), los quince casos tipo test (9) y las fuentes citadas (10)."
+        },
+        {
+          "heading": "3. Introducción y contexto",
+          "body": "La criptografía es la técnica que permite proteger la información mediante algoritmos de cifrado: transforma un texto inteligible en otro ininteligible para quien no posee la clave. En las redes de comunicaciones proporciona las propiedades básicas de la seguridad: **confidencialidad**, **integridad**, **autenticación** y **no repudio**.\n\nEl tema se organiza en tres capas. Primero, los algoritmos: la criptografía **simétrica**, rápida y adecuada para cifrar grandes volúmenes, y la **asimétrica**, que resuelve el intercambio de claves y la firma. Segundo, los mecanismos de integridad y autenticación: las **funciones hash**, la **firma digital** y los **certificados**. Tercero, la infraestructura que hace todo eso utilizable a escala: la **PKI**, con sus autoridades de certificación y registro, las listas de revocación y los protocolos de validación, y **TLS**, que protege las comunicaciones web y de correo.\n\nEn la Administración, esta cadena es la base de la identificación y la firma electrónica: sin certificados válidos y sin mecanismos de revocación no se puede confiar en un documento firmado.",
+          "table": {
+            "columns": [
+              "Fuente",
+              "Qué aporta"
+            ],
+            "rows": [
+              [
+                "Tema 14.docx",
+                "Criptografía simétrica y asimétrica, hash, firma digital, certificados X.509 y PKI"
+              ],
+              [
+                "Bloque 4 Actualizado 2026.docx",
+                "Criptografía asimétrica y simétrica, algoritmos, TLS y protocolos seguros"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "4. Desarrollo por epígrafe",
+          "body": "**4.1. Criptografía simétrica.** Utiliza una **misma clave secreta** para cifrar y descifrar. Exige dos condiciones: que el algoritmo sea robusto (quien intercepte el mensaje no debe poder descifrarlo ni obtener la clave) y que la selección, el envío, el almacenamiento y el uso de la clave sean seguros. Los cifradores de **bloque** dividen el mensaje en bloques del mismo tamaño y los cifran con la misma clave. Los algoritmos principales son **DES** (bloques de 64 bits y clave de 56 bits), **3DES** (tres claves y tres ejecuciones, con clave efectiva de 168 bits y bloques de 64 bits) y **AES** (claves de 128, 192 o 256 bits y bloques de 128 bits). Su ventaja es la rapidez; su problema, la distribución segura de la clave.\n\n**4.2. Criptografía asimétrica o de clave pública.** Usa dos claves relacionadas: una **pública**, que se comparte, y una **privada**, que se mantiene en secreto. Lo cifrado con una se descifra con la otra, y los algoritmos se apoyan en problemas matemáticos difíciles. Se emplea para cifrar y descifrar mensajes, para intercambiar claves de sesión y para firmar digitalmente. Las familias principales son las basadas en la **factorización entera** (RSA, RW), en el **logaritmo discreto** (Diffie-Hellman) y en el **logaritmo elíptico** (DHE, DSAE, MQV y las variantes de curva elíptica). Es más lenta que la simétrica, por lo que en la práctica se combina: la asimétrica intercambia una clave de sesión y la simétrica cifra el grueso de los datos.\n\n**4.3. Funciones hash.** Una función hash toma datos de cualquier tamaño y devuelve una **huella** o resumen de tamaño fijo. Debe cumplir: salida de tamaño fijo, cálculo relativamente fácil, resistencia fuerte a colisiones (dos mensajes distintos no deben producir el mismo resumen), imposibilidad computacional de generar un mensaje con un resumen determinado y **unidireccionalidad** (no se puede recuperar la entrada desde el resumen). Proporcionan integridad: si el mensaje cambia, el resumen cambia. **MD5** procesa bloques de 512 bits y produce 128 bits; **SHA-1** procesa bloques de 512 bits y produce 160 bits; SHA-2 y SHA-3 son las alternativas más fuertes actuales.\n\n**4.4. La firma digital.** Es una transformación criptográfica que se añade a los datos y permite al receptor comprobar el emisor y la integridad del mensaje. Se basa en la criptografía de clave pública: para firmar se emplea la clave privada del firmante, mientras que la comprobación se realiza con su clave pública. Aporta **autenticación del origen**, **integridad** de los datos y **no repudio** en origen: el firmante no puede negar haber firmado. No es lo mismo que cifrar: firmar no oculta el contenido, lo autentica.\n\n**4.5. Certificados digitales X.509.** Un certificado digital es un documento que vincula una **clave pública** con una entidad (persona, organización o dispositivo). Para confiar en una clave pública sin conocer personalmente al titular se acude a una **tercera parte de confianza** (TTP) y, en concreto, a una **Autoridad de Certificación (AC)** que firma el certificado. El estándar **X.509** del ITU-T fija el formato: **version** (1, 2 o 3), **serialNumber** (único por AC), **signature** (algoritmo de firma), **issuer** (AC que lo firmó), **validity** (periodo de validez), **subject** (entidad asociada a la clave), **subjectPublicKeyInfo** (clave pública y algoritmo), identificadores únicos opcionales, **extensions** y la firma de la AC, que contiene el hash de los campos anteriores cifrado con su clave privada. X.509 es la base de SSL, TLS y S/MIME.\n\n**4.6. La infraestructura de clave pública (PKI).** Es el conjunto de componentes y políticas necesarios para crear, gestionar y revocar certificados digitales. Tiene cinco actores: **Autoridades de Certificación (CA)**, que emiten y revocan certificados; **Autoridades de Registro (RA)**, que verifican la identidad del solicitante; los **suscriptores** o usuarios certificados; los **clientes**, que comprueban la validez del certificado; y el **repositorio**, donde se almacenan los certificados. Sus funciones son la obtención, la **revocación** y la **validación**. La obtención se inicia con la solicitud a la RA, que verifica la identidad y pide la expedición a la CA, que almacena el certificado en el repositorio. La revocación anula la vigencia cuando hay sospecha de compromiso: la CA publica el certificado en una **CRL** (Lista de Certificados Revocados). La validación puede hacerse consultando las CRL, mediante **OCSP** (consulta en línea del estado del certificado) o delegando en un servidor **SCVP**.\n\n**4.7. TLS y HTTPS.** SSL y TLS son capas criptográficas que protegen las comunicaciones entre equipos. **SSL está obsoleto** (SSL 2.0 y 3.0 son inseguros) y **TLS es el estándar actual**, aunque se siga hablando de «SSL». TLS aporta cifrado (confidencialidad), integridad, autenticación del servidor (y opcionalmente del cliente) y protección frente a ataques de intermediario. Se usa en **HTTPS** (HTTP sobre TLS, puerto 443; HTTP sin cifrar usa el 80), en el correo (SMTP sobre TLS, IMAPS, POP3S y FTPS) y en DNS sobre TLS (DoT). En HTTPS el servidor presenta un certificado que el cliente valida contra las autoridades de confianza y contra el nombre del servidor.\n\n**4.8. Buenas prácticas y errores frecuentes.** La seguridad de la cadena depende de la gestión de claves: custodiar la clave privada, no reutilizarla y revocar el certificado si se compromete. Un certificado caducado, revocado o emitido a nombre de otro dominio debe rechazarse. No hay que confundir hash con cifrado (el hash no se descifra) ni firma con cifrado (la firma no oculta el mensaje). Tampoco debe usarse criptografía obsoleta (DES, MD5, SHA-1 o SSL) para nuevas implantaciones. En la práctica administrativa, la firma electrónica exige además comprobar la vigencia del certificado y el sello de tiempo, materias que el volcado de este tema no desarrolla.",
+          "table": {
+            "columns": [
+              "Epígrafe",
+              "Datos que hay que retener"
+            ],
+            "rows": [
+              [
+                "Simétrica",
+                "Una clave; DES (64/56), 3DES (clave efectiva 168) y AES (128, 192 o 256; bloque 128)"
+              ],
+              [
+                "Asimétrica",
+                "Clave pública y privada; RSA (factorización), Diffie-Hellman (logaritmo discreto), curvas elípticas"
+              ],
+              [
+                "Hash",
+                "Salida fija, unidireccional, resistente a colisiones; MD5 128 bits y SHA-1 160 bits"
+              ],
+              [
+                "Firma digital",
+                "Firma con clave privada, verifica con la pública; autenticación, integridad y no repudio"
+              ],
+              [
+                "X.509",
+                "version, serialNumber, signature, issuer, validity, subject, subjectPublicKeyInfo, extensions"
+              ],
+              [
+                "PKI",
+                "CA, RA, suscriptores, clientes y repositorio; obtención, revocación (CRL) y validación (OCSP)"
+              ],
+              [
+                "TLS",
+                "SSL obsoleto; TLS actual; HTTPS en 443; confidencialidad, integridad y autenticación"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "5. Tabla comparativa: criptografía simétrica y asimétrica",
+          "body": "La tabla resume la diferencia que más se pregunta: la simétrica usa una clave y es rápida; la asimétrica usa dos claves y resuelve el intercambio y la firma, pero es más lenta.",
+          "table": {
+            "columns": [
+              "Aspecto",
+              "Criptografía simétrica",
+              "Criptografía asimétrica"
+            ],
+            "rows": [
+              [
+                "Claves",
+                "Una clave secreta compartida",
+                "Par de claves: pública y privada"
+              ],
+              [
+                "Velocidad",
+                "Rápida y eficiente",
+                "Más lenta"
+              ],
+              [
+                "Uso principal",
+                "Cifrar grandes volúmenes de datos",
+                "Intercambiar claves, cifrar y firmar"
+              ],
+              [
+                "Distribución",
+                "Requiere un canal seguro para compartir la clave",
+                "La clave pública se distribuye abiertamente"
+              ],
+              [
+                "Ejemplos",
+                "DES, 3DES, AES, RC4, Blowfish",
+                "RSA, DSA, Diffie-Hellman, ECDSA"
+              ],
+              [
+                "Firma digital",
+                "No proporciona firma por sí sola",
+                "Permite firmar y verificar"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "6. Ejemplo práctico resuelto",
+          "body": "**Supuesto.** Un organismo quiere que sus empleados firmen electrónicamente documentos y que la sede electrónica use HTTPS. El responsable de sistemas debe explicar qué hay detrás de la firma y del candado del navegador.\n\n**Resolución.**\n\n- **Cifrado de la sesión:** cuando el navegador conecta con la sede por **HTTPS** (443), se negocia **TLS**. Para ello se usa criptografía **asimétrica** en el intercambio de claves y **simétrica** para cifrar el grueso de la comunicación, porque es mucho más rápida.\n- **Certificado del servidor:** el servidor presenta un certificado **X.509** firmado por una **Autoridad de Certificación**. El navegador comprueba la cadena de confianza, el nombre del dominio y el periodo de validez; si el certificado está caducado o revocado, muestra un aviso.\n- **Firma del documento:** el empleado dispone de un certificado con su clave pública y su clave privada. Al firmar, se calcula el **hash** del documento y se firma ese resumen con la **clave privada**; el receptor calcula el hash y verifica la firma con la **clave pública** del firmante. Así se comprueba que el documento no ha cambiado y quién lo firmó, y se obtiene **no repudio**.\n- **Revocación:** si el empleado pierde el soporte donde guarda su clave privada, se solicita la **revocación** del certificado; la AC lo publica en la **CRL** y los validadores lo rechazan aunque el documento se hubiera firmado antes de la pérdida.\n\n**Conclusión.** La firma electrónica es una cadena: hash, clave privada, certificado, cadena de confianza y validación del estado. Si falla un eslabón, la firma no es fiable.",
+          "table": {
+            "columns": [
+              "Necesidad",
+              "Mecanismo",
+              "Dato clave"
+            ],
+            "rows": [
+              [
+                "Proteger la web",
+                "HTTPS con TLS",
+                "Puerto 443 y certificado del servidor"
+              ],
+              [
+                "Comprobar el certificado",
+                "PKI y X.509",
+                "CA, validez y revocación"
+              ],
+              [
+                "Firmar un documento",
+                "Firma digital",
+                "Hash firmado con la clave privada"
+              ],
+              [
+                "Verificar la firma",
+                "Clave pública del firmante",
+                "Integridad, autenticación y no repudio"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "7. Trampas típicas de examen",
+          "body": "Las confusiones más frecuentes de este tema son estas:\n\n- **Confundir cifrado simétrico y asimétrico**: la simétrica usa una clave y es rápida; la asimétrica usa dos claves y es más lenta.\n- **Confundir hash con cifrado**: el hash no se descifra; es una huella unidireccional que sirve para integridad.\n- **Confundir firma con cifrado**: firmar no oculta el contenido; para firmar se usa la clave privada del emisor y para comprobarlo, su clave pública.\n- **Confundir las claves en la firma**: para firmar se usa la clave privada y para comprobar la firma, la pública; en el cifrado, la pública cifra y la privada descifra.\n- **Confundir CA y RA**: la CA emite y revoca certificados; la RA verifica la identidad del solicitante.\n- **Confundir CRL y OCSP**: la CRL es una lista publicada; OCSP es una consulta en línea del estado del certificado.\n- **Creer que SSL es lo actual**: SSL está obsoleto; el estándar actual es TLS.\n- **Confundir los tamaños**: DES usa bloque de 64 y clave de 56 bits; 3DES tiene clave efectiva de 168; AES admite 128, 192 y 256 bits con bloque de 128.\n- **Confundir MD5 y SHA-1**: MD5 produce 128 bits y SHA-1 160 bits; ambos se consideran débiles frente a SHA-2 y SHA-3.",
+          "table": {
+            "columns": [
+              "Confusión",
+              "Lo correcto"
+            ],
+            "rows": [
+              [
+                "Hash = cifrado",
+                "El hash no se descifra; es un resumen unidireccional"
+              ],
+              [
+                "Firma = cifrado",
+                "Firmar autentica e integra; no oculta el contenido"
+              ],
+              [
+                "CA = RA",
+                "La CA emite/revoca; la RA verifica la identidad"
+              ],
+              [
+                "SSL = actual",
+                "SSL está obsoleto; TLS es el estándar"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "8. Resumen para memorizar",
+          "body": "**Simétrica.** Una clave secreta; cifradores de bloque; DES (64 bits de bloque y 56 de clave), 3DES (clave efectiva 168) y AES (128, 192 y 256 bits; bloque 128). Rápida, pero exige distribuir la clave de forma segura.\n\n**Asimétrica.** Clave pública y privada; RSA y RW (factorización), Diffie-Hellman (logaritmo discreto), curvas elípticas (DHE, DSAE, MQV). Usos: cifrar, intercambiar claves y firmar.\n\n**Hash.** Salida de tamaño fijo, fácil de calcular, resistente a colisiones, unidireccional; MD5 128 bits, SHA-1 160 bits, SHA-2 y SHA-3.\n\n**Firma digital.** Autenticación del origen, integridad y no repudio; firma con clave privada y verifica con clave pública.\n\n**Certificado X.509.** Vincula una clave pública a una entidad; campos: version, serialNumber, signature, issuer, validity, subject, subjectPublicKeyInfo, extensions y firma de la CA.\n\n**PKI.** CA, RA, suscriptores, clientes y repositorio; obtención, revocación (CRL) y validación (OCSP o SCVP).\n\n**TLS.** SSL obsoleto; TLS actual; HTTPS en 443; confidencialidad, integridad y autenticación; también en SMTP, IMAP, POP3, FTP y DNS."
+        },
+        {
+          "heading": "9. Casos tipo test comentados (15 preguntas)",
+          "body": "Los quince casos siguientes reproducen el estilo de pregunta del bloque V. Cada uno incluye la respuesta correcta y una explicación que recuerda el dato del temario; la referencia indica el epígrafe y la fuente donde está el contenido. Conviene contestarlos sin mirar la solución y revisar después solo los fallos."
+        },
+        {
+          "heading": "10. Fuentes citadas",
+          "body": "El tema se ha redactado a partir de `data/fuentes/V.36.txt`, que reúne el volcado de `Tema 14.docx` (criptografía, certificados, PKI y TLS) y de `Bloque 4 Actualizado 2026.docx` (criptografía simétrica y asimétrica, algoritmos y protocolos seguros). Las citas por apartado aparecen en la lista `sources` y en la referencia de cada caso tipo test. No se han copiado párrafos literales y no se han añadido datos que no figuren en esas fuentes; en particular, el volcado no desarrolla el sellado de tiempo, el DNI electrónico ni el marco legal de la firma electrónica, por lo que no se incluyen contenidos de esas materias."
+        }
+      ],
       "practiceSlug": "v-36"
     },
     "V.37": {
@@ -7074,6 +7364,221 @@
         "Aplicar las 72 horas para atender los derechos: los derechos se atienden en un mes y las 72 horas son para notificar una brecha."
       ],
       "reviewedAt": "2026-11-10",
+      "longSections": [
+        {
+          "heading": "1. Ficha oficial del tema",
+          "body": "**Tema:** V.37, «Protección de datos aplicada», del bloque V (Seguridad y administración electrónica) del temario común de informática C1. **Materias que cubre:** marco normativo (RGPD y LOPDGDD), consentimiento, bases jurídicas, categorías especiales de datos, derechos del interesado, responsable y encargado del tratamiento, derechos digitales, riesgos y protección de datos en el acceso a la información pública. **Relación con otros temas:** se apoya en V.34 (seguridad de la información) y V.36 (criptografía) y conecta con V.39 (administración electrónica) y con la Ley 19/2013 de transparencia. **Fuentes:** `Bloque 1 Actualizado 2026.docx`, volcado en `data/fuentes/V.37.txt`, con los textos del RGPD y de la LO 3/2018.\n\n**Limitación de la fuente:** el volcado de V.37 contiene los artículos del RGPD y de la LOPDGDD que se citan, pero no desarrolla los seis principios del tratamiento, la figura del delegado de protección de datos (DPO), las medidas de seguridad del artículo 32, el régimen de brechas ni el capítulo de transferencias internacionales. Para no inventar, esas materias no se desarrollan aquí.",
+          "table": {
+            "columns": [
+              "Dato de la ficha",
+              "Valor"
+            ],
+            "rows": [
+              [
+                "Tema",
+                "V.37 Protección de datos aplicada"
+              ],
+              [
+                "Bloque",
+                "V · Seguridad y administración electrónica"
+              ],
+              [
+                "Materias",
+                "RGPD, LOPDGDD, consentimiento, derechos, responsable/encargado y derechos digitales"
+              ],
+              [
+                "Temas relacionados",
+                "V.34 Seguridad; V.36 Criptografía; V.39 Administración electrónica"
+              ],
+              [
+                "Fuente",
+                "Bloque 1 Actualizado 2026.docx (RGPD y LO 3/2018)"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "2. Índice de epígrafes",
+          "body": "El desarrollo del tema se organiza en los epígrafes del apartado 4:\n\n- **4.1.** Marco normativo: RGPD y LOPDGDD.\n- **4.2.** El consentimiento.\n- **4.3.** Bases jurídicas y categorías especiales de datos.\n- **4.4.** Los derechos del interesado.\n- **4.5.** Responsable y encargado del tratamiento.\n- **4.6.** Los derechos digitales.\n- **4.7.** Riesgos y protección de datos en la Administración.\n- **4.8.** Transparencia y acceso a la información pública.\n\nCompletan el tema la tabla de derechos (apartado 5), el ejemplo práctico (6), las trampas de examen (7), el resumen para memorizar (8), los quince casos tipo test (9) y las fuentes citadas (10)."
+        },
+        {
+          "heading": "3. Introducción y contexto",
+          "body": "La protección de datos es el conjunto de reglas que permiten tratar datos personales —cualquier información sobre una persona física identificada o identificable— sin vulnerar los derechos y libertades de las personas. En la Unión Europea la norma de referencia es el **Reglamento (UE) 2016/679 (RGPD)**, directamente aplicable, y en España se completa con la **Ley Orgánica 3/2018 (LOPDGDD)**, que adapta el régimen y regula los **derechos digitales**.\n\nEl RGPD se apoya en el binomio **responsable del tratamiento** (quien decide los fines y medios) y **encargado** (quien trata datos por cuenta del responsable), y reconoce al interesado un catálogo de derechos. La LOPDGDD precisa cuestiones como la edad para el consentimiento de los menores, las bases jurídicas en el sector público y los derechos digitales de la ciudadanía.\n\nPara un técnico de la Administración, la protección de datos aparece en la gestión de expedientes, en las solicitudes de acceso a información pública, en la videovigilancia, en los dispositivos de trabajo y en cualquier tratamiento que utilice datos de los ciudadanos.",
+          "table": {
+            "columns": [
+              "Fuente",
+              "Qué aporta"
+            ],
+            "rows": [
+              [
+                "data/fuentes/V.37.txt",
+                "Volcado con los artículos del RGPD, la LO 3/2018 y la Ley 19/2013"
+              ],
+              [
+                "Bloque 1 Actualizado 2026.docx",
+                "Tema 7 (LOPDGDD y RGPD) y Ley 19/2013 de transparencia"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "4. Desarrollo por epígrafe",
+          "body": "**4.1. Marco normativo.** El **RGPD** (Reglamento (UE) 2016/679) es la norma europea de protección de datos y se aplica directamente. La **LOPDGDD** (Ley Orgánica 3/2018, de 5 de diciembre) lo desarrolla en España, regula los derechos digitales y concreta el régimen de los tratamientos públicos. Ambas normas se relacionan con la **Ley 19/2013**, de transparencia, acceso a la información pública y buen gobierno, cuyo artículo 15 regula el acceso a información que contiene datos personales. La LOPDGDD establece además el **deber de confidencialidad**: responsables, encargados y todas las personas que intervengan en cualquier fase del tratamiento están sujetos a él, y esa obligación se mantiene incluso después de terminar la relación con el responsable o encargado.\n\n**4.2. El consentimiento.** Es la manifestación de voluntad que debe ser **libre, específica, informada e inequívoca**, expresada por el afectado mediante una declaración o una acción afirmativa clara, para aceptar el tratamiento de sus datos. El RGPD exige que el responsable pueda **demostrar** que el interesado consintió, que el consentimiento se distinga de otros asuntos en las declaraciones escritas y que pueda **retirarse** en cualquier momento, retirada que no afecta a la licitud del tratamiento anterior. En los menores, la LOPDGDD fija la edad de **catorce años** para consentir por sí mismos; el RGPD establece para los servicios de la sociedad de la información la edad de **dieciséis años**, salvo que el Estado miembro la rebaje por ley hasta un mínimo de trece, y los titulares de la patria potestad pueden ejercitar los derechos de los menores de catorce.\n\n**4.3. Bases jurídicas y categorías especiales.** El tratamiento necesita una base jurídica. La LOPDGDD permite basarlo en el cumplimiento de una **obligación legal** cuando una norma con rango de ley lo prevea, y en el cumplimiento de una **misión en interés público o en el ejercicio de poderes públicos** cuando derive de una competencia atribuida por norma con rango de ley. El RGPD prohíbe con carácter general tratar **categorías especiales** de datos: origen étnico o racial, opiniones políticas, convicciones religiosas o filosóficas, afiliación sindical, datos genéticos, biométricos dirigidos a identificar de forma unívoca, datos relativos a la salud, la vida sexual o la orientación sexual. La prohibición se levanta en supuestos tasados: consentimiento **explícito**, obligaciones laborales o de seguridad social con garantías, intereses vitales, actividades de fundaciones y asociaciones sin ánimo de lucro, datos hechos manifiestamente públicos, ejercicio de reclamaciones, interés público esencial, medicina preventiva o laboral y salud pública, y fines de archivo, investigación o estadística con garantías.\n\n**4.4. Los derechos del interesado.** El RGPD reconoce los derechos de acceso, rectificación, supresión, limitación, portabilidad y oposición, además del derecho a no ser objeto de decisiones individuales automatizadas. La LOPDGDD regula su ejercicio: pueden ejercerse directamente o por representante legal o voluntario; el responsable debe informar de los medios disponibles y no puede denegar la solicitud por el medio elegido; la prueba de haber respondido recae en el responsable; el encargado puede tramitar las solicitudes por cuenta del responsable si se establece en el contrato; y las actuaciones son **gratuitas**, sin perjuicio de los supuestos de reiteración. El **derecho de acceso** se entiende otorgado si el responsable facilita un sistema de acceso remoto, directo y seguro que garantice el acceso a la totalidad de los datos. En la **rectificación**, el afectado debe indicar qué datos y qué corrección procede, con la documentación justificativa cuando sea precisa. La **portabilidad** permite recibir los datos en un formato estructurado, de uso común y lectura mecánica y transmitirlos a otro responsable, incluso directamente cuando sea técnicamente posible. El derecho frente a **decisiones automatizadas**, incluida la elaboración de perfiles, impide someter al interesado a una decisión que produzca efectos jurídicos o le afecte significativamente, salvo las excepciones previstas.\n\n**4.5. Responsable y encargado.** El **responsable** decide los fines y medios del tratamiento y tiene más jerarquía que el **encargado**, que trata los datos por cuenta de aquel. La LOPDGDD obliga a ambos a tener en cuenta los mayores riesgos del tratamiento: discriminación, usurpación de identidad o fraude, pérdidas financieras, daño a la reputación, pérdida de confidencialidad, reversión no autorizada de la seudonimización, privación de derechos y control sobre los datos, evaluación de aspectos personales o elaboración de perfiles, tratamiento de colectivos vulnerables (menores y personas con discapacidad), tratamientos masivos y transferencias habituales a terceros Estados sin nivel adecuado de protección.\n\n**4.6. Los derechos digitales.** La LOPDGDD incorpora un catálogo de derechos digitales: neutralidad de Internet, acceso universal a Internet, seguridad digital, educación digital, protección de los menores en Internet, rectificación en Internet, actualización de informaciones en medios digitales, intimidad y uso de dispositivos digitales en el ámbito laboral, desconexión digital, intimidad frente a videovigilancia y grabación de sonido en el trabajo, intimidad ante sistemas de geolocalización laboral, derechos digitales en la negociación colectiva, protección de datos de los menores, derecho al olvido en búsquedas y en redes sociales, portabilidad en servicios de redes sociales y testamento digital. En el ámbito laboral, el tratamiento de imágenes por videovigilancia exige informar previamente y de forma expresa, clara y concisa a los trabajadores o empleados públicos y, en su caso, a sus representantes.\n\n**4.7. Riesgos y protección en la Administración.** Los riesgos del artículo 28 de la LOPDGDD sirven de guía para priorizar medidas: los tratamientos masivos, los perfiles, los colectivos vulnerables, la pérdida de confidencialidad y las transferencias internacionales sin nivel adecuado son los supuestos que más atención requieren. La fuente no desarrolla las medidas técnicas del artículo 32 del RGPD, el régimen de brechas ni las garantías de las transferencias internacionales, por lo que este tema no inventa su contenido; se limita a identificarlos como materias que hay que estudiar aparte.\n\n**4.8. Transparencia y acceso a la información pública.** La Ley 19/2013 reconoce el derecho de acceso a la información pública, pero el artículo 15 protege los datos personales. Si la información contiene datos que revelan **ideología, afiliación sindical, religión o creencias**, el acceso solo se autoriza con **consentimiento expreso y por escrito** del afectado, salvo que los hubiera hecho manifiestamente públicos antes de la solicitud. Si contiene origen racial, salud, vida sexual, datos genéticos o biométricos, o datos de infracciones penales o administrativas no sancionadas con amonestación pública, se exige consentimiento expreso o una norma con rango de ley. Para los datos meramente identificativos se concede el acceso salvo que prevalezca la protección de datos u otros derechos; para el resto se hace una **ponderación razonada** entre el interés público y los derechos de los afectados, con criterios como el tiempo transcurrido, la condición de investigador, la naturaleza identificativa de los datos y la especial protección de la intimidad, la seguridad o los menores. No se aplica esa protección si el acceso se realiza con **disociación** de los datos, y el tratamiento posterior queda sujeto a la normativa de protección de datos.",
+          "table": {
+            "columns": [
+              "Epígrafe",
+              "Datos que hay que retener"
+            ],
+            "rows": [
+              [
+                "Normas",
+                "RGPD (UE) 2016/679 y LO 3/2018 (LOPDGDD); Ley 19/2013 en el acceso"
+              ],
+              [
+                "Consentimiento",
+                "Libre, específico, informado e inequívoco; demostrable y retirable"
+              ],
+              [
+                "Menores",
+                "14 años en la LOPDGDD; 16 en el RGPD (rebajable a 13)"
+              ],
+              [
+                "Especiales",
+                "Origen étnico, política, religión, sindicación, genética, biometría, salud, vida sexual"
+              ],
+              [
+                "Derechos",
+                "Acceso, rectificación, supresión, limitación, portabilidad, oposición y decisiones automatizadas"
+              ],
+              [
+                "Responsable",
+                "Decide fines y medios; el encargado trata por su cuenta; confidencialidad permanente"
+              ],
+              [
+                "Digitales",
+                "Neutralidad, acceso, seguridad, desconexión, videovigilancia, olvido, portabilidad y testamento"
+              ],
+              [
+                "Transparencia",
+                "Datos especialmente protegidos: consentimiento expreso; resto: ponderación o disociación"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "5. Tabla de derechos del interesado",
+          "body": "La tabla resume los derechos que el temario cita y el contenido esencial que hay que recordar en cada uno.",
+          "table": {
+            "columns": [
+              "Derecho",
+              "Contenido esencial"
+            ],
+            "rows": [
+              [
+                "Acceso",
+                "Conocer si se tratan sus datos y obtener una copia; puede facilitarse por acceso remoto, directo y seguro"
+              ],
+              [
+                "Rectificación",
+                "Corregir datos inexactos o completar los incompletos, indicando qué datos y qué corrección"
+              ],
+              [
+                "Supresión",
+                "Eliminar los datos cuando ya no sean necesarios o el tratamiento sea ilícito"
+              ],
+              [
+                "Limitación",
+                "Conservar los datos sin tratarlos en los supuestos previstos"
+              ],
+              [
+                "Portabilidad",
+                "Recibir los datos en formato estructurado, de uso común y lectura mecánica y transmitirlos a otro responsable"
+              ],
+              [
+                "Oposición",
+                "Oponerse al tratamiento por motivos personales en los supuestos legalmente previstos"
+              ],
+              [
+                "Decisiones automatizadas",
+                "No ser objeto de una decisión basada únicamente en el tratamiento automatizado que produzca efectos significativos"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "6. Ejemplo práctico resuelto",
+          "body": "**Supuesto.** Un ciudadano solicita a un ayuntamiento copia de un expediente de subvenciones en el que figuran nombres, DNIs, datos de salud de varios solicitantes y la afiliación sindical de una empleada municipal. Además, uno de los solicitantes pide saber qué datos suyos tiene el ayuntamiento.\n\n**Resolución.**\n\n- **Solicitud de acceso a información pública:** se aplica el artículo 15 de la Ley 19/2013. Los datos de **salud** y de **afiliación sindical** son categorías especialmente protegidas: solo se autoriza el acceso con **consentimiento expreso** de los afectados (por escrito en el caso de ideología, religión o creencias) o con una norma con rango de ley que lo ampare. Si no hay consentimiento, se puede entregar la información **disociada**, sin datos que permitan identificar a las personas.\n- **Datos meramente identificativos:** para nombres y DNIs vinculados al funcionamiento del órgano se concede el acceso salvo que prevalezca la protección de datos; si no son meramente identificativos, se hace una **ponderación razonada** entre interés público y derechos de los afectados, considerando la intimidad, la seguridad y la posible afectación a menores.\n- **Derecho de acceso del interesado:** el solicitante puede ejercer su derecho de acceso ante el **responsable** del tratamiento, que debe informarle de los medios disponibles y responder de forma gratuita, sin que la solicitud pueda denegarse por el medio elegido. Si el ayuntamiento ofrece un sistema de acceso remoto, directo y seguro a todos sus datos, el derecho se entiende otorgado.\n- **Confidencialidad:** el personal que tramita el expediente está sujeto al deber de confidencialidad, que se mantiene incluso después de terminar su relación con el ayuntamiento.\n\n**Conclusión.** La protección de datos no impide el acceso a la información pública: obliga a aplicar consentimiento, ponderación o disociación, y a respetar los derechos y la confidencialidad de los afectados.",
+          "table": {
+            "columns": [
+              "Situación",
+              "Regla aplicable",
+              "Resultado"
+            ],
+            "rows": [
+              [
+                "Datos de salud o sindicación",
+                "Art. 15 Ley 19/2013",
+                "Consentimiento expreso o norma con rango de ley"
+              ],
+              [
+                "Datos identificativos",
+                "Art. 15.2",
+                "Acceso salvo que prevalezca la protección de datos"
+              ],
+              [
+                "Resto de datos personales",
+                "Art. 15.3",
+                "Ponderación razonada"
+              ],
+              [
+                "Derecho de acceso del titular",
+                "RGPD y LOPDGDD",
+                "Respuesta gratuita y acceso remoto seguro"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "7. Trampas típicas de examen",
+          "body": "Las confusiones más frecuentes de este tema son estas:\n\n- **Confundir RGPD y LOPDGDD**: el RGPD es el reglamento europeo directamente aplicable; la LOPDGDD es la ley orgánica que lo desarrolla en España.\n- **Confundir las edades de los menores**: la LOPDGDD fija 14 años para el consentimiento; el RGPD fija 16 para los servicios de la sociedad de la información, rebajable a 13 por ley nacional.\n- **Confundir responsable y encargado**: el responsable decide fines y medios; el encargado trata por cuenta del responsable y no tiene su jerarquía.\n- **Creer que el consentimiento lo es todo**: hay otras bases jurídicas, como la obligación legal o el interés público con norma con rango de ley.\n- **Confundir derechos**: la portabilidad no es lo mismo que el acceso; la supresión no es la limitación; las decisiones automatizadas tienen su propio derecho.\n- **Confundir el derecho de acceso del interesado con el acceso a la información pública**: el primero se ejerce ante el responsable del tratamiento; el segundo, ante la Administración que posee la información, con las reglas de la Ley 19/2013.\n- **Creer que la protección de datos impide siempre el acceso público**: se puede acceder con consentimiento, con norma habilitante, con ponderación o con disociación.\n- **Olvidar el deber de confidencialidad**: se mantiene después de terminar la relación con el responsable o encargado.\n- **Confundir los derechos digitales con los derechos fundamentales**: los derechos digitales son los que la LOPDGDD reconoce en el entorno digital (neutralidad, desconexión, olvido, testamento digital…).",
+          "table": {
+            "columns": [
+              "Confusión",
+              "Lo correcto"
+            ],
+            "rows": [
+              [
+                "RGPD = LOPDGDD",
+                "Reglamento europeo frente a ley orgánica de desarrollo"
+              ],
+              [
+                "14 años = 16 años",
+                "14 en la LOPDGDD; 16 en el RGPD (rebajable a 13)"
+              ],
+              [
+                "Responsable = encargado",
+                "El responsable decide fines y medios; el encargado trata por su cuenta"
+              ],
+              [
+                "Acceso del interesado = acceso público",
+                "Uno es derecho de protección de datos; el otro, acceso a información pública"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "8. Resumen para memorizar",
+          "body": "**Normas.** RGPD (Reglamento (UE) 2016/679) y LOPDGDD (LO 3/2018); la Ley 19/2013 regula el acceso a la información pública y su artículo 15 protege los datos personales.\n\n**Consentimiento.** Libre, específico, informado e inequívoco; demostrable, separable de otros asuntos y retirable; 14 años en la LOPDGDD y 16 en el RGPD (rebajable a 13).\n\n**Bases y especiales.** Obligación legal o interés público con norma con rango de ley; categorías especiales prohibidas salvo consentimiento explícito, salud, interés público, fines de archivo o investigación y otros supuestos tasados.\n\n**Derechos.** Acceso, rectificación, supresión, limitación, portabilidad, oposición y decisiones automatizadas; ejercicio gratuito, por el titular o representante, con prueba a cargo del responsable; acceso remoto directo y seguro.\n\n**Responsable y encargado.** El responsable decide fines y medios; el encargado trata por su cuenta; confidencialidad permanente; riesgos del artículo 28 (perfiles, colectivos vulnerables, tratamientos masivos, transferencias sin nivel adecuado).\n\n**Derechos digitales.** Neutralidad, acceso universal, seguridad digital, educación digital, menores, rectificación, desconexión, videovigilancia, geolocalización, olvido, portabilidad en redes sociales y testamento digital.\n\n**Transparencia.** Datos especialmente protegidos: consentimiento expreso (por escrito para ideología, religión o creencias); datos identificativos: acceso salvo ponderación; resto: ponderación razonada; disociación como alternativa."
+        },
+        {
+          "heading": "9. Casos tipo test comentados (15 preguntas)",
+          "body": "Los quince casos siguientes reproducen el estilo de pregunta del bloque V. Cada uno incluye la respuesta correcta y una explicación que recuerda el dato del temario; la referencia indica el epígrafe y la fuente donde está el contenido. Conviene contestarlos sin mirar la solución y revisar después solo los fallos."
+        },
+        {
+          "heading": "10. Fuentes citadas",
+          "body": "El tema se ha redactado a partir de `data/fuentes/V.37.txt`, que reúne el volcado de `Bloque 1 Actualizado 2026.docx` con el Tema 7 (LO 3/2018 y RGPD) y la Ley 19/2013 de transparencia. Las citas por apartado aparecen en la lista `sources` y en la referencia de cada caso tipo test. No se han copiado párrafos literales y no se han añadido datos que no figuren en esas fuentes; el volcado no desarrolla los principios del tratamiento, el DPO, las medidas de seguridad, las brechas ni las transferencias internacionales, por lo que no se incluyen contenidos de esas materias."
+        }
+      ],
       "practiceSlug": "v-37"
     },
     "V.38": {
@@ -7164,6 +7669,87 @@
         "Confundir la fase de erradicación (eliminar la causa) con la de recuperación (restaurar el servicio)."
       ],
       "reviewedAt": "2026-11-10",
+      "longSections": [
+        {
+          "heading": "1. Ficha oficial del tema",
+          "body": "**Tema V.38 — Ciberseguridad.** Bloque V del temario común C1. Se estudia con tres fuentes: **Tema 14** (seguridad y protección en redes: ataques, criptografía, cortafuegos, IDS/IPS y VPN), **Bloque 4 Actualizado 2026** (TEMA 5: conceptos de seguridad, actores y DICAT; TEMA 9: seguridad en redes y VPN) y la **ficha publicada del tema V.38** (amenazas, defensa en profundidad, SIEM/SOC, respuesta a incidentes y marco legal). Su núcleo es: **conceptos** (activo, amenaza, vulnerabilidad, riesgo inherente y residual, impacto y política de seguridad); **actores** de la amenaza; **ataques y malware** (phishing, ransomware, DoS/DDoS, interceptación, suplantación y ataques de acceso); **criptografía y autenticación** (simétrica, asimétrica, hash, firma digital y certificados); **defensa perimetral** (DMZ, cortafuegos, proxies); **detección** (IDS/IPS, honeypots, SIEM y SOC); **defensa en profundidad** y protección del puesto; **VPN**; **respuesta a incidentes** y **marco legal** (RGPD, ENS y NIS2). Conecta con el tema **V.35** (ENS) y con V.37 (protección de datos aplicada)."
+        },
+        {
+          "heading": "2. Índice de epígrafes",
+          "body": "El tema se estudia en este orden: (1) conceptos de seguridad: activo, amenaza, vulnerabilidad, riesgo, impacto y política de seguridad; (2) modelo AAA y propiedades DICAT; (3) tipos de atacantes; (4) clasificación de los ataques (activos y pasivos) y categorías habituales (reconocimiento, acceso y denegación de servicio); (5) amenazas y malware: phishing, ransomware y DoS/DDoS; (6) criptografía: simétrica, asimétrica y funciones hash; firma digital y certificados; (7) seguridad perimetral: DMZ, cortafuegos y proxies; (8) detección y monitorización: IDS/IPS, honeypots, SIEM y SOC; (9) defensa en profundidad y protección del puesto de trabajo; (10) VPN y acceso remoto; (11) respuesta a incidentes y marco legal; (12) concienciación. Para el test pesan los **conceptos**, **IDS frente a IPS**, los **tipos de cortafuegos**, **DoS/DDoS**, **cifrado simétrico/asimétrico**, **firma digital** y el **ciclo de respuesta**."
+        },
+        {
+          "heading": "3. Introducción y contexto",
+          "body": "La **ciberseguridad** protege sistemas, redes y datos frente a ataques y errores. No es un producto que se instala, sino un proceso de gestión del riesgo: se identifican los activos, se valoran las amenazas y las vulnerabilidades, se decide qué riesgo se acepta, se reduce o se transfiere y se comprueba que las medidas funcionan.\n\nEl tema se ordena de lo general a lo concreto. Primero, los **conceptos** que se preguntan con precisión (amenaza, vulnerabilidad, riesgo inherente y residual) y las **propiedades** que se protegen. Después, quién ataca y con qué **técnicas**. A continuación, los **mecanismos** de defensa: criptografía, cortafuegos, detección y defensa en profundidad. Y al final, qué se hace cuando el incidente ya ha ocurrido: **respuesta**, notificación y aprendizaje.\n\nEs un tema ligado a V.35 (ENS) y V.37 (protección de datos): aquí se estudian las técnicas y la gestión del riesgo; el ENS fija las medidas del sector público y el RGPD, la notificación de brechas."
+        },
+        {
+          "heading": "4. Desarrollo por epígrafe",
+          "body": "**4.1 Conceptos de seguridad (X.800).** La norma internacional **ITU-T X.800** ordena la seguridad en torno a varios elementos (Tema 14, 1.2): **ataque** a la seguridad es el asalto derivado de una amenaza inteligente para eludir los servicios de seguridad y violar la política; **vulnerabilidad** es el defecto o debilidad en el diseño, implementación, operación y mantenimiento que puede ser explotado; **amenaza** es la posibilidad de violación de la seguridad (un peligro posible que podría explotar una vulnerabilidad); **riesgo** es la probabilidad de que ocurra una amenaza ponderada con la magnitud del daño; y **política de seguridad** es el conjunto de reglas que dirige cómo el sistema proporciona servicios de seguridad. El Bloque 4 añade **activo** (componente susceptible de ser atacado), **impacto** (consecuencia de la materialización), **desastre o contingencia** (interrupción de la capacidad de acceso), **riesgo inherente** (sin controles) y **riesgo residual** (el que queda tras el tratamiento). La seguridad se planifica antes (prevención), durante (detección) y después (recuperación).\n\n**4.2 Propiedades y modelo AAA.** Los ataques afectan a las propiedades **DICAT**: disponibilidad (DoS y DDoS), integridad (modificación o tampering), confidencialidad (interceptación o eavesdropping), autenticidad (usurpación de identidad y phishing) y trazabilidad (repudio y enmascaramiento). El modelo **AAA** estructura el control de acceso en **autenticación** (verificar la identidad), **autorización** (definir permisos) y **auditoría** (registrar las acciones).\n\n**4.3 Tipos de atacantes.** El material distingue al **hacker** (habilidades avanzadas, puede tener buenas o malas intenciones), el **cracker** (rompe sistemas de seguridad), el **lamer o script kiddie** (usa herramientas de otros sin entenderlas), el **phreaker** (manipula el sistema telefónico), el **defacer** (cambia la apariencia de sitios web), los **white hat** (hacker ético autorizado), **black hat** (fines delictivos) y **grey hat** (entre ambos, fuera de la legalidad), el **insider** (empleado o colaborador que abusa de sus privilegios) y el **hacktivista** (motivaciones ideológicas o políticas).\n\n**4.4 Clasificación y categorías de ataque.** Según su naturaleza, hay ataques **activos** —suplantación (phishing), modificación de mensaje, repetición y denegación de servicio— y **pasivos** —observación del contenido y análisis del tráfico— (Tema 14, 1.3). Por su finalidad se agrupan en **reconocimiento** (sniffers, barridos de ping, escaneo de puertos con Nmap, búsquedas de información), **acceso** (ataques de contraseña por diccionario o fuerza bruta, explotación de la confianza, redirección de puerto, man in the middle y desbordamiento de buffer) y **denegación de servicio** (Death Ping, Smurf y TCP/SYN Flood).\n\n**4.5 Amenazas y malware.** La **amenaza lógica** agrupa todo tipo de **malware** y acciones orientadas a dañar un sistema. Las amenazas habituales de la ficha son el **malware y el ransomware** (cifran o roban datos y piden rescate), el **phishing y la ingeniería social** (engañan a las personas para obtener credenciales o datos), la **denegación de servicio** y la **interceptación** de comunicaciones. El **phishing** es un caso de suplantación: el atacante se hace pasar por una entidad legítima para que el usuario entregue información confidencial.\n\n**4.6 Criptografía y autenticación.** El **cifrado simétrico** usa una misma clave secreta para cifrar y descifrar; entre los cifradores de bloque destacan **DES** (bloques de 64 bits y clave de 56 bits), **3DES** (tres claves, 168 bits efectivos) y **AES** (claves de 128, 192 y 256 bits y bloques de 128). La **criptografía de clave pública** usa una clave privada y otra pública: permite cifrar y descifrar, intercambiar claves de sesión y firmar digitalmente (RSA, Diffie-Hellman y criptografía de curva elíptica). Las **funciones hash** (MD5, SHA-1, SHA-2 y SHA-3) producen un resumen de tamaño fijo y aportan integridad; MD5 genera 128 bits y SHA-1, 160 bits. La **firma digital** proporciona autenticación del origen, integridad y no repudio. El **certificado digital X.509** vincula una clave pública a una entidad; la **PKI** se apoya en una **Autoridad de Certificación** y en terceras partes de confianza, y X.509 se usa en SSL/TLS y S/MIME.\n\n**4.7 Seguridad perimetral.** La **DMZ** es una subred perimétrica entre la red externa y la interna donde se sitúan los servidores que prestan servicios al exterior (correo, web), protegidos por reglas del cortafuegos. Los **cortafuegos** hacen cumplir una política de control de acceso entre redes y son un punto único de paso donde se centralizan medidas y auditoría; según su nivel de análisis se distingue el **filtrado de paquetes estático** (analiza cada paquete aislado en capas 2, 3 y 4), el **filtrado dinámico o con inspección de estado** (sigue las conexiones establecidas en una tabla de estado) y los **cortafuegos de nivel de aplicación** (evalúan la capa 7 y permiten control por protocolo y contenido). Las arquitecturas perimetrales son **dual-homed host**, **screened host** y **screened subnet o DMZ** (dos cortafuegos con la DMZ en medio), la más utilizada. Los **proxies** actúan de intermediarios y permiten aplicar políticas por contenido, pero exigen configurar las aplicaciones y no cifran por sí mismos.\n\n**4.8 Detección y monitorización.** Un **IDS** detecta en tiempo real ataques o intentos de intrusión, pero no garantiza la seguridad: aporta información y alertas. Un **IPS** complementa al IDS y puede **bloquear** el ataque automáticamente. Los IDS pueden ser **basados en máquina** o **basados en red** (analizan un segmento y requieren port mirroring si se conectan a un switch). Los **honeypots** simulan servicios vulnerables para atraer y registrar la actividad del atacante. La ficha añade la **monitorización centralizada**: los registros de autenticación, red, endpoints y aplicaciones se centralizan con retención suficiente, y un **SIEM** correlaciona eventos y genera alertas que un **SOC** investiga.\n\n**4.9 Defensa en profundidad y puesto de trabajo.** No hay un control único que baste: la **defensa en profundidad** combina capas de **identidad** (MFA, mínimo privilegio y cuentas nominales), **parcheo y gestión de vulnerabilidades**, **segmentación** de red y cortafuegos, **protección de endpoints** (EDR, antivirus y antimalware), **copias de seguridad** y **concienciación**. En el puesto se despliegan antivirus y antimalware, listas blancas y negras, cortafuegos e IDS de host y control de acceso a la red (los dispositivos que no cumplen la política no acceden a los recursos).\n\n**4.10 Redes privadas virtuales (VPN).** Una **VPN** crea una red privada sobre una infraestructura pública manteniendo la seguridad mediante **tunelización cifrada** y autenticación; debe aportar confidencialidad, integridad y autenticación (y, según el contexto, no repudio). Se clasifican en **overlay** (circuitos seguros sobre el backbone del proveedor) y **peer-to-peer** (MPLS); por topología, **acceso remoto**, **site-to-site intranet** (sedes de la organización) y **site-to-site extranet** (clientes, proveedores y socios). **IPsec** protege la capa IP con **AH** y **ESP**, en modo **transporte** (carga útil) o **túnel** (paquete completo), con gestión de claves IKE/ISAKMP. **OpenVPN** es una solución de software libre basada en SSL/TLS y en claves precompartidas o certificados.\n\n**4.11 Respuesta a incidentes y marco legal.** El plan de respuesta sigue un ciclo (ficha V.38): **preparación** (roles, contactos, herramientas y pruebas), **detección y análisis** (confirmar el incidente y su alcance), **contención** (aislar los sistemas afectados sin destruir la evidencia), **erradicación** (eliminar la causa), **recuperación** (restaurar el servicio desde copias verificadas) y **lecciones aprendidas**. La evidencia debe preservarse para el análisis forense. En el plano legal, una brecha de datos personales puede exigir la notificación al supervisor en **72 horas** (RGPD); el **ENS** fija las medidas exigibles al sector público y la normativa de ciberseguridad (NIS2 y su transposición) amplía obligaciones a sectores críticos. La **concienciación** de los empleados, empezando por el phishing, es una capa más de defensa."
+        },
+        {
+          "heading": "5. Tabla comparativa: amenazas y controles",
+          "body": "Una misma amenaza puede tener varios controles y un control puede cubrir varias amenazas.",
+          "table": {
+            "columns": [
+              "Amenaza",
+              "Control principal",
+              "Control complementario"
+            ],
+            "rows": [
+              [
+                "Malware o ransomware",
+                "EDR y antivirus actualizados",
+                "Copias de seguridad aisladas y segmentación de red"
+              ],
+              [
+                "Phishing e ingeniería social",
+                "Concienciación y MFA",
+                "Filtrado de correo y verificación de remitentes"
+              ],
+              [
+                "Denegación de servicio (DoS/DDoS)",
+                "Cortafuegos y anti-DDoS",
+                "Monitorización de tráfico y planes de contingencia"
+              ],
+              [
+                "Man in the middle o interceptación",
+                "VPN y TLS",
+                "Segmentación y control de acceso"
+              ],
+              [
+                "Acceso no autorizado",
+                "Control de acceso y mínimo privilegio",
+                "IDS/IPS y auditoría (AAA)"
+              ],
+              [
+                "Fuga de información",
+                "Cifrado y gestión de identidades",
+                "SIEM y revisión de permisos"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "6. Ejemplo práctico resuelto",
+          "body": "**Supuesto.** Un ayuntamiento detecta que un servidor de ficheros está cifrando documentos y muestra una nota de rescate. El servicio de informática no sabe si el ataque ha llegado a otros equipos. Aplica el plan de respuesta y explica qué controles faltaban.\n\n**Resolución.** (1) **Contención:** se aísla el servidor de la red y se desactivan las cuentas comprometidas; no se apaga el equipo, para no destruir la evidencia. (2) **Detección y análisis:** se identifican el vector de entrada (por ejemplo, un correo de phishing o una vulnerabilidad sin parchear), el alcance y los sistemas afectados. (3) **Erradicación:** se elimina el malware y se corrigen el vector y las cuentas implicadas. (4) **Recuperación:** se restaura el servicio desde copias verificadas y aisladas, comprobando la integridad antes de devolverlo a producción. (5) **Notificación y lecciones:** si hay datos personales afectados, se valora la notificación en **72 horas** (RGPD); se documenta el incidente y se refuerzan los controles. (6) **Controles que faltaban:** segmentación de red para que el cifrado no se propague, copias aisladas y probadas, MFA y mínimo privilegio en las cuentas, parcheo al día, EDR en los endpoints y concienciación frente al phishing. El SIEM debería haber correlacionado las alertas de los equipos y del servidor de ficheros.\n\n**Conclusión.** La respuesta no empieza con el rescate: empieza con la preparación. Sin copias aisladas ni segmentación, la contención llega tarde; sin monitorización, el incidente se detecta cuando ya ha causado el daño."
+        },
+        {
+          "heading": "7. Trampas típicas de examen",
+          "body": "- Confundir **IDS** (detecta y alerta) con **IPS** (además bloquea automáticamente).\n- Confundir **amenaza** (posibilidad de violación), **vulnerabilidad** (debilidad explotable) y **riesgo** (probabilidad ponderada por el daño); el **riesgo inherente** es el que existe sin controles y el **residual** el que queda tras tratarlos.\n- Confundir **DoS** (una fuente) con **DDoS** (múltiples fuentes coordinadas).\n- Confundir ataque **activo** (suplantación, modificación, repetición, DoS) con **pasivo** (observación del contenido y análisis del tráfico).\n- Confundir **phishing** (suplantación para obtener datos) con **spoofing** (falsificación de identidad o dirección) y con **pharming**.\n- Creer que un **cortafuegos** protege de todo: no protege del tráfico que no pasa por él, ni de clientes vulnerables, ni sustituye a otros controles.\n- Confundir **filtrado de paquetes estático** (cada paquete aislado) con **inspección de estado** (sigue las conexiones) y con **cortafuegos de aplicación** (evalúan la capa 7).\n- Confundir **DMZ** (subred perimétrica para servicios expuestos) con la red interna.\n- Confundir **cifrado simétrico** (una clave secreta: DES, 3DES, AES) con **asimétrico** (clave pública y privada: RSA, Diffie-Hellman) y con el **hash** (resumen, no cifrado reversible).\n- Creer que **MD5** es seguro para firmas: produce 128 bits y está obsoleto frente a SHA-2/SHA-3.\n- Confundir **firma digital** (autenticación de origen, integridad y no repudio) con **certificado digital** (documento X.509 que vincula una clave pública a una entidad).\n- Confundir **VPN** (cifra el tráfico y crea una red privada sobre una pública) con **proxy** (intermediario que no cifra por sí mismo).\n- Creer que el **SIEM** sustituye al equipo de respuesta: correlaciona y alerta; la investigación y la contención son del SOC y de los responsables del sistema.\n- Pensar que un **backup** previene el ataque: previene la pérdida de datos y permite recuperar, pero no evita el incidente; debe estar aislado y probado."
+        },
+        {
+          "heading": "8. Resumen para memorizar",
+          "body": "**Lo que hay que memorizar.**\n\n1. **Conceptos**: activo, amenaza (posibilidad), vulnerabilidad (debilidad), riesgo (probabilidad × daño), impacto, desastre; riesgo inherente y residual; política de seguridad.\n2. **DICAT** (disponibilidad, integridad, confidencialidad, autenticidad y trazabilidad) y modelo **AAA** (autenticación, autorización y auditoría).\n3. **Atacantes**: hacker, cracker, lamer, phreaker, defacer, white/black/grey hat, insider y hacktivista.\n4. **Ataques**: activos (suplantación, modificación, repetición, DoS) y pasivos (observación y análisis de tráfico); categorías de reconocimiento, acceso (MITM, buffer overflow…) y DoS/DDoS (Smurf, SYN flood, Death Ping).\n5. **Malware y phishing**: ransomware cifra y pide rescate; phishing es suplantación para obtener credenciales; la ingeniería social ataca a las personas.\n6. **Criptografía**: simétrica (DES 56 bits, 3DES 168, AES 128/192/256), asimétrica (RSA, DH, ECC), hash (MD5 128, SHA-1 160, SHA-2/SHA-3); firma digital y certificados X.509/PKI.\n7. **Perímetro**: DMZ; cortafuegos de filtrado estático, con inspección de estado y de aplicación; arquitecturas dual-homed, screened host y screened subnet; proxies.\n8. **Detección**: IDS (detecta) frente a IPS (bloquea), basados en máquina o en red, honeypots, SIEM y SOC.\n9. **Defensa en profundidad**: MFA y mínimo privilegio, parcheo, segmentación, EDR, copias y concienciación.\n10. **VPN**: overlay/peer-to-peer, acceso remoto y site-to-site; IPsec con AH/ESP y modo transporte o túnel; OpenVPN sobre SSL/TLS. **Respuesta**: preparación, detección, contención, erradicación, recuperación y lecciones; RGPD 72 horas, ENS y NIS2."
+        },
+        {
+          "heading": "9. Casos tipo test comentados (15 preguntas)",
+          "body": "**1.** ¿Qué es una vulnerabilidad? **Respuesta: a)** Un defecto o debilidad del sistema que puede ser explotado (Tema 14, 1.2).\n\n**2.** ¿Qué es el riesgo? **Respuesta: b)** La probabilidad de que ocurra una amenaza ponderada con la magnitud del daño (Tema 14, 1.2).\n\n**3.** ¿Qué diferencia principal hay entre un IDS y un IPS? **Respuesta: c)** El IPS puede bloquear el ataque automáticamente; el IDS detecta y alerta (Tema 14, 1.1 y 2.4).\n\n**4.** ¿Cómo funciona un cortafuegos de filtrado de paquetes estático? **Respuesta: d)** Analiza cada paquete de forma aislada, sin examinar si forma parte de una conexión existente (Tema 14, 2.2).\n\n**5.** ¿Qué caracteriza a un cortafuegos con inspección de estado (SPI)? **Respuesta: a)** Sigue las conexiones establecidas y mantiene una tabla de estado (Tema 14, 2.2).\n\n**6.** ¿Qué es una DMZ? **Respuesta: b)** Una subred perimétrica entre la red externa e interna para los servicios expuestos (Tema 14, 2.3).\n\n**7.** El phishing es un ataque de suplantación que afecta principalmente a la… **Respuesta: c)** Autenticidad (Bloque 4, TEMA 5).\n\n**8.** ¿Qué diferencia al DDoS del DoS? **Respuesta: d)** El DDoS se origina en varias fuentes coordinadas (Tema 14, 1.4).\n\n**9.** ¿En qué consiste un ataque TCP/SYN Flood? **Respuesta: a)** En inundar con paquetes SYN para saturar las conexiones a medio abrir del servidor (Tema 14, 1.4).\n\n**10.** ¿Qué es el ransomware? **Respuesta: b)** Un malware que cifra o roba datos y pide un rescate (ficha V.38).\n\n**11.** ¿Qué busca el phishing? **Respuesta: c)** Engañar a las personas para obtener credenciales o datos confidenciales (ficha V.38 y Tema 14, 1.3).\n\n**12.** ¿Qué algoritmo de cifrado simétrico admite claves de 128, 192 y 256 bits? **Respuesta: d)** AES (Tema 14, 1.2).\n\n**13.** ¿Qué criptografía usa una clave pública y otra privada? **Respuesta: a)** La criptografía asimétrica, por ejemplo RSA (Tema 14, 1.2).\n\n**14.** ¿Qué proporciona la firma digital? **Respuesta: b)** Autenticación del origen, integridad y no repudio (Tema 14, 1.5).\n\n**15.** Tras detectar una brecha de datos personales, ¿en qué plazo debe notificarse al supervisor según el RGPD? **Respuesta: c)** En 72 horas (ficha V.38)."
+        },
+        {
+          "heading": "10. Fuentes citadas",
+          "body": "- **Tema 14.docx**, apartados 1 a 4: seguridad y protección en redes, X.800, clasificación y categorías de ataques, criptografía y autenticación, seguridad perimetral (DMZ, cortafuegos y proxies), IDS/IPS, VPN y seguridad en el puesto de usuario (DOCX, sin paginación fija).\n- **Bloque 4 Actualizado 2026.docx**, TEMA 5 (activos, amenazas, vulnerabilidades, riesgo, DICAT, modelo AAA y tipos de atacantes) y TEMA 9 (seguridad en redes y VPN).\n- **Ficha publicada del tema V.38** (`fixtures/demo/temas/V.38.json`): amenazas y malware, defensa en profundidad, detección con SIEM/SOC, respuesta a incidentes, marco legal (RGPD, ENS y NIS2) y ejemplo de ransomware.\n- **V.38.txt**: texto consolidado de las fuentes anteriores (uso interno de trabajo).\n\nNo se copian párrafos literales; se sintetiza y se ordena el contenido. Los detalles de SIEM/SOC, respuesta a incidentes y notificación de brechas proceden de la ficha publicada del tema, no del texto de redes."
+        }
+      ],
       "practiceSlug": "v-38"
     },
     "V.39": {
@@ -7483,6 +8069,77 @@
         "Usar el color como única forma de transmitir información o poner texto alternativo a imágenes decorativas."
       ],
       "reviewedAt": "2026-11-10",
+      "longSections": [
+        {
+          "heading": "1. Ficha oficial del tema",
+          "body": "**Tema V.40 — Accesibilidad y usabilidad.** Bloque V del temario común C1. Se estudia con la **ficha publicada del tema** y con las fuentes oficiales: la **W3C Web Accessibility Initiative** (WCAG 2.0, 2.1 y 2.2), el **Real Decreto 1112/2018** de accesibilidad de sitios web y aplicaciones del sector público y la norma armonizada **EN 301 549**. Su núcleo es: diferencia entre **accesibilidad y usabilidad**; principios **POUR** (perceptible, operable, comprensible y robusto); estructura y **niveles de las WCAG** (A, AA y AAA); **HTML semántico** y navegación por teclado; **formularios, contenido y multimedia** accesibles; **evaluación** automática, manual y con personas usuarias; **marco normativo** (Directiva 2016/2102, RD 1112/2018, EN 301 549, declaración de accesibilidad y mecanismos de queja) y **diseño para todas las personas**. Conecta con **V.39** (administración electrónica) y con el desarrollo web (IV.31)."
+        },
+        {
+          "heading": "2. Índice de epígrafes",
+          "body": "El tema se estudia en este orden: (1) accesibilidad y usabilidad: definición y diferencias; (2) perfiles afectados y productos de apoyo; (3) los principios POUR; (4) las WCAG: estructura, versiones y niveles de conformidad; (5) HTML semántico y estructura de la página; (6) navegación por teclado y foco; (7) formularios accesibles; (8) contenido, imágenes, tablas, multimedia y contraste; (9) evaluación y mejora continua; (10) marco normativo: Directiva 2016/2102, RD 1112/2018, EN 301 549, declaración de accesibilidad y quejas; (11) usabilidad y diseño para todas las personas. Para el test pesan los **principios POUR**, los **niveles A/AA/AAA**, el **texto alternativo**, la **navegación por teclado** y el **RD 1112/2018**."
+        },
+        {
+          "heading": "3. Introducción y contexto",
+          "body": "La **accesibilidad** garantiza que cualquier persona pueda usar un producto, incluidas las personas con discapacidad; la **usabilidad** mide la facilidad para lograr un objetivo con eficacia, eficiencia y satisfacción. No son lo mismo, pero se refuerzan: una web accesible suele ser más usable para todo el mundo.\n\nLa accesibilidad no es solo para personas ciegas: afecta a baja visión, sordera, movilidad reducida, dislexia, personas mayores o quien usa el móvil con mala cobertura. Los **productos de apoyo** (lectores de pantalla, ampliadores, conmutadores, teclados especiales) solo funcionan si el contenido está bien construido: un encabezado de verdad, un campo con su etiqueta, una imagen con texto alternativo.\n\nEn el sector público no es una opción: el **Real Decreto 1112/2018** exige que los sitios web y las aplicaciones móviles del sector público sean perceptibles, operables, comprensibles y robustos, y establece una **declaración de accesibilidad** y mecanismos de comunicación y queja. Por eso el tema une técnica (WCAG), evaluación y normativa."
+        },
+        {
+          "heading": "4. Desarrollo por epígrafe",
+          "body": "**4.1 Accesibilidad y usabilidad.** La **accesibilidad** elimina barreras para que cualquier persona pueda percibir, entender, navegar e interactuar con el producto; la **usabilidad** se ocupa de que la tarea se realice con **eficacia** (se logra el objetivo), **eficiencia** (con el menor esfuerzo) y **satisfacción**. Un producto puede ser usable para la mayoría y, a la vez, inaccesible para una persona con lector de pantalla; y una web accesible no es automáticamente usable. El objetivo es que ambas se refuercen, no que se sustituyan.\n\n**4.2 Perfiles y productos de apoyo.** La accesibilidad beneficia a personas con discapacidad visual, auditiva, motriz o cognitiva, a personas mayores y a cualquier usuario en situaciones límite (pantalla pequeña, mala cobertura, ruido). Los **lectores de pantalla**, los ampliadores, los conmutadores y los teclados especiales dependen de que el contenido tenga estructura y etiquetas: si todo son `div`, el lector no tiene mapa; si un icono no tiene texto alternativo, no se anuncia.\n\n**4.3 Principios POUR.** Las WCAG organizan sus requisitos en cuatro principios: **Perceptible** (la información y los componentes se presentan de forma que se puedan percibir: texto alternativo, contraste, subtítulos); **Operable** (se puede usar con teclado y otros dispositivos, sin trampas de foco); **Comprensible** (lenguaje claro, comportamiento predecible y errores explicados); y **Robusto** (funciona con tecnologías de apoyo y navegadores distintos). A partir de los principios se despliegan las **pautas** y, de ellas, los **criterios de conformidad** medibles.\n\n**4.4 Las WCAG: estructura y versiones.** Las **WCAG** son el estándar internacional del W3C para la accesibilidad del contenido web. WCAG 2.2 se organiza en **4 principios**, **13 pautas** y **criterios de conformidad** con **tres niveles** (A, AA y AAA); el nivel AA es el objetivo habitual de las administraciones. Las versiones son compatibles hacia atrás: WCAG 2.0 (2008) tiene 12 pautas; WCAG 2.1 (2018) añade una pauta y 17 criterios, y WCAG 2.2 (2023) añade 9 criterios y deja obsoleto un criterio (4.1.1 Parsing). No se cambian los criterios anteriores. WCAG 2.2 es norma ISO/IEC 40500 y la versión de 2026 de EN 301 549 se basa en WCAG 2.2.\n\n**4.5 HTML semántico y navegación.** El **HTML semántico** da estructura: encabezados jerárquicos, listas, tablas con cabeceras, formularios con `label` y regiones identificables. Un lector de pantalla navega por encabezados y regiones; si todo son `div`, no hay mapa. La **navegación por teclado** debe funcionar sin ratón: orden lógico, **foco visible**, enlaces con texto descriptivo y sin trampas de foco; los textos «haz clic aquí» no informan del destino. El **contraste** mínimo, el tamaño de texto y la posibilidad de ampliar sin perder contenido son requisitos básicos.\n\n**4.6 Formularios, contenido y multimedia.** Cada campo debe tener **etiqueta** asociada, instrucciones claras y mensajes de error que indiquen qué corregir y a qué campo se refieren. No se debe usar el **color como única forma** de transmitir información. Las imágenes necesitan **texto alternativo** si aportan información; las decorativas, `alt=\"\"`. Los vídeos necesitan **subtítulos** y, si es posible, audiodescripción. Las tablas deben tener **cabeceras** y no usarse para maquetar. El **lenguaje claro** reduce la carga cognitiva y ayuda a todas las personas, no solo a las que tienen una discapacidad.\n\n**4.7 Evaluación y mejora.** La evaluación combina **herramientas automáticas** (detectan parte de los problemas), **revisión manual** (teclado, lector de pantalla, contraste, zoom) y **pruebas con personas usuarias**. La accesibilidad es un proceso continuo: se integra en el diseño, el desarrollo y las pruebas, no se añade al final; un informe de auditoría sin corrección no mejora el producto. La norma **EN 301 549** armoniza los requisitos de accesibilidad de productos y servicios TIC en la Unión Europea.\n\n**4.8 Marco normativo.** La **Directiva (UE) 2016/2102** exige que los sitios web y aplicaciones móviles del sector público cumplan requisitos comunes de accesibilidad. En España se transpone por el **Real Decreto 1112/2018**, que se aplica a la Administración General del Estado, las comunidades autónomas, las entidades locales, el sector público institucional y la Administración de Justicia. El real decreto exige que los contenidos sean **perceptibles, operables, comprensibles y robustos**, presume la conformidad con las normas armonizadas (EN 301 549) y regula la **declaración de accesibilidad** (actualizada al menos una vez al año y publicada con un enlace denominado «Accesibilidad»), los mecanismos de comunicación, las quejas y reclamaciones (con plazos de **20 días hábiles** para responder y **2 meses** para la reclamación, y silencio desestimatorio), y la **carga desproporcionada** como excepción motivada y limitada. Algunos de sus apartados fueron anulados por el Tribunal Constitucional por invadir competencias autonómicas, aunque el marco de requisitos y declaración se mantiene.\n\n**4.9 Usabilidad y diseño para todas las personas.** La usabilidad se evalúa con **pruebas de usuario** y **evaluación heurística**: se observan tareas reales, se miden errores y tiempos y se pregunta por la satisfacción. El **diseño para todas las personas** busca que el producto lo use el mayor número posible de personas sin adaptaciones especiales: no se diseña para el «usuario medio», sino para la diversidad real. Accesibilidad y usabilidad comparten métodos (pruebas con personas) y objetivos (que la tarea se complete), y ambas deben incorporarse desde el inicio del proyecto."
+        },
+        {
+          "heading": "5. Tabla comparativa: los principios POUR",
+          "body": "Una forma rápida de no confundir los principios es asociar cada uno a una pregunta y a un ejemplo concreto.",
+          "table": {
+            "columns": [
+              "Principio",
+              "Qué exige",
+              "Ejemplo"
+            ],
+            "rows": [
+              [
+                "Perceptible",
+                "Que la información se pueda percibir",
+                "Texto alternativo, subtítulos y contraste suficiente"
+              ],
+              [
+                "Operable",
+                "Que se pueda usar con distintos dispositivos",
+                "Navegación por teclado y foco visible, sin trampas"
+              ],
+              [
+                "Comprensible",
+                "Que el funcionamiento y el lenguaje sean claros",
+                "Mensajes de error que explican cómo corregir"
+              ],
+              [
+                "Robusto",
+                "Que funcione con tecnologías de apoyo y navegadores distintos",
+                "HTML semántico interpretable por lectores de pantalla"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "6. Ejemplo práctico resuelto",
+          "body": "**Supuesto.** Un ayuntamiento publica un formulario de cita previa que solo funciona con ratón y usa iconos sin texto. Los usuarios con lector de pantalla no pueden completarlo. Propón la corrección y explica cómo comprobarla.\n\n**Resolución.** (1) **Perceptible:** se sustituyen los iconos por controles con **etiqueta** y texto alternativo; las imágenes decorativas pasan a `alt=\"\"`; se revisa el **contraste** y el tamaño de texto. (2) **Operable:** se garantiza la **navegación por teclado** con orden lógico y **foco visible**; se eliminan las trampas de foco y se revisan los enlaces para que su texto describa el destino. (3) **Comprensible:** se añaden mensajes de error claros asociados a cada campo y se redactan instrucciones con lenguaje sencillo. (4) **Robusto:** se usa **HTML semántico** (etiquetas, encabezados y regiones) para que el lector de pantalla interprete el formulario. (5) **Evaluación:** se pasa una herramienta automática, se revisa manualmente con teclado, lector de pantalla y contraste, se prueba a 200 % de zoom y, si es posible, con personas usuarias. (6) **Cumplimiento:** se actualiza la **declaración de accesibilidad** y se comprueba que el formulario completo puede usarse sin ratón.\n\n**Conclusión.** La accesibilidad se demuestra usando el formulario sin ratón y con un lector; el cumplimiento formal no basta si la persona no puede completar la cita."
+        },
+        {
+          "heading": "7. Trampas típicas de examen",
+          "body": "- Confundir **accesibilidad** (elimina barreras) con **usabilidad** (eficacia, eficiencia y satisfacción).\n- Creer que las **herramientas automáticas** son suficientes: solo detectan parte de los problemas; hacen falta revisión manual y pruebas con personas.\n- Dar por suficiente el nivel **A** de WCAG o confundirlo con el **AA**, que es el objetivo habitual de las administraciones.\n- Confundir los principios **POUR**: Perceptible (percibir), Operable (usar), Comprensible (entender) y Robusto (interpretable por tecnologías de apoyo).\n- Poner **texto alternativo a imágenes decorativas**: deben llevar `alt=\"\"` para no ser anunciadas.\n- Usar el **color como única** forma de transmitir información: hay que añadir texto, forma o icono con etiqueta.\n- Usar **tablas para maquetar**: las tablas de datos deben tener cabeceras.\n- Creer que un **lector de pantalla** funciona igual con cualquier HTML: si todo son `div`, no hay estructura ni mapa de navegación.\n- Olvidar el **foco visible** y el orden lógico de tabulación: la navegación por teclado es un requisito, no un extra.\n- Confundir las versiones de **WCAG**: 2.1 añade 17 criterios y 2.2 añade 9; los criterios anteriores no se cambian (salvo la obsolescencia 4.1.1).\n- Creer que **EN 301 549** es una ley española: es una norma armonizada europea que sirve de referencia para presumir conformidad.\n- Confundir el **RD 1112/2018** (accesibilidad de sitios web y apps del sector público) con la normativa de protección de datos.\n- Olvidar que la **declaración de accesibilidad** se actualiza al menos una vez al año y se enlaza desde todas las páginas como «Accesibilidad».\n- Pensar que la accesibilidad es solo para personas ciegas: afecta a baja visión, sordera, movilidad reducida, dislexia y personas mayores."
+        },
+        {
+          "heading": "8. Resumen para memorizar",
+          "body": "**Lo que hay que memorizar.**\n\n1. **Accesibilidad** elimina barreras; **usabilidad** mide eficacia, eficiencia y satisfacción; no son sinónimos.\n2. **POUR**: Perceptible, Operable, Comprensible y Robusto.\n3. **WCAG 2.2**: 4 principios, 13 pautas y criterios en **tres niveles** (A, AA y AAA); **AA** es el objetivo habitual de las administraciones.\n4. **Versiones**: WCAG 2.0 (2008), 2.1 (2018, +1 pauta y 17 criterios) y 2.2 (2023, +9 criterios); WCAG 2.2 es ISO/IEC 40500.\n5. **HTML semántico**: encabezados jerárquicos, listas, tablas con cabeceras y campos con `label`; sin estructura no hay navegación por lector.\n6. **Teclado y foco**: orden lógico, foco visible, enlaces descriptivos y sin trampas.\n7. **Imágenes**: informativas con texto alternativo; decorativas con `alt=\"\"`. **Vídeos**: subtítulos y audiodescripción cuando proceda.\n8. **Formularios**: etiquetas, instrucciones y errores claros asociados al campo; nunca el color como única información.\n9. **Evaluación**: automática + manual + pruebas con personas; proceso continuo, no auditoría final.\n10. **Normativa**: Directiva 2016/2102; **RD 1112/2018** (sector público, declaración de accesibilidad anual, quejas y reclamaciones); **EN 301 549** (norma armonizada TIC; la versión de 2026 usa WCAG 2.2)."
+        },
+        {
+          "heading": "9. Casos tipo test comentados (15 preguntas)",
+          "body": "**1.** ¿Cuál es la diferencia entre accesibilidad y usabilidad? **Respuesta: a)** La accesibilidad elimina barreras y la usabilidad mide eficacia, eficiencia y satisfacción (ficha V.40).\n\n**2.** ¿Qué principio exige poder usar el contenido con teclado y sin trampas de foco? **Respuesta: b)** Operable (WCAG, POUR).\n\n**3.** ¿Qué principio exige que el contenido funcione con tecnologías de apoyo y navegadores distintos? **Respuesta: c)** Robusto (WCAG, POUR).\n\n**4.** ¿Qué nivel de conformidad WCAG es el objetivo habitual de las administraciones? **Respuesta: d)** El nivel AA (ficha V.40).\n\n**5.** ¿Cuántas pautas tiene WCAG 2.2? **Respuesta: a)** Trece pautas (W3C WAI).\n\n**6.** ¿Cuántos criterios de conformidad añade WCAG 2.2 respecto a WCAG 2.1? **Respuesta: b)** Nueve criterios (W3C WAI).\n\n**7.** ¿Qué valor debe tener el texto alternativo de una imagen decorativa? **Respuesta: c)** `alt=\"\"` (ficha V.40).\n\n**8.** ¿Qué necesita una imagen que aporta información? **Respuesta: d)** Un texto alternativo que la describa (ficha V.40).\n\n**9.** ¿Qué exige la navegación por teclado? **Respuesta: a)** Orden lógico, foco visible y ausencia de trampas (ficha V.40).\n\n**10.** ¿Cómo deben ser los mensajes de error de un formulario? **Respuesta: b)** Claros, indicando qué corregir y asociados al campo (ficha V.40).\n\n**11.** ¿Se puede usar el color como única forma de transmitir información? **Respuesta: c)** No: hay que añadir texto, forma u otro indicador (ficha V.40).\n\n**12.** ¿Cómo deben usarse las tablas en contenido accesible? **Respuesta: d)** Con cabeceras y solo para datos, no para maquetar (ficha V.40).\n\n**13.** ¿Cómo se evalúa la accesibilidad? **Respuesta: a)** Con herramientas automáticas, revisión manual y pruebas con personas usuarias (ficha V.40).\n\n**14.** ¿Qué regula el Real Decreto 1112/2018? **Respuesta: b)** La accesibilidad de los sitios web y aplicaciones móviles del sector público (BOE-A-2018-12699).\n\n**15.** ¿Qué es la norma EN 301 549? **Respuesta: c)** La norma armonizada europea de requisitos de accesibilidad de productos y servicios TIC, que en su versión de 2026 se basa en WCAG 2.2 (W3C WAI)."
+        },
+        {
+          "heading": "10. Fuentes citadas",
+          "body": "- **Ficha publicada del tema V.40** (`fixtures/demo/temas/V.40.json`): accesibilidad y usabilidad, POUR, estructura y navegación, formularios y multimedia, evaluación, tabla POUR y ejemplo resuelto.\n- **W3C WAI — WCAG 2 Overview** (w3.org/WAI/standards-guidelines/wcag/): estructura de las WCAG (4 principios, 13 pautas, niveles A/AA/AAA), versiones 2.0/2.1/2.2, ISO/IEC 40500 y relación con EN 301 549.\n- **Real Decreto 1112/2018, de 7 de septiembre** (BOE-A-2018-12699): ámbito, requisitos de perceptibilidad, operabilidad, comprensibilidad y robustez, presunción de conformidad con EN 301 549, carga desproporcionada, declaración de accesibilidad y mecanismos de comunicación, quejas y reclamaciones.\n- **`data/fuentes/V.40.txt`**: texto consolidado de trabajo. **Aviso:** este fichero no contiene el apartado de accesibilidad (recoge administración de sistemas, seguridad y redes), por lo que el tema se ha elaborado con la ficha publicada y las fuentes oficiales anteriores; no se copian párrafos literales."
+        }
+      ],
       "practiceSlug": "v-40"
     }
   },
@@ -27532,6 +28189,986 @@
           "justification": "El correlation ID permite rastrear una misma operación a través de varios servicios y logs."
         }
       ]
+    },
+    {
+      "slug": "tai-propio-v-crypto",
+      "year": 2026,
+      "conv": "Supuesto propio · OpoFuente 2026",
+      "block": "V",
+      "title": "Firma y cifrado de expedientes electrónicos",
+      "difficulty": "media",
+      "official": false,
+      "estimatedMinutes": 30,
+      "statement": "Una sede electrónica debe firmar expedientes, cifrar documentos sensibles y verificar certificados. El equipo revisa algoritmos, PKI, sellos de tiempo y validez de la firma antes de poner el servicio en producción.",
+      "steps": [
+        "1. Clasificar documentos y firmas.",
+        "2. Elegir algoritmos y formato.",
+        "3. Validar certificados y cadena.",
+        "4. Verificar sellos y conservación.",
+        "5. Documentar la evidencia."
+      ],
+      "topics": [
+        "V.36",
+        "V.34",
+        "V.35"
+      ],
+      "source": {
+        "label": "Elaboración propia · OpoFuente",
+        "url": "https://erdeivih.github.io/opofuente-demo/",
+        "pages": "Material propio de la demo"
+      },
+      "questions": [
+        {
+          "stem": "¿Qué usa la criptografía simétrica?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Una clave pública y otra privada"
+            },
+            {
+              "key": "b",
+              "text": "La misma clave para cifrar y descifrar"
+            },
+            {
+              "key": "c",
+              "text": "Solo funciones hash"
+            },
+            {
+              "key": "d",
+              "text": "Un certificado digital"
+            }
+          ],
+          "correct": "b",
+          "justification": "La criptografía simétrica comparte una única clave; es rápida y se usa para cifrar volúmenes y sesiones."
+        },
+        {
+          "stem": "¿Qué clave se usa para firmar electrónicamente?",
+          "options": [
+            {
+              "key": "a",
+              "text": "La clave pública del receptor"
+            },
+            {
+              "key": "b",
+              "text": "La clave pública del firmante"
+            },
+            {
+              "key": "c",
+              "text": "La clave privada del firmante"
+            },
+            {
+              "key": "d",
+              "text": "Una clave simétrica compartida"
+            }
+          ],
+          "correct": "c",
+          "justification": "El firmante firma con su clave privada; el receptor verifica con la clave pública del certificado."
+        },
+        {
+          "stem": "¿Qué aporta una función hash?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Un certificado de identidad"
+            },
+            {
+              "key": "b",
+              "text": "Confidencialidad del documento"
+            },
+            {
+              "key": "c",
+              "text": "Una copia de seguridad"
+            },
+            {
+              "key": "d",
+              "text": "Una huella que permite detectar cambios en el contenido"
+            }
+          ],
+          "correct": "d",
+          "justification": "El hash detecta alteraciones; no cifra ni sustituye la firma."
+        },
+        {
+          "stem": "¿Qué algoritmo hash está obsoleto para seguridad?",
+          "options": [
+            {
+              "key": "a",
+              "text": "MD5"
+            },
+            {
+              "key": "b",
+              "text": "SHA-256"
+            },
+            {
+              "key": "c",
+              "text": "SHA-3"
+            },
+            {
+              "key": "d",
+              "text": "Argon2"
+            }
+          ],
+          "correct": "a",
+          "justification": "MD5 y SHA-1 tienen colisiones conocidas y no deben usarse para seguridad; SHA-256/SHA-3 son actuales."
+        },
+        {
+          "stem": "¿Qué es un certificado digital?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Una contraseña cifrada"
+            },
+            {
+              "key": "b",
+              "text": "Un documento que vincula una clave pública con una identidad y lo emite una CA"
+            },
+            {
+              "key": "c",
+              "text": "Un algoritmo de compresión"
+            },
+            {
+              "key": "d",
+              "text": "Una copia de la clave privada"
+            }
+          ],
+          "correct": "b",
+          "justification": "El certificado lo emite una autoridad de certificación y permite verificar la identidad asociada a la clave pública."
+        },
+        {
+          "stem": "¿Qué garantiza TLS?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Que no haya malware en el servidor"
+            },
+            {
+              "key": "b",
+              "text": "Que el sitio sea legalmente fiable"
+            },
+            {
+              "key": "c",
+              "text": "Confidencialidad e integridad de la conexión y autenticación del servidor"
+            },
+            {
+              "key": "d",
+              "text": "Que el usuario esté autenticado siempre"
+            }
+          ],
+          "correct": "c",
+          "justification": "TLS cifra e integra la comunicación y autentica el servidor con su certificado; no garantiza la honestidad del sitio."
+        },
+        {
+          "stem": "¿Qué tipo de firma tiene el equivalente legal de la firma manuscrita en los términos de la ley?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Cualquier firma escaneada"
+            },
+            {
+              "key": "b",
+              "text": "La firma simple"
+            },
+            {
+              "key": "c",
+              "text": "La firma avanzada"
+            },
+            {
+              "key": "d",
+              "text": "La firma electrónica cualificada"
+            }
+          ],
+          "correct": "d",
+          "justification": "La Ley 6/2020 distingue simple, avanzada y cualificada; la cualificada tiene el equivalente legal de la manuscrita en los términos previstos."
+        },
+        {
+          "stem": "¿Para qué sirve un sellado de tiempo?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Para fijar el momento en que se firmó o existió un documento"
+            },
+            {
+              "key": "b",
+              "text": "Para cifrar el documento"
+            },
+            {
+              "key": "c",
+              "text": "Para comprimir el archivo"
+            },
+            {
+              "key": "d",
+              "text": "Para renovar el certificado"
+            }
+          ],
+          "correct": "a",
+          "justification": "El sello de tiempo aporta evidencia temporal y complementa la firma."
+        },
+        {
+          "stem": "¿Qué diferencia hay entre cifrar y firmar?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Son lo mismo"
+            },
+            {
+              "key": "b",
+              "text": "Cifrar oculta el contenido; firmar autentica e integra"
+            },
+            {
+              "key": "c",
+              "text": "Firmar oculta el contenido"
+            },
+            {
+              "key": "d",
+              "text": "Cifrar autentica al firmante"
+            }
+          ],
+          "correct": "b",
+          "justification": "El cifrado protege la confidencialidad; la firma acredita autoría e integridad. Son objetivos distintos."
+        },
+        {
+          "stem": "¿Qué debe hacerse con la clave privada?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Guardarla en el repositorio"
+            },
+            {
+              "key": "b",
+              "text": "Publicarla para que todos la usen"
+            },
+            {
+              "key": "c",
+              "text": "Protegerla y no compartirla ni incluirla en el código"
+            },
+            {
+              "key": "d",
+              "text": "Enviarla por correo sin cifrar"
+            }
+          ],
+          "correct": "c",
+          "justification": "La clave privada es el secreto del firmante; su filtración rompe la autenticidad y la confianza."
+        },
+        {
+          "stem": "¿Qué propiedad de la seguridad garantiza que solo las personas autorizadas accedan a la información?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Integridad"
+            },
+            {
+              "key": "b",
+              "text": "Trazabilidad"
+            },
+            {
+              "key": "c",
+              "text": "Disponibilidad"
+            },
+            {
+              "key": "d",
+              "text": "Confidencialidad"
+            }
+          ],
+          "correct": "d",
+          "justification": "La confidencialidad limita el acceso a las personas y sistemas autorizados. La integridad protege la exactitud y la disponibilidad garantiza el acceso cuando se necesita."
+        },
+        {
+          "stem": "En el análisis de riesgos, el nivel de riesgo se obtiene normalmente:",
+          "options": [
+            {
+              "key": "a",
+              "text": "Multiplicando probabilidad por impacto"
+            },
+            {
+              "key": "b",
+              "text": "Dividiendo el impacto entre las salvaguardas"
+            },
+            {
+              "key": "c",
+              "text": "Sumando amenaza y vulnerabilidad"
+            },
+            {
+              "key": "d",
+              "text": "Restando el riesgo residual al riesgo inicial"
+            }
+          ],
+          "correct": "a",
+          "justification": "El riesgo se estima combinando la probabilidad de que la amenaza aproveche una vulnerabilidad con el impacto o daño que causaría."
+        },
+        {
+          "stem": "¿Qué es el riesgo residual?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El riesgo antes de aplicar salvaguardas"
+            },
+            {
+              "key": "b",
+              "text": "El riesgo que queda después de aplicar las salvaguardas"
+            },
+            {
+              "key": "c",
+              "text": "La suma de todas las amenazas identificadas"
+            },
+            {
+              "key": "d",
+              "text": "El riesgo que asume el proveedor externo"
+            }
+          ],
+          "correct": "b",
+          "justification": "Tras aplicar las salvaguardas queda un riesgo residual, que la dirección debe aceptar de forma consciente y documentada."
+        },
+        {
+          "stem": "¿Qué norma especifica los requisitos de un sistema de gestión de la seguridad de la información?",
+          "options": [
+            {
+              "key": "a",
+              "text": "MAGERIT"
+            },
+            {
+              "key": "b",
+              "text": "ISO/IEC 27002"
+            },
+            {
+              "key": "c",
+              "text": "ISO/IEC 27001"
+            },
+            {
+              "key": "d",
+              "text": "ISO/IEC 20000-1"
+            }
+          ],
+          "correct": "c",
+          "justification": "ISO/IEC 27001 contiene los requisitos del SGSI y es certificable. ISO/IEC 27002 es una guía de controles, MAGERIT una metodología de riesgos y 20000-1 se refiere a gestión de servicios."
+        },
+        {
+          "stem": "¿Qué contiene el Anexo A de ISO/IEC 27001?",
+          "options": [
+            {
+              "key": "a",
+              "text": "La plantilla de la declaración de aplicabilidad"
+            },
+            {
+              "key": "b",
+              "text": "El catálogo de activos de la organización"
+            },
+            {
+              "key": "c",
+              "text": "El procedimiento de auditoría interna"
+            },
+            {
+              "key": "d",
+              "text": "El catálogo de controles de referencia agrupados por temas"
+            }
+          ],
+          "correct": "d",
+          "justification": "El Anexo A recoge los controles de referencia agrupados en cuatro temas: organizativos, de personas, físicos y tecnológicos."
+        },
+        {
+          "stem": "En MAGERIT, ¿cómo se denomina una causa potencial de daño sobre un activo?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Amenaza"
+            },
+            {
+              "key": "b",
+              "text": "Salvaguarda"
+            },
+            {
+              "key": "c",
+              "text": "Activo"
+            },
+            {
+              "key": "d",
+              "text": "Vulnerabilidad"
+            }
+          ],
+          "correct": "a",
+          "justification": "La amenaza es la causa potencial de daño; la vulnerabilidad es la debilidad que puede ser aprovechada y la salvaguarda la medida que reduce el riesgo."
+        },
+        {
+          "stem": "¿Qué opción de tratamiento del riesgo consiste en contratar un ciberseguro?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Mitigar"
+            },
+            {
+              "key": "b",
+              "text": "Transferir"
+            },
+            {
+              "key": "c",
+              "text": "Aceptar"
+            },
+            {
+              "key": "d",
+              "text": "Evitar"
+            }
+          ],
+          "correct": "b",
+          "justification": "Transferir el riesgo consiste en trasladar total o parcialmente las consecuencias a un tercero, por ejemplo mediante un seguro o un contrato con garantías."
+        },
+        {
+          "stem": "Si un atacante modifica una factura sin ser detectado, ¿qué propiedad de la seguridad se ha vulnerado?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Disponibilidad"
+            },
+            {
+              "key": "b",
+              "text": "Confidencialidad"
+            },
+            {
+              "key": "c",
+              "text": "Integridad"
+            },
+            {
+              "key": "d",
+              "text": "Autenticidad del usuario"
+            }
+          ],
+          "correct": "c",
+          "justification": "La integridad garantiza que la información es exacta y no se modifica sin control; una alteración no detectada es un fallo de integridad."
+        },
+        {
+          "stem": "¿Cuál de estas medidas es un control organizativo?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El cortafuegos perimetral"
+            },
+            {
+              "key": "b",
+              "text": "El antivirus del puesto de trabajo"
+            },
+            {
+              "key": "c",
+              "text": "El cifrado del disco duro"
+            },
+            {
+              "key": "d",
+              "text": "La política de seguridad aprobada por la dirección"
+            }
+          ],
+          "correct": "d",
+          "justification": "La política de seguridad es un control organizativo; el cortafuegos, el antivirus y el cifrado son controles técnicos."
+        },
+        {
+          "stem": "¿Qué es ISO/IEC 27002?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Una guía de buenas prácticas que detalla los controles"
+            },
+            {
+              "key": "b",
+              "text": "La metodología española de análisis de riesgos"
+            },
+            {
+              "key": "c",
+              "text": "El reglamento europeo de protección de datos"
+            },
+            {
+              "key": "d",
+              "text": "La norma certificable de requisitos del SGSI"
+            }
+          ],
+          "correct": "a",
+          "justification": "ISO/IEC 27002 es una guía de buenas prácticas que desarrolla y explica los controles; la norma certificable de requisitos es ISO/IEC 27001."
+        }
+      ]
+    },
+    {
+      "slug": "tai-propio-v-data",
+      "year": 2026,
+      "conv": "Supuesto propio · OpoFuente 2026",
+      "block": "V",
+      "title": "Brecha de datos en una aplicación municipal",
+      "difficulty": "media",
+      "official": false,
+      "estimatedMinutes": 30,
+      "statement": "Una aplicación municipal sufre una brecha y el equipo debe evaluar el riesgo, notificar a la AEPD, informar a los afectados y corregir las medidas de seguridad. El tribunal pide justificar bases jurídicas, plazos y medidas.",
+      "steps": [
+        "1. Delimitar datos y base jurídica.",
+        "2. Evaluar riesgo y alcance.",
+        "3. Notificar a la AEPD y afectados.",
+        "4. Aplicar medidas y documentar.",
+        "5. Revisar encargados y transferencias."
+      ],
+      "topics": [
+        "V.37",
+        "V.35",
+        "V.38"
+      ],
+      "source": {
+        "label": "Elaboración propia · OpoFuente",
+        "url": "https://erdeivih.github.io/opofuente-demo/",
+        "pages": "Material propio de la demo"
+      },
+      "questions": [
+        {
+          "stem": "¿Qué norma principal regula la protección de datos en la UE?",
+          "options": [
+            {
+              "key": "a",
+              "text": "La Ley 9/2017"
+            },
+            {
+              "key": "b",
+              "text": "La Ley 39/2015"
+            },
+            {
+              "key": "c",
+              "text": "El RGPD"
+            },
+            {
+              "key": "d",
+              "text": "El ENS"
+            }
+          ],
+          "correct": "c",
+          "justification": "El RGPD (Reglamento UE 2016/679) es la norma principal, desarrollada en España por la LOPDGDD."
+        },
+        {
+          "stem": "¿Qué exige el principio de minimización?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Publicar todos los datos"
+            },
+            {
+              "key": "b",
+              "text": "Recoger cuantos más datos mejor"
+            },
+            {
+              "key": "c",
+              "text": "Conservar los datos indefinidamente"
+            },
+            {
+              "key": "d",
+              "text": "Recoger solo los datos necesarios para la finalidad"
+            }
+          ],
+          "correct": "d",
+          "justification": "La minimización limita los datos a lo adecuado, pertinente y necesario para el fin."
+        },
+        {
+          "stem": "¿Cuál es una base jurídica habitual para una administración pública?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El cumplimiento de una obligación legal o el ejercicio de potestades públicas"
+            },
+            {
+              "key": "b",
+              "text": "El consentimiento siempre"
+            },
+            {
+              "key": "c",
+              "text": "El interés comercial"
+            },
+            {
+              "key": "d",
+              "text": "La venta de datos"
+            }
+          ],
+          "correct": "a",
+          "justification": "Las administraciones tratan datos, sobre todo, por obligación legal o misión de interés público; el consentimiento no siempre es la base adecuada."
+        },
+        {
+          "stem": "¿Qué caracteriza al consentimiento válido?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Genérico y tácito"
+            },
+            {
+              "key": "b",
+              "text": "Libre, específico, informado e inequívoco"
+            },
+            {
+              "key": "c",
+              "text": "Obligatorio para cualquier servicio"
+            },
+            {
+              "key": "d",
+              "text": "Verbal y sin información"
+            }
+          ],
+          "correct": "b",
+          "justification": "El consentimiento debe ser una manifestación libre, específica, informada e inequívoca de la voluntad."
+        },
+        {
+          "stem": "¿En qué plazo general deben atenderse los derechos?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Un año"
+            },
+            {
+              "key": "b",
+              "text": "24 horas"
+            },
+            {
+              "key": "c",
+              "text": "Un mes"
+            },
+            {
+              "key": "d",
+              "text": "No hay plazo"
+            }
+          ],
+          "correct": "c",
+          "justification": "Con carácter general, el plazo es de un mes, ampliable en casos complejos según el RGPD."
+        },
+        {
+          "stem": "¿Qué es el derecho de portabilidad?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Cambiar de administración"
+            },
+            {
+              "key": "b",
+              "text": "Borrar todos los datos"
+            },
+            {
+              "key": "c",
+              "text": "Oponerse a cualquier tratamiento"
+            },
+            {
+              "key": "d",
+              "text": "Recibir los datos en un formato estructurado y transmitirlos a otro responsable"
+            }
+          ],
+          "correct": "d",
+          "justification": "La portabilidad permite obtener y reutilizar los datos en un formato interoperable cuando se cumplen los requisitos."
+        },
+        {
+          "stem": "¿Qué es una evaluación de impacto (EIPD)?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Un análisis del riesgo de un tratamiento que puede afectar gravemente a los derechos"
+            },
+            {
+              "key": "b",
+              "text": "Una auditoría contable"
+            },
+            {
+              "key": "c",
+              "text": "Un test de velocidad"
+            },
+            {
+              "key": "d",
+              "text": "Una copia de seguridad"
+            }
+          ],
+          "correct": "a",
+          "justification": "La EIPD evalúa riesgos de tratamientos de alto riesgo y define medidas para mitigarlos."
+        },
+        {
+          "stem": "¿Cuándo debe notificarse una brecha de seguridad a la autoridad de control?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Solo si afecta a más de un millón de personas"
+            },
+            {
+              "key": "b",
+              "text": "Cuando supone un riesgo para los derechos, en un plazo de 72 horas"
+            },
+            {
+              "key": "c",
+              "text": "Nunca"
+            },
+            {
+              "key": "d",
+              "text": "Al año siguiente"
+            }
+          ],
+          "correct": "b",
+          "justification": "La brecha con riesgo debe notificarse sin dilación indebida y, a más tardar, en 72 horas."
+        },
+        {
+          "stem": "¿Qué significa privacidad desde el diseño?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Cifrar solo el disco"
+            },
+            {
+              "key": "b",
+              "text": "Añadir una política al final"
+            },
+            {
+              "key": "c",
+              "text": "Incorporar la protección de datos desde el inicio del proyecto"
+            },
+            {
+              "key": "d",
+              "text": "Ocultar el formulario"
+            }
+          ],
+          "correct": "c",
+          "justification": "La privacidad desde el diseño y por defecto se integra en el diseño del sistema y en la configuración inicial."
+        },
+        {
+          "stem": "¿Qué debe hacer una administración antes de recoger datos personales?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Compartirlos con terceros sin contrato"
+            },
+            {
+              "key": "b",
+              "text": "Recogerlos y decidir después"
+            },
+            {
+              "key": "c",
+              "text": "Publicarlos en abierto"
+            },
+            {
+              "key": "d",
+              "text": "Definir finalidad, base jurídica, plazo y medidas de seguridad"
+            }
+          ],
+          "correct": "d",
+          "justification": "La licitud y la transparencia exigen definir el tratamiento antes de recoger los datos."
+        },
+        {
+          "stem": "¿Qué es el ransomware?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Una técnica de compresión"
+            },
+            {
+              "key": "b",
+              "text": "Un protocolo de correo"
+            },
+            {
+              "key": "c",
+              "text": "Un tipo de copia de seguridad"
+            },
+            {
+              "key": "d",
+              "text": "Malware que cifra datos y exige un rescate"
+            }
+          ],
+          "correct": "d",
+          "justification": "El ransomware cifra o bloquea datos y pide un pago; la recuperación debe basarse en copias y contención, no en pagar."
+        },
+        {
+          "stem": "¿Qué principio combina varias capas de seguridad?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Defensa en profundidad"
+            },
+            {
+              "key": "b",
+              "text": "Mínimo privilegio"
+            },
+            {
+              "key": "c",
+              "text": "Alta disponibilidad"
+            },
+            {
+              "key": "d",
+              "text": "Balanceo de carga"
+            }
+          ],
+          "correct": "a",
+          "justification": "La defensa en profundidad coordina identidad, red, endpoints, copias y formación para que un fallo no lo rompa todo."
+        },
+        {
+          "stem": "¿Qué reduce el riesgo de robo de credenciales?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Compartir contraseñas"
+            },
+            {
+              "key": "b",
+              "text": "MFA y mínimo privilegio"
+            },
+            {
+              "key": "c",
+              "text": "Desactivar los registros"
+            },
+            {
+              "key": "d",
+              "text": "Usar la misma cuenta para todo"
+            }
+          ],
+          "correct": "b",
+          "justification": "La autenticación multifactor y el mínimo privilegio limitan el impacto de una credencial comprometida."
+        },
+        {
+          "stem": "¿Qué es un SIEM?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Un protocolo de correo"
+            },
+            {
+              "key": "b",
+              "text": "Un tipo de firewall físico"
+            },
+            {
+              "key": "c",
+              "text": "Un sistema que centraliza y correlaciona eventos de seguridad"
+            },
+            {
+              "key": "d",
+              "text": "Un formato de imagen"
+            }
+          ],
+          "correct": "c",
+          "justification": "El SIEM recoge logs y correlaciona eventos para detectar y alertar sobre incidentes."
+        },
+        {
+          "stem": "¿Cuál es el primer paso ante un incidente confirmado?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Publicar el incidente en redes"
+            },
+            {
+              "key": "b",
+              "text": "Formatear todos los equipos"
+            },
+            {
+              "key": "c",
+              "text": "Pagar el rescate"
+            },
+            {
+              "key": "d",
+              "text": "Contener el incidente y preservar la evidencia"
+            }
+          ],
+          "correct": "d",
+          "justification": "Contener evita la propagación y preservar evidencia permite investigar; formatear destruye pruebas."
+        },
+        {
+          "stem": "¿Qué fase del ciclo de respuesta corrige la causa del incidente?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Erradicación"
+            },
+            {
+              "key": "b",
+              "text": "Detección"
+            },
+            {
+              "key": "c",
+              "text": "Preparación"
+            },
+            {
+              "key": "d",
+              "text": "Recuperación"
+            }
+          ],
+          "correct": "a",
+          "justification": "La erradicación elimina la causa y las puertas de entrada; la recuperación restaura el servicio."
+        },
+        {
+          "stem": "¿Por qué no se debe pagar un rescate?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Porque siempre es ilegal"
+            },
+            {
+              "key": "b",
+              "text": "Porque no garantiza la recuperación y financia a los atacantes"
+            },
+            {
+              "key": "c",
+              "text": "Porque las copias no existen"
+            },
+            {
+              "key": "d",
+              "text": "Porque el ransomware no cifra"
+            }
+          ],
+          "correct": "b",
+          "justification": "Pagar no asegura recuperar los datos, puede financiar el delito y no elimina la persistencia del ataque."
+        },
+        {
+          "stem": "¿Qué plazo general hay para notificar una brecha de datos personales?",
+          "options": [
+            {
+              "key": "a",
+              "text": "30 días"
+            },
+            {
+              "key": "b",
+              "text": "24 horas"
+            },
+            {
+              "key": "c",
+              "text": "72 horas"
+            },
+            {
+              "key": "d",
+              "text": "No hay plazo"
+            }
+          ],
+          "correct": "c",
+          "justification": "El RGPD exige notificar a la autoridad de control sin dilación indebida y, a más tardar, en 72 horas cuando hay riesgo."
+        },
+        {
+          "stem": "¿Qué es una vulnerabilidad?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Un tipo de usuario"
+            },
+            {
+              "key": "b",
+              "text": "Un ataque ya ejecutado"
+            },
+            {
+              "key": "c",
+              "text": "Una copia de seguridad"
+            },
+            {
+              "key": "d",
+              "text": "Una debilidad que puede ser explotada por una amenaza"
+            }
+          ],
+          "correct": "d",
+          "justification": "La vulnerabilidad es la debilidad; la amenaza es quien puede explotarla y el riesgo combina ambos con el impacto."
+        },
+        {
+          "stem": "¿Qué debe hacerse con las copias para sobrevivir a un ransomware?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Mantener copias externas, inmutables y probadas"
+            },
+            {
+              "key": "b",
+              "text": "Guardarlas solo en el servidor cifrado"
+            },
+            {
+              "key": "c",
+              "text": "Conectarlas permanentemente a la red"
+            },
+            {
+              "key": "d",
+              "text": "No cifrarlas nunca"
+            }
+          ],
+          "correct": "a",
+          "justification": "Las copias aisladas o inmutables no se pueden cifrar desde el servidor comprometido y permiten restaurar."
+        }
+      ]
     }
   ],
   "progress": {
@@ -27544,8 +29181,8 @@
     "questions": 400,
     "cases": 5,
     "caseQuestions": 50,
-    "supuestos": 15,
-    "supuestoQuestions": 300,
+    "supuestos": 17,
+    "supuestoQuestions": 340,
     "convocatorias": 12
   }
 }
