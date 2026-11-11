@@ -21530,6 +21530,985 @@
           "justification": "maxlength limita el número máximo de caracteres que admite el campo. size solo indica el ancho visible, max no existe con esa finalidad y length no es un atributo válido de input."
         }
       ]
+    },
+    {
+      "slug": "tai-propio-ii13",
+      "year": 2026,
+      "conv": "Supuesto propio · OpoFuente 2026",
+      "block": "II",
+      "title": "Caso propio: renovación de un aula de informática",
+      "difficulty": "media",
+      "official": false,
+      "estimatedMinutes": 30,
+      "statement": "Un centro público renueva 30 puestos con equipos nuevos y debe justificar la arquitectura, el rendimiento, la memoria, el almacenamiento y el mantenimiento. El equipo técnico revisa el pliego y debe responder a las cuestiones del tribunal.",
+      "steps": [
+        "1. Identificar los componentes y la arquitectura de los equipos.",
+        "2. Relacionar CPU, memoria, almacenamiento y periféricos.",
+        "3. Calcular y comparar prestaciones y capacidad.",
+        "4. Detectar las trampas del pliego y justificar cada elección.",
+        "5. Cerrar con la respuesta técnica y la fuente."
+      ],
+      "topics": [
+        "II.13",
+        "II.14"
+      ],
+      "source": {
+        "label": "Elaboración propia · OpoFuente",
+        "url": "https://erdeivih.github.io/opofuente-demo/",
+        "pages": "Material propio de la demo"
+      },
+      "questions": [
+        {
+          "stem": "¿Qué comparten instrucciones y datos en la arquitectura de von Neumann?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El mismo registro de instrucción"
+            },
+            {
+              "key": "b",
+              "text": "La misma caché L1"
+            },
+            {
+              "key": "c",
+              "text": "El mismo bus de E/S"
+            },
+            {
+              "key": "d",
+              "text": "El mismo espacio de memoria"
+            }
+          ],
+          "correct": "d",
+          "justification": "En von Neumann instrucciones y datos comparten memoria; por eso aparecen el cuello de botella y los ataques de escritura de código."
+        },
+        {
+          "stem": "¿Qué unidad de la CPU realiza las operaciones aritméticas y lógicas?",
+          "options": [
+            {
+              "key": "a",
+              "text": "La ALU"
+            },
+            {
+              "key": "b",
+              "text": "La unidad de control"
+            },
+            {
+              "key": "c",
+              "text": "La MMU"
+            },
+            {
+              "key": "d",
+              "text": "La TLB"
+            }
+          ],
+          "correct": "a",
+          "justification": "La unidad aritmético-lógica (ALU) ejecuta sumas, restas y operaciones lógicas."
+        },
+        {
+          "stem": "¿Cuál es el orden correcto del ciclo de instrucción?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Decodificar, captar, ejecutar, escribir"
+            },
+            {
+              "key": "b",
+              "text": "Captar, decodificar, ejecutar, escribir"
+            },
+            {
+              "key": "c",
+              "text": "Captar, ejecutar, decodificar, escribir"
+            },
+            {
+              "key": "d",
+              "text": "Ejecutar, captar, escribir, decodificar"
+            }
+          ],
+          "correct": "b",
+          "justification": "El ciclo básico es fetch (captar), decode (decodificar), execute (ejecutar) y write-back (escribir el resultado)."
+        },
+        {
+          "stem": "¿Qué técnica solapa la ejecución de varias instrucciones en etapas?",
+          "options": [
+            {
+              "key": "a",
+              "text": "La memoria virtual"
+            },
+            {
+              "key": "b",
+              "text": "El DMA"
+            },
+            {
+              "key": "c",
+              "text": "La segmentación (pipeline)"
+            },
+            {
+              "key": "d",
+              "text": "El RAID"
+            }
+          ],
+          "correct": "c",
+          "justification": "El pipeline divide la ejecución en etapas y mantiene varias instrucciones en vuelo a la vez."
+        },
+        {
+          "stem": "¿Qué nivel de la jerarquía de memoria es el más rápido y pequeño?",
+          "options": [
+            {
+              "key": "a",
+              "text": "La memoria principal"
+            },
+            {
+              "key": "b",
+              "text": "La caché L3"
+            },
+            {
+              "key": "c",
+              "text": "El SSD"
+            },
+            {
+              "key": "d",
+              "text": "Los registros"
+            }
+          ],
+          "correct": "d",
+          "justification": "Los registros están dentro de la CPU y son el nivel más rápido y de menor capacidad."
+        },
+        {
+          "stem": "¿Qué memoria es volátil?",
+          "options": [
+            {
+              "key": "a",
+              "text": "La memoria RAM"
+            },
+            {
+              "key": "b",
+              "text": "El SSD"
+            },
+            {
+              "key": "c",
+              "text": "El HDD"
+            },
+            {
+              "key": "d",
+              "text": "La memoria flash"
+            }
+          ],
+          "correct": "a",
+          "justification": "La RAM pierde su contenido al cortar la alimentación; el almacenamiento secundario es no volátil."
+        },
+        {
+          "stem": "¿Qué componente traduce direcciones virtuales a físicas?",
+          "options": [
+            {
+              "key": "a",
+              "text": "La ALU"
+            },
+            {
+              "key": "b",
+              "text": "La MMU"
+            },
+            {
+              "key": "c",
+              "text": "El chipset"
+            },
+            {
+              "key": "d",
+              "text": "El bus de datos"
+            }
+          ],
+          "correct": "b",
+          "justification": "La unidad de gestión de memoria (MMU) traduce direcciones virtuales a físicas usando la tabla de páginas."
+        },
+        {
+          "stem": "¿Qué ventaja principal aporta el DMA?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Aumenta la frecuencia del reloj"
+            },
+            {
+              "key": "b",
+              "text": "Duplica la caché L1"
+            },
+            {
+              "key": "c",
+              "text": "Libera a la CPU de copiar bloques de datos"
+            },
+            {
+              "key": "d",
+              "text": "Sustituye a la memoria virtual"
+            }
+          ],
+          "correct": "c",
+          "justification": "El acceso directo a memoria permite a un periférico transferir bloques sin que la CPU los copie uno a uno."
+        },
+        {
+          "stem": "¿Qué tecnología de almacenamiento tiene acceso aleatorio sin partes móviles?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El HDD"
+            },
+            {
+              "key": "b",
+              "text": "El DVD-ROM"
+            },
+            {
+              "key": "c",
+              "text": "La cinta magnética"
+            },
+            {
+              "key": "d",
+              "text": "El SSD"
+            }
+          ],
+          "correct": "d",
+          "justification": "El SSD usa memoria flash: no tiene partes móviles y su acceso aleatorio es mucho más rápido que el de un HDD."
+        },
+        {
+          "stem": "¿Qué significa RAID 1?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Espejo de dos discos"
+            },
+            {
+              "key": "b",
+              "text": "Striping sin paridad"
+            },
+            {
+              "key": "c",
+              "text": "Paridad distribuida"
+            },
+            {
+              "key": "d",
+              "text": "Copia de seguridad automática"
+            }
+          ],
+          "correct": "a",
+          "justification": "RAID 1 duplica los datos en dos discos (espejo); protege ante el fallo de uno, pero no sustituye a una copia de seguridad."
+        },
+        {
+          "stem": "¿Qué tres tipos de bus forman el bus del sistema?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Control, direcciones y datos"
+            },
+            {
+              "key": "b",
+              "text": "Datos, energía y reloj"
+            },
+            {
+              "key": "c",
+              "text": "Instrucciones, datos y control"
+            },
+            {
+              "key": "d",
+              "text": "Serie, paralelo y USB"
+            }
+          ],
+          "correct": "a",
+          "justification": "El bus del sistema se compone de control (órdenes), direcciones (posiciones de memoria) y datos (contenido). Ref.: Tema 1, 3.1.3."
+        },
+        {
+          "stem": "En la arquitectura de Von Neumann, las instrucciones y los datos…",
+          "options": [
+            {
+              "key": "a",
+              "text": "Se guardan en memorias separadas"
+            },
+            {
+              "key": "b",
+              "text": "Solo las instrucciones están en memoria"
+            },
+            {
+              "key": "c",
+              "text": "Comparten una única memoria de lectura-escritura"
+            },
+            {
+              "key": "d",
+              "text": "Solo los datos están en memoria"
+            }
+          ],
+          "correct": "c",
+          "justification": "Von Neumann usa una sola memoria para datos e instrucciones, direccionadas por posición y ejecutadas instrucción a instrucción. Ref.: Tema 1, 3.1.2."
+        },
+        {
+          "stem": "¿Qué registro contiene la dirección de la siguiente instrucción que se va a ejecutar?",
+          "options": [
+            {
+              "key": "a",
+              "text": "IR"
+            },
+            {
+              "key": "b",
+              "text": "PC"
+            },
+            {
+              "key": "c",
+              "text": "MAR"
+            },
+            {
+              "key": "d",
+              "text": "MBR"
+            }
+          ],
+          "correct": "b",
+          "justification": "El Program Counter (PC) guarda la dirección de la siguiente instrucción; se incrementa con el INC tras cada lectura. Ref.: Tema 1, 3.1.6."
+        },
+        {
+          "stem": "¿Qué registro almacena la instrucción que se está ejecutando y permite analizar su código de operación?",
+          "options": [
+            {
+              "key": "a",
+              "text": "PC"
+            },
+            {
+              "key": "b",
+              "text": "MAR"
+            },
+            {
+              "key": "c",
+              "text": "MBR"
+            },
+            {
+              "key": "d",
+              "text": "IR"
+            }
+          ],
+          "correct": "d",
+          "justification": "El Instruction Register (IR) contiene la instrucción actual; allí se analiza el código de operación. Ref.: Tema 1, 3.1.6."
+        },
+        {
+          "stem": "¿Qué unidad de la CPU agrupa los componentes que realizan operaciones aritméticas y lógicas?",
+          "options": [
+            {
+              "key": "a",
+              "text": "La ALU"
+            },
+            {
+              "key": "b",
+              "text": "La unidad de control"
+            },
+            {
+              "key": "c",
+              "text": "La BIOS"
+            },
+            {
+              "key": "d",
+              "text": "El chipset"
+            }
+          ],
+          "correct": "a",
+          "justification": "La ALU manipula los datos (punto fijo, flotante y longitud variable); la unidad de control interpreta y coordina, no calcula. Ref.: Tema 1, 3.1.6."
+        },
+        {
+          "stem": "¿Qué arquitectura utiliza memorias y caminos separados para las instrucciones y para los datos?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Von Neumann"
+            },
+            {
+              "key": "b",
+              "text": "CISC"
+            },
+            {
+              "key": "c",
+              "text": "Harvard"
+            },
+            {
+              "key": "d",
+              "text": "Flynn"
+            }
+          ],
+          "correct": "c",
+          "justification": "Harvard separa físicamente memorias y caminos de instrucciones y datos, lo que permite accesos simultáneos; Von Neumann comparte una única memoria. Ref.: Bloque 2, arquitectura Harvard."
+        },
+        {
+          "stem": "¿Qué tipo de memoria RAM se emplea habitualmente como caché por su baja latencia?",
+          "options": [
+            {
+              "key": "a",
+              "text": "DRAM"
+            },
+            {
+              "key": "b",
+              "text": "SDRAM"
+            },
+            {
+              "key": "c",
+              "text": "DDR5"
+            },
+            {
+              "key": "d",
+              "text": "SRAM"
+            }
+          ],
+          "correct": "d",
+          "justification": "La SRAM se basa en transistores, no necesita refresco y es más rápida y cara que la DRAM; por eso se usa en la caché. Ref.: Bloque 2, tipos de memoria RAM."
+        },
+        {
+          "stem": "¿Qué tipo de memoria pierde su contenido cuando se apaga el equipo?",
+          "options": [
+            {
+              "key": "a",
+              "text": "La RAM"
+            },
+            {
+              "key": "b",
+              "text": "La ROM"
+            },
+            {
+              "key": "c",
+              "text": "La EPROM"
+            },
+            {
+              "key": "d",
+              "text": "El SSD"
+            }
+          ],
+          "correct": "a",
+          "justification": "La RAM es volátil: pierde su contenido sin alimentación. La ROM y sus variantes son no volátiles, y el SSD conserva los datos. Ref.: Bloque 2, memoria RAM y ROM."
+        },
+        {
+          "stem": "¿Cuál es la caché más rápida y de menor tamaño?",
+          "options": [
+            {
+              "key": "a",
+              "text": "L3"
+            },
+            {
+              "key": "b",
+              "text": "L1"
+            },
+            {
+              "key": "c",
+              "text": "L2"
+            },
+            {
+              "key": "d",
+              "text": "La memoria principal"
+            }
+          ],
+          "correct": "b",
+          "justification": "L1 es la más rápida y pequeña, integrada en el núcleo; L2 es mayor y algo más lenta, y L3 es compartida, mayor y más lenta. Ref.: Bloque 2, caché L1, L2 y L3."
+        },
+        {
+          "stem": "¿Cuántos discos exige como mínimo RAID 5 y cuántos fallos de un disco tolera?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Dos discos y ningún fallo"
+            },
+            {
+              "key": "b",
+              "text": "Dos discos y un fallo"
+            },
+            {
+              "key": "c",
+              "text": "Tres discos y un fallo"
+            },
+            {
+              "key": "d",
+              "text": "Cuatro discos y dos fallos"
+            }
+          ],
+          "correct": "c",
+          "justification": "RAID 5 distribuye la paridad entre los discos, requiere al menos tres discos y tolera el fallo de uno. Ref.: Tema 2, 1.5 y Bloque 2, RAID."
+        }
+      ]
+    },
+    {
+      "slug": "tai-propio-iii21",
+      "year": 2026,
+      "conv": "Supuesto propio · OpoFuente 2026",
+      "block": "III",
+      "title": "Caso propio: red de un centro de formación",
+      "difficulty": "media",
+      "official": false,
+      "estimatedMinutes": 30,
+      "statement": "Un centro de formación quiere segmentar su red, separar aulas, administración y Wi-Fi de invitados, y garantizar el acceso a Internet y a los servicios internos. El equipo debe decidir direccionamiento, VLAN, conmutación, encaminamiento y seguridad.",
+      "steps": [
+        "1. Inventariar la red y los servicios.",
+        "2. Diseñar el direccionamiento y las subredes.",
+        "3. Definir VLAN, troncales y enrutamiento.",
+        "4. Resolver la Wi-Fi y la seguridad perimetral.",
+        "5. Comprobar el resultado y citar la fuente."
+      ],
+      "topics": [
+        "III.21",
+        "III.22",
+        "III.23"
+      ],
+      "source": {
+        "label": "Elaboración propia · OpoFuente",
+        "url": "https://erdeivih.github.io/opofuente-demo/",
+        "pages": "Material propio de la demo"
+      },
+      "questions": [
+        {
+          "stem": "¿Cuántas capas tiene el modelo OSI?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Cuatro"
+            },
+            {
+              "key": "b",
+              "text": "Cinco"
+            },
+            {
+              "key": "c",
+              "text": "Siete"
+            },
+            {
+              "key": "d",
+              "text": "Ocho"
+            }
+          ],
+          "correct": "c",
+          "justification": "El modelo OSI de ISO define siete capas, de la física a la aplicación. El modelo TCP/IP es el que se simplifica en cuatro o cinco capas según el manual."
+        },
+        {
+          "stem": "¿En qué capa del modelo OSI se decide el encaminamiento de paquetes entre redes distintas?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Enlace de datos"
+            },
+            {
+              "key": "b",
+              "text": "Sesión"
+            },
+            {
+              "key": "c",
+              "text": "Transporte"
+            },
+            {
+              "key": "d",
+              "text": "Red"
+            }
+          ],
+          "correct": "d",
+          "justification": "La capa de red (nivel 3) direcciona lógicamente y encamina paquetes; IP es su protocolo característico."
+        },
+        {
+          "stem": "¿Cuál de estas direcciones IPv4 es privada según el RFC 1918?",
+          "options": [
+            {
+              "key": "a",
+              "text": "10.20.30.40"
+            },
+            {
+              "key": "b",
+              "text": "11.0.0.1"
+            },
+            {
+              "key": "c",
+              "text": "172.32.0.1"
+            },
+            {
+              "key": "d",
+              "text": "192.169.1.1"
+            }
+          ],
+          "correct": "a",
+          "justification": "El RFC 1918 reserva 10.0.0.0/8, 172.16.0.0/12 y 192.168.0.0/16. La dirección 172.32.0.1 queda fuera del rango privado 172.16.0.0-172.31.255.255, y 192.169.1.1 no está en 192.168.0.0/16."
+        },
+        {
+          "stem": "¿Qué máscara corresponde a un prefijo /26?",
+          "options": [
+            {
+              "key": "a",
+              "text": "255.255.255.128"
+            },
+            {
+              "key": "b",
+              "text": "255.255.255.192"
+            },
+            {
+              "key": "c",
+              "text": "255.255.255.224"
+            },
+            {
+              "key": "d",
+              "text": "255.255.255.0"
+            }
+          ],
+          "correct": "b",
+          "justification": "Un /26 tiene 26 bits a 1: los tres primeros octetos completos y los dos primeros bits del cuarto, es decir, 255.255.255.192."
+        },
+        {
+          "stem": "En una subred /26, ¿cuántos hosts utilizables hay?",
+          "options": [
+            {
+              "key": "a",
+              "text": "30"
+            },
+            {
+              "key": "b",
+              "text": "64"
+            },
+            {
+              "key": "c",
+              "text": "62"
+            },
+            {
+              "key": "d",
+              "text": "126"
+            }
+          ],
+          "correct": "c",
+          "justification": "Quedan 6 bits de host: 2^6 = 64 direcciones, menos la dirección de red y la de broadcast, dan 62 hosts utilizables."
+        },
+        {
+          "stem": "¿Cuántos bits tiene una dirección IPv6?",
+          "options": [
+            {
+              "key": "a",
+              "text": "32"
+            },
+            {
+              "key": "b",
+              "text": "64"
+            },
+            {
+              "key": "c",
+              "text": "96"
+            },
+            {
+              "key": "d",
+              "text": "128"
+            }
+          ],
+          "correct": "d",
+          "justification": "IPv6 usa 128 bits, escritos como ocho grupos de cuatro dígitos hexadecimales. IPv4 usa 32 bits."
+        },
+        {
+          "stem": "¿Qué añade una etiqueta 802.1Q a una trama Ethernet?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El identificador de VLAN y la prioridad"
+            },
+            {
+              "key": "b",
+              "text": "El puerto TCP de origen"
+            },
+            {
+              "key": "c",
+              "text": "La dirección MAC de destino"
+            },
+            {
+              "key": "d",
+              "text": "La dirección IP del siguiente salto"
+            }
+          ],
+          "correct": "a",
+          "justification": "802.1Q inserta 4 bytes con el identificador de VLAN (12 bits) y la prioridad de clase de servicio; es la base del trunking entre switches."
+        },
+        {
+          "stem": "¿Qué protocolo de encaminamiento dinámico es de estado de enlace y se usa habitualmente como IGP?",
+          "options": [
+            {
+              "key": "a",
+              "text": "RIP"
+            },
+            {
+              "key": "b",
+              "text": "OSPF"
+            },
+            {
+              "key": "c",
+              "text": "BGP"
+            },
+            {
+              "key": "d",
+              "text": "ARP"
+            }
+          ],
+          "correct": "b",
+          "justification": "OSPF construye una base de datos de la topología y calcula las rutas con el algoritmo de Dijkstra. RIP es vector de distancia, BGP es un protocolo exterior y ARP no es un protocolo de encaminamiento."
+        },
+        {
+          "stem": "¿Qué puerto usa normalmente DNS?",
+          "options": [
+            {
+              "key": "a",
+              "text": "22"
+            },
+            {
+              "key": "b",
+              "text": "25"
+            },
+            {
+              "key": "c",
+              "text": "53"
+            },
+            {
+              "key": "d",
+              "text": "443"
+            }
+          ],
+          "correct": "c",
+          "justification": "DNS usa el puerto 53, sobre UDP para las consultas y sobre TCP cuando la respuesta es grande o se transfiere una zona."
+        },
+        {
+          "stem": "¿Cuál es el orden del intercambio DHCP clásico?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Request, Offer, Discover, Acknowledge"
+            },
+            {
+              "key": "b",
+              "text": "Offer, Discover, Acknowledge, Request"
+            },
+            {
+              "key": "c",
+              "text": "Discover, Request, Offer, Acknowledge"
+            },
+            {
+              "key": "d",
+              "text": "Discover, Offer, Request, Acknowledge"
+            }
+          ],
+          "correct": "d",
+          "justification": "DORA: el cliente descubre (Discover), el servidor ofrece (Offer), el cliente solicita (Request) y el servidor confirma la concesión (Acknowledge)."
+        },
+        {
+          "stem": "¿Cuál es la unidad de datos (PDU) de la capa de enlace de datos?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Bits"
+            },
+            {
+              "key": "b",
+              "text": "Tramas"
+            },
+            {
+              "key": "c",
+              "text": "Paquetes"
+            },
+            {
+              "key": "d",
+              "text": "Segmentos"
+            }
+          ],
+          "correct": "b",
+          "justification": "En enlace de datos la PDU es la trama; la física trabaja con bits, la red con paquetes y el transporte con segmentos TCP o datagramas UDP."
+        },
+        {
+          "stem": "¿En cuántas capas describe el Bloque 4 la arquitectura TCP/IP?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Siete"
+            },
+            {
+              "key": "b",
+              "text": "Cinco"
+            },
+            {
+              "key": "c",
+              "text": "Cuatro"
+            },
+            {
+              "key": "d",
+              "text": "Tres"
+            }
+          ],
+          "correct": "c",
+          "justification": "El Bloque 4 habla de cuatro capas (acceso a red, internet, transporte y aplicación); el Tema 12 separa la física y la describe en cinco. Es una diferencia de nomenclatura, no de funcionamiento."
+        },
+        {
+          "stem": "¿Cuál es la dirección de broadcast de la red 34.254.0.17 si es de clase A?",
+          "options": [
+            {
+              "key": "a",
+              "text": "34.254.255.255"
+            },
+            {
+              "key": "b",
+              "text": "34.255.255.255"
+            },
+            {
+              "key": "c",
+              "text": "34.254.0.255"
+            },
+            {
+              "key": "d",
+              "text": "255.255.255.255"
+            }
+          ],
+          "correct": "b",
+          "justification": "En clase A los 8 primeros bits son de red y los 24 restantes de host; el broadcast pone todos los bits de host a 1, luego 34.255.255.255."
+        },
+        {
+          "stem": "En la dirección 208.128.0.0/11, ¿cuántos bits se usan para hosts?",
+          "options": [
+            {
+              "key": "a",
+              "text": "11"
+            },
+            {
+              "key": "b",
+              "text": "20"
+            },
+            {
+              "key": "c",
+              "text": "21"
+            },
+            {
+              "key": "d",
+              "text": "25"
+            }
+          ],
+          "correct": "c",
+          "justification": "El prefijo /11 reserva 11 bits para la red; como la dirección IPv4 tiene 32 bits, quedan 32 − 11 = 21 bits de host."
+        },
+        {
+          "stem": "¿Cuál de estas direcciones IPv4 pertenece al espacio privado?",
+          "options": [
+            {
+              "key": "a",
+              "text": "172.32.0.1"
+            },
+            {
+              "key": "b",
+              "text": "11.0.0.1"
+            },
+            {
+              "key": "c",
+              "text": "192.169.0.1"
+            },
+            {
+              "key": "d",
+              "text": "172.20.5.1"
+            }
+          ],
+          "correct": "d",
+          "justification": "Los bloques privados son 10/8, 172.16.0.0/12 (172.16.0.0-172.31.255.255) y 192.168.0.0/16. 172.20.5.1 entra en el segundo bloque; 172.32.0.1 queda fuera."
+        },
+        {
+          "stem": "¿Cuántas veces puede aparecer el símbolo «::» en una dirección IPv6?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Una vez"
+            },
+            {
+              "key": "b",
+              "text": "Dos veces"
+            },
+            {
+              "key": "c",
+              "text": "Tres veces"
+            },
+            {
+              "key": "d",
+              "text": "Sin límite"
+            }
+          ],
+          "correct": "a",
+          "justification": "La compresión de grupos nulos con «::» solo se permite una vez por dirección; si apareciera dos, no se podría reconstruir la dirección original."
+        },
+        {
+          "stem": "¿Qué prefijo identifica las direcciones IPv6 link-local?",
+          "options": [
+            {
+              "key": "a",
+              "text": "FC00::/7"
+            },
+            {
+              "key": "b",
+              "text": "2000::/3"
+            },
+            {
+              "key": "c",
+              "text": "FE80::/10"
+            },
+            {
+              "key": "d",
+              "text": "FF00::/8"
+            }
+          ],
+          "correct": "c",
+          "justification": "FE80::/10 es el prefijo link-local; 2000::/3 son las globales, FC00::/7 las unique-local y FF00::/8 multicast."
+        },
+        {
+          "stem": "¿Cuántos bytes añade la etiqueta 802.1Q a la cabecera Ethernet?",
+          "options": [
+            {
+              "key": "a",
+              "text": "2 bytes"
+            },
+            {
+              "key": "b",
+              "text": "4 bytes"
+            },
+            {
+              "key": "c",
+              "text": "6 bytes"
+            },
+            {
+              "key": "d",
+              "text": "8 bytes"
+            }
+          ],
+          "correct": "b",
+          "justification": "802.1Q añade un campo de 4 bytes que identifica la VLAN, necesario para transportar varias VLAN por un enlace troncal."
+        },
+        {
+          "stem": "¿Cuál es el límite de saltos del protocolo RIP?",
+          "options": [
+            {
+              "key": "a",
+              "text": "15 saltos"
+            },
+            {
+              "key": "b",
+              "text": "10 saltos"
+            },
+            {
+              "key": "c",
+              "text": "16 saltos"
+            },
+            {
+              "key": "d",
+              "text": "255 saltos"
+            }
+          ],
+          "correct": "a",
+          "justification": "RIP es de vector de distancia y limita a 15 saltos; por eso solo tiene sentido en redes pequeñas. OSPF e IS-IS son de estado de enlace."
+        },
+        {
+          "stem": "¿Qué protocolo de encaminamiento se usa entre sistemas autónomos en Internet?",
+          "options": [
+            {
+              "key": "a",
+              "text": "OSPF"
+            },
+            {
+              "key": "b",
+              "text": "BGP"
+            },
+            {
+              "key": "c",
+              "text": "RIP"
+            },
+            {
+              "key": "d",
+              "text": "EIGRP"
+            }
+          ],
+          "correct": "b",
+          "justification": "BGP es un protocolo de vector de camino que interconnecta sistemas autónomos; OSPF, RIP y EIGRP son protocolos interiores."
+        }
+      ]
     }
   ],
   "progress": {
@@ -21542,8 +22521,8 @@
     "questions": 400,
     "cases": 5,
     "caseQuestions": 50,
-    "supuestos": 7,
-    "supuestoQuestions": 140,
+    "supuestos": 9,
+    "supuestoQuestions": 180,
     "convocatorias": 12
   }
 }
