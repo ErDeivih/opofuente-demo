@@ -18066,6 +18066,1494 @@
       ]
     }
   ],
+  "supuestos": [
+    {
+      "slug": "tai-2023-l-s1",
+      "year": 2023,
+      "conv": "TAI-L 2023 · Supuesto I",
+      "block": "IV",
+      "title": "Representación electrónica con Cl@ve PIN",
+      "difficulty": "media",
+      "official": true,
+      "estimatedMinutes": 30,
+      "statement": "Una administración pone en marcha un sistema para que un interesado autorice a un representante a actuar en su nombre en un trámite concreto. El sistema tiene tres piezas: un frontal web —el Punto de Acceso General— donde se reúnen los trámites y se otorga la representación; un proceso que tramita las solicitudes, envía notificaciones push a los representantes y recaba los consentimientos; y un módulo de gestión para el personal funcionario de atención al público.\n\nEl flujo es el siguiente. El interesado pulsa «Otorgar representación» en un trámite y el sistema genera un enlace único con caducidad que se envía al representante mediante notificación push. Cuando el representante abre el enlace se le ofrece la acción «Obtener PIN» y debe usar la aplicación móvil Cl@ve PIN para conseguir un PIN válido. El funcionario, desde el módulo de gestión, compara el PIN generado para la operación con el que le muestra el representante y permite el trámite si ambos coinciden.\n\nReglas del modelo: un interesado puede pedir representación para tantos trámites como quiera; un trámite puede ser solicitado por cualquier número de interesados; una representación solo es válida para un trámite a la vez; y un representante puede obtener permisos en cualquier número de trámites. En las preguntas conviven el diseño de clases y patrones, Java y sus colecciones, SQL y gestores de bases de datos, desarrollo web, pruebas y accesibilidad, y un detalle de seguridad que el tribunal decidió anular.",
+      "steps": [
+        "Leer el caso y separar las tres piezas del sistema: frontal web, proceso de notificaciones y módulo de gestión.",
+        "Fijar las multiplicidades entre interesado, trámite, solicitud de representación y representante antes de contestar la primera pregunta.",
+        "Identificar el área del temario que toca cada pregunta: UML y Java (IV.30), SQL y gestores (IV.28 y IV.29), desarrollo web y pruebas (IV.31), interoperabilidad (IV.32), criptografía (V.36) y accesibilidad (V.40).",
+        "Descartar opciones por un dato técnico concreto (modificador de visibilidad, tipo de colección, sentencia SQL, patrón de diseño) y no por impresión general.",
+        "Corregir con la plantilla oficial y revisar la pregunta anulada: un buen test también explica por qué el tribunal la dejó sin efecto."
+      ],
+      "topics": [
+        "IV.30",
+        "IV.28",
+        "IV.29",
+        "IV.31",
+        "IV.32",
+        "V.36",
+        "V.40"
+      ],
+      "source": {
+        "label": "INAP — Cuestionario TAI-L 2023 (OEP 2022), Supuesto I",
+        "url": "https://sede.inap.gob.es/documents/59312/2194858/Cuestionario+TAI-L_2023.pdf/505d8c94-69a3-2971-b013-76c83e442ba1",
+        "pages": "pp. 8-10"
+      },
+      "questions": [
+        {
+          "stem": "En el diagrama de clases del sistema, ¿qué multiplicidades entre «Solicitud de representación» y «Trámite» son compatibles con las reglas del enunciado?",
+          "options": [
+            {
+              "key": "a",
+              "text": "«1» en el lado SR>T y «1» en el lado T>SR"
+            },
+            {
+              "key": "b",
+              "text": "«1» en el lado SR>T y «0..N» en el lado T>SR"
+            },
+            {
+              "key": "c",
+              "text": "«0..N» en el lado SR>T y «1» en el lado T>SR"
+            },
+            {
+              "key": "d",
+              "text": "«1..N» en el lado SR>T y «0..N» en el lado T>SR"
+            }
+          ],
+          "correct": "c",
+          "justification": "Una representación solo vale para un trámite a la vez (desde T>SR, cardinalidad 1) y un trámite puede ser solicitado por varios interesados (desde SR>T, 0..N). Las opciones a) y b) intercambian las cardinalidades y la d) permite que una representación cubra varios trámites, lo que contradice el enunciado."
+        },
+        {
+          "stem": "En Java SE 17, ¿qué visibilidad deben tener los atributos de la clase Data Access Object «Solicitudes» para poder acceder a ellos directamente desde cualquier objeto, sin usar métodos?",
+          "options": [
+            {
+              "key": "a",
+              "text": "public"
+            },
+            {
+              "key": "b",
+              "text": "protected"
+            },
+            {
+              "key": "c",
+              "text": "Sin modificador (visibilidad de paquete)"
+            },
+            {
+              "key": "d",
+              "text": "private"
+            }
+          ],
+          "correct": "a",
+          "justification": "public permite el acceso desde cualquier clase sin mediación de métodos. protected limita el acceso a la jerarquía de herencia y al paquete, la ausencia de modificador deja visibilidad de paquete y private restringe el acceso a la propia clase."
+        },
+        {
+          "stem": "En Java SE 17, ¿cuál de los siguientes tipos de colección no admite elementos duplicados?",
+          "options": [
+            {
+              "key": "a",
+              "text": "List"
+            },
+            {
+              "key": "b",
+              "text": "Stack"
+            },
+            {
+              "key": "c",
+              "text": "Collection"
+            },
+            {
+              "key": "d",
+              "text": "Set"
+            }
+          ],
+          "correct": "d",
+          "justification": "Set es la interfaz de conjuntos y no admite duplicados por definición. List y Stack sí los admiten, y Collection es la interfaz raíz común a listas, conjuntos y colas, por lo que no define esa restricción."
+        },
+        {
+          "stem": "Para crear una tabla llamada Usuario con las columnas idUsuario (bigint, clave primaria) y nombre (varchar(255)), ¿qué sentencia SQL hay que ejecutar?",
+          "options": [
+            {
+              "key": "a",
+              "text": "ALTER TABLE Usuario (idUsuario bigint PRIMARY KEY, nombre varchar(255));"
+            },
+            {
+              "key": "b",
+              "text": "INSERT TABLE Usuario (idUsuario bigint PRIMARY KEY, nombre varchar(255));"
+            },
+            {
+              "key": "c",
+              "text": "CREATE TABLE Usuario (idUsuario bigint PRIMARY KEY, nombre varchar(255));"
+            },
+            {
+              "key": "d",
+              "text": "DROP TABLE Usuario (idUsuario bigint PRIMARY KEY, nombre varchar(255));"
+            }
+          ],
+          "correct": "c",
+          "justification": "CREATE TABLE es la sentencia DDL que define una tabla nueva con sus columnas, tipos y restricciones. ALTER TABLE modifica una tabla existente, INSERT inserta filas y DROP elimina la tabla; ninguna de ellas crea la estructura."
+        },
+        {
+          "stem": "Si el motor de base de datos fuese Oracle, ¿qué lenguaje procedimental permite insertar sentencias SQL y se almacena compilado dentro de la base de datos?",
+          "options": [
+            {
+              "key": "a",
+              "text": "TRANSACT SQL"
+            },
+            {
+              "key": "b",
+              "text": "PL/SQL"
+            },
+            {
+              "key": "c",
+              "text": "FORTRAN"
+            },
+            {
+              "key": "d",
+              "text": "COBOL"
+            }
+          ],
+          "correct": "b",
+          "justification": "PL/SQL es el lenguaje procedimental de Oracle, permite combinar SQL con estructuras de control y sus bloques se guardan compilados en la base (procedimientos, funciones y paquetes). TRANSACT SQL es de SQL Server, y FORTRAN y COBOL son lenguajes generales sin relación con el motor."
+        },
+        {
+          "stem": "Se hereda una librería ya compilada que conecta con el servicio de comprobación de Cl@ve PIN y se quiere reutilizar ese objeto sin modificar la librería. ¿Qué patrón de diseño encaja?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Adaptador (Adapter)"
+            },
+            {
+              "key": "b",
+              "text": "Singleton"
+            },
+            {
+              "key": "c",
+              "text": "Chain of responsibility (cadena de responsabilidad)"
+            },
+            {
+              "key": "d",
+              "text": "Iterador (Iterator)"
+            }
+          ],
+          "correct": "a",
+          "justification": "El patrón Adaptador envuelve una interfaz existente para que el sistema la utilice a través de la interfaz que espera, que es justo el problema de una librería heredada con una API distinta. Singleton controla la instanciación, la cadena de responsabilidad encadena manejadores y el iterador recorre colecciones: ninguno resuelve la incompatibilidad de interfaces."
+        },
+        {
+          "stem": "¿Cuál es la última versión del estándar UML, según la fuente oficial?",
+          "options": [
+            {
+              "key": "a",
+              "text": "2.5"
+            },
+            {
+              "key": "b",
+              "text": "2.4.1"
+            },
+            {
+              "key": "c",
+              "text": "2.4"
+            },
+            {
+              "key": "d",
+              "text": "3.0"
+            }
+          ],
+          "correct": "a",
+          "justification": "La última versión aprobada del estándar UML es la 2.5. Las versiones 2.4 y 2.4.1 son anteriores, y 3.0 no existe como versión aprobada de UML."
+        },
+        {
+          "stem": "En UML, ¿qué describe un diagrama de componentes?",
+          "options": [
+            {
+              "key": "a",
+              "text": "La estructura del sistema con sus clases, atributos y relaciones"
+            },
+            {
+              "key": "b",
+              "text": "La división del software en componentes y las dependencias entre ellos"
+            },
+            {
+              "key": "c",
+              "text": "El hardware de despliegue, los componentes implementados en él y sus asociaciones en un momento concreto"
+            },
+            {
+              "key": "d",
+              "text": "Una vista completa o parcial de la estructura del sistema modelado en un momento específico"
+            }
+          ],
+          "correct": "b",
+          "justification": "El diagrama de componentes muestra cómo se divide el software en componentes y qué dependencias hay entre ellos. La opción a) describe el diagrama de clases, la c) el diagrama de despliegue y la d) es una definición genérica de los diagramas de estructura."
+        },
+        {
+          "stem": "¿Qué framework se puede usar para aplicaciones de escritorio nativas .NET?",
+          "options": [
+            {
+              "key": "a",
+              "text": ".NET MAUI"
+            },
+            {
+              "key": "b",
+              "text": "Blazor Hybrid"
+            },
+            {
+              "key": "c",
+              "text": "JavaFX"
+            },
+            {
+              "key": "d",
+              "text": "WebView"
+            }
+          ],
+          "correct": "a",
+          "justification": ".NET MAUI es el framework de Microsoft para interfaces nativas multiplataforma en .NET, incluido escritorio. Blazor Hybrid combina componentes web dentro de una aplicación nativa y no es el framework de escritorio nativo propiamente dicho, JavaFX pertenece al ecosistema Java y WebView es un componente de navegador embebido."
+        },
+        {
+          "stem": "¿Qué normativa define los requisitos de accesibilidad de los sitios web y aplicaciones móviles de los organismos del sector público?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Orden Ministerial 1112/2018, de 7 de septiembre"
+            },
+            {
+              "key": "b",
+              "text": "Ley Orgánica 1112/2018, de 7 de septiembre"
+            },
+            {
+              "key": "c",
+              "text": "Ley 1112/2018, de 7 de septiembre"
+            },
+            {
+              "key": "d",
+              "text": "Real Decreto 1112/2018, de 7 de septiembre"
+            }
+          ],
+          "correct": "d",
+          "justification": "El Real Decreto 1112/2018, de 7 de septiembre, regula los requisitos de accesibilidad de los sitios web y aplicaciones para dispositivos móviles del sector público, transponiendo la Directiva (UE) 2016/2102. Las otras opciones alteran el rango de la norma: una orden ministerial, una ley orgánica y una ley no regulan esa materia con ese contenido."
+        },
+        {
+          "stem": "En una aplicación Java, ¿qué paquetes se emplearían para establecer la conexión con la base de datos de NOTIFICACION?",
+          "options": [
+            {
+              "key": "a",
+              "text": "java.database"
+            },
+            {
+              "key": "b",
+              "text": "javax.naming y javax.sql"
+            },
+            {
+              "key": "c",
+              "text": "javax.io y javax.servlet"
+            },
+            {
+              "key": "d",
+              "text": "javax.servlet"
+            }
+          ],
+          "correct": "b",
+          "justification": "javax.sql aporta las interfaces de acceso a datos (DataSource, Connection) y javax.naming permite localizar recursos como el DataSource publicado por el servidor de aplicaciones mediante JNDI. java.database no existe, y javax.io y javax.servlet no son paquetes de conexión a bases de datos."
+        },
+        {
+          "stem": "Se quiere desarrollar un microservicio para que el personal funcionario consulte el estado de una notificación enviada. ¿Qué especificación de la comunidad, alineada con Jakarta EE Core Profile, es la indicada?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Jakarta Authentication"
+            },
+            {
+              "key": "b",
+              "text": "Jakarta Batch"
+            },
+            {
+              "key": "c",
+              "text": "MicroProfile"
+            },
+            {
+              "key": "d",
+              "text": "Jakarta Connectors"
+            }
+          ],
+          "correct": "c",
+          "justification": "MicroProfile es la especificación de la comunidad orientada a microservicios y alineada con Jakarta EE. Jakarta Authentication, Jakarta Batch y Jakarta Connectors cubren autenticación, procesamiento por lotes y conectores, respectivamente, no el desarrollo del microservicio."
+        },
+        {
+          "stem": "El equipo decide usar Selenium WebDriver. ¿Para qué?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Para mejorar la accesibilidad de las páginas web facilitando audios a partir del texto"
+            },
+            {
+              "key": "b",
+              "text": "Para automatizar la ejecución de pruebas en el navegador"
+            },
+            {
+              "key": "c",
+              "text": "Para minimizar el tiempo de carga de la página web"
+            },
+            {
+              "key": "d",
+              "text": "Para diseñar páginas web adaptables"
+            }
+          ],
+          "correct": "b",
+          "justification": "Selenium WebDriver automatiza la interacción con el navegador para ejecutar pruebas de extremo a extremo. No mejora la accesibilidad, no optimiza el rendimiento y no sustituye al diseño adaptable."
+        },
+        {
+          "stem": "¿Cuál de las siguientes es una herramienta de análisis de seguridad y calidad de código?",
+          "options": [
+            {
+              "key": "a",
+              "text": "SonarQube"
+            },
+            {
+              "key": "b",
+              "text": "SonarCode"
+            },
+            {
+              "key": "c",
+              "text": "SonarCuality"
+            },
+            {
+              "key": "d",
+              "text": "SonarSrc"
+            }
+          ],
+          "correct": "a",
+          "justification": "SonarQube es la herramienta de análisis estático que detecta errores, malas prácticas y vulnerabilidades en el código. SonarCode, SonarCuality y SonarSrc son nombres inventados que imitan el del producto real."
+        },
+        {
+          "stem": "¿Cuál de los siguientes es un protocolo de seguridad usado en las comunicaciones HTTP?",
+          "options": [
+            {
+              "key": "a",
+              "text": "TLS"
+            },
+            {
+              "key": "b",
+              "text": "SSL"
+            },
+            {
+              "key": "c",
+              "text": "STARTTLS"
+            },
+            {
+              "key": "d",
+              "text": "WPA2"
+            }
+          ],
+          "correct": "ANULADA",
+          "justification": "El tribunal anuló esta pregunta porque admite más de una respuesta defendible: TLS y su antecesor SSL son los protocolos criptográficos que aseguran las comunicaciones HTTP en HTTPS, y STARTTLS es el mecanismo para promocionar una conexión en claro a una conexión cifrada. Solo WPA2 es un protocolo de seguridad de redes inalámbricas, no de HTTP. Con varias opciones válidas, la plantilla oficial la declara nula y no puntúa."
+        },
+        {
+          "stem": "¿Qué tecnología es adecuada para implementar la recepción de notificaciones nativas en los teléfonos inteligentes del representante y del interesado?",
+          "options": [
+            {
+              "key": "a",
+              "text": "WebView"
+            },
+            {
+              "key": "b",
+              "text": "Mobile push"
+            },
+            {
+              "key": "c",
+              "text": "CDMA"
+            },
+            {
+              "key": "d",
+              "text": "Wi-Fi"
+            }
+          ],
+          "correct": "b",
+          "justification": "Las notificaciones push llegan al dispositivo a través de los servicios de notificación del sistema operativo (APNs en iOS, FCM en Android). WebView es un componente de navegador embebido, CDMA es una tecnología de telefonía móvil y Wi-Fi solo proporciona conectividad."
+        },
+        {
+          "stem": "Si piden modificar el color de un botón del frontal web, ¿qué lenguaje de estilos se emplearía?",
+          "options": [
+            {
+              "key": "a",
+              "text": "XML"
+            },
+            {
+              "key": "b",
+              "text": "SGML"
+            },
+            {
+              "key": "c",
+              "text": "XSL"
+            },
+            {
+              "key": "d",
+              "text": "CSS"
+            }
+          ],
+          "correct": "d",
+          "justification": "CSS es el lenguaje de hojas de estilo que controla la presentación del HTML, incluidos colores, tipografías y espaciados. XML y SGML describen estructura y XSL transforma documentos XML; ninguno es el lenguaje de estilos del frontal web."
+        },
+        {
+          "stem": "¿Cómo se conoce el conjunto de pautas, componentes y herramientas que respaldan las mejores prácticas de diseño de interfaz de usuario y que pertenece a Google?",
+          "options": [
+            {
+              "key": "a",
+              "text": "WCAG 2.1"
+            },
+            {
+              "key": "b",
+              "text": "WAI-ARIA"
+            },
+            {
+              "key": "c",
+              "text": "Material Design"
+            },
+            {
+              "key": "d",
+              "text": "Inclusive Design"
+            }
+          ],
+          "correct": "c",
+          "justification": "Material Design es el sistema de diseño de Google con guías, componentes y herramientas. WCAG son las pautas de accesibilidad del W3C, WAI-ARIA especifica roles y atributos para tecnologías de asistencia e «Inclusive Design» es un enfoque de diseño, no el sistema de Google."
+        },
+        {
+          "stem": "¿A qué corresponde el ataque conocido por el acrónimo CSRF, que permite al atacante forzar al usuario a ejecutar acciones no deseadas en una aplicación web en la que ya está autenticado?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Cross Site Request Forgery"
+            },
+            {
+              "key": "b",
+              "text": "Cross Site Repeat Forgery"
+            },
+            {
+              "key": "c",
+              "text": "Cross Site Reduction Forgery"
+            },
+            {
+              "key": "d",
+              "text": "Cross Send Request Forgery"
+            }
+          ],
+          "correct": "a",
+          "justification": "CSRF significa Cross Site Request Forgery: el atacante induce al navegador de la víctima, que ya tiene sesión abierta, a enviar una petición no deseada. Las otras tres expresiones son variantes inventadas del acrónimo."
+        },
+        {
+          "stem": "¿Qué software permite automatizar la construcción y el despliegue de un proyecto utilizando el concepto de pipelines?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Jenkins"
+            },
+            {
+              "key": "b",
+              "text": "RabbitMQ"
+            },
+            {
+              "key": "c",
+              "text": "Apache Kafka"
+            },
+            {
+              "key": "d",
+              "text": "Subversion"
+            }
+          ],
+          "correct": "a",
+          "justification": "Jenkins es el servidor de automatización que define pipelines de integración y despliegue continuo. RabbitMQ y Apache Kafka son sistemas de mensajería y Subversion es un sistema de control de versiones, no una herramienta de pipelines de construcción."
+        }
+      ]
+    },
+    {
+      "slug": "tai-2023-l-s2",
+      "year": 2023,
+      "conv": "TAI-L 2023 · Supuesto II",
+      "block": "III",
+      "title": "Segmentación de la red y servicios del departamento",
+      "difficulty": "media",
+      "official": true,
+      "estimatedMinutes": 28,
+      "statement": "En la Subdirección General de Informática de un organismo público, el departamento de Sistemas, Comunicaciones y Seguridad ha decidido rediseñar la infraestructura de red y le encarga colaborar en la implantación. La situación de partida (Modelo A) es una única red 10.20.30.0/24 en la que conviven los puestos de usuario, las aplicaciones, las bases de datos Oracle y MySQL y la conexión a Internet. Tras los estudios previos se acuerda segmentarla en cuatro subredes —puestos de usuario, bases de datos, aplicaciones y DMZ— y desplegar un clúster de dos cortafuegos que aplique las reglas de conectividad y encaminamiento necesarias (Modelo B). Los puestos de usuario usan Windows 10; los servidores de aplicaciones, bases de datos y DMZ ejecutan Red Hat Enterprise Linux 7.4.",
+      "steps": [
+        "Identificar los elementos que comparten la red 10.20.30.0/24 y calcular la máscara que permite dividirla en cuatro subredes.",
+        "Asignar las cuatro subredes (usuarios, bases de datos, aplicaciones y DMZ) y situar el clúster de cortafuegos como punto de control.",
+        "Resolver las tareas de los puestos Windows 10 (caché DNS, cuentas locales y tabla de rutas) y de los servidores Linux (almacenamiento, monitorización, captura y Apache).",
+        "Configurar y asegurar los servicios de red compartidos: proxy-caché, correo seguro, SSH/SCP, VLAN y WAF.",
+        "Revisar los elementos de seguridad y firma (segundo factor, algoritmos de huella y herramientas del CCN-CERT) antes de validar la solución."
+      ],
+      "topics": [
+        "II.14",
+        "III.18",
+        "III.19",
+        "III.20",
+        "III.21",
+        "III.23",
+        "III.24",
+        "IV.31",
+        "V.36",
+        "V.38"
+      ],
+      "source": {
+        "label": "INAP — Cuestionario TAI-L 2023 (OEP 2022), Supuesto II",
+        "url": "https://sede.inap.gob.es/documents/59312/2194858/Cuestionario+TAI-L_2023.pdf/505d8c94-69a3-2971-b013-76c83e442ba1",
+        "pages": "pp. 11-14"
+      },
+      "questions": [
+        {
+          "stem": "Los puestos de usuario tienen Windows 10 y hay que vaciar la caché de resolución DNS. ¿Qué comando se ejecuta desde la consola de PowerShell?",
+          "options": [
+            {
+              "key": "a",
+              "text": "ipconfig /dnsflush"
+            },
+            {
+              "key": "b",
+              "text": "ipconfig /flushdns"
+            },
+            {
+              "key": "c",
+              "text": "ifconifg --erase dnscache"
+            },
+            {
+              "key": "d",
+              "text": "ifconifg --clean dnscache"
+            }
+          ],
+          "correct": "b",
+          "justification": "ipconfig /flushdns vacía la caché del cliente DNS en Windows. La opción /dnsflush no existe y las dos variantes con «ifconifg» ni siquiera son comandos válidos: el equivalente de Linux es ifconfig, que no admite --erase ni --clean."
+        },
+        {
+          "stem": "En todos los equipos existe una cuenta local llamada Infocentro para labores de mantenimiento. Desde PowerShell, ¿qué comando permite consultar la información de esa cuenta?",
+          "options": [
+            {
+              "key": "a",
+              "text": "net user Infocentro"
+            },
+            {
+              "key": "b",
+              "text": "netuser Infocentro"
+            },
+            {
+              "key": "c",
+              "text": "info user Infocentro"
+            },
+            {
+              "key": "d",
+              "text": "infouser Infocentro"
+            }
+          ],
+          "correct": "a",
+          "justification": "net user Infocentro es la orden de Windows que muestra y administra cuentas locales. netuser, info user e infouser no son comandos del sistema, por lo que el resto de opciones falla."
+        },
+        {
+          "stem": "Dentro de la administración del almacenamiento, ¿qué significa «thin provisioning»?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Es un mecanismo de despliegue de discos en red para clientes ligeros."
+            },
+            {
+              "key": "b",
+              "text": "Es una tecnología que permite agregar discos físicos en caliente a las cabinas de la SAN."
+            },
+            {
+              "key": "c",
+              "text": "Es un método de virtualización de almacenamiento que permite asignar el espacio de almacenamiento de una manera flexible bajo demanda."
+            },
+            {
+              "key": "d",
+              "text": "Es un método por el que se asigna todo el espacio virtualizado disponible y se va a reduciendo (shrinking) a medida que el cliente lo descarta."
+            }
+          ],
+          "correct": "c",
+          "justification": "El aprovisionamiento fino compromete capacidad solo a medida que el volumen se llena, de ahí su flexibilidad. La opción d describe el aprovisionamiento grueso con recuperación de espacio, la a se refiere a escritorios ligeros y la b a la ampliación en caliente de una cabina."
+        },
+        {
+          "stem": "En un servidor Linux de la subred de aplicaciones se va a instalar una herramienta de monitorización. ¿Cuál de estas opciones cumple esa función?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Check_MK"
+            },
+            {
+              "key": "b",
+              "text": "Reddis"
+            },
+            {
+              "key": "c",
+              "text": "Jenkins"
+            },
+            {
+              "key": "d",
+              "text": "Nagstamon"
+            }
+          ],
+          "correct": "a",
+          "justification": "Check_MK es un sistema de monitorización de servidores. Redis es una base de datos en memoria, Jenkins es un servidor de integración continua y Nagstamon es un cliente de escritorio que consulta el estado de instalaciones Nagios o Icinga, pero no monitoriza por sí mismo."
+        },
+        {
+          "stem": "Para segmentar la red 10.20.30.0 del Modelo A en cuatro subredes, ¿qué máscara de subred se necesita?",
+          "options": [
+            {
+              "key": "a",
+              "text": "255.255.255.194"
+            },
+            {
+              "key": "b",
+              "text": "255.255.255.192"
+            },
+            {
+              "key": "c",
+              "text": "255.255.255.196"
+            },
+            {
+              "key": "d",
+              "text": "255.255.255.190"
+            }
+          ],
+          "correct": "b",
+          "justification": "Cuatro subredes exigen 2 bits (2^2 = 4), así que el prefijo pasa de /24 a /26 y la máscara es 255.255.255.192. Las otras tres máscaras no son válidas porque sus bits no son contiguos."
+        },
+        {
+          "stem": "En un servidor Linux que sirve la intranet se quiere borrar la caché de direcciones MAC. ¿Qué comando se emplea?",
+          "options": [
+            {
+              "key": "a",
+              "text": "ip delete cache"
+            },
+            {
+              "key": "b",
+              "text": "arp -d"
+            },
+            {
+              "key": "c",
+              "text": "iptables -d mac"
+            },
+            {
+              "key": "d",
+              "text": "ip flush"
+            }
+          ],
+          "correct": "b",
+          "justification": "arp -d elimina entradas de la tabla ARP, que es la caché de direcciones físicas. ip delete cache e ip flush no son órdenes válidas e iptables -d mac borra reglas de cortafuegos, no la caché ARP."
+        },
+        {
+          "stem": "La subred de puestos de usuario del Modelo B es 10.20.30.0/26. ¿Cuáles son su dirección de red y su dirección de broadcast?",
+          "options": [
+            {
+              "key": "a",
+              "text": "10.20.30.0 y 10.20.30.255"
+            },
+            {
+              "key": "b",
+              "text": "10.20.30.1 y 10.20.30.62"
+            },
+            {
+              "key": "c",
+              "text": "10.20.30.0 y 10.20.30.63"
+            },
+            {
+              "key": "d",
+              "text": "10.20.30.64 y 10.20.30.127"
+            }
+          ],
+          "correct": "c",
+          "justification": "Un /26 agrupa 64 direcciones: la de red es la primera (10.20.30.0) y la de broadcast la última (10.20.30.63). Las direcciones .1 y .62 son el primer y el último host, y .64 y .127 pertenecen ya a la subred siguiente."
+        },
+        {
+          "stem": "Para optimizar la salida a Internet se instalará un proxy-caché que atienda HTTP, HTTP/2 y HTTPS. ¿Qué solución cumple esa función?",
+          "options": [
+            {
+              "key": "a",
+              "text": "INFLUXDB"
+            },
+            {
+              "key": "b",
+              "text": "GRAFANA"
+            },
+            {
+              "key": "c",
+              "text": "CHECK_MK"
+            },
+            {
+              "key": "d",
+              "text": "SQUID"
+            }
+          ],
+          "correct": "d",
+          "justification": "Squid es un proxy-caché con soporte de HTTP, HTTPS y HTTP/2. InfluxDB es una base de datos de series temporales, Grafana sirve para visualizar métricas y Check_MK monitoriza sistemas; ninguno actúa como proxy de navegación."
+        },
+        {
+          "stem": "Con el teletrabajo implantado por VPN se añade, como medida de seguridad, un código enviado por SMS al móvil del trabajador. ¿Cómo se denomina esa validación?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Factor electrónico de autenticación."
+            },
+            {
+              "key": "b",
+              "text": "Autenticación electrónica de usuarios."
+            },
+            {
+              "key": "c",
+              "text": "Doble factor de autenticación."
+            },
+            {
+              "key": "d",
+              "text": "Factor único de autenticación."
+            }
+          ],
+          "correct": "c",
+          "justification": "Se combinan dos factores de naturaleza distinta: algo que el usuario sabe (su contraseña) y algo que posee (el código recibido en el móvil). Eso es doble factor; las opciones a y b son descripciones genéricas y la d contradice la existencia de dos pruebas."
+        },
+        {
+          "stem": "En la DMZ se va a ofrecer correo seguro. ¿Qué puertos seguros corresponden a POP, SMTP e IMAP?",
+          "options": [
+            {
+              "key": "a",
+              "text": "POP:993 / SMTP:465 / IMAP:995"
+            },
+            {
+              "key": "b",
+              "text": "POP:995 / SMTP:495 / IMAP:963"
+            },
+            {
+              "key": "c",
+              "text": "POP:995 / SMTP:465 / IMAP:993"
+            },
+            {
+              "key": "d",
+              "text": "POP:965 / SMTP:495 / IMAP:993"
+            }
+          ],
+          "correct": "c",
+          "justification": "Los puertos cifrados son POP3S 995, SMTPS 465 e IMAPS 993. Las demás combinaciones cruzan esos números o incluyen puertos que no corresponden a esos servicios."
+        },
+        {
+          "stem": "Para firmar con AutoFirma 1.8.2 en los equipos de la organización, ¿qué algoritmo de huella está permitido entre los siguientes?",
+          "options": [
+            {
+              "key": "a",
+              "text": "ECDSA"
+            },
+            {
+              "key": "b",
+              "text": "MD5"
+            },
+            {
+              "key": "c",
+              "text": "SHA384"
+            },
+            {
+              "key": "d",
+              "text": "DSA"
+            }
+          ],
+          "correct": "c",
+          "justification": "SHA-384 es una función de huella admitida por AutoFirma. MD5 está obsoleto y no se acepta, mientras que ECDSA y DSA son algoritmos de firma, no funciones de huella."
+        },
+        {
+          "stem": "Se van a desplegar puntos de acceso Wi-Fi. ¿Qué estándar puede funcionar en las bandas de 2,4 GHz, 5 GHz y 6 GHz?",
+          "options": [
+            {
+              "key": "a",
+              "text": "No existe la banda de los 6 GHz"
+            },
+            {
+              "key": "b",
+              "text": "802.11ax"
+            },
+            {
+              "key": "c",
+              "text": "802.11ac"
+            },
+            {
+              "key": "d",
+              "text": "802.11be"
+            }
+          ],
+          "correct": "d",
+          "justification": "802.11be (Wi-Fi 7) opera en 2,4, 5 y 6 GHz. El 802.11ac solo usa 5 GHz y el 802.11ax se definió para 2,4 y 5 GHz (la banda de 6 GHz se incorporó después con Wi-Fi 6E); la opción a es falsa porque esa banda existe."
+        },
+        {
+          "stem": "Desde un equipo de la subred de usuarios, el administrador se conecta a otras subredes por SSH y SCP. ¿Qué puerto o puertos debe permitir el cortafuegos?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Puerto 21 para SSH y 22 para SCP."
+            },
+            {
+              "key": "b",
+              "text": "Puerto 22 para SSH y 21 para SCP."
+            },
+            {
+              "key": "c",
+              "text": "Puerto 21 tanto para SSH como SCP."
+            },
+            {
+              "key": "d",
+              "text": "Puerto 22 tanto para SSH como SCP."
+            }
+          ],
+          "correct": "d",
+          "justification": "SSH escucha en el puerto 22 y SCP viaja sobre SSH, por lo que ambos usan el mismo puerto. El 21 corresponde a FTP y no interviene en este acceso."
+        },
+        {
+          "stem": "Si en un servidor se instala IIS, ¿qué comando se utiliza para reiniciarlo?",
+          "options": [
+            {
+              "key": "a",
+              "text": "IIS RESET"
+            },
+            {
+              "key": "b",
+              "text": "IISRESET"
+            },
+            {
+              "key": "c",
+              "text": "RESET IIS"
+            },
+            {
+              "key": "d",
+              "text": "RESETIIS"
+            }
+          ],
+          "correct": "b",
+          "justification": "IISRESET es la utilidad de Windows que reinicia el servicio IIS. Las demás expresiones no son comandos válidos."
+        },
+        {
+          "stem": "En un servidor Linux hay que capturar el tráfico de la interfaz eth1 y guardarlo en fichero.out para analizarlo después. ¿Qué sentencia es correcta?",
+          "options": [
+            {
+              "key": "a",
+              "text": "snoop -d eth1 -w fichero.out"
+            },
+            {
+              "key": "b",
+              "text": "tcpdump -i any -o fichero.out"
+            },
+            {
+              "key": "c",
+              "text": "tcpdump -i eth1 -w fichero.out"
+            },
+            {
+              "key": "d",
+              "text": "snoop -d any -o fichero.out"
+            }
+          ],
+          "correct": "c",
+          "justification": "tcpdump -i eth1 -w fichero.out captura en la interfaz indicada y escribe el resultado en el fichero. La opción -i any capturaría en todas las interfaces, -o no es la opción de salida de tcpdump y snoop es una herramienta de Solaris que no emplea -w."
+        },
+        {
+          "stem": "Un servidor Apache 2.4 sirve la intranet en intranet.sgi.es y debe atender también páginas de otros dominios. ¿Qué directiva debe usar?",
+          "options": [
+            {
+              "key": "a",
+              "text": "VirtualMachine"
+            },
+            {
+              "key": "b",
+              "text": "VirtualDomain"
+            },
+            {
+              "key": "c",
+              "text": "VirtualHost"
+            },
+            {
+              "key": "d",
+              "text": "VirtualIp"
+            }
+          ],
+          "correct": "c",
+          "justification": "Apache 2.4 usa la directiva <VirtualHost> para alojar varios dominios en el mismo servidor. VirtualMachine, VirtualDomain y VirtualIp no existen como directivas de Apache."
+        },
+        {
+          "stem": "Al crear una VLAN nueva, ¿qué opción hace que las tramas Ethernet incorporen la etiqueta con el identificador de VLAN?",
+          "options": [
+            {
+              "key": "a",
+              "text": "untagged"
+            },
+            {
+              "key": "b",
+              "text": "tagged"
+            },
+            {
+              "key": "c",
+              "text": "id"
+            },
+            {
+              "key": "d",
+              "text": "trunk"
+            }
+          ],
+          "correct": "b",
+          "justification": "En el modo tagged las tramas salen con la etiqueta 802.1Q que contiene el identificador de VLAN. untagged no etiqueta, id no es un modo y trunk designa el enlace que transporta varias VLAN, no la etiqueta en sí."
+        },
+        {
+          "stem": "El CCN-CERT publica herramientas de seguridad. ¿Cuál de las siguientes se dedica al análisis avanzado de malware?",
+          "options": [
+            {
+              "key": "a",
+              "text": "NADA"
+            },
+            {
+              "key": "b",
+              "text": "CADA"
+            },
+            {
+              "key": "c",
+              "text": "ADA"
+            },
+            {
+              "key": "d",
+              "text": "SADA"
+            }
+          ],
+          "correct": "c",
+          "justification": "ADA es la plataforma del CCN-CERT para el análisis avanzado de malware. Las siglas NADA, CADA y SADA no corresponden a esa herramienta."
+        },
+        {
+          "stem": "En el clúster de cortafuegos se quiere filtrar y monitorizar el tráfico HTTP que llega desde Internet a los servidores web. ¿Qué módulo hay que implementar?",
+          "options": [
+            {
+              "key": "a",
+              "text": "WAT - Web Administration Tool"
+            },
+            {
+              "key": "b",
+              "text": "WAF - Web Application Firewall"
+            },
+            {
+              "key": "c",
+              "text": "VFN - Virtual Firewall Network"
+            },
+            {
+              "key": "d",
+              "text": "WFL7 - Web Firewall Layer 7"
+            }
+          ],
+          "correct": "b",
+          "justification": "El WAF (Web Application Firewall) inspecciona y filtra el tráfico HTTP y HTTPS en la capa de aplicación, que es lo que se pide. WAT, VFN y WFL7 no son módulos reales con esa función."
+        },
+        {
+          "stem": "En los equipos Windows 10 de la subred de usuarios se necesita consultar la tabla de enrutamiento. ¿Qué comando la muestra?",
+          "options": [
+            {
+              "key": "a",
+              "text": "route show"
+            },
+            {
+              "key": "b",
+              "text": "ip route ls"
+            },
+            {
+              "key": "c",
+              "text": "route print"
+            },
+            {
+              "key": "d",
+              "text": "ip route print"
+            }
+          ],
+          "correct": "c",
+          "justification": "route print muestra la tabla de enrutamiento en Windows. route show, ip route ls e ip route print no son órdenes válidas de Windows; la sintaxis ip route es propia de Linux."
+        }
+      ]
+    },
+    {
+      "slug": "tai-2024-a-s1",
+      "year": 2024,
+      "conv": "TAI-L 2024 · modelo A",
+      "block": "IV",
+      "title": "Becas para personas opositoras",
+      "difficulty": "media",
+      "official": true,
+      "estimatedMinutes": 30,
+      "statement": "El organismo en el que trabaja tramita becas para personas opositoras y necesita un sistema de información que cubra todo el ciclo de concesión. El modelo de datos del sistema se organiza en cinco tablas. **Interesado** guarda a cada solicitante con su identificador, documento de identidad, nombre, dos apellidos y correo. **SolicitudBeca** registra cada solicitud con su identificador, la referencia al interesado, la referencia al cuerpo de beca, la fecha de presentación, el estado y el año de la convocatoria. **FicheroAdjunto** almacena los documentos que se cuelgan de una solicitud, con su identificador, la solicitud a la que pertenecen y el nombre del fichero. **CuerpoBecado** contiene los cuerpos destinatarios (código y denominación) y **Estado** los valores posibles del estado de la solicitud.\n\nEl frontal web permite a los interesados autenticarse, firmar y presentar solicitudes, subsanaciones y alegaciones, además de descargar los listados que publique el organismo. El backend atiende a ese frontal y, mediante una aplicación de gestión, permite al personal público consultar la información y la documentación presentadas y publicar los listados. El frontal se construye con un framework JavaScript, HTML5 y CSS3; el backend puede ser .NET o Java según el equipo. El código se aloja en GitHub, la documentación aportada se gestiona en un gestor documental y se reutilizan servicios del Catálogo de Servicios de Administración Digital.\n\nLas preguntas recorren desarrollo web y accesibilidad, bases de datos y SQL, programación y UML, interoperabilidad y servicios web, y un detalle de firma electrónica en SOAP.",
+      "steps": [
+        "Leer el caso y fijar las piezas: modelo de datos, frontal web, backend, aplicación de gestión, GitHub, gestor documental y servicios reutilizados.",
+        "Dibujar mentalmente las tablas con sus claves primarias y foráneas para resolver multiplicidades y sentencias SQL sin dudar.",
+        "Separar las áreas del temario: bases de datos y SQL (IV.27 y IV.28), gestores y ORM (IV.29), programación, UML y Java (IV.30), desarrollo web (IV.31), interoperabilidad y servicios web (IV.32), firma y criptografía (V.36) y accesibilidad (V.40).",
+        "En cada pregunta, descartar opciones por un dato técnico verificable (atributo HTML, palabra clave SQL, tipo de Java, clase de C#, patrón de documentación) en lugar de por impresión general.",
+        "Corregir con la plantilla oficial del modelo A y revisar las que fallan para localizar el concepto exacto que se domina peor."
+      ],
+      "topics": [
+        "IV.27",
+        "IV.28",
+        "IV.29",
+        "IV.30",
+        "IV.31",
+        "IV.32",
+        "V.36",
+        "V.40"
+      ],
+      "source": {
+        "label": "INAP — Cuestionario TAI-L 2024, modelo A (Supuesto I)",
+        "url": "https://sede.inap.gob.es/documents/59312/2364268/Cuestionario_TAI_LI_2024_A_M8L91VL1CL_154AB89SD658.pdf/43a5d8c6-3f74-dbca-8452-c00408125ff8",
+        "pages": "pp. 8-10"
+      },
+      "questions": [
+        {
+          "stem": "En el formulario de solicitud, el campo de correo electrónico no debe admitir más de 100 caracteres. ¿Qué atributo HTML lo consigue?",
+          "options": [
+            {
+              "key": "a",
+              "text": "size=\"100\""
+            },
+            {
+              "key": "b",
+              "text": "max=\"100\""
+            },
+            {
+              "key": "c",
+              "text": "maxlength=\"100\""
+            },
+            {
+              "key": "d",
+              "text": "length=\"100\""
+            }
+          ],
+          "correct": "c",
+          "justification": "maxlength es el atributo que limita el número de caracteres que el usuario puede escribir. size solo fija el ancho visual del control, max no existe para este tipo de campo y length no es un atributo válido del elemento input."
+        },
+        {
+          "stem": "Según se elija .NET o Java para el backend, ¿qué pareja de ORM es la correcta?",
+          "options": [
+            {
+              "key": "a",
+              "text": "JPA en .NET e Hibernate en Java"
+            },
+            {
+              "key": "b",
+              "text": "Hibernate en .NET y Entity Framework en Java"
+            },
+            {
+              "key": "c",
+              "text": "Entity Framework en .NET e Hibernate en Java"
+            },
+            {
+              "key": "d",
+              "text": "Spring Data en .NET e Hibernate en Java"
+            }
+          ],
+          "correct": "c",
+          "justification": "Entity Framework es el ORM habitual del ecosistema .NET y Hibernate el de Java, donde implementa la especificación JPA. JPA y Spring Data pertenecen a Java, no a .NET, y las opciones a), b) y d) cruzan tecnologías de plataformas distintas."
+        },
+        {
+          "stem": "Hay que insertar un registro en la tabla CuerpoBecado con código «TAI» y denominación «Técnico Auxiliar de Informática». ¿Cuál de estas sentencias es correcta?",
+          "options": [
+            {
+              "key": "a",
+              "text": "INSERT INTO CuerpoBecado (Codigo, Denominacion) VALUES ('TAI, 'Técnico Auxiliar de Informática');"
+            },
+            {
+              "key": "b",
+              "text": "INSERT INTO CuerpoBecado (Codigo, Denominacion) VALUES (TAI, Técnico Auxiliar de Informática);"
+            },
+            {
+              "key": "c",
+              "text": "INSERT TO CuerpoBecado (Codigo, Denominacion) VALUES ('TAI', 'Técnico Auxiliar de Informática');"
+            },
+            {
+              "key": "d",
+              "text": "INSERT INTO CuerpoBecado (Codigo, Denominacion) VALUES ('TAI', 'Técnico Auxiliar de Informática');"
+            }
+          ],
+          "correct": "d",
+          "justification": "La opción d) usa la palabra clave INSERT INTO, cierra las comillas simples de los dos valores y respeta el orden de columnas. La a) deja una cadena sin cerrar, la b) escribe los textos sin comillas y la c) emplea INSERT TO, que no es sintaxis SQL válida."
+        },
+        {
+          "stem": "¿Qué cardinalidad existe entre SolicitudBeca y FicheroAdjunto en el modelo de datos del supuesto?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Una solicitud puede tener N ficheros adjuntos"
+            },
+            {
+              "key": "b",
+              "text": "Una solicitud puede tener como máximo un fichero adjunto"
+            },
+            {
+              "key": "c",
+              "text": "N solicitudes pueden compartir M ficheros adjuntos"
+            },
+            {
+              "key": "d",
+              "text": "Una solicitud puede tener cero o un único fichero adjunto"
+            }
+          ],
+          "correct": "a",
+          "justification": "FicheroAdjunto lleva IdSolicitudBeca como clave foránea, de modo que cada fichero pertenece a una solicitud y una misma solicitud puede acumular varios documentos. Por eso la relación es de uno a muchos; las opciones b) y d) limitan el lado de los ficheros y la c) describe una relación muchos a muchos que el modelo no recoge."
+        },
+        {
+          "stem": "El sitio debe cumplir la normativa de accesibilidad web. ¿Qué herramienta automatizada sirve para comprobar ese cumplimiento?",
+          "options": [
+            {
+              "key": "a",
+              "text": "QualWeb"
+            },
+            {
+              "key": "b",
+              "text": "Equal Automatic Checker"
+            },
+            {
+              "key": "c",
+              "text": "AccSite"
+            },
+            {
+              "key": "d",
+              "text": "Shovel"
+            }
+          ],
+          "correct": "a",
+          "justification": "QualWeb es la herramienta de evaluación automática de accesibilidad que figura en el ecosistema de referencia del examen. Las otras tres denominaciones no corresponden a herramientas de accesibilidad reconocidas, por lo que no permiten justificar un informe de conformidad."
+        },
+        {
+          "stem": "El formulario de solicitud es extenso y hace muchas consultas de datos. ¿Qué técnica conviene para que la página se genere en el servidor?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Server Sent Events"
+            },
+            {
+              "key": "b",
+              "text": "Ajax"
+            },
+            {
+              "key": "c",
+              "text": "WebSocket"
+            },
+            {
+              "key": "d",
+              "text": "Server Side Rendering"
+            }
+          ],
+          "correct": "d",
+          "justification": "Server Side Rendering construye el HTML en el servidor y lo entrega ya montado, lo que aligera el trabajo del navegador. Server Sent Events, Ajax y WebSocket son mecanismos de comunicación o actualización de datos en el cliente, no de renderizado en servidor."
+        },
+        {
+          "stem": "Para representar el flujo de autenticación, firma, guardado, asiento registral y justificante de presentación, ¿qué diagrama UML es el adecuado?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Diagrama de paquetes"
+            },
+            {
+              "key": "b",
+              "text": "Diagrama de objetos"
+            },
+            {
+              "key": "c",
+              "text": "Diagrama de secuencia"
+            },
+            {
+              "key": "d",
+              "text": "Diagrama entidad/relación"
+            }
+          ],
+          "correct": "c",
+          "justification": "El diagrama de secuencia muestra el orden temporal de los mensajes entre actores y objetos, que es justo lo que se quiere describir. El de paquetes organiza módulos, el de objetos representa instancias y sus enlaces, y el entidad/relación modela datos, no un flujo de acciones."
+        },
+        {
+          "stem": "Si el backend se desarrolla en Java, ¿qué tecnología permite generar un cliente de servicios web?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Apache Flink"
+            },
+            {
+              "key": "b",
+              "text": "Apache Xalan"
+            },
+            {
+              "key": "c",
+              "text": "Apache Xerces"
+            },
+            {
+              "key": "d",
+              "text": "Apache CXF"
+            }
+          ],
+          "correct": "d",
+          "justification": "Apache CXF es un framework de servicios web que genera clientes y servidores para JAX-WS y JAX-RS. Flink se orienta al procesamiento de flujos, Xalan a transformaciones XSLT y Xerces al análisis de documentos XML; ninguno de ellos es la herramienta de cliente de servicios web."
+        },
+        {
+          "stem": "En el entorno Java, ¿qué API se utiliza para convertir elementos XML en clases y objetos?",
+          "options": [
+            {
+              "key": "a",
+              "text": "JAXB"
+            },
+            {
+              "key": "b",
+              "text": "JPA"
+            },
+            {
+              "key": "c",
+              "text": "JAXR"
+            },
+            {
+              "key": "d",
+              "text": "JAX-RS"
+            }
+          ],
+          "correct": "a",
+          "justification": "JAXB es la API de binding entre XML y objetos Java. JPA se ocupa de la persistencia relacional, JAXR del acceso a registros de servicios y JAX-RS de servicios REST, por lo que no resuelven el mapeo XML-clase."
+        },
+        {
+          "stem": "Al elegir herramientas para analizar y mejorar la calidad del código, ¿cuál NO aporta nada en ese terreno?",
+          "options": [
+            {
+              "key": "a",
+              "text": "SonarQube"
+            },
+            {
+              "key": "b",
+              "text": "Un linter de JavaScript"
+            },
+            {
+              "key": "c",
+              "text": "PMD"
+            },
+            {
+              "key": "d",
+              "text": "Mercurial"
+            }
+          ],
+          "correct": "d",
+          "justification": "Mercurial es un sistema de control de versiones distribuido: gestiona el historial del código, pero no analiza su calidad. SonarQube, los linters y PMD sí revisan reglas de estilo, defectos y métricas de calidad."
+        },
+        {
+          "stem": "Para controlar el plazo de presentación de solicitudes con Java, ¿qué clase nativa representa a la vez una fecha y una hora?",
+          "options": [
+            {
+              "key": "a",
+              "text": "LocalDateTime"
+            },
+            {
+              "key": "b",
+              "text": "LocalDate"
+            },
+            {
+              "key": "c",
+              "text": "LocalTime"
+            },
+            {
+              "key": "d",
+              "text": "OffsetTime"
+            }
+          ],
+          "correct": "a",
+          "justification": "LocalDateTime combina fecha y hora sin zona horaria. LocalDate solo contiene la fecha, LocalTime solo la hora y OffsetTime añade un desplazamiento horario a la hora, pero no la fecha completa."
+        },
+        {
+          "stem": "Se va a documentar la capa de servicios web de la aplicación. ¿Cuál de estas opciones NO es un formato o lenguaje válido para documentarlos?",
+          "options": [
+            {
+              "key": "a",
+              "text": "RAML"
+            },
+            {
+              "key": "b",
+              "text": "REST"
+            },
+            {
+              "key": "c",
+              "text": "WSDL"
+            },
+            {
+              "key": "d",
+              "text": "OpenAPI/Swagger"
+            }
+          ],
+          "correct": "b",
+          "justification": "REST es un estilo arquitectónico, no un formato para describir servicios. RAML, WSDL y OpenAPI/Swagger son lenguajes o especificaciones que sí permiten documentar contratos de servicios web."
+        },
+        {
+          "stem": "Hay que crear una tabla Subsanacion con IdSubsanacion e IdSolicitudBeca numéricos y TextoFundamento de 2000 caracteres. ¿Qué sentencia es la correcta?",
+          "options": [
+            {
+              "key": "a",
+              "text": "CREATE TABLE Subsanacion (IdSubsanacion bigint, IdSolicitudBeca bigint, TextoFundamento varchar(2000));"
+            },
+            {
+              "key": "b",
+              "text": "CREATE Subsanacion (IdSubsanacion bigint, IdSolicitudBeca bigint, TextoFundamento varchar(2000));"
+            },
+            {
+              "key": "c",
+              "text": "CREATE NEW TABLE Subsanacion (IdSubsanacion bigint, IdSolicitudBeca bigint, TextoFundamento varchar(2000));"
+            },
+            {
+              "key": "d",
+              "text": "CREATE TABLE Subsanacion AS (IdSubsanacion bigint, IdSolicitudBeca bigint, TextoFundamento varchar(2000));"
+            }
+          ],
+          "correct": "a",
+          "justification": "La forma correcta de definir una tabla nueva con sus columnas es CREATE TABLE seguido del nombre y la lista de columnas. La b) omite TABLE, la c) usa NEW, que no forma parte de la sintaxis estándar, y la d) emplea AS, pensado para crear una tabla a partir de una consulta."
+        },
+        {
+          "stem": "Con alta concurrencia, se quiere evitar lecturas sucias y lecturas no repetibles, pero se aceptan lecturas fantasma. ¿Qué nivel de aislamiento corresponde?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Serializable"
+            },
+            {
+              "key": "b",
+              "text": "Read committed"
+            },
+            {
+              "key": "c",
+              "text": "Read uncommitted"
+            },
+            {
+              "key": "d",
+              "text": "Repeatable read"
+            }
+          ],
+          "correct": "d",
+          "justification": "Según el estándar SQL, Read committed evita las lecturas sucias pero permite las no repetibles; Repeatable read evita las sucias y las no repetibles y deja pasar las fantasma; Serializable las evita todas. La opción c) es el nivel más débil y permite leer datos no confirmados."
+        },
+        {
+          "stem": "La aplicación debe integrarse con GEISER, cuyos servicios web son SOAP. ¿Con qué se firman las peticiones que genera la aplicación?",
+          "options": [
+            {
+              "key": "a",
+              "text": "WS-Security"
+            },
+            {
+              "key": "b",
+              "text": "SAML"
+            },
+            {
+              "key": "c",
+              "text": "JWT"
+            },
+            {
+              "key": "d",
+              "text": "XML-Encryption"
+            }
+          ],
+          "correct": "a",
+          "justification": "WS-Security define cómo firmar y cifrar mensajes SOAP mediante XML Signature y XML Encryption, que es el mecanismo aplicable al servicio. SAML y JWT son formatos de afirmaciones o tokens de autenticación, y XML-Encryption solo cifra: no aporta por sí mismo la firma de la petición."
+        },
+        {
+          "stem": "Se quiere generar el justificante en PDF con la librería iText para .NET. ¿Qué comando instala el paquete desde NuGet?",
+          "options": [
+            {
+              "key": "a",
+              "text": "dotnet add package iText"
+            },
+            {
+              "key": "b",
+              "text": "dotnet install package iText"
+            },
+            {
+              "key": "c",
+              "text": "dotnet add iText"
+            },
+            {
+              "key": "d",
+              "text": "dotnet install iText"
+            }
+          ],
+          "correct": "a",
+          "justification": "La CLI de .NET instala paquetes con la forma «dotnet add package <nombre>». Las variantes con install no son válidas para esta operación y «dotnet add iText» no indica que se trate de un paquete NuGet."
+        },
+        {
+          "stem": "Según «Técnicas y Prácticas» de Métrica v3, si se busca optimizar el modelo físico para reducir o simplificar los accesos a la base de datos, ¿qué acción se aplica?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Combinar entidades cuando los accesos se repiten en transacciones distintas"
+            },
+            {
+              "key": "b",
+              "text": "Eliminar entidades"
+            },
+            {
+              "key": "c",
+              "text": "Introducir elementos redundantes"
+            },
+            {
+              "key": "d",
+              "text": "Normalizar las tablas hasta la forma normal de Boyce-Codd"
+            }
+          ],
+          "correct": "c",
+          "justification": "La optimización del modelo físico puede introducir redundancia controlada para disminuir el número de accesos y uniones. Normalizar hasta FNBC persigue lo contrario y eliminar entidades no es una técnica de optimización; combinar entidades por frecuencia de acceso no es la acción que recoge la guía para este objetivo."
+        },
+        {
+          "stem": "En un sprint de SCRUM se detecta una mala práctica que puede ralentizar el proyecto. ¿En qué reunión se plantea para buscar la mejora continua?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Daily Scrum"
+            },
+            {
+              "key": "b",
+              "text": "Sprint Retrospective"
+            },
+            {
+              "key": "c",
+              "text": "Sprint Planning"
+            },
+            {
+              "key": "d",
+              "text": "Sprint Review"
+            }
+          ],
+          "correct": "b",
+          "justification": "La Sprint Retrospective es la reunión dedicada a revisar cómo ha funcionado el equipo y a acordar mejoras para los siguientes sprints. La Daily Scrum coordina el trabajo diario, la Planning planifica el sprint y la Review presenta el incremento al cliente."
+        },
+        {
+          "stem": "La integración con la Plataforma de Intermediación de Datos se apoya en una arquitectura orientada a servicios. ¿Cuáles son sus componentes principales?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Servicio, proveedor, consumidor y orquestador de servicios"
+            },
+            {
+              "key": "b",
+              "text": "Servicio, proveedor, consumidor y depurador de servicios"
+            },
+            {
+              "key": "c",
+              "text": "Servicio, proveedor, consumidor y comparador de servicios"
+            },
+            {
+              "key": "d",
+              "text": "Servicio, proveedor, consumidor y registro de servicios"
+            }
+          ],
+          "correct": "d",
+          "justification": "En SOA los componentes básicos son el servicio, el proveedor que lo publica, el consumidor que lo utiliza y el registro donde se localizan los servicios. El orquestador, el depurador y el comparador son piezas o utilidades que pueden apoyar la arquitectura, pero no forman parte del núcleo del modelo."
+        },
+        {
+          "stem": "Si el backend se desarrolla en .NET con C#, ¿cómo se declara que un tipo de dato es opcional (anulable)?",
+          "options": [
+            {
+              "key": "a",
+              "text": "int? Telefono"
+            },
+            {
+              "key": "b",
+              "text": "int|null Telefono"
+            },
+            {
+              "key": "c",
+              "text": "int:null Telefono"
+            },
+            {
+              "key": "d",
+              "text": "int ?? Telefono"
+            }
+          ],
+          "correct": "a",
+          "justification": "En C# el operador ? aplicado a un tipo de valor declara un Nullable<T>, de modo que la variable puede contener un valor o null. Las formas int|null, int:null e int ?? no son sintaxis válida para declarar el tipo."
+        }
+      ]
+    }
+  ],
   "progress": {
     "total": 40,
     "apuntesCompletos": 40,
@@ -18076,6 +19564,8 @@
     "questions": 400,
     "cases": 5,
     "caseQuestions": 50,
+    "supuestos": 3,
+    "supuestoQuestions": 60,
     "convocatorias": 12
   }
 }
