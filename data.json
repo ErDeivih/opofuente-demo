@@ -350,8 +350,8 @@
             "practicaStatus": "con_practica",
             "sectionCount": 6,
             "questionCount": 10,
-            "formato": "esquema",
-            "longWords": 0
+            "formato": "desarrollado",
+            "longWords": 2454
           },
           {
             "path": "III.20",
@@ -360,8 +360,8 @@
             "practicaStatus": "con_practica",
             "sectionCount": 6,
             "questionCount": 10,
-            "formato": "esquema",
-            "longWords": 0
+            "formato": "desarrollado",
+            "longWords": 2850
           },
           {
             "path": "III.21",
@@ -400,8 +400,8 @@
             "practicaStatus": "con_practica",
             "sectionCount": 6,
             "questionCount": 10,
-            "formato": "esquema",
-            "longWords": 0
+            "formato": "desarrollado",
+            "longWords": 2608
           },
           {
             "path": "III.25",
@@ -2875,6 +2875,228 @@
         "Pensar que un snapshot de máquina virtual sustituye a una copia de seguridad."
       ],
       "reviewedAt": "2026-11-10",
+      "longSections": [
+        {
+          "heading": "1. Ficha oficial del tema",
+          "body": "**Tema:** III.19, «Virtualización y contenedores», del bloque III (Sistemas, redes y comunicaciones) del temario común de informática C1. **Materias que cubre:** concepto y tipos de virtualización, hipervisores, máquinas virtuales, virtualización de servidores y de puestos de usuario, almacenamiento (DAS, NAS, SAN y VSAN), contenedores (Docker, LXC, Podman), orquestación (Docker Swarm, Kubernetes, OpenShift), aprovisionamiento thick y thin, ventajas, riesgos y continuidad. **Relación con otros temas:** se apoya en III.18 (sistemas operativos de servidor) y en los temas de redes y cloud, y sirve de base a la administración de infraestructuras y a la seguridad. **Fuentes:** `Tema 7.docx` y `Bloque 4 Actualizado 2026.docx`, con el contexto de administración de `Tema 6.docx`, volcados en `data/fuentes/III.19.txt`.",
+          "table": {
+            "columns": [
+              "Dato de la ficha",
+              "Valor"
+            ],
+            "rows": [
+              [
+                "Tema",
+                "III.19 Virtualización y contenedores"
+              ],
+              [
+                "Bloque",
+                "III · Sistemas, redes y comunicaciones"
+              ],
+              [
+                "Materias",
+                "Hipervisores, VM, almacenamiento, contenedores, orquestación, VDI y ventajas/riesgos"
+              ],
+              [
+                "Temas relacionados",
+                "III.18 Sistemas operativos de servidor; redes y cloud"
+              ],
+              [
+                "Fuente",
+                "Tema 7.docx y Bloque 4 Actualizado 2026.docx"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "2. Índice de epígrafes",
+          "body": "El desarrollo del tema se organiza en los epígrafes del apartado 4:\n\n- **4.1.** Qué es virtualizar: capa de abstracción y recursos virtualizables.\n- **4.2.** Hipervisores y técnicas de virtualización.\n- **4.3.** Máquinas virtuales y consolidación de servidores.\n- **4.4.** Almacenamiento en entornos virtualizados: DAS, NAS, SAN y VSAN.\n- **4.5.** Virtualización de sistema operativo y contenedores.\n- **4.6.** Docker, imágenes y orquestación.\n- **4.7.** Redes virtuales y virtualización de puestos de usuario (VDI).\n- **4.8.** Ventajas, riesgos y continuidad.\n\nCompletan el tema la tabla comparativa (apartado 5), el ejemplo práctico (6), las trampas de examen (7), el resumen para memorizar (8), los quince casos tipo test (9) y las fuentes citadas (10)."
+        },
+        {
+          "heading": "3. Introducción y contexto",
+          "body": "Virtualizar consiste en interponer una capa de abstracción entre el hardware físico y los sistemas que lo utilizan, de forma que un conjunto de recursos físicos se comporte como varios recursos lógicos. Esa capa permite ejecutar varios sistemas operativos y aplicaciones sobre un mismo servidor, aislados entre sí, y gestionar cada máquina virtual como si fuera un conjunto de ficheros que se puede copiar, mover o restaurar.\n\nLa virtualización nació para reducir el coste de tener un servidor dedicado por aplicación: hardware, licencias, energía, infraestructura y, sobre todo, gestión. Con la consolidación llegaron el aislamiento, la alta disponibilidad y la posibilidad de probar actualizaciones sin tocar producción. Después aparecieron los contenedores, que llevan la idea más lejos: en lugar de virtualizar el hardware, virtualizan el sistema operativo y empaquetan solo la aplicación y sus dependencias.\n\nEste tema ordena ambas tecnologías, sus tipos y sus herramientas, y las conecta con el almacenamiento, la red y la continuidad del servicio.",
+          "table": {
+            "columns": [
+              "Fuente",
+              "Qué aporta"
+            ],
+            "rows": [
+              [
+                "Tema 7.docx",
+                "Almacenamiento, VSAN, backups, virtualización de servidores y puestos de usuario"
+              ],
+              [
+                "Bloque 4 Actualizado 2026.docx",
+                "Hipervisores tipo I y II, VDI, thick/thin, contenedores, orquestación, cloud y clúster"
+              ],
+              [
+                "Tema 6.docx",
+                "Contexto de administración, tareas del administrador y gestión de servicios"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "4. Desarrollo por epígrafe",
+          "body": "**4.1. Qué es virtualizar.** La virtualización separa el hardware físico del software que lo usa mediante una capa de abstracción. El software que la implementa es el sistema anfitrión (host) y los sistemas virtualizados son los invitados (guest); un anfitrión puede alojar varios invitados. Se puede virtualizar el **procesador** (coordinando el acceso de las máquinas virtuales), la **memoria** (compartiendo la memoria física sin que unos sistemas sobrescriban los datos de otros), la **red** (garantizando que cada máquina recibe y envía el tráfico correcto) y el **almacenamiento** (dando a cada máquina su espacio aislado). Las máquinas virtuales se gestionan como ficheros, lo que permite copiarlas, moverlas o restaurarlas con rapidez. Un caso particular es la **Java VM**, que virtualiza un proceso y le da un entorno de ejecución independiente de la plataforma y del sistema operativo.\n\n**4.2. Hipervisores y técnicas.** El software que crea y gestiona las máquinas virtuales se llama **hipervisor** o VMM (Virtual Machine Monitor). Hay dos tipos: el **nativo o bare-metal**, que se ejecuta directamente sobre el hardware y no necesita sistema anfitrión (VMware ESXi, Hyper-V, Citrix XenServer), y el **alojado (hosted)**, que se ejecuta como aplicación sobre un sistema operativo existente (VMware Workstation, VirtualBox, QEMU). Los hipervisores nativos son más eficientes y seguros por su acceso directo al hardware; los alojados pueden perder rendimiento por el sistema operativo adicional. En la virtualización de servidores destacan dos técnicas: la **virtualización completa o de hardware**, que permite ejecutar varios sistemas sin modificar al invitado y es la más usada, y la **paravirtualización**, en la que el hipervisor ofrece al invitado una interfaz especial y este accede a los recursos mediante **hypercalls**, lo que exige modificar el sistema invitado para que su núcleo no se ejecute en el anillo privilegiado y usar mecanismos como el *ring deprivileging* o el apoyo hardware de Intel VT-x y AMD-V.\n\n**4.3. Máquinas virtuales y consolidación.** El objetivo de la virtualización de servidores es ofrecer varios servidores virtuales con un único equipo físico. Frente al servidor dedicado, que resulta caro en hardware, licencias, energía y gestión, la consolidación aprovecha mejor el hardware (muchos servidores físicos trabajan a un 10-15 % de su capacidad), aísla las máquinas virtuales, facilita la alta disponibilidad (duplicar una VM y restaurarla en minutos), permite probar sistemas operativos y actualizaciones sin afectar a producción, mejora el aprovisionamiento y la administración y reduce el consumo energético. Las máquinas virtuales admiten **snapshots** para volver a un estado concreto en caso de error, y su gestión como ficheros simplifica las copias y los movimientos entre servidores.\n\n**4.4. Almacenamiento.** En virtualización, el almacenamiento condiciona el rendimiento y la continuidad. Las **cabinas de discos** agrupan controladoras (RAID, caché, copias), front-end de conectividad y back-end de discos, y organizan el espacio en *pools*. El acceso puede ser a nivel de bloque, con discos internos, **DAS** (conexión directa SCSI, FC o SAS) o **SAN** (red dedicada de bloques, con LUN como disco virtual y capas cliente, red y disco; puede ser FC, iSCSI o FCoE), o a nivel de fichero con **NAS** (el servidor monta un sistema de ficheros externo con NFS o CIFS). El almacenamiento interno tiene problemas de escalabilidad, protección e infrautilización; el externo dedicado mejora la escalabilidad y la redundancia, pero también puede infrautilizarse si no se comparte. La **VSAN** unifica el almacenamiento local de los servidores de un clúster y lo gestiona como una SAN compartida; se puede implementar en el servidor, en la red o en la cabina. En entornos virtuales, el aprovisionamiento puede ser **thick** (reserva toda la capacidad del disco virtual) o **thin** (consume solo lo necesario y crece con la demanda).\n\n**4.5. Virtualización de sistema operativo y contenedores.** La virtualización de sistema operativo hace que el anfitrión virtualice el hardware a nivel del propio sistema operativo, sin hipervisor: se crean entornos virtuales aislados que comparten el mismo sistema, las mismas librerías y los mismos binarios, pero con su propia estructura de directorios. El **contenedor** es la evolución de esa idea: un proceso para el sistema operativo que incluye las librerías, archivos y configuraciones que necesita la aplicación, sin un sistema operativo completo debajo. Frente a una máquina virtual, que necesita contener todo el sistema, el contenedor aprovecha el sistema operativo sobre el que se ejecuta. Sus ventajas son la **portabilidad** (se despliega en cualquier sistema que tenga Docker), la **flexibilidad** (arranca como un proceso, mucho más rápido que una VM) y la **ligereza** (solo lleva las dependencias necesarias). **LXC** es la tecnología de contenedores a nivel de sistema operativo que permite ejecutar varios entornos Linux aislados en un host, más ligera que las máquinas virtuales.\n\n**4.6. Docker y orquestación.** Docker es el conjunto de herramientas para crear, compartir y ejecutar aplicaciones en contenedores, con aislamiento y consistencia entre entornos. Cuando hay muchos contenedores y microservicios hace falta orquestación: **Docker Swarm** es la solución nativa de Docker para crear clústeres, desplegar, escalar y dar alta disponibilidad, más sencilla pero menos potente que Kubernetes; **Kubernetes** administra microservicios y aplicaciones a gran escala con implementación, escalado y operación automatizados; **OpenShift** es la plataforma basada en Kubernetes de Red Hat con capacidades empresariales; **CRI-O** es un runtime ligero para Kubernetes basado en OCI. **Podman** gestiona contenedores sin daemon centralizado, es compatible con OCI y aporta mayor seguridad y flexibilidad en producción.\n\n**4.7. Redes virtuales y puestos de usuario.** La virtualización de red garantiza que cada máquina virtual envíe y reciba el tráfico apropiado; la segmentación lógica con **VLAN 802.1Q** permite separar redes dentro de una red física, lo que resulta útil para aislar entornos virtuales. La **virtualización de puestos de usuario (VDI)** separa el escritorio del equipo que se maneja: el usuario se conecta a un servidor central donde se ejecutan sus aplicaciones, procesos y datos, y puede acceder desde cualquier dispositivo con el cliente adecuado. Sus componentes son el servidor de escritorios y aplicaciones, el equipo de acceso, la red de comunicaciones y los protocolos (RDP en Windows, X Windows en Linux, ICA, NX o VNC), con posibilidad de un servidor bróker. Los escritorios pueden ser **persistentes o estáticos** (mantienen la configuración del usuario) o **no persistentes o dinámicos** (parten de una imagen maestra y se clonan al iniciar sesión), y el modo de operación puede ser centralizado, alojado o remoto. Sus ventajas son la reducción de costes, la seguridad de centralizar los datos y el aprovisionamiento rápido; sus desventajas, la dependencia de la red y de los servidores, el peor soporte de algunos periféricos y la formación necesaria.\n\n**4.8. Ventajas, riesgos y continuidad.** La virtualización aporta consolidación, aislamiento, alta disponibilidad, pruebas seguras, mejor aprovisionamiento, snapshots y eficiencia energética. Los riesgos vienen de la propia concentración: si el anfitrión o el almacenamiento fallan, caen muchas máquinas a la vez; un hipervisor alojado añade una capa que puede penalizar el rendimiento; la VDI depende de la red y de los servidores; y en el modo remoto de VDI la pérdida del equipo puede suponer la pérdida de los datos. Por eso la continuidad exige redundancia (N, N+1, 2N), copias de las máquinas virtuales (replicación, snapshots en frío, plugins de copia en caliente) y un plan de recuperación probado. En la nube, la virtualización es la base de IaaS, PaaS y SaaS, y los clústeres aportan alta disponibilidad y balanceo, con automatización mediante Ansible, Puppet, Terraform o Salt.",
+          "table": {
+            "columns": [
+              "Epígrafe",
+              "Datos que hay que retener"
+            ],
+            "rows": [
+              [
+                "Concepto",
+                "Capa de abstracción; anfitrión e invitados; se virtualizan CPU, memoria, red y almacenamiento"
+              ],
+              [
+                "Hipervisores",
+                "Nativo (ESXi, Hyper-V, XenServer) y alojado (Workstation, VirtualBox, QEMU)"
+              ],
+              [
+                "Técnicas",
+                "Virtualización completa (sin modificar al invitado) y paravirtualización (hypercalls)"
+              ],
+              [
+                "VM",
+                "Consolidación, aislamiento, alta disponibilidad, snapshots y gestión como ficheros"
+              ],
+              [
+                "Almacenamiento",
+                "DAS, NAS (NFS/CIFS), SAN (LUN; FC, iSCSI, FCoE) y VSAN; thick y thin"
+              ],
+              [
+                "Contenedores",
+                "Docker, LXC y Podman; comparten el sistema operativo; portabilidad, flexibilidad y ligereza"
+              ],
+              [
+                "Orquestación",
+                "Docker Swarm, Kubernetes, OpenShift y CRI-O"
+              ],
+              [
+                "VDI",
+                "Servidor de escritorios, acceso, red y protocolos (RDP, X, ICA, NX, VNC); persistente o no persistente"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "5. Tabla comparativa: máquina virtual frente a contenedor",
+          "body": "La tabla resume la diferencia que más se pregunta: la máquina virtual incluye un sistema operativo completo y el contenedor aprovecha el del anfitrión. De ahí se derivan el tiempo de arranque, el peso y el aislamiento.",
+          "table": {
+            "columns": [
+              "Aspecto",
+              "Máquina virtual",
+              "Contenedor"
+            ],
+            "rows": [
+              [
+                "Sistema operativo",
+                "Incluye un SO completo (invitado)",
+                "Comparte el SO del anfitrión"
+              ],
+              [
+                "Arranque",
+                "Más lento: hay que iniciar el SO",
+                "Como un proceso: mucho más rápido"
+              ],
+              [
+                "Peso",
+                "Mayor: SO, librerías y aplicación",
+                "Menor: solo aplicación y dependencias"
+              ],
+              [
+                "Aislamiento",
+                "Fuerte: hardware virtual y SO propio",
+                "A nivel de proceso y de sistema operativo"
+              ],
+              [
+                "Herramientas",
+                "Hipervisor (ESXi, Hyper-V, VirtualBox)",
+                "Docker, LXC, Podman y orquestadores"
+              ],
+              [
+                "Caso típico",
+                "Sistemas completos, servidores y VDI",
+                "Aplicaciones y microservicios"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "6. Ejemplo práctico resuelto",
+          "body": "**Supuesto.** Un ayuntamiento tiene diez servidores físicos infrautilizados: uno para la web, otro para la base de datos, otro para el correo y varios para aplicaciones antiguas. Quiere consolidarlos, mejorar la disponibilidad y dar escritorio a los usuarios de atención al público.\n\n**Resolución.**\n\n- **Consolidación:** se instala un hipervisor **nativo** (ESXi, Hyper-V o XenServer) directamente sobre dos servidores físicos y se crean máquinas virtuales independientes para cada servicio. La consolidación reduce hardware, licencias, energía y gestión, y el aislamiento evita que un servicio arrastre a los demás.\n- **Almacenamiento:** se monta una **SAN** con LUN para los discos de las máquinas virtuales, o una **VSAN** que unifique el almacenamiento local de los servidores del clúster; los datos menos críticos pueden ir en **NAS** (NFS o CIFS). El aprovisionamiento será **thin** para no reservar capacidad que no se usa, y **thick** en los discos que requieran rendimiento garantizado.\n- **Continuidad:** se configura un clúster con alta disponibilidad y se usan **snapshots** para recuperaciones rápidas y **plugins o replicación** para copias en caliente de las VM; los snapshots no sustituyen a las copias de seguridad completas.\n- **Aplicaciones nuevas:** la web municipal se empaqueta en **contenedores** con Docker y se despliega con **Kubernetes** o Docker Swarm, lo que agiliza las actualizaciones y el escalado; los contenedores arrancan como procesos, mucho más rápido que una VM.\n- **Puestos de usuario:** para atención al público se implanta **VDI** con un servidor de escritorios central, equipo de acceso y protocolo **RDP**; los escritorios no persistentes se clonan de una imagen maestra al iniciar sesión.\n\n**Conclusión.** No hay una tecnología mejor en abstracto: la VM encaja con sistemas completos y servicios que necesitan su propio SO; el contenedor, con aplicaciones empaquetadas y despliegues frecuentes; y la VDI, con puestos de usuario centralizados y controlados.",
+          "table": {
+            "columns": [
+              "Necesidad",
+              "Decisión",
+              "Dato clave"
+            ],
+            "rows": [
+              [
+                "Consolidar servidores",
+                "Hipervisor nativo y VM",
+                "Aislamiento y ahorro de recursos"
+              ],
+              [
+                "Almacenamiento compartido",
+                "SAN/VSAN y thick/thin",
+                "LUN y aprovisionamiento según demanda"
+              ],
+              [
+                "Aplicaciones nuevas",
+                "Contenedores y Kubernetes",
+                "Arranque rápido y escalado"
+              ],
+              [
+                "Puestos de usuario",
+                "VDI con RDP",
+                "Escritorio centralizado y no persistente"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "7. Trampas típicas de examen",
+          "body": "Las confusiones más frecuentes de este tema son estas:\n\n- **Confundir hipervisor nativo y alojado**: el nativo se ejecuta sobre el hardware; el alojado, sobre un sistema anfitrión.\n- **Confundir virtualización completa y paravirtualización**: la completa no modifica al invitado; la paravirtualización usa hypercalls y exige modificarlo.\n- **Confundir máquina virtual y contenedor**: la VM lleva un SO completo; el contenedor aprovecha el del anfitrión.\n- **Confundir Docker con un orquestador**: Docker crea y ejecuta contenedores; Swarm, Kubernetes y OpenShift los orquestan.\n- **Confundir Podman con Docker**: Podman funciona sin daemon centralizado y es compatible con OCI.\n- **Confundir LXC con Docker**: LXC virtualiza a nivel de sistema operativo; Docker empaqueta aplicaciones como contenedores.\n- **Confundir DAS, NAS y SAN**: DAS es conexión directa; NAS da acceso a ficheros (NFS/CIFS); SAN es una red dedicada de bloques con LUN.\n- **Confundir thick y thin**: thick reserva toda la capacidad; thin consume según la demanda.\n- **Creer que un snapshot es una copia de seguridad**: es una captura puntual para recuperación rápida y no sustituye a la copia.\n- **Confundir VDI persistente y no persistente**: el persistente mantiene la configuración del usuario; el no persistente vuelve a la imagen maestra.\n- **Confundir la Java VM con una máquina virtual de sistema**: la Java VM virtualiza un proceso, no un ordenador completo.",
+          "table": {
+            "columns": [
+              "Confusión",
+              "Lo correcto"
+            ],
+            "rows": [
+              [
+                "Nativo = alojado",
+                "Nativo sobre el hardware; alojado sobre un SO anfitrión"
+              ],
+              [
+                "VM = contenedor",
+                "La VM incluye SO completo; el contenedor comparte el del anfitrión"
+              ],
+              [
+                "Docker = Kubernetes",
+                "Docker ejecuta contenedores; Kubernetes los orquesta"
+              ],
+              [
+                "Snapshot = backup",
+                "El snapshot es puntual y no sustituye a la copia"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "8. Resumen para memorizar",
+          "body": "**Concepto.** Capa de abstracción entre hardware y sistemas; anfitrión (host) e invitados (guest); se virtualizan procesador, memoria, red y almacenamiento; las VM se gestionan como ficheros; la Java VM virtualiza un proceso.\n\n**Hipervisores.** Nativo o bare-metal (ESXi, Hyper-V, XenServer) y alojado (Workstation, VirtualBox, QEMU); los nativos son más eficientes y seguros.\n\n**Técnicas.** Virtualización completa (la más usada, sin modificar al invitado) y paravirtualización (hypercalls, modificación del invitado, ring deprivileging, VT-x y AMD-V).\n\n**Almacenamiento.** Cabinas con controladoras, pools, front-end y back-end; DAS (SCSI/FC/SAS), NAS (NFS/CIFS) y SAN (LUN; FC, iSCSI, FCoE); VSAN; aprovisionamiento thick y thin.\n\n**Contenedores.** Virtualización de sistema operativo; Docker (portabilidad, flexibilidad y ligereza), LXC y Podman; orquestación con Docker Swarm, Kubernetes, OpenShift y CRI-O.\n\n**VDI.** Escritorio separado del equipo; servidor de escritorios, acceso, red y protocolos (RDP, X Windows, ICA, NX, VNC); persistente o no persistente; modo centralizado, alojado o remoto.\n\n**Ventajas y riesgos.** Consolidación, aislamiento, alta disponibilidad, pruebas, snapshots y eficiencia energética; riesgo por concentración, dependencia de la red y del anfitrión, rendimiento del hipervisor alojado y seguridad del modo remoto."
+        },
+        {
+          "heading": "9. Casos tipo test comentados (15 preguntas)",
+          "body": "Los quince casos siguientes reproducen el estilo de pregunta del bloque III. Cada uno incluye la respuesta correcta y una explicación que recuerda el dato del temario; la referencia indica el epígrafe y la fuente donde está el contenido. Conviene contestarlos sin mirar la solución y revisar después solo los fallos."
+        },
+        {
+          "heading": "10. Fuentes citadas",
+          "body": "El tema se ha redactado a partir de `data/fuentes/III.19.txt`, que reúne el volcado de `Tema 7.docx` (almacenamiento, VSAN, copias y virtualización de servidores y puestos), `Bloque 4 Actualizado 2026.docx` (hipervisores, VDI, aprovisionamiento, contenedores, orquestación, cloud y clúster) y `Tema 6.docx` (contexto de administración). Las citas por apartado aparecen en la lista `sources` y en la referencia de cada caso tipo test. No se han copiado párrafos literales ni se han añadido datos que no figuren en esas fuentes."
+        }
+      ],
       "practiceSlug": "iii-19"
     },
     "III.20": {
@@ -2967,6 +3189,82 @@
         "Pensar que un snapshot es una copia externa: comparte el almacenamiento y se pierde con él."
       ],
       "reviewedAt": "2026-11-10",
+      "longSections": [
+        {
+          "heading": "1. Ficha oficial del tema",
+          "body": "**Tema III.20 — Almacenamiento y copias de seguridad.** Bloque III del temario común C1. Se estudia con dos fuentes principales: **Tema 7** (sistemas de almacenamiento, cabinas, cintas, DAS/NAS/SAN, políticas de copia y virtualización) y **Bloque 4 Actualizado 2026** (TEMA 2: administración de bases de datos y sistemas de almacenamiento; TEMA 5: continuidad y redundancia; TEMA 10: aprovisionamiento en entornos virtualizados). Su núcleo es: **dispositivos y arquitecturas** de almacenamiento (discos internos, cabinas, cintas, DAS, NAS, SAN y VSAN); **RAID** y el cálculo de capacidad útil; **objetivos de recuperación** (RPO, RTO, MTD y WRT); **tipos de copia** (completa, incremental y diferencial, más espejo, clonado y CDP); **copias físicas y lógicas** y recuperación; **estrategias** (regla 3-2-1, nube frente a local, snapshots, deduplicación, compresión y cifrado); **copias en sistemas virtuales** y **continuidad** del servicio. Conecta con el tema **III.19** (virtualización y contenedores) y con la explotación de bases de datos (IV.29)."
+        },
+        {
+          "heading": "2. Índice de epígrafes",
+          "body": "El tema se estudia en este orden: (1) dispositivos de almacenamiento: discos, cabinas y cintas; (2) arquitecturas: almacenamiento interno, DAS, NAS, SAN y VSAN; (3) RAID: niveles y cálculo de capacidad útil; (4) objetivos de recuperación: RPO, RTO, MTD y WRT; (5) tipos de copia: completa, incremental, diferencial, espejo, clonado y CDP; (6) ventana de copia y esquemas de rotación; (7) copias físicas y lógicas; recuperación con redo logs; (8) estrategias y optimización: 3-2-1, nube, snapshots, deduplicación, compresión y cifrado; (9) copias de sistemas físicos y virtuales; replicación y plugins; (10) continuidad del servicio, redundancia en el CPD y aprovisionamiento de almacenamiento. Para el test pesan las **arquitecturas DAS/NAS/SAN**, las **fórmulas de RAID**, los **tipos de copia** y la diferencia entre **RPO y RTO**."
+        },
+        {
+          "heading": "3. Introducción y contexto",
+          "body": "El almacenamiento es la capa donde los datos viven de forma permanente y las copias de seguridad son la garantía de que sobreviven a un fallo, a un error humano o a un desastre. Sin una arquitectura de almacenamiento bien elegida, el rendimiento y la disponibilidad se resienten; sin una estrategia de copias probada, la recuperación es una hipótesis.\n\nEl tema se ordena por **capas y objetivos**: dónde se guardan los datos (discos, cabinas, cintas y las arquitecturas DAS, NAS y SAN), cómo se protege la información con **RAID**, con qué **objetivos** se planifica la recuperación (RPO, RTO, MTD y WRT), qué **tipos de copia** existen y cómo se combinan en una **estrategia** (3-2-1, rotaciones, snapshots y optimizaciones).\n\nConecta con el tema III.19: la virtualización multiplica las máquinas y los datos, y por tanto hace más crítico el almacenamiento compartido y la copia. Y con IV.29: las bases de datos apoyan su recuperación en copias y en los registros de cambios (redo logs)."
+        },
+        {
+          "heading": "4. Desarrollo por epígrafe",
+          "body": "**4.1 Dispositivos y arquitecturas de almacenamiento.** Las **cabinas de discos** agrupan conectividad a los servidores, controladores (protocolos de acceso, RAID, caché y mecanismos de copia) y discos individuales; su capacidad se organiza en **grupos de almacenamiento (pools)** que se amplían añadiendo discos físicos (Tema 7, 3). Para garantizar la redundancia incorporan varias controladoras (activas o activa-respaldo) y caché en espejo. Las **cintas** ofrecen gran capacidad a bajo coste, pero con acceso **secuencial** (frente al aleatorio de los discos) y mayor degradación: son más lentas y su vida se mide en pasadas. Se distinguen cintas para uso **online** (casi exclusivo de mainframe) y orientadas a **backup**; los formatos más conocidos son DAT, 8 mm, QIC y **LTO**, que incluye memoria interna para detectar cartuchos degradados. Las cintas se agrupan en **librerías** manuales (en desuso) o **automáticas**, con cargadores de pocas unidades o librerías de cientos o miles de cartuchos.\n\nLas arquitecturas de acceso (Tema 7, 3.1) son tres. **DAS (Direct Attached Storage)**: la cabina se conecta directamente al servidor (SCSI, FC o SAS) y el sistema operativo la usa como si fuera almacenamiento interno; resuelve la escalabilidad y la redundancia del almacenamiento interno, pero su capacidad no se comparte con otros servidores. **NAS (Network Attached Storage)**: se accede a **ficheros** por la red (NFS, CIFS); el servidor monta un sistema de ficheros externo y delega la conversión a bloques. **SAN (Storage Area Network)**: red dedicada al almacenamiento con acceso a **bloques**; la unidad que provee es el **LUN** y se estructura en tres capas (servidor, red y disco), con variantes **FC** (tramas Fiber Channel), **iSCSI** (SCSI sobre TCP/IP, menos eficiente que FC a igual ancho de banda) y **FCoE** (Fiber Channel sobre Ethernet, sin capa IP, por lo que no se enruta con IP). Al tratarse de acceso por bloques, varios servidores solo comparten los mismos datos si forman un clúster coordinado. La **VSAN** virtualiza el almacenamiento y permite unificar el de todos los servidores de un clúster y mover los datos entre cabinas sin que el servidor lo note.\n\n**4.2 RAID y capacidad útil.** El **RAID** combina varios discos para aportar redundancia o rendimiento (el material lo cita expresamente como espejado de disco). Para el examen hay que calcular la **capacidad útil** (Bloque 4, TEMA 2): **RAID 0** = número de discos × tamaño; **RAID 1** = tamaño de un disco; **RAID 5** = (n − 1) × tamaño; **RAID 6** = (n − 2) × tamaño; **RAID 10** = la mitad de la capacidad total; **JBOD** = suma de los discos. Ejemplos del material: 5 discos de 6 TB en RAID 6 → (5 − 2) × 6 = 18 TB; 4 discos de 2 TB en RAID 5 → (4 − 1) × 2 = 6 TB; 3 discos de 1,5 TB en RAID 0 → 4,5 TB; 6 discos de 1 TB en RAID 10 → 3 TB. El procedimiento es siempre el mismo: identificar el RAID, contar los discos, tomar el tamaño del disco más pequeño y aplicar la fórmula.\n\n**4.3 Objetivos de recuperación.** La planificación se concreta en cuatro tiempos (Bloque 4, TEMA 2): **RPO** (Recovery Point Objective) es la cantidad de datos que se permite perder antes de que el impacto sea inaceptable; si el RPO es de una hora, hay que copiar al menos cada hora. **RTO** (Recovery Time Objective) es el tiempo máximo tolerable para restaurar el sistema. **MTD** (Maximum Tolerable Downtime) es el tiempo máximo que el servicio puede estar fuera de línea sin efectos catastróficos. **WRT** (Work Recovery Time) es el tiempo que tardan los usuarios en retomar plenamente su trabajo tras la recuperación. RPO y RTO se fijan por el negocio, no por la tecnología disponible.\n\n**4.4 Tipos de copia y rotación.** Los tres métodos principales son **completa** (copia todos los datos; recuperación más rápida), **diferencial** (copia lo que cambió desde la **última copia completa**) e **incremental** (copia los cambios desde el **último backup**, sea completo o incremental). A ellos se añaden el **espejo** (como el completo pero sin versiones antiguas, solo la última copia), el **clonado** (réplica exacta de disco o sistema, útil para migraciones) y el **CDP** (protección continua de datos, registra cambios en tiempo real y permite restaurar versiones concretas). Cada copia se programa dentro de la **ventana de backup**, aprovechando los intervalos de inactividad. Los esquemas clásicos de rotación son **hijo** (una cinta por día durante una semana), **padre e hijo** (una semana más otra, con copia completa semanal guardada fuera) y **padre, hijo y abuelo** (el más común: copias semanales y mensuales hasta conservar un año). En sistemas de ficheros se usa el **archive bit** para saber qué archivos han cambiado desde la última copia.\n\n**4.5 Copias físicas y lógicas; recuperación.** Las copias pueden ser **físicas** (se copian los ficheros que soportan la base de datos) o **lógicas** (se extraen los datos con SQL mediante Export/Import). Entre las físicas, el Tema 7 distingue la copia del **sistema operativo** (sencilla pero lenta e inaccesible durante el proceso), la copia **en frío** (base parada y copia de todos los ficheros) y la **en caliente** (base abierta en modo **archivelog**: se copian los ficheros de un tablespace, los redo log archivados y los ficheros de control). Para recuperar se aplican los **redo logs** archivados: la **recuperación de bloque** reconstruye un bloque dañado y la **recuperación física** convierte los ficheros de copia en actuales aplicando los cambios perdidos. La copia lógica permite restaurar objetos o moverlos a otra base, pero no sustituye a la física para una recuperación completa.\n\n**4.6 Estrategias y optimización.** La regla **3-2-1** exige **3 copias** de los datos, en **2 tipos de almacenamiento diferentes**, con **1 copia fuera del sitio**. La copia local suele ser más rápida de restaurar y la copia en la nube protege mejor frente a desastres físicos; una estrategia completa combina ambas. Los **snapshots** son capturas del estado de un sistema o máquina virtual en un momento concreto, útiles para recuperación rápida, pero **no sustituyen a los backups tradicionales**. Para reducir coste y espacio se aplican **deduplicación** (elimina duplicados), **compresión** (reduce el tamaño) y **cifrado** (protege la confidencialidad de las copias). Y toda estrategia debe **probarse**: una copia que no se restaura no protege nada.\n\n**4.7 Copias de sistemas físicos y virtuales; continuidad.** En sistemas físicos se instala un **agente** en cada servidor y un servidor de copia lanza las tareas. En entornos virtuales, los **plugins** permiten copias en caliente de máquinas virtuales completas sin interrumpir el servicio, y la **replicación de VMs** mantiene una copia completa en otro host. La continuidad se apoya en la **redundancia del CPD** (alimentación, climatización y red) y en los **clústeres**, que mantienen el servicio ante el fallo de un nodo. En entornos virtualizados y cloud, el **aprovisionamiento** del almacenamiento puede ser **thick** (se reserva toda la capacidad por adelantado) o **thin** (se asigna según se usa), y los servicios **IaaS** ofrecen almacenamiento como recurso contratado.\n\n*(Fuentes: Tema 7, apartados 2-6; Bloque 4 Actualizado 2026, TEMA 2, TEMA 5 y TEMA 10.)*"
+        },
+        {
+          "heading": "5. Tabla comparativa: DAS, NAS y SAN",
+          "body": "Las tres arquitecturas se confunden con facilidad porque las tres sirven para almacenar; la diferencia está en cómo se accede a los datos y en quién comparte qué.",
+          "table": {
+            "columns": [
+              "Arquitectura",
+              "Acceso a los datos",
+              "Conectividad típica",
+              "Compartición y uso"
+            ],
+            "rows": [
+              [
+                "DAS",
+                "Bloques, como si fuera almacenamiento interno del servidor",
+                "SCSI, FC o SAS, directa al servidor",
+                "No se comparte la capacidad entre servidores; servidores de una sola aplicación"
+              ],
+              [
+                "NAS",
+                "Ficheros (el servidor monta un sistema de ficheros externo)",
+                "Red LAN (NFS, CIFS); también WAN con WAFS",
+                "Varios clientes comparten ficheros; servidores de ficheros y documentos"
+              ],
+              [
+                "SAN",
+                "Bloques, sobre una red dedicada al almacenamiento",
+                "Fiber Channel, iSCSI o FCoE",
+                "Alto rendimiento y disponibilidad; varios servidores con LUN y clústeres"
+              ],
+              [
+                "VSAN",
+                "Bloques virtualizados sobre la red SAN",
+                "Conmutadores de la red de almacenamiento",
+                "Unifica el almacenamiento del clúster y permite mover datos entre cabinas"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "6. Ejemplo práctico resuelto",
+          "body": "**Supuesto.** Un ayuntamiento quiere almacenar y proteger los datos de su aplicación de expedientes. Dispone de un servidor de aplicación, otro de base de datos y un presupuesto limitado. Debe elegir la arquitectura de almacenamiento, el RAID, los objetivos de recuperación y la estrategia de copias. Razónalo.\n\n**Resolución.** (1) **Arquitectura:** el servidor de base de datos se conecta a una cabina por **SAN** (acceso a bloques, alto rendimiento y disponibilidad); para los documentos compartidos de las oficinas se monta un **NAS** (acceso a ficheros por red, más sencillo y barato). El **DAS** se reserva para el arranque del sistema o para una máquina aislada, no para los datos críticos. (2) **RAID:** en la cabina se configura **RAID 6** con 5 discos de 6 TB: la capacidad útil es (5 − 2) × 6 = **18 TB**, con tolerancia al fallo de dos discos. Si se prioriza el rendimiento, **RAID 10** con 6 discos de 1 TB daría 3 TB, la mitad de la capacidad total. (3) **Objetivos:** se fija un **RPO de una hora** (copia incremental cada hora) y un **RTO de cuatro horas**; el **MTD** no debe superar un día de servicio. (4) **Copias:** regla **3-2-1**: copia completa semanal, incrementales diarias y horarias, en dos soportes distintos (disco local y almacenamiento en la nube) y una copia fuera del edificio; rotación **padre, hijo y abuelo** para conservar un año. (5) **Optimización:** deduplicación y compresión en el repositorio, cifrado de las copias y **snapshots** para recuperaciones rápidas antes de cambio de versión, sabiendo que no sustituyen al backup. (6) **Prueba:** se restaura una copia completa en un entorno aparte cada trimestre y se mide el tiempo real de recuperación.\n\n**Conclusión.** La solución se justifica por los objetivos: la SAN por rendimiento y disponibilidad, el RAID por la tolerancia a fallos, el RPO/RTO por la frecuencia y velocidad de recuperación, y la regla 3-2-1 por la protección frente a desastres."
+        },
+        {
+          "heading": "7. Trampas típicas de examen",
+          "body": "- Confundir **DAS** (conexión directa al servidor), **NAS** (ficheros por red) y **SAN** (bloques por red dedicada): NAS es a nivel de fichero y SAN a nivel de bloque.\n- Confundir **iSCSI** (SCSI sobre TCP/IP, menos eficiente que FC a igual ancho de banda) con **FCoE** (Fiber Channel sobre Ethernet, sin capa IP y sin enrutamiento IP directo).\n- Confundir **RAID 5** (tolera un fallo, capacidad (n − 1) × tamaño) con **RAID 6** (tolera dos fallos, capacidad (n − 2) × tamaño).\n- Olvidar que **RAID 10** deja como capacidad útil la mitad de la total y que **RAID 0** no aporta tolerancia a fallos.\n- Confundir **RPO** (datos que se pueden perder; marca la frecuencia de copia) con **RTO** (tiempo para restaurar) y con **MTD/WRT**.\n- Confundir **incremental** (desde el último backup, sea completo o incremental) con **diferencial** (desde la última copia completa).\n- Confundir **espejo** (solo la última copia, sin versiones) con **clonado** (réplica exacta) y con **CDP** (cambios en tiempo real).\n- Creer que un **snapshot** sustituye a una copia de seguridad: no la sustituye, es una recuperación rápida.\n- Confundir **deduplicación** (elimina duplicados) con **compresión** (reduce el tamaño) y con **cifrado** (protege la confidencialidad).\n- Creer que la regla **3-2-1** significa tres copias en el mismo sitio: son 3 copias, en 2 medios distintos y 1 fuera del sitio.\n- Olvidar que un **RAID no es una copia de seguridad**: protege frente al fallo de discos, no frente a borrados, errores o ransomware."
+        },
+        {
+          "heading": "8. Resumen para memorizar",
+          "body": "**Lo que hay que memorizar.**\n\n1. **Arquitecturas:** DAS (directa, bloques), NAS (ficheros por red con NFS/CIFS), SAN (bloques por red dedicada, LUN, FC/iSCSI/FCoE) y VSAN (virtualización del almacenamiento).\n2. **Cintas:** gran capacidad y bajo coste, acceso secuencial, mayor degradación; formatos DAT, 8 mm, QIC y LTO; librerías automáticas.\n3. **RAID:** 0 = n × tamaño; 1 = un disco; 5 = (n − 1) × tamaño; 6 = (n − 2) × tamaño; 10 = mitad de la capacidad; JBOD = suma.\n4. **Objetivos:** RPO (datos que se pueden perder), RTO (tiempo de restauración), MTD (caída máxima tolerable) y WRT (vuelta al trabajo).\n5. **Copias:** completa, diferencial (desde la última completa) e incremental (desde el último backup); espejo, clonado y CDP.\n6. **Rotación:** hijo, padre e hijo y padre, hijo y abuelo (el más común; conserva un año).\n7. **Físicas y lógicas:** SO, en frío y en caliente (archivelog); Export/Import; recuperación con redo logs.\n8. **Estrategia:** regla 3-2-1 (3 copias, 2 medios, 1 fuera); local para restaurar rápido, nube para desastres; snapshots no sustituyen backups.\n9. **Optimización:** deduplicación, compresión y cifrado; ventana de backup; archive bit.\n10. **Virtualización y continuidad:** agentes y plugins, replicación de VMs, redundancia del CPD, clústeres y aprovisionamiento thick/thin."
+        },
+        {
+          "heading": "9. Casos tipo test comentados (15 preguntas)",
+          "body": "**1.** ¿Qué arquitectura de almacenamiento da acceso a ficheros a través de la red? **Respuesta: a)** NAS (Tema 7, 3.1).\n\n**2.** ¿Qué arquitectura da acceso a bloques sobre una red dedicada al almacenamiento? **Respuesta: b)** SAN (Tema 7, 3.1).\n\n**3.** ¿Qué arquitectura conecta la cabina directamente al servidor? **Respuesta: c)** DAS (Tema 7, 3.1).\n\n**4.** Con 4 discos de 2 TB en RAID 5, ¿cuál es la capacidad útil? **Respuesta: d)** 6 TB, porque (4 − 1) × 2 = 6 (Bloque 4, TEMA 2).\n\n**5.** Con 5 discos de 6 TB en RAID 6, ¿cuál es la capacidad útil? **Respuesta: a)** 18 TB, porque (5 − 2) × 6 = 18 (Bloque 4, TEMA 2).\n\n**6.** Con 6 discos de 1 TB en RAID 10, ¿cuál es la capacidad útil? **Respuesta: b)** 3 TB, la mitad de la capacidad total (Bloque 4, TEMA 2).\n\n**7.** ¿Qué nivel de RAID no aporta tolerancia a fallos? **Respuesta: c)** RAID 0 (Tema 7, 2.1 y Bloque 4, TEMA 2).\n\n**8.** ¿Qué objetivo mide la cantidad de datos que se permite perder en un incidente? **Respuesta: d)** El RPO (Bloque 4, TEMA 2).\n\n**9.** ¿Qué objetivo mide el tiempo máximo tolerable para restaurar el sistema? **Respuesta: a)** El RTO (Bloque 4, TEMA 2).\n\n**10.** Una copia que recoge los cambios desde el último backup realizado, sea completo o incremental, es… **Respuesta: b)** Incremental (Bloque 4, TEMA 2).\n\n**11.** Una copia que recoge lo cambiado desde la última copia completa es… **Respuesta: c)** Diferencial (Bloque 4, TEMA 2).\n\n**12.** ¿Qué significa la regla 3-2-1? **Respuesta: d)** 3 copias, en 2 tipos de almacenamiento distintos y 1 copia fuera del sitio (Bloque 4, TEMA 2).\n\n**13.** ¿Sustituyen los snapshots a los backups tradicionales? **Respuesta: a)** No: son recuperaciones rápidas y no sustituyen a los backups (Bloque 4, TEMA 2).\n\n**14.** ¿Qué técnica reduce el espacio eliminando datos duplicados? **Respuesta: b)** La deduplicación (Bloque 4, TEMA 2).\n\n**15.** ¿Qué tipo de acceso a los datos tienen las cintas? **Respuesta: c)** Secuencial (Tema 7, 3)."
+        },
+        {
+          "heading": "10. Fuentes citadas",
+          "body": "- **Tema 7.docx**, apartados 2 a 6: copias y recuperación, sistemas de almacenamiento y virtualización, cabinas, cintas, DAS/NAS/SAN, VSAN, políticas de backup y copias de sistemas físicos y virtuales (DOCX, sin paginación fija).\n- **Bloque 4 Actualizado 2026.docx**, TEMA 2 (RPO, RTO, MTD, WRT, tipos de copia, 3-2-1, snapshots, deduplicación, compresión, cifrado y capacidad de RAID), TEMA 5 (continuidad y redundancia del CPD) y TEMA 10 (aprovisionamiento thick y thin).\n- **III.20.txt**: texto consolidado de las fuentes anteriores (uso interno de trabajo).\n\nNo se copian párrafos literales; se sintetiza y se ordena el contenido, y las cifras citadas (capacidades, pasadas de cinta, tiempos de recuperación) son las que aparecen en estas fuentes."
+        }
+      ],
       "practiceSlug": "iii-20"
     },
     "III.21": {
@@ -3917,6 +4215,87 @@
         "Confundir MTTR (reparación) con MTBF (tiempo entre fallos)."
       ],
       "reviewedAt": "2026-11-10",
+      "longSections": [
+        {
+          "heading": "1. Ficha oficial del tema",
+          "body": "**Tema III.24 · Monitorización y gestión de incidencias.** Bloque III (Sistemas, redes y comunicaciones) del temario común de Técnicos Auxiliares de Informática. Se relaciona con el tema III.18 (sistemas operativos de servidor) porque la monitorización de CPU, memoria y discos y el análisis de los logs son tareas diarias del administrador.\n\n**Objetivo de examen.** Distinguir monitorización proactiva y reactiva, reconocer los mecanismos de detección (IDS, SIV, LFM, logs), aplicar el ciclo de una incidencia y del plan de respuesta a incidentes de seguridad, y manejar el vocabulario de servicio (SLA, prioridad, MTTR, disponibilidad). Dificultad **media**: el proceso es sencillo de enumerar, pero el examen mezcla conceptos parecidos (incidente/problema, detección/contención, IDS/IPS).\n\n**Fuentes de este tema.** El consolidado data/fuentes/III.24.txt, formado por Tema 10.docx (sistemas de gestión de incidencias y CPD), Tema 14.docx (IDS, firewalls y monitorización de seguridad) y Bloque 4 Actualizado 2026.docx (administración de sistemas y redes, monitorización y auditoría). (Fuente: data/fuentes/III.24.txt.)"
+        },
+        {
+          "heading": "2. Índice de epígrafes",
+          "body": "Este tema se ordena en diez apartados:\n\n1. Ficha oficial del tema: ubicación, objetivo, dificultad y fuentes.\n2. Índice de epígrafes: el mapa que está leyendo.\n3. Introducción y contexto: qué se monitoriza y por qué la incidencia es el centro de la operación.\n4. Desarrollo por epígrafe: monitorización, logs, alertas, métricas, herramientas, gestión de servicios (ITIL y SLA), ciclo de la incidencia y respuesta a incidentes de seguridad.\n5. Tabla comparativa de las fases del plan de respuesta.\n6. Ejemplo práctico resuelto.\n7. Trampas típicas de examen.\n8. Resumen para memorizar.\n9. Casos tipo test comentados (15 preguntas).\n10. Fuentes citadas.\n\nLos epígrafes oficiales (métricas, logs, alertas, herramientas, SLA, ITIL, incidentes y postmortem) se cubren en el apartado 4; los casos del apartado 9 coinciden con los quince testCases del fichero. (Fuente: data/fuentes/III.24.txt.)"
+        },
+        {
+          "heading": "3. Introducción y contexto",
+          "body": "Un sistema en producción no se termina cuando se instala: hay que vigilarlo, detectar a tiempo lo que va mal y responder con orden. La **monitorización** reúne las técnicas que observan el estado del sistema (rendimiento, disponibilidad, eventos) y la **gestión de incidencias** organiza la reacción cuando algo falla o se degrada.\n\nLa fuente de este tema enfoca la materia desde dos ángulos complementarios. El primero es la operación diaria: medir el rendimiento, revisar la auditoría de red y mantener la monitorización proactiva y reactiva. El segundo es la seguridad: un incidente de seguridad es un suceso que rompe o empeora un servicio o que pone en riesgo la confidencialidad o la integridad de la información, y para responder se implanta un plan de respuesta con equipos, procedimientos y documentación.\n\nConviene separar ambos planos. Un **incidente de servicio** (la aplicación no responde) se gestiona con un proceso de soporte y unos acuerdos de nivel de servicio; un **incidente de seguridad** (una intrusión o un malware) se gestiona con el plan de respuesta y el CSIRT. Muchos incidentes reales empiezan como una alerta técnica y acaban necesitando las dos visiones, y por eso este tema combina monitorización, métricas y respuesta. (Fuentes: Bloque 4 Actualizado 2026.docx, apartado de administración de redes; Tema 10.docx, apartado 10; Tema 14.docx, apartado 2.4.)"
+        },
+        {
+          "heading": "4. Desarrollo por epígrafe",
+          "body": "**1) Monitorización proactiva y reactiva.** La monitorización **proactiva** busca detectar problemas antes de que afecten al servicio (capacidad, tendencias, umbrales); la **reactiva** responde cuando el fallo ya ha ocurrido. La fuente cita además la **auditoría de red**, que revisa cómo se usa y cómo funciona la red para localizar fallos, incidencias o incumplimientos de la política. En el día a día del sistema operativo se supervisan CPU, memoria y uso de disco con herramientas como el Administrador de Tareas de Windows o htop en Linux.\n\n**2) Logs y evidencias.** Los **logs** son registros de lo que ocurre en servidores y dispositivos de red; su análisis permite reconstruir un incidente. La fuente describe dos mecanismos de vigilancia: los **verificadores de integridad del sistema (SIV)**, que comprueban si se han modificado archivos sensibles (por ejemplo, una entrada añadida al fichero de contraseñas), y los **monitores de registros (LFM)**, que revisan los ficheros de log buscando patrones de ataque. La integridad también se comprueba con un hash criptográfico calculado de antemano y comparado a intervalos regulares.\n\n**3) Detección: IDS, IPS y alarmas.** Un **IDS** (sistema de detección de intrusiones) es complementario al firewall y al proxy; no garantiza la seguridad, pero aporta información sobre los eventos. Cumple tres funciones: **monitorización** del tráfico, **detección** de actos sospechosos según políticas y **respuesta** limitada (por ejemplo, terminar sesiones TCP sospechosas o interactuar con el firewall mediante SNMP). Puede ser **basado en máquina** (analiza un único sistema) o **basado en red** (analiza un segmento, con port mirroring en el switch). Según cómo detecta, distingue entre **anomalías** (conoce el comportamiento normal y avisa de desviaciones) y **usos indebidos o firmas** (conoce los patrones anómalos). Los **IPS** complementan a los IDS porque además bloquean automáticamente. Otras fuentes de alerta son las alarmas del IDS, del cortafuegos y del antivirus, y el incremento anormal de entradas en los logs.\n\n**4) Alertas y umbrales.** Una alerta es el aviso que genera una regla cuando una métrica supera un umbral o un patrón coincide con una firma. Para que sean útiles deben tener contexto y prioridad; demasiadas alertas sin triaje producen **fatiga de alertas** y se ignoran las importantes. La fuente insiste en que la información del IDS y de los logs siempre queda disponible para determinar la naturaleza del incidente y su fuente.\n\n**5) Métricas.** La disponibilidad se calcula como tiempo operativo entre tiempo total (o MTBF / (MTBF + MTTR)); el **MTTR** es el tiempo medio de reparación o restauración y el **MTBF** el tiempo medio entre fallos. El **cumplimiento de SLA** es el porcentaje de incidencias resueltas dentro del plazo. La fuente de este tema no desarrolla estas fórmulas: se resumen aquí como conceptos estándar de gestión de servicios, y en el examen suelen preguntarse junto con la definición de SLA.\n\n**6) Herramientas.** Además de las citadas (Administrador de Tareas, htop, IDS/IPS, cortafuegos, antivirus, SIV y LFM), la operación usa monitorización de disponibilidad, registro centralizado y paneles de indicadores. La fuente nombra las primeras; las segundas son categorías generales, no productos concretos.\n\n**7) Gestión de servicios: ITIL y SLA.** En el marco de buenas prácticas **ITIL** (que la fuente no desarrolla; se resume como estándar) un **servicio** es una capacidad entregada al usuario, un **incidente** es una interrupción o degradación del servicio, un **problema** es su causa raíz y un **cambio** es una modificación controlada. El **service desk** es el punto único de contacto y el **ticket** el registro que sigue el ciclo: alta, clasificación, priorización (impacto × urgencia), diagnóstico, resolución y cierre. El **SLA** es el acuerdo con el cliente (horario, tiempos de respuesta y resolución, disponibilidad, penalizaciones); la **OLA** es el acuerdo interno entre equipos y el **UC** el contrato con el proveedor externo. El escalado puede ser funcional (pasa a un especialista) o jerárquico (avisa a un responsable).\n\n**8) Plan de respuesta a incidentes de seguridad.** La fuente describe el plan como el conjunto de tareas para responder: **equipo de respuesta (CSIRT)**, procedimientos, detección, análisis, corrección, erradicación y recuperación. La detección se apoya en indicadores: precursores (escaneos de puertos o vulnerabilidades), alarmas de IDS, cortafuegos o antivirus, incremento de logs, archivos o cuentas extrañas, caídas o fallos de servidores, cambios de configuración, herramientas no autorizadas, procesos extraños y tráfico anómalo. En el **análisis** se determina el alcance, el tipo de ataque y los daños, y se fijan prioridades. La **contención** puede ser rápida (aislar o apagar los equipos afectados) o retrasada (estudiar al atacante y reunir evidencias, con el riesgo de que el daño crezca). Después llegan la **erradicación** (eliminar la causa y sus secuelas) y la **recuperación** (restaurar el servicio y revisar la seguridad). La identificación del atacante se apoya en ping, traceroute o whois, sabiendo que puede haber IP spoofing, equipos de terceros, direcciones dinámicas o proxys con NAT.\n\n**9) Documentación y postmortem.** El plan exige documentar el incidente: tipo, hechos registrados en los logs, daños, decisiones y actuaciones del equipo, comunicaciones con terceros, evidencias, comentarios del personal y recomendaciones para evitar que se repita. Esa documentación es la base del **postmortem**: reconstruir la línea de tiempo, medir el impacto, identificar la causa y acordar acciones de mejora. (Fuentes: Bloque 4 Actualizado 2026.docx, administración de sistemas y redes; Tema 14.docx, apartado 2.4; Tema 10.docx, apartado 10.)"
+        },
+        {
+          "heading": "5. Tabla comparativa: fases del plan de respuesta a incidentes",
+          "body": "Resumen de las fases que recoge la fuente, con su objetivo y las acciones típicas. (Fuente: Tema 10.docx, apartado 10; Tema 14.docx, apartado 2.4.)",
+          "table": {
+            "columns": [
+              "Fase",
+              "Objetivo",
+              "Acciones clave"
+            ],
+            "rows": [
+              [
+                "Detección",
+                "Descubrir el incidente cuanto antes",
+                "Alarmas de IDS, cortafuegos y antivirus; revisión de logs; indicadores anómalos"
+              ],
+              [
+                "Análisis",
+                "Determinar alcance, tipo y daños",
+                "Matriz de diagnóstico, valoración de daños y orden de prioridades"
+              ],
+              [
+                "Contención",
+                "Evitar que el incidente se extienda",
+                "Aislar o apagar equipos afectados; o vigilar al atacante para reunir evidencias"
+              ],
+              [
+                "Erradicación",
+                "Eliminar la causa y sus secuelas",
+                "Quitar backdoors, rootkits y código malicioso; revisar sistemas relacionados"
+              ],
+              [
+                "Recuperación",
+                "Volver al funcionamiento normal",
+                "Reinstalar desde copia segura, cambiar contraseñas y revisar la seguridad"
+              ],
+              [
+                "Documentación",
+                "Dejar constancia y aprender",
+                "Hechos, daños, decisiones, evidencias y recomendaciones (postmortem)"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "6. Ejemplo práctico resuelto",
+          "body": "**Supuesto.** Un lunes a las 09:00 el IDS de la red del organismo genera una alerta por tráfico anómalo hacia un servidor de aplicaciones. A las 09:25 el equipo aísla el servidor y a las 11:00 el servicio vuelve a estar disponible. El servicio estaba comprometido a 720 horas al mes.\n\n**Resolución.**\n- **Detección:** la alerta del IDS y el aumento de entradas en los logs del servidor confirman que hay actividad sospechosa; no se ignora por ser la primera alerta del día.\n- **Análisis:** se revisan los logs y el SIV para ver si se han modificado archivos; se determina el alcance y se comprueba si hay datos confidenciales afectados.\n- **Contención rápida:** se aísla el servidor de la red y se desactivan las cuentas comprometidas; se elige la contención rápida porque el servicio es crítico.\n- **Erradicación:** se elimina la puerta trasera y se revisan los sistemas que confiaban en el servidor.\n- **Recuperación:** se reinstala desde una copia segura, se cambian las contraseñas y se comprueba el funcionamiento.\n- **Documentación y postmortem:** se registra la línea de tiempo, los daños y las decisiones, y se proponen medidas (segmentación, revisión de logs, formación).\n\n**Cálculo.** El servicio estuvo 2 horas indisponible de 720 horas al mes: la disponibilidad del mes es 718 / 720 = 99,72 %. El MTTR de este incidente es de 2 horas (desde la detección hasta la recuperación). (Fuentes: Tema 10.docx, apartado 10; Tema 14.docx, apartado 2.4.)"
+        },
+        {
+          "heading": "7. Trampas típicas de examen",
+          "body": "- **Proactiva no es reactiva.** La proactiva detecta antes de que el servicio se vea afectado; la reactiva actúa después de la incidencia.\n- **IDS no es IPS.** El IDS detecta y alerta (con respuestas limitadas); el IPS puede bloquear automáticamente.\n- **Un IDS no garantiza la seguridad.** Es complementario al firewall, al proxy y a la autenticación; aporta información, no protección total.\n- **Anomalías no son firmas.** La detección de anomalías conoce el comportamiento normal y avisa de desviaciones; la de firmas conoce los patrones de ataque.\n- **SIV no es LFM.** El SIV vigila la integridad de archivos; el LFM revisa los ficheros de log en busca de patrones.\n- **Incidente no es problema.** El incidente es la interrupción o degradación; el problema es su causa raíz.\n- **SLA no es OLA.** El SLA se acuerda con el cliente; la OLA es un acuerdo interno entre equipos; el UC es con el proveedor externo.\n- **Prioridad no es urgencia.** La prioridad combina impacto y urgencia; la urgencia sola no la determina.\n- **Detección no es contención.** Detectar es descubrir el incidente; contener es evitar que se propague.\n- **Contención rápida y retrasada tienen riesgos.** La rápida corta el daño; la retrasada permite estudiar al atacante pero puede agrandar las consecuencias.\n- **Logs no son métricas.** Los logs cuentan eventos; las métricas resumen valores (disponibilidad, MTTR).\n- **MTTR no es MTBF.** El MTTR mide la reparación; el MTBF, el tiempo entre fallos.\n- **La documentación no es opcional.** Sin hechos, evidencias y decisiones no hay postmortem ni mejora.\n- **Incidente de seguridad no es siempre incidente de servicio.** Una intrusión puede no degradar el servicio y aun así ser un incidente de seguridad.\n(Fuentes: Bloque 4 Actualizado 2026.docx; Tema 10.docx, apartado 10; Tema 14.docx, apartado 2.4.)"
+        },
+        {
+          "heading": "8. Resumen para memorizar",
+          "body": "Lo que hay que retener:\n- Monitorización proactiva (antes del fallo) y reactiva (después); auditoría de red para revisar uso, estado y cumplimiento.\n- Rendimiento: CPU, memoria y disco con Administrador de Tareas (Windows) y htop (Linux).\n- Logs: registros de servidores y dispositivos; SIV comprueba integridad de archivos; LFM revisa logs en busca de patrones.\n- IDS: monitoriza, detecta y responde de forma limitada; basado en máquina o en red; anomalías o firmas. IPS añade bloqueo.\n- Alertas con umbral y contexto; evitar la fatiga de alertas.\n- Métricas: disponibilidad = tiempo operativo / total; MTTR (reparación), MTBF (entre fallos), cumplimiento de SLA.\n- ITIL (marco estándar): servicio, incidente, problema, cambio, service desk y ticket; prioridad = impacto × urgencia; escalado funcional y jerárquico.\n- SLA con el cliente, OLA interna y UC con el proveedor.\n- Plan de respuesta: CSIRT, detección, análisis, contención (rápida o retrasada), erradicación, recuperación, identificación del atacante y comunicación.\n- Documentación del incidente y postmortem: hechos, logs, daños, decisiones, evidencias y recomendaciones.\n(Fuente: Bloque 4 Actualizado 2026.docx; Tema 10.docx, apartado 10; Tema 14.docx, apartado 2.4.)"
+        },
+        {
+          "heading": "9. Casos tipo test comentados (15 preguntas)",
+          "body": "Los quince casos del fichero, comentados y con su referencia:\n\n**1.** Monitorización que detecta problemas antes de que afecten al servicio. **Respuesta: a)** Proactiva (apartado 4, monitorización).\n\n**2.** Sistema que detecta intrusiones y puede bloquear automáticamente. **Respuesta: b)** IPS (apartado 4, detección).\n\n**3.** Herramienta citada para supervisar CPU, memoria y disco en Linux. **Respuesta: c)** htop (apartado 4, monitorización).\n\n**4.** Mecanismo que revisa los ficheros de log en busca de patrones de ataque. **Respuesta: d)** LFM (apartado 4, logs).\n\n**5.** Mecanismo que comprueba la integridad de archivos sensibles. **Respuesta: a)** SIV (apartado 4, logs).\n\n**6.** Qué es un incidente de seguridad. **Respuesta: b)** Un evento que interrumpe o degrada servicios o afecta a confidencialidad o integridad (apartado 4, plan de respuesta).\n\n**7.** Equipo de respuesta a incidentes de seguridad informática. **Respuesta: c)** CSIRT (apartado 4, plan de respuesta).\n\n**8.** Fase que elimina la causa del incidente y sus secuelas. **Respuesta: d)** Erradicación (apartado 4, plan de respuesta).\n\n**9.** Contención que aísla de inmediato los equipos afectados. **Respuesta: a)** Contención rápida (apartado 4, plan de respuesta).\n\n**10.** Para qué sirve el postmortem. **Respuesta: b)** Para documentar hechos y acordar mejoras que eviten la repetición (apartado 4, documentación).\n\n**11.** Qué es un SLA. **Respuesta: c)** El acuerdo de nivel de servicio con el cliente (apartado 4, gestión de servicios).\n\n**12.** Qué es una OLA. **Respuesta: d)** Un acuerdo interno entre equipos de la organización (apartado 4, gestión de servicios).\n\n**13.** Cómo se determina la prioridad de un incidente. **Respuesta: a)** Combinando impacto y urgencia (apartado 4, gestión de servicios).\n\n**14.** Qué mide el MTTR. **Respuesta: b)** El tiempo medio de reparación o restauración (apartado 4, métricas).\n\n**15.** Fórmula de la disponibilidad con MTBF y MTTR. **Respuesta: c)** MTBF / (MTBF + MTTR) (apartado 4, métricas).\n\nCada caso incluye su explicación completa y la referencia de fuente en el campo reference de testCases. (Fuentes: Tema 10.docx, apartado 10; Tema 14.docx, apartado 2.4; Bloque 4 Actualizado 2026.docx.)"
+        },
+        {
+          "heading": "10. Fuentes citadas",
+          "body": "- **Tema 10.docx**, apartado 10 (sistemas de gestión de incidencias): definición de incidente de seguridad, CSIRT, plan de respuesta, indicadores de detección, análisis, contención rápida y retrasada, erradicación, recuperación, identificación del atacante, comunicación y documentación. También el apartado 9 (infraestructura de un CPD) como contexto de disponibilidad.\n- **Tema 14.docx**, apartado 2.4 (sistemas detectores y preventores de intrusiones): IDS basado en máquina o en red, SIV, LFM, honeypots, detección de anomalías y de firmas, monitorización de objetivos concretos y respuesta del IDS.\n- **Bloque 4 Actualizado 2026.docx**, Tema 1 (administración del sistema operativo: monitorización del rendimiento con Administrador de Tareas y htop) y Tema 4 (administración de redes: monitorización proactiva y reactiva, auditoría de red).\n- **data/fuentes/III.24.txt**: texto consolidado de las fuentes anteriores, utilizado para verificar las citas.\n\nAviso de alcance: la fuente no desarrolla el marco ITIL, los acuerdos SLA/OLA ni las fórmulas de MTTR/MTBF; esos conceptos se resumen en el apartado 4 como estándar de gestión de servicios y se identifican como tales. (Fuente: data/fuentes/III.24.txt.)"
+        }
+      ],
       "practiceSlug": "iii-24"
     },
     "III.25": {
@@ -22973,6 +23352,986 @@
       ]
     },
     {
+      "slug": "tai-propio-iii-incidencias",
+      "year": 2026,
+      "conv": "Supuesto propio · OpoFuente 2026",
+      "block": "III",
+      "title": "Gestión de una incidencia con monitorización",
+      "difficulty": "media",
+      "official": false,
+      "estimatedMinutes": 30,
+      "statement": "La web municipal deja de responder y el equipo de guardia debe usar métricas, logs y alertas para diagnosticar, comunicar y resolver la incidencia. Después debe documentar la causa y la prevención.",
+      "steps": [
+        "1. Confirmar el alcance y la severidad.",
+        "2. Revisar métricas, logs y alertas.",
+        "3. Aplicar contención y diagnóstico.",
+        "4. Resolver y verificar el servicio.",
+        "5. Documentar el postmortem."
+      ],
+      "topics": [
+        "III.24",
+        "III.18",
+        "III.23"
+      ],
+      "source": {
+        "label": "Elaboración propia · OpoFuente",
+        "url": "https://erdeivih.github.io/opofuente-demo/",
+        "pages": "Material propio de la demo"
+      },
+      "questions": [
+        {
+          "stem": "En la gestión de servicios, ¿qué es un incidente?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Una solicitud habitual del usuario"
+            },
+            {
+              "key": "b",
+              "text": "Una interrupción no planificada o una reducción de la calidad del servicio"
+            },
+            {
+              "key": "c",
+              "text": "La causa raíz de varios fallos"
+            },
+            {
+              "key": "d",
+              "text": "Una modificación planificada de la infraestructura"
+            }
+          ],
+          "correct": "b",
+          "justification": "El incidente es la interrupción no planificada o la degradación del servicio; su objetivo es restaurar el servicio, no investigar la causa raíz."
+        },
+        {
+          "stem": "¿Qué persigue la gestión de problemas?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Restaurar el servicio lo antes posible"
+            },
+            {
+              "key": "b",
+              "text": "Documentar las peticiones de los usuarios"
+            },
+            {
+              "key": "c",
+              "text": "Eliminar la causa raíz de los incidentes"
+            },
+            {
+              "key": "d",
+              "text": "Aprobar los cambios de infraestructura"
+            }
+          ],
+          "correct": "c",
+          "justification": "La gestión de problemas busca la causa raíz y su eliminación para evitar que los incidentes se repitan; restaurar el servicio es la gestión de incidentes."
+        },
+        {
+          "stem": "¿Cuál es la diferencia esencial entre un SLA y una OLA?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El SLA solo mide la disponibilidad y la OLA los tiempos"
+            },
+            {
+              "key": "b",
+              "text": "El SLA es interno y la OLA es con el cliente"
+            },
+            {
+              "key": "c",
+              "text": "La OLA es un contrato con un proveedor externo"
+            },
+            {
+              "key": "d",
+              "text": "El SLA se firma con el cliente y la OLA es un acuerdo interno entre equipos"
+            }
+          ],
+          "correct": "d",
+          "justification": "El SLA es el acuerdo con el cliente; la OLA es un acuerdo operativo interno entre equipos de la organización que ayuda a cumplirlo. El contrato con un proveedor externo es el UC."
+        },
+        {
+          "stem": "¿Cómo se determina la prioridad de un ticket?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Por el impacto y la urgencia"
+            },
+            {
+              "key": "b",
+              "text": "Por el orden de llegada"
+            },
+            {
+              "key": "c",
+              "text": "Por la antigüedad del ticket"
+            },
+            {
+              "key": "d",
+              "text": "Por el nivel del técnico asignado"
+            }
+          ],
+          "correct": "a",
+          "justification": "La prioridad se calcula combinando el impacto (a cuántos y con qué criticidad afecta) y la urgencia (cuánto empeora si se espera). La antigüedad no la define."
+        },
+        {
+          "stem": "¿Qué documento formaliza una petición de cambio?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Una OLA"
+            },
+            {
+              "key": "b",
+              "text": "Una RFC"
+            },
+            {
+              "key": "c",
+              "text": "Un SLA"
+            },
+            {
+              "key": "d",
+              "text": "Un error conocido"
+            }
+          ],
+          "correct": "b",
+          "justification": "La petición de cambio (RFC) describe el cambio, su justificación, su evaluación de riesgo y su plan; la autoriza el comité de cambios (CAB)."
+        },
+        {
+          "stem": "¿Qué es un error conocido?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Un incidente que todavía no se ha diagnosticado"
+            },
+            {
+              "key": "b",
+              "text": "Un cambio de emergencia ya aplicado"
+            },
+            {
+              "key": "c",
+              "text": "Un problema con causa raíz documentada y una solución temporal probada"
+            },
+            {
+              "key": "d",
+              "text": "Una petición de servicio rechazada"
+            }
+          ],
+          "correct": "c",
+          "justification": "Cuando un problema tiene la causa documentada y existe una solución temporal probada, se convierte en error conocido y el service desk puede aplicarla sin reiniciar la investigación."
+        },
+        {
+          "stem": "¿Qué mide el MTTR?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El tiempo medio entre fallos"
+            },
+            {
+              "key": "b",
+              "text": "El número de tickets abiertos"
+            },
+            {
+              "key": "c",
+              "text": "El porcentaje de casos resueltos al primer contacto"
+            },
+            {
+              "key": "d",
+              "text": "El tiempo medio de reparación o restauración"
+            }
+          ],
+          "correct": "d",
+          "justification": "El MTTR (mean time to repair/restore) mide el tiempo medio que se tarda en restaurar el servicio tras un incidente."
+        },
+        {
+          "stem": "¿Cómo se calcula la disponibilidad a partir del MTBF y el MTTR?",
+          "options": [
+            {
+              "key": "a",
+              "text": "MTBF / (MTBF + MTTR) × 100"
+            },
+            {
+              "key": "b",
+              "text": "MTTR / (MTBF + MTTR) × 100"
+            },
+            {
+              "key": "c",
+              "text": "(MTBF + MTTR) / MTBF × 100"
+            },
+            {
+              "key": "d",
+              "text": "MTBF × MTTR / 100"
+            }
+          ],
+          "correct": "a",
+          "justification": "La disponibilidad es el tiempo en servicio (MTBF) dividido entre el tiempo total (MTBF + MTTR), expresado en porcentaje."
+        },
+        {
+          "stem": "¿Qué tipo de cambio se usa para resolver un incidente grave con la mínima aprobación previa?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Cambio estándar"
+            },
+            {
+              "key": "b",
+              "text": "Cambio de emergencia"
+            },
+            {
+              "key": "c",
+              "text": "Cambio de alcance"
+            },
+            {
+              "key": "d",
+              "text": "Cambio normal"
+            }
+          ],
+          "correct": "b",
+          "justification": "El cambio de emergencia se aplica para resolver un incidente grave con aprobación mínima; después se documenta y se revisa."
+        },
+        {
+          "stem": "¿Qué debe hacer el primer nivel de soporte antes de escalar un caso?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Cerrar el ticket sin más"
+            },
+            {
+              "key": "b",
+              "text": "Aplicar un cambio de emergencia"
+            },
+            {
+              "key": "c",
+              "text": "Comprobar los casos conocidos y descartar causas básicas"
+            },
+            {
+              "key": "d",
+              "text": "Modificar el SLA del cliente"
+            }
+          ],
+          "correct": "c",
+          "justification": "El primer nivel registra el caso, comprueba las soluciones conocidas y descarta causas básicas antes de escalar al segundo nivel."
+        },
+        {
+          "stem": "¿Qué servicio de Windows Server proporciona un directorio centralizado de usuarios y equipos?",
+          "options": [
+            {
+              "key": "a",
+              "text": "DHCP"
+            },
+            {
+              "key": "b",
+              "text": "IIS"
+            },
+            {
+              "key": "c",
+              "text": "Hyper-V"
+            },
+            {
+              "key": "d",
+              "text": "Active Directory Domain Services"
+            }
+          ],
+          "correct": "d",
+          "justification": "AD DS es el servicio de directorio que almacena usuarios, equipos y grupos y sirve de base a la autenticación del dominio."
+        },
+        {
+          "stem": "¿Qué protocolo usa AD para autenticar en el dominio?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Kerberos"
+            },
+            {
+              "key": "b",
+              "text": "SMTP"
+            },
+            {
+              "key": "c",
+              "text": "SNMP"
+            },
+            {
+              "key": "d",
+              "text": "FTP"
+            }
+          ],
+          "correct": "a",
+          "justification": "Kerberos es el protocolo de autenticación usado por Active Directory."
+        },
+        {
+          "stem": "¿Para qué sirve DHCP en un servidor?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Resolver nombres de dominio"
+            },
+            {
+              "key": "b",
+              "text": "Asignar direcciones IP y parámetros de red automáticamente"
+            },
+            {
+              "key": "c",
+              "text": "Cifrar discos"
+            },
+            {
+              "key": "d",
+              "text": "Servir páginas web"
+            }
+          ],
+          "correct": "b",
+          "justification": "DHCP entrega configuración de red (IP, máscara, puerta de enlace, DNS) a los clientes."
+        },
+        {
+          "stem": "¿Qué permite una directiva de grupo (GPO)?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Crear copias de seguridad"
+            },
+            {
+              "key": "b",
+              "text": "Cambiar la contraseña de root"
+            },
+            {
+              "key": "c",
+              "text": "Aplicar configuración de forma centralizada a equipos y usuarios"
+            },
+            {
+              "key": "d",
+              "text": "Comprimir la base de datos"
+            }
+          ],
+          "correct": "c",
+          "justification": "Las GPO permiten configurar de forma centralizada el entorno de equipos y usuarios del dominio."
+        },
+        {
+          "stem": "¿Qué servicio se usa en Linux para gestionar servicios y unidades?",
+          "options": [
+            {
+              "key": "a",
+              "text": "PowerShell"
+            },
+            {
+              "key": "b",
+              "text": "IIS"
+            },
+            {
+              "key": "c",
+              "text": "AD DS"
+            },
+            {
+              "key": "d",
+              "text": "systemd"
+            }
+          ],
+          "correct": "d",
+          "justification": "systemd gestiona servicios, unidades y el arranque; se administra con systemctl."
+        },
+        {
+          "stem": "¿Qué protocolo se usa habitualmente para administrar un servidor Linux de forma remota?",
+          "options": [
+            {
+              "key": "a",
+              "text": "SSH"
+            },
+            {
+              "key": "b",
+              "text": "RDP"
+            },
+            {
+              "key": "c",
+              "text": "SMTP"
+            },
+            {
+              "key": "d",
+              "text": "SNMP"
+            }
+          ],
+          "correct": "a",
+          "justification": "SSH permite acceder a la shell remota de forma cifrada y autenticada."
+        },
+        {
+          "stem": "¿Qué permite Samba en Linux?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Compilar el kernel"
+            },
+            {
+              "key": "b",
+              "text": "Compartir ficheros e imprimir con clientes Windows"
+            },
+            {
+              "key": "c",
+              "text": "Gestionar contenedores"
+            },
+            {
+              "key": "d",
+              "text": "Servir correo"
+            }
+          ],
+          "correct": "b",
+          "justification": "Samba implementa SMB/CIFS y permite compartir recursos con redes Windows, además de poder actuar como controlador de dominio."
+        },
+        {
+          "stem": "¿Qué es Hyper-V?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Un protocolo de correo"
+            },
+            {
+              "key": "b",
+              "text": "Un servidor web"
+            },
+            {
+              "key": "c",
+              "text": "Un hipervisor de Microsoft para virtualización"
+            },
+            {
+              "key": "d",
+              "text": "Un sistema de ficheros"
+            }
+          ],
+          "correct": "c",
+          "justification": "Hyper-V es el hipervisor de Microsoft; permite crear y gestionar máquinas virtuales."
+        },
+        {
+          "stem": "¿Qué principio de seguridad debe aplicarse a las cuentas de administrador?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Desactivar la auditoría"
+            },
+            {
+              "key": "b",
+              "text": "Compartir una única cuenta para todo el equipo"
+            },
+            {
+              "key": "c",
+              "text": "Usar la misma contraseña siempre"
+            },
+            {
+              "key": "d",
+              "text": "Mínimo privilegio y uso separado de la cuenta diaria"
+            }
+          ],
+          "correct": "d",
+          "justification": "El mínimo privilegio reduce el impacto de un error o robo de credenciales; las cuentas de administrador no deben usarse para tareas diarias."
+        },
+        {
+          "stem": "¿Qué debe acompañar a un servidor en producción además de instalarlo?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Copias, monitorización y actualizaciones programadas"
+            },
+            {
+              "key": "b",
+              "text": "Solo un fondo de escritorio"
+            },
+            {
+              "key": "c",
+              "text": "Un segundo teclado"
+            },
+            {
+              "key": "d",
+              "text": "Desactivar los registros"
+            }
+          ],
+          "correct": "a",
+          "justification": "La operación incluye copias, monitorización, actualizaciones y revisión de logs; sin ello la disponibilidad no está garantizada."
+        }
+      ]
+    },
+    {
+      "slug": "tai-propio-iii-virtual",
+      "year": 2026,
+      "conv": "Supuesto propio · OpoFuente 2026",
+      "block": "III",
+      "title": "Migración de servidores a virtualización",
+      "difficulty": "media",
+      "official": false,
+      "estimatedMinutes": 30,
+      "statement": "Un organismo quiere consolidar 20 servidores físicos en un clúster virtual y debe decidir hipervisor, almacenamiento, red, copias y contenedores. El equipo revisa la carga de cada servicio y las garantías de continuidad.",
+      "steps": [
+        "1. Inventariar servidores y cargas.",
+        "2. Elegir hipervisor y diseño de clúster.",
+        "3. Dimensionar almacenamiento y red.",
+        "4. Diseñar copias y continuidad.",
+        "5. Validar y documentar la migración."
+      ],
+      "topics": [
+        "III.19",
+        "III.20",
+        "III.18"
+      ],
+      "source": {
+        "label": "Elaboración propia · OpoFuente",
+        "url": "https://erdeivih.github.io/opofuente-demo/",
+        "pages": "Material propio de la demo"
+      },
+      "questions": [
+        {
+          "stem": "¿Qué es un hipervisor de tipo 1?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Un hipervisor que se ejecuta directamente sobre el hardware"
+            },
+            {
+              "key": "b",
+              "text": "Un programa que se instala dentro de otro sistema operativo"
+            },
+            {
+              "key": "c",
+              "text": "Un contenedor de aplicaciones"
+            },
+            {
+              "key": "d",
+              "text": "Un tipo de disco virtual"
+            }
+          ],
+          "correct": "a",
+          "justification": "El hipervisor de tipo 1 (bare metal) se ejecuta directamente sobre el hardware; el de tipo 2 lo hace sobre un sistema anfitrión."
+        },
+        {
+          "stem": "¿Qué comparte un contenedor con el sistema anfitrión?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Una copia completa del sistema operativo"
+            },
+            {
+              "key": "b",
+              "text": "El kernel"
+            },
+            {
+              "key": "c",
+              "text": "El hipervisor"
+            },
+            {
+              "key": "d",
+              "text": "El hardware de virtualización"
+            }
+          ],
+          "correct": "b",
+          "justification": "Los contenedores comparten el kernel del anfitrión y aíslan procesos con namespaces y cgroups."
+        },
+        {
+          "stem": "¿Qué diferencia hay entre una imagen y un contenedor?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Son exactamente lo mismo"
+            },
+            {
+              "key": "b",
+              "text": "El contenedor es la plantilla y la imagen la instancia"
+            },
+            {
+              "key": "c",
+              "text": "La imagen es una plantilla inmutable; el contenedor es una instancia en ejecución"
+            },
+            {
+              "key": "d",
+              "text": "La imagen solo existe en la nube"
+            }
+          ],
+          "correct": "c",
+          "justification": "La imagen es el artefacto inmutable que se construye; el contenedor es un proceso creado a partir de ella."
+        },
+        {
+          "stem": "¿Para qué sirven los namespaces en los contenedores?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Para limitar el uso de CPU y memoria"
+            },
+            {
+              "key": "b",
+              "text": "Para comprimir imágenes"
+            },
+            {
+              "key": "c",
+              "text": "Para crear máquinas virtuales"
+            },
+            {
+              "key": "d",
+              "text": "Para aislar la visibilidad de procesos, red y sistema de ficheros"
+            }
+          ],
+          "correct": "d",
+          "justification": "Los namespaces aíslan qué ve cada contenedor; los cgroups limitan los recursos que consume."
+        },
+        {
+          "stem": "¿Qué tecnología permite limitar la CPU y la memoria de un contenedor?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Cgroups"
+            },
+            {
+              "key": "b",
+              "text": "Namespaces"
+            },
+            {
+              "key": "c",
+              "text": "Hipervisor tipo 2"
+            },
+            {
+              "key": "d",
+              "text": "Dockerfile"
+            }
+          ],
+          "correct": "a",
+          "justification": "Los cgroups (control groups) aplican límites y cuotas de recursos a los procesos del contenedor."
+        },
+        {
+          "stem": "¿Qué ventaja tiene una máquina virtual frente a un contenedor?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Arranca más rápido"
+            },
+            {
+              "key": "b",
+              "text": "Tiene un aislamiento más fuerte al incluir su propio sistema operativo"
+            },
+            {
+              "key": "c",
+              "text": "Ocupa menos espacio siempre"
+            },
+            {
+              "key": "d",
+              "text": "No necesita actualizaciones"
+            }
+          ],
+          "correct": "b",
+          "justification": "La VM ejecuta su propio kernel y sistema operativo, lo que da un aislamiento mayor a costa de más recursos."
+        },
+        {
+          "stem": "¿Qué es un Dockerfile?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Un registro de imágenes"
+            },
+            {
+              "key": "b",
+              "text": "Una máquina virtual"
+            },
+            {
+              "key": "c",
+              "text": "Un fichero de texto con las instrucciones para construir una imagen"
+            },
+            {
+              "key": "d",
+              "text": "Un tipo de hipervisor"
+            }
+          ],
+          "correct": "c",
+          "justification": "El Dockerfile describe los pasos para construir la imagen de forma reproducible."
+        },
+        {
+          "stem": "¿Por qué un snapshot de una VM no es una copia de seguridad?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Porque ocupa poco espacio"
+            },
+            {
+              "key": "b",
+              "text": "Porque no se puede programar"
+            },
+            {
+              "key": "c",
+              "text": "Porque solo funciona en Linux"
+            },
+            {
+              "key": "d",
+              "text": "Porque suele estar en el mismo almacenamiento y se pierde con él"
+            }
+          ],
+          "correct": "d",
+          "justification": "El snapshot comparte el almacenamiento de la VM; si este se pierde o se cifra, también se pierde el snapshot."
+        },
+        {
+          "stem": "¿Qué riesgo específico tienen las imágenes de contenedor?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Que una imagen con malware o dependencias vulnerables se replica en cada despliegue"
+            },
+            {
+              "key": "b",
+              "text": "Que no se pueden actualizar"
+            },
+            {
+              "key": "c",
+              "text": "Que no admiten volúmenes"
+            },
+            {
+              "key": "d",
+              "text": "Que siempre necesitan un hipervisor"
+            }
+          ],
+          "correct": "a",
+          "justification": "La imagen es la base de todos los contenedores; hay que usar registros fiables, escanear y actualizar sus dependencias."
+        },
+        {
+          "stem": "¿Qué caso encaja mejor con un contenedor que con una VM?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Un sistema operativo legado que exige un kernel concreto"
+            },
+            {
+              "key": "b",
+              "text": "Una aplicación web empaquetada que se despliega varias veces al día"
+            },
+            {
+              "key": "c",
+              "text": "Un servidor de base de datos con requisitos de hardware especiales"
+            },
+            {
+              "key": "d",
+              "text": "Un escritorio remoto completo"
+            }
+          ],
+          "correct": "b",
+          "justification": "Los contenedores son adecuados para aplicaciones empaquetadas y despliegues frecuentes; los sistemas completos y legados encajan mejor en VM."
+        },
+        {
+          "stem": "¿Cuántos discos como mínimo necesita RAID 5?",
+          "options": [
+            {
+              "key": "a",
+              "text": "2"
+            },
+            {
+              "key": "b",
+              "text": "3"
+            },
+            {
+              "key": "c",
+              "text": "4"
+            },
+            {
+              "key": "d",
+              "text": "5"
+            }
+          ],
+          "correct": "b",
+          "justification": "RAID 5 necesita al menos tres discos: datos y paridad distribuida; tolera el fallo de un disco."
+        },
+        {
+          "stem": "¿Qué caracteriza a RAID 1?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Rayado sin redundancia"
+            },
+            {
+              "key": "b",
+              "text": "Doble paridad"
+            },
+            {
+              "key": "c",
+              "text": "Espejo: cada disco contiene una copia de los datos"
+            },
+            {
+              "key": "d",
+              "text": "Combinación de espejo y rayado"
+            }
+          ],
+          "correct": "c",
+          "justification": "RAID 1 replica los datos en dos o más discos; tolera el fallo de un disco por espejo."
+        },
+        {
+          "stem": "¿Qué nivel de RAID no aporta redundancia?",
+          "options": [
+            {
+              "key": "a",
+              "text": "RAID 6"
+            },
+            {
+              "key": "b",
+              "text": "RAID 1"
+            },
+            {
+              "key": "c",
+              "text": "RAID 5"
+            },
+            {
+              "key": "d",
+              "text": "RAID 0"
+            }
+          ],
+          "correct": "d",
+          "justification": "RAID 0 solo reparte los datos (striping): si falla un disco se pierde el volumen."
+        },
+        {
+          "stem": "¿Qué copia guarda todos los datos seleccionados?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Completa"
+            },
+            {
+              "key": "b",
+              "text": "Diferencial"
+            },
+            {
+              "key": "c",
+              "text": "Incremental"
+            },
+            {
+              "key": "d",
+              "text": "Snapshot"
+            }
+          ],
+          "correct": "a",
+          "justification": "La copia completa guarda todo; es la base para restaurar las incrementales o diferenciales."
+        },
+        {
+          "stem": "¿Qué copia guarda los cambios desde la última copia completa?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Incremental"
+            },
+            {
+              "key": "b",
+              "text": "Diferencial"
+            },
+            {
+              "key": "c",
+              "text": "Completa"
+            },
+            {
+              "key": "d",
+              "text": "Espejo"
+            }
+          ],
+          "correct": "b",
+          "justification": "La diferencial acumula los cambios desde la última completa; la incremental parte de la última copia de cualquier tipo."
+        },
+        {
+          "stem": "¿Qué significa la regla 3-2-1?",
+          "options": [
+            {
+              "key": "a",
+              "text": "3 copias, 2 contraseñas y 1 administrador"
+            },
+            {
+              "key": "b",
+              "text": "3 servidores, 2 redes y 1 cortafuegos"
+            },
+            {
+              "key": "c",
+              "text": "3 copias, 2 soportes distintos y 1 fuera del sitio"
+            },
+            {
+              "key": "d",
+              "text": "3 días, 2 semanas y 1 mes de retención"
+            }
+          ],
+          "correct": "c",
+          "justification": "La regla 3-2-1 pide tres copias, en dos tipos de soporte y al menos una fuera de la ubicación principal."
+        },
+        {
+          "stem": "¿Qué mide el RTO?",
+          "options": [
+            {
+              "key": "a",
+              "text": "La cantidad de datos que se puede perder"
+            },
+            {
+              "key": "b",
+              "text": "El número de cintas necesarias"
+            },
+            {
+              "key": "c",
+              "text": "El tamaño de la copia"
+            },
+            {
+              "key": "d",
+              "text": "El tiempo máximo aceptable para recuperar el servicio"
+            }
+          ],
+          "correct": "d",
+          "justification": "RTO es el tiempo objetivo de recuperación; RPO es la pérdida máxima de datos aceptable."
+        },
+        {
+          "stem": "¿Por qué un snapshot no sustituye una copia de seguridad?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Porque suele estar en el mismo almacenamiento y se pierde con él"
+            },
+            {
+              "key": "b",
+              "text": "Porque ocupa demasiado"
+            },
+            {
+              "key": "c",
+              "text": "Porque no se puede programar"
+            },
+            {
+              "key": "d",
+              "text": "Porque solo funciona en Windows"
+            }
+          ],
+          "correct": "a",
+          "justification": "Un snapshot es una imagen puntual en el mismo sistema; si se pierde el almacenamiento, se pierden datos y snapshot."
+        },
+        {
+          "stem": "¿Qué debe hacerse para saber si una copia sirve?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Comprobar que el fichero existe"
+            },
+            {
+              "key": "b",
+              "text": "Restaurar en un entorno de prueba y medir el tiempo"
+            },
+            {
+              "key": "c",
+              "text": "Aumentar el número de discos"
+            },
+            {
+              "key": "d",
+              "text": "Cambiar el RAID cada mes"
+            }
+          ],
+          "correct": "b",
+          "justification": "La copia se valida restaurando; sin prueba de restauración no se conoce el RTO real ni la integridad."
+        },
+        {
+          "stem": "¿Qué relación hay entre RAID y copias de seguridad?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El RAID sustituye a las copias"
+            },
+            {
+              "key": "b",
+              "text": "Las copias solo son necesarias si no hay RAID"
+            },
+            {
+              "key": "c",
+              "text": "El RAID da disponibilidad, pero no protege de borrados, cifrado o desastres"
+            },
+            {
+              "key": "d",
+              "text": "El RAID y las copias son lo mismo"
+            }
+          ],
+          "correct": "c",
+          "justification": "RAID tolera fallos de disco, pero replica borrados y cifrado; la copia externa es la que permite recuperar."
+        }
+      ]
+    },
+    {
       "slug": "tai-propio-iii21",
       "year": 2026,
       "conv": "Supuesto propio · OpoFuente 2026",
@@ -24453,8 +25812,8 @@
     "questions": 400,
     "cases": 5,
     "caseQuestions": 50,
-    "supuestos": 11,
-    "supuestoQuestions": 220,
+    "supuestos": 13,
+    "supuestoQuestions": 260,
     "convocatorias": 12
   }
 }
