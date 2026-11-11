@@ -154,8 +154,8 @@
             "practicaStatus": "con_practica",
             "sectionCount": 6,
             "questionCount": 10,
-            "formato": "esquema",
-            "longWords": 0
+            "formato": "desarrollado",
+            "longWords": 2407
           },
           {
             "path": "I.3",
@@ -164,8 +164,8 @@
             "practicaStatus": "con_practica",
             "sectionCount": 6,
             "questionCount": 10,
-            "formato": "esquema",
-            "longWords": 0
+            "formato": "desarrollado",
+            "longWords": 2568
           },
           {
             "path": "I.4",
@@ -1147,6 +1147,225 @@
         "Confundir el Tratado de París de 1951 (CECA y sus seis Estados fundadores) con los Tratados de Roma de 1957 (CEE y Euratom)."
       ],
       "reviewedAt": "2026-11-10",
+      "longSections": [
+        {
+          "heading": "1. Ficha oficial del tema",
+          "body": "**Tema:** I.2, «La Unión Europea», del bloque I (Administración y normativa) del temario común de informática C1. **Materias que cubre:** proceso de integración y tratados, instituciones y órganos, reparto de competencias, fuentes del Derecho de la Unión, relación con el ordenamiento español, ciudadanía europea y fondos y financiación. **Relación con otros temas:** se apoya en I.1 (Constitución Española) y conecta con la Administración electrónica y con la contratación financiada con fondos europeos. **Fuente:** no hay documento de la Unión Europea en el escritorio de fuentes; este tema se ha redactado como material propio de OpoFuente, sin copiar textos ajenos y sin citar fuentes que no existen. Las referencias al TUE y al TFUE se hacen solo cuando el artículo es seguro; en caso contrario se cita la norma sin número.",
+          "table": {
+            "columns": [
+              "Dato de la ficha",
+              "Valor"
+            ],
+            "rows": [
+              [
+                "Tema",
+                "I.2 La Unión Europea"
+              ],
+              [
+                "Bloque",
+                "I · Administración y normativa"
+              ],
+              [
+                "Materias",
+                "Tratados, instituciones, competencias, derecho derivado, ciudadanía y fondos"
+              ],
+              [
+                "Temas relacionados",
+                "I.1 Constitución Española; administración electrónica y fondos europeos"
+              ],
+              [
+                "Fuente",
+                "Elaboración propia · OpoFuente"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "2. Índice de epígrafes",
+          "body": "El desarrollo del tema se organiza en los epígrafes del apartado 4:\n\n- **4.1.** Los tratados: de las Comunidades a la Unión Europea.\n- **4.2.** Las instituciones y los órganos.\n- **4.3.** Las competencias de la Unión.\n- **4.4.** El Derecho derivado y las demás fuentes.\n- **4.5.** La relación con el ordenamiento español.\n- **4.6.** La ciudadanía europea.\n- **4.7.** Los fondos y la financiación.\n- **4.8.** España en la Unión y los retos actuales.\n\nCompletan el tema la tabla de instituciones (apartado 5), el ejemplo práctico (6), las trampas de examen (7), el resumen para memorizar (8), los quince casos tipo test (9) y las fuentes citadas (10)."
+        },
+        {
+          "heading": "3. Introducción y contexto",
+          "body": "La Unión Europea es una organización internacional de integración creada por Estados soberanos que han decidido ejercer en común parte de sus competencias. No es un Estado federal ni una simple organización de cooperación: tiene personalidad jurídica propia, un ordenamiento jurídico autónomo, instituciones con poder normativo y un presupuesto financiado con recursos propios.\n\nSu origen es económico —la puesta en común del carbón y del acero— y su evolución ha sido gradual: de las tres Comunidades Europeas a la Unión creada en Maastricht, y de ahí a la Unión con personalidad única y con la Carta de los Derechos Fundamentales dotada del mismo valor que los Tratados tras Lisboa. En ese camino se han ampliado los Estados miembros y se han reforzado el Parlamento y la ciudadanía.\n\nPara el opositor, el tema se ordena en cinco preguntas: qué tratados la construyeron, quién decide, con qué competencias, con qué normas y con qué dinero; a las que se añaden la ciudadanía y la posición de España.",
+          "table": {
+            "columns": [
+              "Fuente",
+              "Qué aporta"
+            ],
+            "rows": [
+              [
+                "Elaboración propia · OpoFuente",
+                "Contenido del tema: tratados, instituciones, competencias, fuentes, ciudadanía y fondos"
+              ],
+              [
+                "TUE y TFUE (versiones consolidadas)",
+                "Referencia de los artículos citados cuando su número es seguro"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "4. Desarrollo por epígrafe",
+          "body": "**4.1. Los tratados.** La integración comienza con la **Declaración Schuman** del 9 de mayo de 1950 y el **Tratado de París de 1951**, que crea la **CECA** con seis Estados fundadores; la CECA se concibió para cincuenta años y expiró en 2002. Los **Tratados de Roma de 1957** crean la **CEE** y la **Euratom**. Después llegan el **Acta Única Europea (1986)**, que impulsa el mercado interior; el **Tratado de Maastricht (1992)**, que crea la Unión Europea, la ciudadanía y la unión económica y monetaria; el **Tratado de Ámsterdam (1997)**, que refuerza derechos y cooperación; el **Tratado de Niza (2001)**, que adapta las instituciones a la ampliación; y el **Tratado de Lisboa (2007)**, firmado el 13 de diciembre de 2007 y en vigor desde el 1 de diciembre de 2009, que da personalidad jurídica única a la Unión, suprime los pilares y reordena el Derecho originario en el **TUE** y el **TFUE**. La Unión ha pasado de seis a veintisiete Estados miembros: España firmó el Tratado de Adhesión el 12 de junio de 1985 y es Estado miembro desde el 1 de enero de 1986; el Reino Unido salió el 31 de enero de 2020.\n\n**4.2. Las instituciones.** El **artículo 13 del TUE** enumera siete instituciones: Parlamento Europeo, Consejo Europeo, Consejo, Comisión Europea, Tribunal de Justicia de la Unión Europea, Banco Central Europeo y Tribunal de Cuentas. El **Parlamento** representa a la ciudadanía, se elige por sufragio universal directo cada cinco años y ejerce funciones legislativas, presupuestarias y de control. El **Consejo Europeo** reúne a los jefes de Estado o de Gobierno, a su presidente y al presidente de la Comisión; define las orientaciones políticas generales y **no ejerce función legislativa** (artículo 15 TUE); su presidente se elige por mayoría cualificada para dos años y medio, renovable una vez. El **Consejo** está formado por un ministro por Estado según la materia, legisla junto con el Parlamento y su presidencia rota cada **seis meses** (artículo 16 TUE). La **Comisión** tiene un comisario por Estado, mandato de cinco años, la iniciativa legislativa, la guarda de los Tratados y la ejecución del presupuesto (artículo 17 TUE). El **Tribunal de Justicia** garantiza la interpretación y aplicación uniformes del Derecho de la Unión; el **Banco Central Europeo**, con sede en Fráncfort, dirige la política monetaria de la eurozona y tiene como objetivo principal la estabilidad de precios; el **Tribunal de Cuentas**, con sede en Luxemburgo, fiscaliza las cuentas de la Unión. Los dos comités consultivos (Económico y Social, y de las Regiones) no son instituciones.\n\n**4.3. Las competencias.** El reparto se rige por el **principio de atribución**: la Unión actúa solo en los ámbitos que le atribuyen los Tratados (artículo 5 TUE y artículo 4 TUE). A él se suman la **subsidiariedad** —la Unión interviene solo si los objetivos no pueden alcanzarse mejor por los Estados— y la **proporcionalidad** —la actuación no debe exceder de lo necesario—. El TFUE distingue tres categorías: competencias **exclusivas** (unión aduanera, normas de competencia del mercado interior, política monetaria de la eurozona, conservación de recursos biológicos marinos, política comercial común y celebración de acuerdos internacionales en los casos previstos), competencias **compartidas** (mercado interior, cohesión, agricultura, medio ambiente, transporte, energía, justicia, libertad y seguridad, entre otras) y competencias de **apoyo, coordinación o complemento** (salud, industria, cultura, turismo, educación), en las que la Unión no sustituye la competencia de los Estados.\n\n**4.4. El Derecho derivado y las demás fuentes.** El **Derecho originario** lo forman los Tratados (TUE y TFUE con sus protocolos), la **Carta de los Derechos Fundamentales** —que tiene el mismo valor jurídico que los Tratados (artículo 6 TUE)— y los principios generales. El **Derecho derivado** se aprueba con base en los Tratados y el **artículo 288 del TFUE** enumera sus tipos: el **reglamento**, obligatorio en todos sus elementos y directamente aplicable en cada Estado miembro; la **directiva**, que obliga al Estado destinatario en cuanto al resultado y deja la forma y los medios a las autoridades nacionales, por lo que exige transposición; la **decisión**, obligatoria en todos sus elementos y solo para sus destinatarios cuando los designa; y las **recomendaciones y dictámenes**, que no son vinculantes. Se añaden los **acuerdos internacionales** celebrados por la Unión, los actos delegados y de ejecución y la jurisprudencia del Tribunal de Justicia.\n\n**4.5. La relación con el ordenamiento español.** La base constitucional es doble: el **artículo 93 CE** permite atribuir a una organización internacional el ejercicio de competencias derivadas de la Constitución, y el **artículo 96.1 CE** integra en el ordenamiento interno los tratados publicados en el BOE. El Tribunal de Justicia afirma la **primacía** del Derecho de la Unión sobre el Derecho nacional y su **efecto directo** cuando las normas son claras, precisas e incondicionales (sentencias Van Gend en Loos y Costa contra ENEL). El juez nacional debe aplicar íntegramente el Derecho de la Unión y dejar sin aplicar la norma interna contraria (Simmenthal), interpretar el Derecho nacional conforme a las directivas y, si el Estado incumple, puede responder patrimonialmente (Francovich). La Constitución sigue siendo la norma suprema del ordenamiento español, y el artículo 95 CE prevé el control previo de constitucionalidad de los tratados.\n\n**4.6. La ciudadanía europea.** Es ciudadano de la Unión quien tiene la nacionalidad de un Estado miembro; la ciudadanía europea se añade a la nacional y no la sustituye (artículo 20 TFUE). Sus derechos principales son: circular y residir libremente en el territorio de los Estados miembros (artículo 21 TFUE); votar y ser candidato en las elecciones al Parlamento Europeo y en las municipales del Estado de residencia en las mismas condiciones que los nacionales (artículo 22 TFUE); acogerse a la protección diplomática y consular de cualquier Estado miembro; dirigirse a las instituciones en cualquiera de las lenguas de los Tratados y recibir respuesta en esa lengua; y presentar iniciativas ciudadanas europeas (artículo 24 TFUE).\n\n**4.7. Los fondos y la financiación.** La Unión se financia con **recursos propios** (derechos de aduana, parte del IVA, contribución basada en la renta nacional bruta y otros recursos), con un presupuesto anual y con un **marco financiero plurianual** que fija los límites de gasto por años. La política de cohesión se ejecuta con el **FEDER** (desarrollo regional), el **Fondo Social Europeo Plus (FSE+)** (empleo y formación), el **Fondo de Cohesión** (Estados con renta por habitante inferior al 90 % de la media de la Unión), el **FEADER** (desarrollo rural) y el **FEMPA** (pesca y asuntos marítimos). A ellos se sumó **NextGenerationEU**, con el Mecanismo de Recuperación y Resiliencia como instrumento principal, para responder a la crisis de la COVID-19. Los fondos se gestionan de forma compartida entre la Comisión y los Estados, con programas operativos y autoridad de gestión, y están sometidos a control financiero y a la fiscalización del Tribunal de Cuentas.\n\n**4.8. España en la Unión y los retos actuales.** España participa en el Consejo y en el Consejo Europeo, elige a sus diputados al Parlamento, tiene un comisario y forma parte de la eurozona. Las comunidades autónomas y las entidades locales participan en los fondos a través de los programas y de los órganos de cooperación, y el Comité de las Regiones representa a los entes territoriales. Entre los retos están la ampliación, la profundización de la unión económica y monetaria, la política migratoria y de asilo, la transición digital y energética, el Estado de Derecho y la financiación de las prioridades comunes.",
+          "table": {
+            "columns": [
+              "Epígrafe",
+              "Datos que hay que retener"
+            ],
+            "rows": [
+              [
+                "Tratados",
+                "París 1951 (CECA), Roma 1957 (CEE y Euratom), Maastricht 1992, Lisboa 2007 (en vigor 2009)"
+              ],
+              [
+                "España",
+                "Adhesión firmada el 12 de junio de 1985; Estado miembro desde el 1 de enero de 1986"
+              ],
+              [
+                "Instituciones",
+                "Siete (artículo 13 TUE); Consejo Europeo y Consejo son distintos; los comités no son instituciones"
+              ],
+              [
+                "Competencias",
+                "Atribución, subsidiariedad y proporcionalidad (artículo 5 TUE); exclusivas, compartidas y de apoyo"
+              ],
+              [
+                "Fuentes",
+                "Derecho originario y derivado (artículo 288 TFUE): reglamento, directiva, decisión y recomendaciones"
+              ],
+              [
+                "Ciudadanía",
+                "Nacionalidad de un Estado miembro; circular, residir, votar, protección y iniciativa (artículos 20-24 TFUE)"
+              ],
+              [
+                "Fondos",
+                "Recursos propios, marco financiero plurianual, FEDER, FSE+, Cohesión, FEADER, FEMPA y NextGenerationEU"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "5. Tabla de instituciones de la Unión",
+          "body": "La tabla resume las siete instituciones del artículo 13 del TUE, su composición y su función principal.",
+          "table": {
+            "columns": [
+              "Institución",
+              "Composición",
+              "Función principal"
+            ],
+            "rows": [
+              [
+                "Parlamento Europeo",
+                "Elegido por sufragio universal directo cada cinco años",
+                "Legislación, presupuesto y control político"
+              ],
+              [
+                "Consejo Europeo",
+                "Jefes de Estado o de Gobierno, su presidente y el presidente de la Comisión",
+                "Orientaciones y prioridades políticas; no legisla"
+              ],
+              [
+                "Consejo",
+                "Un ministro por Estado miembro según la materia",
+                "Legislación y presupuesto junto con el Parlamento"
+              ],
+              [
+                "Comisión Europea",
+                "Un comisario por Estado miembro, incluido su presidente",
+                "Iniciativa legislativa, guarda de los Tratados y ejecución del presupuesto"
+              ],
+              [
+                "Tribunal de Justicia de la Unión Europea",
+                "Tribunal de Justicia y Tribunal General; un juez por Estado miembro",
+                "Interpretación uniforme y control de legalidad del Derecho de la Unión"
+              ],
+              [
+                "Banco Central Europeo",
+                "Consejo de Gobierno y Comité Ejecutivo; sede en Fráncfort",
+                "Política monetaria de la eurozona y estabilidad de precios"
+              ],
+              [
+                "Tribunal de Cuentas",
+                "Un miembro por Estado miembro; sede en Luxemburgo",
+                "Fiscalización de las cuentas y de la gestión financiera de la Unión"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "6. Ejemplo práctico resuelto",
+          "body": "**Supuesto.** Un ayuntamiento quiere construir una biblioteca con ayuda del FEDER, aplicar una directiva europea de contratación y que una empresa local invoque un reglamento europeo frente a una norma municipal que lo contradice. Además, una vecina con nacionalidad de otro Estado miembro quiere votar en las municipales.\n\n**Resolución.**\n\n- **Fondos:** el ayuntamiento presenta el proyecto dentro de un programa operativo del FEDER, gestionado de forma compartida con la comunidad autónoma y la Comisión; debe cumplir los requisitos de elegibilidad, cofinanciación y control financiero, y conservar la documentación para las auditorías y para el Tribunal de Cuentas.\n- **Directiva:** como la directiva obliga en cuanto al resultado pero deja la forma y los medios al Estado (artículo 288 TFUE), el ayuntamiento debe aplicar la norma interna que la transponga; si el plazo ha vencido y no se ha transpuesto, el juez puede interpretar el Derecho nacional conforme a la directiva.\n- **Reglamento:** el reglamento es directamente aplicable (artículo 288 TFUE), de modo que la norma municipal que lo contradiga debe quedar inaplicada en el caso concreto; la primacía y el efecto directo los aplica el juez nacional.\n- **Ciudadanía:** la vecina puede votar y ser candidata en las elecciones municipales del Estado de residencia en las mismas condiciones que los nacionales (artículo 22 TFUE).\n\n**Conclusión.** El caso reúne las cuatro caras del tema: financiación, transposición, aplicación directa y ciudadanía. Cada una tiene su norma y su procedimiento, y confundirlas es el error más habitual.",
+          "table": {
+            "columns": [
+              "Necesidad",
+              "Figura o norma",
+              "Dato clave"
+            ],
+            "rows": [
+              [
+                "Financiar la biblioteca",
+                "FEDER",
+                "Gestión compartida y control financiero"
+              ],
+              [
+                "Aplicar una directiva",
+                "Directiva (artículo 288 TFUE)",
+                "Transposición y efecto conforme"
+              ],
+              [
+                "Invocar un reglamento",
+                "Reglamento (artículo 288 TFUE)",
+                "Directamente aplicable y primacía"
+              ],
+              [
+                "Votar en municipales",
+                "Ciudadanía europea (artículo 22 TFUE)",
+                "Mismas condiciones que los nacionales"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "7. Trampas típicas de examen",
+          "body": "Las confusiones más frecuentes de este tema son estas:\n\n- **Confundir Consejo Europeo y Consejo**: el primero reúne a los jefes de Estado o de Gobierno y no legisla; el segundo reúne a ministros y legisla.\n- **Confundir reglamento y directiva**: el reglamento es directamente aplicable; la directiva obliga en cuanto al resultado y exige transposición.\n- **Confundir las instituciones con los órganos consultivos**: el Comité Económico y Social y el Comité de las Regiones no son instituciones.\n- **Creer que la Unión tiene competencias ilimitadas**: solo actúa por atribución de los Tratados, con subsidiariedad y proporcionalidad.\n- **Confundir Maastricht y Lisboa**: Maastricht crea la Unión; Lisboa le da personalidad única y la reorganiza en el TUE y el TFUE.\n- **Confundir la adhesión de España**: el Tratado se firmó en 1985, pero España es Estado miembro desde el 1 de enero de 1986.\n- **Confundir recursos propios y fondos**: los recursos propios financian el presupuesto; los fondos (FEDER, FSE+, etc.) son instrumentos de gasto.\n- **Creer que la ciudadanía europea sustituye a la nacional**: se añade a la nacionalidad del Estado miembro y no la sustituye.\n- **Confundir el Banco Central Europeo con el Banco Europeo de Inversiones**: el BCE dirige la política monetaria; el BEI es el banco de financiación de proyectos.",
+          "table": {
+            "columns": [
+              "Confusión",
+              "Lo correcto"
+            ],
+            "rows": [
+              [
+                "Consejo Europeo = Consejo",
+                "El Europeo orienta y no legisla; el Consejo legisla"
+              ],
+              [
+                "Reglamento = directiva",
+                "El reglamento se aplica directamente; la directiva se transpone"
+              ],
+              [
+                "Comités = instituciones",
+                "Los comités son órganos consultivos"
+              ],
+              [
+                "Ciudadanía europea = nacionalidad",
+                "Se añade a la nacionalidad, no la sustituye"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "8. Resumen para memorizar",
+          "body": "**Tratados.** París 1951 (CECA), Roma 1957 (CEE y Euratom), Acta Única 1986, Maastricht 1992, Ámsterdam 1997, Niza 2001 y Lisboa 2007 (en vigor el 1 de diciembre de 2009). España: firma el 12 de junio de 1985 y adhesión el 1 de enero de 1986.\n\n**Instituciones.** Siete (artículo 13 TUE): Parlamento, Consejo Europeo, Consejo, Comisión, Tribunal de Justicia, Banco Central Europeo y Tribunal de Cuentas. Comités consultivos: Económico y Social, y de las Regiones.\n\n**Competencias.** Atribución, subsidiariedad y proporcionalidad (artículo 5 TUE); exclusivas, compartidas y de apoyo (artículos 3, 4 y 6 TFUE).\n\n**Fuentes.** Derecho originario (Tratados, Carta y principios generales) y derivado (artículo 288 TFUE): reglamento, directiva, decisión y recomendaciones o dictámenes. Primacía, efecto directo, interpretación conforme y responsabilidad del Estado.\n\n**Ciudadanía.** Nacionalidad de un Estado miembro; circular y residir, votar en europeas y municipales, protección diplomática, peticiones e iniciativa ciudadana (artículos 20-24 TFUE).\n\n**Fondos.** Recursos propios, presupuesto anual y marco financiero plurianual; FEDER, FSE+, Fondo de Cohesión, FEADER, FEMPA y NextGenerationEU; gestión compartida y control del Tribunal de Cuentas."
+        },
+        {
+          "heading": "9. Casos tipo test comentados (15 preguntas)",
+          "body": "Los quince casos siguientes reproducen el estilo de pregunta del bloque I. Cada uno incluye la respuesta correcta y una explicación que recuerda el dato del temario; la referencia indica el epígrafe donde se desarrolla. Conviene contestarlos sin mirar la solución y revisar después solo los fallos."
+        },
+        {
+          "heading": "10. Fuentes citadas",
+          "body": "Este tema se ha redactado como **material propio de OpoFuente**, ante la ausencia de un documento de la Unión Europea en el escritorio de fuentes. No se han copiado textos de academias, blogs ni apuntes privados, y no se citan fuentes inexistentes: la entrada de `sources` lo deja constancia de forma expresa. Las referencias al TUE y al TFUE se han limitado a los artículos de los que se tiene certeza; cuando no se cita el número, se menciona la norma o el tratado sin numerar."
+        }
+      ],
       "practiceSlug": "i-2"
     },
     "I.3": {
@@ -1224,6 +1443,72 @@
         "Confundir las entidades locales territoriales (municipio, provincia e isla) con las demás entidades locales (comarcas, áreas metropolitanas y mancomunidades)."
       ],
       "reviewedAt": "2026-11-10",
+      "longSections": [
+        {
+          "heading": "1. Ficha oficial del tema",
+          "body": "**Tema I.3 — El régimen local.** Bloque I del temario común C1. Se estudia a partir de la ficha publicada del tema y de la **Ley 7/1985, de 2 de abril, reguladora de las bases del régimen local (LRBRL)**, cuyos artículos cita la propia ficha. Su núcleo es: **marco constitucional** (arts. 137 a 142 CE); **entidades locales** (municipio, provincia e isla, y otras entidades); **municipio** (elementos y organización, art. 11 y 20 LRBRL); **competencias y servicios obligatorios** (arts. 25 y 26); **provincia y diputaciones** (arts. 31 y 32); **potestades** de las entidades locales (art. 4); **financiación** (TRLRHL); **personal** (TREBEP y funcionarios con habilitación de carácter nacional, art. 92); y **reforma de 2013** (Ley 27/2013). Conecta con **I.4** (organización municipal) y con I.5 (procedimiento administrativo)."
+        },
+        {
+          "heading": "2. Índice de epígrafes",
+          "body": "El tema se estudia en este orden: (1) marco constitucional y normas reguladoras; (2) el municipio: concepto, elementos y organización; (3) competencias municipales y servicios obligatorios del artículo 26; (4) la provincia, las islas y otras entidades locales; (5) potestades de las entidades locales y reparto de atribuciones entre Pleno y Alcalde; (6) financiación local; (7) el personal al servicio de la Administración local; (8) la reforma de 2013 y los retos actuales; (9) ejemplo práctico; (10) resumen y casos tipo test. Para el test pesan las **entidades locales del artículo 3**, los **elementos del municipio (art. 11)**, la **Junta de Gobierno Local (>5.000 habitantes)**, los **servicios obligatorios del artículo 26**, los **órganos de la diputación (art. 32)** y el **artículo 92** (funcionarios con habilitación nacional)."
+        },
+        {
+          "heading": "3. Introducción y contexto",
+          "body": "El régimen local regula la organización y el funcionamiento de las entidades locales, la parte de la Administración más cercana a la ciudadanía. La Constitución organiza el Estado territorialmente en municipios, provincias y comunidades autónomas (art. 137), reconoce la autonomía de municipios y provincias para la gestión de sus intereses (arts. 140 y 141) y garantiza su suficiencia financiera (art. 142).\n\nLa norma básica estatal es la **Ley 7/1985, de 2 de abril, reguladora de las bases del régimen local (LRBRL)**, que fija el marco común y remite a la legislación autonómica y sectorial para el desarrollo. El tema se ordena de lo general (marco constitucional) a lo concreto (órganos, competencias y servicios), y termina con la financiación, el personal y la reforma de 2013.\n\nEs un tema de artículos y de competencias: quién hace qué, con qué mayoría y con qué límites. Por eso conviene estudiar cada institución con su artículo y con su tramo de población."
+        },
+        {
+          "heading": "4. Desarrollo por epígrafe",
+          "body": "**4.1 Marco constitucional y normas reguladoras.** La Constitución organiza el Estado en municipios, provincias y comunidades autónomas (art. 137 CE), reconoce la autonomía de municipios y provincias para la gestión de sus respectivos intereses (art. 140 para el municipio y 141 para la provincia) y garantiza su suficiencia financiera (art. 142). El art. 140 añade que los concejales se eligen por sufragio universal, libre, igual, directo y secreto, y que los alcaldes son elegidos por los concejales o por los vecinos en los municipios que funcionan en concejo abierto. La norma básica estatal es la **LRBRL**, que se desarrolla por la legislación autonómica y por la normativa sectorial (haciendas locales, contratación, procedimiento, transparencia…).\n\n**4.2 El municipio: elementos y organización.** El **municipio** es la entidad local básica de la organización territorial del Estado; tiene personalidad jurídica y plena capacidad para el cumplimiento de sus fines (art. 11 LRBRL). Sus **elementos** son el **territorio** (término municipal), la **población** y la **organización**. La organización municipal (art. 20 LRBRL) se articula así: el **Alcalde**, los **Tenientes de Alcalde** y el **Pleno** existen en todos los ayuntamientos; la **Junta de Gobierno Local** existe en los municipios con población superior a **5.000 habitantes** y también en los de menos cuando lo disponga su reglamento orgánico o lo acuerde el Pleno; y la **Comisión Especial de Cuentas** existe en todos los ayuntamientos. Los concejales son elegidos por sufragio; en los municipios de concejo abierto la elección del alcalde es directa por los vecinos.\n\n**4.3 Competencias y servicios obligatorios.** El municipio tiene **competencias propias**, que le atribuyen las leyes estatales y autonómicas, y puede prestar los servicios que contribuyan a satisfacer las necesidades de la comunidad vecinal; las competencias se ejercen sin duplicar las de otras administraciones y con respeto a la autonomía local. Como garantía mínima, el **artículo 26 LRBRL** impone determinados **servicios obligatorios** según la población. Además, en los municipios de menos de **20.000 habitantes**, la **diputación provincial** (o entidad equivalente) coordina la prestación de los servicios de recogida y tratamiento de residuos, abastecimiento de agua potable y evacuación y tratamiento de aguas residuales, limpieza viaria, acceso a los núcleos de población y pavimentación de vías urbanas.\n\n**4.4 La provincia y otras entidades locales.** La **provincia** es una entidad local determinada por la **agrupación de municipios**, con personalidad jurídica propia y plena capacidad (art. 31 LRBRL); sus fines propios son garantizar los principios de **solidaridad y equilibrio intermunicipales** y asegurar la prestación integral y adecuada de los servicios municipales en todo el territorio. El gobierno y la administración provincial corresponden a la **Diputación** u otra corporación representativa: en todas existen el **Presidente**, los **Vicepresidentes**, la **Junta de Gobierno** y el **Pleno** (art. 32). En las comunidades autónomas uniprovinciales no hay diputación porque sus competencias las asume la comunidad. En Canarias la provincia se articula por **cabildos insulares** y en Baleares por **consejos insulares**; además de municipio, provincia e isla (entidades locales territoriales del art. 3), existen **comarcas**, **áreas metropolitanas**, **mancomunidades** y **entidades locales menores**.\n\n**4.5 Potestades y funcionamiento.** Para cumplir sus fines, las entidades locales territoriales tienen reconocidas por el **artículo 4 LRBRL** las potestades **reglamentaria y de autoorganización**, **tributaria y financiera**, de **programación o planificación**, **expropiatoria**, de **investigación, deslinde y recuperación de oficio** de sus bienes, la **presunción de legitimidad y ejecutividad** de sus actos, las potestades de **ejecución forzosa y sancionadora**, la **revisión de oficio** de sus actos y la **inembargabilidad** de sus bienes en los términos de la ley. No son ilimitadas: se ejercen dentro de su territorio, con respeto al interés general y a la autonomía de otras administraciones. El **Pleno** y el **Alcalde** se reparten las atribuciones: el Pleno aprueba las ordenanzas (art. 22.2.d), los presupuestos y el reglamento orgánico, mientras que el Alcalde dirige el gobierno y la administración municipal, ejecuta los acuerdos y ejerce la jefatura del personal; la Junta de Gobierno Local asiste al Alcalde en sus funciones ejecutivas.\n\n**4.6 Financiación local.** La suficiencia financiera está garantizada por el art. 142 CE y se desarrolla por la **Ley Reguladora de las Haciendas Locales** (TRLRHL). Los recursos locales combinan **tributos propios** (impuestos, tasas y contribuciones especiales, regulados por ordenanza), la **participación en los tributos del Estado**, las subvenciones, los ingresos patrimoniales y el recurso al crédito. El presupuesto se aprueba por el Pleno y se somete a la estabilidad presupuestaria y a la regla de gasto; la autonomía tributaria local se ejerce dentro de los límites de la ley.\n\n**4.7 Personal al servicio de la Administración local.** El personal se rige por el **TREBEP** (tema I.7) y por la legislación autonómica y local. En los municipios existen **funcionarios con habilitación de carácter nacional** (secretario, interventor y tesorero, entre otros) regulados por el **artículo 92 LRBRL**, además del personal funcionario y laboral propio. La relación de puestos de trabajo, la oferta de empleo y la negociación colectiva ordenan la plantilla.\n\n**4.8 Reforma de 2013 y retos.** La **Ley 27/2013, de racionalización y sostenibilidad de la Administración Local**, reformó la LRBRL para reforzar la coordinación, evitar duplicidades y garantizar la sostenibilidad financiera, en línea con la estabilidad presupuestaria. Los retos actuales son la clarificación de competencias, la financiación suficiente, la despoblación, la transformación digital y la transparencia y participación ciudadana. El régimen local se completa con la legislación autonómica de régimen local, que desarrolla la LRBRL en su territorio."
+        },
+        {
+          "heading": "5. Tabla comparativa: servicios obligatorios del artículo 26 LRBRL",
+          "body": "El artículo 26 LRBRL fija los servicios mínimos que debe prestar el municipio según su población. La tabla resume los tramos que recoge la ficha del tema.",
+          "table": {
+            "columns": [
+              "Población",
+              "Servicios obligatorios"
+            ],
+            "rows": [
+              [
+                "Todos los municipios",
+                "Alumbrado público, cementerio, recogida de residuos, limpieza viaria, abastecimiento domiciliario de agua potable, alcantarillado, acceso a los núcleos de población y pavimentación de las vías públicas"
+              ],
+              [
+                "Más de 5.000 habitantes",
+                "Parque público, biblioteca pública y tratamiento de residuos"
+              ],
+              [
+                "Más de 20.000 habitantes",
+                "Protección civil, servicios sociales, prevención y extinción de incendios e instalaciones deportivas de uso público"
+              ],
+              [
+                "Más de 50.000 habitantes",
+                "Transporte colectivo urbano de viajeros y protección del medio ambiente urbano"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "6. Ejemplo práctico resuelto",
+          "body": "**Supuesto.** Un ayuntamiento de 8.000 habitantes quiere aprobar una ordenanza sobre terrazas de hostelería, crear una mancomunidad con un municipio vecino para recoger y tratar residuos y comprobar qué órganos necesita.\n\n**Resolución.** (1) La **ordenanza** la aprueba el **Pleno** (art. 22.2.d LRBRL), no el Alcalde; antes debe tramitarse con la participación e información que exijan la ley y la normativa autonómica. (2) Al superar los 5.000 habitantes, el ayuntamiento debe tener **Junta de Gobierno Local**; además, en todo caso, **Alcalde, Tenientes de Alcalde, Pleno y Comisión Especial de Cuentas**. (3) Con 8.000 habitantes debe prestar los servicios del tramo general y, además, parque público, biblioteca y tratamiento de residuos; no está obligado a los servicios del tramo de más de 20.000. (4) La **mancomunidad** es una entidad local asociativa que puede crearse para la prestación conjunta de servicios; su régimen se ajusta a la LRBRL y a la legislación autonómica. (5) La **diputación** puede coordinar la prestación de los servicios de residuos, agua, limpieza viaria, acceso y pavimentación en municipios de menos de 20.000 habitantes, por lo que conviene consultar su asistencia antes de crear estructuras nuevas.\n\n**Conclusión.** La respuesta se apoya en tres datos: la población (8.000) determina los servicios obligatorios y la existencia de la Junta de Gobierno; el órgano competente para la ordenanza es el Pleno; y la mancomunidad es una entidad local válida para gestionar servicios comunes."
+        },
+        {
+          "heading": "7. Trampas típicas de examen",
+          "body": "- Confundir **entidades locales territoriales** (municipio, provincia e isla, art. 3 LRBRL) con otras entidades locales (comarcas, áreas metropolitanas, mancomunidades y entidades locales menores).\n- Confundir los **elementos del municipio** (territorio, población y organización, art. 11) con sus órganos.\n- Creer que la **Junta de Gobierno Local** es obligatoria en todos los municipios: solo lo es a partir de 5.000 habitantes o si lo prevé el reglamento orgánico o lo acuerda el Pleno.\n- Olvidar que la **Comisión Especial de Cuentas** existe en todos los ayuntamientos.\n- Confundir el órgano que aprueba las **ordenanzas**: es el **Pleno** (art. 22.2.d), no el Alcalde.\n- Confundir los **tramos del artículo 26**: no es lo mismo el tramo general (todos), el de más de 5.000, el de más de 20.000 y el de más de 50.000.\n- Atribuir al municipio servicios que corresponden a la **diputación** en municipios pequeños: en los de menos de 20.000 habitantes la diputación coordina determinados servicios.\n- Confundir **provincia** con **comunidad autónoma uniprovincial**: en esta última no hay diputación.\n- Confundir los órganos de la **diputación** (Presidente, Vicepresidentes, Junta de Gobierno y Pleno, art. 32) con los del ayuntamiento.\n- Confundir las **potestades del artículo 4 LRBRL** con las competencias: las potestades son instrumentos (reglamentaria, tributaria, expropiatoria, sancionadora…), no servicios concretos.\n- Creer que las potestades locales son **ilimitadas**: se ejercen dentro del territorio y con respeto al interés general y a la autonomía de otras administraciones.\n- Confundir **financiación local** (TRLRHL: tributos propios y participación en tributos del Estado) con el presupuesto y la estabilidad presupuestaria.\n- Olvidar los **funcionarios con habilitación de carácter nacional** (secretario, interventor, tesorero) del artículo 92 LRBRL.\n- Pensar que la **Ley 27/2013** creó el régimen local: lo reformó para racionalizar y garantizar la sostenibilidad."
+        },
+        {
+          "heading": "8. Resumen para memorizar",
+          "body": "**Lo que hay que memorizar.**\n\n1. **Constitución**: arts. 137 (organización territorial), 140 (autonomía municipal y elección de concejales), 141 (provincia) y 142 (suficiencia financiera).\n2. **Entidades locales territoriales** (art. 3 LRBRL): municipio, provincia e isla; además, comarcas, áreas metropolitanas, mancomunidades y entidades locales menores.\n3. **Municipio** (art. 11): personalidad jurídica; elementos: territorio, población y organización.\n4. **Organización municipal** (art. 20): Alcalde, Tenientes de Alcalde y Pleno en todos; Junta de Gobierno Local desde 5.000 habitantes (o si lo prevé el reglamento orgánico o el Pleno); Comisión Especial de Cuentas en todos.\n5. **Artículo 26**: servicios obligatorios por tramos (todos; >5.000; >20.000; >50.000); la diputación coordina en municipios de menos de 20.000 habitantes.\n6. **Provincia** (art. 31) y **diputación** (art. 32): Presidente, Vicepresidentes, Junta de Gobierno y Pleno; en uniprovinciales no hay diputación; cabildos y consejos insulares.\n7. **Potestades** (art. 4): reglamentaria y de autoorganización, tributaria y financiera, programación, expropiatoria, investigación y deslinde, presunción de legitimidad, ejecución forzosa, sancionadora, revisión de oficio e inembargabilidad.\n8. **Pleno y Alcalde**: el Pleno aprueba ordenanzas, presupuestos y reglamento orgánico; el Alcalde dirige el gobierno y ejecuta los acuerdos.\n9. **Financiación**: TRLRHL (tributos propios, tasas, contribuciones especiales, participación en tributos del Estado); presupuesto y estabilidad.\n10. **Personal**: TREBEP y funcionarios con habilitación nacional (art. 92 LRBRL: secretario, interventor, tesorero). **Reforma**: Ley 27/2013."
+        },
+        {
+          "heading": "9. Casos tipo test comentados (15 preguntas)",
+          "body": "**1.** ¿Qué artículo de la Constitución organiza el Estado en municipios, provincias y comunidades autónomas? **Respuesta: a)** El artículo 137 CE (ficha I.3).\n\n**2.** Según el artículo 3 LRBRL, ¿cuáles son entidades locales territoriales? **Respuesta: b)** El municipio, la provincia y la isla (ficha I.3).\n\n**3.** ¿Cuáles son los elementos del municipio según el artículo 11 LRBRL? **Respuesta: c)** Territorio, población y organización (ficha I.3).\n\n**4.** ¿A partir de qué población es obligatoria la Junta de Gobierno Local? **Respuesta: d)** A partir de 5.000 habitantes (art. 20 LRBRL).\n\n**5.** ¿En qué municipios existe la Comisión Especial de Cuentas? **Respuesta: a)** En todos los ayuntamientos (art. 20 LRBRL).\n\n**6.** ¿Qué órgano aprueba las ordenanzas municipales? **Respuesta: b)** El Pleno (art. 22.2.d LRBRL).\n\n**7.** ¿Qué servicios son obligatorios en todos los municipios? **Respuesta: c)** Alumbrado público, cementerio, recogida de residuos, limpieza viaria, agua potable, alcantarillado, acceso y pavimentación (art. 26 LRBRL).\n\n**8.** ¿Qué servicios son obligatorios en municipios de más de 20.000 habitantes? **Respuesta: d)** Protección civil, servicios sociales, prevención y extinción de incendios e instalaciones deportivas (art. 26 LRBRL).\n\n**9.** ¿Qué servicios añade el tramo de más de 50.000 habitantes? **Respuesta: a)** Transporte colectivo urbano y protección del medio ambiente urbano (art. 26 LRBRL).\n\n**10.** ¿Qué es la provincia según el artículo 31 LRBRL? **Respuesta: b)** Una entidad local determinada por la agrupación de municipios (ficha I.3).\n\n**11.** ¿Qué órganos existen en todas las diputaciones? **Respuesta: c)** Presidente, Vicepresidentes, Junta de Gobierno y Pleno (art. 32 LRBRL).\n\n**12.** ¿Qué ocurre en las comunidades autónomas uniprovinciales? **Respuesta: d)** No hay diputación porque sus competencias las asume la comunidad (ficha I.3).\n\n**13.** ¿Qué reconoce el artículo 4 LRBRL a las entidades locales territoriales? **Respuesta: a)** Potestades como la reglamentaria, la tributaria, la expropiatoria o la sancionadora (ficha I.3).\n\n**14.** ¿Quiénes son funcionarios con habilitación de carácter nacional? **Respuesta: b)** El secretario, el interventor y el tesorero, entre otros (art. 92 LRBRL).\n\n**15.** ¿Qué ley reformó en 2013 el régimen local para racionalizarlo y garantizar su sostenibilidad? **Respuesta: c)** La Ley 27/2013 (ficha I.3)."
+        },
+        {
+          "heading": "10. Fuentes citadas",
+          "body": "- **Ficha publicada del tema I.3** (`fixtures/demo/temas/I.3.json`): marco constitucional, municipio y organización, competencias y servicios, provincia y otras entidades, potestades, financiación, personal y ejemplo resuelto, con las citas de los artículos de la LRBRL.\n- **Ley 7/1985, de 2 de abril, reguladora de las bases del régimen local** (BOE-A-1985-5392): arts. 3, 4, 11, 20, 22.2.d, 26, 31, 32 y 92, tal como los cita la ficha.\n- **`data/fuentes/I.3.txt`**: texto consolidado de trabajo. **Aviso:** este fichero no contiene el desarrollo del régimen local (recoge la Constitución, el TREBEP, transparencia y protección de datos, y un tema de periféricos), por lo que no se usa para datos concretos; el tema se ha elaborado con la ficha publicada y la LRBRL. No se copian párrafos literales.\n\n**Limitación:** no se han podido verificar contra el BOE en esta sesión los números de todos los artículos citados; se han mantenido solo los que la ficha publicada cita expresamente, y se describen por su materia cuando no consta el número."
+        }
+      ],
       "practiceSlug": "i-3"
     },
     "I.4": {
@@ -24271,6 +24556,986 @@
       ]
     },
     {
+      "slug": "tai-propio-i-contrato",
+      "year": 2026,
+      "conv": "Supuesto propio · OpoFuente 2026",
+      "block": "I",
+      "title": "Contratación de un servicio municipal",
+      "difficulty": "media",
+      "official": false,
+      "estimatedMinutes": 30,
+      "statement": "Un municipio necesita contratar el mantenimiento informático y debe elegir procedimiento, calcular el valor estimado, publicar pliegos y adjudicar. El tribunal revisa la legalidad de cada paso.",
+      "steps": [
+        "1. Definir objeto y necesidad.",
+        "2. Calcular valor y elegir procedimiento.",
+        "3. Redactar pliegos y publicar.",
+        "4. Valorar ofertas y adjudicar.",
+        "5. Formalizar y ejecutar."
+      ],
+      "topics": [
+        "I.10",
+        "I.9",
+        "I.6"
+      ],
+      "source": {
+        "label": "Elaboración propia · OpoFuente",
+        "url": "https://erdeivih.github.io/opofuente-demo/",
+        "pages": "Material propio de la demo"
+      },
+      "questions": [
+        {
+          "stem": "¿Qué ley regula actualmente la contratación del sector público en España?",
+          "options": [
+            {
+              "key": "a",
+              "text": "La Ley 9/2017, de Contratos del Sector Público"
+            },
+            {
+              "key": "b",
+              "text": "La Ley 30/2007, de Contratos del Sector Público"
+            },
+            {
+              "key": "c",
+              "text": "La Ley 39/2015, del Procedimiento Administrativo Común"
+            },
+            {
+              "key": "d",
+              "text": "La Ley 7/1985, de Bases del Régimen Local"
+            }
+          ],
+          "correct": "a",
+          "justification": "La Ley 9/2017, de 8 de noviembre, de Contratos del Sector Público, es la norma vigente y transpone las Directivas 2014/23/UE y 2014/24/UE."
+        },
+        {
+          "stem": "¿Cuál de las siguientes NO es una clase de contrato regulada por la LCSP?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Contrato de obras"
+            },
+            {
+              "key": "b",
+              "text": "Contrato de gestión de servicios públicos"
+            },
+            {
+              "key": "c",
+              "text": "Concesión de servicios"
+            },
+            {
+              "key": "d",
+              "text": "Contrato de suministro"
+            }
+          ],
+          "correct": "b",
+          "justification": "La LCSP clasifica los contratos en obras, concesión de obras, concesión de servicios, suministro y servicios; la gestión de servicios públicos fue una categoría del régimen anterior y hoy se reconduce a la concesión de servicios."
+        },
+        {
+          "stem": "En la concesión de obras, ¿qué rasgo define la contraprestación del concesionario?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Un precio cierto pagado por la Administración"
+            },
+            {
+              "key": "b",
+              "text": "La entrega de bienes muebles"
+            },
+            {
+              "key": "c",
+              "text": "El derecho a explotar la obra asumiendo el riesgo operacional"
+            },
+            {
+              "key": "d",
+              "text": "El pago de tasas por el usuario en todo caso"
+            }
+          ],
+          "correct": "c",
+          "justification": "El rasgo definitorio de la concesión es que el concesionario asume el riesgo operacional y se retribuye mediante la explotación de la obra."
+        },
+        {
+          "stem": "¿Cuál es el importe máximo de un contrato menor de servicios o de suministro?",
+          "options": [
+            {
+              "key": "a",
+              "text": "15.000 euros"
+            },
+            {
+              "key": "b",
+              "text": "30.000 euros"
+            },
+            {
+              "key": "c",
+              "text": "100.000 euros"
+            },
+            {
+              "key": "d",
+              "text": "40.000 euros"
+            }
+          ],
+          "correct": "d",
+          "justification": "Los contratos menores de suministro y servicios requieren un valor estimado inferior a 40.000 euros; los de obras, inferior a 15.000 euros."
+        },
+        {
+          "stem": "¿Qué procedimiento permite que cualquier empresario interesado presente oferta sin invitación previa?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El abierto"
+            },
+            {
+              "key": "b",
+              "text": "El negociado"
+            },
+            {
+              "key": "c",
+              "text": "El diálogo competitivo"
+            },
+            {
+              "key": "d",
+              "text": "El restringido"
+            }
+          ],
+          "correct": "a",
+          "justification": "El procedimiento abierto es la regla general: cualquier interesado que acredite solvencia puede presentar oferta; el restringido exige invitación previa."
+        },
+        {
+          "stem": "¿Qué órgano valora las ofertas y propone la adjudicación en el procedimiento abierto?",
+          "options": [
+            {
+              "key": "a",
+              "text": "La Intervención"
+            },
+            {
+              "key": "b",
+              "text": "La mesa de contratación"
+            },
+            {
+              "key": "c",
+              "text": "El Pleno"
+            },
+            {
+              "key": "d",
+              "text": "El Consejo de Ministros"
+            }
+          ],
+          "correct": "b",
+          "justification": "La mesa de contratación es el órgano colegiado de asistencia que valora las ofertas y propone la adjudicación al órgano de contratación."
+        },
+        {
+          "stem": "¿Qué documento establece las cláusulas administrativas y los criterios de adjudicación de un contrato?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El informe de necesidad"
+            },
+            {
+              "key": "b",
+              "text": "El pliego de prescripciones técnicas"
+            },
+            {
+              "key": "c",
+              "text": "El pliego de cláusulas administrativas particulares"
+            },
+            {
+              "key": "d",
+              "text": "El anuncio de licitación"
+            }
+          ],
+          "correct": "c",
+          "justification": "El PCAP regula los derechos y obligaciones, los criterios de adjudicación y las condiciones del contrato; el PPT define las características técnicas."
+        },
+        {
+          "stem": "La LCSP suprimió la garantía provisional y exige, con carácter general, una garantía definitiva de...",
+          "options": [
+            {
+              "key": "a",
+              "text": "El 10 % del presupuesto base de licitación"
+            },
+            {
+              "key": "b",
+              "text": "El 2 % del valor estimado"
+            },
+            {
+              "key": "c",
+              "text": "No se exige garantía definitiva"
+            },
+            {
+              "key": "d",
+              "text": "El 5 % del precio de adjudicación"
+            }
+          ],
+          "correct": "d",
+          "justification": "La garantía definitiva se fija con carácter general en el 5 % del precio de adjudicación y responde de la correcta ejecución del contrato."
+        },
+        {
+          "stem": "¿Qué recurso específico cabe contra los actos de preparación y adjudicación de los contratos del sector público?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El recurso especial en materia de contratación"
+            },
+            {
+              "key": "b",
+              "text": "El recurso de reposición en todo caso"
+            },
+            {
+              "key": "c",
+              "text": "El recurso de alzada ante el alcalde"
+            },
+            {
+              "key": "d",
+              "text": "No cabe ningún recurso"
+            }
+          ],
+          "correct": "a",
+          "justification": "El recurso especial en materia de contratación se resuelve por el Tribunal Administrativo Central de Recursos Contractuales o el órgano autonómico equivalente."
+        },
+        {
+          "stem": "¿Qué dos tipos de solvencia debe acreditar el licitador?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Política y social"
+            },
+            {
+              "key": "b",
+              "text": "Económica y financiera, y técnica o profesional"
+            },
+            {
+              "key": "c",
+              "text": "Penal y fiscal"
+            },
+            {
+              "key": "d",
+              "text": "Técnica y comercial"
+            }
+          ],
+          "correct": "b",
+          "justification": "La LCSP exige acreditar solvencia económica y financiera y solvencia técnica o profesional, en los términos y con los medios que fija la ley."
+        },
+        {
+          "stem": "¿Cuál es el texto vigente que regula las haciendas locales en el régimen común?",
+          "options": [
+            {
+              "key": "a",
+              "text": "La Ley 39/1988, de 28 de diciembre, en su redacción original"
+            },
+            {
+              "key": "b",
+              "text": "La Ley 7/1985, de 2 de abril, reguladora de las Bases del Régimen Local"
+            },
+            {
+              "key": "c",
+              "text": "El texto refundido aprobado por el Real Decreto Legislativo 2/2004, de 5 de marzo"
+            },
+            {
+              "key": "d",
+              "text": "La Ley Orgánica 2/2012, de 27 de abril"
+            }
+          ],
+          "correct": "c",
+          "justification": "La Ley 39/1988 fue refundida: su texto vigente es el aprobado por el Real Decreto Legislativo 2/2004 (TRLRHL), que es la norma que se maneja hoy."
+        },
+        {
+          "stem": "¿Qué recurso se exige por la utilización privativa o el aprovechamiento especial del dominio público local?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El precio público"
+            },
+            {
+              "key": "b",
+              "text": "El impuesto"
+            },
+            {
+              "key": "c",
+              "text": "La contribución especial"
+            },
+            {
+              "key": "d",
+              "text": "La tasa"
+            }
+          ],
+          "correct": "d",
+          "justification": "La tasa grava la utilización privativa o el aprovechamiento especial del dominio público y la prestación de servicios o actividades de solicitud o recepción obligatoria."
+        },
+        {
+          "stem": "¿Cuál es el límite máximo de la base imponible de las contribuciones especiales?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El 90 % del coste soportado por la entidad"
+            },
+            {
+              "key": "b",
+              "text": "El 75 % del coste soportado por la entidad"
+            },
+            {
+              "key": "c",
+              "text": "El 50 % del coste soportado por la entidad"
+            },
+            {
+              "key": "d",
+              "text": "El 100 % del coste de la obra"
+            }
+          ],
+          "correct": "a",
+          "justification": "La base imponible de las contribuciones especiales no puede superar el 90 % del coste que soporta la entidad, descontadas las subvenciones."
+        },
+        {
+          "stem": "¿Cuándo se devengan las contribuciones especiales?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Cuando se aprueba la ordenanza fiscal"
+            },
+            {
+              "key": "b",
+              "text": "Cuando se ejecutan las obras o comienza a prestarse el servicio"
+            },
+            {
+              "key": "c",
+              "text": "Cuando el beneficiario presenta la solicitud de licencia"
+            },
+            {
+              "key": "d",
+              "text": "El 1 de enero de cada ejercicio"
+            }
+          ],
+          "correct": "b",
+          "justification": "El devengo se produce al ejecutarse las obras o al iniciarse el servicio, sin perjuicio de que la entidad pueda exigir anticipos conforme a la ley."
+        },
+        {
+          "stem": "¿Cuál de los siguientes impuestos municipales tiene carácter potestativo?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El Impuesto sobre Bienes Inmuebles"
+            },
+            {
+              "key": "b",
+              "text": "El Impuesto sobre Actividades Económicas"
+            },
+            {
+              "key": "c",
+              "text": "El Impuesto sobre Construcciones, Instalaciones y Obras"
+            },
+            {
+              "key": "d",
+              "text": "El Impuesto sobre Vehículos de Tracción Mecánica"
+            }
+          ],
+          "correct": "c",
+          "justification": "El ICIO es potestativo: el ayuntamiento decide si lo exige. El IBI, el IAE y el IVTM son impuestos obligatorios del régimen común."
+        },
+        {
+          "stem": "¿Qué órgano aprueba el presupuesto general de una entidad local?",
+          "options": [
+            {
+              "key": "a",
+              "text": "La Intervención"
+            },
+            {
+              "key": "b",
+              "text": "El presidente de la corporación"
+            },
+            {
+              "key": "c",
+              "text": "La diputación provincial"
+            },
+            {
+              "key": "d",
+              "text": "El Pleno de la corporación"
+            }
+          ],
+          "correct": "d",
+          "justification": "El Pleno aprueba el presupuesto; la Intervención lo prepara y el presidente lo presenta, pero la competencia para aprobarlo corresponde al Pleno."
+        },
+        {
+          "stem": "Si el presupuesto de la entidad local no está aprobado antes del 1 de enero, ¿qué ocurre?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Se prorroga automáticamente el presupuesto del ejercicio anterior"
+            },
+            {
+              "key": "b",
+              "text": "Se aplica directamente el presupuesto del Estado"
+            },
+            {
+              "key": "c",
+              "text": "La entidad queda disuelta hasta aprobar el nuevo"
+            },
+            {
+              "key": "d",
+              "text": "Se aprueba por el Pleno sin información pública"
+            }
+          ],
+          "correct": "a",
+          "justification": "La prórroga automática del presupuesto anterior garantiza que la entidad pueda seguir funcionando hasta que se apruebe el nuevo."
+        },
+        {
+          "stem": "¿Qué norma orgánica somete a las entidades locales a la estabilidad presupuestaria y la sostenibilidad financiera?",
+          "options": [
+            {
+              "key": "a",
+              "text": "La Ley 39/1988, de 28 de diciembre"
+            },
+            {
+              "key": "b",
+              "text": "La Ley Orgánica 2/2012, de 27 de abril"
+            },
+            {
+              "key": "c",
+              "text": "La Ley 7/1985, de 2 de abril"
+            },
+            {
+              "key": "d",
+              "text": "La Ley 19/2013, de 9 de diciembre"
+            }
+          ],
+          "correct": "b",
+          "justification": "La Ley Orgánica 2/2012, de Estabilidad Presupuestaria y Sostenibilidad Financiera, extiende sus principios a todas las administraciones, incluidas las entidades locales."
+        },
+        {
+          "stem": "Cuando surge un gasto necesario no previsto y no existe crédito suficiente, ¿qué modificación presupuestaria procede?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Una transferencia de crédito"
+            },
+            {
+              "key": "b",
+              "text": "Una incorporación de remanentes"
+            },
+            {
+              "key": "c",
+              "text": "Un suplemento de crédito o un crédito extraordinario"
+            },
+            {
+              "key": "d",
+              "text": "Una baja por anulación"
+            }
+          ],
+          "correct": "c",
+          "justification": "Los créditos extraordinarios y los suplementos de crédito cubren gastos no previstos o insuficientemente dotados; la transferencia solo mueve crédito entre partidas y la incorporación de remanentes se refiere a créditos del ejercicio anterior."
+        },
+        {
+          "stem": "¿A quién corresponde el control externo de las cuentas de las entidades locales?",
+          "options": [
+            {
+              "key": "a",
+              "text": "A la Intervención municipal"
+            },
+            {
+              "key": "b",
+              "text": "Al Pleno de la corporación"
+            },
+            {
+              "key": "c",
+              "text": "Al Consejo de Ministros"
+            },
+            {
+              "key": "d",
+              "text": "Al Tribunal de Cuentas, sin perjuicio de las cámaras de cuentas autonómicas"
+            }
+          ],
+          "correct": "d",
+          "justification": "La Intervención ejerce el control interno; el control externo corresponde al Tribunal de Cuentas, sin perjuicio de las competencias de las cámaras de cuentas de las comunidades autónomas."
+        }
+      ]
+    },
+    {
+      "slug": "tai-propio-i-expediente",
+      "year": 2026,
+      "conv": "Supuesto propio · OpoFuente 2026",
+      "block": "I",
+      "title": "Tramitación de un expediente administrativo",
+      "difficulty": "media",
+      "official": false,
+      "estimatedMinutes": 30,
+      "statement": "Un ayuntamiento recibe una solicitud y debe comprobar plazos, órganos competentes, notificaciones y silencio administrativo. El equipo jurídico revisa el expediente antes de resolver.",
+      "steps": [
+        "1. Identificar interesados y hechos.",
+        "2. Comprobar competencia y plazos.",
+        "3. Resolver instrucción y prueba.",
+        "4. Notificar y controlar el silencio.",
+        "5. Documentar la resolución."
+      ],
+      "topics": [
+        "I.5",
+        "I.6",
+        "I.3"
+      ],
+      "source": {
+        "label": "Elaboración propia · OpoFuente",
+        "url": "https://erdeivih.github.io/opofuente-demo/",
+        "pages": "Material propio de la demo"
+      },
+      "questions": [
+        {
+          "stem": "¿Qué ley regula el procedimiento administrativo común de las Administraciones Públicas?",
+          "options": [
+            {
+              "key": "a",
+              "text": "La Ley 7/1985, de 2 de abril"
+            },
+            {
+              "key": "b",
+              "text": "La Ley 40/2015, de 1 de octubre"
+            },
+            {
+              "key": "c",
+              "text": "La Ley 39/2015, de 1 de octubre"
+            },
+            {
+              "key": "d",
+              "text": "La Ley 19/2013, de 9 de diciembre"
+            }
+          ],
+          "correct": "c",
+          "justification": "La Ley 39/2015 regula el procedimiento administrativo común; la Ley 40/2015 regula el régimen jurídico del sector público y la Ley 19/2013 la transparencia y el acceso a la información."
+        },
+        {
+          "stem": "En los procedimientos iniciados a solicitud del interesado, ¿qué sentido tiene el silencio administrativo?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Siempre desestimatorio"
+            },
+            {
+              "key": "b",
+              "text": "Depende del órgano que deba resolver"
+            },
+            {
+              "key": "c",
+              "text": "Siempre estimatorio"
+            },
+            {
+              "key": "d",
+              "text": "Con carácter general estimatorio, salvo las excepciones legales"
+            }
+          ],
+          "correct": "d",
+          "justification": "El artículo 24 establece el silencio estimatorio como regla general, con excepciones legales como el derecho de petición, el dominio público, el medio ambiente o la responsabilidad patrimonial."
+        },
+        {
+          "stem": "Si la norma que regula el procedimiento no fija plazo máximo para resolver, ¿de cuánto tiempo dispone la Administración?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Tres meses"
+            },
+            {
+              "key": "b",
+              "text": "Dos meses"
+            },
+            {
+              "key": "c",
+              "text": "Un mes"
+            },
+            {
+              "key": "d",
+              "text": "Seis meses"
+            }
+          ],
+          "correct": "a",
+          "justification": "El artículo 21.3 fija en tres meses el plazo máximo cuando la norma del procedimiento no establece otro."
+        },
+        {
+          "stem": "¿Qué plazo hay para interponer el recurso de alzada contra un acto expreso?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Diez días"
+            },
+            {
+              "key": "b",
+              "text": "Un mes"
+            },
+            {
+              "key": "c",
+              "text": "Veinte días"
+            },
+            {
+              "key": "d",
+              "text": "Quince días"
+            }
+          ],
+          "correct": "b",
+          "justification": "El artículo 122 concede un mes para interponer la alzada si el acto es expreso; si el acto es presunto puede interponerse en cualquier momento."
+        },
+        {
+          "stem": "¿Ante qué órgano se interpone el recurso de alzada?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Ante el ministro correspondiente en todo caso"
+            },
+            {
+              "key": "b",
+              "text": "Ante el mismo órgano que dictó el acto"
+            },
+            {
+              "key": "c",
+              "text": "Ante el órgano superior jerárquico del que dictó el acto"
+            },
+            {
+              "key": "d",
+              "text": "Directamente ante el juez"
+            }
+          ],
+          "correct": "c",
+          "justification": "El artículo 121 configura la alzada como recurso ante el órgano superior jerárquico del que dictó el acto impugnado."
+        },
+        {
+          "stem": "¿Qué recurso puede interponerse, con carácter potestativo, contra un acto que pone fin a la vía administrativa antes de acudir a la jurisdicción?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El recurso de alzada"
+            },
+            {
+              "key": "b",
+              "text": "La cuestión prejudicial"
+            },
+            {
+              "key": "c",
+              "text": "El recurso extraordinario de revisión"
+            },
+            {
+              "key": "d",
+              "text": "El recurso de reposición"
+            }
+          ],
+          "correct": "d",
+          "justification": "El recurso de reposición es potestativo, se interpone ante el mismo órgano que dictó el acto y permite después acudir a la jurisdicción contencioso-administrativa."
+        },
+        {
+          "stem": "¿Qué duración tiene el trámite de audiencia antes de la propuesta de resolución?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Entre diez y quince días"
+            },
+            {
+              "key": "b",
+              "text": "Entre diez y veinte días"
+            },
+            {
+              "key": "c",
+              "text": "Entre cinco y diez días"
+            },
+            {
+              "key": "d",
+              "text": "Entre quince y veinte días"
+            }
+          ],
+          "correct": "a",
+          "justification": "El artículo 82 concede un plazo no inferior a diez días ni superior a quince para alegar y presentar documentos."
+        },
+        {
+          "stem": "¿Cuál es el plazo mínimo del trámite de información pública?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Cinco días"
+            },
+            {
+              "key": "b",
+              "text": "Veinte días"
+            },
+            {
+              "key": "c",
+              "text": "Quince días"
+            },
+            {
+              "key": "d",
+              "text": "Diez días"
+            }
+          ],
+          "correct": "b",
+          "justification": "El artículo 83 exige que el plazo para formular alegaciones en información pública no sea inferior a veinte días."
+        },
+        {
+          "stem": "¿Cómo se computan los plazos señalados por días en el procedimiento administrativo?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Solo por días laborables del interesado"
+            },
+            {
+              "key": "b",
+              "text": "Por días naturales, incluidos sábados y domingos"
+            },
+            {
+              "key": "c",
+              "text": "Por días hábiles, excluyendo sábados, domingos y festivos"
+            },
+            {
+              "key": "d",
+              "text": "Siempre por días naturales"
+            }
+          ],
+          "correct": "c",
+          "justification": "El artículo 30.2 dispone que los plazos por días son hábiles y excluye del cómputo sábados, domingos y festivos."
+        },
+        {
+          "stem": "En un procedimiento sancionador iniciado de oficio, ¿qué efecto produce el vencimiento del plazo máximo sin resolución?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El silencio estimatorio"
+            },
+            {
+              "key": "b",
+              "text": "La nulidad de pleno derecho"
+            },
+            {
+              "key": "c",
+              "text": "El silencio desestimatorio"
+            },
+            {
+              "key": "d",
+              "text": "La caducidad del procedimiento"
+            }
+          ],
+          "correct": "d",
+          "justification": "El artículo 25.1.b establece que, cuando se ejercitan potestades sancionadoras o de gravamen, el vencimiento del plazo produce la caducidad del procedimiento y el archivo de las actuaciones."
+        },
+        {
+          "stem": "¿Qué ley regula el régimen jurídico del sector público?",
+          "options": [
+            {
+              "key": "a",
+              "text": "La Ley 9/2017, de 8 de noviembre"
+            },
+            {
+              "key": "b",
+              "text": "La Ley 39/2015, de 1 de octubre"
+            },
+            {
+              "key": "c",
+              "text": "La Ley 7/1985, de 2 de abril"
+            },
+            {
+              "key": "d",
+              "text": "La Ley 40/2015, de 1 de octubre"
+            }
+          ],
+          "correct": "d",
+          "justification": "La Ley 40/2015 regula el régimen jurídico del sector público; la Ley 39/2015 regula el procedimiento administrativo común y la Ley 9/2017 los contratos del sector público."
+        },
+        {
+          "stem": "¿Cómo es la competencia de los órganos administrativos?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Irrenunciable, aunque su ejercicio puede delegarse o avocarse"
+            },
+            {
+              "key": "b",
+              "text": "Renunciable si lo acuerda el titular"
+            },
+            {
+              "key": "c",
+              "text": "Libremente transferible a cualquier particular"
+            },
+            {
+              "key": "d",
+              "text": "Discrecional y no reglada"
+            }
+          ],
+          "correct": "a",
+          "justification": "El artículo 8 declara la competencia irrenunciable y la ejerce el órgano que la tiene atribuida, salvo los casos de delegación o avocación previstos en la ley."
+        },
+        {
+          "stem": "¿Qué requisito es imprescindible para que una delegación de competencias sea válida?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Que la autorice el Consejo de Ministros"
+            },
+            {
+              "key": "b",
+              "text": "Que se publique en el boletín oficial correspondiente"
+            },
+            {
+              "key": "c",
+              "text": "Que la acepte el órgano delegado"
+            },
+            {
+              "key": "d",
+              "text": "Que la apruebe el Pleno de la corporación"
+            }
+          ],
+          "correct": "b",
+          "justification": "El artículo 9 exige que las delegaciones de competencias y su revocación se publiquen en el BOE, en el boletín de la comunidad autónoma o en el de la provincia, según la Administración."
+        },
+        {
+          "stem": "¿Qué es la avocación?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Delegar la firma en un subordinado"
+            },
+            {
+              "key": "b",
+              "text": "Sustituir temporalmente al titular de un órgano"
+            },
+            {
+              "key": "c",
+              "text": "Atraer un órgano superior el conocimiento de un asunto"
+            },
+            {
+              "key": "d",
+              "text": "Encargar una actividad material a otro órgano"
+            }
+          ],
+          "correct": "c",
+          "justification": "La avocación permite al órgano superior atraer para sí un asunto que corresponde ordinariamente o por delegación a sus órganos dependientes, mediante acuerdo motivado."
+        },
+        {
+          "stem": "¿Qué permite la encomienda de gestión?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Resolver un recurso de alzada"
+            },
+            {
+              "key": "b",
+              "text": "Transferir la titularidad de la competencia"
+            },
+            {
+              "key": "c",
+              "text": "Aprobar disposiciones generales"
+            },
+            {
+              "key": "d",
+              "text": "Encargar actividades materiales o técnicas a otro órgano o entidad de derecho público"
+            }
+          ],
+          "correct": "d",
+          "justification": "La encomienda de gestión solo cubre actividades materiales o técnicas y no supone cesión de la titularidad de la competencia ni de los elementos sustantivos de su ejercicio."
+        },
+        {
+          "stem": "¿Qué efecto tiene la suplencia en la competencia del órgano?",
+          "options": [
+            {
+              "key": "a",
+              "text": "No altera la competencia y no requiere publicación"
+            },
+            {
+              "key": "b",
+              "text": "Altera la titularidad de la competencia"
+            },
+            {
+              "key": "c",
+              "text": "Exige publicación en el BOE"
+            },
+            {
+              "key": "d",
+              "text": "Requiere acuerdo del Consejo de Ministros"
+            }
+          ],
+          "correct": "a",
+          "justification": "El artículo 13 dispone que la suplencia no implica alteración de la competencia y que para su validez no es necesaria su publicación."
+        },
+        {
+          "stem": "¿Cuál es la duración máxima inicial de un convenio de colaboración?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Un año"
+            },
+            {
+              "key": "b",
+              "text": "Cuatro años"
+            },
+            {
+              "key": "c",
+              "text": "Dos años"
+            },
+            {
+              "key": "d",
+              "text": "Seis años"
+            }
+          ],
+          "correct": "b",
+          "justification": "El artículo 49 exige una duración determinada no superior a cuatro años, prorrogable por acuerdo unánime de las partes por hasta cuatro años adicionales."
+        },
+        {
+          "stem": "¿Cuál es el plazo para reclamar la responsabilidad patrimonial de una Administración?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Seis meses"
+            },
+            {
+              "key": "b",
+              "text": "Dos años"
+            },
+            {
+              "key": "c",
+              "text": "Un año"
+            },
+            {
+              "key": "d",
+              "text": "Cinco años"
+            }
+          ],
+          "correct": "c",
+          "justification": "El derecho a reclamar prescribe al año de producido el hecho o el acto que motive la indemnización o de manifestarse su efecto lesivo."
+        },
+        {
+          "stem": "¿Qué requisitos debe reunir el daño indemnizable por responsabilidad patrimonial?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Basta con que se anule el acto administrativo"
+            },
+            {
+              "key": "b",
+              "text": "Ser solo moral o hipotético"
+            },
+            {
+              "key": "c",
+              "text": "Ser siempre superior a 1.000 euros"
+            },
+            {
+              "key": "d",
+              "text": "Ser efectivo, evaluable económicamente e individualizado"
+            }
+          ],
+          "correct": "d",
+          "justification": "El artículo 32 exige que el daño sea efectivo, evaluable económicamente e individualizado con relación a una persona o grupo de personas."
+        },
+        {
+          "stem": "¿Qué rasgo diferencia a las entidades públicas empresariales de los organismos autónomos?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Se financian mayoritariamente con ingresos de mercado"
+            },
+            {
+              "key": "b",
+              "text": "Se financian íntegramente con impuestos"
+            },
+            {
+              "key": "c",
+              "text": "Carecen de personalidad jurídica propia"
+            },
+            {
+              "key": "d",
+              "text": "No pueden ejercer potestades administrativas"
+            }
+          ],
+          "correct": "a",
+          "justification": "El artículo 103 define las entidades públicas empresariales como entidades de derecho público que se financian mayoritariamente con ingresos de mercado, a diferencia de los organismos autónomos."
+        }
+      ]
+    },
+    {
       "slug": "tai-propio-ii-puesto",
       "year": 2026,
       "conv": "Supuesto propio · OpoFuente 2026",
@@ -29181,8 +30446,8 @@
     "questions": 400,
     "cases": 5,
     "caseQuestions": 50,
-    "supuestos": 17,
-    "supuestoQuestions": 340,
+    "supuestos": 19,
+    "supuestoQuestions": 380,
     "convocatorias": 12
   }
 }
