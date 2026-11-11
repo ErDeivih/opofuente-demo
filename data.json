@@ -174,8 +174,8 @@
             "practicaStatus": "con_practica",
             "sectionCount": 7,
             "questionCount": 10,
-            "formato": "esquema",
-            "longWords": 0
+            "formato": "desarrollado",
+            "longWords": 2375
           },
           {
             "path": "I.5",
@@ -184,8 +184,8 @@
             "practicaStatus": "con_practica",
             "sectionCount": 6,
             "questionCount": 10,
-            "formato": "esquema",
-            "longWords": 0
+            "formato": "desarrollado",
+            "longWords": 2461
           },
           {
             "path": "I.6",
@@ -194,8 +194,8 @@
             "practicaStatus": "con_practica",
             "sectionCount": 6,
             "questionCount": 10,
-            "formato": "esquema",
-            "longWords": 0
+            "formato": "desarrollado",
+            "longWords": 2867
           },
           {
             "path": "I.7",
@@ -1599,6 +1599,220 @@
         "Olvidar que la Comisión Especial de Cuentas existe en todos los municipios, sin umbral de población."
       ],
       "reviewedAt": "2026-11-10",
+      "longSections": [
+        {
+          "heading": "1. Ficha oficial del tema",
+          "body": "**Tema:** I.4, «Organización municipal», del bloque I (Administración y normativa) del temario común de informática C1. **Materias que cubre:** el municipio y sus elementos, los órganos necesarios, el Pleno, el Alcalde y los Tenientes de Alcalde, la Junta de Gobierno Local, la Comisión Especial de Cuentas, las competencias y servicios obligatorios, los distritos y la participación vecinal. **Relación con otros temas:** se apoya en I.3 (régimen local) y en la Constitución (artículos 137 a 142), y conecta con I.5 (procedimiento administrativo) y con la contratación y el presupuesto local. **Fuente:** no hay documento de régimen local en el escritorio de fuentes; este tema se ha redactado como material propio de OpoFuente, sin copiar textos ajenos y sin citar fuentes que no existen. Las referencias a la Ley 7/1985 se hacen por artículo solo cuando el número es seguro; en caso contrario se cita la ley sin número.",
+          "table": {
+            "columns": [
+              "Dato de la ficha",
+              "Valor"
+            ],
+            "rows": [
+              [
+                "Tema",
+                "I.4 Organización municipal"
+              ],
+              [
+                "Bloque",
+                "I · Administración y normativa"
+              ],
+              [
+                "Materias",
+                "Municipio, órganos, Pleno, Alcalde, Junta de Gobierno, competencias, distritos y participación"
+              ],
+              [
+                "Temas relacionados",
+                "I.3 Régimen local; I.5 Procedimiento administrativo; presupuesto y contratación local"
+              ],
+              [
+                "Fuente",
+                "Elaboración propia · OpoFuente"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "2. Índice de epígrafes",
+          "body": "El desarrollo del tema se organiza en los epígrafes del apartado 4:\n\n- **4.1.** El municipio y sus elementos.\n- **4.2.** Los órganos necesarios y los complementarios.\n- **4.3.** El Pleno.\n- **4.4.** El Alcalde y los Tenientes de Alcalde.\n- **4.5.** La Junta de Gobierno Local y la Comisión Especial de Cuentas.\n- **4.6.** Las competencias y los servicios obligatorios.\n- **4.7.** Los distritos y la participación vecinal.\n- **4.8.** El régimen de sesiones, los grupos y el control.\n\nCompletan el tema la tabla de órganos (apartado 5), el ejemplo práctico (6), las trampas de examen (7), el resumen para memorizar (8), los quince casos tipo test (9) y las fuentes citadas (10)."
+        },
+        {
+          "heading": "3. Introducción y contexto",
+          "body": "El municipio es la entidad local básica de la organización territorial del Estado. La Constitución reconoce su autonomía para la gestión de sus respectivos intereses (artículos 137 y 140) y garantiza su suficiencia financiera (artículo 142); la Ley 7/1985, de 2 de abril, reguladora de las bases del régimen local, desarrolla ese marco y fija la organización común de todos los ayuntamientos.\n\nLa organización municipal combina órganos de gobierno y órganos de control: el Pleno representa la voluntad política de la corporación, el Alcalde dirige el gobierno y la administración, la Junta de Gobierno Local asiste al Alcalde y la Comisión Especial de Cuentas fiscaliza las cuentas. Alrededor de ellos se sitúan los órganos complementarios, los distritos y los cauces de participación vecinal.\n\nPara el opositor, el tema se resume en cuatro preguntas: quién es el municipio, qué órganos existen, qué hace cada uno y con qué competencias y servicios; a las que se añaden la participación y el régimen de sesiones.",
+          "table": {
+            "columns": [
+              "Fuente",
+              "Qué aporta"
+            ],
+            "rows": [
+              [
+                "Elaboración propia · OpoFuente",
+                "Contenido del tema: municipio, órganos, competencias, distritos y participación"
+              ],
+              [
+                "Ley 7/1985 (referencia normativa)",
+                "Base legal citada por artículo cuando su número es seguro"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "4. Desarrollo por epígrafe",
+          "body": "**4.1. El municipio y sus elementos.** El municipio es la entidad local básica de la organización territorial del Estado; tiene personalidad jurídica y plena capacidad para el cumplimiento de sus fines (artículo 11 de la Ley 7/1985). Sus **elementos** son el **territorio** (término municipal), la **población** (vecinos y residentes) y la **organización**. La autonomía local es una garantía institucional, no una soberanía: el municipio aprueba ordenanzas y presupuestos dentro del marco de las leyes estatales y autonómicas.\n\n**4.2. Los órganos necesarios.** El artículo 20 de la Ley 7/1985 fija las reglas básicas: el **Alcalde**, los **Tenientes de Alcalde** y el **Pleno** existen en todos los ayuntamientos; la **Junta de Gobierno Local** existe en los municipios con población superior a **5.000 habitantes** y en los de menos cuando lo disponga su reglamento orgánico o lo acuerde el Pleno; la **Comisión Especial de Cuentas** existe en todos los municipios; y la **Comisión Especial de Sugerencias y Reclamaciones** existe en los municipios de gran población y en aquellos en que el Pleno lo acuerde por mayoría absoluta o lo prevea el reglamento orgánico. Los demás órganos son **complementarios** y los regula el reglamento orgánico: concejalías delegadas, comisiones informativas, consejos sectoriales y órganos desconcentrados.\n\n**4.3. El Pleno.** Es el órgano de máxima representación política de la corporación: está integrado por todos los concejales y lo preside el Alcalde. Sus atribuciones son, entre otras (artículo 22 de la Ley 7/1985): el control y la fiscalización de los órganos de gobierno; la aprobación del **reglamento orgánico** y de las **ordenanzas**; la aprobación y modificación de los **presupuestos** y de las cuentas; la determinación de los recursos tributarios propios; la aprobación de las formas de gestión de los servicios y de los expedientes de municipalización; la aceptación de delegaciones de competencias; los acuerdos sobre participación en organizaciones supramunicipales, alteración del término municipal, creación o supresión de municipios y entidades locales menores; la aprobación inicial del planeamiento urbanístico; y el planteamiento de conflictos de competencias. El Pleno funciona en sesiones ordinarias y extraordinarias, y sus sesiones son públicas salvo los supuestos de secreto previstos en la ley.\n\n**4.4. El Alcalde y los Tenientes de Alcalde.** El **Alcalde** es el presidente de la corporación y dirige el gobierno y la administración municipal (artículo 21 de la Ley 7/1985). Representa al ayuntamiento, convoca y preside las sesiones del Pleno y de la Junta de Gobierno Local, decide los empates con voto de calidad, dirige e inspecciona los servicios y obras, dicta bandos, ejerce la jefatura del personal y desarrolla la gestión económica conforme al presupuesto. Los **Tenientes de Alcalde** son nombrados y cesados por el Alcalde entre los concejales y lo sustituyen en los casos de vacante, ausencia o enfermedad, además de ejercer las delegaciones que reciban. Las delegaciones del Alcalde en la Junta de Gobierno Local o en los concejales deben ser expresas y publicarse, y no pueden afectar a las competencias que la ley atribuye al Pleno.\n\n**4.5. La Junta de Gobierno Local y la Comisión Especial de Cuentas.** La **Junta de Gobierno Local** existe en los municipios de más de 5.000 habitantes (y en los demás si lo prevé el reglamento orgánico o lo acuerda el Pleno); está formada por el Alcalde y por los concejales que este nombre, y ejerce las competencias que le delegue el Alcalde y las que le atribuya la ley. La **Comisión Especial de Cuentas** existe en todos los municipios: examina las cuentas anuales y emite el informe previo a su aprobación por el Pleno, y se compone de miembros de los distintos grupos municipales en proporción a su representación. Junto a ellas, los **grupos municipales** agrupan a los concejales de cada formación política y ejercen la iniciativa y el control político.\n\n**4.6. Las competencias y los servicios obligatorios.** El municipio tiene competencias propias que le atribuyen las leyes estatales y autonómicas (artículo 25 de la Ley 7/1985), entre ellas el urbanismo, el medio ambiente urbano, el abastecimiento de agua y la evacuación de aguas residuales, las infraestructuras viarias, los servicios sociales, la sanidad, la protección civil, la gestión de residuos, el transporte colectivo, la cultura y el deporte, y la promoción del desarrollo económico y del empleo; también puede promover toda clase de actividades y prestar servicios que contribuyan a satisfacer las necesidades de la comunidad vecinal. El artículo 26 fija los **servicios obligatorios** por tramos de población: en todos los municipios, alumbrado público, cementerio, recogida de residuos, limpieza viaria, abastecimiento domiciliario de agua potable, alcantarillado, acceso a los núcleos de población y pavimentación de las vías públicas; en los de más de 5.000 habitantes, además, parque público, biblioteca pública y tratamiento de residuos; en los de más de 20.000, protección civil, evaluación e información de situaciones de necesidad social, atención inmediata a personas en situación o riesgo de exclusión social, prevención y extinción de incendios e instalaciones deportivas de uso público; y en los de más de 50.000, transporte colectivo urbano de viajeros y medio ambiente urbano. Los municipios pueden asumir competencias **delegadas** de otras Administraciones y prestar servicios mediante mancomunidades u otras fórmulas de cooperación.\n\n**4.7. Los distritos y la participación vecinal.** La ley permite crear **órganos desconcentrados** —los distritos— para acercar la gestión municipal a los barrios y articular la participación ciudadana; en los municipios de gran población la creación de distritos responde a un régimen específico. Los **vecinos** tienen derecho a ser electores y elegibles, a participar en la gestión municipal, a utilizar los servicios públicos, a contribuir a los gastos, a ser informados y a pedir consultas populares (artículo 18 de la Ley 7/1985). La **iniciativa popular** permite a los vecinos con derecho de sufragio presentar propuestas de acuerdos o de reglamentos, avaladas por un porcentaje de electores que varía según el tramo de población (20 %, 10 % o 5 % en los tres tramos que fija la ley); las propuestas se someten al Pleno. La **consulta popular** sobre asuntos de competencia municipal exige acuerdo del Pleno y autorización del Gobierno de la Nación, y no puede versar sobre la hacienda local. Los consejos sectoriales, las asambleas vecinales y las comisiones informativas completan los cauces de participación.\n\n**4.8. El régimen de sesiones, los grupos y el control.** El Pleno celebra sesión ordinaria como mínimo **cada mes** en los municipios de más de 20.000 habitantes y **cada dos meses** en los demás; las sesiones extraordinarias se convocan para asuntos concretos y pueden ser urgentes. Las sesiones y acuerdos se publican y se comunican a los interesados. Los grupos municipales, las comisiones informativas y la Comisión Especial de Cuentas ejercen el control y la fiscalización de la acción de gobierno, y el Pleno puede aprobar mociones y proposiciones. La transparencia, el acceso a la información y la rendición de cuentas completan el marco de control democrático del ayuntamiento.",
+          "table": {
+            "columns": [
+              "Epígrafe",
+              "Datos que hay que retener"
+            ],
+            "rows": [
+              [
+                "Municipio",
+                "Entidad local básica; personalidad jurídica; territorio, población y organización (artículo 11)"
+              ],
+              [
+                "Órganos necesarios",
+                "Alcalde, Tenientes y Pleno en todos; Junta de Gobierno Local desde 5.000; Comisión de Cuentas en todos"
+              ],
+              [
+                "Pleno",
+                "Todos los concejales; preside el Alcalde; ordenanzas, presupuestos, cuentas y control (artículo 22)"
+              ],
+              [
+                "Alcalde",
+                "Presidente de la corporación; dirección, representación, convocatoria y jefatura de personal (artículo 21)"
+              ],
+              [
+                "Junta de Gobierno",
+                "Alcalde y concejales nombrados; asiste al Alcalde y ejerce delegaciones"
+              ],
+              [
+                "Competencias",
+                "Propias (artículo 25) y servicios obligatorios por tramos de población (artículo 26)"
+              ],
+              [
+                "Participación",
+                "Derechos de los vecinos, iniciativa popular, consulta popular, distritos y consejos sectoriales"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "5. Tabla de órganos municipales",
+          "body": "La tabla resume los órganos municipales, su composición y sus funciones principales.",
+          "table": {
+            "columns": [
+              "Órgano",
+              "Composición",
+              "Función principal"
+            ],
+            "rows": [
+              [
+                "Pleno",
+                "Todos los concejales; lo preside el Alcalde",
+                "Control político, ordenanzas, reglamento orgánico, presupuestos y cuentas"
+              ],
+              [
+                "Alcalde",
+                "Un concejal elegido por el Pleno",
+                "Presidente de la corporación; gobierno, administración y representación"
+              ],
+              [
+                "Tenientes de Alcalde",
+                "Concejales nombrados por el Alcalde",
+                "Sustitución del Alcalde y ejercicio de delegaciones"
+              ],
+              [
+                "Junta de Gobierno Local",
+                "Alcalde y concejales que este nombre (desde 5.000 habitantes)",
+                "Asistencia al Alcalde y competencias delegadas"
+              ],
+              [
+                "Comisión Especial de Cuentas",
+                "Miembros de los grupos municipales, proporcionalmente",
+                "Examen de las cuentas anuales e informe previo al Pleno"
+              ],
+              [
+                "Comisión de Sugerencias y Reclamaciones",
+                "Miembros designados por el Pleno",
+                "Defensa de los derechos de los vecinos ante la Administración municipal"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "6. Ejemplo práctico resuelto",
+          "body": "**Supuesto.** Un ayuntamiento de 8.000 habitantes acaba de constituirse y debe aprobar una ordenanza de terrazas, el presupuesto del año y un plan de barrios; además, un grupo de vecinos quiere presentar una propuesta para crear un carril bici.\n\n**Resolución.**\n\n- **Órganos:** al superar los 5.000 habitantes, el ayuntamiento debe tener **Junta de Gobierno Local**, además de Alcalde, Tenientes de Alcalde, Pleno y Comisión Especial de Cuentas. Los concejales se eligen por sufragio universal cada cuatro años y el Alcalde es elegido por el Pleno.\n- **Ordenanza:** la aprueba el **Pleno** (artículo 22 de la Ley 7/1985), no el Alcalde; antes se tramita con la participación e información que exija la ley y la normativa autonómica.\n- **Presupuesto:** lo aprueba el Pleno; la Comisión Especial de Cuentas examina las cuentas anuales antes de su aprobación.\n- **Servicios:** con 8.000 habitantes debe prestar los servicios generales y, además, parque público, biblioteca pública y tratamiento de residuos; no está obligado a los de más de 20.000 ni a los de más de 50.000.\n- **Barrios:** puede crear **distritos** u órganos desconcentrados para acercar la gestión y articular la participación vecinal.\n- **Carril bici:** los vecinos pueden presentar una **propuesta de acuerdo o de reglamento** por iniciativa popular, avalada por el porcentaje de electores que corresponda al tramo de población; la propuesta se somete al Pleno, que decide.\n\n**Conclusión.** El caso reúne los tres niveles del tema: órganos, competencias y participación. Saber quién aprueba cada cosa evita los errores más frecuentes.",
+          "table": {
+            "columns": [
+              "Necesidad",
+              "Órgano o cauce",
+              "Dato clave"
+            ],
+            "rows": [
+              [
+                "Aprobar la ordenanza",
+                "Pleno",
+                "Artículo 22 de la Ley 7/1985"
+              ],
+              [
+                "Aprobar el presupuesto",
+                "Pleno",
+                "Con informe de la Comisión Especial de Cuentas"
+              ],
+              [
+                "Servicios de 8.000 habitantes",
+                "Ayuntamiento",
+                "Generales, parque, biblioteca y tratamiento de residuos"
+              ],
+              [
+                "Propuesta vecinal",
+                "Iniciativa popular",
+                "Porcentaje de electores y decisión del Pleno"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "7. Trampas típicas de examen",
+          "body": "Las confusiones más frecuentes de este tema son estas:\n\n- **Confundir el Pleno con el Alcalde**: el Pleno aprueba ordenanzas, reglamento orgánico, presupuestos y cuentas; el Alcalde dirige y representa.\n- **Creer que la Junta de Gobierno Local existe en todos los municipios**: es obligatoria a partir de 5.000 habitantes y, por debajo, solo si lo prevé el reglamento orgánico o lo acuerda el Pleno.\n- **Confundir la Comisión Especial de Cuentas con la de Sugerencias y Reclamaciones**: la primera existe en todos los municipios; la segunda, en los de gran población o cuando el Pleno lo acuerda.\n- **Confundir los tramos de servicios obligatorios**: 5.000 (parque, biblioteca y tratamiento de residuos), 20.000 (protección civil, incendios, servicios sociales, instalaciones deportivas) y 50.000 (transporte colectivo y medio ambiente urbano).\n- **Creer que el Alcalde puede aprobar ordenanzas o presupuestos**: esas competencias son del Pleno.\n- **Confundir iniciativa popular con consulta popular**: la iniciativa es una propuesta de acuerdo o reglamento; la consulta es una votación que exige autorización del Gobierno.\n- **Confundir distrito con municipio**: el distrito es un órgano desconcentrado de gestión y participación dentro del municipio.\n- **Creer que los Tenientes de Alcalde son elegidos por el Pleno**: los nombra y cesa el Alcalde entre los concejales.",
+          "table": {
+            "columns": [
+              "Confusión",
+              "Lo correcto"
+            ],
+            "rows": [
+              [
+                "Pleno = Alcalde",
+                "El Pleno aprueba ordenanzas y presupuestos; el Alcalde dirige"
+              ],
+              [
+                "Junta de Gobierno en todos",
+                "Obligatoria desde 5.000 habitantes"
+              ],
+              [
+                "Iniciativa = consulta popular",
+                "La iniciativa propone; la consulta requiere autorización del Gobierno"
+              ],
+              [
+                "Distrito = municipio",
+                "El distrito es un órgano interno del municipio"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "8. Resumen para memorizar",
+          "body": "**Municipio.** Entidad local básica, con personalidad jurídica y plena capacidad (artículo 11 de la Ley 7/1985); elementos: territorio, población y organización.\n\n**Órganos necesarios.** Alcalde, Tenientes de Alcalde y Pleno en todos los ayuntamientos; Junta de Gobierno Local a partir de 5.000 habitantes (o si lo prevé el reglamento orgánico o lo acuerda el Pleno); Comisión Especial de Cuentas en todos; Comisión de Sugerencias y Reclamaciones en los de gran población o si el Pleno lo acuerda.\n\n**Pleno.** Todos los concejales, presidido por el Alcalde; control y fiscalización; reglamento orgánico y ordenanzas; presupuestos y cuentas; recursos tributarios; formas de gestión de servicios; urbanismo; participación supramunicipal; alteración del término.\n\n**Alcalde.** Presidente de la corporación; dirección del gobierno y la administración, representación, convocatoria y presidencia de sesiones, voto de calidad, bandos y jefatura del personal (artículo 21). Tenientes: los nombra el Alcalde entre los concejales.\n\n**Competencias.** Propias (artículo 25) y servicios obligatorios por tramos (artículo 26): todos; más de 5.000; más de 20.000; más de 50.000. Competencias delegadas y mancomunidades.\n\n**Participación.** Derechos de los vecinos (artículo 18), iniciativa popular con porcentajes de electores, consulta popular con autorización del Gobierno, distritos, consejos sectoriales y asambleas vecinales.\n\n**Sesiones.** Pleno ordinario mensual en municipios de más de 20.000 habitantes y bimestral en los demás; sesiones extraordinarias para asuntos concretos; grupos municipales y comisiones de control."
+        },
+        {
+          "heading": "9. Casos tipo test comentados (15 preguntas)",
+          "body": "Los quince casos siguientes reproducen el estilo de pregunta del bloque I. Cada uno incluye la respuesta correcta y una explicación que recuerda el dato del temario; la referencia indica el epígrafe donde se desarrolla. Conviene contestarlos sin mirar la solución y revisar después solo los fallos."
+        },
+        {
+          "heading": "10. Fuentes citadas",
+          "body": "Este tema se ha redactado como **material propio de OpoFuente**, ante la ausencia de un documento de régimen local en el escritorio de fuentes. No se han copiado textos de academias, blogs ni apuntes privados, y no se citan fuentes inexistentes: la entrada de `sources` lo deja constancia de forma expresa. Las referencias a la Ley 7/1985 se han hecho por artículo solo cuando el número es seguro (11, 18, 20, 21, 22, 25 y 26); cuando no lo era, se ha citado la ley sin número."
+        }
+      ],
       "practiceSlug": "i-4"
     },
     "I.5": {
@@ -1686,6 +1900,229 @@
         "Olvidar que los plazos por días son hábiles: excluyen sábados, domingos y festivos."
       ],
       "reviewedAt": "2026-11-10",
+      "longSections": [
+        {
+          "heading": "1. Ficha oficial del tema",
+          "body": "**Tema:** I.5, «El procedimiento administrativo», del bloque I (Administración y normativa) del temario común de informática C1. **Materias que cubre:** ámbito y principios de la Ley 39/2015, interesados y derechos, iniciación, instrucción, audiencia e información pública, terminación, plazos y cómputo, silencio administrativo, recursos administrativos y revisión de oficio. **Relación con otros temas:** se apoya en I.1 (Constitución, artículo 103) y en I.4 (organización municipal), y conecta con I.6 (régimen jurídico del sector público) y con la administración electrónica. **Fuente:** no hay documento del procedimiento administrativo en el escritorio de fuentes; este tema se ha redactado como material propio de OpoFuente, sin copiar textos ajenos y sin citar fuentes que no existen. Las referencias a la Ley 39/2015 se hacen por artículo solo cuando el número es seguro; en caso contrario se cita la ley sin número.",
+          "table": {
+            "columns": [
+              "Dato de la ficha",
+              "Valor"
+            ],
+            "rows": [
+              [
+                "Tema",
+                "I.5 El procedimiento administrativo"
+              ],
+              [
+                "Bloque",
+                "I · Administración y normativa"
+              ],
+              [
+                "Materias",
+                "Interesados, fases, plazos, silencio, recursos y revisión"
+              ],
+              [
+                "Temas relacionados",
+                "I.1 Constitución; I.4 Organización municipal; I.6 Régimen jurídico del sector público"
+              ],
+              [
+                "Fuente",
+                "Elaboración propia · OpoFuente"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "2. Índice de epígrafes",
+          "body": "El desarrollo del tema se organiza en los epígrafes del apartado 4:\n\n- **4.1.** Ámbito, principios y estructura de la Ley 39/2015.\n- **4.2.** Los interesados y sus derechos.\n- **4.3.** La iniciación del procedimiento.\n- **4.4.** La instrucción: prueba, informes, audiencia e información pública.\n- **4.5.** La terminación del procedimiento.\n- **4.6.** Los plazos y su cómputo.\n- **4.7.** El silencio administrativo.\n- **4.8.** Los recursos administrativos y la revisión de oficio.\n\nCompletan el tema la tabla de fases y plazos (apartado 5), el ejemplo práctico (6), las trampas de examen (7), el resumen para memorizar (8), los quince casos tipo test (9) y las fuentes citadas (10)."
+        },
+        {
+          "heading": "3. Introducción y contexto",
+          "body": "El procedimiento administrativo es el cauce formal a través del cual la Administración ejerce sus potestades y adopta decisiones que afectan a la ciudadanía. La Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, regula ese cauce común: no es una ley de organización, sino de relaciones «ad extra» entre la Administración y los interesados.\n\nEl procedimiento se estructura en **iniciación, instrucción y terminación**, y se rige por los principios de legalidad, eficacia, economía, celeridad, objetividad, transparencia, contradicción, impulso de oficio y buena fe. La Administración está obligada a resolver siempre de forma expresa, con independencia del silencio, y los interesados tienen derecho a conocer el estado de la tramitación y a recurrir las decisiones.\n\nEste tema ordena las fases, los plazos, el sentido del silencio y los recursos, que son los cuatro bloques de preguntas más frecuentes del examen.",
+          "table": {
+            "columns": [
+              "Fuente",
+              "Qué aporta"
+            ],
+            "rows": [
+              [
+                "Elaboración propia · OpoFuente",
+                "Contenido del tema: interesados, fases, plazos, silencio, recursos y revisión"
+              ],
+              [
+                "Ley 39/2015 (referencia normativa)",
+                "Base legal citada por artículo cuando su número es seguro"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "4. Desarrollo por epígrafe",
+          "body": "**4.1. Ámbito, principios y estructura.** La Ley 39/2015 regula el procedimiento administrativo común y los derechos de los interesados frente a todas las Administraciones Públicas: la Administración General del Estado, las de las comunidades autónomas, las entidades locales y el sector público institucional. Se completa con la Ley 40/2015, que regula el régimen jurídico del sector público. Sus principios son la legalidad, eficacia, economía, celeridad, objetividad, transparencia, cooperación, contradicción, impulso de oficio, simplificación, buena fe y confianza legítima. La ley apuesta por la **Administración electrónica**: las personas físicas pueden elegir el canal, pero están obligadas a relacionarse electrónicamente las personas jurídicas, las entidades sin personalidad jurídica, quienes ejerzan una actividad profesional con colegiación obligatoria, los empleados públicos y los representantes de quienes estén obligados (artículo 14). La tramitación electrónica se apoya en el registro electrónico general y en la sede electrónica.\n\n**4.2. Los interesados y sus derechos.** Son **interesados** (artículo 4): quienes promuevan el procedimiento como titulares de derechos o intereses legítimos individuales o colectivos; quienes, sin haberlo iniciado, tengan derechos que puedan resultar afectados por la decisión; y quienes tengan intereses legítimos que puedan resultar afectados y se personen antes de la resolución definitiva. Las asociaciones y organizaciones representativas de intereses económicos y sociales son titulares de intereses legítimos colectivos en los términos de la ley. La representación se presume para los actos de mero trámite y debe acreditarse para formular solicitudes, recursos, desistimientos, renuncias y alegaciones. El artículo 53 reconoce los derechos del interesado: conocer el estado de la tramitación y el sentido del silencio, identificar a las autoridades y al órgano competente, obtener copia de los documentos, formular alegaciones y aportar documentos, no presentar documentos que ya estén en poder de la Administración, obtener resolución expresa y notificada y acceder a la información pública en los términos de la Ley 19/2013.\n\n**4.3. La iniciación.** El procedimiento puede iniciarse **de oficio** o **a solicitud del interesado**. De oficio se inicia por acuerdo del órgano competente, bien por propia iniciativa, por orden superior, por petición razonada de otros órganos o por denuncia (artículo 58). A solicitud del interesado, la solicitud debe contener sus datos, los hechos, las razones, la petición, el lugar y la fecha, la firma y el órgano al que se dirige (artículo 66); si no reúne los requisitos, se requiere al interesado para que los subsane en el plazo de **diez días**, con advertencia de que se le tendrá por desistido si no lo hace (artículo 68). La Administración puede adoptar medidas provisionales para asegurar la eficacia de la resolución y puede abrir una información previa o reservada antes del acuerdo de iniciación.\n\n**4.4. La instrucción.** En la instrucción se practican las pruebas, se solicitan los informes preceptivos y los necesarios y se da audiencia a los interesados. El trámite de **audiencia** es anterior a la propuesta de resolución y dura entre **diez y quince días**; puede prescindirse de él cuando no figuren en el procedimiento ni se tengan en cuenta otros hechos, alegaciones o pruebas distintas de las del interesado (artículo 82). La **información pública** se abre cuando la naturaleza del procedimiento lo exige, mediante anuncio en el diario oficial, con un plazo mínimo de **veinte días** (artículo 83). La incomparecencia no impide recurrir después la resolución, y la comparecencia en información pública no otorga por sí misma la condición de interesado.\n\n**4.5. La terminación.** Ponen fin al procedimiento la **resolución**, el **desistimiento**, la **renuncia** al derecho cuando no esté prohibida, la **caducidad** y la imposibilidad material de continuar por causas sobrevenidas; la resolución que declare estas circunstancias debe ser motivada (artículo 84). La **resolución** decide todas las cuestiones planteadas y las conexas, debe ser **congruente** con la petición y no puede agravar la situación inicial del solicitante (artículo 88); debe estar motivada en los casos en que limite derechos o intereses legítimos (artículo 35). La caducidad puede producirse por la inactividad del interesado en trámites indispensables, con advertencia previa y archivo de las actuaciones.\n\n**4.6. Los plazos y su cómputo.** La Administración está obligada a dictar resolución expresa y a notificarla en todos los procedimientos (artículo 21). El plazo máximo lo fija la norma del procedimiento y no puede superar **seis meses** salvo que una ley o el Derecho de la Unión establezcan otro; si la norma no fija plazo, es de **tres meses** (artículo 21). El plazo se cuenta desde el acuerdo de iniciación, si el procedimiento es de oficio, o desde la entrada de la solicitud en el registro, si es a solicitud del interesado. Sobre el cómputo (artículo 30): los plazos por días se entienden por **días hábiles**, excluyendo sábados, domingos y festivos; los de meses y años se cuentan de fecha a fecha desde el día siguiente a la notificación o publicación; si el último día es inhábil, el plazo se prorroga al primer día hábil siguiente.\n\n**4.7. El silencio administrativo.** En los procedimientos **a solicitud del interesado**, el silencio es con carácter general **estimatorio**, salvo que una ley o una norma de la Unión establezcan otra cosa; es desestimatorio, en todo caso, en los procedimientos de derecho de petición, en los que impliquen transferencia de facultades sobre el dominio público o el servicio público, en los que puedan dañar el medio ambiente, en los de responsabilidad patrimonial y en los de impugnación y revisión de oficio a solicitud del interesado (artículo 24). La estimación por silencio es un acto administrativo finalizador del procedimiento; la desestimación solo sirve para permitir la interposición del recurso. El silencio puede acreditarse por cualquier medio de prueba admitido en Derecho, incluido el certificado que expide el órgano competente. En los procedimientos **iniciados de oficio**, si del procedimiento pudieran derivarse derechos u otras situaciones favorables, los interesados que hayan comparecido pueden entender **desestimadas** sus pretensiones; si la Administración ejercita potestades sancionadoras o de intervención, se produce la **caducidad** del procedimiento (artículo 25).\n\n**4.8. Los recursos y la revisión de oficio.** Los actos administrativos pueden impugnarse mediante recursos administrativos o directamente ante la jurisdicción contencioso-administrativa. El **recurso de alzada** se interpone ante el órgano superior jerárquico del que dictó el acto, contra los actos que no agotan la vía administrativa; el plazo es de **un mes** si el acto es expreso y en cualquier momento si es presunto, y la Administración tiene **tres meses** para resolver, entendiéndose desestimado si no lo hace (artículos 121 y 122). El **recurso de reposición** es **potestativo**, se interpone ante el mismo órgano que dictó el acto contra los actos que ponen fin a la vía administrativa, y el plazo es de **un mes** tanto para interponerlo como para resolverlo; si no se resuelve en plazo, se entiende desestimado (artículos 123 y 124). El **recurso extraordinario de revisión** se interpone contra actos firmes y solo en los supuestos tasados de la ley (error de hecho, aparición de documentos decisivos, documentos falsos o conducta punible declarada judicialmente). Al margen de los recursos, la Administración puede **revisar de oficio** sus actos nulos (artículo 106), declarar **lesivos** para el interés público los actos favorables para impugnarlos ante la jurisdicción (artículo 107), **revocar** los actos de gravamen y rectificar los errores materiales o de hecho (artículo 109).",
+          "table": {
+            "columns": [
+              "Epígrafe",
+              "Datos que hay que retener"
+            ],
+            "rows": [
+              [
+                "Interesados",
+                "Artículo 4: titulares de derechos o intereses legítimos, afectados y personados"
+              ],
+              [
+                "Derechos",
+                "Artículo 53: conocer el estado, copias, alegar, no aportar documentos que ya obren, resolución expresa"
+              ],
+              [
+                "Iniciación",
+                "De oficio por acuerdo (artículo 58); solicitud con contenido (artículo 66); subsanación de 10 días (artículo 68)"
+              ],
+              [
+                "Instrucción",
+                "Audiencia de 10 a 15 días (artículo 82); información pública mínima de 20 días (artículo 83)"
+              ],
+              [
+                "Terminación",
+                "Resolución, desistimiento, renuncia, caducidad e imposibilidad material (artículo 84); congruencia (artículo 88)"
+              ],
+              [
+                "Plazos",
+                "Máximo 6 meses salvo ley o UE (artículo 21); 3 meses si no se fija; días hábiles (artículo 30)"
+              ],
+              [
+                "Silencio",
+                "Solicitud: estimatorio general con excepciones (artículo 24); oficio: favorable desestimado y gravamen con caducidad (artículo 25)"
+              ],
+              [
+                "Recursos",
+                "Alzada 1 mes/3 meses (artículos 121-122); reposición 1 mes/1 mes (artículos 123-124); revisión y revisión de oficio"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "5. Tabla de fases y plazos",
+          "body": "La tabla resume las fases del procedimiento y los plazos más preguntados.",
+          "table": {
+            "columns": [
+              "Fase",
+              "Contenido esencial",
+              "Plazo característico"
+            ],
+            "rows": [
+              [
+                "Iniciación",
+                "Acuerdo de oficio o solicitud del interesado; subsanación de defectos",
+                "10 días para subsanar"
+              ],
+              [
+                "Instrucción",
+                "Prueba e informes preceptivos y necesarios",
+                "El que fije la norma del procedimiento"
+              ],
+              [
+                "Audiencia",
+                "Alegaciones y documentos antes de la propuesta de resolución",
+                "Entre 10 y 15 días"
+              ],
+              [
+                "Información pública",
+                "Anuncio en el diario oficial y alegaciones de cualquier persona",
+                "Mínimo 20 días"
+              ],
+              [
+                "Terminación",
+                "Resolución expresa, desistimiento, renuncia o caducidad",
+                "Plazo máximo para resolver"
+              ],
+              [
+                "Recurso de alzada",
+                "Ante el superior jerárquico; no agota la vía",
+                "1 mes para interponer; 3 meses para resolver"
+              ],
+              [
+                "Recurso de reposición",
+                "Potestativo ante el mismo órgano; actos que agotan la vía",
+                "1 mes para interponer y resolver"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "6. Ejemplo práctico resuelto",
+          "body": "**Supuesto.** Una vecina presenta el 10 de marzo en el registro del ayuntamiento una solicitud de ayuda al alquiler. La ordenanza no fija plazo para resolver y el ayuntamiento no contesta. El 20 de julio recibe una resolución que deniega la ayuda y, además, una notificación de sanción de tráfico sin indicar los recursos ni el plazo para interponerlos.\n\n**Resolución.**\n\n- **Plazo:** al no fijarlo la norma del procedimiento, el plazo máximo es de **tres meses** (artículo 21): venció el 10 de junio. Como no se notificó resolución en plazo, la solicitud se entiende **estimada por silencio** (artículo 24), salvo que concurra alguno de los supuestos excepcionales de sentido desestimatorio.\n- **Resolución tardía:** la resolución posterior solo puede ser **confirmatoria** del silencio estimado; si deniega la ayuda, la vecina puede impugnarla y hacer valer el silencio, y puede pedir el **certificado** acreditativo.\n- **Recurso:** si la solicitud se hubiera entendido desestimada, podría interponer **recurso de alzada** en el mes siguiente o, si el acto agota la vía, **reposición** potestativa; la Administración debe resolver en tres meses (alzada) o un mes (reposición).\n- **Sanción:** la notificación defectuosa no impide impugnarla y el procedimiento sancionador debe resolverse de forma expresa; si no se resuelve en plazo, se produce la **caducidad**, no la estimación (artículo 25).\n\n**Conclusión.** Hay que distinguir el silencio estimatorio de la solicitud (regla general) de la caducidad en los procedimientos de gravamen, y comprobar siempre el plazo máximo aplicable y el contenido de las notificaciones.",
+          "table": {
+            "columns": [
+              "Situación",
+              "Regla aplicable",
+              "Resultado"
+            ],
+            "rows": [
+              [
+                "Solicitud sin plazo en la norma",
+                "Artículo 21",
+                "3 meses para resolver"
+              ],
+              [
+                "Falta de resolución en plazo",
+                "Artículo 24",
+                "Silencio estimatorio salvo excepciones"
+              ],
+              [
+                "Resolución posterior al silencio",
+                "Artículo 24",
+                "Solo puede confirmar el silencio"
+              ],
+              [
+                "Procedimiento sancionador sin resolver",
+                "Artículo 25",
+                "Caducidad del procedimiento"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "7. Trampas típicas de examen",
+          "body": "Las confusiones más frecuentes de este tema son estas:\n\n- **Creer que el silencio es siempre estimatorio**: en los procedimientos de oficio de gravamen hay caducidad, y en los favorables de oficio el silencio es desestimatorio.\n- **Confundir el silencio de la solicitud con el de la alzada**: la alzada se entiende desestimada si no se resuelve en tres meses; la reposición, si no se resuelve en un mes.\n- **Confundir los plazos de audiencia e información pública**: la audiencia es de 10 a 15 días y la información pública, como mínimo, de 20 días.\n- **Creer que el plazo máximo de resolución es siempre de seis meses**: es el límite general, pero la norma del procedimiento puede fijar otro y, si no fija ninguno, son tres meses.\n- **Contar los plazos por días naturales**: los plazos por días son hábiles y excluyen sábados, domingos y festivos; los de meses y años se cuentan de fecha a fecha.\n- **Confundir alzada y reposición**: la alzada es ante el superior jerárquico y no es potestativa; la reposición es potestativa y ante el mismo órgano.\n- **Creer que la resolución debe estimar siempre**: debe ser congruente con la petición y no puede agravar la situación inicial del solicitante.\n- **Confundir revisión de oficio con recurso**: la revisión de oficio la inicia la propia Administración; los recursos los interponen los interesados.\n- **Creer que la notificación defectuosa convalida el acto**: la notificación defectuosa no impide impugnar y puede afectar a la eficacia del acto.",
+          "table": {
+            "columns": [
+              "Confusión",
+              "Lo correcto"
+            ],
+            "rows": [
+              [
+                "Silencio siempre estimatorio",
+                "En gravamen de oficio hay caducidad; en favorables de oficio, desestimación"
+              ],
+              [
+                "Audiencia = información pública",
+                "Audiencia 10-15 días; información pública mínimo 20 días"
+              ],
+              [
+                "Plazo máximo siempre 6 meses",
+                "Es el límite general; si la norma no fija plazo, 3 meses"
+              ],
+              [
+                "Alzada = reposición",
+                "Alzada ante el superior; reposición potestativa ante el mismo órgano"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "8. Resumen para memorizar",
+          "body": "**Norma.** Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas; se completa con la Ley 40/2015.\n\n**Interesados.** Artículo 4: titulares de derechos o intereses legítimos, afectados con derechos y personados con intereses legítimos. Derechos del artículo 53: conocer el estado, copias, alegar, no aportar documentos que ya obren, resolución expresa y acceso a la información.\n\n**Iniciación.** De oficio por acuerdo del órgano competente (propia iniciativa, orden superior, petición razonada o denuncia); a solicitud con el contenido del artículo 66 y subsanación de 10 días (artículo 68).\n\n**Instrucción.** Prueba e informes; audiencia de 10 a 15 días (artículo 82) y información pública mínima de 20 días (artículo 83).\n\n**Terminación.** Resolución, desistimiento, renuncia, caducidad e imposibilidad material (artículo 84); resolución congruente y sin agravio (artículo 88); motivación cuando limite derechos (artículo 35).\n\n**Plazos.** Obligación de resolver (artículo 21); máximo 6 meses salvo ley o UE y 3 meses si no se fija; cómputo por días hábiles, meses y años de fecha a fecha (artículo 30).\n\n**Silencio.** Solicitud: estimatorio general con excepciones desestimatorias (artículo 24); oficio: favorable desestimado y gravamen con caducidad (artículo 25).\n\n**Recursos.** Alzada: 1 mes para interponer y 3 para resolver (artículos 121-122); reposición: potestativa, 1 mes y 1 mes (artículos 123-124); revisión extraordinaria; revisión de oficio de actos nulos (artículo 106), lesividad (artículo 107), revocación y errores (artículo 109)."
+        },
+        {
+          "heading": "9. Casos tipo test comentados (15 preguntas)",
+          "body": "Los quince casos siguientes reproducen el estilo de pregunta del bloque I. Cada uno incluye la respuesta correcta y una explicación que recuerda el dato del temario; la referencia indica el epígrafe donde se desarrolla. Conviene contestarlos sin mirar la solución y revisar después solo los fallos."
+        },
+        {
+          "heading": "10. Fuentes citadas",
+          "body": "Este tema se ha redactado como **material propio de OpoFuente**, ante la ausencia de un documento del procedimiento administrativo en el escritorio de fuentes. No se han copiado textos de academias, blogs ni apuntes privados, y no se citan fuentes inexistentes: la entrada de `sources` lo deja constancia de forma expresa. Las referencias a la Ley 39/2015 se han hecho por artículo solo cuando el número es seguro (4, 14, 21, 24, 25, 30, 35, 53, 58, 66, 68, 82, 83, 84, 88, 106, 107, 109, 121 a 125); en el resto, se cita la ley sin número."
+        }
+      ],
       "practiceSlug": "i-5"
     },
     "I.6": {
@@ -1768,6 +2205,77 @@
         "Olvidar que la anulación de un acto administrativo no presupone por sí misma derecho a indemnización."
       ],
       "reviewedAt": "2026-11-10",
+      "longSections": [
+        {
+          "heading": "1. Ficha oficial del tema",
+          "body": "**Tema I.6 — El régimen jurídico del sector público (Ley 40/2015).** Bloque I del temario común C1. Se estudia a partir de la ficha publicada del tema y de la **Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público** (BOE-A-2015-10566), cuyos artículos cita la ficha. Su núcleo es: **objeto, ámbito y principios** (arts. 1-3); **órganos y competencia** (art. 8); **técnicas de ejercicio de la competencia** (delegación art. 9, avocación art. 10 y suplencia art. 13); **abstención y recusación**; **convenios de colaboración** (arts. 47-53); **responsabilidad patrimonial** (art. 32); **sector público institucional** (organismos autónomos art. 98, entidades públicas empresariales art. 103, sociedades mercantiles, consorcios, fundaciones y fondos) y **relaciones interadministrativas**. Es la ley «ad intra», complementaria de la Ley 39/2015 (relaciones con la ciudadanía). Conecta con **I.5** e I.3."
+        },
+        {
+          "heading": "2. Índice de epígrafes",
+          "body": "El tema se estudia en este orden: (1) objeto, ámbito subjetivo y principios de actuación; (2) órganos administrativos y competencia; (3) delegación, avocación, suplencia y otras técnicas de ejercicio; (4) abstención y recusación; (5) convenios de colaboración; (6) responsabilidad patrimonial; (7) el sector público institucional: organismos autónomos, entidades públicas empresariales, autoridades independientes, sociedades mercantiles, consorcios y fundaciones; (8) relaciones interadministrativas y cooperación; (9) ejemplo práctico; (10) resumen y casos tipo test. Para el test pesan la **diferencia delegación/avocación/suplencia**, los **requisitos de los convenios**, los **requisitos de la responsabilidad patrimonial** y los **tipos de entidades del sector público institucional**."
+        },
+        {
+          "heading": "3. Introducción y contexto",
+          "body": "La **Ley 40/2015** regula la organización y el funcionamiento de las Administraciones Públicas y las relaciones entre ellas: es la ley «ad intra», complementaria de la **Ley 39/2015**, que regula las relaciones de la Administración con la ciudadanía. Ambas se aprobaron el mismo día y comparten conceptos, pero no deben confundirse.\n\nEl tema se ordena de lo general a lo concreto. Primero, el ámbito y los principios. Después, el órgano y la competencia: quién puede decidir y con qué técnicas puede modularse el ejercicio (delegación, avocación, suplencia, encomienda). A continuación, los instrumentos de relación (convenios) y la responsabilidad por el funcionamiento de los servicios. Y al final, el sector público institucional, que agrupa a los organismos y entidades instrumentales creados por las Administraciones.\n\nEs un tema de conceptos muy precisos y de plazos: la diferencia entre delegar y avocar, el plazo máximo de los convenios, el año para reclamar una indemnización o los seis meses para resolver. Por eso conviene estudiar cada institución con su artículo y con un ejemplo."
+        },
+        {
+          "heading": "4. Desarrollo por epígrafe",
+          "body": "**4.1 Objeto, ámbito y principios.** La Ley 40/2015 regula la organización y el funcionamiento de las Administraciones Públicas y las relaciones entre ellas. El **artículo 2** define el ámbito subjetivo: el sector público comprende la Administración General del Estado, las Administraciones de las comunidades autónomas, las entidades locales y el **sector público institucional**. Este último integra los organismos públicos y entidades de derecho público vinculados o dependientes, las entidades de derecho privado vinculadas (cuando ejerzan potestades administrativas) y las universidades públicas. Los **principios** de actuación (art. 3) son, entre otros, el servicio efectivo a la ciudadanía, la simplicidad, claridad y proximidad, la participación, la objetividad, la transparencia, la eficacia, la eficiencia, la responsabilidad y la cooperación y coordinación entre administraciones.\n\n**4.2 Órganos y competencia.** La **competencia** es la aptitud de un órgano para resolver sobre una materia; es **irrenunciable** y se ejerce por el órgano que la tiene atribuida como propia, salvo los casos de delegación o avocación previstos en la ley (art. 8). Se determina por la **materia**, el **territorio** y el **tiempo**.\n\n**4.3 Delegación, avocación y suplencia.** La **delegación de competencias** (art. 9) permite que un órgano delegue el ejercicio de una competencia propia en otro órgano de la misma Administración, aunque no sea jerárquicamente dependiente, o en un organismo público vinculado o dependiente. Debe **publicarse en el boletín oficial** correspondiente y es **revocable** en cualquier momento. No cabe delegar las competencias sobre relaciones con la Jefatura del Estado, la Presidencia del Gobierno y las Cortes Generales; tampoco la adopción de **disposiciones de carácter general**, la resolución de **recursos** propios ni las materias con **reserva de ley**. La **avocación** (art. 10) es la operación inversa: un órgano superior atrae para sí el conocimiento de uno o varios asuntos que corresponden a un órgano dependiente; se acuerda de forma **motivada**, se notifica a los interesados y no cabe recurso autónomo contra el acuerdo. La **suplencia** (art. 13) cubre la vacante, ausencia o enfermedad del titular: no altera la competencia y no exige publicación. La **encomienda de gestión** permite encargar a otro órgano o entidad de derecho público actividades materiales o técnicas, sin cesión de la titularidad de la competencia.\n\n**4.4 Abstención y recusación.** La ley regula la **abstención** (el deber de apartarse del asunto cuando concurre una causa legal) y la **recusación** (el derecho del interesado a pedir que el órgano se aparte). Las causas típicas son el interés personal o familiar, la amistad íntima o enemistad manifiesta, haber intervenido como perito o testigo, tener relación de servicio con el interesado o compartir intereses. La abstención se comunica al superior, que decide; la recusación se plantea por escrito y la resuelve el superior del recusado, con audiencia de este.\n\n**4.5 Convenios de colaboración.** Los **convenios** son acuerdos entre Administraciones, organismos o entidades de derecho público, y también con sujetos de derecho privado, para colaborar en un objetivo común. Se regulan en los **artículos 47 a 53** de la Ley 40/2015 y **no pueden suponer cesión de la titularidad de la competencia**. Deben justificar la competencia, el objeto y las actuaciones, las obligaciones de cada parte, los compromisos económicos, el régimen de modificación, los mecanismos de seguimiento y el plazo de vigencia. Ese plazo **no puede superar cuatro años**, salvo que una norma prevea otro mayor, y puede prorrogarse por acuerdo unánime de las partes por un periodo de hasta **cuatro años adicionales**. La suscripción debe mejorar la eficiencia de la gestión pública y cumplir la legislación de estabilidad presupuestaria. En la Administración General del Estado, los convenios **surten efectos** tras inscribirse en el Registro Electrónico estatal de Órganos e Instrumentos de Cooperación (cinco días hábiles) y publicarse en el BOE (diez días hábiles).\n\n**4.6 Responsabilidad patrimonial.** Los particulares tienen derecho a ser indemnizados por las lesiones que sufran en sus bienes y derechos como consecuencia del **funcionamiento normal o anormal de los servicios públicos**, salvo en los casos de **fuerza mayor** o de daños que tengan el deber jurídico de soportar (art. 32). El daño debe ser **efectivo, evaluable económicamente e individualizado** con relación a una persona o grupo de personas, y debe existir **nexo causal** entre el funcionamiento del servicio y la lesión. La ley regula también la **responsabilidad del Estado legislador** por leyes declaradas inconstitucionales o contrarias al Derecho de la Unión. El procedimiento se tramita conforme a la Ley 39/2015; el derecho a reclamar **prescribe al año** de producido el hecho o el acto o de manifestarse el efecto lesivo (en daños físicos o psíquicos, desde la curación o la determinación del alcance de las secuelas) y la Administración debe resolver en **seis meses**; si no lo hace, el silencio es **desestimatorio**.\n\n**4.7 El sector público institucional.** Agrupa las entidades instrumentales creadas por las Administraciones para cumplir sus fines. Los **organismos públicos** comprenden los **organismos autónomos** y las **entidades públicas empresariales**: los organismos autónomos son entidades de derecho público con personalidad jurídica, tesorería y patrimonio propios y autonomía de gestión, que desarrollan actividades de fomento, prestacionales, de gestión de servicios o de producción de bienes de interés público (art. 98); las entidades públicas empresariales son también entidades de derecho público, pero se financian mayoritariamente con **ingresos de mercado** y combinan el ejercicio de potestades administrativas con actividades prestacionales (art. 103). Junto a ellas, el sector público institucional incluye las **autoridades administrativas independientes** (funciones de regulación o supervisión), las **sociedades mercantiles estatales** (capital mayoritariamente público), los **consorcios** (entidades de derecho público con personalidad jurídica propia creadas por varias Administraciones para fines de interés común), las **fundaciones del sector público** y los **fondos sin personalidad jurídica**. Las **encomiendas** solo proceden a órganos o entidades de derecho público y para actividades materiales o técnicas.\n\n**4.8 Relaciones interadministrativas.** Las Administraciones se relacionan con los principios de **lealtad institucional**, cooperación, coordinación y colaboración, y no pueden imponer unilateralmente su criterio salvo en los supuestos previstos por la ley. Los instrumentos son las **conferencias sectoriales**, las **comisiones** y grupos de trabajo, los **convenios**, los **consorcios** y las **encomiendas de gestión**. La cooperación puede ser voluntaria o exigida por la ley cuando concurra un interés común."
+        },
+        {
+          "heading": "5. Tabla comparativa: técnicas de ejercicio de la competencia",
+          "body": "Las cuatro técnicas se confunden porque todas permiten que un asunto lo resuelva un órgano distinto del titular. La diferencia está en la dirección del movimiento y en los requisitos.",
+          "table": {
+            "columns": [
+              "Técnica",
+              "Qué ocurre",
+              "Requisitos y efectos"
+            ],
+            "rows": [
+              [
+                "Delegación",
+                "El órgano titular traslada el ejercicio de la competencia a otro órgano o entidad",
+                "Se publica en el boletín oficial y es revocable; no cabe para disposiciones generales, recursos propios ni materias con reserva de ley; los actos se imputan al delegante"
+              ],
+              [
+                "Avocación",
+                "El órgano superior atrae para sí un asunto del órgano dependiente",
+                "Se acuerda de forma motivada y se notifica a los interesados; no cabe recurso autónomo contra el acuerdo"
+              ],
+              [
+                "Suplencia",
+                "Otro órgano sustituye temporalmente al titular por vacante, ausencia o enfermedad",
+                "No altera la competencia ni exige publicación; el suplente actúa como titular"
+              ],
+              [
+                "Encomienda de gestión",
+                "Se encargan a otro órgano o entidad de derecho público actividades materiales o técnicas",
+                "No hay cesión de la titularidad de la competencia; solo para actividades materiales o técnicas"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "6. Ejemplo práctico resuelto",
+          "body": "**Supuesto.** Una consejería quiere que una sociedad mercantil pública gestione un servicio, un ministerio quiere delegar en una subdirección la resolución de un procedimiento de subvenciones y un vecino sufre daños por el mal funcionamiento de una depuradora municipal. Resuelve los tres casos.\n\n**Resolución.** (1) La **sociedad mercantil pública** no puede recibir una **encomienda de gestión** para prestaciones propias de un contrato público: la encomienda solo procede a órganos o entidades de derecho público y para actividades materiales o técnicas. Si se trata de un encargo a un medio propio, se aplica la legislación de contratos del sector público. (2) La **delegación** de la resolución de subvenciones en una subdirección es posible si se publica en el boletín oficial y no afecta a disposiciones generales ni a la resolución de recursos; los actos dictados por delegación se consideran dictados por el órgano delegante y deben indicar la delegación. (3) El daño causado por la depuradora genera **responsabilidad patrimonial** si es efectivo, evaluable económicamente e individualizado y existe nexo causal con el servicio; la fuerza mayor excluye la responsabilidad. El vecino reclama en el plazo de **un año** y la Administración debe resolver en **seis meses**, con silencio desestimatorio. (4) Si dos administraciones quisieran colaborar en la gestión del servicio, podrían firmar un **convenio** (arts. 47-53) o crear un **consorcio**; el convenio no puede ceder la titularidad de la competencia y su plazo máximo es de cuatro años prorrogables otros cuatro.\n\n**Conclusión.** Cada figura tiene su cauce: la encomienda exige entidad de derecho público, la delegación exige publicación y límites, la responsabilidad exige daño y nexo causal, y el convenio exige plazo y publicidad."
+        },
+        {
+          "heading": "7. Trampas típicas de examen",
+          "body": "- Confundir la **Ley 39/2015** (relaciones con la ciudadanía, «ad extra») con la **Ley 40/2015** (organización y relaciones entre administraciones, «ad intra»).\n- Creer que la **competencia** puede cederse libremente: es **irrenunciable** y solo cabe delegación o avocación en los casos de la ley (art. 8).\n- Confundir **delegación** (el titular traslada el ejercicio, con publicación) con **avocación** (el superior atrae el asunto, con motivación) y con **suplencia** (sustitución temporal, sin alterar la competencia).\n- Creer que la **delegación** permite dictar disposiciones generales o resolver recursos propios: está prohibido.\n- Pensar que el acto dictado por delegación se imputa al delegado: se imputa al **delegante** y debe indicar la delegación.\n- Confundir **convenio** con **contrato**: el convenio no cede la titularidad de la competencia y tiene un plazo máximo de cuatro años prorrogables otros cuatro.\n- Olvidar la **inscripción** en el Registro Electrónico estatal y la **publicación en el BOE** de los convenios de la AGE (cinco y diez días hábiles).\n- Confundir los requisitos de la **responsabilidad patrimonial**: el daño debe ser efectivo, evaluable económicamente e individualizado, con nexo causal; la anulación de un acto no genera indemnización por sí sola.\n- Confundir el plazo de **reclamación** (un año) con el plazo de **resolución** (seis meses) en responsabilidad patrimonial; el silencio es desestimatorio.\n- Confundir **organismo autónomo** (derecho público, actividades de fomento o prestacionales, art. 98) con **entidad pública empresarial** (financiación mayoritaria con ingresos de mercado, art. 103).\n- Confundir **consorcio** (entidad de derecho público creada por varias administraciones) con **sociedad mercantil** (forma societaria con capital público) y con **fundación**.\n- Creer que la **encomienda de gestión** puede encargarse a una sociedad mercantil: solo a órganos o entidades de derecho público y para actividades materiales o técnicas."
+        },
+        {
+          "heading": "8. Resumen para memorizar",
+          "body": "**Lo que hay que memorizar.**\n\n1. **Ley 40/2015**: organización y relaciones entre administraciones («ad intra»); la Ley 39/2015 regula las relaciones con la ciudadanía.\n2. **Ámbito (art. 2)**: AGE, comunidades autónomas, entidades locales y sector público institucional (organismos, entidades de derecho privado vinculadas y universidades públicas).\n3. **Principios (art. 3)**: servicio efectivo, simplicidad, participación, objetividad, transparencia, eficacia, eficiencia, responsabilidad, cooperación y coordinación.\n4. **Competencia (art. 8)**: irrenunciable; se ejerce por el órgano propio salvo delegación o avocación; se determina por materia, territorio y tiempo.\n5. **Delegación (art. 9)**: publicación en el boletín oficial, revocable; prohibida para disposiciones generales, recursos propios y reserva de ley; actos imputados al delegante.\n6. **Avocación (art. 10)**: motivada y notificada; no cabe recurso autónomo. **Suplencia (art. 13)**: no altera la competencia ni exige publicación.\n7. **Convenios (arts. 47-53)**: no ceden la titularidad de la competencia; máximo cuatro años prorrogables otros cuatro; inscripción en el Registro Electrónico estatal (cinco días hábiles) y publicación en el BOE (diez días hábiles).\n8. **Responsabilidad patrimonial (art. 32)**: daño efectivo, evaluable e individualizado, con nexo causal; fuerza mayor excluye; reclamación en un año y resolución en seis meses con silencio desestimatorio.\n9. **Sector público institucional**: organismos autónomos (art. 98), entidades públicas empresariales (art. 103), autoridades independientes, sociedades mercantiles, consorcios, fundaciones y fondos.\n10. **Relaciones interadministrativas**: lealtad institucional, cooperación, coordinación y colaboración; instrumentos: conferencias sectoriales, convenios, consorcios y encomiendas de gestión."
+        },
+        {
+          "heading": "9. Casos tipo test comentados (15 preguntas)",
+          "body": "**1.** Según el artículo 2 de la Ley 40/2015, ¿qué comprende el sector público? **Respuesta: a)** La AGE, las comunidades autónomas, las entidades locales y el sector público institucional (ficha I.6).\n\n**2.** ¿Qué principios de actuación recoge el artículo 3? **Respuesta: b)** Servicio efectivo a la ciudadanía, simplicidad, participación, objetividad, transparencia, eficacia, eficiencia y responsabilidad, entre otros (ficha I.6).\n\n**3.** ¿Cómo es la competencia según el artículo 8? **Respuesta: c)** Irrenunciable y se ejerce por el órgano que la tiene atribuida, salvo delegación o avocación (ficha I.6).\n\n**4.** ¿Qué exige la delegación de competencias del artículo 9? **Respuesta: d)** Publicarse en el boletín oficial y ser revocable; no cabe para disposiciones generales, recursos propios ni reserva de ley (ficha I.6).\n\n**5.** ¿Qué es la avocación del artículo 10? **Respuesta: a)** La atracción por el órgano superior de uno o varios asuntos del órgano dependiente, de forma motivada y notificada (ficha I.6).\n\n**6.** ¿Qué caracteriza a la suplencia del artículo 13? **Respuesta: b)** No altera la competencia y no exige publicación (ficha I.6).\n\n**7.** ¿Cuál es el plazo máximo de un convenio de colaboración (arts. 47-53)? **Respuesta: c)** Cuatro años, prorrogables por acuerdo unánime otros cuatro (ficha I.6).\n\n**8.** En la AGE, ¿cuándo surten efectos los convenios? **Respuesta: d)** Una vez inscritos en el Registro Electrónico estatal de Órganos e Instrumentos de Cooperación y publicados en el BOE (ficha I.6).\n\n**9.** ¿Qué requisitos exige la responsabilidad patrimonial del artículo 32? **Respuesta: a)** Daño efectivo, evaluable económicamente e individualizado, con nexo causal con el servicio (ficha I.6).\n\n**10.** ¿Cuál es el plazo para reclamar la responsabilidad patrimonial y para resolver? **Respuesta: b)** Un año para reclamar y seis meses para resolver, con silencio desestimatorio (ficha I.6).\n\n**11.** ¿Qué es un organismo autónomo según el artículo 98? **Respuesta: c)** Una entidad de derecho público con personalidad jurídica, tesorería y patrimonio propios que desarrolla actividades de fomento, prestacionales o de producción de bienes de interés público (ficha I.6).\n\n**12.** ¿Qué caracteriza a una entidad pública empresarial según el artículo 103? **Respuesta: d)** Que se financia mayoritariamente con ingresos de mercado y combina potestades administrativas con actividades prestacionales (ficha I.6).\n\n**13.** ¿Qué es un consorcio? **Respuesta: a)** Una entidad de derecho público con personalidad jurídica propia creada por varias Administraciones para fines de interés común (ficha I.6).\n\n**14.** ¿A qué se limita la encomienda de gestión? **Respuesta: b)** A encargar a órganos o entidades de derecho público actividades materiales o técnicas, sin cesión de la titularidad de la competencia (ficha I.6).\n\n**15.** ¿Qué relación hay entre la Ley 39/2015 y la Ley 40/2015? **Respuesta: c)** La 39/2015 regula las relaciones con la ciudadanía y la 40/2015 la organización y las relaciones entre administraciones (ficha I.6)."
+        },
+        {
+          "heading": "10. Fuentes citadas",
+          "body": "- **Ficha publicada del tema I.6** (`fixtures/demo/temas/I.6.json`): objeto y principios, órganos y competencia, delegación/avocación/suplencia, convenios, responsabilidad patrimonial, sector público institucional y ejemplo resuelto, con las citas de los artículos de la Ley 40/2015.\n- **Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público** (BOE-A-2015-10566): arts. 2, 3, 8, 9, 10, 13, 32, 47 a 53, 98 y 103, tal como los cita la ficha.\n- **`data/fuentes/I.6.txt`**: texto consolidado de trabajo. **Aviso:** este fichero no contiene el desarrollo de la Ley 40/2015 (recoge la Constitución, el TREBEP, transparencia/protección de datos y el reglamento de administración electrónica, con el PDF de TAI escaneado sin texto), por lo que no se usa para datos concretos; el tema se ha elaborado con la ficha publicada y la Ley 40/2015. No se copian párrafos literales.\n\n**Limitación:** no se han podido verificar contra el BOE en esta sesión los números de todos los artículos citados; se han mantenido solo los que la ficha publicada cita expresamente, y las materias sin número constan descriptivamente. La abstención y la recusación se explican por su contenido, sin atribuirles número de artículo."
+        }
+      ],
       "practiceSlug": "i-6"
     },
     "I.7": {
@@ -25536,6 +26044,986 @@
       ]
     },
     {
+      "slug": "tai-propio-i-presupuesto",
+      "year": 2026,
+      "conv": "Supuesto propio · OpoFuente 2026",
+      "block": "I",
+      "title": "Aprobación del presupuesto municipal",
+      "difficulty": "media",
+      "official": false,
+      "estimatedMinutes": 30,
+      "statement": "Un municipio debe aprobar su presupuesto y la plantilla, cuadrar las bases de ejecución y publicar la información. El tribunal revisa competencias, plazos y control.",
+      "steps": [
+        "1. Elaborar el anteproyecto.",
+        "2. Informar y aprobar inicialmente.",
+        "3. Exponer al público y resolver alegaciones.",
+        "4. Aprobar definitivamente y publicar.",
+        "5. Ejecutar y controlar."
+      ],
+      "topics": [
+        "I.9",
+        "I.4",
+        "I.6"
+      ],
+      "source": {
+        "label": "Elaboración propia · OpoFuente",
+        "url": "https://erdeivih.github.io/opofuente-demo/",
+        "pages": "Material propio de la demo"
+      },
+      "questions": [
+        {
+          "stem": "¿Cuál es el texto vigente que regula las haciendas locales en el régimen común?",
+          "options": [
+            {
+              "key": "a",
+              "text": "La Ley 39/1988, de 28 de diciembre, en su redacción original"
+            },
+            {
+              "key": "b",
+              "text": "La Ley 7/1985, de 2 de abril, reguladora de las Bases del Régimen Local"
+            },
+            {
+              "key": "c",
+              "text": "El texto refundido aprobado por el Real Decreto Legislativo 2/2004, de 5 de marzo"
+            },
+            {
+              "key": "d",
+              "text": "La Ley Orgánica 2/2012, de 27 de abril"
+            }
+          ],
+          "correct": "c",
+          "justification": "La Ley 39/1988 fue refundida: su texto vigente es el aprobado por el Real Decreto Legislativo 2/2004 (TRLRHL), que es la norma que se maneja hoy."
+        },
+        {
+          "stem": "¿Qué recurso se exige por la utilización privativa o el aprovechamiento especial del dominio público local?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El precio público"
+            },
+            {
+              "key": "b",
+              "text": "El impuesto"
+            },
+            {
+              "key": "c",
+              "text": "La contribución especial"
+            },
+            {
+              "key": "d",
+              "text": "La tasa"
+            }
+          ],
+          "correct": "d",
+          "justification": "La tasa grava la utilización privativa o el aprovechamiento especial del dominio público y la prestación de servicios o actividades de solicitud o recepción obligatoria."
+        },
+        {
+          "stem": "¿Cuál es el límite máximo de la base imponible de las contribuciones especiales?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El 90 % del coste soportado por la entidad"
+            },
+            {
+              "key": "b",
+              "text": "El 75 % del coste soportado por la entidad"
+            },
+            {
+              "key": "c",
+              "text": "El 50 % del coste soportado por la entidad"
+            },
+            {
+              "key": "d",
+              "text": "El 100 % del coste de la obra"
+            }
+          ],
+          "correct": "a",
+          "justification": "La base imponible de las contribuciones especiales no puede superar el 90 % del coste que soporta la entidad, descontadas las subvenciones."
+        },
+        {
+          "stem": "¿Cuándo se devengan las contribuciones especiales?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Cuando se aprueba la ordenanza fiscal"
+            },
+            {
+              "key": "b",
+              "text": "Cuando se ejecutan las obras o comienza a prestarse el servicio"
+            },
+            {
+              "key": "c",
+              "text": "Cuando el beneficiario presenta la solicitud de licencia"
+            },
+            {
+              "key": "d",
+              "text": "El 1 de enero de cada ejercicio"
+            }
+          ],
+          "correct": "b",
+          "justification": "El devengo se produce al ejecutarse las obras o al iniciarse el servicio, sin perjuicio de que la entidad pueda exigir anticipos conforme a la ley."
+        },
+        {
+          "stem": "¿Cuál de los siguientes impuestos municipales tiene carácter potestativo?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El Impuesto sobre Bienes Inmuebles"
+            },
+            {
+              "key": "b",
+              "text": "El Impuesto sobre Actividades Económicas"
+            },
+            {
+              "key": "c",
+              "text": "El Impuesto sobre Construcciones, Instalaciones y Obras"
+            },
+            {
+              "key": "d",
+              "text": "El Impuesto sobre Vehículos de Tracción Mecánica"
+            }
+          ],
+          "correct": "c",
+          "justification": "El ICIO es potestativo: el ayuntamiento decide si lo exige. El IBI, el IAE y el IVTM son impuestos obligatorios del régimen común."
+        },
+        {
+          "stem": "¿Qué órgano aprueba el presupuesto general de una entidad local?",
+          "options": [
+            {
+              "key": "a",
+              "text": "La Intervención"
+            },
+            {
+              "key": "b",
+              "text": "El presidente de la corporación"
+            },
+            {
+              "key": "c",
+              "text": "La diputación provincial"
+            },
+            {
+              "key": "d",
+              "text": "El Pleno de la corporación"
+            }
+          ],
+          "correct": "d",
+          "justification": "El Pleno aprueba el presupuesto; la Intervención lo prepara y el presidente lo presenta, pero la competencia para aprobarlo corresponde al Pleno."
+        },
+        {
+          "stem": "Si el presupuesto de la entidad local no está aprobado antes del 1 de enero, ¿qué ocurre?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Se prorroga automáticamente el presupuesto del ejercicio anterior"
+            },
+            {
+              "key": "b",
+              "text": "Se aplica directamente el presupuesto del Estado"
+            },
+            {
+              "key": "c",
+              "text": "La entidad queda disuelta hasta aprobar el nuevo"
+            },
+            {
+              "key": "d",
+              "text": "Se aprueba por el Pleno sin información pública"
+            }
+          ],
+          "correct": "a",
+          "justification": "La prórroga automática del presupuesto anterior garantiza que la entidad pueda seguir funcionando hasta que se apruebe el nuevo."
+        },
+        {
+          "stem": "¿Qué norma orgánica somete a las entidades locales a la estabilidad presupuestaria y la sostenibilidad financiera?",
+          "options": [
+            {
+              "key": "a",
+              "text": "La Ley 39/1988, de 28 de diciembre"
+            },
+            {
+              "key": "b",
+              "text": "La Ley Orgánica 2/2012, de 27 de abril"
+            },
+            {
+              "key": "c",
+              "text": "La Ley 7/1985, de 2 de abril"
+            },
+            {
+              "key": "d",
+              "text": "La Ley 19/2013, de 9 de diciembre"
+            }
+          ],
+          "correct": "b",
+          "justification": "La Ley Orgánica 2/2012, de Estabilidad Presupuestaria y Sostenibilidad Financiera, extiende sus principios a todas las administraciones, incluidas las entidades locales."
+        },
+        {
+          "stem": "Cuando surge un gasto necesario no previsto y no existe crédito suficiente, ¿qué modificación presupuestaria procede?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Una transferencia de crédito"
+            },
+            {
+              "key": "b",
+              "text": "Una incorporación de remanentes"
+            },
+            {
+              "key": "c",
+              "text": "Un suplemento de crédito o un crédito extraordinario"
+            },
+            {
+              "key": "d",
+              "text": "Una baja por anulación"
+            }
+          ],
+          "correct": "c",
+          "justification": "Los créditos extraordinarios y los suplementos de crédito cubren gastos no previstos o insuficientemente dotados; la transferencia solo mueve crédito entre partidas y la incorporación de remanentes se refiere a créditos del ejercicio anterior."
+        },
+        {
+          "stem": "¿A quién corresponde el control externo de las cuentas de las entidades locales?",
+          "options": [
+            {
+              "key": "a",
+              "text": "A la Intervención municipal"
+            },
+            {
+              "key": "b",
+              "text": "Al Pleno de la corporación"
+            },
+            {
+              "key": "c",
+              "text": "Al Consejo de Ministros"
+            },
+            {
+              "key": "d",
+              "text": "Al Tribunal de Cuentas, sin perjuicio de las cámaras de cuentas autonómicas"
+            }
+          ],
+          "correct": "d",
+          "justification": "La Intervención ejerce el control interno; el control externo corresponde al Tribunal de Cuentas, sin perjuicio de las competencias de las cámaras de cuentas de las comunidades autónomas."
+        },
+        {
+          "stem": "¿Cuáles son los elementos del municipio?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El Pleno, el Alcalde y la Junta de Gobierno Local"
+            },
+            {
+              "key": "b",
+              "text": "El territorio, la población y la organización"
+            },
+            {
+              "key": "c",
+              "text": "La provincia, la comarca y la mancomunidad"
+            },
+            {
+              "key": "d",
+              "text": "El presupuesto, la plantilla y el reglamento orgánico"
+            }
+          ],
+          "correct": "b",
+          "justification": "El artículo 11 de la Ley 7/1985 fija como elementos del municipio el territorio, la población y la organización."
+        },
+        {
+          "stem": "¿En qué municipios existe obligatoriamente la Junta de Gobierno Local?",
+          "options": [
+            {
+              "key": "a",
+              "text": "En todos, sin excepción"
+            },
+            {
+              "key": "b",
+              "text": "Solo en los de más de 20.000 habitantes"
+            },
+            {
+              "key": "c",
+              "text": "En los de más de 5.000 habitantes y, en los de menos, si lo prevé su reglamento orgánico o lo acuerda el Pleno"
+            },
+            {
+              "key": "d",
+              "text": "Solo en los de más de 50.000 habitantes"
+            }
+          ],
+          "correct": "c",
+          "justification": "La Ley 7/1985 la exige por encima de 5.000 habitantes y permite crearla en los demás por decisión organizativa."
+        },
+        {
+          "stem": "¿Qué órgano aprueba las ordenanzas municipales?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El Alcalde"
+            },
+            {
+              "key": "b",
+              "text": "La Junta de Gobierno Local"
+            },
+            {
+              "key": "c",
+              "text": "El secretario municipal"
+            },
+            {
+              "key": "d",
+              "text": "El Pleno"
+            }
+          ],
+          "correct": "d",
+          "justification": "El artículo 22 atribuye al Pleno la aprobación de las ordenanzas y del reglamento orgánico."
+        },
+        {
+          "stem": "¿Quién dirige el gobierno y la administración municipal y representa al Ayuntamiento?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El Alcalde"
+            },
+            {
+              "key": "b",
+              "text": "El Pleno"
+            },
+            {
+              "key": "c",
+              "text": "El interventor"
+            },
+            {
+              "key": "d",
+              "text": "La Comisión Especial de Cuentas"
+            }
+          ],
+          "correct": "a",
+          "justification": "El Alcalde preside la corporación, dirige el gobierno y la administración y representa al municipio (artículo 21)."
+        },
+        {
+          "stem": "¿Cómo se forma la Junta de Gobierno Local?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Por todos los concejales de la corporación"
+            },
+            {
+              "key": "b",
+              "text": "Por el Alcalde y los concejales que él nombra y cesa libremente"
+            },
+            {
+              "key": "c",
+              "text": "Por los portavoces de los grupos, elegidos por el Pleno"
+            },
+            {
+              "key": "d",
+              "text": "Por el secretario y el interventor"
+            }
+          ],
+          "correct": "b",
+          "justification": "La Junta se compone del Alcalde y de concejales nombrados y cesados libremente por él; asiste al Alcalde y ejerce sus delegaciones."
+        },
+        {
+          "stem": "¿Quién nombra a los Tenientes de Alcalde?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El Pleno por mayoría absoluta"
+            },
+            {
+              "key": "b",
+              "text": "La Junta de Gobierno Local"
+            },
+            {
+              "key": "c",
+              "text": "El Alcalde entre los concejales"
+            },
+            {
+              "key": "d",
+              "text": "El órgano autonómico competente"
+            }
+          ],
+          "correct": "c",
+          "justification": "Los Tenientes de Alcalde son concejales nombrados y cesados por el Alcalde; lo sustituyen y pueden recibir delegaciones."
+        },
+        {
+          "stem": "¿Cuál de estas funciones corresponde al Pleno?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Ejecutar el presupuesto y ordenar los pagos"
+            },
+            {
+              "key": "b",
+              "text": "Nombrar al interventor"
+            },
+            {
+              "key": "c",
+              "text": "Dirigir la policía local"
+            },
+            {
+              "key": "d",
+              "text": "Controlar y fiscalizar a los órganos de gobierno"
+            }
+          ],
+          "correct": "d",
+          "justification": "El Pleno controla y fiscaliza a los órganos de gobierno; ejecutar el presupuesto y dirigir los servicios es tarea del Alcalde."
+        },
+        {
+          "stem": "¿Cada cuánto tiempo se eligen los concejales?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Cada cuatro años"
+            },
+            {
+              "key": "b",
+              "text": "Cada dos años"
+            },
+            {
+              "key": "c",
+              "text": "Cada cinco años"
+            },
+            {
+              "key": "d",
+              "text": "Cada seis años"
+            }
+          ],
+          "correct": "a",
+          "justification": "Las elecciones municipales se celebran cada cuatro años por sufragio universal, libre, igual, directo y secreto."
+        },
+        {
+          "stem": "¿En qué municipios existe la Comisión Especial de Cuentas?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Solo en los de más de 5.000 habitantes"
+            },
+            {
+              "key": "b",
+              "text": "En todos los municipios"
+            },
+            {
+              "key": "c",
+              "text": "Solo en los de más de 20.000 habitantes"
+            },
+            {
+              "key": "d",
+              "text": "Solo donde lo acuerde el Pleno"
+            }
+          ],
+          "correct": "b",
+          "justification": "La Comisión Especial de Cuentas existe en todos los municipios y examina las cuentas antes de su aprobación por el Pleno."
+        },
+        {
+          "stem": "¿Puede la Junta de Gobierno Local aprobar las ordenanzas municipales?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Sí, siempre que se lo delegue el Pleno"
+            },
+            {
+              "key": "b",
+              "text": "Sí, si el municipio tiene más de 5.000 habitantes"
+            },
+            {
+              "key": "c",
+              "text": "No, porque la aprobación de ordenanzas corresponde al Pleno"
+            },
+            {
+              "key": "d",
+              "text": "Sí, cuando el Alcalde esté ausente"
+            }
+          ],
+          "correct": "c",
+          "justification": "La Junta ejerce competencias delegadas por el Alcalde, pero no puede asumir las que la ley atribuye expresamente al Pleno, como las ordenanzas."
+        }
+      ]
+    },
+    {
+      "slug": "tai-propio-i-sancion",
+      "year": 2026,
+      "conv": "Supuesto propio · OpoFuente 2026",
+      "block": "I",
+      "title": "Procedimiento sancionador municipal",
+      "difficulty": "media",
+      "official": false,
+      "estimatedMinutes": 30,
+      "statement": "Un ayuntamiento tramita una sanción por incumplimiento de una ordenanza y debe respetar competencia, plazos, audiencia, motivación y recursos. El equipo revisa el expediente antes de resolver.",
+      "steps": [
+        "1. Comprobar competencia y tipicidad.",
+        "2. Tramitar instrucción y audiencia.",
+        "3. Resolver con motivación.",
+        "4. Notificar y explicar recursos.",
+        "5. Revisar caducidad y garantías."
+      ],
+      "topics": [
+        "I.5",
+        "I.6",
+        "I.4"
+      ],
+      "source": {
+        "label": "Elaboración propia · OpoFuente",
+        "url": "https://erdeivih.github.io/opofuente-demo/",
+        "pages": "Material propio de la demo"
+      },
+      "questions": [
+        {
+          "stem": "¿Qué ley regula el procedimiento administrativo común de las Administraciones Públicas?",
+          "options": [
+            {
+              "key": "a",
+              "text": "La Ley 7/1985, de 2 de abril"
+            },
+            {
+              "key": "b",
+              "text": "La Ley 40/2015, de 1 de octubre"
+            },
+            {
+              "key": "c",
+              "text": "La Ley 39/2015, de 1 de octubre"
+            },
+            {
+              "key": "d",
+              "text": "La Ley 19/2013, de 9 de diciembre"
+            }
+          ],
+          "correct": "c",
+          "justification": "La Ley 39/2015 regula el procedimiento administrativo común; la Ley 40/2015 regula el régimen jurídico del sector público y la Ley 19/2013 la transparencia y el acceso a la información."
+        },
+        {
+          "stem": "En los procedimientos iniciados a solicitud del interesado, ¿qué sentido tiene el silencio administrativo?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Siempre desestimatorio"
+            },
+            {
+              "key": "b",
+              "text": "Depende del órgano que deba resolver"
+            },
+            {
+              "key": "c",
+              "text": "Siempre estimatorio"
+            },
+            {
+              "key": "d",
+              "text": "Con carácter general estimatorio, salvo las excepciones legales"
+            }
+          ],
+          "correct": "d",
+          "justification": "El artículo 24 establece el silencio estimatorio como regla general, con excepciones legales como el derecho de petición, el dominio público, el medio ambiente o la responsabilidad patrimonial."
+        },
+        {
+          "stem": "Si la norma que regula el procedimiento no fija plazo máximo para resolver, ¿de cuánto tiempo dispone la Administración?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Tres meses"
+            },
+            {
+              "key": "b",
+              "text": "Dos meses"
+            },
+            {
+              "key": "c",
+              "text": "Un mes"
+            },
+            {
+              "key": "d",
+              "text": "Seis meses"
+            }
+          ],
+          "correct": "a",
+          "justification": "El artículo 21.3 fija en tres meses el plazo máximo cuando la norma del procedimiento no establece otro."
+        },
+        {
+          "stem": "¿Qué plazo hay para interponer el recurso de alzada contra un acto expreso?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Diez días"
+            },
+            {
+              "key": "b",
+              "text": "Un mes"
+            },
+            {
+              "key": "c",
+              "text": "Veinte días"
+            },
+            {
+              "key": "d",
+              "text": "Quince días"
+            }
+          ],
+          "correct": "b",
+          "justification": "El artículo 122 concede un mes para interponer la alzada si el acto es expreso; si el acto es presunto puede interponerse en cualquier momento."
+        },
+        {
+          "stem": "¿Ante qué órgano se interpone el recurso de alzada?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Ante el ministro correspondiente en todo caso"
+            },
+            {
+              "key": "b",
+              "text": "Ante el mismo órgano que dictó el acto"
+            },
+            {
+              "key": "c",
+              "text": "Ante el órgano superior jerárquico del que dictó el acto"
+            },
+            {
+              "key": "d",
+              "text": "Directamente ante el juez"
+            }
+          ],
+          "correct": "c",
+          "justification": "El artículo 121 configura la alzada como recurso ante el órgano superior jerárquico del que dictó el acto impugnado."
+        },
+        {
+          "stem": "¿Qué recurso puede interponerse, con carácter potestativo, contra un acto que pone fin a la vía administrativa antes de acudir a la jurisdicción?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El recurso de alzada"
+            },
+            {
+              "key": "b",
+              "text": "La cuestión prejudicial"
+            },
+            {
+              "key": "c",
+              "text": "El recurso extraordinario de revisión"
+            },
+            {
+              "key": "d",
+              "text": "El recurso de reposición"
+            }
+          ],
+          "correct": "d",
+          "justification": "El recurso de reposición es potestativo, se interpone ante el mismo órgano que dictó el acto y permite después acudir a la jurisdicción contencioso-administrativa."
+        },
+        {
+          "stem": "¿Qué duración tiene el trámite de audiencia antes de la propuesta de resolución?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Entre diez y quince días"
+            },
+            {
+              "key": "b",
+              "text": "Entre diez y veinte días"
+            },
+            {
+              "key": "c",
+              "text": "Entre cinco y diez días"
+            },
+            {
+              "key": "d",
+              "text": "Entre quince y veinte días"
+            }
+          ],
+          "correct": "a",
+          "justification": "El artículo 82 concede un plazo no inferior a diez días ni superior a quince para alegar y presentar documentos."
+        },
+        {
+          "stem": "¿Cuál es el plazo mínimo del trámite de información pública?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Cinco días"
+            },
+            {
+              "key": "b",
+              "text": "Veinte días"
+            },
+            {
+              "key": "c",
+              "text": "Quince días"
+            },
+            {
+              "key": "d",
+              "text": "Diez días"
+            }
+          ],
+          "correct": "b",
+          "justification": "El artículo 83 exige que el plazo para formular alegaciones en información pública no sea inferior a veinte días."
+        },
+        {
+          "stem": "¿Cómo se computan los plazos señalados por días en el procedimiento administrativo?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Solo por días laborables del interesado"
+            },
+            {
+              "key": "b",
+              "text": "Por días naturales, incluidos sábados y domingos"
+            },
+            {
+              "key": "c",
+              "text": "Por días hábiles, excluyendo sábados, domingos y festivos"
+            },
+            {
+              "key": "d",
+              "text": "Siempre por días naturales"
+            }
+          ],
+          "correct": "c",
+          "justification": "El artículo 30.2 dispone que los plazos por días son hábiles y excluye del cómputo sábados, domingos y festivos."
+        },
+        {
+          "stem": "En un procedimiento sancionador iniciado de oficio, ¿qué efecto produce el vencimiento del plazo máximo sin resolución?",
+          "options": [
+            {
+              "key": "a",
+              "text": "El silencio estimatorio"
+            },
+            {
+              "key": "b",
+              "text": "La nulidad de pleno derecho"
+            },
+            {
+              "key": "c",
+              "text": "El silencio desestimatorio"
+            },
+            {
+              "key": "d",
+              "text": "La caducidad del procedimiento"
+            }
+          ],
+          "correct": "d",
+          "justification": "El artículo 25.1.b establece que, cuando se ejercitan potestades sancionadoras o de gravamen, el vencimiento del plazo produce la caducidad del procedimiento y el archivo de las actuaciones."
+        },
+        {
+          "stem": "¿Qué ley regula el régimen jurídico del sector público?",
+          "options": [
+            {
+              "key": "a",
+              "text": "La Ley 9/2017, de 8 de noviembre"
+            },
+            {
+              "key": "b",
+              "text": "La Ley 39/2015, de 1 de octubre"
+            },
+            {
+              "key": "c",
+              "text": "La Ley 7/1985, de 2 de abril"
+            },
+            {
+              "key": "d",
+              "text": "La Ley 40/2015, de 1 de octubre"
+            }
+          ],
+          "correct": "d",
+          "justification": "La Ley 40/2015 regula el régimen jurídico del sector público; la Ley 39/2015 regula el procedimiento administrativo común y la Ley 9/2017 los contratos del sector público."
+        },
+        {
+          "stem": "¿Cómo es la competencia de los órganos administrativos?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Irrenunciable, aunque su ejercicio puede delegarse o avocarse"
+            },
+            {
+              "key": "b",
+              "text": "Renunciable si lo acuerda el titular"
+            },
+            {
+              "key": "c",
+              "text": "Libremente transferible a cualquier particular"
+            },
+            {
+              "key": "d",
+              "text": "Discrecional y no reglada"
+            }
+          ],
+          "correct": "a",
+          "justification": "El artículo 8 declara la competencia irrenunciable y la ejerce el órgano que la tiene atribuida, salvo los casos de delegación o avocación previstos en la ley."
+        },
+        {
+          "stem": "¿Qué requisito es imprescindible para que una delegación de competencias sea válida?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Que la autorice el Consejo de Ministros"
+            },
+            {
+              "key": "b",
+              "text": "Que se publique en el boletín oficial correspondiente"
+            },
+            {
+              "key": "c",
+              "text": "Que la acepte el órgano delegado"
+            },
+            {
+              "key": "d",
+              "text": "Que la apruebe el Pleno de la corporación"
+            }
+          ],
+          "correct": "b",
+          "justification": "El artículo 9 exige que las delegaciones de competencias y su revocación se publiquen en el BOE, en el boletín de la comunidad autónoma o en el de la provincia, según la Administración."
+        },
+        {
+          "stem": "¿Qué es la avocación?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Delegar la firma en un subordinado"
+            },
+            {
+              "key": "b",
+              "text": "Sustituir temporalmente al titular de un órgano"
+            },
+            {
+              "key": "c",
+              "text": "Atraer un órgano superior el conocimiento de un asunto"
+            },
+            {
+              "key": "d",
+              "text": "Encargar una actividad material a otro órgano"
+            }
+          ],
+          "correct": "c",
+          "justification": "La avocación permite al órgano superior atraer para sí un asunto que corresponde ordinariamente o por delegación a sus órganos dependientes, mediante acuerdo motivado."
+        },
+        {
+          "stem": "¿Qué permite la encomienda de gestión?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Resolver un recurso de alzada"
+            },
+            {
+              "key": "b",
+              "text": "Transferir la titularidad de la competencia"
+            },
+            {
+              "key": "c",
+              "text": "Aprobar disposiciones generales"
+            },
+            {
+              "key": "d",
+              "text": "Encargar actividades materiales o técnicas a otro órgano o entidad de derecho público"
+            }
+          ],
+          "correct": "d",
+          "justification": "La encomienda de gestión solo cubre actividades materiales o técnicas y no supone cesión de la titularidad de la competencia ni de los elementos sustantivos de su ejercicio."
+        },
+        {
+          "stem": "¿Qué efecto tiene la suplencia en la competencia del órgano?",
+          "options": [
+            {
+              "key": "a",
+              "text": "No altera la competencia y no requiere publicación"
+            },
+            {
+              "key": "b",
+              "text": "Altera la titularidad de la competencia"
+            },
+            {
+              "key": "c",
+              "text": "Exige publicación en el BOE"
+            },
+            {
+              "key": "d",
+              "text": "Requiere acuerdo del Consejo de Ministros"
+            }
+          ],
+          "correct": "a",
+          "justification": "El artículo 13 dispone que la suplencia no implica alteración de la competencia y que para su validez no es necesaria su publicación."
+        },
+        {
+          "stem": "¿Cuál es la duración máxima inicial de un convenio de colaboración?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Un año"
+            },
+            {
+              "key": "b",
+              "text": "Cuatro años"
+            },
+            {
+              "key": "c",
+              "text": "Dos años"
+            },
+            {
+              "key": "d",
+              "text": "Seis años"
+            }
+          ],
+          "correct": "b",
+          "justification": "El artículo 49 exige una duración determinada no superior a cuatro años, prorrogable por acuerdo unánime de las partes por hasta cuatro años adicionales."
+        },
+        {
+          "stem": "¿Cuál es el plazo para reclamar la responsabilidad patrimonial de una Administración?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Seis meses"
+            },
+            {
+              "key": "b",
+              "text": "Dos años"
+            },
+            {
+              "key": "c",
+              "text": "Un año"
+            },
+            {
+              "key": "d",
+              "text": "Cinco años"
+            }
+          ],
+          "correct": "c",
+          "justification": "El derecho a reclamar prescribe al año de producido el hecho o el acto que motive la indemnización o de manifestarse su efecto lesivo."
+        },
+        {
+          "stem": "¿Qué requisitos debe reunir el daño indemnizable por responsabilidad patrimonial?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Basta con que se anule el acto administrativo"
+            },
+            {
+              "key": "b",
+              "text": "Ser solo moral o hipotético"
+            },
+            {
+              "key": "c",
+              "text": "Ser siempre superior a 1.000 euros"
+            },
+            {
+              "key": "d",
+              "text": "Ser efectivo, evaluable económicamente e individualizado"
+            }
+          ],
+          "correct": "d",
+          "justification": "El artículo 32 exige que el daño sea efectivo, evaluable económicamente e individualizado con relación a una persona o grupo de personas."
+        },
+        {
+          "stem": "¿Qué rasgo diferencia a las entidades públicas empresariales de los organismos autónomos?",
+          "options": [
+            {
+              "key": "a",
+              "text": "Se financian mayoritariamente con ingresos de mercado"
+            },
+            {
+              "key": "b",
+              "text": "Se financian íntegramente con impuestos"
+            },
+            {
+              "key": "c",
+              "text": "Carecen de personalidad jurídica propia"
+            },
+            {
+              "key": "d",
+              "text": "No pueden ejercer potestades administrativas"
+            }
+          ],
+          "correct": "a",
+          "justification": "El artículo 103 define las entidades públicas empresariales como entidades de derecho público que se financian mayoritariamente con ingresos de mercado, a diferencia de los organismos autónomos."
+        }
+      ]
+    },
+    {
       "slug": "tai-propio-ii-puesto",
       "year": 2026,
       "conv": "Supuesto propio · OpoFuente 2026",
@@ -30446,8 +31934,8 @@
     "questions": 400,
     "cases": 5,
     "caseQuestions": 50,
-    "supuestos": 19,
-    "supuestoQuestions": 380,
+    "supuestos": 21,
+    "supuestoQuestions": 420,
     "convocatorias": 12
   }
 }
